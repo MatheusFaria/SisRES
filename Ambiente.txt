@@ -1,0 +1,5 @@
+Ambiente:
+	- Windows 7
+	- JDK versão 6 update 37
+	- eclipse-java-juno-SR1-win32 (vem com o Windows composer)
+	- efp-composer-1.5.1.4-win32
