@@ -1,3 +1,5 @@
 Sistema de Reserva de Equipamentos e Salas
 
-Sistema em desenvolvimento para a solução do problema de falta de monitoramento do uso do espaço físico da Faculdade do Gama (UnB - FGA).
+Sistema em desenvolvimento para a soluï¿½ï¿½o do problema de falta de monitoramento do uso do espaï¿½o fï¿½sico da Faculdade do Gama (UnB - FGA).
+
+Teste de verificacao. Editado por Parley.
