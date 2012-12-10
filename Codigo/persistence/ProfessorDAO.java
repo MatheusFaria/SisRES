@@ -8,16 +8,27 @@ import java.util.Vector;
 public class ProfessorDAO {
 
 	private Connection con = FactoryConnection.getConnection();
-
-	public void incluir() {
+	
+	//Singleton
+		private static ProfessorDAO instance;
+		private ProfessorDAO(){
+		}
+		public static ProfessorDAO getInstance(){
+			if(instance == null)
+				instance = new ProfessorDAO();
+			return instance;
+		}
+	//
+	
+	public void incluir(Professor prof) {
 		//TODO
 	}
 
-	public void alterar() {
+	public void alterar(Professor prof) {
 		//TODO
 	}
 
-	public void excluir() {
+	public void excluir(Professor prof) {
 		//TODO
 	}
 
@@ -26,7 +37,7 @@ public class ProfessorDAO {
 		return null;
 	}
 
-	public Vector buscarTodos() {
+	public Vector<Professor> buscarTodos() {
 		//TODO
 		return null;
 	}

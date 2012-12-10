@@ -2,19 +2,27 @@ package model;
 
 import exception.PatrimonioException;
 
-//TODO Validacao de Dados
 
 public class Patrimonio {
 
-	private int codigo;
-	private String descricao;	
+	private String codigo;
+	private String descricao;
 	
-	public Patrimonio(int codigo, String descricao) throws PatrimonioException{
-		this.codigo = codigo;
-		this.descricao = descricao;
+
+	//Mensagens de Erro e Alertas
+		private final String CODIGO_INVALIDO = "Codigo Invalido.";
+		private final String CODIGO_BRANCO = "Codigo em Branco.";
+		private final String DESCRICAO_INVALIDO = "Descricao Invalido.";
+		private final String DESCRICAO_BRANCO = "Descricao em Branco.";
+		
+		
+	
+	public Patrimonio(String codigo, String descricao) throws PatrimonioException{
+		this.setCodigo(codigo);
+		this.setDescricao(descricao);
 	}
 
-	public int getCodigo() {
+	public String getCodigo() {
 		return codigo;
 	}
 	
@@ -22,12 +30,30 @@ public class Patrimonio {
 		return descricao;
 	}
 	
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
+	public void setCodigo(String codigo) throws PatrimonioException {
+		try{
+			if("".equals(codigo))
+				throw new PatrimonioException(CODIGO_BRANCO);
+			//else if(codigo.matches("PATTERN"))
+				//this.codigo = codigo;
+			//else
+				//throw new PatrimonioException(CODIGO_INVALIDO);
+			this.codigo = codigo;//
+		} catch(StringIndexOutOfBoundsException e)
+		{
+			throw new PatrimonioException(CODIGO_INVALIDO);
+		}
 	}
 	
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public void setDescricao(String descricao) throws PatrimonioException {
+		try{
+			if("".equals(descricao))
+				throw new PatrimonioException(DESCRICAO_BRANCO);
+			this.descricao = descricao;
+		} catch(StringIndexOutOfBoundsException e)
+		{
+			throw new PatrimonioException(DESCRICAO_INVALIDO);
+		}
 	}
 
 	@Override

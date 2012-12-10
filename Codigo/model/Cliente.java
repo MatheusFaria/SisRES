@@ -1,38 +1,47 @@
 package model;
 
 import exception.ClienteException;
+import util.Util;
 
-//TODO Validacao de Dados
-
+/*Para fazer uma melhor validacoa e captura do dados
+ * se pega todos os dados como string.
+ * 
+ * 
+ */
 public class Cliente {
 	private String nome;
-	private int cpf;
-	private int matricula;
-	private int telefone;
+	private String cpf;
+	private String telefone;
 	private String email;
 	
-	public Cliente(String nome, int cpf, int matricula, int telefone,
+	//Mensagens de Erro e Alertas
+		private final String NOME_INVALIDO = "Nome Invalido.";
+		private final String NOME_BRANCO = "Nome em Branco.";
+		private final String CPF_INVALIDO = "CPF Invalido.";
+		private final String CPF_BRANCO = "CPF em Branco.";
+		private final String TELEFONE_INVALIDO = "Telefone Invalido.";
+		private final String TELEFONE_BRANCO = "Telefone em Branco.";
+		private final String EMAIL_INVALIDO = "E-mail Invalido.";
+		//private final String EMAIL_BRANCO = "E-mail em Branco.";
+	
+	
+	public Cliente(String nome, String cpf, String telefone,
 			String email) throws ClienteException{
-		this.nome = nome;
-		this.cpf = cpf;
-		this.matricula = matricula;
-		this.telefone = telefone;
-		this.email = email;
+		this.setNome(nome);
+		this.setCpf(cpf);
+		this.setTelefone(telefone);
+		this.setEmail(email);
 	}
 
 	public String getNome() {
 		return nome;
 	}
 	
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
 	
-	public int getMatricula() {
-		return matricula;
-	}
-	
-	public int getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
 	
@@ -40,31 +49,65 @@ public class Cliente {
 		return email;
 	}
 	
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNome(String nome) throws ClienteException{
+		try{	
+			if("".equals(nome))
+				throw new ClienteException(NOME_BRANCO);
+			else if(nome.matches("[a-zA-Z\\s]+"))
+				this.nome = nome;
+			else
+				throw new ClienteException(NOME_INVALIDO);
+		} catch(StringIndexOutOfBoundsException e)
+		{
+			throw new ClienteException(NOME_INVALIDO);
+		}
 	}
 	
-	public void setCpf(int cpf) {
-		this.cpf = cpf;
+	public void setCpf(String cpf) throws ClienteException {
+		try{	
+			if("".equals(cpf))
+				throw new ClienteException(CPF_BRANCO);
+			else if(Util.validarCpf(cpf))
+				this.cpf = cpf;
+			else
+				throw new ClienteException(CPF_INVALIDO);
+		} catch(StringIndexOutOfBoundsException e)
+		{
+			throw new ClienteException(CPF_INVALIDO);
+		}
 	}
 	
-	public void setMatricula(int matricula) {
-		this.matricula = matricula;
+	public void setTelefone(String telefone) throws ClienteException {
+		try{	
+			if("".equals(telefone))
+				throw new ClienteException(TELEFONE_BRANCO);
+			else if(telefone.matches("(\\([\\d]{2,3}\\))?[ ]*[\\d]{4,4}[ ]*-[ ]*[\\d]{4,4}[ ]*$"))
+				this.telefone = telefone;
+			else
+				throw new ClienteException(TELEFONE_INVALIDO);
+		} catch(StringIndexOutOfBoundsException e)
+		{
+			throw new ClienteException(TELEFONE_INVALIDO);
+		}
 	}
 	
-	public void setTelefone(int telefone) {
-		this.telefone = telefone;
-	}
-	
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmail(String email) throws ClienteException {
+		try{
+			if(email != null)
+				this.email = email;
+			else
+				throw new ClienteException(EMAIL_INVALIDO);
+		} catch(StringIndexOutOfBoundsException e)
+		{
+			throw new ClienteException(EMAIL_INVALIDO);
+		}
 	}
 	
 	
 	@Override
 	public String toString() {
-		return "Cliente [nome=" + nome + ", cpf=" + cpf + ", matricula="
-				+ matricula + ", telefone=" + telefone + ", email=" + email
+		return "Cliente [nome=" + nome + ", cpf=" + cpf +
+				", telefone=" + telefone + ", email=" + email
 				+ "]";
 	}
 
