@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pt" xml:lang="pt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Iteration: Itera&ccedil;&atilde;o de constru&ccedil;&atilde;o</title>
+<meta name="uma.type" content="Iteration">
+<meta name="uma.name" content="Itera&ccedil;&atilde;o de constru&ccedil;&atilde;o">
+<meta name="uma.presentationName" content="Itera&ccedil;&atilde;o de constru&ccedil;&atilde;o">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_oMAokUOHEeKqp9P514P6Lg&path=_oMAokUOHEeKqp9P514P6Lg,_FZL7MEU6EeKretQdgWZHEQ,_Pfmi0EVAEeKretQdgWZHEQ';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_Pfmi0EVAEeKretQdgWZHEQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Iteration: Itera&ccedil;&atilde;o de constru&ccedil;&atilde;o</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/iteration.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../SisRES/deliveryprocesses/Iteração de construção_190580A4.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../SisRES/deliveryprocesses/Iteração de construção_190580A4.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Team Allocation</span></td><td width="21"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../SisRES/deliveryprocesses/Iteração de construção_190580A4.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="4"><img src="./../../images/shim.gif" alt="" title="" height="2"></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="3"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Team Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Team Breakdown", summary: "Team Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["teams", "Team"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+
+{id: "cf76b52b", parentId: "", relPath: ",_P7DlMUU_EeKretQdgWZHEQ", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Analista", title: "Analista do Sistema", url: "./../../SisRES/roles/Analista_268CF1A4.html", 
+	predecessors: "", info: "", type: "Role", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ce135482", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Caso de uso", title: "Caso de uso", url: "./../../SisRES/workproducts/Caso de uso_29E0D185.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c6d066d1", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Documento de Visão", title: "Documento de Visão", url: "./../../SisRES/workproducts/Documento de Visão_F454237B.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d2279f17", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Ferramentas_1", title: "Ferramentas_1", url: "./../../SisRES/workproducts/Ferramentas_5A7EF32D.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7993c518", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Modelo de caso de uso", title: "Modelo de caso de uso", url: "./../../SisRES/workproducts/Modelo de caso de uso_A457A6F1.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2518a6d4", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Caso de uso", title: "Caso de uso", url: "./../../SisRES/workproducts/Caso de uso_29E0D185.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d1594bd4", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Documento de Visão", title: "Documento de Visão", url: "./../../SisRES/workproducts/Documento de Visão_F454237B.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "23a5af8d", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Ferramentas_1", title: "Ferramentas_1", url: "./../../SisRES/workproducts/Ferramentas_5A7EF32D.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "22b28b88", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Lista de itens de trabalho", title: "Lista de itens de trabalho", url: "./../../SisRES/workproducts/Lista de itens de trabalho_A3786ABF.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cc706054", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Modelo de caso de uso", title: "Modelo de caso de uso", url: "./../../SisRES/workproducts/Modelo de caso de uso_A457A6F1.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d961cc8b", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Plano da iteração", title: "Plano da iteração", url: "./../../SisRES/workproducts/Plano da iteração_4D9CD809.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7dda71a8", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Avaliação de resultados", title: "Avaliação de resultados", url: "./../../SisRES/tasks/Avaliação de resultados_6942B2FF.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ce2742ba", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Desenvolver solução técnica", title: "Desenvolver solução técnica", url: "./../../SisRES/tasks/Desenvolver solução técnica_98F80992.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d7af2ada", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Detalhar cenários de Casos de Usos", title: "Detalhar cenários de Casos de Usos", url: "./../../SisRES/tasks/Detalhar cenários de Casos de Usos_571AA816.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dae63b35", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Ferramentas", title: "Ferramentas", url: "./../../SisRES/tasks/Ferramentas_31BCD15C.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "daf4c3ec", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Identificar os requisitos do sistema", title: "Identificar os requisitos do sistema", url: "./../../SisRES/tasks/Identificar os requisitos do sistema_9B02D87A.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dbfb7f0c", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Pedido de mudança", title: "Pedido de mudança", url: "./../../SisRES/tasks/Pedido de mudança_4764D040.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "23c69e77", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Executar testes", title: "Executar testes", url: "./../../SisRES/tasks/Executar testes_6CF726E3.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d071a5d9", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Fazer casos de teste", title: "Fazer casos de teste", url: "./../../SisRES/tasks/Fazer casos de teste_24DBE8E8.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "295c6bfc", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Gerar o Plano de Iteração", title: "Gerar o Plano de Iteração", url: "./../../SisRES/tasks/Gerar o Plano de Iteração_EFA317A8.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "de5658c2", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Gerenciar Iteração", title: "Gerenciar iteração", url: "./../../SisRES/tasks/Gerenciar Iteração_41E19A06.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "23796a62", parentId: "cf76b52b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Implementar dos Testes", title: "Implementar Testes", url: "./../../SisRES/tasks/Implementar Testes_209D353E.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ce05ac70", parentId: "", relPath: ",_P7DlMkU_EeKretQdgWZHEQ", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Arquiteto", title: "Arquiteto", url: "./../../SisRES/roles/Arquiteto_98829EDD.html", 
+	predecessors: "", info: "", type: "Role", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7dcca43d", parentId: "ce05ac70", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Documento de Arquitetura", title: "Documento de Arquitetura", url: "./../../SisRES/workproducts/Documento de Arquitetura_4C3A5694.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7950f930", parentId: "ce05ac70", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Lista de itens de trabalho", title: "Lista de itens de trabalho", url: "./../../SisRES/workproducts/Lista de itens de trabalho_A3786ABF.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c8eecac5", parentId: "ce05ac70", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Plano da iteração", title: "Plano da iteração", url: "./../../SisRES/workproducts/Plano da iteração_4D9CD809.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d52c24fd", parentId: "ce05ac70", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Avaliação de resultados", title: "Avaliação de resultados", url: "./../../SisRES/tasks/Avaliação de resultados_6942B2FF.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "78999fdc", parentId: "ce05ac70", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Pedido de mudança", title: "Pedido de mudança", url: "./../../SisRES/tasks/Pedido de mudança_4764D040.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dce0e737", parentId: "ce05ac70", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Desenvolver solução técnica", title: "Desenvolver solução técnica", url: "./../../SisRES/tasks/Desenvolver solução técnica_98F80992.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "81195c13", parentId: "ce05ac70", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Detalhar cenários de Casos de Usos", title: "Detalhar cenários de Casos de Usos", url: "./../../SisRES/tasks/Detalhar cenários de Casos de Usos_571AA816.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "287cebd6", parentId: "ce05ac70", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Gerar o Plano de Iteração", title: "Gerar o Plano de Iteração", url: "./../../SisRES/tasks/Gerar o Plano de Iteração_EFA317A8.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d865410e", parentId: "ce05ac70", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Gerenciar Iteração", title: "Gerenciar iteração", url: "./../../SisRES/tasks/Gerenciar Iteração_41E19A06.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "77e266d0", parentId: "ce05ac70", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Identificar os requisitos do sistema", title: "Identificar os requisitos do sistema", url: "./../../SisRES/tasks/Identificar os requisitos do sistema_9B02D87A.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c8c4883e", parentId: "", relPath: ",_P7DlM0U_EeKretQdgWZHEQ", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Desenvolvedor", title: "Desenvolvedor", url: "./../../SisRES/roles/Desenvolvedor_FC106C3B.html", 
+	predecessors: "", info: "", type: "Role", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cf952fdb", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Build", title: "Build", url: "./../../SisRES/workproducts/Build_3BFFD11F.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cfb21e70", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Design", title: "Design", url: "./../../SisRES/workproducts/Design_82258934.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "da45835b", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Implementação", title: "Implementação", url: "./../../SisRES/workproducts/Implementação_DE542898.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d5e3763d", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Teste de desenvolvedor", title: "Teste de desenvolvedor", url: "./../../SisRES/workproducts/Teste de desenvolvedor_2B341CB7.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "296e0272", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Build", title: "Build", url: "./../../SisRES/workproducts/Build_3BFFD11F.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cf599052", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Ferramentas_1", title: "Ferramentas_1", url: "./../../SisRES/workproducts/Ferramentas_5A7EF32D.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dbceb700", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Implementação", title: "Implementação", url: "./../../SisRES/workproducts/Implementação_DE542898.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c9b4f4a8", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Lista de itens de trabalho", title: "Lista de itens de trabalho", url: "./../../SisRES/workproducts/Lista de itens de trabalho_A3786ABF.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7f7b8e07", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Log de teste", title: "Log de teste", url: "./../../SisRES/workproducts/Log de teste_3B1F6770.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cdf6919a", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Plano da iteração", title: "Plano da iteração", url: "./../../SisRES/workproducts/Plano da iteração_4D9CD809.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ce068faf", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Teste de desenvolvedor", title: "Teste de desenvolvedor", url: "./../../SisRES/workproducts/Teste de desenvolvedor_2B341CB7.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "795d555a", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Avaliação de resultados", title: "Avaliação de resultados", url: "./../../SisRES/tasks/Avaliação de resultados_6942B2FF.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d847ba7c", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Executar testes do desenvolvedor", title: "Executar testes", url: "./../../SisRES/tasks/Executar testes do desenvolvedor_18C1D67C.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "859c4b15", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Ferramentas", title: "Ferramentas", url: "./../../SisRES/tasks/Ferramentas_31BCD15C.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dbebcc99", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Gerar Build", title: "Gerar Build", url: "./../../SisRES/tasks/Gerar Build_1017D358.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d0ca556f", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Implementar solução", title: "Implementar solução", url: "./../../SisRES/tasks/Implementar solução_7784AFE9.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2b52974e", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Implementar teste do desenvolvedor", title: "Implementar teste do desenvolvedor", url: "./../../SisRES/tasks/Implementar teste do desenvolvedor_8F9CD9E5.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d944f64d", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Pedido de mudança", title: "Pedido de mudança", url: "./../../SisRES/tasks/Pedido de mudança_4764D040.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d89d1b76", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Detalhar cenários de Casos de Usos", title: "Detalhar cenários de Casos de Usos", url: "./../../SisRES/tasks/Detalhar cenários de Casos de Usos_571AA816.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dbc7eca7", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Executar testes", title: "Executar testes", url: "./../../SisRES/tasks/Executar testes_6CF726E3.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c9c8227d", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Fazer casos de teste", title: "Fazer casos de teste", url: "./../../SisRES/tasks/Fazer casos de teste_24DBE8E8.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "219c8d9f", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Gerar o Plano de Iteração", title: "Gerar o Plano de Iteração", url: "./../../SisRES/tasks/Gerar o Plano de Iteração_EFA317A8.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "27db0e47", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Gerenciar Iteração", title: "Gerenciar iteração", url: "./../../SisRES/tasks/Gerenciar Iteração_41E19A06.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dcb7f49c", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Identificar os requisitos do sistema", title: "Identificar os requisitos do sistema", url: "./../../SisRES/tasks/Identificar os requisitos do sistema_9B02D87A.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "da0b20c4", parentId: "c8c4883e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Implementar dos Testes", title: "Implementar Testes", url: "./../../SisRES/tasks/Implementar Testes_209D353E.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d288f631", parentId: "", relPath: ",_P7DlMEU_EeKretQdgWZHEQ", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Gerente", title: "Gerente do Projeto", url: "./../../SisRES/roles/Gerente_10D2A851.html", 
+	predecessors: "", info: "", type: "Role", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "27e1ad7a", parentId: "d288f631", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Lista de itens de trabalho", title: "Lista de itens de trabalho", url: "./../../SisRES/workproducts/Lista de itens de trabalho_A3786ABF.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7388c423", parentId: "d288f631", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Lista de riscos", title: "Lista de riscos", url: "./../../SisRES/workproducts/Lista de riscos_4DE15F2E.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "83d8a2ef", parentId: "d288f631", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Plano da iteração", title: "Plano da iteração", url: "./../../SisRES/workproducts/Plano da iteração_4D9CD809.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7dee4356", parentId: "d288f631", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Plano do projeto", title: "Plano do projeto", url: "./../../SisRES/workproducts/Plano do projeto_51E11904.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d4ed425f", parentId: "d288f631", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Lista de itens de trabalho", title: "Lista de itens de trabalho", url: "./../../SisRES/workproducts/Lista de itens de trabalho_A3786ABF.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d6767b11", parentId: "d288f631", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Lista de riscos", title: "Lista de riscos", url: "./../../SisRES/workproducts/Lista de riscos_4DE15F2E.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "caac1ada", parentId: "d288f631", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Plano da iteração", title: "Plano da iteração", url: "./../../SisRES/workproducts/Plano da iteração_4D9CD809.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d0e1ef23", parentId: "d288f631", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Avaliação de resultados", title: "Avaliação de resultados", url: "./../../SisRES/tasks/Avaliação de resultados_6942B2FF.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cf57998a", parentId: "d288f631", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Gerar o Plano de Iteração", title: "Gerar o Plano de Iteração", url: "./../../SisRES/tasks/Gerar o Plano de Iteração_EFA317A8.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7bd113f7", parentId: "d288f631", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Gerenciar Iteração", title: "Gerenciar iteração", url: "./../../SisRES/tasks/Gerenciar Iteração_41E19A06.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cc44183d", parentId: "d288f631", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Pedido de mudança", title: "Pedido de mudança", url: "./../../SisRES/tasks/Pedido de mudança_4764D040.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "810fe2e5", parentId: "d288f631", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Desenvolver solução técnica", title: "Desenvolver solução técnica", url: "./../../SisRES/tasks/Desenvolver solução técnica_98F80992.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "da351fc1", parentId: "", relPath: ",_P7DlNEU_EeKretQdgWZHEQ", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Tester", title: "Testador", url: "./../../SisRES/roles/Tester_4BA00D24.html", 
+	predecessors: "", info: "", type: "Role", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d1d0d1a5", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Caso de teste", title: "Caso de teste", url: "./../../SisRES/workproducts/Caso de teste_CB6504D.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dbf7f422", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Log de teste", title: "Log de teste", url: "./../../SisRES/workproducts/Log de teste_3B1F6770.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dbcfccb6", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Script de teste", title: "Script de teste", url: "./../../SisRES/workproducts/Script de teste_6DABEE53.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "de540117", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Caso de teste", title: "Caso de teste", url: "./../../SisRES/workproducts/Caso de teste_CB6504D.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "77016ffd", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Lista de itens de trabalho", title: "Lista de itens de trabalho", url: "./../../SisRES/workproducts/Lista de itens de trabalho_A3786ABF.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d0152bed", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Log de teste", title: "Log de teste", url: "./../../SisRES/workproducts/Log de teste_3B1F6770.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7f23604f", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Plano da iteração", title: "Plano da iteração", url: "./../../SisRES/workproducts/Plano da iteração_4D9CD809.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ca58eb26", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Script de teste", title: "Script de teste", url: "./../../SisRES/workproducts/Script de teste_6DABEE53.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dca1e2e4", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Avaliação de resultados", title: "Avaliação de resultados", url: "./../../SisRES/tasks/Avaliação de resultados_6942B2FF.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7d923bae", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Executar testes", title: "Executar testes", url: "./../../SisRES/tasks/Executar testes_6CF726E3.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d675c32d", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Fazer casos de teste", title: "Fazer casos de teste", url: "./../../SisRES/tasks/Fazer casos de teste_24DBE8E8.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7b3b8fa1", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Implementar dos Testes", title: "Implementar Testes", url: "./../../SisRES/tasks/Implementar Testes_209D353E.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cdf7e853", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Pedido de mudança", title: "Pedido de mudança", url: "./../../SisRES/tasks/Pedido de mudança_4764D040.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cc3d7e83", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Detalhar cenários de Casos de Usos", title: "Detalhar cenários de Casos de Usos", url: "./../../SisRES/tasks/Detalhar cenários de Casos de Usos_571AA816.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "22a01d60", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Gerar o Plano de Iteração", title: "Gerar o Plano de Iteração", url: "./../../SisRES/tasks/Gerar o Plano de Iteração_EFA317A8.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cc08ffbc", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Gerenciar Iteração", title: "Gerenciar iteração", url: "./../../SisRES/tasks/Gerenciar Iteração_41E19A06.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d3145095", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Identificar os requisitos do sistema", title: "Identificar os requisitos do sistema", url: "./../../SisRES/tasks/Identificar os requisitos do sistema_9B02D87A.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "75f52fc7", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Implementar solução", title: "Implementar solução", url: "./../../SisRES/tasks/Implementar solução_7784AFE9.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1fc97128", parentId: "da351fc1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Implementar teste do desenvolvedor", title: "Implementar teste do desenvolvedor", url: "./../../SisRES/tasks/Implementar teste do desenvolvedor_8F9CD9E5.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>
