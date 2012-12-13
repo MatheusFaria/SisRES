@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uma:MethodLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uma="http://www.eclipse.org/epf/uma/1.0.6" name="library.xmi" briefDescription="" id="_y62TUKVPEdmMZJIzZ1W7Pw" orderingGuide="" presentationName="" suppressed="false" authors="" changeDescription="" version="" tool="epf=1.5.0">
+  <MethodElementProperty name="" value="0"/>
+  <MethodElementProperty name="" value="_0TLvwMlgEdmt3adZL5Dmdw"/>
+  <MethodElementProperty name="" value="openup"/>
+  <MethodElementProperty name="" value="_WCUhAO8KEdmKSqa_gSYthg"/>
+  <MethodElementProperty name="" value="base_concepts"/>
+  <MethodElementProperty name="" value="_Nq0WYFkVEdul8L-IGeA7TA"/>
+  <MethodElementProperty name="" value="dsdm_openup"/>
+  <MethodElementProperty name="" value="_cDxrcEOHEeKqp9P514P6Lg"/>
+  <MethodElementProperty name="" value="SisRES"/>
+  <MethodPlugin name="SisRES" briefDescription="Processo do Sistema de Reserva de Equipamentos e Salas" id="_cDxrcEOHEeKqp9P514P6Lg" orderingGuide="" presentationName="SisRES" suppressed="false" authors="" changeDescription="" version="" supporting="false" userChangeable="true">
+    <MethodElementProperty name="me_edited" value="true"/>
+    <MethodPackage xsi:type="uma:ContentCategoryPackage" name="ContentCategories" id="_hJJJoETCEeKZ75R4mScyUw">
+      <ContentCategory xsi:type="uma:RoleSet" name="openup_roles" briefDescription="" id="_0PnScEOJEeKqp9P514P6Lg" orderingGuide="" presentationName="" suppressed="false" isAbstract="false" variabilityType="contributes">
+        <Role>_86cxEEOIEeKqp9P514P6Lg</Role>
+        <Role>_9dEggEOJEeKqp9P514P6Lg</Role>
+      </ContentCategory>
+    </MethodPackage>
+    <MethodPackage xsi:type="uma:ContentPackage" name="SisRES" briefDescription="" id="_qvn00EOHEeKqp9P514P6Lg" orderingGuide="" presentationName="" suppressed="false" global="false">
+      <MethodElementProperty name="me_edited" value="true"/>
+      <ContentElement xsi:type="uma:Role" name="Analista" briefDescription="Analista deve levantar os casos de uso e requisitos funcionais e não funcionais do sistema." id="_86cxEEOIEeKqp9P514P6Lg" orderingGuide="" presentationName="Analista do Sistema" suppressed="false" isAbstract="false" variabilityType="extends">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <ResponsibleFor>_HMrQUESxEeKZ75R4mScyUw</ResponsibleFor>
+        <ResponsibleFor>_BBjAQESwEeKZ75R4mScyUw</ResponsibleFor>
+        <ResponsibleFor>_JgLkAESxEeKZ75R4mScyUw</ResponsibleFor>
+        <ResponsibleFor>_Yhe1cESwEeKZ75R4mScyUw</ResponsibleFor>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Role" name="Arquiteto" briefDescription="" id="_9dEggEOJEeKqp9P514P6Lg" orderingGuide="" presentationName="Arquiteto" suppressed="false" isAbstract="false" variabilityType="extends">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <ResponsibleFor>_NRFUsESvEeKZ75R4mScyUw</ResponsibleFor>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Role" name="Desenvolvedor" briefDescription="" id="_csg_EEOKEeKqp9P514P6Lg" orderingGuide="" presentationName="Desenvolvedor" suppressed="false" isAbstract="false" variabilityType="extends">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <ResponsibleFor>_cIi4MESvEeKZ75R4mScyUw</ResponsibleFor>
+        <ResponsibleFor>_5T2UwESvEeKZ75R4mScyUw</ResponsibleFor>
+        <ResponsibleFor>_SkSMUESyEeKZ75R4mScyUw</ResponsibleFor>
+        <ResponsibleFor>_JQN_8ESyEeKZ75R4mScyUw</ResponsibleFor>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Role" name="Gerente" briefDescription="" id="_3h_zwEOKEeKqp9P514P6Lg" orderingGuide="" presentationName="Gerente do Projeto" suppressed="false" isAbstract="false" variabilityType="extends">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <ResponsibleFor>_f2U8EESwEeKZ75R4mScyUw</ResponsibleFor>
+        <ResponsibleFor>_cqocIESwEeKZ75R4mScyUw</ResponsibleFor>
+        <ResponsibleFor>_mvLDMESwEeKZ75R4mScyUw</ResponsibleFor>
+        <ResponsibleFor>_towxMESwEeKZ75R4mScyUw</ResponsibleFor>
+        <ResponsibleFor>_6D10AES_EeKZ75R4mScyUw</ResponsibleFor>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Role" name="Tester" briefDescription="" id="_W4VkgEOLEeKqp9P514P6Lg" orderingGuide="" presentationName="Testador" suppressed="false" isAbstract="false" variabilityType="extends">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <ResponsibleFor>_NnJZYESxEeKZ75R4mScyUw</ResponsibleFor>
+        <ResponsibleFor>_PgZaAESxEeKZ75R4mScyUw</ResponsibleFor>
+        <ResponsibleFor>_6xh24ESzEeKZ75R4mScyUw</ResponsibleFor>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Detalhar cenários de Casos de Usos" briefDescription="" id="_xzFTsEOLEeKqp9P514P6Lg" orderingGuide="" presentationName="Detalhar cenários de Casos de Usos" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <Presentation xsi:type="uma:TaskDescription" name="Detalhar cenários de Casos de Usos,_xzFTsEOLEeKqp9P514P6Lg" briefDescription="" id="-tqmFO2xwW_lAmIoFxP8XlQ" orderingGuide="" presentationName="" suppressed="false" authors="" changeDescription="" version="" externalId="">
+          <MainDescription></MainDescription>
+          <KeyConsiderations></KeyConsiderations>
+          <Alternatives></Alternatives>
+          <Purpose></Purpose>
+        </Presentation>
+        <PerformedBy>_86cxEEOIEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_HMrQUESxEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_HMrQUESxEeKZ75R4mScyUw</Output>
+        <Output>_JgLkAESxEeKZ75R4mScyUw</Output>
+        <AdditionallyPerformedBy>_9dEggEOJEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_csg_EEOKEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_W4VkgEOLEeKqp9P514P6Lg</AdditionallyPerformedBy>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Identificar os requisitos do sistema" briefDescription="Levantar requisitos funcionais e não funcionais do sistema" id="_o_NN0EOMEeKqp9P514P6Lg" orderingGuide="" presentationName="Identificar os requisitos do sistema" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_86cxEEOIEeKqp9P514P6Lg</PerformedBy>
+        <Output>_HMrQUESxEeKZ75R4mScyUw</Output>
+        <Output>_f2U8EESwEeKZ75R4mScyUw</Output>
+        <Output>_JgLkAESxEeKZ75R4mScyUw</Output>
+        <AdditionallyPerformedBy>_9dEggEOJEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_W4VkgEOLEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_csg_EEOKEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <OptionalInput>_HMrQUESxEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_BBjAQESwEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_JgLkAESxEeKZ75R4mScyUw</OptionalInput>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Documento de Arquitetura" briefDescription="Confecção do documento de arquitetura" id="_Ux0ckEOOEeKqp9P514P6Lg" orderingGuide="" presentationName="Elaborar documento de arquitetura" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <Presentation xsi:type="uma:TaskDescription" name="Documento de Arquitetura,_Ux0ckEOOEeKqp9P514P6Lg" briefDescription="" id="-yHOmT-RwKGiK07KVqmuiuw" orderingGuide="" presentationName="" suppressed="false" authors="" changeDescription="" version="" externalId="">
+          <MainDescription></MainDescription>
+          <KeyConsiderations></KeyConsiderations>
+          <Alternatives></Alternatives>
+          <Purpose></Purpose>
+        </Presentation>
+        <PerformedBy>_9dEggEOJEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_HMrQUESxEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_JgLkAESxEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_BBjAQESwEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_NRFUsESvEeKZ75R4mScyUw</Output>
+        <AdditionallyPerformedBy>_86cxEEOIEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_csg_EEOKEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_3h_zwEOKEeKqp9P514P6Lg</AdditionallyPerformedBy>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Gerar o Plano de Iteração" briefDescription="" id="_Vuc8kEOREeKqp9P514P6Lg" orderingGuide="" presentationName="Gerar o Plano de Iteração" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_3h_zwEOKEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_f2U8EESwEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_f2U8EESwEeKZ75R4mScyUw</Output>
+        <Output>_cqocIESwEeKZ75R4mScyUw</Output>
+        <Output>_mvLDMESwEeKZ75R4mScyUw</Output>
+        <AdditionallyPerformedBy>_86cxEEOIEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_9dEggEOJEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_csg_EEOKEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_W4VkgEOLEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <OptionalInput>_HMrQUESxEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_NRFUsESvEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_BBjAQESwEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_cqocIESwEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_JgLkAESxEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_mvLDMESwEeKZ75R4mScyUw</OptionalInput>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Gerar o Plano de Projeto" briefDescription="" id="_gS3WgEOREeKqp9P514P6Lg" orderingGuide="" presentationName="Gerar o Plano de Projeto" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_3h_zwEOKEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_HMrQUESxEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_BBjAQESwEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_f2U8EESwEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_JgLkAESxEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_mvLDMESwEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_towxMESwEeKZ75R4mScyUw</Output>
+        <AdditionallyPerformedBy>_86cxEEOIEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_9dEggEOJEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_csg_EEOKEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_W4VkgEOLEeKqp9P514P6Lg</AdditionallyPerformedBy>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Fazer casos de teste" briefDescription="" id="_G_c8EEOSEeKqp9P514P6Lg" orderingGuide="" presentationName="Fazer casos de teste" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_W4VkgEOLEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_HMrQUESxEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_BBjAQESwEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_JgLkAESxEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_NnJZYESxEeKZ75R4mScyUw</Output>
+        <AdditionallyPerformedBy>_86cxEEOIEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_csg_EEOKEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <OptionalInput>_NnJZYESxEeKZ75R4mScyUw</OptionalInput>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Implementar dos Testes" briefDescription="" id="_MofoMEOSEeKqp9P514P6Lg" orderingGuide="" presentationName="Implementar dos Testes" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_W4VkgEOLEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_NnJZYESxEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_PgZaAESxEeKZ75R4mScyUw</Output>
+        <AdditionallyPerformedBy>_86cxEEOIEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_csg_EEOKEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <OptionalInput>_PgZaAESxEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_5T2UwESvEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_cIi4MESvEeKZ75R4mScyUw</OptionalInput>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Documento de Arquitetura" briefDescription="" id="_NRFUsESvEeKZ75R4mScyUw" orderingGuide="" presentationName="Documento de Arquitetura" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Implementação" briefDescription="" id="_cIi4MESvEeKZ75R4mScyUw" orderingGuide="" presentationName="Implementação" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Build" briefDescription="" id="_5T2UwESvEeKZ75R4mScyUw" orderingGuide="" presentationName="Build" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Documento de Visão" briefDescription="" id="_BBjAQESwEeKZ75R4mScyUw" orderingGuide="" presentationName="Documento de Visão" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Ferramentas" briefDescription="" id="_Yhe1cESwEeKZ75R4mScyUw" orderingGuide="" presentationName="Ferramentas" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Lista de riscos" briefDescription="" id="_cqocIESwEeKZ75R4mScyUw" orderingGuide="" presentationName="Lista de riscos" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Lista de itens de trabalho" briefDescription="" id="_f2U8EESwEeKZ75R4mScyUw" orderingGuide="" presentationName="Lista de itens de trabalho" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Plano da iteração" briefDescription="" id="_mvLDMESwEeKZ75R4mScyUw" orderingGuide="" presentationName="Plano da iteração" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Plano do projeto" briefDescription="" id="_towxMESwEeKZ75R4mScyUw" orderingGuide="" presentationName="Plano do projeto" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Documento de Requisitos" briefDescription="" id="_xvjAYESwEeKZ75R4mScyUw" orderingGuide="" presentationName="Documento de Requisitos" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Caso de uso" briefDescription="" id="_HMrQUESxEeKZ75R4mScyUw" orderingGuide="" presentationName="Caso de uso" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Modelo de caso de uso" briefDescription="" id="_JgLkAESxEeKZ75R4mScyUw" orderingGuide="" presentationName="Modelo de caso de uso" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Caso de teste" briefDescription="" id="_NnJZYESxEeKZ75R4mScyUw" orderingGuide="" presentationName="Caso de teste" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Script de teste" briefDescription="" id="_PgZaAESxEeKZ75R4mScyUw" orderingGuide="" presentationName="Script de teste" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Teste de desenvolvedor" briefDescription="" id="_JQN_8ESyEeKZ75R4mScyUw" orderingGuide="" presentationName="Teste de desenvolvedor" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Design" briefDescription="Descreve a realização de funcionalidade requerida do sistema, e serve como abstração do código fonte." id="_SkSMUESyEeKZ75R4mScyUw" orderingGuide="" presentationName="Design" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Executar testes" briefDescription="" id="_vAobsESzEeKZ75R4mScyUw" orderingGuide="" presentationName="Executar testes" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_W4VkgEOLEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_NnJZYESxEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_6xh24ESzEeKZ75R4mScyUw</Output>
+        <AdditionallyPerformedBy>_86cxEEOIEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_csg_EEOKEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <OptionalInput>_PgZaAESxEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_5T2UwESvEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_cIi4MESvEeKZ75R4mScyUw</OptionalInput>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Log de teste" briefDescription="" id="_6xh24ESzEeKZ75R4mScyUw" orderingGuide="" presentationName="Log de teste" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Gerenciar Iteração" briefDescription="" id="_G6KDUES5EeKZ75R4mScyUw" orderingGuide="" presentationName="Gerenciar iteração" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_3h_zwEOKEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_mvLDMESwEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_cqocIESwEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_f2U8EESwEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_towxMESwEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_cqocIESwEeKZ75R4mScyUw</Output>
+        <Output>_f2U8EESwEeKZ75R4mScyUw</Output>
+        <Output>_mvLDMESwEeKZ75R4mScyUw</Output>
+        <AdditionallyPerformedBy>_86cxEEOIEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_9dEggEOJEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_csg_EEOKEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_W4VkgEOLEeKqp9P514P6Lg</AdditionallyPerformedBy>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Implementar teste do desenvolvedor" briefDescription="" id="_WWGM4ES5EeKZ75R4mScyUw" orderingGuide="" presentationName="Implementar teste do desenvolvedor" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_csg_EEOKEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_5T2UwESvEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_cIi4MESvEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_JQN_8ESyEeKZ75R4mScyUw</Output>
+        <AdditionallyPerformedBy>_W4VkgEOLEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <OptionalInput>_SkSMUESyEeKZ75R4mScyUw</OptionalInput>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Implementar solução" briefDescription="" id="_zzuvkES5EeKZ75R4mScyUw" orderingGuide="" presentationName="Implementar solução" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_csg_EEOKEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_HMrQUESxEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_JgLkAESxEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_BBjAQESwEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_cIi4MESvEeKZ75R4mScyUw</Output>
+        <AdditionallyPerformedBy>_W4VkgEOLEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <OptionalInput>_5T2UwESvEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_cIi4MESvEeKZ75R4mScyUw</OptionalInput>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Executar testes do desenvolvedor" briefDescription="" id="_3-SEcES5EeKZ75R4mScyUw" orderingGuide="" presentationName="Executar testes" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_csg_EEOKEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_5T2UwESvEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_cIi4MESvEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_JQN_8ESyEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_6xh24ESzEeKZ75R4mScyUw</Output>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Gerar Build" briefDescription="" id="_7k_scES5EeKZ75R4mScyUw" orderingGuide="" presentationName="Gerar Build" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_csg_EEOKEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_PgZaAESxEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_5T2UwESvEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_cIi4MESvEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_5T2UwESvEeKZ75R4mScyUw</Output>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Avaliação de resultados" briefDescription="Determina o sucesso ou a fracasso de uma iteração. Aplica as lições aprendidas para melhorar o projeto&#x9;ou projeto." id="_FJW-oES6EeKZ75R4mScyUw" orderingGuide="" presentationName="Avaliação de resultados" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_3h_zwEOKEeKqp9P514P6Lg</PerformedBy>
+        <PerformedBy>_86cxEEOIEeKqp9P514P6Lg</PerformedBy>
+        <PerformedBy>_9dEggEOJEeKqp9P514P6Lg</PerformedBy>
+        <PerformedBy>_csg_EEOKEeKqp9P514P6Lg</PerformedBy>
+        <PerformedBy>_W4VkgEOLEeKqp9P514P6Lg</PerformedBy>
+        <MandatoryInput>_mvLDMESwEeKZ75R4mScyUw</MandatoryInput>
+        <MandatoryInput>_f2U8EESwEeKZ75R4mScyUw</MandatoryInput>
+        <Output>_mvLDMESwEeKZ75R4mScyUw</Output>
+        <Output>_f2U8EESwEeKZ75R4mScyUw</Output>
+        <OptionalInput>_towxMESwEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_HMrQUESxEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_JgLkAESxEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_6xh24ESzEeKZ75R4mScyUw</OptionalInput>
+        <OptionalInput>_BBjAQESwEeKZ75R4mScyUw</OptionalInput>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Pedido de mudança" briefDescription="" id="_ZOCN4ES6EeKZ75R4mScyUw" orderingGuide="" presentationName="Pedido de mudança" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_86cxEEOIEeKqp9P514P6Lg</PerformedBy>
+        <PerformedBy>_9dEggEOJEeKqp9P514P6Lg</PerformedBy>
+        <PerformedBy>_csg_EEOKEeKqp9P514P6Lg</PerformedBy>
+        <PerformedBy>_3h_zwEOKEeKqp9P514P6Lg</PerformedBy>
+        <PerformedBy>_W4VkgEOLEeKqp9P514P6Lg</PerformedBy>
+        <Output>_f2U8EESwEeKZ75R4mScyUw</Output>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Task" name="Desenvolver solução técnica" briefDescription="" id="_SLHn8ES-EeKZ75R4mScyUw" orderingGuide="" presentationName="Desenvolver solução técnica" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+        <PerformedBy>_86cxEEOIEeKqp9P514P6Lg</PerformedBy>
+        <Output>_BBjAQESwEeKZ75R4mScyUw</Output>
+        <AdditionallyPerformedBy>_9dEggEOJEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <AdditionallyPerformedBy>_3h_zwEOKEeKqp9P514P6Lg</AdditionallyPerformedBy>
+        <OptionalInput>_BBjAQESwEeKZ75R4mScyUw</OptionalInput>
+      </ContentElement>
+      <ContentElement xsi:type="uma:Artifact" name="Processo de projeto definido" briefDescription="" id="_6D10AES_EeKZ75R4mScyUw" orderingGuide="" presentationName="Processo de projeto definido" suppressed="false" isAbstract="false" variabilityType="na">
+        <MethodElementProperty name="me_edited" value="true"/>
+      </ContentElement>
+    </MethodPackage>
+    <MethodPackage xsi:type="uma:ProcessComponent" name="SisRES" briefDescription="" id="_oMAokEOHEeKqp9P514P6Lg" orderingGuide="" presentationName="" suppressed="false" global="false" authors="" changeDescription="" version="">
+      <Process xsi:type="uma:DeliveryProcess" name="SisRES" briefDescription="" id="_oMAokUOHEeKqp9P514P6Lg" orderingGuide="" presentationName="SisRES" suppressed="false" isAbstract="false" hasMultipleOccurrences="false" isOptional="false" isPlanned="true" prefix="" isEventDriven="false" isOngoing="false" isRepeatable="false" variabilityType="na">
+        <Presentation xsi:type="uma:DeliveryProcessDescription" name="SisRES,_oMAokUOHEeKqp9P514P6Lg" briefDescription="" id="-GJWVmeoKcj0vreK83s8-wA" orderingGuide="" presentationName="" suppressed="false" authors="" changeDescription="" version="" externalId="" usageGuidance="">
+          <MainDescription></MainDescription>
+          <KeyConsiderations></KeyConsiderations>
+          <Alternatives></Alternatives>
+          <HowToStaff></HowToStaff>
+          <Purpose></Purpose>
+          <Scope></Scope>
+          <UsageNotes></UsageNotes>
+          <Scale></Scale>
+          <ProjectCharacteristics></ProjectCharacteristics>
+          <RiskLevel></RiskLevel>
+          <EstimatingTechnique></EstimatingTechnique>
+          <ProjectMemberExpertise></ProjectMemberExpertise>
+          <TypeOfContract></TypeOfContract>
+        </Presentation>
+        <DefaultContext>_0u-T4clgEdmt3adZL5Dmdw</DefaultContext>
+        <ValidContext>_0u-T4clgEdmt3adZL5Dmdw</ValidContext>
+      </Process>
+    </MethodPackage>
+  </MethodPlugin>
+  <MethodConfiguration name="OpenUP" briefDescription="Esta configuração inclui plug-ins e pacotes necessários para o OpenUP." id="_0u-T4clgEdmt3adZL5Dmdw" orderingGuide="" presentationName="" suppressed="false" authors="" changeDescription="" version="1.0.0">
+    <MethodPluginSelection>_cDxrcEOHEeKqp9P514P6Lg</MethodPluginSelection>
+    <MethodPackageSelection>_oMAokEOHEeKqp9P514P6Lg</MethodPackageSelection>
+    <MethodPackageSelection>_0venLUSuEeKZ75R4mScyUw</MethodPackageSelection>
+    <MethodPackageSelection>_0venK0SuEeKZ75R4mScyUw</MethodPackageSelection>
+    <MethodPackageSelection>_0venIESuEeKZ75R4mScyUw</MethodPackageSelection>
+    <MethodPackageSelection>_hJJJoETCEeKZ75R4mScyUw</MethodPackageSelection>
+    <MethodPackageSelection>_0venIUSuEeKZ75R4mScyUw</MethodPackageSelection>
+    <MethodPackageSelection>_0venJ0SuEeKZ75R4mScyUw</MethodPackageSelection>
+    <MethodPackageSelection>_0venKUSuEeKZ75R4mScyUw</MethodPackageSelection>
+  </MethodConfiguration>
+</uma:MethodLibrary>
