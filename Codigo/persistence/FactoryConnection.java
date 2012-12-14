@@ -5,18 +5,28 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 
-//TODO conexao com o MySQL
 public class FactoryConnection {
-		static String statusConnection = "";
-		
-	public static Connection getConnection() {
-		Connection con = null;
-		try {
-			con = DriverManager.getConnection("jdbc:mysql://localhost/teste?user=matheus&password=1234");
-			System.out.println("OK!");	
-		} catch (SQLException e) {
-			System.out.println(e.getMessage());
+	static String statusConnection = "";
+	
+	private String local = "jdbc:mysql://localhost/sisres_db";
+	private String user = "testuser";
+	private String password = "password";
+	
+	//Singleton
+		private static FactoryConnection instance;
+		private FactoryConnection(){
 		}
+		public static FactoryConnection getInstance(){
+			if(instance == null)
+				instance = new FactoryConnection();
+			return instance;
+		}
+	//
+		
+		
+	public Connection getConnection() throws SQLException{
+		Connection con = null;
+		con = DriverManager.getConnection(local, user, password);
 		return con;
 	}
 

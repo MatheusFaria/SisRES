@@ -8,11 +8,12 @@ import util.Util;
  * 
  * 
  */
-public class Cliente {
+public abstract class Cliente {
 	private String nome;
 	private String cpf;
 	private String telefone;
 	private String email;
+	protected String matricula;
 	
 	//Mensagens de Erro e Alertas
 		private final String NOME_INVALIDO = "Nome Invalido.";
@@ -25,8 +26,8 @@ public class Cliente {
 		//private final String EMAIL_BRANCO = "E-mail em Branco.";
 	
 	
-	public Cliente(String nome, String cpf, String telefone,
-			String email) throws ClienteException{
+	public Cliente(String nome, String cpf, String matricula,
+			String telefone, String email) throws ClienteException{
 		this.setNome(nome);
 		this.setCpf(cpf);
 		this.setTelefone(telefone);
@@ -47,6 +48,10 @@ public class Cliente {
 	
 	public String getEmail() {
 		return email;
+	}
+	
+	public String getMatricula() {
+		return matricula;
 	}
 	
 	public void setNome(String nome) throws ClienteException{
@@ -80,7 +85,7 @@ public class Cliente {
 	public void setTelefone(String telefone) throws ClienteException {
 		try{	
 			if("".equals(telefone))
-				throw new ClienteException(TELEFONE_BRANCO);
+				this.telefone = telefone;
 			else if(telefone.matches("(\\([\\d]{2,3}\\))?[ ]*[\\d]{4,4}[ ]*-[ ]*[\\d]{4,4}[ ]*$"))
 				this.telefone = telefone;
 			else
@@ -103,6 +108,7 @@ public class Cliente {
 		}
 	}
 	
+	public abstract void setMatricula(String matricula) throws ClienteException;
 	
 	@Override
 	public String toString() {

@@ -7,7 +7,6 @@ import java.util.Vector;
 
 public class SalaDAO {
 
-	private Connection con = FactoryConnection.getConnection();
 	
 	//Singleton
 		private static SalaDAO instance;

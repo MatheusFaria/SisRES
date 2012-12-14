@@ -3,9 +3,6 @@ package model;
 import exception.ClienteException;
 
 public class Professor extends Cliente {
-
-	private String matricula;
-	
 	
 	//Mensagens de Erro e Alertas
 		private final String MATRICULA_INVALIDO = "Matricula Invalido.";
@@ -14,12 +11,7 @@ public class Professor extends Cliente {
 	
 	public Professor(String nome, String cpf, String matricula,
 			String telefone, String email) throws ClienteException {
-		super(nome, cpf, telefone, email);
-		this.setMatricula(matricula);
-	}
-
-	public String getMatricula() {
-		return matricula;
+		super(nome, cpf, matricula, telefone, email);
 	}
 
 	public void setMatricula(String matricula) throws ClienteException {
@@ -30,7 +22,7 @@ public class Professor extends Cliente {
 				//this.matricula = matricula;
 			//else
 				//throw new ClienteException(MATRICULA_INVALIDO);
-			this.matricula = matricula;//
+			super.matricula = matricula;//
 		} catch(StringIndexOutOfBoundsException e)
 		{
 			throw new ClienteException(MATRICULA_INVALIDO);

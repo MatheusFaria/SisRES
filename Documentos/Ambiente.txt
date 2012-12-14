@@ -6,3 +6,6 @@ Ambiente:
 	- Word (.doc)
 	- Notepad (.txt)
 	- Astah Community 6.6
+	- mysql-5.5.25-win32
+	- TerraER2.02
+	- mysql-connector-java-5.1.22
