@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_L1FlADvhEeKhCuBsHWJ1Ug" guid="_L1FlADvhEeKhCuBsHWJ1Ug">
+    <subManagers xmi:id="_b4ySIDvhEeKhCuBsHWJ1Ug" href="uma://_b4PfkDvhEeKhCuBsHWJ1Ug#_b4ySIDvhEeKhCuBsHWJ1Ug"/>
+    <resourceDescriptors xmi:id="_b4U_IDvhEeKhCuBsHWJ1Ug" id="_b4PfkDvhEeKhCuBsHWJ1Ug" uri="deliveryprocesses/workflow/model.xmi"/>
+    <resourceDescriptors xmi:id="_NTpwkDvoEeKhCuBsHWJ1Ug" id="-Buz3l5XA1oElM-tD2RcVxg" uri="tasks/definicao_dicionairo_msgs.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:MethodPlugin xmi:id="_L0_eYDvhEeKhCuBsHWJ1Ug" name="SisRES" guid="_L0_eYDvhEeKhCuBsHWJ1Ug" presentationName="SisRES - Sistema de Reserva de Equipamentos e Salas" briefDescription="O sistema SisRES propõe uma forma de controle para reservas de salas e equipamentos, para que todos os interessados (professores, técnicos e alunos) possam usufruir melhor do espaço universitário da FGA de forma legal e satisfatória, podendo fazer uso de salas para reuniões, monitorias, estudos em grupo e uso de laboratórios, bem como os equipamentos necessários, prevendo medidas legais para preservação do patrimônio." authors="Beatriz Ferreira Gonçalves, Fabiana Ofugi,  Matheus de Sousa Faria, Giancarllo Hellion, Parley Pacheco Martins, Greg Ouyama Martins, Aulus Carvalho Diniz, Herbert Costa dos Reis" changeDate="2012-12-01T16:02:35.330-0200" version="0.1">
+    <methodElementProperty xmi:id="_UL9JUDvhEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eYTvhEeKhCuBsHWJ1Ug" name="Content" guid="_L0_eYTvhEeKhCuBsHWJ1Ug">
+      <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eYjvhEeKhCuBsHWJ1Ug" name="Categories" guid="_L0_eYjvhEeKhCuBsHWJ1Ug">
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eYzvhEeKhCuBsHWJ1Ug" name="Domains" guid="_L0_eYzvhEeKhCuBsHWJ1Ug"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eZDvhEeKhCuBsHWJ1Ug" name="Disciplines" guid="_L0_eZDvhEeKhCuBsHWJ1Ug">
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_BuKGYDvjEeKhCuBsHWJ1Ug" name="requisitos" guid="_BuKGYDvjEeKhCuBsHWJ1Ug" presentationName="Requisitos">
+            <methodElementProperty xmi:id="_aPr7cDvjEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_a82jcDvjEeKhCuBsHWJ1Ug" name="arquitetura" guid="_a82jcDvjEeKhCuBsHWJ1Ug" presentationName="Arquitetura">
+            <methodElementProperty xmi:id="_cjUK8DvjEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_dNVYUDvjEeKhCuBsHWJ1Ug" name="desenvolvimento" guid="_dNVYUDvjEeKhCuBsHWJ1Ug" presentationName="Desenvolvimento">
+            <methodElementProperty xmi:id="_in1SIDvjEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_je9ucDvjEeKhCuBsHWJ1Ug" name="teste" guid="_je9ucDvjEeKhCuBsHWJ1Ug" presentationName="Teste">
+            <methodElementProperty xmi:id="_kkhoUDvjEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_pypTADvjEeKhCuBsHWJ1Ug" name="ambiente" guid="_pypTADvjEeKhCuBsHWJ1Ug" presentationName="Ambiente">
+            <methodElementProperty xmi:id="_rHPucDvjEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_uSzEcDvjEeKhCuBsHWJ1Ug" name="gerencia_projeto" guid="_uSzEcDvjEeKhCuBsHWJ1Ug" presentationName="Gerência de Projeto">
+            <methodElementProperty xmi:id="_xD4sADvjEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eZTvhEeKhCuBsHWJ1Ug" name="RoleSets" guid="_L0_eZTvhEeKhCuBsHWJ1Ug"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eZjvhEeKhCuBsHWJ1Ug" name="WP Types" guid="_L0_eZjvhEeKhCuBsHWJ1Ug"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eZzvhEeKhCuBsHWJ1Ug" name="Tools" guid="_L0_eZzvhEeKhCuBsHWJ1Ug"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eaDvhEeKhCuBsHWJ1Ug" name="StandardCategories" guid="_L0_eaDvhEeKhCuBsHWJ1Ug"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eaTvhEeKhCuBsHWJ1Ug" name="CustomCategories" guid="_L0_eaTvhEeKhCuBsHWJ1Ug">
+          <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eajvhEeKhCuBsHWJ1Ug" name="Hidden" guid="_L0_eajvhEeKhCuBsHWJ1Ug">
+            <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_L0_eazvhEeKhCuBsHWJ1Ug" name="Custom Categories" guid="_L0_eazvhEeKhCuBsHWJ1Ug"/>
+          </childPackages>
+        </childPackages>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_ebDvhEeKhCuBsHWJ1Ug" name="CoreContent" guid="_L0_ebDvhEeKhCuBsHWJ1Ug">
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_4iytkDvjEeKhCuBsHWJ1Ug" name="ambiente" guid="_4iytkDvjEeKhCuBsHWJ1Ug" presentationName="Ambiente">
+          <methodElementProperty xmi:id="_7NyUMDvjEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_-8lhMDvjEeKhCuBsHWJ1Ug" name="definir_ferramentas" guid="_-8lhMDvjEeKhCuBsHWJ1Ug" presentationName="Definir Ferramentas" output="_Be5QcDvlEeKhCuBsHWJ1Ug">
+            <methodElementProperty xmi:id="_mVKqEDvkEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_03Ai4DvkEeKhCuBsHWJ1Ug" name="configurar_ambiente" guid="_03Ai4DvkEeKhCuBsHWJ1Ug" presentationName="Configurar Ambiente">
+            <methodElementProperty xmi:id="_3o-7QDvkEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_4NXasDvkEeKhCuBsHWJ1Ug" name="manter_ambiente" guid="_4NXasDvkEeKhCuBsHWJ1Ug" presentationName="Manter Ambiente">
+            <methodElementProperty xmi:id="_6dJsADvkEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_Be5QcDvlEeKhCuBsHWJ1Ug" name="definicoes_ferramentas" guid="_Be5QcDvlEeKhCuBsHWJ1Ug" presentationName="Definições do Ambiente" briefDescription="Um breve documento com todas as ferramentas utilizadas no projeto.">
+            <methodElementProperty xmi:id="_FgD_0DvlEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_dSHfwDvlEeKhCuBsHWJ1Ug" name="requisitos" guid="_dSHfwDvlEeKhCuBsHWJ1Ug" presentationName="Requisitos">
+          <methodElementProperty xmi:id="_fIOs0DvlEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_iLqBkDvlEeKhCuBsHWJ1Ug" name="casos_de_uso_informais" guid="_iLqBkDvlEeKhCuBsHWJ1Ug" presentationName="Documento dos Casos de Uso Informais">
+            <methodElementProperty xmi:id="_lvfUsDvlEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_mOFVMDvlEeKhCuBsHWJ1Ug" name="msgs_padroes" guid="_mOFVMDvlEeKhCuBsHWJ1Ug" presentationName="Dicionário de Mensagens Padrões">
+            <methodElementProperty xmi:id="_wuYEIDvlEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_zDmPEDvlEeKhCuBsHWJ1Ug" name="casos_de_uso_detalhados" guid="_zDmPEDvlEeKhCuBsHWJ1Ug" presentationName="Documento dos Casos de Uso Detalhados">
+            <methodElementProperty xmi:id="_5O7I4DvlEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_IlrQcDvmEeKhCuBsHWJ1Ug" name="definicao_tema" guid="_IlrQcDvmEeKhCuBsHWJ1Ug" presentationName="Definição do Tema">
+            <methodElementProperty xmi:id="_TIFfQDvmEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_VRgC0DvmEeKhCuBsHWJ1Ug" name="levantamento_casos_uso" guid="_VRgC0DvmEeKhCuBsHWJ1Ug" presentationName="Levantamento dos Casos de Uso" output="_iLqBkDvlEeKhCuBsHWJ1Ug" optionalInput="_bXt9sDvnEeKhCuBsHWJ1Ug">
+            <methodElementProperty xmi:id="_a7vBwDvmEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_fTDAQDvmEeKhCuBsHWJ1Ug" name="detalhamento_casos_uso" guid="_fTDAQDvmEeKhCuBsHWJ1Ug" presentationName="Detalhamento dos Casos de Uso" mandatoryInput="_iLqBkDvlEeKhCuBsHWJ1Ug" output="_zDmPEDvlEeKhCuBsHWJ1Ug">
+            <methodElementProperty xmi:id="_irAakDvmEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_qCAdUDvmEeKhCuBsHWJ1Ug" name="definicao_dicionairo_msgs" guid="_qCAdUDvmEeKhCuBsHWJ1Ug" presentationName="Definição das Mensagens Padrões " mandatoryInput="_zDmPEDvlEeKhCuBsHWJ1Ug _Ik9CQDvnEeKhCuBsHWJ1Ug" output="_mOFVMDvlEeKhCuBsHWJ1Ug">
+            <methodElementProperty xmi:id="_wwE30DvmEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+            <presentation xmi:id="-Buz3l5XA1oElM-tD2RcVxg" href="uma://-Buz3l5XA1oElM-tD2RcVxg#-Buz3l5XA1oElM-tD2RcVxg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_xdQt8DvmEeKhCuBsHWJ1Ug" name="definicao_dicionario_dados" guid="_xdQt8DvmEeKhCuBsHWJ1Ug" presentationName="Definição do Dicionario de Dados" mandatoryInput="_Ik9CQDvnEeKhCuBsHWJ1Ug" output="_PeGO4DvoEeKhCuBsHWJ1Ug">
+            <methodElementProperty xmi:id="_1WZisDvmEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_7m-v8DvmEeKhCuBsHWJ1Ug" name="levantamento_requisitos" guid="_7m-v8DvmEeKhCuBsHWJ1Ug" presentationName="Levantamento de Requisitos" mandatoryInput="_bXt9sDvnEeKhCuBsHWJ1Ug" output="_Ik9CQDvnEeKhCuBsHWJ1Ug" optionalInput="_iLqBkDvlEeKhCuBsHWJ1Ug">
+            <methodElementProperty xmi:id="__7OzYDvmEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_C6c9kDvnEeKhCuBsHWJ1Ug" name="refino_requisitos" guid="_C6c9kDvnEeKhCuBsHWJ1Ug" presentationName="Refinamento dos Requisitos" output="_Ik9CQDvnEeKhCuBsHWJ1Ug">
+            <methodElementProperty xmi:id="_HmhrIDvnEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_Ik9CQDvnEeKhCuBsHWJ1Ug" name="doc_requisitos" guid="_Ik9CQDvnEeKhCuBsHWJ1Ug" presentationName="Documento de Requisitos">
+            <methodElementProperty xmi:id="_LRx04DvnEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_bXt9sDvnEeKhCuBsHWJ1Ug" name="doc_visao" guid="_bXt9sDvnEeKhCuBsHWJ1Ug" presentationName="Documento de Visão">
+            <methodElementProperty xmi:id="_dKx2wDvnEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_isEVEDvnEeKhCuBsHWJ1Ug" name="definir_visao" guid="_isEVEDvnEeKhCuBsHWJ1Ug" presentationName="Definir Visão" variabilityType="extends" output="_bXt9sDvnEeKhCuBsHWJ1Ug">
+            <methodElementProperty xmi:id="_yX7J8DvnEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Task" href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0fOAoMlgEdmt3adZL5Dmdw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_PeGO4DvoEeKhCuBsHWJ1Ug" name="dicionario_dados" guid="_PeGO4DvoEeKhCuBsHWJ1Ug" presentationName="Dicionario de Dados">
+            <methodElementProperty xmi:id="_SQ2qYDvoEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_QXmNQDvpEeKhCuBsHWJ1Ug" name="gerencia_projeto" guid="_QXmNQDvpEeKhCuBsHWJ1Ug" presentationName="Gerência de Projeto">
+          <methodElementProperty xmi:id="_SY9oEDvpEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_TT60cDvpEeKhCuBsHWJ1Ug" name="planejamento_iteracoes" guid="_TT60cDvpEeKhCuBsHWJ1Ug" presentationName="Planejamento de Iteraçõess" output="_aDQaQDvpEeKhCuBsHWJ1Ug">
+            <methodElementProperty xmi:id="_ZIVqIDvpEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_aDQaQDvpEeKhCuBsHWJ1Ug" name="plano_iteracao" guid="_aDQaQDvpEeKhCuBsHWJ1Ug" presentationName="Plano de Iteração">
+            <methodElementProperty xmi:id="_fdcyEDvpEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+        </childPackages>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_L0_ebTvhEeKhCuBsHWJ1Ug" name="CapabilityPatterns" guid="_L0_ebTvhEeKhCuBsHWJ1Ug"/>
+    </methodPackages>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_L0_ebjvhEeKhCuBsHWJ1Ug" name="DeliveryProcesses" guid="_L0_ebjvhEeKhCuBsHWJ1Ug">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_b4PfkDvhEeKhCuBsHWJ1Ug" href="uma://_b4PfkDvhEeKhCuBsHWJ1Ug#_b4PfkDvhEeKhCuBsHWJ1Ug"/>
+    </methodPackages>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_L0_ebzvhEeKhCuBsHWJ1Ug" name="ProcessContributions" guid="_L0_ebzvhEeKhCuBsHWJ1Ug"/>
+    <bases href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0TLvwMlgEdmt3adZL5Dmdw"/>
+  </org.eclipse.epf.uma:MethodPlugin>
+</xmi:XMI>
