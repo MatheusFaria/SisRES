@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-T2IeqdOunweffIDgL-aM0w" name="use_case,_0Vk8cMlgEdmt3adZL5Dmdw" guid="-T2IeqdOunweffIDgL-aM0w" authors="Paul Bramble" changeDate="2006-05-01T14:13:56.264-0300" version="0.1">
+  <copyrightStatement href="uma://_WCUhAO8KEdmKSqa_gSYthg#_uuunoPsDEdmyhNQr5STrZQ"/>
+  <sections xmi:id="_663wMNk1Edq2Q8qZoWbvGA" name="O nome do caso de uso é significante e inequívoco?" guid="_663wMNk1Edq2Q8qZoWbvGA">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>O caso de uso tem um nome exclusivo?&lt;/li>&#xD;
+  &lt;li>O nome do caso de uso é formado por um verbo seguido de um substantivo (por exemplo, Retirar Dinheiro)?&lt;/li>&#xD;
+  &lt;li>O nome do caso de uso resume exatamente o principal propósito do caso de uso?&lt;/li>&#xD;
+  &lt;li>O nome do caso de uso é independente do ator?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZTA8QJznEduBcbjYtLtItQ" name="A descrição resumida descreve claramente a principal meta do caso de uso?" guid="_ZTA8QJznEduBcbjYtLtItQ">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>Está claro, a partir da descrição resumida, qual é a principal finalidade do caso de uso?&lt;/li>&#xD;
+  &lt;li>O &quot;resultado observável de valor&quot; está óbvio?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_4wJRgJznEduBcbjYtLtItQ" name="Os Atores associados e as informações trocadas estão claramente definidos?" guid="_4wJRgJznEduBcbjYtLtItQ">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>O caso uso está associado a um ou mais Atores?&lt;/li>&#xD;
+  &lt;li>O ator principal, ou iniciador, está definido?&lt;/li>&#xD;
+  &lt;li>Está claro quem executa as ações no caso de uso?&lt;/li>&#xD;
+  &lt;li>Todas as informações trocadas entre os Atores e o sistema estão claramente especificadas?&lt;/li>&#xD;
+  &lt;li>Se for usado um ator &quot;tempo&quot;, você tem certeza de que não esqueceu um Ator importante e os casos de uso associados (tal como o pessoal administrativo ou de manutenção que definem eventos temporizados)?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_Qys_INk2Edq2Q8qZoWbvGA" name="As precondições foram especificadas?" guid="_Qys_INk2Edq2Q8qZoWbvGA">
+    <sectionDescription>&lt;p>Cada precondição representa um estado tangível do sistema (por exemplo, o caso de uso Retirar Dinheiro para um caixa automático tem uma precondição de que o usuário tenha uma conta)?&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_q3qV0Nk2Edq2Q8qZoWbvGA" name="O fluxo básico e os fluxos alternativos estão completos, corretos e consistentes?" guid="_q3qV0Nk2Edq2Q8qZoWbvGA">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Está claro como o caso de uso inicia?&lt;/li>&#xD;
+    &lt;li>O evento que dispara o caso de uso está claramente descrito?&lt;/li>&#xD;
+    &lt;li>O fluxo tem um fim claro?&lt;/li>&#xD;
+    &lt;li>Cada passo no cenário contém o mesmo nível de abstração?&lt;/li>&#xD;
+    &lt;li>Cada passo no cenário descreve algo que pode realmente acontecer e que o sistema possa detectar razoavelmente?&lt;/li>&#xD;
+    &lt;li>Cada passo avança para a meta?&lt;/li>&#xD;
+    &lt;li>Esta faltando algum passo? Está claro como passar de um passo para o próximo? A seqüência de comunicação entre os Atores e os casos de uso está de acordo com as expectativas do usuário?&lt;/li>&#xD;
+    &lt;li>Cada passo descreve como ele ajuda os Atores a atingirem suas metas?&lt;/li>&#xD;
+    &lt;li>Todos os passos são independentes de tecnologia? Eles estão livres de detalhes técnicos e decisões de design inadvertidas?&lt;/li>&#xD;
+    &lt;li>Os passos estão corretamente numerados?&lt;/li>&#xD;
+    &lt;li>As condições para o início de cada fluxo alternativo estão claramente definidas?&lt;/li>&#xD;
+    &lt;li>Está claro, em cada fluxo alternativo, como o caso de uso termina ou em que parte do fluxo básico o caso de uso deve continuar?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_dnLXMNk2Edq2Q8qZoWbvGA" name="As pós-condições foram especificadas?" guid="_dnLXMNk2Edq2Q8qZoWbvGA">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Se as &quot;Garantias Mínimas&quot; estão presentes, elas sempre acontecem quando o caso de uso termina, independente do sucesso? (Uma Garantia Mínima representa uma condição que será verdadeira quando o caso de uso terminar, independente da forma como ele termine).&lt;/li>&#xD;
+    &lt;li>Se as &quot;Garantias de Sucesso&quot; estão presentes, elas sempre acontecem quando o caso de uso termina com sucesso? (Uma Garantia de Sucesso representa uma condição que será verdadeira quando o caso de uso terminar com sucesso, independente do caminho seguido).&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_vkbMAJzrEduBcbjYtLtItQ" name="Os requisitos não-funcionais aplicáveis foram capturados?" guid="_vkbMAJzrEduBcbjYtLtItQ">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>Os requisitos não-funcionais (tais como os critérios de desempenho) que são aplicáveis ao caso de uso estão capturados nele?&lt;/li>&#xD;
+  &lt;li>Existem requisitos não-funcionais aplicáveis a muitos casos de uso? Se existirem, considere captura-los na Especificação de Requisitos Suplementares, para simplificar a manutenção.&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

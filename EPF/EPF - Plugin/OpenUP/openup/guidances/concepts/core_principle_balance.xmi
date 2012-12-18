@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-I4IbR1GW6IFBCdq9SiMUsw" name="core_principle_balance,_ssG6MMvpEdqukPpotm3DYg" guid="-I4IbR1GW6IFBCdq9SiMUsw" changeDate="2007-07-03T10:24:43.871-0300" changeDescription="Removed metaphoric photo Removed open_up from page name." version="0.02">
+  <mainDescription>&lt;h1>Introdução&lt;/h1>&#xD;
+&lt;p>Raramente os sistemas farão tudo para todas as pessoas. Mas quando tentamos fazer isso, criamos um sistema inchado e caro.&lt;/p>&#xD;
+&lt;p>Para atingir o sucesso, os Stakeholders e os participantes do projeto devem convergir para um claro entendimento e concordar com estes três fatores:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Problema a ser resolvido&lt;/li>&#xD;
+    &lt;li>Restrições impostas à equipe de desenvolvimento (custo, cronograma, recursos, regulamentos, etc.)&lt;/li>&#xD;
+    &lt;li>Restrições impostas à solução&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>O desafio de todos os participantes do projeto é criar uma solução que maximize o valor entregue aos Stakeholders, mesmo que sujeita a restrições. O equilíbrio está em fazer uma análise crítica do custo-benefício entre as características desejadas e as decisões de projeto subseqüentes que definem a arquitetura do sistema.&lt;/p>&#xD;
+&lt;p>Descobrir o ponto de equilíbrio é desafiador, evasivo e progressivo, porque o ponto de equilíbrio é dinâmico. Quando os sistemas evoluem, as necessidades dos Stakeholders mudam, aparecem novas oportunidades, os riscos são resolvidos, novos riscos aparecem e a equipe de desenvolvimento descobre novas realidades sobre o sistema. Mudanças surgem em todo o ciclo de desenvolvimento. Os Stakeholders e os membros da equipe devem estar preparados para reavaliar seus compromissos, reduzir expectativas e ajustar o planejamento conforme a evolução do sistema.&lt;/p>&#xD;
+&lt;h1>Práticas&lt;/h1>&#xD;
+&lt;h2>Conheça a sua audiência&lt;/h2>&#xD;
+&lt;blockquote>&#xD;
+    &lt;p>Você não terá como realizar compensações com eficiência se você não souber quem são os Stakeholders e o que eles realmente querem.&lt;/p>&#xD;
+    &lt;p>Conheça seus Stakeholders. Melhor ainda, trabalhe junto com eles e assegure-se que você tenha entendido as suas necessidades. Comece identificando todos os Stakeholders e então mantenha uma comunicação e colaboração aberta e freqüente entre eles e a equipe de desenvolvimento.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;h2>Separe o problema da solução&lt;/h2>&#xD;
+&lt;blockquote>&#xD;
+    &lt;p>Com freqüência nos precipitamos ao apresentar uma solução sem a devida compreensão do problema. A final de contas, nós aprendemos a solucionar problemas e não a definir problemas, isso é fácil. No entanto, essa forma de pensar limita o seu entendimento do problema, impõe restrições artificiais e dificulta a análise equilibrada, ou mesmo o conhecimento de quais são as alternativas existentes.&lt;/p>&#xD;
+    &lt;p>Assegure-se de ter entendido o problema antes de definir a solução. Ao separar claramente o problema (o que os clientes necessitam) da solução (o que o sistema deve fazer), nos ajuda a manter o foco apropriado e facilita acomodar as formas alternativas de resolver o problema.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;h2>Crie um entendimento compartilhado do domínio&lt;/h2>&#xD;
+&lt;blockquote>&#xD;
+    &lt;p>Especialistas de domínio normalmente possuem limitações técnicas; desenvolvedores, arquitetos e testadores normalmente possuem limitações de domínio; e revisores e outros Stakeholders normalmente possuem limitações de tempo para acompanhar o projeto e aprender sobre o domínio do problema. Como resultado, as pessoas possuem, normalmente, um entendimento pobre ou inconsistente do domínio do problema, o que provoca problemas de comunicação e eleva as chances de entregar algo de pouquíssimo valor aos Stakeholders.&lt;/p>&#xD;
+    &lt;p>Aumente e compartilhe o entendimento de todos sobre o domínio. Um entendimento conciso e compartilhado do domínio do problema melhora a comunicação e a efetividade do projeto. Comece definindo o problema no documento de Visão. Na medida em que você adquirir novos conhecimentos, capture os principais conceitos e terminologias do domínio no Glossário para assegurar um uso compartilhado consistente da linguagem do domínio.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;h2>Use os cenários e os casos de uso para capturar os requisitos&lt;/h2>&#xD;
+&lt;blockquote>&#xD;
+    &lt;p>Muitas empresas ainda documentam requisitos como uma lista de declarações, que são algumas vezes chamadas de &quot;lista de desejos&quot;. Para os Stakeholders, essas listas são normalmente difíceis de entender porque elas precisam que o usuário final leia e traduza mentalmente a lista em uma visualização de como os requisitos irão interagir no sistema.&lt;/p>&#xD;
+    &lt;p>Use os cenários e os casos de uso para capturar os requisitos funcionais de forma que facilite a compreensão dos Stakeholders. Os requisitos não-funcionais, tais como desempenho, estabilidade ou usabilidade são importantes e podem ser documentados como Requisitos Suplementares, usando as técnicas tradicionais.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;h2>Estabeleça e mantenha um acordo sobre prioridades&lt;/h2>&#xD;
+&lt;blockquote>&#xD;
+    &lt;p>Tomar decisões erradas sobre o que desenvolver depois pode resultar em desperdício de esforço, em liberação de capacidades que nunca serão usadas ou na identificação de problemas tardiamente no projeto (resultando em atrasos e até no fracasso do projeto).&lt;/p>&#xD;
+    &lt;p>Priorize os requisitos para implementação trabalhando regulamente com os Stakeholders durante a evolução do produto. Faça escolhas que agreguem valor e reduzam os riscos, enquanto se constrói um sistema que possa evoluir.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;h2>Faça compensações para maximizar o valor&lt;/h2>&#xD;
+&lt;blockquote>&#xD;
+    &lt;p>A análise de custo-benefício não pode ser realizada independentemente da arquitetura. Os requisitos estabelecem os benefícios do sistema para o Stakeholder, enquanto a arquitetura estabelece o custo. O custo de um benefício pode influenciar no valor do benefício percebido pelo Stakeholder.&lt;/p>&#xD;
+    &lt;p>Trabalhe com os Stakeholders e com os membros da equipe para priorizar os requisitos e desenvolver arquiteturas candidatas para implementar estas soluções. Use as arquiteturas candidatas para avaliar o custo dos benefícios. Soluções candidatas são consideradas num nível elevado durante a determinação da viabilidade arquitetural. Diferentes perspectivas arquiteturais podem resultar em diferentes estimativas de custo versus benefícios. A arquitetura candidata que forneça a maior cobertura no menor custo é selecionada para o desenvolvimento futuro.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;h2>Gerencie o escopo&lt;/h2>&#xD;
+&lt;blockquote>&#xD;
+    &lt;p>As mudanças são inevitáveis. Embora as mudanças apresentem oportunidades para elevar o valor para o stakeholder, mudanças irrestritas resultarão num sistema inchado e deficiente e não atende às necessidades do Stakeholder.&lt;/p>&#xD;
+    &lt;p>Gerencie as mudanças mantendo a concordância dos Stakeholders. Os processos modernos sempre gerenciam mudanças, adaptando-se continuamente às mudanças ocorridas no ambiente e às necessidades dos Stakeholders, avaliando o impacto das mudanças, fazendo análise das alternativas, e re-priorizando o trabalho. As expectativas dos Stakeholders e dos desenvolvedores devem ser realísticas e alinhadas no ciclo de vida de desenvolvimento.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;h2>Saiba quando parar&lt;/h2>&#xD;
+&lt;blockquote>&#xD;
+    &lt;p>Excesso de engenharia para construir sistemas não só desperdiça recursos, como também eleva a complexidade do sistema.&lt;/p>&#xD;
+    &lt;p>Pare de desenvolver o sistema quando a qualidade desejada for atingida. Lembre-se que &quot;A qualidade é a compatibilidade com os requisitos&quot; &lt;a href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#CRO79&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[CRO79]&lt;/a>. É isto que dá um sentido de término na prática. Separe o problema da solução, assegurando que a solução realmente resolva o problema. Depois que os requisitos críticos forem implementados e validados, o sistema estará pronto para a aceitação dos Stakeholders.&lt;/p>&#xD;
+&lt;/blockquote></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

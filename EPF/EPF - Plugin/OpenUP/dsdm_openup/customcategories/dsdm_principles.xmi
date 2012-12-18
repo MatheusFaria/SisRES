@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Rgzv_hNnd8wiF1CPBl_tzg" name="new_custom_category,_9q7KkFlpEdu-hcil0jQ6jA" guid="-Rgzv_hNnd8wiF1CPBl_tzg" changeDate="2006-10-11T18:52:36.781-0300" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    DSDM&amp;nbsp;nine guiding principles, listed below. Four principles have been specifically emphasised for this plugin,&#xD;
+    although all&amp;nbsp;nine support and complement the OpenUP principles.&amp;nbsp; Those principles emphasised in this plugin&#xD;
+    are highlighted.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>&lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/guidances/practices/I_user_involvement.html&quot; guid=&quot;_7VZUEFldEdul8L-IGeA7TA&quot;>I. Active user involvement is imperative&lt;/a>&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>&lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/guidances/practices/II_empowered_teams.html&quot; guid=&quot;_IFFSwFleEdul8L-IGeA7TA&quot;>II. DSDM teams must be empowered to make decisions&lt;/a>&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>III. The focus is on frequent delivery of products&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>&lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/guidances/practices/IV_fit_for_purpose.html&quot; guid=&quot;_NRhicFleEdul8L-IGeA7TA&quot;>IV. Fitness for purpose is the essential criterion for acceptance of deliverables&lt;/a>&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>V. Iterative and incremental development is necessary to converge on an accurate business solution&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>VI. All changes during development are reversible&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>VII. Requirements are baselined at a high level&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>VIII. Testing is integrated throughout the lifecycle&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>&lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/guidances/practices/IX_collaborative_approach.html&quot; guid=&quot;_SLydAFleEdul8L-IGeA7TA&quot;>IX. A collaborative and co-operative approach between all stakeholders is essential&lt;/a>&lt;/strong>&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

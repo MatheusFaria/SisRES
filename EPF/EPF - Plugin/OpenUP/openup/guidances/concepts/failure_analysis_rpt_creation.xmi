@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-9gUpkUYqONF3x8UWwAO_zw" name="failure_analysis_rpt_creation,_0jhR0MlgEdmt3adZL5Dmdw" guid="-9gUpkUYqONF3x8UWwAO_zw" changeDate="2007-05-17T14:00:23.546-0300" version="1.0.0">
+  <mainDescription>&lt;h3>Introdução&lt;/h3>&#xD;
+&lt;p>Durante o procedimento de teste, você vai encontrar falhas relacionadas com a execução dos seus testes com várias formas, tais como defeitos de código, erros de usuário, mau funcionamento do programa e problemas com scripts de teste. Este conceito discute algumas formas de conduzir a análise de falhas e, em seguida, relatar suas descobertas.&lt;/p>&#xD;
+&lt;h3>Análise de Falhas&lt;/h3>&#xD;
+&lt;p>Depois de executar o teste, é uma boa prática identificar entradas para revisão dos resultados do esforço de teste. Algumas fontes prováveis são os defeitos que ocorreram durante a execução dos scripts de teste, as métricas de solicitação de mudança e os detalhes no &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/workproducts/test_log_CBA2FDF4.html&quot; guid=&quot;_0ZlSsMlgEdmt3adZL5Dmdw&quot;>Artefato: Registro de Teste&lt;/a>.&lt;/p>&#xD;
+&lt;p>A execução de scripts de teste resulta em erros de diferentes tipos, tais como defeitos encontrados, comportamentos inesperados ou falhas gerais do script de teste. Quando você executa os scripts de teste, uma das coisas mais importantes a fazer é distinguir entre as causas e os efeitos da falha. É importante diferenciar as falhas no sistema sob teste das relacionadas com os próprios testes.&lt;/p>&#xD;
+&lt;p>As métricas de solicitações de mudança são úteis para analisar e corrigir falhas nos testes. Selecione métricas que irão facilitar a criação de informes incidentes a partir de uma coleção de solicitações de mudança.&lt;/p>&#xD;
+&lt;p>Métricas de solicitação de mudança que podem ser úteis para você em sua análise de falhas são:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>cobertura do teste&lt;/li>&#xD;
+    &lt;li>prioridade&lt;/li>&#xD;
+    &lt;li>impacto&lt;/li>&#xD;
+    &lt;li>tendências para defeito&lt;/li>&#xD;
+    &lt;li>densidade&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Finalmente, uma das fontes mais críticas para a sua análise de falas é o &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/workproducts/test_log_CBA2FDF4.html&quot; guid=&quot;_0ZlSsMlgEdmt3adZL5Dmdw&quot;>Artefato: Registro de Teste&lt;/a>. Registros relevantes podem vir de várias fontes: eles podem ser capturados pelas ferramentas que você usa (ferramentas de diagnóstico e de execução de testes), geradas por testes automatizados ou ferramentas de métricas, saídas dos próprios itens alvo de teste ou gravados manualmente pelo testador. Reúna todas as fontes disponíveis de registro de teste e examine seus conteúdos. Verifique se todos os testes previstos executaram até a conclusão, e que todos os testes necessários, foram previstos.&lt;/p>&#xD;
+&lt;h3>Testes Auto-Documentáveis&lt;/h3>&#xD;
+&lt;p>Para testes automatizados, é importante que o próprio teste analise os resultados e reporte claramente para si se executou com sucesso ou falhou. Isto proporciona a forma mais eficiente de executar uma série de testes, sem a necessidade de intervenção humana. Quando da autoria de testes auto-documentáveis, garanta que o reporte considere tanto resultados corretos como falhas.&lt;/p>&#xD;
+&lt;h3>Gravando Suas Constatações&lt;/h3>&#xD;
+&lt;p>Depois de ter conduzido a sua análise de falhas, você pode decidir formalizar os resultados desta análise, gravando suas constatações em um informe. Existem vários fatores que influenciam na decisão de registrar a sua análise de falhas em um informe. Alguns dos principais fatores incluem: nível de formalidade do processo de teste, complexidade do esforço de teste e a necessidade de comunicar os resultados do teste para toda a equipe de desenvolvimento. Em ambientes menos formais, pode ser suficiente gravar a sua análise de falhas de forma resumida.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

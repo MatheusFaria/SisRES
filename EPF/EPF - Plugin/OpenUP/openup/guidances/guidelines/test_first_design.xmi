@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_Hg5UUMPbEdmbOvqy4O0adg" name="test_first_design,_0Y6kUMlgEdmt3adZL5Dmdw" guid="_Hg5UUMPbEdmbOvqy4O0adg" changeDate="2007-06-02T07:44:20.985-0300" version="7.1.0">
+  <mainDescription>&lt;h3>Introdução&lt;/h3>&#xD;
+&lt;p>Com o Design Teste-Primeiro (TFD) você faz o design detalhado de uma forma just-in-time (JIT) através da escrita de um simples teste antes de escrever bastante código produtivo necessário para executar o teste. Quando você tiver que adicionar uma nova funcionalidade ao seu sistema, execute os seguintes passos:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Adicione rapidamente um teste de desenvolvedor&lt;/strong>. Você necessita de código fonte apenas para fazer o erro acontecer. Por exemplo, um novo método prestes a ser adicionado a uma classe poderá ser criado apenas para provocar uma exceção fatal.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Execute os seus testes&lt;/strong>. Você executará basicamente a suíte completa de teste, embora por causa da velocidade você possa decidir executar somente um subconjunto. O objetivo é assegurar que o novo teste falhe de fato.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Atualize o código produzido&lt;/strong>. O objetivo é adicionar apenas a funcionalidade necessária para que o código passe no teste.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Execute sua suíte de teste de novo&lt;/strong>. Se os testes falharem você terá que atualizar o código funcional e testá-lo de novo. Uma vez que os testes passem repita os passos.&lt;/li>&#xD;
+&lt;/ol>&lt;br />&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;600&quot; alt=&quot;Fluxo do Design Teste-Primeiro&quot; src=&quot;./resources/test_first_design.jpg&quot; width=&quot;294&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;h4>Por Que TFD?&lt;/h4>&#xD;
+&lt;p>Uma vantagem significativa do TFD é que ele lhe permite executar pequenos passos ao escrever o software, o que não é somente mais seguro como também mais produtivo do que escrever código em grandes quantidades. Por exemplo, suponha que você tenha adicionado um novo código funcional, compilado e testado ele. Existem grandes chances que seus testes falhem por causa de defeitos existentes no novo código. É muito mais fácil encontrar, e então reparar, estes defeitos se você tiver escrito apenas cinco linhas novas de código ao invés de cinqüenta. A implicação disto é que, o quão mais rápido forem seu compilador e sua suíte de teste de regressão, mais atrativo será continuar com passos cada vez menores.&lt;/p>&#xD;
+&lt;p>Existem outras três estratégias comuns de teste (listadas aqui em ordem de eficácia).&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Escrever diversos testes primeiro&lt;/strong>. Esta é uma variante do TFD onde você escreve mais de um teste antes de escrever bastante código produtivo necessário para executar os testes. A vantagem é que você não precisa construir seu sistema como normalmente é feito, podendo economizar tempo. Tem a desvantagem que você terá que escrever mais código produtivo de uma só vez, aumentando a dificuldade de encontrar a causa de erros novos.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Testar após o fato&lt;/strong>. Nesta abordagem você escreve um pouco de código produtivo e então escreve bastante teste para valida-lo. Esta abordagem tem a vantagem de que você, pelo menos, ainda está validando o código, mas tem a desvantagem de que você perde o benefício inerente do design de escrever o teste primeiramente.&lt;/li>&#xD;
+&lt;/ol>&lt;br />&#xD;
+&lt;h3>Coisas boas para saber&lt;/h3>&#xD;
+&lt;p>1. Uma regra assumida pelo TDD é que você tenha um framework de teste unitário disponível. Os desenvolvedores de software Ágeis usam com freqüência a família de ferramentas de código aberto xUnit, tais como &lt;a href=&quot;http://www.junit.org/&quot;>&lt;strong>JUnit&lt;/strong>&lt;/a> ou &lt;a href=&quot;http://www.vbunit.org/&quot;>&lt;strong>VBUnit&lt;/strong>&lt;/a>, embora as ferramentas comerciais também sejam opções viáveis.&lt;/p>&#xD;
+&lt;p>2. Design Orientado a Teste (TDD) = TFD + &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/refactoring_1B63BA3B.html&quot; guid=&quot;_Poc7IPDzEdqYgerqi84oCA&quot;>Re-fatoração&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>3. TFD/TDD é normalmente usado com código comercial orientado a objeto, embora esta abordagem possa também ser usada para código processual, código de interface de usuário e código de base de dados.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

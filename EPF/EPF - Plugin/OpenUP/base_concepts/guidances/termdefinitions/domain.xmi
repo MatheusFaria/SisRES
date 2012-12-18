@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_yHEVYtnmEdmO6L4XMImrsA" name="domain,_yHEVYdnmEdmO6L4XMImrsA" guid="_yHEVYtnmEdmO6L4XMImrsA" changeDate="2007-02-27T16:45:19.192-0300" version="7.2.0">
+  <mainDescription>&lt;p>(1) Uma área de conhecimento ou atividade caracterizada por uma família de valores relacionados.&lt;/p>&#xD;
+&lt;p>(2) Uma categoria específica de problema, que se caracteriza por um corpo de conhecimento, atividades e comportamentos.&lt;/p>&#xD;
+&lt;p>(3) Uma hierarquia que pode ser refinada e que agrupa &lt;a class=&quot;elementLink&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/work_product_826E4C22.html&quot; guid=&quot;_H4JXwB_SEdq6CKKKq4D7YA&quot;>produtos de trabalho&lt;/a> relacionados&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

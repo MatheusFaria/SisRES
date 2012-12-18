@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:PracticeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-R-rMtw50PBS-2JD2XITK_g" name="new_practice,_NRhicFleEdul8L-IGeA7TA" guid="-R-rMtw50PBS-2JD2XITK_g" changeDate="2006-10-11T17:25:31.500-0300" version="1.0.0">
+  <mainDescription>The focus of DSDM is on delivering the necessary functionality at the required time. The computer system can be more&#xD;
+rigorously engineered later if such an approach is acceptable. Traditionally the focus has been on satisfying the contents&#xD;
+of a requirements document and conforming to previous deliverables, even though the requirements are often inaccurate, the&#xD;
+previous deliverables may be flawed and the business needs may have changed since the start of the project.</mainDescription>
+</org.eclipse.epf.uma:PracticeDescription>

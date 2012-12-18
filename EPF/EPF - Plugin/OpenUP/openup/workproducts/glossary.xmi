@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-iOn7_gfX_iELWRNGJ2JKPQ" name="glossary,_Wn7HcNcEEdqz_d2XWoVt6Q" guid="-iOn7_gfX_iELWRNGJ2JKPQ" changeDate="2007-04-20T15:32:20.644-0300" version="1.0.0">
+  <mainDescription>&lt;p>O glossário ajuda a evitar problemas de comunicação fornecendo dois recursos essenciais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Um local central para procurar termos e abreviaturas que sejam novos para os membros da equipe de desenvolvimento&lt;/li>&#xD;
+    &lt;li>Definições dos termos que são usados de formas específicas dentro do domínio&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>As definições para os termos do Glossário vêm de diversas fontes, tais como documentos de requisitos, especificações e discussões com os Stakeholders e com os peritos do domínio.&lt;/p></mainDescription>
+  <keyConsiderations>&lt;p>Em alguns projetos que não envolvem modelagem de negócio ou domínio, o Glossário é o principal artefato para registrar as informações sobre o domínio do negócio do projeto.&lt;/p>&#xD;
+&lt;p>Embora listado como uma saída ou entrada das tarefas associadas com a disciplina de requisitos, este artefato pode ser atualizado a qualquer momento, por qualquer papel, assim que novos termos sejam identificados.&lt;/p></keyConsiderations>
+  <purpose>O objetivo é que o glossário forneça um vocabulário comum acordado por todos os Stakeholders. Pode ajudar pessoas de diferentes grupos funcionais a alcançar uma compreensão mútua do sistema. O objetivo não é registrar todos os termos possíveis, mas somente aqueles que não estão claros, são ambíguos ou necessitem de elaboração.</purpose>
+  <impactOfNotHaving>Os enganos sobre o significado de itens de dados contribuem muito para os projetos serem cancelados. Alguns deles tornam-se óbvios somente nos estágios finais de teste do sistema e pode ser extremamente caro corrigi-los.</impactOfNotHaving>
+  <representationOptions>&lt;p>O glossário é uma simples lista em ordem alfabética dos termos do domínio e suas definições. Pode ser capturado em uma planilha, documento ou ser publicado em um site Wiki para simplificar o acesso e a manutenção.&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

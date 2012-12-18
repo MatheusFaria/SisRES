@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-z4NERMW6W4_X_5DuTTXv6A" name="new_checklist,_OHRDMAarEdy1uLAzgK8btg" guid="-z4NERMW6W4_X_5DuTTXv6A" version="7.2.0">
+  <sections xmi:id="_EQJdAAa_Edy1uLAzgK8btg" name="Você elaborou o plano com a equipe?" guid="_EQJdAAa_Edy1uLAzgK8btg">
+    <sectionDescription>&lt;p>O planejamento da iteração não deve ser feito de forma isolada, e todos os membros da equipe devem ser envolvidos.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_lmIhYAarEdy1uLAzgK8btg" name="Os objetivos da iteração estão claros?" guid="_lmIhYAarEdy1uLAzgK8btg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>Os objetivos estão baseados nas prioridades dos Stakeholders?&lt;/li>&#xD;
+  &lt;li>Eles ajudam a equipe a focar no que deve ser feito na iteração?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_i2r4kAarEdy1uLAzgK8btg" name="Todos os principais marcos para a iteração foram identificados?" guid="_i2r4kAarEdy1uLAzgK8btg">
+    <sectionDescription>&lt;p>Eles podem incluir datas para as revisões da iteração, demonstrações (demos) e revisões retrospectivas.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_oKlbIAarEdy1uLAzgK8btg" name="Os membros da equipe sentem-se confiantes com os Itens de Trabalho atribuídos a eles?" guid="_oKlbIAarEdy1uLAzgK8btg">
+    <sectionDescription>&lt;p align=&quot;left&quot;>Olhando para os resultados da iteração anterior, a quantidade de trabalho selecionada para a iteração atual parece viável?&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>Se a equipe achar que existe muito a ser feito, discuta com os Stakeholders se algum Item de Trabalho pode ser postergado para iterações futuras.&lt;/p></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

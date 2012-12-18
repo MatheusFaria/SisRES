@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-oBlTl14OGmHTGyPZ1ngGfA" name="new_term_definition,_h1YD4ON9EduGw-tCm6mdQg" guid="-oBlTl14OGmHTGyPZ1ngGfA" changeDate="2007-04-05T10:57:37.136-0300" version="7.2.0">
+  <mainDescription>Os atributos são propriedades de entidades tais como (mas não limitadas a) Itens de Trabalho, Caos de Uso e Testes. Os atributos captam importantes informações adicionais sobre a entidade que podem ser utilizadas para responder a pesquisas sobre o status do projeto de desenvolvimento.&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

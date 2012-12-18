@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-g0jWGmg-E0rCQEmnibTDIA" name="new_guideline,_OlyWoOX7Edu8VZPtlaU33g" guid="-g0jWGmg-E0rCQEmnibTDIA" changeDate="2007-07-25T16:51:48.198-0300" version="1.0.0">
+  <mainDescription>&lt;p>A re-fatoração envolve a melhoria do design do código existente sem alterar o comportamento do sistema. Não é explicitamente a adição ou alteração de comportamento, mas a melhoria do design do comportamento existente.&lt;/p>&#xD;
+&lt;p>Um conjunto completo de testes de desenvolvedor é necessário antes que a re-fatoração seja seguramente aplicada. É fundamental que o comportamento do sistema esteja em um estado conhecido e verificavelmente correto antes da modificação do design, de forma que você possa melhorar o design sem o receio de que a implementação da modificação cause erros. A re-fatoração é uma transformação segura para melhorar o código, mas só é segura se existirem testes que possam comprovar que o sistema funciona como esperado.&lt;/p>&#xD;
+&lt;p>A re-fatoração inicia quando uma área, que precisa de melhorias é identificada no sistema, quer através da análise do código, ou qualquer outra representação do design. Os problemas identificados são às vezes chamados de &quot;cheiros&quot;.&lt;/p>&#xD;
+&lt;p>Seguem alguns cheiros para observar se poderão conduzir a re-fatoração:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Código duplicado&lt;/b>: O código duplicado torna o sistema mais difícil de entender e manter.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Grandes Elementos ou Métodos de Design&lt;/b>: Grandes elementos ou métodos de design diminuem a capacidade das pessoas de compreenderem o design, reduzem o potencial de reuso e tornam os testes de desenvolvedor mais difíceis.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Elementos mal nomeados&lt;/b>: independente de serem variáveis, funções, classes ou componentes, seus nomes devem denotar o que eles são, de forma que o código possa ser mantido.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Acoplamento justo&lt;/b>: Cada elemento de design deve funcionar com o mínimo de preocupação sobre os aspectos internos dos outros elementos de design. Caso contrário, as alterações em um elemento podem causar efeitos indesejáveis em outros elementos.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Como você pode ver nesta lista, a re-fatoração pode melhorar a &quot;parte interna&quot; de um elemento de design, a interface do elemento ou os relacionamentos e a colaboração entre os elementos. Além disso, muitos dos cheiros são caracterizados como fatores que tornam o software mais difícil de entender; e que a re-fatoração torna o sistema mais simples.&lt;/p>&#xD;
+&lt;p>Apos um problema ter sido identificado, um método de re-fatoração poderá ser selecionado para melhorar a situação. Existem catálogos de métodos de re-fatoração disponíveis que são padrões de alteração que vão resolver os problemas comuns, mantendo o comportamento do sistema.&lt;/p>&#xD;
+&lt;p>Seguem exemplos de métodos de re-fatoração:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Extração de Método&lt;/b>: Colocar o código duplicado em um único método ou extrair uma parte de um método grande para um novo método.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Extração de Classe&lt;/b>: Colocar uma parte coesa de uma classe em uma nova classe, para reduzir o tamanho de um elemento de design que seja muito grande.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Re-nomeação de Método&lt;/b>, &lt;b>Re-nomeação de Classe&lt;/b> ou &lt;b>Re-nomeação de Variável&lt;/b>: Dê um nome mais significativo a um elemento para que se torne mais compreensível.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Extração de Interface&lt;/b>: Crie uma interface limpa para um elemento para reduzir o acoplamento.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Quando a re-fatoração for aplicada, os testes de desenvolvedor devem ser re-executados para garantir que o sistema ainda se comporta corretamente. É importante que o sistema esteja funcionando corretamente após cada re-fatoração. Embora muitas re-fatorações possam ser feitas em conjunto para impulsionar grandes mudanças em todo o código base, os testes devem ser executados com sucesso em cada re-fatoração aplicada. A re-fatoração deve ser aplicada como pequenas transformações que preservam o comportamento.&lt;/p>&#xD;
+&lt;p>Conforme mencionado anteriormente, a re-fatoração exige a cobertura de teste de desenvolvedor plena da área sob consideração. Existem outras técnicas que permitem a re-fatoração. Os padrões de codificação definem um estilo comum e tornam mais fácil a re-fatoração consistente. Uma atitude de propriedade coletiva de código por parte da equipe é muito importante. Cada desenvolvedor deve entender que a re-fatoração pode ser aplicada em todo o código base para melhorar a implementação.&lt;/p>&#xD;
+&lt;p>Para uma maior cobertura sobre este assunto, incluindo uma lista de &quot;cheiros&quot; e de um catálogo de re-fatorações para responder a eles, veja [&lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#FOW99&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>FOW99&lt;/a>].&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

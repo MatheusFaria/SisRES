@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-_dNuyh-0q5vpCiIiLfbj6w" name="supporting_requirements,_BVh9cL-CEdqb7N6KIeDL8Q" guid="-_dNuyh-0q5vpCiIiLfbj6w" changeDate="2007-06-06T09:19:08.886-0300" version="7.2.0">
+  <mainDescription>&lt;p>Juntos, os Requisitos Suplementares e os Casos de Uso definem todos os requisitos do sistema. Os Casos de Uso descrevem os requisitos comportamentais do sistema, e os Requisitos Suplementares descrevem todos os outros requisitos que não são capturados nas Especificações de Caso de Uso. Ao fazer esta distinção simplificamos a manutenção.&lt;/p>&#xD;
+&lt;p>Os Requisitos Suplementares podem ser categorizados de acordo com o modelo FURPS+ (Funcional, Usabilidade, Confiabilidade, Desempenho, Suportabilidade + Restrições). Para mais informações sobre esta classificação, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/supporting_requirements_B2C4D610.html&quot; guid=&quot;_VXZ5wO0IEdqHTdbLTmC5IQ&quot;>Conceito: Requisitos Suplementares &lt;/a>.&lt;/p>&#xD;
+&lt;p>A figura abaixo ilustra o relacionamento entre os Requisitos Suplementares, as Especificações de Caso de Uso e os Atores.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;400&quot; alt=&quot;&quot; src=&quot;./resources/supporting_reguirements2.gif&quot; width=&quot;600&quot; />&#xD;
+&lt;/p></mainDescription>
+  <impactOfNotHaving>&lt;p>O objetivo deste produto de trabalho é certificar que todos os tipos de requisito estão cobertos, o que reduz o risco da não consideração de alguma característica importante do sistema. Os requisitos FURPS+ são gerais ao sistema, e influenciam os Mecanismos Arquiteturais que você irá criar, guiando assim o desenvolvimento das fundações do sistema. Estes requisitos são normalmente os principais itens de custo, porque eles determinam as escolhas arquiteturais.&lt;/p>&#xD;
+&lt;p>Além disso, se você não capturar os requisitos gerais ao sistema em um lugar central, mas repeti-los em todos os Casos de Uso, o resultado implicará em mais manutenção e mais possibilidades de erro.&lt;/p></impactOfNotHaving>
+  <representationOptions>&lt;h4>Recomendação: Use o Template de Especificação de Requisitos Suplementares&lt;/h4>&#xD;
+&#xD;
+&lt;p>O template de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/templates/supporting_requirements_spec_4223C78.html&quot; guid=&quot;_ItYXcNa9Edqrw4BYKyYKiA&quot;>Especificação de Requisitos Suplementares&lt;/a> fornece uma ferramenta para registrar, estruturar e organizar os Requisitos Suplementares.&lt;/p>&#xD;
+&#xD;
+&lt;p>Mesmo em um projeto pequeno, uma ferramenta de gestão de requisitos, uma base de dados ou uma planilha, são recomendadas para priorizar e controlar os requisitos. Se os Stakeholders estiverem confortáveis em acessar os requisitos diretamente a partir dessa ferramenta ou acessar um informe gerado automaticamente pela ferramenta, você não necessitará de um documento em separado.&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

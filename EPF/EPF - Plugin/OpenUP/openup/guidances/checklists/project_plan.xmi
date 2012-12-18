@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-iMEYJ2Jbm9S8GihBKFOaFA" name="new_checklist,_-qtjsAasEdy1uLAzgK8btg" guid="-iMEYJ2Jbm9S8GihBKFOaFA" version="7.2.0">
+  <sections xmi:id="_J4SxQAa_Edy1uLAzgK8btg" name="O plano foi elaborado com a equipe?" guid="_J4SxQAa_Edy1uLAzgK8btg">
+    <sectionDescription>&lt;p>O planejamento do projeto não deve ser feito de forma isolada, e todos os membros da equipe devem ser envolvidos.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Ln-rYAatEdy1uLAzgK8btg" name="A equipe concorda com as práticas de desenvolvimento a serem utilizadas no projeto?" guid="_Ln-rYAatEdy1uLAzgK8btg">
+    <sectionDescription>&lt;p>Quem executa cada papel?&lt;/p>&#xD;
+&#xD;
+&lt;p>Quanto tempo irá durar a iteração?&lt;/p>&#xD;
+&#xD;
+&lt;p>Quais padrões de codificação devem ser seguidos?&lt;/p>&#xD;
+&#xD;
+&lt;p>A estrutura de diretórios do projeto foi identificada?&lt;/p>&#xD;
+&#xD;
+&lt;p>Quais ferramentas de desenvolvimento, teste e criação da construção serão usadas?&lt;/p>&#xD;
+&#xD;
+&lt;p>Quais medições e métricas serão usadas para acompanhar o progresso?&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_MdRUoAatEdy1uLAzgK8btg" name="Os marcos do projeto foram definidos?" guid="_MdRUoAatEdy1uLAzgK8btg">
+    <sectionDescription>&lt;p>Quais são os principais marcos para cada liberação?&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_T2-tIAatEdy1uLAzgK8btg" name="A estratégia de implantação foi discutida?" guid="_T2-tIAatEdy1uLAzgK8btg">
+    <sectionDescription>&lt;p>Como o produto será entregue ao cliente?&lt;/p></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

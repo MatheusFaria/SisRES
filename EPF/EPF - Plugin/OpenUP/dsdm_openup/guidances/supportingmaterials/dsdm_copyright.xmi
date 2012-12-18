@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-sjX-6WbGjFFcqRGjRO71ww" name="dsdm_copyright,_oefa4DC2Edy9qv_6l9Gj0A" guid="-sjX-6WbGjFFcqRGjRO71ww" changeDate="2007-07-13T20:14:01.249-0300" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    &lt;a class=&quot;elementLink&quot; href=&quot;./../../../dsdm_openup/guidances/supportingmaterials/copyright_dsdm.html&quot;&#xD;
+    guid=&quot;_Rph5oDGYEdyrsZhCyzLMxw&quot;>OpenUP/DSDM Copyright&lt;/a>.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

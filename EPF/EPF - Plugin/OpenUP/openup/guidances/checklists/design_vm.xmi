@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-HQSI39vBrjpmQL1qHYOJtA" name="new_checklist,_nnSXcD6SEduAL-bCqar_dg" guid="-HQSI39vBrjpmQL1qHYOJtA" version="1.0.0">
+  <sections xmi:id="_sG8ZoD6SEduAL-bCqar_dg" name="Pacotes e Organização" guid="_sG8ZoD6SEduAL-bCqar_dg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>A divisão em pacotes está lógica e consistente? Faz sentido para os membros da equipe e os Stakeholders?&lt;/li>&#xD;
+  &lt;li>Os nomes dos pacotes descrevem exatamente seu conteúdo e o papel que executam na arquitetura? Eles seguem as convenções de criação de nomes?&lt;/li>&#xD;
+  &lt;li>As interfaces e os pacotes públicos fornecem um conjunto de serviços logicamente coesivos?&lt;/li>&#xD;
+  &lt;li>Todo o conteúdo de um pacote esta listado? As classes dentro de um pacote estão coesivas?&lt;/li>&#xD;
+  &lt;li>As dependências entre pacotes correspondem às dependências das classes contidas neles?&lt;/li>&#xD;
+  &lt;li>Existem pacotes ou classes dentro de um pacote que podem ser separadas em um pacote independente ou em um sub-pacote?&lt;br />&#xD;
+  &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_tx6tsD6SEduAL-bCqar_dg" name="Visões" guid="_tx6tsD6SEduAL-bCqar_dg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>Cada diagrama ajuda o analista a raciocinar sobre o design, ou comunica as principais decisões de design à equipe?&lt;/li>&#xD;
+  &lt;li>Os relacionamentos entre os diagramas estão claros quando diversos diagramas são usados para descrever um comportamento?&lt;/li>&#xD;
+  &lt;li>É fácil navegar entre os diagramas relacionados?&lt;/li>&#xD;
+  &lt;li>Cada diagrama foca uma perspectiva relevante? Por exemplo, um grupo de diagramas mostra uma única classe e seus relacionamentos diretos, ao invés de usar um ou dois diagramas para mostrar todas as classes?&lt;/li>&#xD;
+  &lt;li>Cada diagrama está completo e mínimo? Mostra tudo que é relevante para a visão e nada mais?&lt;/li>&#xD;
+  &lt;li>Os diagramas estão arrumados e fáceis de interpretar, com o mínimo de desordem?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_yeFh4D6SEduAL-bCqar_dg" name="UML" guid="_yeFh4D6SEduAL-bCqar_dg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>O modelo visual está em conformidade com os padrões da UML, de forma que todos os Stakeholders possam sempre compreender o modelo? (Veja a &lt;a href=&quot;http://www.uml.org/&quot; target=&quot;_blank&quot;>Página de recursos UML da OMG&lt;/a> Para maiores informações).&lt;/li>&#xD;
+  &lt;li>O modelo visual está em conformidade com os padrões de modelagem específicos do projeto ou da organização?&lt;/li>&#xD;
+  &lt;li>O modelo visual está consistente internamente? Por exemplo, se um diagrama de objetos mostra um relacionamento entre objetos, existe um relacionamento corresponder entre as classes apropriadas?&lt;/li>&#xD;
+  &lt;li>O nome de cada classe reflete claramente o seu papel?&lt;/li>&#xD;
+  &lt;li>Cada classe fornece o comportamento desejado?&lt;/li>&#xD;
+  &lt;li>Há pelo menos uma associação de realização definida para cada interface? A realização pode representar uma implementação do subsistema feita por terceiros.&lt;/li>&#xD;
+  &lt;li>Existem associações de dependência de cada subsistema com as interfaces que eles usam?&lt;/li>&#xD;
+  &lt;li>Cada operação, em uma interface de subsistema, está descrita em um diagrama de seqüência ou, pelo menos, mapeada diretamente para uma operação em uma classe?&lt;/li>&#xD;
+  &lt;li>Cada classe representa uma única abstração bem definida?&lt;/li>&#xD;
+  &lt;li>Os relacionamentos de generalização estão sendo usados somente para definições de herança e não de comportamento (implementação)? Ou seja, o comportamento é compartilhado através do uso de relacionamentos de associação, agregação e contenção ao invés de generalização?&lt;/li>&#xD;
+  &lt;li>As classes pai são abstratas em relacionamentos de generalização? As classes &quot;folha&quot; são as únicas classes concretas em uma hierarquia de generalização?&lt;/li>&#xD;
+  &lt;li>Os estereótipos são usados com consistência e significado?&lt;/li>&#xD;
+  &lt;li>Existem gráficos de estado para classes com mudanças de estado complexas ou restritivas?&lt;/li>&#xD;
+  &lt;li>Os relacionamentos têm nomes descritivos de papel ou de associação (um ou outro, mas não ambos), e multiplicidades corretas?&lt;/li>&#xD;
+  &lt;li>Os relacionamentos entre as classes são, sempre que possível, unidirecionais?&lt;br />&#xD;
+      &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_IsDY4D6TEduAL-bCqar_dg" name="Modelagem Visual Não-UML" guid="_IsDY4D6TEduAL-bCqar_dg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>A semântica da linguagem de modelagem visual está claramente definida, documentada e acessível aos membros da equipe? A semântica deve ser significativa para as pessoas que usam o modelo.&lt;/li>&#xD;
+  &lt;li>A semântica da linguagem de modelagem pode ser sempre compreendida? A linguagem está documentada suficientemente de modo que os membros da equipe possam compreender o modelo, mesmo depois de bastante tempo das decisões de design terem ocorrido?&lt;/li>&#xD;
+  &lt;li>Os membros da equipe e os stakeholders estão treinados na linguagem de modelagem que está sendo usada?&lt;/li>&#xD;
+  &lt;li>O modelo visual está em conformidade com a semântica da linguagem de modelagem visual? Ou seja, o significado dos símbolos nos diagramas está consistente em todo o modelo e todos os diagramas?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ProcessDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-HxOz1IfWcafsNQNlq8j7Zw" guid="-HxOz1IfWcafsNQNlq8j7Zw" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    This activity describes the tasks performed to&amp;nbsp;gather, specify, analyze and&amp;nbsp;validate&amp;nbsp;a subset of&#xD;
+    system's&amp;nbsp;requirements&amp;nbsp;prior to&amp;nbsp;implementation and verification. This does not imply that all&#xD;
+    requirements are detailed prior to commencing implementation. Rather, this activity is performed throughout the&#xD;
+    lifecycle with &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/roles/stakeholder.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholder&lt;/a>s and the entire development team collaborating to ensure that a clear,&#xD;
+    consistent, correct, verifiable, and feasible&amp;nbsp;set of requirements&amp;nbsp;is available, as needed, to drive&#xD;
+    implementation and verification.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    During Inception, the focus is on&amp;nbsp;gaining agreement on&amp;nbsp;the problem to be solved, gathering stakeholder needs&#xD;
+    and capturing high-level system features&amp;nbsp;(see activity &lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/capabilitypatterns/dsdm_initiate_project.html&quot; guid=&quot;_fQhC51nzEdug9t_2UE7UhQ&quot;>Initiate Project&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    During Elaboration, the focus shifts to defining the solution. This consists of&amp;nbsp;finding those requirements that&#xD;
+    have most value to stakeholders, that are particularly challenging or risky, or that are architecturally significant&#xD;
+    (See &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup_basic/tasks/find_and_outline_requirements.html&quot; guid=&quot;_P9cMUPV_EdmdHa9MmVPgqQ&quot;>Task: Find and Outline Requirements&lt;/a>).&amp;nbsp;Requirements&amp;nbsp;that&#xD;
+    are&amp;nbsp;prioritized, via the &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/workproducts/work_items_list.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Work Items List&lt;/a>,&amp;nbsp;for implementation in the early iterations are then described&#xD;
+    in sufficient detail to validate the development teams understanding of the requirements, to ensure concurrence with&#xD;
+    stakeholders, and to permit software development to begin (see &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup_basic/tasks/detail_requirements.html&quot; guid=&quot;_0e1mIMlgEdmt3adZL5Dmdw&quot;>Task: Detail Requirements&lt;/a>). For each of these requirements, associated test cases are defined to ensure that the&#xD;
+    requirements are verifiable and to provide the guidance needed for verification and validation (see &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup_basic/tasks/create_test_case.html&quot; guid=&quot;_0iwc0clgEdmt3adZL5Dmdw&quot;>Task: Create Test Cases&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    During Construction, the focus shifts to refining the system definition&lt;em>.&lt;/em> This consists of detailing the&#xD;
+    remaining requirements and associated test cases as needed to drive implementation and verification, and managing&#xD;
+    requirements change (see&amp;nbsp;activity &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/capabilitypatterns/ongoing_tasks-2.html&quot; guid=&quot;_0pJ_xslgEdmt3adZL5Dmdw&quot;>Ongoing Tasks&lt;/a>).&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ProcessDescription>

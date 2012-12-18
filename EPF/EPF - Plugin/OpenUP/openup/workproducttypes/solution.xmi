@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-sIh01vzZACgxRrG_sv7DVw" name="new_work_product_kind,_mC_6sDz7Edq03rqPoNVoKg" guid="-sIh01vzZACgxRrG_sv7DVw" changeDate="2005-10-14T18:43:49.126-0300" version="7.2.0">
+  <mainDescription>&lt;p>&#xD;
+    &lt;font face=&quot;Arial&quot; size=&quot;2&quot;>Muitos produtos de trabalho contribuem para o produto ou solução geral. Os testes e as idéias de testes são necessários para validar a solução. O material de apoio ao usuário, de qualquer tipo, é necessário ao produto final. O código fonte e outros elementos de implementação são necessários para construir o produto final. Estes produtos de trabalho, incluindo os que são empacotados junto com o produto,  são categorizados como Solução.&lt;/font>&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

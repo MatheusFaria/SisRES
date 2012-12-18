@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_zZxTYNnmEdmO6L4XMImrsA" name="keyword_index,2.0088322577945588E-305" guid="_zZxTYNnmEdmO6L4XMImrsA" changeDate="2005-06-14T12:32:05.050-0300" version="7.2.0">
+  <mainDescription>&lt;p class=&quot;banner&quot; align=&quot;left&quot;>O índice fornece a capacidade de procurar tópicos no site web de métodos baseado em palavras-chave ou assuntos. No momento em que as páginas são criadas, as palavras-chave são identificadas, o que permite que o índice seja construído. O frame no topo da página de índice permite que os tópicos iniciados por letras ou números sejam exibidos. O frame inferior exibe uma lista de tópicos e seus links relacionados. Clicar em um link faz com que a página relacionada seja exibida no frame principal da janela de navegador do site publicado.&lt;/p>&#xD;
+&lt;p class=&quot;banner&quot; align=&quot;left&quot;>&#xD;
+    &lt;br />&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

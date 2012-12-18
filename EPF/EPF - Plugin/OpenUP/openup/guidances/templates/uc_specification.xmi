@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_OaB-UMM2EdmSIPI87WLu3g" name="uc_specification,_0cpNwMlgEdmt3adZL5Dmdw" guid="_OaB-UMM2EdmSIPI87WLu3g" changeDate="2006-05-09T15:32:09.165-0300">
+  <attachments>resources/uc_specification_tpl.dot</attachments>
+</org.eclipse.epf.uma:GuidanceDescription>

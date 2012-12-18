@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-SnpZgz5EWgVuChDZCKIjCQ" name="new_supporting_material,_0RZMMFllEdu-hcil0jQ6jA" guid="-SnpZgz5EWgVuChDZCKIjCQ" changeDate="2006-10-27T07:25:13.328-0300" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    &lt;strong>Find out more about DSDM by visiting&lt;/strong> &lt;a href=&quot;http://www.dsdm.org&quot; target=&quot;_blank&quot;>&lt;font     color=&quot;#800080&quot;>&lt;strong>www.dsdm.org&lt;/strong>&lt;/font>&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    DSDM is a vendor-independent method that recognises that more projects fail because of people issues than technology.&#xD;
+    The focus is on helping people to work effectively together to achieve the business goals. DSDM is also tool and&#xD;
+    technique independent, enabling it to be used in any business and technical environment without tying the method users&#xD;
+    to any particular vendor.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    DSDM is published, maintained and continuously improved by the DSDM Consortium (&lt;a href=&quot;http://www.dsdm.org/&quot; target=&quot;_blank&quot;>www.dsdm.org&lt;/a>), a not-for-profit organisation dedicated to the promotion of best practice for&#xD;
+    software development and Agile project management.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A fundamental assumption of the DSDM approach is that &lt;b>nothing is built perfectly first time&lt;/b>, but that 80% of the&#xD;
+    solution can be produced in 20% of the time that it would take to produce the total solution. A basic problem with less&#xD;
+    agile approaches is the expectation that potential system users can predict what all their requirements will be at some&#xD;
+    distant point in time. This problem is compounded by the fact that the mere existence of a new system affects the&#xD;
+    users' requirements because the methods of working have changed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In the classical, sequential (or &quot;waterfall&quot;) approach, the next step cannot be started until the previous step is&#xD;
+    completed and fully tested. In practice, a lot of time is spent in getting from the 80% solution to the total solution,&#xD;
+    with the assumption that no step ever needs to be revisited. This means that considerable time is spent going back to&#xD;
+    &quot;completed&quot; steps and unravelling the defects from work that has previously been accepted. The result is that projects&#xD;
+    are delivered late and over budget or they fail to meet the business needs since time is not spent reworking the&#xD;
+    requirements.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    DSDM assumes that all previous steps can be revisited as part of its iterative approach. Therefore, &lt;b>the current step&#xD;
+    need be completed only enough to move to the next step&lt;/b>, since it can be finished in a later iteration. The premise&#xD;
+    is that the business requirements are likely to change anyway as understanding increases, so any further work would&#xD;
+    have been wasted!&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>Systems built using the DSDM approach address the current and imminent needs of the business&lt;/b> rather than the&#xD;
+    traditional approach of attacking all the perceived possibilities. The resulting system is, therefore, expected to&#xD;
+    better fit to the true business needs, be easier to test and be more likely to be accepted into the users' working&#xD;
+    practices. Since the development cost of most applications is only a small part of the total lifecycle costs, it makes&#xD;
+    sense to build simpler systems that are fit for purpose and easier to maintain and modify after their initial&#xD;
+    development. The latter is possible since maintenance can be treated as a further incremental delivery towards the&#xD;
+    total solution.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

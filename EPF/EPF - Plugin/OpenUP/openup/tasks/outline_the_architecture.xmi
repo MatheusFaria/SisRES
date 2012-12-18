@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_qDRSULBKEdm7Eph_l9Cn9w" name="analyze_architecture,_0f-1oMlgEdmt3adZL5Dmdw" guid="_qDRSULBKEdm7Eph_l9Cn9w" changeDate="2007-05-11T09:30:38.765-0300" version="1.0.0">
+  <mainDescription>&lt;p>Esta tarefa foca a identificação das metas arquiteturais para uma iteração que irão orientar o desenvolvimento e os testes. Baseia-se na experiência obtida em domínios do problema ou sistemas similares para restringir e focar a arquitetura de modo que o esforço não seja desperdiçado na re-invenção da arquitetura.&lt;/p></mainDescription>
+  <sections xmi:id="_3nMQQA3rEduibvKwrGxWxA" name="Identifique as metas arquiteturais" guid="_3nMQQA3rEduibvKwrGxWxA">
+    <sectionDescription>&lt;p>Trabalhe com a equipe, especialmente com os &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholders&lt;/a> e o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/analyst_39D7C49B.html&quot; guid=&quot;_0VxJsMlgEdmt3adZL5Dmdw&quot;>Analista&lt;/a>, para descrever as metas da arquitetura restantes e identificar quais são adequadas para esta iteração. Examine a &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/checklists/vision_E1FE2A1F.html&quot; guid=&quot;_0WoFUMlgEdmt3adZL5Dmdw&quot;>Visão&lt;/a> e os requisitos. Estas metas irão priorizar e guiar a abordagem para decisões técnicas importantes.&lt;/p>&#xD;
+&lt;p>Será importante revisar periodicamente o status dessas metas em todo o projeto para certificar que elas ainda são válidas e que o sistema está no caminho certo para entregá-las.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_b-ueYNvOEduv2KOT-Teh6w" name="Identifique os requisitos arquiteturalmente significantes" guid="_b-ueYNvOEduv2KOT-Teh6w">
+    <sectionDescription>&lt;p>Identifique quais dos requisitos atuais são arquiteturalmente significantes Explore e refine aqueles que devem ser implementados para alcançar as metas arquiteturais da iteração atual. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/architecturally_significant_requirements_1EE5D757.html&quot; guid=&quot;_HrZGIA4MEduibvKwrGxWxA&quot;>Conceito: Requisitos Arquiteturalmente Significantes&lt;/a> e &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/determine_architecturally_significant_requirements_817DFD9B.html&quot; guid=&quot;_D3JXMNvKEduv2KOT-Teh6w&quot;>Diretriz: Determinar os Requisitos Arquiteturalmente Significantes&lt;/a> para mais informações.&lt;/p>&#xD;
+&lt;p>Referencie os requisitos arquiteturalmente significantes no &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/architecture_notebook_9BB92433.html&quot; guid=&quot;_0XAf0MlgEdmt3adZL5Dmdw&quot;>Caderno de Arquitetura&lt;/a> assim que eles forem identificados. Será importante revisar essa lista periodicamente em consonância com as alterações nos requisitos para certificar que eles ainda são válidos.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_9o6Z4CSCEdqDjNgZyGMf5w" name="Identifique as restrições na arquitetura" guid="_9o6Z4CSCEdqDjNgZyGMf5w">
+    <sectionDescription>&lt;p>Liste quaisquer restrições na arquitetura e eventuais compensações entre os requisitos e os recursos concorrentes. Decida como a arquitetura irá resolver essas questões. Justifique cada decisão tomada e capture essas informações. Revise periodicamente a lista de restrições para certificar que elas ainda são válidas e que não apareceram outras novas.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_B899cMP2EdmWKcx6ixEiwg" name="Examine, avalie e selecione os recursos disponíveis" guid="_B899cMP2EdmWKcx6ixEiwg">
+    <sectionDescription>&lt;p>Identifique os recursos de outras áreas que podem ser reutilizados na arquitetura atual. Podendo ser:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Frameworks Arquiteturais&lt;/li>&#xD;
+    &lt;li>Mecanismos Arquiteturais&lt;/li>&#xD;
+    &lt;li>Decisões Arquiteturais&lt;/li>&#xD;
+    &lt;li>Restrições&lt;/li>&#xD;
+    &lt;li>Aplicações&lt;/li>&#xD;
+    &lt;li>Componentes&lt;/li>&#xD;
+    &lt;li>Software COTS&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_FVrlsMP2EdmWKcx6ixEiwg" name="Defina a abordagem para estruturar o sistema" guid="_FVrlsMP2EdmWKcx6ixEiwg">
+    <sectionDescription>&lt;p>Decida como estruturar o software em termos lógicos e físicos. No mínimo defina:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Como decompor o software ao gerenciar o desenvolvimento (o uso de divisão em camadas como uma estratégia de decomposição, por exemplo).&lt;/li>&#xD;
+    &lt;li>Como o software será composto em tempo de execução.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Para cada decomposição do software, descreva resumidamente&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Seu nome e finalidade.&lt;/li>&#xD;
+    &lt;li>Seus relacionamentos com outras decomposições.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estas definições irão construir a base para estruturar o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/design_D677D182.html&quot; guid=&quot;_0WuL8slgEdmt3adZL5Dmdw&quot;>Design&lt;/a> e a &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/build_95D7D8FD.html&quot; guid=&quot;_0YuXEMlgEdmt3adZL5Dmdw&quot;>Construção&lt;/a>.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_tmvWwE5cEducxZ_XZXh-vw" name="Defina a abordagem para implantar o sistema" guid="_tmvWwE5cEducxZ_XZXh-vw">
+    <sectionDescription>&lt;p>Descreva como o software será distribuído nos nós da rede. Trabalhe com os Stakeholders bem como com as equipes de implantação e de suporte de rede para assegurar que a abordagem proposta seja uma boa opção para todo o ambiente técnico.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_KBAsYMP2EdmWKcx6ixEiwg" name="Identifique os mecanismos arquiteturais" guid="_KBAsYMP2EdmWKcx6ixEiwg">
+    <sectionDescription>&lt;p>Faça uma lista dos serviços técnicos que o sistema precisa fornecer e capture algumas informações básicas sobre cada item na lista. Normalmente, é uma boa idéia fazer uma lista inicial de todos os mecanismos necessários ao projeto e, em seguida, priorizar o desenvolvimento dos que devem ser entregues, para alcançar as metas da iteração atual. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/arch_mech_2932DFB6.html&quot; guid=&quot;_mzxI0A4LEduibvKwrGxWxA&quot;>Conceito: Mecanismo Arquitetural&lt;/a> para descobrir quais são os mecanismos arquiteturais e como descreve-los. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/architectural_mechanisms_62CFB6B7.html&quot; guid=&quot;_J6BKgNvIEduv2KOT-Teh6w&quot;>Diretriz: Mecanismo Arquitetural&lt;/a> para entender como desenvolvê-los. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/outline_the_architecture_35F1530A.html&quot; guid=&quot;_42UD4A3tEduibvKwrGxWxA&quot;>Diretriz: Descrever a Arquitetura&lt;/a> para perspectivas e questões a serem consideradas na definição da arquitetura.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_I32E4MP2EdmWKcx6ixEiwg" name="Identifique as principais abstrações" guid="_I32E4MP2EdmWKcx6ixEiwg">
+    <sectionDescription>&lt;p>Identifique as principais abstrações que o sistema precisa tratar. Elas podem normalmente ser encontradas procurando pelos substantivos que os requisitos enfatizam ou repetem, porque eles ajudam a identificar o que é importante para o negócio. O &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/glossary_5D300778.html&quot; guid=&quot;_Wn7HcNcEEdqz_d2XWoVt6Q&quot;>Glossário&lt;/a> também é uma fonte útil para as principais abstrações e uma lista dos substantivos do negócio. Nem todos os substantivos serão abstrações importantes no sistema, por isso trabalhe com o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/analyst_39D7C49B.html&quot; guid=&quot;_0VxJsMlgEdmt3adZL5Dmdw&quot;>Analista&lt;/a> e os &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholders&lt;/a> visto que eles poderão ter conhecimento e material que sejam relevantes para esta etapa.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_dzP6kNvPEduv2KOT-Teh6w" name="Verifique a coerência arquitetural" guid="_dzP6kNvPEduv2KOT-Teh6w">
+    <sectionDescription>O arquiteto trabalha com o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/developer_C633AB7.html&quot; guid=&quot;_0YDosMlgEdmt3adZL5Dmdw&quot;>Desenvolvedor&lt;/a> e o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/project_manager_E657F936.html&quot; guid=&quot;_0a0o0MlgEdmt3adZL5Dmdw&quot;>Gerente de Projeto&lt;/a>, para verificar se a arquitetura está consistente com os requisitos, e se as descrições da arquitetura estão claras,  significativas e completas.</sectionDescription>
+  </sections>
+  <sections xmi:id="_xTdYACGAEdqk6N_Ot_YEvA" name="Capture as decisões arquiteturais" guid="_xTdYACGAEdqk6N_Ot_YEvA">
+    <sectionDescription>&lt;p>Capture decisões importantes sobre a arquitetura para referência futura. Considere o uso dos templates fornecidos para o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/architecture_notebook_9BB92433.html&quot; guid=&quot;_0XAf0MlgEdmt3adZL5Dmdw&quot;>Caderno de Arquitetura&lt;/a>. Os &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/developer_C633AB7.html&quot; guid=&quot;_0YDosMlgEdmt3adZL5Dmdw&quot;>Desenvolvedores&lt;/a> em particular, devem compreender claramente o estado atual da arquitetura em cada iteração antes do desenvolvimento da arquitetura.&lt;/p></sectionDescription>
+  </sections>
+  <keyConsiderations>&lt;p>Esta tarefa é mais benéfica quando do desenvolvimento de sistemas novos e sem precedentes. Nos sistemas onde já haja uma arquitetura bem definida, esta tarefa pode ser omitida, ou executada rapidamente como uma revisão da arquitetura existente.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;p>É crítico que esta tarefa seja executada de forma colaborativa com a participação ativa dos outros membros da equipe e dos Stakeholders do projeto de modo que o consenso e a compreensão comum sejam alcançados. É particularmente vital para o arquiteto envolver os desenvolvedores durante toda esta tarefa. O esforço de arquitetura deve fornecer liderança e coordenação do trabalho técnico ao invés de executar o trabalho sozinho.&lt;/p></keyConsiderations>
+  <purpose>Para fornecer orientação e sentido suficientes de forma que a equipe possa iniciar ou continuar a evolução da arquitetura.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

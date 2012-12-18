@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-VMnkFJpPLdEDUpbz2QDgow" name=",_J_5kgEvHEdunZcj9T5hrMQ" guid="-VMnkFJpPLdEDUpbz2QDgow" changeDate="2006-09-24T10:21:36.312-0300" version="7.2.0">
+  <mainDescription>A visão do cliente ou usuário a respeito do produto a ser desenvolvido, especificada no nível das principais características e necessidades dos Stakeholders.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

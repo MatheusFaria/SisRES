@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-V2B7_NtU_O7-45ldkX0Rrw" name="new_supporting_material,_uvje4D_fEdqDFvujd6NHiA" guid="-V2B7_NtU_O7-45ldkX0Rrw" changeDate="2007-07-20T15:52:21.375-0300" version="1.0.0">
+  <mainDescription>&lt;h3>&#xD;
+    &lt;a id=&quot;version&quot; name=&quot;version&quot;>Informações sobre a Versão&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>Versão 1.0&lt;/p>&#xD;
+&lt;h3>Conteúdo&lt;/h3>&#xD;
+&lt;p>Este plug-in define os termos da Arquitetura de Método Unificada (UMA).&lt;/p>&#xD;
+&lt;p>Não é dependente de qualquer outro plug-in.&lt;/p>&#xD;
+&lt;h3>Declaração Legal&lt;/h3>&#xD;
+&lt;p class=&quot;node&quot;>Veja &lt;a href=&quot;resources/copyrite.htm&quot;>Notas Sobre Propriedade Intelectual&lt;/a>.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

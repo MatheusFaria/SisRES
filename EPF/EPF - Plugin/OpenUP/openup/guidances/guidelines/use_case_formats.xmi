@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-pQrBSyxJHLLodLbS4R_Zdw" name="new_guideline,_qq0GMAXkEduj_7BEUj1JfQ" guid="-pQrBSyxJHLLodLbS4R_Zdw" changeDate="2007-05-31T13:39:37.540-0300" version="7.1.0">
+  <mainDescription>&lt;h3>Formatos de Casos de Uso&lt;/h3>&#xD;
+&lt;p>O nível de detalhe exigido nos casos de uso difere de projeto para projeto, e mesmo entre casos de uso e cenários dentro do mesmo projeto. Um formato de caso de uso que funciona em uma situação pode ser totalmente inadequado para outra. O segredo para maximizar a eficiência e a eficácia é capturar a quantidade certa de detalhe para cada caso de uso e cenário específicos. (Veja &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#ADO04&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[ADO04]&lt;/a> para mais informações sobre formatos de casos de uso).&lt;/p>&#xD;
+&lt;p>Alguns casos de uso precisam de maior grau de detalhe. Se os autores estiverem usando um template, então eles preencherão todos, ou quase todos, os campos para cada caso de uso. Os casos de uso de maior grau de detalhe são mais adequados para funcionalidades complexas, sem precedentes e de segurança crítica, tais como sistemas de controle de vôo, centrais telefônicas, etc, onde o risco de uma interpretação errada seja alto.&lt;/p>&#xD;
+&lt;p>Outros casos de uso precisam de menos detalhes. Se os autores estiverem usando um template, então eles poderão deixar a maioria dos campos em branco. Os casos de uso menor grau de detalhe são mais adequados para funcionalidades bem conhecidas, menos complexas e de segurança não tão crítica, onde a maioria dos Stakeholders tem uma sólida experiência no domínio do problema e o risco de uma interpretação errada seja baixo. Nestes casos, descrições resumidas simples ou descrições passo-a-passo são o suficiente.&lt;/p>&#xD;
+&lt;p>Além disso, nem todos os cenários são criados de forma igual. No mesmo caso de uso, alguns cenários são muito bem compreendidos e uma descrição resumida é suficiente para garantir uma interpretação inequívoca. Outros cenários podem exigir mais detalhes para capturar o comportamento essencial  de forma inequívoca.&lt;/p>&#xD;
+&lt;p>Finalmente, como explicado na &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/guidelines/detail_ucs_and_scenarios_6BC56BB7.html&quot; guid=&quot;_4BJ_YCxSEdqjsdw1QLH_6Q&quot;>Diretriz: Detalhar Casos de Uso e Cenários&lt;/a>, faz sentido escrever casos de uso iterativamente. Começando com os detalhes básicos, você pode identificar os vários caminhos alternativos e de erro que o caso de uso possa seguir, de forma que você possa avaliá-los, reorganiza-los ou eliminá-los, e então, elaborar ou completar os detalhes dos cenários restantes.&lt;/p>&#xD;
+&lt;p>Escreva os casos de uso e os cenários em um ou mais dos seguintes formatos, progressivamente, até chegar ao nível de detalhe desejado:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Visão geral do modelo de caso de uso&lt;/strong>: Um formato para entender a visão contextual&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Descrições resumidas de Casos de Uso&lt;/strong>: Um formato para escrever casos de uso de forma resumida&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Descrições passo-a-passo&lt;/strong>: Um formato para escrever casos de uso menos formais e de baixa cerimônia&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Altamente Detalhado&lt;/strong>: Um formato para escrever casos de uso mais formais e de alta cerimônia&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h4>Visão geral do modelo de caso de uso&lt;/h4>&#xD;
+&lt;p>Crie uma visão geral do modelo de caso de uso que capture os atores e os casos de uso associados.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Comece identificando os atores que irão utilizar o sistema e, em seguida, identifique pelo menos uma meta para cada um. Atores sem metas indicam que você não definiu adequadamente o sistema. O ator está fora do âmbito do sistema, não pertence ao sistema nem faz parte de um outro ator.&lt;/li>&#xD;
+    &lt;li>Da mesma forma, metas sem atores podem indicar que o sistema é muito complexo e que você está tentando realizar muita coisa, ou que não tenham sido adequadamente definidos todos os atores necessários. Avalie cuidadosamente os atores sem meta e as metas sem atores para ver se você está apenas esquecendo algum detalhe, ou se eles não pertencem ao sistema.&lt;/li>&#xD;
+    &lt;li>Remova do modelo os atores e metas não associados.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Às vezes, essa visão geral pode fornecer informações suficientes para servir como modelo de caso de uso, quando se tratar de equipes de projeto muito pequenas, com grande comunicação e baixa cerimônia. Geralmente, a visão geral do modelo de caso de uso é o primeiro passo de identificação dos casos de uso e dos limites do sistema.&lt;/p>&#xD;
+&lt;h4>Descrições resumidas de Casos de Uso&lt;/h4>&#xD;
+&lt;p>Escreva de duas a quatro sentenças por caso de uso, capturando os tratamentos de extensões e as atividades essenciais.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Expanda os casos de uso de alta prioridade escrevendo de duas a quatro sentenças para cada entrada na lista.&lt;/li>&#xD;
+    &lt;li>Descreva resumidamente o cenário principal e as extensões mais importantes de cada caso de uso.&lt;/li>&#xD;
+    &lt;li>Inclua informações suficientes para eliminar a ambigüidade, no mínimo, do cenário principal.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h4>Descrições passo-a-passo&lt;/h4>&#xD;
+&lt;p>Escreva a descrição passo-a-passo que descreve a interação entre os atores e o sistema.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Os principais cenários são detalhados para descrever a interação&lt;/li>&#xD;
+    &lt;li>Eventos estimuladores são especificados&lt;/li>&#xD;
+    &lt;li>As informações trocadas são descritas&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h4>Altamente Detalhado&lt;/h4>&#xD;
+&lt;p>Complete todas as seções do template &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/templates/uc_specification_E97E98B0.html&quot; guid=&quot;_0cpNwMlgEdmt3adZL5Dmdw&quot;>Especificação de Caso de Uso&lt;/a>.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>O cenário principal é detalhado&lt;/li>&#xD;
+    &lt;li>Todos os fluxos alternativos são identificados e detalhados&lt;/li>&#xD;
+    &lt;li>Os requisitos especiais estão completos e inequívocos&lt;/li>&#xD;
+    &lt;li>As Pré e Pós-condições são especificadas&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

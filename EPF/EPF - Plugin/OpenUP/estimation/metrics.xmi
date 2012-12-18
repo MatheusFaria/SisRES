@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rmc.estimation:EstimatingMetricCollection xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rmc.estimation="http://www.ibm.com/rmc/estimation/1.0.0/estimation.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.2.0" xmlns:rmc="http://www.ibm.com/rmc"
+    rmc:version="7.2.0" xmi:id="_Y0zbwAc3Ed2p39mABg11Sw"
+    guid="_Y0zbwAc3Ed2p39mABg11Sw"/>

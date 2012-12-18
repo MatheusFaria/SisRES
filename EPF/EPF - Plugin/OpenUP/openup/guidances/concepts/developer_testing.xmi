@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Ff1JwbrGt1laexkOB6ZM1Q" name="new_concept,_aFeZgJquEdukqcRKZBQN9w" guid="-Ff1JwbrGt1laexkOB6ZM1Q" changeDate="2007-01-03T20:00:23.980-0200" version="1.0.0">
+  <mainDescription>&lt;p>O Teste de Desenvolvedor é o ato dos desenvolvedores executarem testes de regressão em seu código fonte. Isto é chamado às vezes de &quot;teste de regressão unitário&quot;, mas muitos testes de desenvolvedor vão além dos testes unitários, abrangendo testes de integração.&lt;/p>&#xD;
+&lt;h3>Filosofias de Teste&lt;/h3>&#xD;
+&lt;p>Aqui estão algumas filosofias importantes a respeito do teste de desenvolvedor:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>O objetivo é encontrar defeitos. Os testes bem sucedidos encontram erros, mas a correção dos erros pertence a outras áreas.&lt;/li>&#xD;
+    &lt;li>Teste o mais cedo possível e com a maior freqüência. O custo da mudança cresce exponencialmente na razão do tempo necessário para encontrar e remover o defeito. A implicação é o desejo de executar o teste o mais cedo possível (o mais cedo que você puder testar, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/guidelines/test_first_design_21C77ADF.html&quot; guid=&quot;_0Y6kUMlgEdmt3adZL5Dmdw&quot;>Diretriz: Design Teste-Primeiro&lt;/a>).&lt;/li>&#xD;
+    &lt;li>Teste a confiança das configurações. Muitas pessoas temem fazer uma mudança no seu código porque ficam receosas de estragá-lo, mas com uma ferramenta de teste completa, se você estragar algo você sabe que poderá detectar e reparar o erro.&lt;/li>&#xD;
+    &lt;li>Um teste vale mais que mil opiniões. Você pode dizer que a sua aplicação funciona, mas até que você mostre os resultados do teste você não terá credibilidade.&lt;/li>&#xD;
+    &lt;li>Teste para o risco. Quão mais arriscada uma coisa for mais necessário será revê-la e testá-la. Em outras palavras você deve investir esforço de teste necessário no algoritmo para estimar doses de radiação, mas nada muito perto do esforço para testar a função de &quot;troca de tamanho de fonte&quot; da mesma aplicação.&lt;/li>&#xD;
+    &lt;li>Você pode validar todos os artefatos. Você pode testar todos os seus artefatos, não apenas seu código de fonte, embora o foco desta orientação seja o teste de código.&lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;h3>Características de um Bom Teste de desenvolvedor&lt;/h3>Estas são as qualidades de um bom teste de desenvolvedor:&lt;ul class=&quot;noindent&quot;>&#xD;
+    &lt;li>Executa rápido. Tem instanciação, tempo de execução e rotina de limpeza rápidos.&lt;/li>&#xD;
+    &lt;li>Executa isoladamente. Você deve ser capaz de reordenar seus testes.&lt;/li>&#xD;
+    &lt;li>É compreensível. Os bons testes têm nomes consistentes e informativos e usam dados que os tornam fáceis de ler e compreender.&lt;/li>&#xD;
+    &lt;li>Usa dados reais. Por exemplo, use cópias de dados da produção quando apropriado, mas lembre-se que você também terá que criar alguns dados de teste &quot;artificiais&quot;.&lt;/li>&#xD;
+    &lt;li>É minimamente coesivo. O teste representa um passo na direção do seu objetivo maior. O teste deve tratar um e somente um problema.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h3>Abordagens para a Instanciação do Teste&lt;/h3>&#xD;
+&lt;p>Para executar um teste com sucesso, o sistema deve estar em um estado conhecido. Para fazer isto você necessitará de objetos ou componentes na memória, registros na base de dados, etc. nos quais você executará os testes. A abordagem mais fácil é a codificação manual dos dados necessários e do código de instanciação dentro do próprio teste. A principal vantagem é que todas as informações necessárias para o teste estão em um único lugar, tornando o teste potencialmente auto-suficiente.&lt;/p>&#xD;
+&lt;p>Uma outra abordagem é definir um conjunto de dados externos que seja carregado na memória ou na base de dados no início da execução do teste. Há diversas vantagens nesta abordagem:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Isto desacopla os dados do teste.&lt;/li>&#xD;
+    &lt;li>Mais de um teste pode usar o mesmo conjunto de dados.&lt;/li>&#xD;
+    &lt;li>É fácil modificar e/ou multiplicar os dados de teste.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Existem algumas desvantagens nesta abordagem:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Aumento na complexidade para manter os dados externos&lt;/li>&#xD;
+    &lt;li>Potencial acoplamento entre os casos de teste. Quando os testes compartilham um mesmo conjunto de dados torna-se muito fácil escreve-los de forma que dependam que outros testes sejam executados primeiramente, acoplando-os desse modo.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h3>Codificando para a Testabilidade&lt;/h3>&#xD;
+&lt;p>Adicione &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/termdefinitions/code_instrumentation_E6BE9793.html&quot; guid=&quot;_JiqnEJt1EdutoZjlV3a4Lg&quot;>Instrumentação de Código&lt;/a> para testar e depurar. Preste especial atenção à implementação dos pontos de observação/controle, tais como funções ou objetos críticos, visto que estes aspectos podem necessitar de suporte especial que deve ser implementado no componente sob teste.&lt;/p>&#xD;
+&lt;h3>Revisando testes&lt;/h3>&#xD;
+&lt;p>Se um teste for de longa-vida, peça a uma pessoa com menos conhecimento do interior do componente para executá-lo e verificar se existe bastante informação de suporte. Revise-o com outras pessoas da equipe de desenvolvimento e outras partes interessadas se for necessário.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

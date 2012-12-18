@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-IXfkG-XfnoEo0xgux482Kw" name="core_principle_collaborate,_KkTIsMp7EdqC_NfSivunjA" guid="-IXfkG-XfnoEo0xgux482Kw" authors="Steve Adolph" changeDate="2007-05-22T14:04:50.107-0300" changeDescription="Initial Version |Removed metaphoric photo. Removed &quot;Don't go dark&quot; collaborative practice.|Removed metaphoric photo. Removed &quot;Don't go dark&quot; collaborative practice. Removed open_up from page name.|Added &quot;organize around the architecture practice&quot;" version="0.03">
+  <mainDescription>&lt;h1>Introdução&lt;/h1>&#xD;
+&lt;p>O software é criado por pessoas com diferentes interesses e habilidades, as quais devem trabalhar juntas para criá-lo de forma eficiente.&lt;/p>&#xD;
+&lt;p>Desenvolver práticas que estimulem um ambiente de equipe saudável. Um ambiente de trabalho saudável incentiva a colaboração efetiva, que alinha os interesses dos participantes do projeto (equipe de desenvolvimento, garantia da qualidade, Stakeholders do produto e clientes) e ajuda os participantes do projeto à desenvolver uma compressão compartilhada do projeto.&lt;/p>&#xD;
+&lt;h1>Práticas&lt;/h1>&#xD;
+&lt;h2>Mantenha um entendimento comum&lt;/h2>&#xD;
+&lt;p>Os participantes do projeto precisam de um entendimento comum do projeto para que possam cooperar efetivamente. Caso contrário, a desordem estará estabelecida, porque os membros da equipe não poderão alinhar os seus entendimentos e interesses, e trabalharão com diferentes propósitos.&lt;/p>&#xD;
+&lt;p>Seja pró ativo, comunicando e compartilhando as informações com os participantes do projeto. Não assuma que todos encontrarão o que precisam saber ou que todas as pessoas tenham o mesmo entendimento do projeto. Use produtos de trabalho, tal como a Visão, a Lista de Itens de Trabalho e os Requisitos, para alinhar o entendimento entre os Stakeholders e os desenvolvedores. Use a arquitetura para focar e alinhar os interesses dos desenvolvedores. No final de cada iteração, chegue a um acordo se as metas da iteração foram atingidas e, se não foram, quais as ações que deverão ser tomadas.&lt;/p>&#xD;
+&lt;h2>Estimule um ambiente de alta-confiança&lt;/h2>&#xD;
+&lt;p>As pessoas, que não se sentirem seguras, não comunicarão suas idéias, tomarão iniciativas ou admitirão sua ignorância. Nestes ambientes de trabalho de baixa confiança, as atividades devem ser arduamente planejadas e detalhadas, cuidadosamente supervisionadas, e extensivamente acompanhadas pela auditoria. Uma equipe que trabalhe em um ambiente de baixa-confiança poderá não estar preparada para rápidas mudanças.&lt;/p>&#xD;
+&lt;p>Execute ações que estimulem um ambiente de alta-confiança&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Gerencie por objetivos&lt;/b>, crie um ambiente onde as equipes possam gerenciar a si próprias, e os gerentes sirvam como mentores das equipes para ajudá-los a completar seus objetivos.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Destrua as barreiras&lt;/b>, trabalhe para remover tanto as barreiras físicas quanto as mentais que inibam o desenvolvimento de um entendimento comum entre os participantes do projeto.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Caminhe uma milha (1,6 quilômetros) com os sapatos de outra pessoa.&lt;/b> Respeite e tente entender a perspectiva dos outros antes de criticar suas idéias ou responder às suas críticas.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Responda às conversações com relevância.&lt;/b> As pessoas, especialmente os trabalhadores técnicos, normalmente respondem com argumentos ou desaprovação, o que leva a rivalidade e ao estabelecimento da lei do mais forte, onde somente algumas pessoas contribuem para a discussão. Desenvolva e encoraje comportamentos que valorizem a curiosidade e a relevância ao invés de argumentos e desaprovações.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Sempre procure primeiramente em você a fonte dos problemas de comunicação.&lt;/b> Entenda que todas as pessoas têm uma perspectiva que é totalmente invisível para os outros (embora isso seja óbvio para todas as outras pessoas). Desenvolva o hábito de identificar as suposições e preconceitos dentro de você, que conduzam a discussões ou falta de comunicação. Aprenda a superá-los no momento das conversações. É preciso praticar. Há momentos de rebeldia, mas normalmente o problema pode ser atacado combatendo a sua própria perspectiva.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Entenda as restrições culturais do ambiente de trabalho.&lt;/b> Algumas organizações operam de forma a permitir que as pessoas admitam enganos, façam questionamentos e experiências. Algumas organizações limitam tais expressões, mas eles podem mudar, com tempo e esforço. Algumas organizações não toleram o erro e seus trabalhadores se colocam em perigo ao admitir enganos ou realizar experiências. Entenda seu ambiente e se proteja apropriadamente. Entenda que as organizações de baixa-confiança possuem mais problemas para atingir suas metas e promovem um ambiente menos satisfatório.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h2>Compartilhe responsabilidades&lt;/h2>&#xD;
+&lt;p>Indivíduos que trabalham sozinhos podem ter desvantagens. A comunicação com a equipe pode ficar esporádica e então cessar. As pessoas podem ter dificuldades e não pedir ajuda ou não perceber que a equipe está com dificuldades e precisa da sua ajuda. O seu entendimento do projeto pode ficar desalinhado com o da sua equipe. Na pior das situações, um verdadeiro caos se instala quando indivíduos vêem a equipe trabalhando com propósitos diferentes dos seus.&lt;/p>&#xD;
+&lt;p>Embora os indivíduos tenham a responsabilidade primária pelos seus produtos de trabalho, a responsabilidade pelos produtos de trabalho é compartilhada. Ninguém está isento de responsabilidades. Isto pode significar que ou deixamos de ser negligentes e trabalhamos com alguém que está atrasado por alguma razão, ou pedimos por ajuda. Os membros experientes da equipe devem estar vigilantes para proteger os membros menos experientes, encorajando-os a perguntar e pedir ajuda se necessário.&lt;/p>&#xD;
+&lt;h2>Aprenda continuamente&lt;/h2>&#xD;
+&lt;p>O desenvolvimento de software não é apenas um campo de rápida evolução onde as habilidades técnicas ficam rapidamente obsoletas; também é um processo empírico onde o software é desenvolvido de tal forma que às vezes até parece que é feito por tentativa e erro. Além disso, o software é desenvolvido por equipes de pessoas que precisam trabalhar em grupo para alcançar resultados.&lt;/p>&#xD;
+&lt;p>Desenvolva continuamente as suas habilidades técnicas e interpessoais. Aprenda com os exemplos de seus colegas. Aproveite a oportunidade para ser tanto um aluno de seus colegas, como um professor para eles. Sempre aumente a sua habilidade pessoal para superar sua própria oposição em relação a outros membros da equipe.&lt;/p>&#xD;
+&lt;h2>Organize-se em torno da arquitetura&lt;/h2>&#xD;
+&lt;p>À medida que o projeto crescer, a comunicação entre os membros da equipe se torna extremamente complexa. Enquanto todos os membros da equipe entendem o sistema totalmente, eles podem focar a princípio em um ou mais subsistemas que eles têm responsabilidade. Organizar ao redor da arquitetura também ajuda à comunicação fornecendo à equipe um vocabulário comum e um modelo mental compartilhado do sistema. A comunicação entre os membros da equipe se torna extremamente complexa.&lt;/p>&#xD;
+&lt;p>Organize a equipe ao redor da arquitetura e do vocabulário e compartilhe o modelo mental do sistema. Entretanto, tenha cuidado que os indivíduos e as equipes organizadas desta forma não constituem a &lt;i>mentalidade de silo&lt;/i>, onde eles focam estritamente em seus subsistemas e tornam-se ignorantes a respeito dos outros subsistemas.&lt;/p>&#xD;
+&lt;p>Uma arquitetura que reflita a estrutura organizacional não comprova que a equipe tenha sido organizada com sucesso em torno da arquitetura. Se as organizações e as equipes não estiverem organizadas em torno da arquitetura, então a arquitetura naturalmente se adequará à organização, como resultado da política e influências culturais. No final, a arquitetura e a organização quase sempre serão uma o reflexo da outra. O objetivo é, sempre que possível, guiar a organização da equipe a partir das necessidades da arquitetura.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

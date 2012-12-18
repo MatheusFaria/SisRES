@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-I2j8LuHkworb0Y3EIlWfDQ" name="core_principles,_HEu9QBOHEduCNqgZdt_OaA" guid="-I2j8LuHkworb0Y3EIlWfDQ" changeDate="2007-05-22T13:28:05.638-0300" version="1.0.0">
+  <mainDescription>&lt;p>O OpenUP está baseado em quatro princípios fundamentais mutuamente suportados:&lt;/p>&#xD;
+&lt;h5 style=&quot;MARGIN: 12pt 0in 3pt&quot;>Equilibrar as prioridades concorrentes para maximizar o benefício aos Stakeholders&lt;/h5>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>Promover práticas que permitam aos participantes do projeto e aos Stakeholders desenvolver uma solução que maximize os benefícios para o Stakeholder, e que seja compatível com as restrições impostas ao projeto.&lt;br /> Veja o princípio fundamental &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/concepts/core_principle_balance_793DD27.html&quot; guid=&quot;_ssG6MMvpEdqukPpotm3DYg&quot;>Equilibrar&lt;/a>, para mais informações.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;h5 style=&quot;MARGIN: 12pt 0in 3pt&quot;>Colaborar para alinhar os interesses e compartilhar o entendimento&lt;/h5>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>Promover práticas que estimulem um ambiente de equipe saudável, permitam a colaboração e desenvolvam uma compreensão compartilhada do projeto.&lt;br /> Veja o princípio fundamental &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/concepts/core_principle_collaborate_EC5EB51F.html&quot; guid=&quot;_KkTIsMp7EdqC_NfSivunjA&quot;>Colaborar&lt;/a>, para mais informações.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;h5 style=&quot;MARGIN: 12pt 0in 3pt&quot;>Focar na arquitetura, o mais cedo possível, para reduzir o risco e organizar o desenvolvimento.&lt;/h5>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>Promover práticas que permitam à equipe focar na arquitetura para reduzir o risco e organizar o desenvolvimento&lt;br /> Veja o princípio fundamental &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/concepts/core_principle_focus_346C6FAF.html&quot; guid=&quot;_9gocwMvoEdqukPpotm3DYg&quot;>Focar&lt;/a>, para mais informações.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;h5>Evoluir para continuamente obter feedback e promover melhorias&lt;/h5>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>Promover práticas que permitam à equipe obter feedback dos Stakeholders, o mais cedo possível e de forma contínua, e demonstrar valor incremental para eles.&lt;br /> Veja o princípio fundamental &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/concepts/core_principle_evolve_BFD9AEB4.html&quot; guid=&quot;_GXiogMvoEdqukPpotm3DYg&quot;>Envolver&lt;/a>, para mais informações.&lt;/p>&#xD;
+&lt;/blockquote></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-1nEIK4O3laIt539DV6rQzA" name="new_supporting_material,_L6THwDY_EdyTZ9G7ByfQTw" guid="-1nEIK4O3laIt539DV6rQzA" changeDate="2007-07-19T18:31:01.798-0300" version="7.2.0">
+  <mainDescription>&lt;p>O OpenUP é mais útil para quatro grupos primários de usuários:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Profissionais de desenvolvimento de software (desenvolvedores, gerentes de projeto, analistas e testadores) que trabalham juntos como uma equipe de projeto;&lt;/li>&#xD;
+    &lt;li>Stakeholders;&lt;/li>&#xD;
+    &lt;li>Engenheiros de processo de software;&lt;/li>&#xD;
+    &lt;li>Instrutores.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os profissionais de desenvolvimento de software podem encontrar orientação sobre o que será exigido deles quando da execução dos papéis definidos no OpenUP. Cada papel descreve um conjunto de atividades e artefatos de sua responsabilidade. Também é dada orientação de como estes papéis colaboram entre si.&lt;/p>&#xD;
+&lt;p>Os Stakeholders encontrarão orientação do que podem esperar da equipe de desenvolvimento de software e como o software será criado. O OpenUP descreve também as responsabilidades dos Stakeholders e qual a melhor forma deles trabalharem com a equipe de desenvolvimento para obter um software que atenda às suas necessidades.&lt;/p>&#xD;
+&lt;p>Os engenheiros de processo de software podem usar o EPF Composer para modificar e estender o OpenUP. As modificações podem ser tão simples como as alterações de templates para produtos de trabalho ou tão sofisticadas como a adição de atividades necessárias para criar o software em seu ambiente específico (tais como auditorias para sistemas de missão crítica). Além da modificação do conteúdo de método, os engenheiros de processo podem incluir, alterar ou excluir fluxos de processo para adicionar padrões de capacidade específicos da organização.&lt;/p>&#xD;
+&lt;p>O OpenUP também se aplica às organizações acadêmicas. Como um processo de código aberto, pode servir como base para cursos de engenharia de software e, quando combinado com o EPF Composer, para cursos de engenharia de processo de software.&lt;br />&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

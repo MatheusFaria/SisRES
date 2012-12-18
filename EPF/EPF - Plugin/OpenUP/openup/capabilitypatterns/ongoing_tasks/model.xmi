@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_nK7zMvL5Edm6Nvont3uinw" guid="_nK7zMvL5Edm6Nvont3uinw">
+    <resourceDescriptors xmi:id="_nK7zMfL5Edm6Nvont3uinw" id="_mtb-9PL5Edm6Nvont3uinw" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_0pJ_xclgEdmt3adZL5Dmdw" name="ongoing_tasks" guid="_0pJ_xclgEdmt3adZL5Dmdw">
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_4x060FY1EdqI9sTOt2pjHw" name="any_role" guid="_4x060FY1EdqI9sTOt2pjHw" presentationName="Qualquer Papel" briefDescription="Qualquer um em uma equipe pode atuar neste papel executando diversas tarefas." hasMultipleOccurrences="true" superActivities="_0pJ_xslgEdmt3adZL5Dmdw" modifies="_5M7icFY1EdqI9sTOt2pjHw">
+      <methodElementProperty xmi:id="_O1MyoESKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+      <Role href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0dsWoMlgEdmt3adZL5Dmdw"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_5LsMUFY1EdqI9sTOt2pjHw" name="request_change" guid="_5LsMUFY1EdqI9sTOt2pjHw" presentationName="Solicitar Mudança" briefDescription="Captura e registra solicitações de mudança." superActivities="_0pJ_xslgEdmt3adZL5Dmdw" optionalInput="_5M7icFY1EdqI9sTOt2pjHw" output="_5M7icFY1EdqI9sTOt2pjHw" performedPrimarilyBy="_4x060FY1EdqI9sTOt2pjHw">
+      <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_6jdvECb3Edqh1LYUOGRh2A"/>
+      <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_fnZj0NVXEdqy9sbRhejO5Q"/>
+      <Task href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0mwzEclgEdmt3adZL5Dmdw"/>
+      <selectedSteps href="uma://_Nr0S4KeqEdmKDbQuyzCoqQ#_qEkewKuoEdmEGLSmmpF1Sg"/>
+      <selectedSteps href="uma://_Nr0S4KeqEdmKDbQuyzCoqQ#_r2aP0KuoEdmEGLSmmpF1Sg"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_5M7icFY1EdqI9sTOt2pjHw" name="work_items_list" guid="_5M7icFY1EdqI9sTOt2pjHw" presentationName="Lista de Itens de Trabalho" briefDescription="Este artefato contém uma lista de todo trabalho agendado para ser feito dentro do projeto, bem como o trabalho proposto que pode afetar o produto neste ou em projetos futuros. Cada Item de trabalho pode conter referências a informações que sejam relevantes para realizar o trabalho descrito no item." superActivities="_0pJ_xslgEdmt3adZL5Dmdw">
+      <methodElementProperty xmi:id="_O1On0ESKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+      <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_xlrdEAVtEdy3F_fZDaPZVA"/>
+      <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_S80VwCNbEdyCq8v2ZO4QcA"/>
+      <examples href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_nHomIDgzEdu4E8ZdmlYjtA"/>
+      <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_7vEXEMA4EdqSgKaj2SZBmg"/>
+      <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_CGHskBEdEdqY7JB6N6CW2w"/>
+      <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_oVMZADSoEdy07ZJqOGUGaQ"/>
+      <templates href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_QwUJYDg0Edu4E8ZdmlYjtA"/>
+      <reports href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_ePrt8Dj3EduxovfWMDsntw"/>
+      <reports href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_uAzgkDg3Edu4E8ZdmlYjtA"/>
+      <WorkProduct href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_rGNWsCbSEdqh1LYUOGRh2A"/>
+    </processElements>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_0pJ_xslgEdmt3adZL5Dmdw" name="ongoing_tasks" guid="_0pJ_xslgEdmt3adZL5Dmdw" presentationName="Executar Tarefas Contínuas" briefDescription="Executar as tarefas contínuas que não são necessariamente parte do cronograma do projeto." isPlanned="false" hasMultipleOccurrences="true" isOngoing="true" isEventDriven="true" breakdownElements="_4x060FY1EdqI9sTOt2pjHw _5LsMUFY1EdqI9sTOt2pjHw _5M7icFY1EdqI9sTOt2pjHw">
+      <methodElementProperty xmi:id="_O1dRUESKEeKIHoRDpe9VIw" name="process_synFree" value="true"/>
+      <presentation xmi:id="_mtb-9PL5Edm6Nvont3uinw" href="uma://_mtb-9PL5Edm6Nvont3uinw#_mtb-9PL5Edm6Nvont3uinw"/>
+      <defaultContext href="uma://_y62TUKVPEdmMZJIzZ1W7Pw#_0u-T4clgEdmt3adZL5Dmdw"/>
+      <validContext href="uma://_y62TUKVPEdmMZJIzZ1W7Pw#_0u-T4clgEdmt3adZL5Dmdw"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

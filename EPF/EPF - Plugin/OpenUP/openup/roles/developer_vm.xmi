@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-xbAirPdH1IOKcnklk8hdqw" name="new_role,_sypCEPvjEdqf0-top1XJIg" guid="-xbAirPdH1IOKcnklk8hdqw" changeDate="2006-09-11T15:34:39.535-0300" version="7.2.0">
+  <skills>&lt;p>Adicionalmente, para criar um modelo visual do sistema, este papel necessita da habilidade de efetuar o design na Linguagem Unificada de Modelagem (UML).&lt;/p></skills>
+</org.eclipse.epf.uma:RoleDescription>

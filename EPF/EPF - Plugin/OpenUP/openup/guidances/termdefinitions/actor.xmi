@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-4RQJzq_1URTZ5FGCBKnTIw" name="new_term_definition,_ZsK30EvBEdunZcj9T5hrMQ" guid="-4RQJzq_1URTZ5FGCBKnTIw" changeDate="2007-05-03T15:21:42.240-0300" version="1.0.0">
+  <mainDescription>Alguém ou algo fora do sistema que interage com ele.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

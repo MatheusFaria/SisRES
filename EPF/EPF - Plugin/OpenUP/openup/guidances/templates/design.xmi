@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-giTBOvJczHXweRzBQEo-7A" name="new_template,_EOPcMAMUEdylNddAObilIA" guid="-giTBOvJczHXweRzBQEo-7A" changeDate="2007-06-22T14:44:44.614-0300" version="7.2.0">
+  <mainDescription>&lt;p>Este template descreve como o design pode ser organizado para ser entendido sob várias perspectivas. Também oferece sugestões de como os padrões e as descrições de interações pequenas e reutilizáveis podem ser usadas para minimizar a redundância.&lt;/p>&#xD;
+&lt;p>É importante não pensar no design como &quot;um documento&quot;. As informações do design que valem a pena manter durante algum tempo devem ter uma forma de vida longa. Esta forma pode ser um repositório de uma ferramenta de modelagem visual, subdiretórios de fotos dos diagramas em quadro branco capturadas com uma câmera digital ou um verdadeiro documento que forneça estrutura para imagens obtidas de uma miríade de fontes.&lt;/p>&#xD;
+&lt;p>Este template descreve as informações que devem ser apresentadas. Normalmente, ele funciona melhor para apresentar informação gráfica (com a notação UML ou qualquer outra que seja inequívoca), ou pelo menos em palavras, em um nível abstrato. Você pode melhorá-lo com exemplos de código, mas é melhor não registrar o design exclusivamente a nível de código.&lt;/p>&#xD;
+&lt;p>A estrutura do design é sugerida neste template.&lt;/p>&#xD;
+&lt;h1>Estrutura do design&lt;/h1>&#xD;
+&lt;p style=&quot;COLOR: #0000ff&quot;>[Descreva o design no nível mais alto. Este é comumente feito com um diagrama que mostra uma arquitetura em camadas.]&lt;/p>&#xD;
+&lt;h1>Subsistemas&lt;/h1>&#xD;
+&lt;h2>[Sub-sistema1]&lt;/h2>&#xD;
+&lt;p style=&quot;COLOR: #0000ff&quot;>[Descreva o design de uma parte do sistema (um pacote ou componente, por exemplo). O design deve capturar tanto as perspectivas estáticas com as dinâmicas.&lt;/p>&#xD;
+&lt;p style=&quot;COLOR: #0000ff&quot;>Quando capturar as descrições do comportamento dinâmico, procure por partes reutilizáveis de comportamento que você possa referenciar para simplificar o design das realizações de caso de uso.&lt;/p>&#xD;
+&lt;p style=&quot;COLOR: #0000ff&quot;>Você pode subdividir esta seção em subseções de nível mais baixo para descrever subsistemas encapsulados de mais baixo nível.]&lt;/p>&#xD;
+&lt;h1>Padrões&lt;/h1>&#xD;
+&lt;h2>[Padrão1]&lt;/h2>&#xD;
+&lt;h3>Visão Geral&lt;/h3>&#xD;
+&lt;p style=&quot;COLOR: #0000ff&quot;>[Forneça uma visão geral do padrão, em palavras e de alguma forma consistente. A visão geral de um padrão pode incluir a intenção, a motivação e a aplicabilidade.]&lt;/p>&#xD;
+&lt;h3>Estrutura&lt;/h3>&#xD;
+&lt;p style=&quot;COLOR: #0000ff&quot;>[Descreva o padrão sob uma perspectiva estática. Inclua todos os participantes e como eles se relacionam, e aponte os dados e comportamentos relevantes.]&lt;/p>&#xD;
+&lt;h3>Comportamento&lt;/h3>&#xD;
+&lt;p style=&quot;COLOR: #0000ff&quot;>[Descreva o padrão sob uma perspectiva dinâmica. Mostre ao leitor como os participantes colaboram para dar suporte a vários cenários.]&lt;/p>Exemplo&lt;p style=&quot;COLOR: #0000ff&quot;>[Muitas vezes, você pode apresentar melhor a natureza do padrão com um exemplo concreto adicional].&lt;/p>&#xD;
+&lt;h1>Realizações de caso de uso&lt;/h1>&#xD;
+&lt;h2>[Realização1]&lt;/h2>&#xD;
+&lt;h3>Visão dos participantes&lt;/h3>&#xD;
+&lt;p style=&quot;COLOR: #0000ff&quot;>[Descreva os elementos de design participantes sob uma perspectiva estática, fornecendo detalhes tais como comportamento, relacionamentos e atributos relevantes para esta realização de caso de uso].&lt;/p>&#xD;
+&lt;h3>Cenário base&lt;/h3>&#xD;
+&lt;p style=&quot;COLOR: #0000ff&quot;>[Para o fluxo principal, descreva como instâncias de elementos de design colaboram para realizar o caso de uso. Usando a UML, isso pode ser feito com diagramas de colaboração (seqüência ou comunicação)].&lt;/p>&#xD;
+&lt;h3>Cenários adicionais&lt;/h3>&#xD;
+&lt;p style=&quot;COLOR: #0000ff&quot;>[Para outros cenários que devam ser descritos para apresentar uma adequada quantidade de informações sobre como o comportamento do caso de uso será realizado, descreva como instâncias dos elementos de design colaboram para realizar o caso de uso. Usando a UML, você pode fazer isto com diagramas de colaboração (seqüência ou comunicação)].&lt;/p></mainDescription>
+</org.eclipse.epf.uma:GuidanceDescription>

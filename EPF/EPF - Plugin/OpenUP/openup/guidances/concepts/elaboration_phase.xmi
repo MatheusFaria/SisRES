@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-F-eWIBzxEXE1jygbN3nrrQ" name=",_2plxwBOMEduCNqgZdt_OaA" guid="-F-eWIBzxEXE1jygbN3nrrQ" changeDate="2007-07-11T10:20:47.734-0300" version="1.0.0">
+  <mainDescription>&lt;p>O propósito desta fase é atenuar os riscos técnicos e não-técnicos. Os riscos técnicos são normalmente tratados, estabelecendo-se a linha de base para uma arquitetura executável do sistema e fornecendo uma base estável para a maior parte do esforço de desenvolvimento da próxima fase. Os riscos não-técnicos são tratados pela entrega de capacidades essenciais em estreita colaboração com os Stakeholders, permitindo responder perguntas tais como:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Os Stakeholders concordam com o paradigma de uso conforme implementado nos primeiros cenários entregues?&lt;/li>&#xD;
+    &lt;li>Será que podemos alavancar este componente de código aberto?&lt;/li>&#xD;
+    &lt;li>Será que podemos adquirir este componente comercial?&lt;/li>&#xD;
+    &lt;li>Será que temos pessoal com a devida competência?&lt;/li>&#xD;
+    &lt;li>Nós verificamos se a equipe pode colaborar eficazmente para entregar um software funcional?&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Existem objetivos para a fase de Elaboração que lhe ajudam a enfrentar os riscos associados a requisitos, arquitetura, custos e cronograma, entre outros &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#KRO03&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[KRO03]&lt;/a>:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;strong>Obtenha um entendimento mais detalhado dos requisitos&lt;/strong>. Ter um bom entendimento da maioria dos requisitos permite a você criar um plano mais detalhado e obter comprometimento dos Stakeholders. Tenha certeza de obter um entendimento profundo dos requisitos mais críticos que serão validados pela arquitetura. Isto não significa que cada caso de uso tenha que ser detalhado, mas que você tenha detalhado os principais casos de uso, e compreendido os casos de uso restantes o suficiente para dimensioná-los.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;strong>Projete, implemente, valide e estabeleça a linha de base da arquitetura.&lt;/strong> Projete, implemente e teste um esqueleto da estrutura do sistema através do design, implementação e teste de uma pequena quantidade de cenários críticos. Apesar da funcionalidade não estar completa ainda, a maior parte das interfaces entre os blocos em construção é implementada e testada, e o tipo de arquitetura e os mecanismos arquiteturais necessários são identificados. Este resultado é conhecido como &lt;strong>uma arquitetura executável&lt;/strong>.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;strong>Atenue os riscos essenciais e produza um cronograma e uma estimativa de custos precisos.&lt;/strong> Muitos riscos técnicos são descobertos como resultado do detalhamento dos requisitos e do projeto, implementação e teste da arquitetura. Você poderá também ter que enfrentar os riscos não-técnicos, legais e financeiros, tais como questões relacionadas com a utilização de componentes de código aberto ou comercial. Refine e detalhe o plano de projeto de alto nível.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;h4>Principais considerações&lt;/h4>&#xD;
+&lt;p>A quantidade de iterações na fase de Elaboração é dependente de, mas não limitada por, fatores como o desenvolvimento de um novo produto versus um ciclo de manutenção, um sistema sem precedentes versus uma tecnologia e uma arquitetura conhecidas, e etc.&lt;/p>&#xD;
+&lt;p>Um projeto de manutenção poderá, por exemplo, combinar a Concepção e a Elaboração em uma única iteração que pode ter a duração de apenas alguns dias, uma vez que os objetivos dessas fases podem ser rapidamente atendidos.&lt;/p>&#xD;
+&lt;p>Um novo sistema sem precedentes pode exigir várias iterações para estabelecer e colocar em linha de base uma arquitetura executável, e para resolver todos os problemas não-técnicos. Para um projeto como este, você começa projetando, implementando e testando uma pequena quantidade de cenários críticos, para identificar qual tipo de arquitetura e de mecanismos arquiteturais você precisará. Você também detalha os requisitos de alto risco que devem ser tratados antecipadamente no projeto. Você testa o suficiente para validar que os riscos arquiteturais estão atenuados. Nas últimas iterações da Elaboração, você repara o que não foi feito certo na iteração anterior e, projeta, implementa e testa os cenários arquiteturalmente significantes restantes, assegurando que você verifique todas as principais áreas do sistema (cobertura arquitetural), de forma que os riscos potencialmente escondidos surjam o mais cedo possível.&lt;br />&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

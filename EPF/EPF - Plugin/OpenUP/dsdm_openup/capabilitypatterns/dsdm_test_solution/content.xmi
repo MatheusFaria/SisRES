@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-BALgtmJfA6AZFGAEcjtWKg" guid="-BALgtmJfA6AZFGAEcjtWKg" version="1.0.0">
+    <keyConsiderations>&lt;p>&#xD;
+    &amp;nbsp;&#xD;
+&lt;/p></keyConsiderations>
+    <purpose>To create and run tests that validate that the system conforms to the intent.</purpose>
+    <howtoStaff>&lt;p>
+    The staff performing this activity must be integrated into the team.
+&lt;/p></howtoStaff>
+    <usageNotes>&lt;p>&#xD;
+    Testing must occur throughout the process and &lt;span     style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Batang; mso-bidi-font-family: Arial; mso-ansi-language: EN-US; mso-fareast-language: KO; mso-bidi-language: AR-SA&quot;>throughout&amp;nbsp;each&#xD;
+    iteration.&amp;nbsp;It is not some final inspection to be done at the end. As requirements are de &lt;span     style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Batang; mso-bidi-font-family: Arial; mso-ansi-language: EN-US; mso-fareast-language: KO; mso-bidi-language: AR-SA&quot;>veloped&#xD;
+    and integrated into the build they should be tested as soon as possible.&lt;/span>&lt;/span>&#xD;
+&lt;/p></usageNotes>
+  </org.eclipse.epf.uma:ProcessDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-4QbtCGtmsxcTi6oFvwuYUg" name="implement_test_scripts,_T8IzQlqxEduPD_03X_F_pA" guid="-4QbtCGtmsxcTi6oFvwuYUg">
+    <refinedDescription>Work with the &lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/roles/ambassador_user.html&quot;&#xD;
+guid=&quot;_ctbZ8FkVEdul8L-IGeA7TA&quot;>Ambassador User&lt;/a>&amp;nbsp;to verify the scope and&amp;nbsp;validity of the&amp;nbsp;test scripts.</refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-2BHUcp1U7fu64h1AMy5GcA" name="run_tests,_T8IzRFqxEduPD_03X_F_pA" guid="-2BHUcp1U7fu64h1AMy5GcA">
+    <refinedDescription>Work with the &lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/roles/ambassador_user.html&quot;&#xD;
+guid=&quot;_ctbZ8FkVEdul8L-IGeA7TA&quot;>Ambassador User&lt;/a>&amp;nbsp;and where necessary the more specialist &lt;a class=&quot;elementLink&quot;&#xD;
+href=&quot;./../../dsdm_openup/roles/advisor_user.html&quot; guid=&quot;_avOA0FkVEdul8L-IGeA7TA&quot;>Advisor User&lt;/a>&amp;nbsp;to help execute the&#xD;
+tests and verify the test results.</refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+</xmi:XMI>

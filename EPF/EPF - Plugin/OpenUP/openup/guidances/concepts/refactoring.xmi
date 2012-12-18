@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-fj_9xjbrpaYNSETyCz5yJg" name="refactoring,_Poc7IPDzEdqYgerqi84oCA" guid="-fj_9xjbrpaYNSETyCz5yJg" changeDate="2007-04-19T09:44:46.336-0300" version="1.0.0">
+  <mainDescription>&lt;p>A re-fatoração é uma forma disciplinada de reestruturar o código quando pequenas mudanças são feitas nele para melhorar o design. Um aspecto importante de uma re-fatoração é que ela melhora o design sem mudar o comportamento do design; uma re-fatoração não adiciona nem remove funcionalidade.&lt;/p>&#xD;
+&lt;p>A re-fatoração permite evoluir o código lentamente no tempo, de forma que se tenha uma abordagem iterativa e incremental para a implementação.&lt;/p>&#xD;
+&lt;p>Existem três tipos de re-fatoração:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>Re-fatoração de código. Normalmente conhecida como re-fatoração, é a re-fatoração do código fonte programado. Exemplos de re-fatoração de código: Re-nomear Métodos, Encapsular Campos, Extrair Classes, Introduzir Afirmações e Especializar Métodos.&lt;/li>&#xD;
+    &lt;li>Re-fatoração de base de dados. Uma re-fatoração de base de dados é uma simples mudança no esquema da base de dados que melhore seu design mantendo suas semânticas comportamental e informativa. Exemplos de re-fatoração de base de dados: Re-nomear Colunas, Dividir Tabelas, Mover um Método para a Base de Dados, Substituir LOB por Tabela, Associar Restrições as Colunas e Usar Fontes Oficiais de Dados.&lt;/li>&#xD;
+    &lt;li>Re-fatoração de interface de usuário (UI). Uma re-fatoração de interface de usuário é uma simples mudança na interface mantendo sua semântica. Exemplos de re-fatoração de interface de usuário: Alinhar Campos de Entrada, Aplicar Tamanho Comum aos Botões, Aplicar uma Fonte Comum, Indicar Formato, Reescrever o Texto em Voz Ativa e Aumentar o Contraste das Cores.&lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;p>Martin Fowler [&lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#FOW99&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>FOW99&lt;/a>] identifica quatro principais razões para re-fatorar:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>A re-fatoração melhora o design do software&lt;/li>&#xD;
+    &lt;li>A re-fatoração torna o software mais fácil de manter.&lt;/li>&#xD;
+    &lt;li>A re-fatoração lhe ajuda a encontrar defeitos&lt;/li>&#xD;
+    &lt;li>A re-fatoração lhe ajuda a programar mais rápido&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>A re-fatoração pode melhorar o design do código existente, mas não substitui a consideração do design antes da escrita do código. Ao contrário, a re-fatoração muda o papel de design, permitindo que o trabalho estritamente de design seja mais abstrato. Decisões muito táticas e de pequena escala, podem ser tomadas durante a implementação da solução com a confiança de que a re-fatoração irá garantir uma implementação de qualidade, neste nível. A execução do design da solução, antes da implementação, será mais leve e focada em grandes fatores que irão direcionar a implementação.&lt;/p>&#xD;
+&lt;p>Existe um benefício adicional da re-fatoração: ela muda a forma que um desenvolvedor pensa sobre a implementação quando não há re-fatoração. A tarefa básica da implementação de uma solução torna-se unicamente a obtenção do sucesso da execução dos testes de desenvolvedor na solução da forma mais simples possível. Então, o design da solução pode ser examinado e re-fatorado separadamente. Mesmo que essas duas coisas -- a implementação da solução e, em seguida, a melhoria -- sejam mínimas, pode ser interessante para um desenvolvedor criar o código que faça com que o teste passe e, melhorá-lo depois.&lt;/p>&#xD;
+&lt;p>Fontes de informação sugeridas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a href=&quot;http://www.refactoring.com/&quot; target=&quot;_blank&quot;>http://www.refactoring.com/&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a href=&quot;http://www.agiledata.org/essays/databaseRefactoring.html&quot;>http://www.agiledata.org/essays/databaseRefactoring.html&lt;/a>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-1pmL5bC27rtWB84PXAgq9Q" name="new_term_definition,_WUiFcAeYEduWycDgioo5rg" guid="-1pmL5bC27rtWB84PXAgq9Q" version="7.1.0">
+  <mainDescription>O problema operacional ou de negócio (oportunidade), que deve ser resolvido para justificar a compra ou o uso do sistema.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

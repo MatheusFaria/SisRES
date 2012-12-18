@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-0cxbeJahkc1eqGKztRpcPw" name="new_term_definition,_rZOGIMaIEduMlb2cQZNTYw" guid="-0cxbeJahkc1eqGKztRpcPw" changeDate="2007-02-27T14:34:15.884-0300" version="7.2.0">
+  <mainDescription>Um &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/breakdown_element_E6E32412.html&quot; guid=&quot;_cvdpEB_LEdq6CKKKq4D7YA&quot;>elemento de decomposição&lt;/a> que agrupa descritores de papel ou papéis compostos, definindo assim uma hierarquia aninhada de equipes e membros de equipe.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

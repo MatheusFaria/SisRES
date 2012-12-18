@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-802sCZ4lJcejyRbhLmkxkw" name=",_-61a8EvOEdunZcj9T5hrMQ" guid="-802sCZ4lJcejyRbhLmkxkw" changeDate="2007-04-16T16:00:42.849-0300" version="1.0.0">
+  <mainDescription>Papel que representa alguém responsável por desenvolver uma parte do sistema, incluindo a construção de seu design de forma que ele atenda a arquitetura, e pela implementação, execução de testes de unidade, e integração dos componentes que são parte da solução.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

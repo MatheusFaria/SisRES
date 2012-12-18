@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-w7sImtXWkf4HDXdUWjRsUg" name="new_guideline,_fnZj0NVXEdqy9sbRhejO5Q" guid="-w7sImtXWkf4HDXdUWjRsUg" authors="Chris Sibbald" changeDate="2007-02-26T15:52:05.226-0300" changeDescription="Moved content from previous concept:change request to this guideline and updated in accordance with discussion from April 18, 2006 telecon." version="0.2">
+  <mainDescription>&lt;h3>Visão Geral&lt;/h3>&#xD;
+&lt;p>As solicitações de mudança normalmente têm um ciclo de vida. São criadas, revistas, aceitas ou rejeitadas, implementadas, verificadas e finalizadas. Estes estados definem o status da solicitação de mudança em um ponto no tempo e representam uma informação crítica para o acompanhamento do progresso. Outros tipos de estados também são possíveis.&lt;/p>&#xD;
+&lt;p>Durante a revisão de uma solicitação de mudança, o objetivo é avaliar o impacto da implementação da mudança tanto técnico como de custo e no cronograma. A avaliação técnica de impacto inclui a determinação de quais produtos de trabalho serão afetados e uma estimativa do nível de esforço necessário para alterar e verificar todos os artefatos afetados. Esta informação torna-se a base para as avaliações de custo e de impacto no cronograma e, finalmente, se a solicitação de mudança será aceita ou rejeitada.&lt;/p>&#xD;
+&lt;p>Se for aceita, a implementação e a verificação da mudança solicitada serão atribuídas a uma iteração da mesma forma que qualquer outro item de trabalho.&lt;/p>&#xD;
+&lt;p>O processo atual usa a &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Artefato: Lista de Itens de Trabalho&lt;/a> para capturar, priorizar e acompanhar as solicitações de mudança usando os atributos definidos para esse artefato.&lt;/p>&#xD;
+&lt;h3>Submetendo Solicitações de Mudança&lt;/h3>&#xD;
+&lt;p>Ao submeter uma solicitação de mudança forneça o máximo de informação possível para permitir uma rápida revisão e disposição. No mínimo, todas as solicitações de mudança devem incluir as seguintes informações:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>ID&lt;/strong> - um identificador único da solicitação de mudança para simplificar o seu rastreamento. Se você estiver usando algum tipo de ferramenta de acompanhamento de mudança a ferramenta deverá atribuir um ID único.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Descrição Resumida&lt;/strong> - Um nome que resuma a solicitação de mudança.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Descrição Detalhada&lt;/strong> - Uma descrição detalhada da solicitação de mudança. Para um defeito, se você puder fornecer informações que ajudem a reproduzi-lo, faça-o. Para uma solicitação de melhoria, forneça o raciocínio lógico para a solicitação.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Item Afetado&lt;/strong> - O artefato afetado e sua versão.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Severidade&lt;/strong> - Quão severa é esta questão (Super importante, é bom ter, etc.).&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Prioridade&lt;/strong> - Quão importante é esta solicitação em sua opinião.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Dependendo do sistema que você estiver usando, os nomes destes elementos de dados podem diferir. Entretanto, esta informação é necessária, de uma forma ou de outra, para permitir uma rápida revisão e disposição da solicitação de mudança.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

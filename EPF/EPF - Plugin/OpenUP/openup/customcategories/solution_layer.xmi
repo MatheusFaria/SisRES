@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-qwWeiX7WrSVHSluBe-J7yw" name="solution_layer,_HEVvgEmcEdu0xduwSKie-w" guid="-qwWeiX7WrSVHSluBe-J7yw" changeDate="2007-04-06T16:01:30.640-0300" version="1.0.0">
+  <mainDescription>&lt;p>A camada de Solução, entre outras, orienta como você deve executar as seguintes ações:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Determinar a viabilidade arquitetural&lt;/li>&#xD;
+    &lt;li>Definir e desenvolver a arquitetura&lt;/li>&#xD;
+    &lt;li>Projetar, implementar e testar um requisito ou uma mudança.&lt;/li>&#xD;
+    &lt;li>Testar e validar construções de qualidade incrementalmente melhorada&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Você encontra as tarefas para esta camada nas disciplinas de &lt;b>Arquitetura, Desenvolvimento,&lt;/b> e &lt;b>Teste&lt;/b>, e os produtos de trabalho correspondentes nos seus domínios.&lt;/p>&#xD;
+&lt;p>A camada de Solução é construída sob a fundamental &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/customcategories/collab_commun_layer_A3CDA6EF.html&quot; guid=&quot;_r8cVIEmbEdu0xduwSKie-w&quot;>Camada de comunicação e colaboração&lt;/a>. Esta camada constitui o braço central do OpenUP para assegurar que:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Todos os papéis no OpenUP estão envolvidos no desenvolvimento da solução.&lt;/li>&#xD;
+    &lt;li>As construções validadas são de responsabilidade de toda a equipe.&lt;/li>&#xD;
+    &lt;li>As melhores práticas para o desenvolvimento colaborativo orientam o desenvolvimento da solução.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>A camada de Solução está escrita de forma que sua organização possa modificá-la para se ajustar ao seu estilo de desenvolvimento, sem necessariamente afetar como você lida com as outras camadas (&lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/customcategories/management_layer_DF9A1A7F.html&quot; guid=&quot;_Aoz2gEmcEdu0xduwSKie-w&quot;>camada de Gestão&lt;/a> e &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/customcategories/intent_layer_33C0EF8F.html&quot; guid=&quot;_57_ZMEmbEdu0xduwSKie-w&quot;>camada de Intenção&lt;/a>).&lt;br />&#xD;
+      &#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

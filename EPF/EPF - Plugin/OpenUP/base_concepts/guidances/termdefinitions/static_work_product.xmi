@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_yWaY99nmEdmO6L4XMImrsA" name="static_work_product,_yWaY9tnmEdmO6L4XMImrsA" guid="_yWaY99nmEdmO6L4XMImrsA" changeDate="2005-09-07T16:07:47.378-0300" version="7.2.0">
+  <mainDescription>Um &lt;a class=&quot;elementLink&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/work_product_826E4C22.html&quot; guid=&quot;_H4JXwB_SEdq6CKKKq4D7YA&quot;>produto de trabalho&lt;/a> que é usado, mas não alterado, por um &lt;a class=&quot;elementLink&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/process_68E308B4.html&quot; guid=&quot;_yQ5m2NnmEdmO6L4XMImrsA&quot;>processo&lt;/a>.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

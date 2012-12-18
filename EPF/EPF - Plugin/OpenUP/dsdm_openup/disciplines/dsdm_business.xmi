@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-XS1IdLgLXb9oiuudSRm4MQ" name="new_discipline_2,_Y7-BECs4Edy1v79I_OKHWw" guid="-XS1IdLgLXb9oiuudSRm4MQ" changeDate="2007-07-05T18:51:20.866-0300">
+  <mainDescription>&lt;p>&#xD;
+    The purpose of the discipline is to:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Encourage active&amp;nbsp;business participation in the project team&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Stimulate collaboration between business and technical team members&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Focus the team on delivering&amp;nbsp;functionality that&amp;nbsp;meets business needs&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    This is achieved by assigning business roles into the project team and assigning responsibilities for aspects of the&#xD;
+    work.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The Business discipline is closey related to other disciplines in the following ways:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/disciplines/requirements-2.html&quot;&#xD;
+        guid=&quot;_0TR2ZMlgEdmt3adZL5Dmdw&quot;>Requirements&lt;/a> discipline gets its primary input from the Business discipline&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/disciplines/project_management.html&quot;&#xD;
+        guid=&quot;_0TqQ4MlgEdmt3adZL5Dmdw&quot;>Project Management&lt;/a> discipline shares some responsibilities with - and is&#xD;
+        accountable to - the Business discipline&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/disciplines/test.html&quot;&#xD;
+        guid=&quot;_0TkKQMlgEdmt3adZL5Dmdw&quot;>Test&lt;/a> discipline is supported by the Business discipline in the performance of&#xD;
+        some tasks The Business discipline must be satisified that tests have been successful.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The Business discipline helps the &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/disciplines/architecture.html&quot;&#xD;
+        guid=&quot;_0TX9AMlgEdmt3adZL5Dmdw&quot;>Architecture&lt;/a> discipline shape the solution through the Vision&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/disciplines/development.html&quot;&#xD;
+        guid=&quot;_0TeDoMlgEdmt3adZL5Dmdw&quot;>Development&lt;/a> discipline gets frequent feedback on the quality and direction of&#xD;
+        the software from the Business discipline&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    &lt;br />&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_H4gOYKYTEdmvhNXG0Oc2uA" name="architecture_notebook,_0XAf0MlgEdmt3adZL5Dmdw" guid="_H4gOYKYTEdmvhNXG0Oc2uA" changeDate="2007-05-01T12:43:26.291-0300" version="1.0.0">
+  <mainDescription>&lt;p>Este artefato fornece o contexto e a orientação para que os desenvolvedores construam o sistema. É um artefato crítico, usado para ajudar a registrar e tomar as decisões arquiteturais, e explicar essas decisões para os desenvolvedores. Ele pode conter qualquer informação e referência que seja apropriada para a comunicação de como os desenvolvedores devem construir o sistema. Ele normalmente não contém informações de design, embora pareça referenciar elementos de design arquiteturalmente significantes.&lt;/p>&#xD;
+&lt;p>No mínimo, esse artefato deverá:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Listar as orientações, decisões e as restrições que os desenvolvedores devem seguir na construção do sistema&lt;/li>&#xD;
+    &lt;li>Justificar essas orientações, decisões e restrições&lt;/li>&#xD;
+    &lt;li>Descrever os &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/arch_mech_2932DFB6.html&quot; guid=&quot;_mzxI0A4LEduibvKwrGxWxA&quot;>Mecanismos Arquiteturais&lt;/a> e onde eles devem ser aplicados.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os membros da equipe que não estiveram envolvidos nessas decisões arquiteturais precisam compreender o raciocínio por trás do contexto da arquitetura para que possam melhor atender às necessidades do sistema.&lt;/p>&#xD;
+&lt;p>Outros conteúdos recomendados são:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Referências aos requisitos arquiteturalmente significantes&lt;/li>&#xD;
+    &lt;li>Referências aos elementos de design arquiteturalmente significantes&lt;/li>&#xD;
+    &lt;li>Instruções de empacotamento para subsistemas e componentes&lt;/li>&#xD;
+    &lt;li>Camadas e subsistemas críticos&lt;/li>&#xD;
+    &lt;li>Interfaces de sistema críticas&lt;/li>&#xD;
+    &lt;li>Principais abstrações&lt;/li>&#xD;
+    &lt;li>Classes de análise importantes&lt;/li>&#xD;
+    &lt;li>Principais cenários que descrevam comportamento crítico do sistema&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os arquitetos devem usar este artefato para colaborar com os outros membros da equipe quando do desenvolvimento da arquitetura, e para ajudar aos membros da equipe a entender as motivações por trás das decisões arquiteturais de forma que essas decisões possam ser implementadas com robustez. Por exemplo, o arquiteto pode definir restrições sobre a forma como os dados são empacotados e comunicados entre as diferentes partes do sistema. Isso pode parece cansativo, mas a justificação no Caderno de Arquitetura pode explicar que existe um significante gargalo de desempenho na comunicação com um sistema legado. O resto do sistema deve adaptar-se a este gargalo, seguindo um esquema específico de empacotamento de dados.&lt;/p>&#xD;
+&lt;p>Este artefato também deve informar ao Gerente de Projeto e outros membros da equipe como o sistema está dividido ou organizado de modo que a equipe possa se adaptar às necessidades do sistema. Ele indica também quem deve manter e alterar a arquitetura após a primeira concepção do sistema e das motivações técnicas.&lt;/p>&#xD;
+&lt;p>Este artefato é diferente da &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/executable_architecture_D4E68CBD.html&quot; guid=&quot;_O1kAANvfEduv2KOT-Teh6w&quot;>Arquitetura Executável&lt;/a>. Este artefato descreve como o sistema deve ser construído, enquanto que a Arquitetura Executável é uma construção que contém parte da arquitetura validada.&lt;/p></mainDescription>
+  <purpose>&lt;p>Para descrever o contexto e a perspectiva do sistema para garantir a sua integridade e entendimento.&lt;/p></purpose>
+  <representationOptions>&lt;p>A arquitetura pode ser representada de diversas formas e sob vários pontos de vista, dependendo das necessidades do projeto e das preferências da equipe do projeto. Não precisa ser um documento formal. A essência da arquitetura pode ser comunicada através de uma série de diagramas simples desenhados em um quadro branco; ou como uma lista de decisões. Escolha o meio que melhor atenda as necessidades do projeto.&lt;/p>&#xD;
+&lt;p>A arquitetura pode ser expressa como uma simples metáfora ou como uma comparação a um estilo arquitetural pré-definido ou conjunto de estilos. Pode ser um conjunto específico de modelos ou documentos que descrevem os vários aspectos dos principais elementos do sistema. Expressá-la como uma construção estrutural é outra opção - embora esta construção possa necessitar ser preservada e colocada em uma linha de base para assegurar que a essência do sistema possa ser entendida na medida em que o sistema cresça.&lt;/p>&#xD;
+&lt;p>Freqüentemente, uma parte da arquitetura referencia porções arquiteturalmente significantes do &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/design_D677D182.html&quot; guid=&quot;_0WuL8slgEdmt3adZL5Dmdw&quot;>Design&lt;/a>. Ela pode referenciar modelos que descrevam &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/guidelines/architectural_view_FF6EDA37.html&quot; guid=&quot;_T9nygClEEduLGM8dfVsrKg&quot;>Visões Arquiteturais&lt;/a> para comunicar a arquitetura. Uma visão é a representação de um sistema sob a perspectiva de um conjunto de considerações relacionadas. Para escolher o conjunto apropriado de visões, identifique os Stakeholders que dependam da documentação arquitetural do sistema e as informações que eles precisam.&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

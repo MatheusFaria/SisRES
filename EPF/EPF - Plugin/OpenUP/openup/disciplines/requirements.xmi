@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="__rFCULv9EdmmUvZAZjqE3g" name="requirements,_0TR2ZMlgEdmt3adZL5Dmdw" guid="__rFCULv9EdmmUvZAZjqE3g" changeDate="2007-07-18T15:36:27.695-0300" version="1.0.0">
+  <mainDescription>d &#xD;
+&lt;p>O propósito desta disciplina é:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Entender o problema a ser resolvido&lt;/li>&#xD;
+    &lt;li>Entender as necessidades dos Stakeholders (o que os usuários desejam)&lt;/li>&#xD;
+    &lt;li>Definir os requisitos para a solução (o que o sistema tem que fazer)&lt;/li>&#xD;
+    &lt;li>Definir os limites (escopo) do sistema&lt;/li>&#xD;
+    &lt;li>Identificar interfaces externas ao sistema&lt;/li>&#xD;
+    &lt;li>Identificar restrições técnicas na solução&lt;/li>&#xD;
+    &lt;li>Fornecer a base para o planejamento das iterações&lt;/li>&#xD;
+    &lt;li>Fornecer a base inicial para a estimativa de custo e cronograma&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Para conseguir estas metas, é importante compreender a definição e o escopo do problema que você está tentando resolver. Identifique os &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholders&lt;/a> e defina o problema a ser resolvido.&lt;/p>&#xD;
+&lt;p>Concordando com o problema a ser resolvido, os &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/requirements_8006414F.html&quot; guid=&quot;_0Wh-sMlgEdmt3adZL5Dmdw&quot;>Requisitos&lt;/a> para o sistema são elicitados, organizados, analisados, validados e especificados.&lt;/p>&#xD;
+&lt;p>Durante todo o ciclo de vida, você gerencia as mudanças nos requisitos.&lt;/p>&#xD;
+&lt;p>A disciplina de Requisitos está relacionada às outras disciplinas das seguintes formas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>As disciplinas de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/architecture_1F9C65DA.html&quot; guid=&quot;_0TX9AMlgEdmt3adZL5Dmdw&quot;>Arquitetura&lt;/a> e &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/development_B5D1D8A.html&quot; guid=&quot;_0TeDoMlgEdmt3adZL5Dmdw&quot;>Desenvolvimento&lt;/a> obtém suas principais entradas a partir da disciplina de Requisitos.&lt;/li>&#xD;
+    &lt;li>A disciplina de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/test_FB85069.html&quot; guid=&quot;_0TkKQMlgEdmt3adZL5Dmdw&quot;>Teste&lt;/a> valida o sistema de acordo com os requisitos.&lt;/li>&#xD;
+    &lt;li>A disciplina de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/config_and_change_management_417EC254.html&quot; guid=&quot;_0TwXgMlgEdmt3adZL5Dmdw&quot;>Gestão de Configuração e Mudança&lt;/a> fornece os mecanismos para controlar as mudanças nos requisitos.&lt;/li>&#xD;
+    &lt;li>A disciplina de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/project_management_AFB03A6.html&quot; guid=&quot;_0TqQ4MlgEdmt3adZL5Dmdw&quot;>Gestão de Projeto&lt;/a> planeja o projeto e atribui os requisitos a cada iteração analisando os requisitos priorizados e atribuindo o trabalho.&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

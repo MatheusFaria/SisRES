@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-zy1Q3NXKXbiCP_zrjTxwaQ" name="getting_started,_cp6ycBOGEduCNqgZdt_OaA" guid="-zy1Q3NXKXbiCP_zrjTxwaQ" authors="Jim Ruehlin" changeDate="2007-07-02T18:24:56.096-0300" version="1.0.0">
+  <keyConsiderations>&lt;p>O OpenUP é um processo para equipes pequenas e co-localizadas. Pode ser usado da forma que está, mas se sua equipe tiver características significativamente diferentes, o processo deve ser modificado ou estendido para atender a essas necessidades.&lt;/p></keyConsiderations>
+</org.eclipse.epf.uma:ContentDescription>

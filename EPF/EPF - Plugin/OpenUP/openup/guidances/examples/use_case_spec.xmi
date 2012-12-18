@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-qq-9Brh5oa6H3lsdp-m8mQ" name=",_JLOiIMNvEdu2IdAIaWZyAw" guid="-qq-9Brh5oa6H3lsdp-m8mQ" changeDate="2007-07-20T17:47:13.896-0300" version="7.2.0">
+  <mainDescription>&lt;p>O documento em anexo fornece um exemplo de uma especificação de caso de uso para um Caixa Automático (ATM). O ATM foi selecionado como um sistema de exemplo porque é familiar para a maioria das pessoas. Esta familiaridade simplifica a compreensão dos princípios sem se perder na terminologia específica do domínio.&lt;/p>&#xD;
+&lt;p>Um exemplo correlato, &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/examples/uc_model_evolve_960F136B.html&quot; guid=&quot;_t4QdAMNqEdu2IdAIaWZyAw&quot;>Evolução do Modelo de Caso de Uso&lt;/a>, mostra como o modelo de caso de uso evolui no tempo.&lt;br />&#xD;
+&lt;/p></mainDescription>
+  <attachments>resources/use_case_spec_withdraw_cash.doc</attachments>
+</org.eclipse.epf.uma:GuidanceDescription>

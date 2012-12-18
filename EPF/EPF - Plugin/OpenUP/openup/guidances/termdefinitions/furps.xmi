@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-vq2pL6yQuqGhql9Wo_Av4w" name=",_ZH6M0EvEEdunZcj9T5hrMQ" guid="-vq2pL6yQuqGhql9Wo_Av4w" changeDate="2007-04-16T15:47:18.485-0300" version="1.0.0">
+  <mainDescription>Funcionalidade, Usabilidade, Confiabilidade, Desempenho, Suportabilidade e outros. Este acrônimo representa as categorias que podem ser usadas na definição dos requisitos do produto. Para mais informações veja &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/termdefinitions/supporting_requirement_C0335C3.html&quot; guid=&quot;_U_olUEvDEdunZcj9T5hrMQ&quot;>Requisitos Suplementares&lt;/a>.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

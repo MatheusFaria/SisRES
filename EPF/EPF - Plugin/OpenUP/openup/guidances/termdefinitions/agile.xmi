@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-qZE4XgeMK93LmJMKuQWGFg" name=",_3PJ38EvqEdunZcj9T5hrMQ" guid="-qZE4XgeMK93LmJMKuQWGFg" version="7.2.0">
+  <mainDescription>Um conjunto de valores e princípios para desenvolvimento de software que usa técnicas leves de produção para entregar valor aos Stakeholders.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

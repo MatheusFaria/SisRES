@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-KCSbXYv5TALlL00zMMfgVw" name="openup_family,_v2l6gK_5EduMeuOwJ2MpeQ" guid="-KCSbXYv5TALlL00zMMfgVw" changeDate="2007-07-23T14:29:52.500-0300" version="7.2.0">
+  <mainDescription>&lt;p>A família OpenUP de processos visa abordar uma ampla variedade de tipos de projetos, compartilhando um conjunto de características comuns. Estes são os princípios fundamentais de:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/core_principle_collaborate_EC5EB51F.html&quot; guid=&quot;_KkTIsMp7EdqC_NfSivunjA&quot;>Colaborar para alinhar os interesses e compartilhar o entendimento&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/core_principle_evolve_BFD9AEB4.html&quot; guid=&quot;_GXiogMvoEdqukPpotm3DYg&quot;>Evoluir para continuamente obter feedback e promover melhorias&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/core_principle_focus_346C6FAF.html&quot; guid=&quot;_9gocwMvoEdqukPpotm3DYg&quot;>Focar na arquitetura, o mais cedo possível, para reduzir o risco e organizar o desenvolvimento.&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/core_principle_balance_793DD27.html&quot; guid=&quot;_ssG6MMvpEdqukPpotm3DYg&quot;>Balancear as prioridades competitivas para maximizar o valor aos Stakeholders&lt;/a>.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os processos na família OpenUP são escritos como extensões ao Processo Base do OpenUP, que abraça uma filosofia pragmática e ágil focando na natureza colaborativa do desenvolvimento de software. O Processo Base OpenUP é independente de ferramenta e de pouca cerimônia que pode ser estendido para lidar com uma grande variedade de tipos de projeto.&lt;/p>&#xD;
+&lt;p>Adicionando plug-ins de processo, as extensões ao OpenUP podem ser criadas para tratam uma grande variedade de preocupações sobre desenvolvimento tais como SOA, distribuição geográfica, arquitetura orientada a modelo e sistemas embutidos. Orientações específicas sobre ferramentas e tecnologias podem ser adicionadas, tais como orientação sobre J2EE e uma variedade de ferramentas de desenvolvimento. Algumas destas extensões podem ser bem modestas, acrescentando, por exemplo, apenas orientações sobre uma ferramenta específica para as tarefas existentes, enquanto outras podem ser bastante abrangentes, criando processos que fornecem um escopo radicalmente ampliado com a criação ou alteração de artefatos, tarefas e papéis.&lt;/p>&#xD;
+&lt;p>Como declarado acima, para se qualificarem como membros da família OpenUP, os processos extensores devem respeitar os princípios fundamentais do OpenUP e serem escritos como extensões do Processo Base OpenUP.&lt;/p>&#xD;
+&lt;p>As extensões para o OpenUP podem ser:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>usadas internamente por uma organização&lt;/li>&#xD;
+    &lt;li>código fonte aberto como uma parte do projeto EPF,&lt;/li>&#xD;
+    &lt;li>disponibilizadas gratuitamente fora das licenças Eclipse de código aberto (EPL),&lt;/li>&#xD;
+    &lt;li>ou vendidas comercialmente.&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

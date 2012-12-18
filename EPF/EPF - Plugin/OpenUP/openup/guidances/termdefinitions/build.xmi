@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Wh-byAGHoy_gGry0Jq6VaA" name=",_Z-AukEvpEdunZcj9T5hrMQ" guid="-Wh-byAGHoy_gGry0Jq6VaA" changeDate="2007-04-16T15:59:27.867-0300" version="1.0.0">
+  <mainDescription>Uma versão operacional de um sistema ou de uma parte do sistema que demonstre um subconjunto das capacidades a serem fornecidas no produto final.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

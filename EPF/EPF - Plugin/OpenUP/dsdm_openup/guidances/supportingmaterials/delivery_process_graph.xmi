@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-DnC7fA3w13V6_Jet6aNkVA" name="new_supporting_material,_Pt_fYBjoEduxUfEVCtmW4Q" guid="-DnC7fA3w13V6_Jet6aNkVA" changeDate="2006-10-27T08:21:18.841-0300" version="1.0.0">
+  <mainDescription>&lt;img height=&quot;192&quot; alt=&quot;OpenUP/Basic Lifecycle&quot; src=&quot;./resources/openup-basic_lifecycle.jpg&quot; width=&quot;667&quot; usemap=&quot;#map&quot; border=&quot;0&quot; /> &lt;map id=&quot;Map&quot; name=&quot;Map&quot;>&#xD;
+    &lt;area shape=&quot;rect&quot; coords=&quot;116,7,175,25&quot; href=&quot;./../../../openup_basic/guidances/concepts/inception_phase.html&quot; guid=&quot;_0hmKgBOMEduCNqgZdt_OaA&quot;>&lt;/area>&#xD;
+    &lt;area shape=&quot;rect&quot; coords=&quot;255,11,327,27&quot; href=&quot;./../../../openup_basic/guidances/concepts/elaboration_phase.html&quot; guid=&quot;_2plxwBOMEduCNqgZdt_OaA&quot;>&lt;/area>&#xD;
+    &lt;area shape=&quot;rect&quot; coords=&quot;395,11,476,27&quot; href=&quot;./../../../openup_basic/guidances/concepts/construction_phase.html&quot; guid=&quot;_48EKsBOMEduCNqgZdt_OaA&quot;>&lt;/area>&#xD;
+    &lt;area shape=&quot;rect&quot; coords=&quot;554,10,619,27&quot; href=&quot;./../../../openup_basic/guidances/concepts/transition_phase.html&quot; guid=&quot;__ca5UBOMEduCNqgZdt_OaA&quot;>&lt;/area>&#xD;
+    &lt;area shape=&quot;rect&quot; coords=&quot;39,98,100,162&quot; href=&quot;./../../../dsdm_openup/deliveryprocesses/dsdm_inception_phase_iteration.html&quot; guid=&quot;_1Vzlk1ogEdug9t_2UE7UhQ&quot;>&lt;/area>&#xD;
+    &lt;area shape=&quot;rect&quot; coords=&quot;188,99,250,168&quot; href=&quot;./../../../dsdm_openup/deliveryprocesses/dsdm_elaboration_phase_iteration.html&quot; guid=&quot;_1Vzme1ogEdug9t_2UE7UhQ&quot;>&lt;/area>&#xD;
+    &lt;area shape=&quot;rect&quot; coords=&quot;332,100,397,165&quot; href=&quot;./../../../dsdm_openup/deliveryprocesses/dsdm_construction_phase_iteration.html&quot; guid=&quot;_1VqcnFogEdug9t_2UE7UhQ&quot;>&lt;/area>&#xD;
+    &lt;area shape=&quot;rect&quot; coords=&quot;480,98,541,167&quot; href=&quot;./../../../dsdm_openup/deliveryprocesses/dsdm_transition_phase_iteration.html&quot; guid=&quot;_1VgrCVogEdug9t_2UE7UhQ&quot;>&lt;/area>&#xD;
+&lt;/map></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

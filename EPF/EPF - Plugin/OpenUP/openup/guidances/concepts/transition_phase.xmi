@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-FrUmsKsGW4bnNmb9uaNOkg" name=",__ca5UBOMEduCNqgZdt_OaA" guid="-FrUmsKsGW4bnNmb9uaNOkg" changeDate="2007-07-11T12:08:57.015-0300" version="1.0.0">
+  <mainDescription>&lt;p>A finalidade desta fase é assegurar que o software esteja pronto para ser entregue aos usuários.&lt;/p>&#xD;
+&lt;p>Existem objetivos na fase de Transição que lhe ajudam a fazer um ajuste-fino na funcionalidade, no desempenho e na qualidade geral do produto beta oriundo da fase precedente &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#KRO03&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[KRO03]&lt;/a>:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Executar o teste Beta para validar se as expectativas dos usuários foram atendidas&lt;/b>. Isto normalmente requer algumas atividades de ajuste fino, tais como reparação de erros e melhorias no desempenho e na usabilidade.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Obter a concordância dos stakeholders de que a implantação está completa&lt;/b>. Isto pode envolver vários níveis de testes para a aceitação do produto, incluindo testes formais, informais e testes beta.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Melhorar o desempenho de projetos futuros com as lições aprendidas.&lt;/b> Documente as lições aprendidas e melhore o ambiente de processos e ferramentas para o projeto.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;h4>&#xD;
+    &lt;br />Principais considerações&lt;br />&#xD;
+&lt;/h2>&#xD;
+&lt;p>A fase de Transição pode incluir a execução paralela de sistemas antigos e novos, migração de dados, treinamento de usuários e ajustes nos processos de negócio.&lt;/p>&#xD;
+&lt;p>A quantidade de iterações na fase de Transição varia de uma iteração (para um sistema simples que necessita principalmente de reparos de pequenos erros), até muitas iterações (para um sistema complexo, envolvendo a adição de características e a execução de atividades) para fazer a transição, no negócio, do uso do sistema antigo para o sistema novo.&lt;/p>&#xD;
+&lt;p>Quando os objetivos da fase de Transição são alcançados, o projeto está pronto para ser encerrado. Para alguns produtos, o fim do ciclo de vida do projeto atual pode coincidir com o começo do ciclo de vida do seguinte, conduzindo à nova geração do mesmo produto.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

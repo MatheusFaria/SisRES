@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-CFYVionNDLkMw6SG6runQA" name="uc_realizations,_2uan8NbyEdqu5o2S60g5LA" guid="-CFYVionNDLkMw6SG6runQA" changeDate="2007-07-17T12:24:53.360-0300" version="1.0.0">
+  <mainDescription>&lt;p>Uma realização de caso de uso mostra como um caso de uso será implementado na forma de objetos de colaboração. As realizações residem no design. Ao percorrer um design exercite mostrando como os elementos de design irão executar o caso de uso, a equipe recebe a confirmação de que o design está robusto o suficiente para executar o comportamento exigido.&lt;/p>&#xD;
+&lt;p>A realização pode assumir diversas formas. Pode conter, por exemplo, uma descrição textual (um documento), diagramas de classe com subsistemas e classes, e diagramas de interação (diagramas de comunicação e de seqüência) que ilustram o fluxo das interações entre as instancias de classes e subsistemas.&lt;/p>&#xD;
+&lt;p>A razão de separar a realização de caso de uso de seu caso do uso é que ao fazermos isto permitimos que os requisitos, na forma de casos de uso sejam controlados separadamente do design, na forma de realizações. Essa separação se torna inestimável se a arquitetura mudar muito de forma que a realização precise ser re-trabalhada enquanto os requisitos permaneçam inalterados. Mesmo sem tal circunstância, a clara separação entre as preocupações dos requisitos e do design é valiosa.&lt;/p>&#xD;
+&lt;p>Em um modelo, uma realização de caso de uso é representada como uma colaboração UML que agrupa os diagramas e outras informações (tais como descrições textuais) que formam a realização do caso de uso.&lt;/p>&#xD;
+&lt;p>Como outros aspectos do projeto, os diagramas UML que suportam realizações de casos de uso podem ser produzidos em vários níveis de abstração. O primeiro passo na criação da realização pode produzir um diagrama no nível de abstração de análise, onde os participantes serão elementos de alto nível que venham a ser revisados e detalhados no nível de design em um segundo passo. Se as expressões idiomáticas da arquitetura e do design forem bem entendidas, a realização poderá ser criada imediatamente em um baixo nível de abstração, que especifique mais detalhes dos elementos e como eles irão colaborar para realizar o comportamento do caso de uso. Neste último caso, é valioso modelar padrões e mecanismos arquiteturais para reduzir a quantidade de detalhes de baixo nível, em cada realização.&lt;/p>&#xD;
+&lt;p>Para cada caso de uso nos requisitos, pode haver uma realização de caso de uso no design com um relacionamento de realização ao caso do uso, como mostra a figura a seguir. Na UML isto é mostrado como uma seta tracejada, igual ao relacionamento de generalização, indicando que uma realização é um tipo de herança, bem como uma dependência (veja a figura a seguir).&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;strong>&lt;font face=&quot;Verdana, Arial, Helvetica, sans-serif&quot; size=&quot;2&quot;>A notação UML para realização de caso de uso&lt;/font>&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;109&quot; alt=&quot;Realizações de Caso de Uso&quot; src=&quot;./resources/ucrea1.gif&quot; width=&quot;277&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;h1>Diagramas de Classe que pertencem a uma realização de caso de uso&lt;/h1>Para cada realização de caso de uso podem existir um ou mais diagramas de classe que descrevam suas classes participantes. Uma classe e seus objetos normalmente participam de diversas realizações de caso de uso. Ao projetar, é importante coordenar todos os requisitos relacionados a uma classe que diferentes realizações de caso de uso possam ter. A figura abaixo mostra um diagrama de classe de análise para a realização do caso de uso &quot;Receber Depósito&quot;. Note o uso de estereótipos entidade-controle-fronteira para representar as classes de análise (veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/guidelines/entity_control_boundary_pattern_C4047897.html&quot; guid=&quot;_uF-QYEAhEdq_UJTvM1DM2Q&quot;>Diretriz: Padrão Entidade-Controle-Fronteira&lt;/a>).&lt;p align=&quot;center&quot;>&#xD;
+    &lt;strong>&lt;font face=&quot;Verdana, Arial, Helvetica, sans-serif&quot; size=&quot;2&quot;>O caso de uso Receber Depósito e o seu diagrama de classe em nível de análise&lt;/font>&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;213&quot; alt=&quot;Diagrama de classe para a realização de Receber Depósito.&quot; src=&quot;./resources/md_ucre3.gif&quot;     width=&quot;328&quot; />&#xD;
+&lt;/p>&lt;br align=&quot;center&quot; />&#xD;
+&lt;br />&#xD;
+&lt;h1>Diagramas de seqüência e de comunicação&lt;/h1>&#xD;
+&lt;p>Para cada realização de caso de uso podem existir um ou mais diagramas de interação que descrevem os objetos participantes e suas interações. Há dois tipos de diagramas de interação: diagramas de &lt;i>seqüência&lt;/i> e diagramas de &lt;i>comunicação&lt;/i>. Eles expressam informações similares, mas mostram-nas de formas diferentes.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Os &lt;b>diagramas de seqüência&lt;/b> mostram a seqüência explícita das mensagens e são mais indicados quando é importante visualizar a ordem temporal das mensagens.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        Os &lt;b>diagramas de comunicação&lt;/b> mostram as ligações de comunicação entre os objetos e são mais indicados para a compreensão de todos os efeitos causados em um objeto e para o projeto de algoritmos.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Realizar casos de uso com diagramas de interação ajuda a manter o design simples e coesivo. Atribuindo responsabilidades às classes atendendo ao que o cenário de caso de uso requer incentiva o design a conter os seguintes elementos:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Somente a funcionalidade usada realmente para suportar um cenário de caso de uso&lt;/li>&#xD;
+    &lt;li>A funcionalidade que pode ser testada através de um caso de teste associado&lt;/li>&#xD;
+    &lt;li>A funcionalidade que é mais facilmente rastreável aos requisitos e às mudanças&lt;/li>&#xD;
+    &lt;li>As dependências de classe explicitamente declaradas que são mais fáceis de controlar&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes fatores ajudam a melhorar a qualidade geral do sistema.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

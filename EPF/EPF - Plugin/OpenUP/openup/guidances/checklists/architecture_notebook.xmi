@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_17Ve8Nd6EdmIm-bsRSNCgw" name="architecture_notebook,_17PYUNd6EdmIm-bsRSNCgw" guid="_17Ve8Nd6EdmIm-bsRSNCgw" authors="Chris Doyle, Mark Dickson" changeDate="2007-03-03T14:34:09.111-0300" changeDescription="(Mark Dickson) formatted &amp; applied changes from Chris Doyle |Major re-|Major re-write in line with Supporting Requirements checklist" version="1.3">
+  <mainDescription>&lt;p>Os itens nesta lista de verificação representam boas práticas para criar e comunicar uma arquitetura robusta. Pode não ser possível utilizar todos os itens, e alguns itens podem ser utilizados com abrangência limitada. Nestes casos, tenha certeza que existem boas razões para utilizar um item parcialmente ou não utiliza-lo.&lt;/p>&#xD;
+&lt;p>As revisões arquiteturais podem ocorrer diariamente. Use esta lista de verificação regularmente para assegurar que os resultados estão robustos, consistentes e compreensíveis. Faça com que a arquitetura seja boa o bastante para as metas específicas que estão sendo tratadas pelo uso desta lista de verificação para identificar as áreas que foram deixadas de lado, ignoradas ou insuficientemente tratadas.&lt;/p></mainDescription>
+  <sections xmi:id="_LqpmkCALEduY2JH31Kkn-A" name="A estrutura geral da arquitetura está clara?" guid="_LqpmkCALEduY2JH31Kkn-A">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>As principais abstrações estão definidas adequadamente?&lt;/li>&#xD;
+    &lt;li>Os &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/arch_mech_2932DFB6.html&quot; guid=&quot;_mzxI0A4LEduibvKwrGxWxA&quot;>Mecanismos Arquiteturais&lt;/a> necessários foram identificados e descritos?&lt;/li>&#xD;
+    &lt;li style=&quot;list-style: none&quot;>&#xD;
+        &lt;ul>&#xD;
+            &lt;li>Está claro quando cada mecanismo pode ser aplicado?&lt;/li>&#xD;
+            &lt;li>Existe um padrão de design claramente definido para suportar cada mecanismo?&lt;/li>&#xD;
+            &lt;li>Cada mecanismo trata adequadamente os requisitos que eles deverão atender?&lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>A arquitetura divide as responsabilidades do sistema em subsistemas bem definidos com interfaces bem definidas?&lt;/li>&#xD;
+    &lt;li>A abordagem por pacotes reduz a complexidade e melhora a compreensão?&lt;/li>&#xD;
+    &lt;li>A divisão e a disposição em camadas dos subsistemas e pacotes estão logicamente consistentes?&lt;/li>&#xD;
+    &lt;li>Os pacotes estão definidos para ser altamente coesivos dentro do pacote e também estão minimamente acoplados?&lt;/li>&#xD;
+    &lt;li>Todos os componentes do subsistema para a iteração estão identificados?&lt;/li>&#xD;
+    &lt;li>As dependências entre subsistemas e pacotes correspondem aos relacionamentos de dependência entre as classes contidas neles?&lt;/li>&#xD;
+    &lt;li>As classes de um subsistema suportam os serviços identificados para o subsistema?&lt;/li>&#xD;
+    &lt;li>A quantidade e os tipos de componentes estão razoáveis?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_pWBfQMm9EduiAPR4gd-qxA" name="Os requisitos suplementares estão sendo atendidos adequadamente?" guid="_pWBfQMm9EduiAPR4gd-qxA">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>A arquitetura atende adequadamente aos requisitos Funcionais globais?&lt;/li>&#xD;
+    &lt;li>A arquitetura atende adequadamente aos requisitos de Usabilidade?&lt;/li>&#xD;
+    &lt;li>A arquitetura atende adequadamente aos requisitos de Confiança?&lt;/li>&#xD;
+    &lt;li>A arquitetura atende adequadamente aos requisitos de Desempenho?&lt;/li>&#xD;
+    &lt;li>A arquitetura atende adequadamente aos requisitos de Suportabilidade?&lt;/li>&#xD;
+    &lt;li>A arquitetura atende adequadamente as outras necessidades identificadas nas &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/workproducts/supporting_requirements_spec_7D9DD47C.html&quot; guid=&quot;_BVh9cL-CEdqb7N6KIeDL8Q&quot;>Especificações de Requisitos Suplementares&lt;/a>?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_PHv_kCALEduY2JH31Kkn-A" name="A arquitetura pode ser entregue pela equipe?" guid="_PHv_kCALEduY2JH31Kkn-A">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>A arquitetura dos componentes fornece uma base apropriada para organizar as equipes de desenvolvimento?&lt;/li>&#xD;
+    &lt;li>Cada equipe tem as habilidades necessárias para implementar os componentes alocados a elas?&lt;/li>&#xD;
+    &lt;li>As responsabilidades estão bem divididas entre as equipes?&lt;/li>&#xD;
+    &lt;li>Todos os membros de equipe têm a mesma compreensão sobre a arquitetura da mesma forma que o arquiteto?&lt;/li>&#xD;
+    &lt;li>Os membros da equipe compreendem bastante a arquitetura para projetar e codificar com sucesso os componentes alocados a eles?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_A8m2YMm7EduiAPR4gd-qxA" name="A arquitetura está mostrando estabilidade apropriada?" guid="_A8m2YMm7EduiAPR4gd-qxA">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Está surgindo uma arquitetura candidata na fase de concepção?&lt;/li>&#xD;
+    &lt;li>A arquitetura está começando a se estabilizar na fase de elaboração?&lt;/li>&#xD;
+    &lt;li>A arquitetura está satisfatoriamente estável na fase de construção?&lt;/li>&#xD;
+    &lt;li>A arquitetura está bastante estável na fase de transição?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_aOKkwMm8EduiAPR4gd-qxA" name="No geral, a arquitetura parece sensível?" guid="_aOKkwMm8EduiAPR4gd-qxA">
+    <sectionDescription>&lt;ul class=&quot;noindent&quot;>&#xD;
+    &lt;li>A arquitetura está em um nível apropriado de detalhe, mostrando os objetivos?&lt;/li>&#xD;
+    &lt;li>Os conceitos estão sendo tratados da forma mais simples possível?&lt;/li>&#xD;
+    &lt;li>A arquitetura pode evoluir facilmente de modo que as mudanças previstas possam ser acomodadas com facilidade?&lt;/li>&#xD;
+    &#xD;
+  &lt;li>A arquitetura foi super-estruturada para tratar mudanças improváveis à custa da simplicidade e da compreensibilidade? (Dica: &quot;Sim&quot; como resposta não é bom).&lt;/li>&#xD;
+    &#xD;
+  &lt;li>As principais suposições e decisões, nas quais a arquitetura está baseada, estão documentadas e visíveis para os revisores e para aqueles que irão usar a arquitetura?&lt;/li>&#xD;
+    &lt;li>A descrição da arquitetura está atualizada?&lt;/li>&#xD;
+    &lt;li>As diretrizes de design foram seguidas?&lt;/li>&#xD;
+    &lt;li>Todos os riscos técnicos foram atenuados ou direcionados para um plano de contingência?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-7CRmNPPwEM-jEAQnjShe8g" name="new_role,_ctbZ8FkVEdul8L-IGeA7TA" guid="-7CRmNPPwEM-jEAQnjShe8g" changeDate="2006-10-27T07:43:45.389-0300" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    This role provides the key focus for design decisions. Working closely with the &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/roles/project_manager.html&quot; guid=&quot;_0a0o0MlgEdmt3adZL5Dmdw&quot;>Project Manager&lt;/a>, &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/roles/developer.html&quot; guid=&quot;_0YDosMlgEdmt3adZL5Dmdw&quot;>Developer&lt;/a>(s), &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/roles/tester.html&quot; guid=&quot;_0ZM4MclgEdmt3adZL5Dmdw&quot;>Tester&lt;/a>(s) and&#xD;
+    the &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/roles/architect.html&quot; guid=&quot;_0X9iEMlgEdmt3adZL5Dmdw&quot;>Architect&lt;/a>, the Ambassador User drives the system's requirements, bringing&amp;nbsp;input&#xD;
+    and ideas to the various sessions on behalf of the users; and keeping the other users informed of what is happening.&#xD;
+    The holder of the Ambassador User role must have the desire, authority, responsibility and knowledge to be able to&#xD;
+    ensure that the right system is built for the business. This does not necessarily imply a senior position within the&#xD;
+    organisation, but a level of empowerment during the project to fulfil the role and a clear allocation of time to&#xD;
+    participate in the project as required.&#xD;
+&lt;/p>&#xD;
+&lt;h2>&#xD;
+    &lt;a id=&quot;Responsibilities&quot; name=&quot;Responsibilities&quot;>Responsibilities&lt;/a>&#xD;
+&lt;/h2>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Providing key input to business requirements and design sessions&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Communicating with other users and getting their agreement&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Providing input into prototyping sessions&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Reviewing documentation&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Reviewing and accepting delivered software&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Providing user documentation&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Ensuring user training is adequately carried out&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Organising and controlling user testing&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <keyConsiderations>&lt;p>&#xD;
+    Ambassador Users must be representative of the entire community of users. The whole user community should see them as&#xD;
+    such - not just the user management. They must have authority delegated to them to make decisions and to guide the work&#xD;
+    of the developers. This is particularly important when considering changes of scope due to time limitations.&#xD;
+&lt;/p></keyConsiderations>
+  <skills>&lt;ul class=&quot;noindent&quot;>
+    &lt;li>
+        Knowledge of the relevant business area goals and the organisation politics
+    &lt;/li>
+    &lt;li>
+        High-level view of how the computer system should function to support the business
+    &lt;/li>
+    &lt;li>
+        Good communication skills
+    &lt;/li>
+    &lt;li>
+        Ability to disseminate knowledge and ideas.
+    &lt;/li>
+&lt;/ul></skills>
+  <assignmentApproaches>&lt;p>
+    Ambassador Users should have a positive attitude towards the development since they will be exposed to a whole raft of
+    new ideas and technologies that can be daunting.
+&lt;/p>
+&lt;p>
+    &lt;span     style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>
+    For some critical projects, it may be necessary for Ambassador Users to be on the project full-time, but this is often
+    not possible and may even be counter-productive.&lt;/span> It is perfectly acceptable for an Ambassador User to be
+    part-time. However, the presence on the project needs to be continuous, e.g. at specified times of the day and/or on
+    agreed days of every week.
+&lt;/p></assignmentApproaches>
+</org.eclipse.epf.uma:RoleDescription>

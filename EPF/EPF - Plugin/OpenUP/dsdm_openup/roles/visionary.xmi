@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-nJn-jwljg2OgNZnS4jT87g" name="new_role,_hQJ-QFkVEdul8L-IGeA7TA" guid="-nJn-jwljg2OgNZnS4jT87g" changeDate="2006-10-11T10:06:47.359-0300" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    The Visionary is a business role. The Visionary is the one who is usually responsible for getting a project started&#xD;
+    through enthusiasm and commitment to the idea and business goals. The Visionary should remain involved throughout the&#xD;
+    design and delivery process to ensure the original objectives are being met. If any issues arise during the project,&#xD;
+    which must be considered by higher management, the Visionary will either provide the decision or provide higher&#xD;
+    management with the business viewpoint.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The Visionary role ensures the project excellence from the business point of view and the Technical Co-ordinator does&#xD;
+    the same from the technical point of view.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    &lt;a id=&quot;Responsibilities&quot; name=&quot;Responsibilities&quot;>Responsibilities&lt;/a>&#xD;
+&lt;/h4>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Promoting the translation of the vision into working practice&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Taking a wider view of the end-to-end business process&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Contributing to key requirements sessions&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Contributing to key design sessions&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Contributing to key review sessions&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Resolving conflicts across the business areas owned by the Visionary&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Ensuring user resources are available as needed&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Monitoring progress in relation to the original vision&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Commitment and availability throughout the development cycle&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <keyConsiderations>&lt;p>&#xD;
+    The Visionary has the high-level view of the original reasons for initiating the project: this must not be dissipated&#xD;
+    during development. Unfortunately, this happens in many projects. It is very easy once development is under way to&#xD;
+    involve only those staff who will use the computer system on a day-to-day basis but who, perhaps, do not fully&#xD;
+    understand all the business vision. This can result in a dilution of the original goals and a tendency towards simply&#xD;
+    re-specifying the system to be replaced. It is imperative that the Visionary is present when important user events&#xD;
+    occur or when management decisions about the progress of the project are made.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The Visionary must commit business staff to the project as &lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/roles/ambassador_user.html&quot; guid=&quot;_ctbZ8FkVEdul8L-IGeA7TA&quot;>Ambassador User&lt;/a>(s). These people should be available to the project on a continuous basis throughout the life of the project -&#xD;
+    not necessarily full-time but &quot;contracts&quot; for the Ambassador Users time should be agreed with the &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/roles/project_manager.html&quot; guid=&quot;_0a0o0MlgEdmt3adZL5Dmdw&quot;>Project Manager&lt;/a> before leaving the Business Study phase, e.g. &quot;Ambassador User X&#xD;
+    will work in the project team every Monday, Wednesday and Friday morning&quot;. The &lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/roles/advisor_user.html&quot; guid=&quot;_avOA0FkVEdul8L-IGeA7TA&quot;>Advisor User&lt;/a>(s) involvement will be more &lt;em>ad hoc&lt;/em> but should be well planned in advance.&#xD;
+&lt;/p></keyConsiderations>
+  <skills>&lt;ul class=&quot;noindent&quot;>
+    &lt;li>
+        Excellent communicator
+    &lt;/li>
+    &lt;li>
+        Excellent awareness of business goals
+    &lt;/li>
+    &lt;li>
+        High-level awareness of technological possibilities.
+    &lt;/li>
+&lt;/ul></skills>
+  <assignmentApproaches>&lt;p>
+    The Visionary and &lt;u>&lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_dsdm/roles/exec_sponsor,_fULZwFkVEdul8L-IGeA7TA.html&quot; guid=&quot;_fULZwFkVEdul8L-IGeA7TA&quot;>Executive Sponsor&lt;/a>&lt;/u> roles may be held by the same
+    person.
+&lt;/p></assignmentApproaches>
+</org.eclipse.epf.uma:RoleDescription>

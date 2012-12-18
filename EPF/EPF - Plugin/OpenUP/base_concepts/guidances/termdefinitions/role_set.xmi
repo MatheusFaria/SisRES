@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-gOXu6EqfZHMmtekNk8IDqA" name="new_term_definition,_Fs8HAMaIEduMlb2cQZNTYw" guid="-gOXu6EqfZHMmtekNk8IDqA" changeDate="2007-02-27T14:30:38.023-0300" version="7.2.0">
+  <mainDescription>Usado para agrupar &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/role_37A0C602.html&quot; guid=&quot;_yUefQNnmEdmO6L4XMImrsA&quot;>papéis&lt;/a> que tenham algo em comum.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

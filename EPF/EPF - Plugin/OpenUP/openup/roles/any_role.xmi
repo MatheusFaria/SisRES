@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_NqqcUqeqEdmKDbQuyzCoqQ" name="any_role,_0dsWoMlgEdmt3adZL5Dmdw" guid="_NqqcUqeqEdmKDbQuyzCoqQ" changeDate="2006-09-11T15:34:17.153-0300" version="7.2.0">
+  <mainDescription>&lt;p>Este papel permite que qualquer um em uma equipe execute tarefas gerais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Acessar artefatos no sistema de controle de versões para desenvolvimento e manutenção&lt;/li>&#xD;
+    &lt;li>Submeter solicitações de mudança para o projeto&lt;/li>&#xD;
+    &lt;li>Participar nas avaliações e revisões&lt;/li>&#xD;
+    &lt;li>Prontificar-se para trabalhar em uma determinada iteração&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

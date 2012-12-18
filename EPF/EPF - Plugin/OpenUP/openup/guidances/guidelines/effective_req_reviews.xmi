@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-pNA0DbSdSoUqnjQIiOeHcQ" name="achieving_concurrence,_E-dPIL-GEdqb7N6KIeDL8Q" guid="-pNA0DbSdSoUqnjQIiOeHcQ" changeDate="2006-09-22T10:09:40.793-0300" version="1.0.0">
+  <mainDescription>&lt;p>O custo da correção de erros aumenta exponencialmente durante o ciclo de desenvolvimento &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#BOE88&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[BOE88]&lt;/a>. Portanto, é importante descobrir os problemas cedo o suficiente para resolvê-los rapidamente e com baixo custo.&lt;/p>&#xD;
+&lt;p>As revisões de requisitos são feitas para descobrir problemas com os &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/requirements_8006414F.html&quot; guid=&quot;_0Wh-sMlgEdmt3adZL5Dmdw&quot;>Requisitos&lt;/a> antes de você gastar tempo e trabalho valiosos implementando a coisa errada. Isso não quer dizer que você deva ter um conjunto completo de requisitos antes da implementação, mas ter a certeza de revisar, internamente e com os Stakeholders, aqueles que foram selecionados para implementação nas iterações iniciais e aqueles que terão um grande impacto no sistema (normalmente chamados de &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/architecturally_significant_requirements_1EE5D757.html&quot; guid=&quot;_HrZGIA4MEduibvKwrGxWxA&quot;>Requisitos Arquiteturalmente Significantes&lt;/a>) para ter a concordância de todos antes de investir esforço significativo na implementação.&lt;/p>&#xD;
+&lt;h4>Revisões informais&lt;/h4>&#xD;
+&lt;p>As revisões de requisitos podem ser informais, tal como simplesmente mostrar rascunhos de requisitos aos seus colegas ou demonstrar um protótipo.&lt;/p>&#xD;
+&lt;p>Essas revisões informais são excelentes para conseguir a correta estrutura dos requisitos e remover erros óbvios. O progresso é facilitado com uma equipe de revisão pequena. Entretanto, revisões informais podem perder perspectivas importantes de Stakeholders críticos.&lt;/p>&#xD;
+&lt;h4>Revisões formais&lt;/h4>&#xD;
+&lt;p>Revisões de requisitos podem ser reuniões formais. Inicie com uma preparação cuidadosa para você receber e organizar os comentários antes da reunião. A reunião em si deve produzir decisões sobre todos os itens da revisão. Depois da reunião, você deve executar as ações da revisão até a conclusão. Se essas ações envolverem uma quantidade substancial de trabalho ou precisarem de mudanças num artefato que esteja sob a gestão de configuração, considere a submissão de &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/change_requests_AD4868FE.html&quot; guid=&quot;_6jdvECb3Edqh1LYUOGRh2A&quot;>Solicitações de Mudança&lt;/a> para priorizar e monitorar o trabalho. Veja a &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/tasks/request_change_A048C387.html&quot; guid=&quot;_0mwzEclgEdmt3adZL5Dmdw&quot;>Tarefa: Solicitar Mudança&lt;/a> e a &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/guidelines/submitting_change_requests_7A1FE1A6.html&quot; guid=&quot;_fnZj0NVXEdqy9sbRhejO5Q&quot;>Diretriz: Submetendo Solicitações de Mudança&lt;/a> associada para mais informações sobre solicitações de mudança.&lt;/p>&#xD;
+&lt;p>As revisões formais são mais abrangentes e custosas. Elas fornecem revisões mais equilibradas de múltiplas perspectivas. Entretanto, revisões formais envolvem mais pessoas, portanto são mais difíceis de coordenar (por isso a necessidade de formalidade) e custosas em termos de horas de trabalho.&lt;/p>&#xD;
+&lt;h4>Revisões em duas fases&lt;/h4>&#xD;
+&lt;p>Uma técnica para conseguir o melhor dos dois mundos é fazer revisões em duas fases &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#ADO03&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[ADO03]&lt;/a>. A primeira fase é informal e é executada por uma equipe pequena, possivelmente várias vezes. A segunda fase é mais formal e é executada pelo grupo completo, talvez somente uma vez.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Revisões de primeira fase&lt;/strong>: Os autores dos requisitos e a equipe de desenvolvimento revisam os requisitos durante a primeira fase para garantir que eles estejam completos, consistentes e inequívocos. É importante incluir testadores e desenvolvedores para garantir que os requisitos sejam praticáveis e verificáveis. Essas revisões determinam se os requisitos estão prontos para a revisão do grupo maior. Revisões da primeira fase podem ser informais, formais ou uma combinação das duas.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Revisões de segunda fase&lt;/strong>: Envolvem um grupo maior para conseguir que mais pessoas trabalhem no problema e cheguem a um acordo para que os requisitos possam ser implementados e validados. É melhor fazer uma reunião formal de revisão de requisitos no marco de Objetivos no Ciclo de Vida e, opcionalmente, uma no marco de Arquitetura no Ciclo de Vida se mudanças significativas que introduzam riscos inaceitáveis tiverem ocorrido.&lt;/p>&#xD;
+&lt;p>Nas duas fases, estes dois recursos serão úteis: &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/checklists/good_requirements_594ACCBD.html&quot; guid=&quot;_jxn9EO0HEdqHTdbLTmC5IQ&quot;>Lista de Verificação: Qualidades de Bons Requisitos&lt;/a> e &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/checklists/use_case_C5362874.html&quot; guid=&quot;_0kNwINk1Edq2Q8qZoWbvGA&quot;>Lista de Verificação: Caso de Uso&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>Revisões em fases oferecem vários benefícios:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>Eliminam o ruído causado por pequenas edições durante as revisões de primeira fase, permitindo que as próximas revisões tenham foco na funcionalidade.&lt;/li>&#xD;
+    &lt;li>Fornecem uma visão profissional dos requisitos, apresentando os requisitos e seus autores de forma clara e aberta.&lt;/li>&#xD;
+    &lt;li>Economizam o tempo dos Stakeholders que estão revisando os requisitos, consequentemente prevenindo baixa efetividade por sobrecarga e estresse&lt;/li>&#xD;
+    &lt;li>Fornecem a melhor oportunidade para revisões completas e efetivas.&lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;h4>Regras de ouro para revisão&lt;/h4>&#xD;
+&lt;p>Siga estas regras de ouro para revisão &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#TEL06&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[TEL06]&lt;/a>:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Encoraje as críticas&lt;/strong>: Lembre-se que as pessoas estão melhorando os requisitos e não criticando você. Até mesmo a crítica mais áspera possui uma ponta de verdade. Adote a idéia de que cada sugestão é um presente.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Escolha seus melhores revisores&lt;/strong>: Poucas pessoas estão capacitadas para ser os melhores revisores. Cultive-as.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Permita o tempo adequado&lt;/strong>: Nada está acabado até que você concorde e faça as correções.&lt;br />&#xD;
+         &#xD;
+    &lt;/li>&#xD;
+&lt;/ol></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

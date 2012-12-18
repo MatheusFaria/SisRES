@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_MqODAMM1EdmSIPI87WLu3g" name="uc_model,_0U6OEMlgEdmt3adZL5Dmdw" guid="_MqODAMM1EdmSIPI87WLu3g" changeDate="2005-07-07T15:50:06.005-0300" version="1.0.0">
+  <sections xmi:id="_rLdVMAeREduWycDgioo5rg" name="É fácil entender o que o sistema faz através da revisão do modelo?" guid="_rLdVMAeREduWycDgioo5rg">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>O Estudo de Caso de Uso fornece uma clara e concisa visão geral da finalidade e da funcionalidade do sistema.&lt;/li>&#xD;
+    &lt;li>Existem longas cadeias de relacionamentos &lt;i>include&lt;/i>, tais como, por exemplo, quando um caso de uso incluído, inclui outros casos de uso? Isto pode obscurecer a compreensão.&lt;/li>&#xD;
+    &lt;li>Os casos de uso incluídos são independentes dos casos de uso que os incluem?&lt;/li>&#xD;
+    &lt;li>Se vários casos de uso contém sub-fluxos semelhantes, você investigou se a fatoração desse comportamento comum em um caso de uso incluído irá simplificar o modelo?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="__kgR8AeREduWycDgioo5rg" name="Todos os casos de uso foram identificados?" guid="__kgR8AeREduWycDgioo5rg">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Os casos de uso identificados contribuem coletivamente para todos os comportamentos necessários ao sistema.&lt;/li>&#xD;
+    &lt;li>Todas as características identificadas no documento de Visão, para esta iteração, foram tratadas pelo menos, por um caso uso?&lt;/li>&#xD;
+    &lt;li>Todos os requisitos não-funcionais que devem ser atendidos por um caso de uso específico, foram capturados neste caso de uso?&lt;/li>&#xD;
+    &lt;li>Você verificou se o modelo de caso de uso não contém nenhum comportamento supérfluo?&lt;/li>&#xD;
+    &lt;li>Cada caso de uso concreto está associado à, pelo menos, um Ator?&lt;/li>&#xD;
+    &lt;li>Cada Ator está associado com no mínimo um caso de uso?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_fknU0Jz1EduBcbjYtLtItQ" name="O modelo está consistente?" guid="_fknU0Jz1EduBcbjYtLtItQ">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>O comportamento do sistema é consistente sob as mesmas condições e com as mesmas entradas?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_KowpkAeSEduWycDgioo5rg" name="Todos os relacionamentos entre os casos de uso são necessários?" guid="_KowpkAeSEduWycDgioo5rg">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Cada caso de uso incluído torna o modelo mais fácil de ser entendido, implementado e mantido?&lt;/li>&#xD;
+    &lt;li>Cada caso de uso concreto (não incluído) é independente dos outros casos de uso?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_jyHeMAeTEduWycDgioo5rg" name="Os pacotes de caso de uso foram utilizados adequadamente?" guid="_jyHeMAeTEduWycDgioo5rg">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>As dependências entre os pacotes foram reduzidas ou eliminadas para evitar conflitos de propriedade no modelo?&lt;/li>&#xD;
+    &lt;li>O empacotamento está intuitivo? O empacotamento torna o modelo mais fácil de ser compreendido e implementado?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_i-S-ADeKEdu6VLD0YaVLog" name="Todos os elementos de modelo têm nomes adequados?" guid="_i-S-ADeKEdu6VLD0YaVLog">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Você verificou se dois casos de uso não têm o mesmo nome?&lt;/li>&#xD;
+    &lt;li>Cada Ator tem um nome que descreve efetivamente o papel da pessoa?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_IYRUkJz2EduBcbjYtLtItQ" name="Os casos de uso individuais foram devidamente especificados?" guid="_IYRUkJz2EduBcbjYtLtItQ">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Você reviu a qualidade de cada especificação de caso de uso utilizando a &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/checklists/use_case_C5362874.html&quot; guid=&quot;_0kNwINk1Edq2Q8qZoWbvGA&quot;>Lista de Verificação: Caso de Uso&lt;/a>?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-2o1pXjHpSEPN_rohLce5jA" name="good_requirements_1,_jxn9EO0HEdqHTdbLTmC5IQ" guid="-2o1pXjHpSEPN_rohLce5jA" authors="Chris Sibbald" changeDate="2006-04-10T12:07:04.339-0300" changeDescription="Added checklist for good requirements in accordance with Feb. 23, 2006 minutes of RM SIG." version="0.1">
+  <sections xmi:id="_jxuDsu0HEdqHTdbLTmC5IQ" name="O requisito está correto?" guid="_jxuDsu0HEdqHTdbLTmC5IQ">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>O requisito especifica uma real necessidade, desejo ou obrigação?&lt;/li>&#xD;
+  &lt;li>Você identificou a &quot;principal causa&quot; que gera a necessidade do requisito?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_jxuDs-0HEdqHTdbLTmC5IQ" name="O requisito está completo?" guid="_jxuDs-0HEdqHTdbLTmC5IQ">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>O requisito está declarado como uma sentença completa?&lt;/li>&#xD;
+  &lt;li>O requisito está declarado totalmente num único lugar e não força o leitor a procurar informações adicionais para entender o requisito?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_jxuDse0HEdqHTdbLTmC5IQ" name="O requisito está claro?" guid="_jxuDse0HEdqHTdbLTmC5IQ">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>O requisito está inequívoco e não confuso?&lt;/li>&#xD;
+  &lt;li>Todos concordam em relação ao significado do requisito?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_jxuDt-0HEdqHTdbLTmC5IQ" name="O requisito está consistente?" guid="_jxuDt-0HEdqHTdbLTmC5IQ">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>O requisito está conflitando com outros requisitos?&lt;/li>&#xD;
+  &lt;li>A terminologia usada está consistente com outros termos de glossário e de requisito?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_jxuDte0HEdqHTdbLTmC5IQ" name="O requisito é avaliável?" guid="_jxuDte0HEdqHTdbLTmC5IQ">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>Você pode determinar se o sistema satisfaz o requisito?&lt;/li>&#xD;
+  &lt;li>É possível definir um critério claro, inequívoco e do tipo passou/falhou?&lt;/li>&#xD;
+  &lt;li>É possível determinar se o requisito foi satisfeito via inspeção, análise, demonstração ou teste?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_jxuDtu0HEdqHTdbLTmC5IQ" name="O requisito pode ser rastreado?" guid="_jxuDtu0HEdqHTdbLTmC5IQ">
+    <sectionDescription>&lt;p>O requisito está identificado de forma única podendo ser referenciado Inequivocamente?&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_jxuDtO0HEdqHTdbLTmC5IQ" name="O requisito é viável?" guid="_jxuDtO0HEdqHTdbLTmC5IQ">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>O requisito pode ser satisfeito dentro do orçamento e do cronograma?&lt;/li>&#xD;
+  &lt;li>O requisito é tecnicamente viável com a tecnologia atual?&lt;/li>&#xD;
+  &lt;li>O requisito é fisicamente exeqüível?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_jxuDsO0HEdqHTdbLTmC5IQ" name="O requisito está independente de design?" guid="_jxuDsO0HEdqHTdbLTmC5IQ">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>Será que todos os requisitos que impõem restrições ao design, limitando as opções de design, justificam-se?&lt;/li>&#xD;
+  &lt;li>O requisito está declarado de forma que haja mais de uma maneira de satisfazê-lo?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_gRb_IJEvEdui_vx06Mo1eg" name="O requisito é atômico?" guid="_gRb_IJEvEdui_vx06Mo1eg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>A declaração do requisito define somente um único requisito?&lt;/li>&#xD;
+  &lt;li>A declaração do requisito está livre de conjunções (e, ou, mas) que podem indicar múltiplos requisitos?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

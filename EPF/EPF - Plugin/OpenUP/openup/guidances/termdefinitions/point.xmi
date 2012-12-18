@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-oShmMITo9RIi1AzACWI9vw" name="new_term_definition,_MvOuAEvGEdunZcj9T5hrMQ" guid="-oShmMITo9RIi1AzACWI9vw" changeDate="2007-04-16T15:53:55.880-0300" version="1.0.0">
+  <mainDescription>Uma medida relativa de tamanho que é normalmente usada para estimativas Ágeis.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

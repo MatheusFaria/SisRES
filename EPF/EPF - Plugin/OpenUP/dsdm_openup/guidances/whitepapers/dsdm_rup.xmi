@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-I0OVhi4nNTBXEmF09YJprg" name="new_whitepaper,_6LZh8FlkEdu-hcil0jQ6jA" guid="-I0OVhi4nNTBXEmF09YJprg" changeDate="2006-10-11T18:14:09.234-0300" version="1.0.0">
+  <mainDescription>Click to open document : &lt;a href=&quot;./resources/dsdm_and_rup_white_paper.pdf&quot; target=&quot;_blank&quot;>dsdm_and_rup_white_paper.pdf&lt;/a></mainDescription>
+</org.eclipse.epf.uma:GuidanceDescription>

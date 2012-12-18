@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Vvwb6EupIB9kfSQ_mhjURA" name="architectural_mechanism,_VHFGkEvCEdunZcj9T5hrMQ" guid="-Vvwb6EupIB9kfSQ_mhjURA" changeDate="2006-09-24T09:46:41.881-0300" version="7.2.0">
+  <mainDescription>Os mecanismos arquiteturais representam soluções concretas e comuns para problemas normalmente encontrados. Podem ser padrões de estrutura, padrões de comportamento ou ambos.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

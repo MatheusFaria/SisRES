@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-1RwpgmmY974S0YkxEOFDCw" name="new_term_definition,_GEAwAEvCEdunZcj9T5hrMQ" guid="-1RwpgmmY974S0YkxEOFDCw" changeDate="2007-04-16T15:45:09.509-0300" version="1.0.0">
+  <mainDescription>Papel que representa os interesses do cliente e dos usuários finais.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

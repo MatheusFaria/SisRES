@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-EUXQjT8DebSClO4YjNuoHw" name="determine_architecturally_significant_requirements,_D3JXMNvKEduv2KOT-Teh6w" guid="-EUXQjT8DebSClO4YjNuoHw" changeDate="2007-05-18T12:34:13.015-0300" version="7.2.0">
+  <mainDescription>&lt;p>A seleção dos requisitos que são considerados &quot;arquiteturalmente significantes&quot;, é direcionada por vários fatores:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &#xD;
+  &lt;li>O benefício do requisito para os Stakeholders: &lt;b>crítico, importante&lt;/b>, ou &lt;b>útil&lt;/b>.&lt;/li>&#xD;
+  &lt;li>O impacto arquitetural do requisito: &lt;b>nenhum&lt;/b>, &lt;b>estende&lt;/b>, ou &lt;b>modifica&lt;/b>. Podem existir requisitos críticos que têm pouco ou nenhum impacto sobre a arquitetura e requisitos de pouco benefício que têm um grande impacto. Os requisitos de pouco benefício com grandes impacto arquitetural devem ser revistos pelo gerente de projeto para uma eventual retirada do escopo do projeto.&lt;/li>&#xD;
+    &#xD;
+  &lt;li>Os riscos a serem atenuados: desempenho, disponibilidade de um produto e adequação de um componente.&lt;/li>&#xD;
+    &lt;li>A conclusão da cobertura da arquitetura.&lt;/li>&#xD;
+    &#xD;
+  &lt;li>Outros objetivos tácticos ou restrições, tais como demonstração para o usuário, etc.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Podem existir dois requisitos associados aos mesmos componentes e com riscos semelhantes. Se você implementar o primeiro, o segundo não será arquiteturalmente significante Se você implementar o segundo antes, então o primeiro não será arquiteturalmente significante. Sendo assim estes atributos podem depender da ordem da iteração e devem ser reavaliados quando a ordem mudar, bem como quando os próprios requisitos mudarem.&lt;/p>&#xD;
+&lt;p>Os requisitos arquiteturalmente significantes que são mal compreendidos ou susceptíveis a mudança devem ser priorizados para esclarecimento e estabilização. Em alguns casos, isso significa que mais análise dos requisitos deve ser feita antes da sua implementação. Em outros casos, alguma forma de prototipagem pode ser o melhor.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

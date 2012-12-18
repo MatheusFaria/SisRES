@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_D5dHQLv-EdmmUvZAZjqE3g" name="development,_0TeDoMlgEdmt3adZL5Dmdw" guid="_D5dHQLv-EdmmUvZAZjqE3g" changeDate="2007-03-28T13:49:08.242-0300" version="1.0.0">
+  <mainDescription>&lt;p>O propósito desta disciplina é:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Transformar os requisitos em um design do que o sistema será.&lt;/li>&#xD;
+    &lt;li>Adaptar o design para ficar compatível com o ambiente de implementação.&lt;/li>&#xD;
+    &lt;li>Construir o sistema incrementalmente&lt;/li>&#xD;
+    &lt;li>Verificar que as unidades técnicas usadas para construir o sistema funcionam como especificadas.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Em cada iteração, as tarefas nesta disciplina irão evoluir uma &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/build_95D7D8FD.html&quot; guid=&quot;_0YuXEMlgEdmt3adZL5Dmdw&quot;>Construção&lt;/a> cada vez mais capaz e cada vez mais estável.&lt;/p>&#xD;
+&lt;p>Ao trabalhar no sistema, o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/developer_C633AB7.html&quot; guid=&quot;_0YDosMlgEdmt3adZL5Dmdw&quot;>Desenvolvedor&lt;/a> usará, e será restringido, pela arquitetura.&lt;/p>&#xD;
+&lt;p>Esta disciplina se relaciona com as outras disciplinas da seguinte forma:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>A disciplina de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/requirements_4467C860.html&quot; guid=&quot;_0TR2ZMlgEdmt3adZL5Dmdw&quot;>Requisitos&lt;/a> define o que será projetado e implementado.&lt;/li>&#xD;
+    &lt;li>A disciplina de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/architecture_1F9C65DA.html&quot; guid=&quot;_0TX9AMlgEdmt3adZL5Dmdw&quot;>Arquitetura&lt;/a> organiza e restringe o design e a implementação.&lt;/li>&#xD;
+    &lt;li>A disciplina de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/test_FB85069.html&quot; guid=&quot;_0TkKQMlgEdmt3adZL5Dmdw&quot;>Teste&lt;/a> valida que a construção do sistema atende aos requisitos.&lt;/li>&#xD;
+    &lt;li>A disciplina de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/config_and_change_management_417EC254.html&quot; guid=&quot;_0TwXgMlgEdmt3adZL5Dmdw&quot;>Gestão de Configuração e Mudança&lt;/a> fornece os mecanismos para controlar as mudanças no sistema em construção.&lt;/li>&#xD;
+    &lt;li>A disciplina de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/project_management_AFB03A6.html&quot; guid=&quot;_0TqQ4MlgEdmt3adZL5Dmdw&quot;>Gestão de Projeto&lt;/a> planeja quais funcionalidades serão implementadas em cada iteração.&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

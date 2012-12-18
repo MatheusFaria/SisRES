@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ProcessDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_mtb-6vL5Edm6Nvont3uinw" guid="_mtb-6vL5Edm6Nvont3uinw" version="1.0.0">
+  <mainDescription>&lt;p>Esta atividade é repetida durante todo o ciclo de vida do projeto. A principal meta desta atividade é validar que a construção atual do sistema satisfaz os requisitos que lhe foram atribuídos.&lt;/p>&#xD;
+&#xD;
+&lt;p>Durante as iterações, sua intenção é certificar que os requisitos implementados refletem uma arquitetura robusta, e que os requisitos restantes sejam implementados de forma consistente sob essa arquitetura. À medida que os desenvolvedores implementam a solução, para os requisitos de uma determinada iteração, submeta o código fonte integrado ao teste de unidade. Em seguida, um &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../openup/roles/tester_9859B590.html&quot; guid=&quot;_0ZM4MclgEdmt3adZL5Dmdw&quot;>testador&lt;/a> realiza testes a nível de sistema, em paralelo com o desenvolvimento, para certificar que a solução, que está sendo integrada continuamente, satisfaz a intenção especificada nos casos de teste. O testador define quais técnicas serão usadas, quais serão os dados de entrada e quais &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/guidelines/test_suite_D54EEBED.html&quot; guid=&quot;_0aDz0MlgEdmt3adZL5Dmdw&quot;>suítes de teste&lt;/a> serão criadas. À medida que os testes forem sendo executados, os defeitos serão identificados e acrescentados à &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>lista de itens de trabalho&lt;/a>, para que possam ser priorizados como parte do trabalho que você fará durante as iterações.&lt;/p>&#xD;
+&#xD;
+&lt;p>&#xD;
+&#xD;
+    Os &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholders&lt;/a> e os usuários finais podem ser envolvidos na execução de testes para a aceitação da libertação.&lt;/p></mainDescription>
+  <keyConsiderations>&lt;p> &#xD;
+&#xD;
+&#xD;
+    &#xD;
+&#xD;
+&#xD;
+&lt;/p></keyConsiderations>
+  <purpose>Desenvolva e execute scripts de testes para comprovar que o sistema satisfaz os requisitos.</purpose>
+  <howtoStaff>&lt;p>O pessoal que exerce esta atividade deve estar integrado na equipe.&lt;/p></howtoStaff>
+  <usageNotes>&lt;p>O procedimento de teste deve ocorrer durante todo o processo e durante cada iteração. O procedimento de teste não é uma inspeção final a ser executada ao final do projeto. À medida que os requisitos forem sendo implementados e integrados em uma construção, você deve testá-los o mais rápido possível.&lt;/p></usageNotes>
+</org.eclipse.epf.uma:ProcessDescription>

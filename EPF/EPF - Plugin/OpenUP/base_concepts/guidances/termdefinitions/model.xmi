@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_yNefZNnmEdmO6L4XMImrsA" name="model,_yNefY9nmEdmO6L4XMImrsA" guid="_yNefZNnmEdmO6L4XMImrsA" changeDate="2006-09-28T18:16:05.562-0300" version="7.2.0">
+  <mainDescription>&lt;p>Um modelo é uma abstração de algo mais complicado.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ProcessDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_mtb_DvL5Edm6Nvont3uinw" guid="_mtb_DvL5Edm6Nvont3uinw" version="1.0.0">
+  <mainDescription>&lt;p>Esta atividade refina a arquitetura inicial de alto nível em um software funcional. O objetivo é produzir um software estável que aborde adequadamente os riscos técnicos no escopo.&lt;/p>&#xD;
+&lt;p>O arquiteto e os desenvolvedores trabalham juntos para:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Refinar os primeiros esboços da arquitetura em elementos concretos de design&lt;/li>&#xD;
+    &lt;li>Verificar que as decisões de arquitetura sejam adequadamente capturadas e comunicadas&lt;/li>&#xD;
+    &lt;li>Assegurar que a equipe tenha informações suficientes para permitir que o software seja desenvolvido&lt;/li>&#xD;
+    &lt;li>Assegurar que os requisitos que foram priorizados para a iteração atual estejam adequadamente tratados no software&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Em um projeto iterativo, a equipe não deve tentar desenvolver a arquitetura de todo o projeto de uma única vez. Ao invés, ela deve focar na reunião dos requisitos que estão no escopo da iteração atual, enquanto toma decisões no âmbito do projeto como um todo.&lt;/p></mainDescription>
+  <howtoStaff>&lt;p>Estas atividades são mais bem executadas como um esforço colaborativo da equipe, com o arquiteto agindo como um ponto focal para coordenar e facilitar as decisões.&lt;/p></howtoStaff>
+  <usageNotes>&lt;p>O trabalho é feito de uma forma melhor em várias sessões, talvez realizado durante alguns dias.&lt;/p></usageNotes>
+</org.eclipse.epf.uma:ProcessDescription>

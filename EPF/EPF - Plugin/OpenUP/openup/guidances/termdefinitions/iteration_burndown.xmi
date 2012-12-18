@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-3G3HV0opAmFWGxYgsD5AhA" name=",_8b20EEvvEdunZcj9T5hrMQ" guid="-3G3HV0opAmFWGxYgsD5AhA" changeDate="2007-05-03T15:25:01.111-0300" version="1.0.0">
+  <mainDescription>Um relatório importante para o entendimento do status de uma iteração. Ele mostra a tendência de quanto trabalho ainda deve ser feito na iteração.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

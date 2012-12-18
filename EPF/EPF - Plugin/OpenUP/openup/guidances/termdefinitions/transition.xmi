@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-yoFF90pq-_UV3fm-5oDenw" name=",_-5ms4EvDEdunZcj9T5hrMQ" guid="-yoFF90pq-_UV3fm-5oDenw" changeDate="2007-05-02T13:57:05.986-0300" version="1.0.0">
+  <mainDescription>Quarta e última fase do ciclo de vida de projeto do OpenUP, que resulta em uma liberação do produto final.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

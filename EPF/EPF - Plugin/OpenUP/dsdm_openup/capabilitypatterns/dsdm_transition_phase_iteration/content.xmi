@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-np5opRV1lFI1-STOvbIHxQ" guid="-np5opRV1lFI1-STOvbIHxQ"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-QDJDn4UQ16RuW3eUw5Od-Q" guid="-QDJDn4UQ16RuW3eUw5Od-Q"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-CQw8MDwZufSscoT_i8rXCA" guid="-CQw8MDwZufSscoT_i8rXCA"/>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-P77zVL7pDd6au5_9EtGSKw" guid="-P77zVL7pDd6au5_9EtGSKw">
+    <mainDescription>&lt;h3>&#xD;
+    Introduction&amp;nbsp;&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    In the Transition phase, most activities happen in parallel. The main objectives are to fine-tune functionality,&#xD;
+    performance, and overall quality of the beta product from the end of Construction phase.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The activities performed in a typical iteration during the&amp;nbsp;Transition phase are described below.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    Manage iteration&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    This activity is performed throughout the lifecycle. The goal of this activity is to identify risks and issues early&#xD;
+    enough that they can be mitigated, to establish the goals for the iteration, and to support the development team in&#xD;
+    reaching these goals.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Similar to other phases, this is an activity led by the &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../openup_basic/roles/project_manager.html&quot; guid=&quot;_0a0o0MlgEdmt3adZL5Dmdw&quot;>project&#xD;
+    manager&lt;/a> (in collaboration with the team) to launch the iteration, to allocate work, to track status, and to handle&#xD;
+    risks and issues. It’s unlikely that risks of high impact will happen during the Transition, but it is recommended that&#xD;
+    the project manager and team identify any potential issues&amp;nbsp;while delivering the product to the end users.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If this is the last iteration of the project, the main goal is to achieve final acceptance of the system. At the end of&#xD;
+    the iteration, results are assessed against phase objectives&lt;em>,&lt;/em> and &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../openup_basic/roles/stakeholder.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>stakeholders'&lt;/a> concurrence on the project objectives is obtained. The team conducts a&#xD;
+    retrospective review to capture lessons learned and make improvements to the process for subsequent projects. The&#xD;
+    project is then closed.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    Ongoing tasks&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    Submission of change requests during the Transition phase works&amp;nbsp;differently than in other phases. New requirements&#xD;
+    will rarely be identified at late stages of the software development lifecycle in a way they can be implemented in the&#xD;
+    current release. If there are enhancement requests, though, they can be captured in the &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup_basic/workproducts/work_items_list.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>work items list&lt;/a> and allocated to a future release, when a new software development&#xD;
+    lifecycle begins. In that case, requirements will be outlined and detailed accordingly.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    However, defects are typically dealt with during the Transition phase,&amp;nbsp;thus a stable release can be accepted by&#xD;
+    the user community. If there is general agreement from stakeholders, correction of low-priority defects can be&#xD;
+    postponed to subsequent evolutionary releases.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    Develop solution for requirement within context&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    This activity is repeated multiple times, in parallel, for each development task planned for that iteration. The main&#xD;
+    goal of this activity is an executable system that provides the incremental quality and functionality for the specified&#xD;
+    requirements within the specified context.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    During the Transition phase, most requirements will have been already implemented and validated, which is the focus of&#xD;
+    the previous phase. Nevertheless, there may be a few low-priority requirements that could be accommodated in the&#xD;
+    release being developed. However, enhancement requests and defects found in previous iterations may need to be&#xD;
+    allocated to &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../openup_basic/roles/developer.html&quot; guid=&quot;_0YDosMlgEdmt3adZL5Dmdw&quot;>developers&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    Validate build&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    This activity is repeated throughout the lifecycle. The main goal of this activity is to validate the current increment&#xD;
+    of the system against the requirements allocated to it.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This activity happens in parallel with development of the solutions for enhancement requests and defects (and possibly&#xD;
+    remaining requirements), to make sure that a stable release can be presented to the user community. Users can be&#xD;
+    involved in performing &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup_basic/capabilitypatterns/test-2.html&quot; guid=&quot;_0nz79clgEdmt3adZL5Dmdw&quot;>tests&lt;/a> to accept the release.&#xD;
+&lt;/p></mainDescription>
+  </org.eclipse.epf.uma:ProcessDescription>
+</xmi:XMI>

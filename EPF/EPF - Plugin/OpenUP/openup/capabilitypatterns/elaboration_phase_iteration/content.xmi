@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="_mtb_BfL5Edm6Nvont3uinw" guid="_mtb_BfL5Edm6Nvont3uinw"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="_mtb_B_L5Edm6Nvont3uinw" guid="_mtb_B_L5Edm6Nvont3uinw"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="_mtb_CfL5Edm6Nvont3uinw" guid="_mtb_CfL5Edm6Nvont3uinw"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="_mtb_CvL5Edm6Nvont3uinw" guid="_mtb_CvL5Edm6Nvont3uinw"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="_mtb_BvL5Edm6Nvont3uinw" guid="_mtb_BvL5Edm6Nvont3uinw"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="_mtb_C_L5Edm6Nvont3uinw" guid="_mtb_C_L5Edm6Nvont3uinw"/>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="_mtb_BPL5Edm6Nvont3uinw" guid="_mtb_BPL5Edm6Nvont3uinw">
+    <mainDescription>&lt;p>A maioria das atividades, durante uma iteração típica na fase de Elaboração, acontece em paralelo. Essencialmente, os principais objetivos para a Elaboração estão relacionados a uma melhor compreensão dos requisitos, criação e estabelecimento de uma linha de base da arquitetura do sistema, bem como a atenuação dos riscos de alta prioridade.&lt;/p></mainDescription>
+    <alternatives>Existirão iterações onde os riscos do projeto só serão tratados pela criação do software, mas eles provavelmente não serão arquiteturalmente significantes. Neste caso, o &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/capabilitypatterns/develop_solution_633E2E80.html&quot; guid=&quot;_h2-iAfimEdmugcVr9AdHjQ&quot;>Padrão de Capacidade: Desenvolver Incremento da Solução&lt;/a> será executado fora do contexto da arquitetura. Para a maior parte, Desenvolver a Solução será executado no contexto do &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/capabilitypatterns/develop_architecture_AF0A71D5.html&quot; guid=&quot;_0sx7islgEdmt3adZL5Dmdw&quot;>Padrão de Capacidade: Desenvolver a Arquitetura&lt;/a> durante a fase de Elaboração.</alternatives>
+  </org.eclipse.epf.uma:ProcessDescription>
+</xmi:XMI>

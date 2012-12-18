@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ProcessDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-vKnv4WbjzmtaOudTTAansg" guid="-vKnv4WbjzmtaOudTTAansg" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    This activity takes place at the beginning of the first iteration, when the project starts. The goal of this activity&#xD;
+    is to establish the vision for the project and the project plan at a high level of granularity.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The people in the roles involved at this time collaborate to perform this activity:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/roles/visionary.html&quot; guid=&quot;_hQJ-QFkVEdul8L-IGeA7TA&quot;>Visionary&lt;/a>, &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../openup_basic/roles/analyst.html&quot; guid=&quot;_0VxJsMlgEdmt3adZL5Dmdw&quot;>Analyst&lt;/a>&#xD;
+        and &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../openup_basic/roles/stakeholder.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>stakeholder&lt;/a> roles work together to define the &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup_basic/workproducts/vision.html&quot; guid=&quot;_0WVxcMlgEdmt3adZL5Dmdw&quot;>vision&lt;/a> for the project, capturing the customer needs and features for the system&#xD;
+        under development. Needs and features are captured to the extent required to reach agreement about the scope of the&#xD;
+        project.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Project manager (with collaboration and agreement of team and stakeholders) proposes a high-level &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup_basic/workproducts/project_plan.html&quot; guid=&quot;_0a6vcMlgEdmt3adZL5Dmdw&quot;>project plan&lt;/a> that includes the &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup_basic/guidances/concepts/milestones.html&quot; guid=&quot;_HNxbwMBJEdqSgKaj2SZBmg&quot;>milestones&lt;/a> for the four phases and time-boxed iterations for each phase. This&#xD;
+        plan and the allocation of staff to the project evolve throughout the phases to reflect the project pace, as&#xD;
+        necessary.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ProcessDescription>

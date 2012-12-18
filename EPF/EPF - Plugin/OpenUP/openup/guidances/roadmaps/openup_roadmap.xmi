@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-At_b3UIzbgdmtJsb2Ymfhg" name="new_roadmap,_vEruwN-rEdqiM_wFaqLjNg" guid="-At_b3UIzbgdmtJsb2Ymfhg" changeDate="2007-07-02T18:00:05.357-0300" version="1.0.0">
+  <mainDescription>&lt;h1>Visão geral do OpenUP&lt;/h1>&#xD;
+&lt;p>O OpenUP destina-se a pequenas equipes que trabalham juntas no mesmo local. A equipe precisa se engajar em total interação face-a-face diariamente. Os membros da equipe são os Stakeholders, desenvolvedores, arquitetos, o gerente de projeto e os testadores. Eles tomam suas próprias decisões a respeito do que devem fazer, quais são as prioridades e como melhor tratar as necessidades dos Stakeholders. A organização deve suportar a equipe permitindo-lhes esta responsabilidade.&lt;/p>&#xD;
+&lt;p>Os membros da equipe colaboram extensivamente. A participação dos Stakeholders como membros da equipe é crítica para o sucesso da implementação do OpenUP.&lt;/p>&#xD;
+&lt;p>Os membros da equipe participam de reuniões diárias para comunicar o status e dúvidas. Os problemas são tratados fora das reuniões diárias.&lt;/p>&#xD;
+&lt;p>O OpenUP tem foco na redução significativa dos riscos o mais cedo possível no ciclo de vida. Isto requer reuniões regulares de revisão do risco e uma rigorosa implementação de estratégias de atenuação..&lt;/p>&#xD;
+&lt;p>Todo o trabalho é relacionado, acompanhado e atribuído através da Lista de Itens de Trabalho. Os membros da equipe usam este repositório único para registrar todas as tarefas necessárias e acompanhá-las. Isto inclui todas as solicitações de mudança, erros e pedidos dos Stakeholders.&lt;/p>&#xD;
+&lt;p>Os casos de uso são usados para elicitar e descrever os requisitos, conseqüentemente, Os membros da equipe devem desenvolver habilidades para escrever bem os casos de uso. Os Stakeholders são responsáveis por revisar e certificar que os requisitos estão corretos. Os casos de uso são desenvolvidos colaborativamente.&lt;/p>&#xD;
+&lt;p>Os requisitos arquiteturalmente significantes devem ser identificados e estabilizados na fase de Elaboração de forma que uma arquitetura robusta possa ser criada para ser o núcleo do sistema. Uma alteração em um requisito arquiteturalmente significante que tenha de ser tratada, pode surgir posteriormente no desenvolvimento, mas o risco disto acontecer é significativamente reduzido na iteração de Elaboração.&lt;/p>&#xD;
+&lt;p>Os testes são executados várias vezes por iteração, sempre que a solução for incrementada com o desenvolvimento de um requisito, uma mudança ou a correção de um erro. Estes testes ocorrem após os desenvolvedores terem construído a solução (que deve passar pelo teste de unidade) e integrado ela no código base. Estes testes ajudam a garantir que uma construção estável seja criada e esteja sempre disponível à medida que o desenvolvimento progride.&lt;/p>&#xD;
+&lt;p>O OpenUP não inclui conteúdo para implantação, gestão de configuração ou ambiente de desenvolvimento (tal como personalizar este processo ou configurar os ambientes de desenvolvimento). O OpenUP é focado em uma única equipe, e estas áreas são normalmente tratadas em nível organizacional ou empresarial. Procure por extensões do OpenUP direcionadas para estas grandes áreas.&lt;/p>&#xD;
+&lt;p>O OpenUP é um processo iterativo de desenvolvimento de software que é mínimo, completo e extensível. É governado por quatro &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/customcategories/core_principles_category_8075133D.html&quot; guid=&quot;_UCOtoMXwEduywMSzPTUUwA&quot;>princípios básicos&lt;/a>:&lt;/p>&#xD;
+&lt;ul>&#xD;
+  &lt;li> &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/concepts/core_principle_collaborate_EC5EB51F.html&quot; guid=&quot;_KkTIsMp7EdqC_NfSivunjA&quot;>Colaborar para alinhar os interesses e compartilhar o entendimento&lt;/a> &lt;/li>&#xD;
+  &lt;li> &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/concepts/core_principle_balance_793DD27.html&quot; guid=&quot;_ssG6MMvpEdqukPpotm3DYg&quot;>Equilibrar as prioridades concorrentes para maximizar o benefício aos Stakeholders&lt;/a> &lt;/li>&#xD;
+  &lt;li> &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/concepts/core_principle_focus_346C6FAF.html&quot; guid=&quot;_9gocwMvoEdqukPpotm3DYg&quot;>Focar na arquitetura, o mais cedo possível, para reduzir o risco e organizar o desenvolvimento.&lt;/a> &lt;/li>&#xD;
+  &lt;li> &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/concepts/core_principle_evolve_BFD9AEB4.html&quot; guid=&quot;_GXiogMvoEdqukPpotm3DYg&quot;>Evoluir para continuamente obter feedback e promover melhorias&lt;/a> &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>As pessoas nos &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/role_37A0C602.html&quot; guid=&quot;_yUefQNnmEdmO6L4XMImrsA&quot;>papéis&lt;/a> executam as &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/task_6C1FF051.html&quot; guid=&quot;_x459ktnmEdmO6L4XMImrsA&quot;>tarefas&lt;/a> que usam e produzem os &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/artifact_F635D25.html&quot; guid=&quot;_x7cUM9nmEdmO6L4XMImrsA&quot;>artefatos&lt;/a>. O OpenUP descreve o conjunto mínimo de Papéis, Tarefas e Artefatos envolvidos no desenvolvimento de software:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/rolesets/openup_roles_5CDDEEDA.html&quot; guid=&quot;_TZIJ0O8NEdmKSqa_gSYthg&quot;>Papéis&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/disciplinegroupings/openup_disciplines_AF6D7A8E.html&quot; guid=&quot;__BZycP1UEdmek8CQTQgrOQ&quot;>Tarefas&lt;/a> (organizadas por disciplinas)&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/domains/openup_wp_E9648102.html&quot; guid=&quot;_s4Z9AMWXEdqWePvIjHInwg&quot;>Artefatos&lt;/a> (organizados por domínios)&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h1>O ciclo de vida de desenvolvimento de software do OpenUP&lt;/h1>&#xD;
+&lt;p>O OpenUP é um processo iterativo distribuído por quatro &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../base_concepts/guidances/concepts/phase_85B003C3.html&quot; guid=&quot;__7xOEC7aEdqHMdmRzC0-2g&quot;>fases&lt;/a>: Concepção, Elaboração, Construção e Transição. Cada fase consiste de uma ou mais iterações, onde versões de trabalhando estáveis do software são desenvolvidas e liberadas, com a conclusão de cada iteração representando um pequeno &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/concepts/phase_milestones_5678231E.html&quot; guid=&quot;_HNxbwMBJEdqSgKaj2SZBmg&quot;>marco&lt;/a> para o projeto e contribuindo para a realização bem sucedida do marco principal da fase onde os objetivos da fase são alcançados.&lt;/p>&#xD;
+&lt;p>O diagrama a seguir descreve o &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/deliveryprocesses/openup_lifecycle_2CB8A7DA.html&quot; guid=&quot;_0uyGoMlgEdmt3adZL5Dmdw&quot;>ciclo de vida&lt;/a> do OpenUP.&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;192&quot; alt=&quot;Figura 1: Diagrama do Ciclo de Vida do OpenUP&quot; src=&quot;./resources/openup_lifecycle.jpg&quot; width=&quot;667&quot;     usemap=&quot;#map&quot; border=&quot;0&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>  &lt;/p>&#xD;
+&lt;map id=&quot;Map&quot; name=&quot;Map&quot;>&#xD;
+    &lt;h4>Como começar?&lt;/h4>&#xD;
+    &lt;p>O quarto princípio básico do OpenUP, &quot;Evoluir para continuamente obter feedback e promover melhorias&quot;, sugere uma abordagem iterativa e incremental para adotar o OpenUP.&lt;/p>&#xD;
+    &lt;ul>&#xD;
+        &lt;li>Comece com os princípios básicos e compreenda as intenções do OpenUP.&lt;/li>&#xD;
+        &lt;li>Então, avalie o processo existente e selecione uma ou duas áreas principais que você gostaria de melhorar.&lt;/li>&#xD;
+        &lt;li>Comece a usar o OpenUP para melhorar estas áreas primeiramente.&lt;/li>&#xD;
+        &lt;li>Nas iterações posteriores ou ciclos de desenvolvimento, faça melhorias incrementais em outras áreas.&lt;/li>&#xD;
+        &lt;li>Se você tiver pouca ou nenhuma experiência com processos unificados ou outros processos iterativos, use o OpenUP em um projeto piloto pequeno, talvez com somente três a quatro pessoas que trabalhem de dois a três meses.&lt;/li>&#xD;
+    &lt;/ul>&#xD;
+    &lt;p>Mesmo o OpenUP sendo um processo pronto para usar, você pode estendê-lo ou modificar os templates dos produtos de trabalho para se ajustarem as suas necessidades específicas. Por exemplo:&lt;/p>&#xD;
+    &lt;ul>&#xD;
+        &lt;li>Você pode necessitar de mais ou menos precisão em seus produtos de trabalho.&lt;/li>&#xD;
+        &lt;li>Sua organização pode ter práticas de gestão de configuração ou protocolos de segurança específicos para incluir em seu processo.&lt;/li>&#xD;
+        &lt;li>Você pode simplesmente querer pôr seu logotipo corporativo no banner.&lt;/li>&#xD;
+        &lt;li>Você pode querer incorporar lições aprendidas em uma revisão retrospectiva no OpenUP.&lt;/li>&#xD;
+    &lt;/ul>&#xD;
+    &lt;p>Use o EPF Composer para estender e customizar o OpenUP. Para mais informações sobre o  EPF Composer, visite &lt;a href=&quot;http://www.eclipse.org/epf&quot; target=&quot;_blank&quot;>www.eclipse.org/epf&lt;/a>.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

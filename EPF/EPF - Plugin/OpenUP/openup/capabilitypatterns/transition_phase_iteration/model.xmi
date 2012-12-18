@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_nMRP8PL5Edm6Nvont3uinw" guid="_nMRP8PL5Edm6Nvont3uinw">
+    <resourceDescriptors xmi:id="_nLsoM_L5Edm6Nvont3uinw" id="_mtb_AfL5Edm6Nvont3uinw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_2MDIQPinEdmugcVr9AdHjQ" id="_mtb_AvL5Edm6Nvont3uinw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_2MDIQfinEdmugcVr9AdHjQ" id="_mtb_APL5Edm6Nvont3uinw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_2MDIQvinEdmugcVr9AdHjQ" id="_mtb_A_L5Edm6Nvont3uinw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_2MDIQ_inEdmugcVr9AdHjQ" id="_mtb-__L5Edm6Nvont3uinw" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_0qrpwMlgEdmt3adZL5Dmdw" name="transition_phase_iteration" guid="_0qrpwMlgEdmt3adZL5Dmdw">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_0qrpwclgEdmt3adZL5Dmdw" name="test_solution" guid="_0qrpwclgEdmt3adZL5Dmdw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_0qrpwslgEdmt3adZL5Dmdw" name="test_solution" guid="_0qrpwslgEdmt3adZL5Dmdw" presentationName="Testar a Solução" hasMultipleOccurrences="true" superActivities="_0rQRgMlgEdmt3adZL5Dmdw" variabilityType="extends">
+        <presentation xmi:id="_mtb_AfL5Edm6Nvont3uinw" href="uma://_mtb_AfL5Edm6Nvont3uinw#_mtb_AfL5Edm6Nvont3uinw"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_0nz79MlgEdmt3adZL5Dmdw#_0nz79clgEdmt3adZL5Dmdw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_0qxwYMlgEdmt3adZL5Dmdw" name="ongoing_tasks" guid="_0qxwYMlgEdmt3adZL5Dmdw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_0qxwYclgEdmt3adZL5Dmdw" name="ongoing_tasks" guid="_0qxwYclgEdmt3adZL5Dmdw" presentationName="Executar Tarefas Contínuas" isPlanned="false" superActivities="_0rQRgMlgEdmt3adZL5Dmdw" isOngoing="true" variabilityType="extends">
+        <presentation xmi:id="_mtb_AvL5Edm6Nvont3uinw" href="uma://_mtb_AfL5Edm6Nvont3uinw#_mtb_AvL5Edm6Nvont3uinw"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_0pJ_xclgEdmt3adZL5Dmdw#_0pJ_xslgEdmt3adZL5Dmdw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_0q33AMlgEdmt3adZL5Dmdw" name="manage_iteration" guid="_0q33AMlgEdmt3adZL5Dmdw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_0q33AclgEdmt3adZL5Dmdw" name="manage_iteration" guid="_0q33AclgEdmt3adZL5Dmdw" presentationName="Planejar e Gerenciar a iteração" isPlanned="false" superActivities="_0rQRgMlgEdmt3adZL5Dmdw" isOngoing="true" variabilityType="extends">
+        <presentation xmi:id="_mtb_APL5Edm6Nvont3uinw" href="uma://_mtb_AfL5Edm6Nvont3uinw#_mtb_APL5Edm6Nvont3uinw"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_0nJNkclgEdmt3adZL5Dmdw#_0nJNkslgEdmt3adZL5Dmdw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_0CtdMPinEdmugcVr9AdHjQ" name="develop_solution" guid="_0CtdMPinEdmugcVr9AdHjQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_0DMlYPinEdmugcVr9AdHjQ" name="develop_solution" guid="_0DMlYPinEdmugcVr9AdHjQ" presentationName="Desenvolver um Incremento da Solução" hasMultipleOccurrences="true" superActivities="_0rQRgMlgEdmt3adZL5Dmdw" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_h2-iAPimEdmugcVr9AdHjQ#_h2-iAfimEdmugcVr9AdHjQ"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_0rQRgMlgEdmt3adZL5Dmdw" name="transition_phase_iteration" guid="_0rQRgMlgEdmt3adZL5Dmdw" presentationName="Iteração da Fase de Transição" briefDescription="Este template de iteração define as atividades (e os papéis e produtos de trabalhos associados) realizadas em uma iteração típica na fase de Transição." isRepeatable="true" breakdownElements="_0q33AclgEdmt3adZL5Dmdw _0DMlYPinEdmugcVr9AdHjQ _0qrpwslgEdmt3adZL5Dmdw _0qxwYclgEdmt3adZL5Dmdw">
+      <ownedRules xmi:id="_1J_ocEbrEduez5pdMGsX2w" guid="_1J_ocEbrEduez5pdMGsX2w"/>
+      <methodElementProperty xmi:id="_O7eZwkSKEeKIHoRDpe9VIw" name="process_synFree" value="true"/>
+      <presentation xmi:id="_mtb-__L5Edm6Nvont3uinw" href="uma://_mtb_AfL5Edm6Nvont3uinw#_mtb-__L5Edm6Nvont3uinw"/>
+      <defaultContext href="uma://_y62TUKVPEdmMZJIzZ1W7Pw#_0u-T4clgEdmt3adZL5Dmdw"/>
+      <validContext href="uma://_y62TUKVPEdmMZJIzZ1W7Pw#_0u-T4clgEdmt3adZL5Dmdw"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

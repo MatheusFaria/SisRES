@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_SB1n8MM1EdmSIPI87WLu3g" name="visual_modeling,_0XY6UMlgEdmt3adZL5Dmdw" guid="_SB1n8MM1EdmSIPI87WLu3g" changeDate="2007-03-03T14:12:42.271-0300" version="1.0.0">
+  <mainDescription>&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;229&quot; alt=&quot;modelagem visual&quot; src=&quot;./resources/visual.gif&quot; width=&quot;447&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>A modelagem visual aumenta o nível de abstração&lt;/p>&#xD;
+&lt;p>A modelagem visual é o uso de notações gráficas e textuais semanticamente ricas para capturar o design de software. Uma notação, tal como a UML, permite que o nível de abstração seja aumentado, mantendo rigorosamente a sintaxe e a semântica. Desta forma, ela melhora a comunicação da equipe à medida que o design é construído e revisto, permitindo que o leitor raciocine sobre o design, fornecendo uma base inequívoca para a implementação.&lt;/p>&#xD;
+&lt;h3>Como os modelos visuais ajudam&lt;/h3>&#xD;
+&lt;p>Um modelo é uma visão simplificada de um sistema. Mostra a essência do sistema de uma perspectiva particular e esconde os detalhes não-essenciais. Os modelos visuais ajudam a:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Aumentar o entendimento sobre sistemas complexos&lt;/li>&#xD;
+    &lt;li>Explorar e comparar alternativas de design a um baixo custo&lt;/li>&#xD;
+    &lt;li>Construir uma base para a implementação&lt;/li>&#xD;
+    &lt;li>Capturar requisitos de forma precisa&lt;/li>&#xD;
+    &lt;li>Comunicar decisões de forma inequívoca&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h4>Aumentar o entendimento sobre sistemas complexos&lt;/h4>&#xD;
+&lt;p>A importância dos modelos aumenta à medida que os sistemas se tornam mais complexos. Por exemplo, você pode construir uma casa de cachorro sem nenhuma planta de engenharia. Entretanto, à medida que você vai progredindo para construção de apartamentos e arranha-céus, sua necessidade de possuir plantas de engenharia torna-se inevitável.&lt;/p>&#xD;
+&lt;p>Similarmente, uma pequena aplicação construída por uma pessoa em alguns dias pode facilmente ser compreendida em sua totalidade. Entretanto, um sistema de comércio eletrônico com dezenas de milhares de linhas de código fonte (SLOCs) ou um sistema de controle de tráfego aéreo com centenas de milhares de SLOCs podem não ser facilmente compreendidos por uma pessoa. Construir modelos permite que um colaborador focalize em uma panorâmica, compreenda como os componentes interagem e identifique falhas fatais.&lt;/p>&#xD;
+&lt;p>Dentre os vários tipos de modelos temos os seguintes exemplos:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de uso para especificar o comportamento de forma inequívoca&lt;/li>&#xD;
+    &lt;li>Diagramas de classe e diagramas de modelos de dados para capturar o design&lt;/li>&#xD;
+    &lt;li>Diagramas de transição de estado para modelar o comportamento dinâmico&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>A modelagem é importante porque ajuda a equipe a visualizar, construir e documentar a estrutura e o comportamento do sistema sem ficar perdida na complexidade.&lt;/p>&#xD;
+&lt;h4>Explorar e comparar alternativas de design a um baixo custo&lt;/h4>&#xD;
+&lt;p>Você pode criar e modificar modelos simples de forma barata para explorar alternativas de design. Novas idéias podem ser capturadas e revisadas por outros desenvolvedores antes de se investir no desenvolvimento de um código caro. Quando acoplada com o desenvolvimento iterativo, a modelagem visual ajuda os desenvolvedores a avaliar as mudanças no design e a comunicar estas mudanças a toda a equipe de desenvolvimento.&lt;/p>&#xD;
+&lt;h4>Construir uma base para a implementação&lt;/h4>&#xD;
+&lt;p>Atualmente, muitos projetos empregam linguagens de programação orientadas a objeto para construir sistemas reutilizáveis, estáveis e tolerantes a mudanças. Para ter estes benefícios, é importantíssimo o uso da tecnologia de objeto no design.&lt;/p>&#xD;
+&lt;p>A criação de modelos visuais, seja no papel; em um quadro branco; ou em uma ferramenta de modelagem, pode ajudar uma equipe a obter um acordo sobre os aspectos chaves do sistema antes de investir o tempo em provar suas idéias com código. Ter um modelo compartilhado do sistema promove a colaboração dentro da equipe, incentivando todos a trabalhar para o mesmo objetivo.&lt;/p>&#xD;
+&lt;p>Com a ajuda de ferramentas apropriadas, você pode usar um modelo de design para gerar o código inicial da implementação. Isto é conhecido como &lt;strong>engenharia direta&lt;/strong> ou &lt;strong>geração de código&lt;/strong>. Você pode também aprimorar modelos de design incluindo o máximo de informação necessária para a construção do sistema.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>A engenharia reversa&lt;/strong> também pode ser usada para gerar modelos de design a partir de implementações existentes. Você pode usar este método para validar as implementações existentes.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>A engenharia cíclica&lt;/strong> combina as técnicas das engenharias direta e reversa para garantir que o design e o código sejam consistentes. Combinado com um processo iterativo e com as ferramentas certas, a engenharia cíclica permite que você sincronize o design com o código durante cada iteração.&lt;/p>&#xD;
+&lt;h4>Capturar requisitos de forma precisa&lt;/h4>&#xD;
+&lt;p>Antes de construir um sistema, a captura dos requisitos é um ponto crítico. Especificar os requisitos usando um modelo preciso e inequívoco ajuda a assegurar que todos os stakeholders poderão compreender e concordar com os requisitos.&lt;/p>&#xD;
+&lt;p>Um modelo que separe o comportamento externo do sistema de sua implementação ajuda a focalizar o uso desejado do sistema, sem ter que se aprofundar nos detalhes da implementação.&lt;/p>&#xD;
+&lt;h4>Comunicar decisões de forma inequívoca&lt;/h4>&#xD;
+&lt;p>A Linguagem de Modelagem Unificada (UML) é uma notação consistente que pode ser aplicada à engenharia de sistemas, bem como para a engenharia de negócios. De acordo com estes fragmentos extraídos da especificação da UML, uma notação padrão:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;p>Serve como uma linguagem para comunicar as decisões que não são óbvias ou que não podem ser inferidas a partir do próprio código.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>Fornece uma semântica rica o bastante para capturar todas as decisões estratégicas e táticas importantes.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>Oferece uma forma concreta o bastante para os seres humanos raciocinarem [sobre], e para as ferramentas manipularem.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>A UML representa a convergência das melhores práticas de modelagem de software exercidas na indústria de tecnologia de objeto. Para mais informações sobre UML, veja &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#UML05&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[UML05]&lt;/a>.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

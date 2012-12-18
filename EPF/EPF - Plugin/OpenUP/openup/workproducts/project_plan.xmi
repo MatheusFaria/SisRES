@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_IbVp8KX4EdmvhNXG0Oc2uA" name="project_plan,_0a6vcMlgEdmt3adZL5Dmdw" guid="_IbVp8KX4EdmvhNXG0Oc2uA" changeDate="2007-05-19T09:41:21.127-0300" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    &lt;span style=&quot;FONT-SIZE: 10pt; mso-bidi-font-family: Arial&quot;>Este artefato define os parâmetros para o acompanhamento do progresso do projeto e especifica os objetivos de alto nível das iterações e seus marcos. Descreve também como o projeto está organizado e quais papéis são executados por quem.&lt;/span>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;span style=&quot;FONT-SIZE: 10pt; mso-bidi-font-family: Arial&quot;>O gerente de projeto é responsável por desenvolver o plano de projeto, trabalhando em conjunto com o resto da equipe. O plano de projeto permite que os Stakeholders e os outros membros da equipe tenham uma panorâmica do projeto e uma idéia de que quando esperar um determinado nível de funcionalidade. Ele também é usado para registrar as lições aprendidas no projeto.&lt;/span>&lt;span style=&quot;FONT-SIZE: 10pt; mso-bidi-font-family: Arial&quot;>&lt;br />&#xD;
+    &lt;/span>&#xD;
+&lt;/p></mainDescription>
+  <purpose>&lt;p>A finalidade deste artefato é fornecer um documento central onde qualquer membro da equipe de projeto possa encontrar informações sobre como o projeto será gerenciado.&lt;/p></purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

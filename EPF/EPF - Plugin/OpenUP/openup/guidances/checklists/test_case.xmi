@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_kwHAgMPbEdmbOvqy4O0adg" name="test_case,_0Zxf8MlgEdmt3adZL5Dmdw" guid="_kwHAgMPbEdmbOvqy4O0adg" changeDate="2005-07-07T17:45:15.861-0300" version="1.0.0">
+  <sections xmi:id="_yXujsLcOEduFFo_97woSMw" name="Geral" guid="_yXujsLcOEduFFo_97woSMw">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>O caso de teste identifica o requisito a ser validado? Esta identificação pode ser uma convenção informal de nomenclatura ou uma matriz formal de rastreamento de requisitos.&lt;/li>&#xD;
+    &lt;li>O caso de teste referencia as precondições e pós-condições que se aplicam a ele?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_Hv2n0BBbEduXULqRagzBHA" name="Nome" guid="_Hv2n0BBbEduXULqRagzBHA">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>O nome do Caso de Teste é exclusivo?&lt;/li>&#xD;
+    &lt;li>O nome expressa uma condição de teste ou um resultado esperado?&lt;/li>&#xD;
+    &lt;li>O nome é inequívoco para os Stakeholders?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_3i-gkLcOEduFFo_97woSMw" name="Descrição Resumida" guid="_3i-gkLcOEduFFo_97woSMw">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>A condição lógica de teste está claramente identificada na descrição?&lt;/li>&#xD;
+    &lt;li>A descrição expressa claramente o resultado esperado?&lt;/li>&#xD;
+    &lt;li>O resultado esperado está expresso como um resultado concreto?&lt;/li>&#xD;
+    &lt;li>Um leitor casual pode distinguir este caso de teste de um outro similar?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_4uresLcOEduFFo_97woSMw" name="Dados de Teste Necessários" guid="_4uresLcOEduFFo_97woSMw">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>O caso de teste aponta os tipos de dados de teste necessários para implementar um script de teste detalhado?&lt;/li>&#xD;
+    &lt;li>Os tipos de dado de teste são únicos e explicados com suficiente qualidade?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

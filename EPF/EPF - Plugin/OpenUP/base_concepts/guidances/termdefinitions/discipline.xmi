@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_yGUuitnmEdmO6L4XMImrsA" name="discipline,_yGUuidnmEdmO6L4XMImrsA" guid="_yGUuitnmEdmO6L4XMImrsA" changeDate="2007-04-06T16:08:00.701-0300" version="1.0.0">
+  <mainDescription>Uma coleção de &lt;a class=&quot;elementLink&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/task_6C1FF051.html&quot; guid=&quot;_x459ktnmEdmO6L4XMImrsA&quot;>tarefas&lt;/a> relacionadas que definem um grande &quot;área de preocupação&quot;. Na engenharia de software, as Disciplinas incluem: &lt;em>Requisitos, Arquitetura, Desenvolvimento, Teste&lt;/em> e &lt;em>Gestão de Projeto&lt;/em>.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-G1Oxlk6F0R09vClqy1EzOw" name="work_items_list,_7vEXEMA4EdqSgKaj2SZBmg" guid="-G1Oxlk6F0R09vClqy1EzOw" changeDate="2007-07-23T22:39:42.625-0300" version="7.1.0">
+  <mainDescription>O &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Artefato: Lista de Itens de Trabalho&lt;/a> captura todo o trabalho que deve ser executado no projeto, bem como o trabalho proposto que pode afetar o produto. Alguns dos Itens de Trabalho podem ser implementados neste projeto, alguns deles podem ser implementados em um projeto futuro, e outros podem nunca ser implementados.&lt;p>Alguns Itens de Trabalho podem ser mal definidos, portanto, eles podem representar uma grande quantidade de trabalho que pode requerer diversos meses de esforço da equipe de colaboradores. À medida que a prioridade destes Itens de Trabalho aumenta, eles são decompostos em itens de trabalho menores que representam tarefas específicas e bem definidas e que podem levar horas ou de dias para serem tratadas, veja &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a>. Em outros casos, Itens de Trabalho específicos e bem definidos são criados diretamente, representando, por exemplo, um defeito a ser tratado, como mostra a figura.&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;strong>&lt;font face=&quot;Verdana, Arial, Helvetica, sans-serif&quot; size=&quot;2&quot;>A Lista de Itens de Trabalho fornece uma lista priorizada do trabalho proposto e agendado.&lt;/font>&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;div align=&quot;center&quot;>&#xD;
+    &lt;br />&#xD;
+    &lt;img alt=&quot;&quot; src=&quot;resources/work_item_prioritization_diagram.jpg&quot; />&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>Um Item de Trabalho pode representar o trabalho associado a um defeito, uma solicitação de melhoria, uma solicitação de mudança, um caso de uso, um cenário, uma história do usuário, um requisito suplementar ou qualquer outra coisa que capture um requisito ou uma melhoria para o sistema. Um Item de Trabalho pode referenciar qualquer tipo de requisito ou outra informação útil que lhe direcione sobre o que deve ser feito.&lt;/p>&#xD;
+&lt;p>Uma grande vantagem do &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Artefato: Lista de Itens de Trabalho&lt;/a> é que ele permite priorizar uma única lista que contenha todas as coisas que necessitam ser tratadas, independente do Item de Trabalho representar um trabalho relacionado a um requisito, uma melhoria ou um defeito. A única exceção é que a lista de riscos seja priorizada separadamente.&lt;/p>&#xD;
+&lt;p>Nada no projeto será feito se não estiver representado ou mapeado em um Item de Trabalho. Isto significa que todos os requisitos, relatos de defeitos e solicitações de mudança tem que, em algum momento, ser mapeados para um Item de Trabalho. Um desenvolvedor, também, não poderá trabalhar o que não estiver representado em um Item de Trabalho. Somente Itens de Trabalho precisam ser priorizados. Isto também significa que o rastreamento de Itens de Trabalho é a primeira forma de entender o status do projeto.&lt;/p>&#xD;
+&lt;p>Existem dois principais tipos de Itens de Trabalho:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Itens de Trabalho Não Agendados&lt;/strong>: Estes Itens de Trabalho ainda não foram atribuídos a uma iteração, e não há nenhuma estimativa detalhada de esforço para eles.&lt;br />&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Itens de Trabalho Agendados&lt;/strong>: Estes Itens de Trabalho estão atribuídos a uma iteração, e têm um conjunto adicional de atributos preenchidos tais como estimativas detalhadas de esforço.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h1>Itens de Trabalho Não Agendados&lt;/h1>&#xD;
+&lt;p>A maioria dos Itens de Trabalho são inicialmente não agendados, significando que ainda não foi decidido se eles serão feitos, e quando serão. Os Itens de Trabalho não agendados devem sempre representar algo significativo a ser entregue aos Stakeholders, tal como um cenário a ser detalhado, projetado, implementado e testado. Você pode considerar a captura dos seguintes dados para tais Itens de Trabalho:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Nome&lt;/li>&#xD;
+    &lt;li>Descrição&lt;/li>&#xD;
+    &lt;li>Prioridade&lt;/li>&#xD;
+    &lt;li>Tamanho estimado, tal como uma estimativa de pontos (veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/guidelines/agile_estimation_A4EF42B3.html&quot; guid=&quot;_CGHskBEdEdqY7JB6N6CW2w&quot;>Diretriz: Estimativa Ágil&lt;/a>).&lt;/li>&#xD;
+    &lt;li>Novo, Atribuído, Resolvido, Verificado, Terminado (veja abaixo os Estados de Itens de Trabalho)&lt;/li>&#xD;
+    &lt;li>Links para outro material de referência, tal como requisitos ou especificações detalhadas do que é necessário ser feito&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h1>Itens de Trabalho Agendados&lt;/h1>&#xD;
+&lt;p>Após um Item de Trabalho ter sido atribuído a uma iteração, ele se torna &lt;i>agendado&lt;/i>. Nós atribuímos os Itens de Trabalho somente à iteração atual ou seguinte. Não há nenhuma necessidade em atribuir Itens de Trabalho a uma iteração futura, visto que não é possível predizer que um cronograma terá mais do que uma iteração (veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/guidelines/iteration_planning_C77F13CE.html&quot; guid=&quot;_0auiMMlgEdmt3adZL5Dmdw&quot;>Diretriz: Planejamento de Iteração&lt;/a>).&lt;/p>&#xD;
+&lt;p>Os atributos adicionais a seguir são úteis para Itens de Trabalho Agendados:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Iteração Alvo&lt;/li>&#xD;
+    &lt;li>Membro da equipe responsável&lt;/li>&#xD;
+    &lt;li>Estimativa de esforço, tal como horas reais de trabalho (veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/guidelines/agile_estimation_A4EF42B3.html&quot; guid=&quot;_CGHskBEdEdqY7JB6N6CW2w&quot;>Diretriz: Estimativa Ágil&lt;/a>).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>Horas trabalhadas&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os atributos acima fornecem a informação necessária para planejar e controlar uma iteração. Nós podemos planejar iterações pelo conhecimento do esforço envolvido e também fazer um &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/reports/iteration_burndown_9C1C96F5.html&quot; guid=&quot;_uAzgkDg3Edu4E8ZdmlYjtA&quot;>Relatório de Progresso da Iteração&lt;/a> acompanhando quanto trabalho ainda falta fazer.&lt;/p>&#xD;
+&lt;h1>Estados do Item de Trabalho&lt;/h1>&#xD;
+&lt;p>Nós achamos que os seguintes estados são úteis para acompanhar os Itens de Trabalho:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Novo&lt;/b>: O Item de Trabalho foi criado, mas ainda não foi atribuído a um membro da equipe.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Atribuído&lt;/b>: Um membro da equipe foi identificado como responsável pelo Item de Trabalho.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Resolvido&lt;/b>: O membro da equipe responsável pelo Item de Trabalho implementou e testou o Item de Trabalho.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Verificado&lt;/b>: O Item de Trabalho foi testado de forma independente.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Terminado&lt;/b>: O Item de Trabalho não está mais ativo.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Você pode escolher um outro grupo de estados, baseado em suas necessidades.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

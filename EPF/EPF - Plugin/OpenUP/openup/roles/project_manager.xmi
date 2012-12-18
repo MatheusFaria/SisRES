@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_Fdq-8KX4EdmvhNXG0Oc2uA" name="project_manager,_0a0o0MlgEdmt3adZL5Dmdw" guid="_Fdq-8KX4EdmvhNXG0Oc2uA" changeDate="2007-05-22T23:16:24.544-0300" version="1.0.0">
+  <mainDescription>&lt;p>Este papel:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Instrui a equipe para conduzir um resultado de êxito do projeto e aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pelo resultado do projeto e pela aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pela avaliação dos riscos do projeto e pelo controle destes riscos através de estratégias de atenuação.&lt;/li>&#xD;
+    &lt;li>Aplica o conhecimento, as habilidades, as ferramentas e as técnicas de gestão em uma grande quantidade de tarefas a fim entregar o resultado desejado para um projeto em particular de forma temporizada.&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <skills>&lt;p>Uma pessoa que execute este papel necessita das seguintes habilidades:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Capacidades de liderança e de construção de equipe.&lt;/li>&#xD;
+    &lt;li>Experiência completa no ciclo de vida de desenvolvimento de software para instruir, guiar e suportar outros membros da equipe.&lt;/li>&#xD;
+    &lt;li>Proficiente em solução de conflitos e em técnicas de solução de problemas.&lt;/li>&#xD;
+    &lt;li>Ser bom em apresentação, facilitação, comunicação e negociação.&lt;/li>&#xD;
+&lt;/ul></skills>
+  <assignmentApproaches>&lt;p>Este papel é normalmente executado por uma única pessoa. Este papel é difícil de compartilhar com outras pessoas, mas não pode consumir toda a disponibilidade de uma pessoa.&lt;/p></assignmentApproaches>
+</org.eclipse.epf.uma:RoleDescription>

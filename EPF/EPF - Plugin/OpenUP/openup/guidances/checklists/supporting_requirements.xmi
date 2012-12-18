@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-kw2vYHKDkWv2tZrDMrBPNA" name="new_checklist,_Vael8CGMEdu3VKXZx45D3A" guid="-kw2vYHKDkWv2tZrDMrBPNA" version="1.0.0">
+  <sections xmi:id="_kTZiACGMEdu3VKXZx45D3A" name="Os requisitos funcionais globais, que serão implementados na iteração seguinte, foram capturados e validados?" guid="_kTZiACGMEdu3VKXZx45D3A">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Os requisitos funcionais que afetam muitos Casos de Uso foram identificados? Por exemplo, todos os casos de uso podem estar sujeitos a controle de acesso, trilhas de auditoria, respostas gerais para situações anormais (sobrecarga, facilidades de comunicação, tratamento de erros e recuperação, etc.).&lt;/li>&#xD;
+    &lt;li>Cada um destes requisitos é comportamental e podem ser mais bem capturados em um caso de uso comum?&lt;/li>&#xD;
+    &lt;li>Para cada uma destas funções, está claro como os dados de entrada e compartilhados geram os dados de saída e compartilhados?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_-eJXoCGMEdu5QMD9IAHRNg" name="Os requisitos de usabilidade, que serão implementados na iteração seguinte, foram capturados e validados?" guid="_-eJXoCGMEdu5QMD9IAHRNg">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Os requisitos funcionais que afetam muitos Casos de Uso foram identificados? Por exemplo, todos os casos de uso podem estar sujeitos a controle de acesso, trilhas de auditoria, respostas gerais para situações anormais (sobrecarga, facilidades de comunicação, tratamento de erros e recuperação, etc.).&lt;/li>&#xD;
+    &lt;li>Cada um destes requisitos é comportamental e podem ser mais bem capturados em um caso de uso comum?&lt;/li>&#xD;
+    &lt;li>Para cada uma destas funções, está claro como os dados de entrada e compartilhados geram os dados de saída e compartilhados?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_QCbtwCGNEdubdKsr57an1g" name="Os requisitos de confiabilidade, que serão implementados na iteração seguinte, foram capturados e validados?" guid="_QCbtwCGNEdubdKsr57an1g">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Os requisitos de confiabilidade foram especificados como requisitos mensuráveis ou metas de design priorizáveis?&lt;/li>&#xD;
+    &lt;li>A verificação e a recuperação de erro são necessárias?&lt;/li>&#xD;
+    &lt;li>Os eventos indesejados foram considerados e suas respostas especificadas?&lt;/li>&#xD;
+    &lt;li>Os estados iniciais ou especiais foram considerados (tais como início a frio ou término anormal)?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_e3pOgCGNEdubdKsr57an1g" name="Os requisitos de desempenho, que serão implementados na iteração seguinte foram capturados e validados?" guid="_e3pOgCGNEdubdKsr57an1g">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Os requisitos de Margem de Desempenho e Recurso foram declarados (por exemplo: velocidade, tempo de resposta, tempo de recuperação de várias funções de software)?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_l8CeUCGNEdubdKsr57an1g" name="Os requisitos de Suportabilidade, que serão implementados na iteração seguinte foram capturados e validados?" guid="_l8CeUCGNEdubdKsr57an1g">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Existe algum requisito que ira melhorar a suportabilidade ou a manutenção do sistema que está sendo construído?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_wIttsCGNEdubdKsr57an1g" name="As restrições que devem ser consideradas na iteração seguinte foram capturadas e validadas?" guid="_wIttsCGNEdubdKsr57an1g">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Foi requerido algum padrão de fato, linguagem de implementação, política para integridade do banco de dados, limite de recurso, ambiente de operação, etc.?&lt;/li>&#xD;
+    &lt;li>O uso de design herdado, código ou ferramentas pré-selecionadas foram especificados?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_5j6c0CGNEdubdKsr57an1g" name="As interfaces externas que devem ser consideradas na iteração seguinte foram identificadas?" guid="_5j6c0CGNEdubdKsr57an1g">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Está claro como o software interage com as pessoas, com o hardware do sistema, com outros hardwares e com outros softwares?&lt;/li>&#xD;
+    &lt;li>Todos os elementos de dados críticos que atravessam os limites do sistema foram identificados para os cenários que serão implementados na iteração seguinte?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_H052MCGOEdubdKsr57an1g" name="As Regras de Negócio que serão implementadas na iteração seguinte, foram capturadas e validadas?" guid="_H052MCGOEdubdKsr57an1g">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>As regras relevantes aos casos de uso foram identificadas (regras de validação de dados, fórmulas, decisões de fluxo)?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_NBM78CGOEdubdKsr57an1g" name="Os requisitos aplicáveis de Conformidade Reguladora e de Padrões que devem ser considerados na iteração seguinte foram identificados?" guid="_NBM78CGOEdubdKsr57an1g">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>Todos os requisitos que são derivados de padrões e regulamentos existentes foram especificados?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-UTrE64wEDJIC1FRUomEYDg" name=",_k6B3kEvmEdunZcj9T5hrMQ" guid="-UTrE64wEDJIC1FRUomEYDg" changeDate="2007-04-16T15:49:29.691-0300" version="1.0.0">
+  <mainDescription>Um modelo dos casos de uso e atores do sistema e de seus relacionamentos.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_FuQswLv-EdmmUvZAZjqE3g" name="test,_0TkKQMlgEdmt3adZL5Dmdw" guid="_FuQswLv-EdmmUvZAZjqE3g" changeDate="2007-07-24T15:14:40.953-0300" version="1.0.0">
+  <mainDescription>&lt;p>O propósito desta disciplina é:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornecer &lt;em>feedback&lt;/em> de forma rápida e freqüente para comprovar que o sistema satisfaz os requisitos.&lt;/li>&#xD;
+    &lt;li>Medir o progresso objetivamente em pequenos incrementos&lt;/li>&#xD;
+    &lt;li>Identificar os problemas com as soluções&lt;/li>&#xD;
+    &lt;li>Fornecer garantia de que as mudanças no sistema não introduzam novos defeitos&lt;/li>&#xD;
+    &lt;li>Melhorar a velocidade facilitando a descoberta de questões sobre os requisitos, o design e as implementações o mais rápido possível&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>A disciplina de Teste é iterativa e incremental. Ela aplica a estratégia de &quot;testar cedo e frequentemente&quot; para retirar os riscos, o mais cedo possível no ciclo de vida do sistema.&lt;/p>&#xD;
+&lt;p>O teste ocorre em cada iteração do ciclo de vida, iniciando com as mais novas construções do sistema. De fato, é comum para uma iteração ter muitos ciclos de teste, dependendo da freqüência de novas construções.&lt;/p>&#xD;
+&lt;p>O teste faz a pergunta: &quot;O que a solução deve &lt;em>fazer&lt;/em> para que possamos considerar um requisito implementado?&quot; Os testes são elaborados nos requisitos com condições específicas de satisfação que a Solução deve alcançar.&lt;/p>&#xD;
+&lt;p>Esta disciplina verifica as suposições, os riscos e as incertezas inerentes ao desenvolvimento de artefatos altamente técnicos, e trata essas preocupações usando demonstrações concretas e avaliações imparciais.&lt;/p>&#xD;
+&lt;p>A disciplina de Teste se relaciona às outras disciplinas das seguintes formas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        A &lt;a href=&quot;./../../openup/disciplines/requirements_4467C860.html&quot; guid=&quot;_0TR2ZMlgEdmt3adZL5Dmdw&quot;>Disciplina: Requisitos&lt;/a> identifica a &lt;em>intenção&lt;/em> do sistema. O procedimento de teste é elaborado nos requisitos com testes detalhados que verificam como o sistema suporta os requisitos.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        A &lt;a href=&quot;./../../openup/disciplines/development_B5D1D8A.html&quot; guid=&quot;_0TeDoMlgEdmt3adZL5Dmdw&quot;>Disciplina: Desenvolvimento&lt;/a> produz construções incrementais do sistema que são validadas pela disciplina de Teste. Em cada iteração, os testes fornecem um feedback objetivo. O processo efetivo de teste permite aos Desenvolvedores focar na implementação de novas funcionalidades, e na melhoria do design do sistema&lt;/li>&#xD;
+    &lt;li>&#xD;
+        A &lt;a href=&quot;./../../openup/disciplines/project_management_AFB03A6.html&quot; guid=&quot;_0TqQ4MlgEdmt3adZL5Dmdw&quot;>Disciplina: Gestão de Projeto&lt;/a> planeja todo o projeto e o escopo do trabalho para cada iteração. A disciplina de Teste fornece uma medição objetiva do progresso, o que permite o planejamento adaptativo.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        A &lt;a href=&quot;./../../openup/disciplines/config_and_change_management_417EC254.html&quot; guid=&quot;_0TwXgMlgEdmt3adZL5Dmdw&quot;>Disciplina: Gestão de Configuração e Mudança&lt;/a> controla mudanças dentro do projeto. O esforço de teste verifica que cada mudança feita na Solução, foi testada apropriadamente. Os recursos de teste são mantidos sob a gestão de configuração.&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

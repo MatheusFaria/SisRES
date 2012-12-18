@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_BcBR8KX5EdmvhNXG0Oc2uA" name="iteration_plan,_0aQBEslgEdmt3adZL5Dmdw" guid="_BcBR8KX5EdmvhNXG0Oc2uA" changeDate="2007-05-19T09:44:15.738-0300" version="1.0.0">
+  <mainDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></mainDescription>
+  <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+  <purpose>&lt;p>Comunicar os objetivos, a atribuição das tarefas e os critérios de avaliação para uma iteração dada.&lt;/p></purpose>
+  <representationOptions>&lt;p>O nível de detalhe e formalidade do plano deve ser adaptado ao que seja necessário para alcançar os objetivos com sucesso. O plano pode, por exemplo, ser capturado em:&lt;/p>&#xD;
+&#xD;
+&lt;ul>&#xD;
+&#xD;
+    &lt;li>um quadro-branco que lista os objetivos, as atribuições das tarefas e os critérios de avaliação;&lt;/li>&#xD;
+&#xD;
+    &lt;li>um documento de uma página que lista os objetivos e os critérios de avaliação da iteração, bem como referencia a Lista de Itens de Trabalho para atribuições na iteração;&lt;/li>&#xD;
+&#xD;
+    &lt;li>um documento mais complexo, suportado por um gráfico de Gantt ou Pert, feito em uma ferramenta de planejamento de projeto.&lt;/li>&#xD;
+&#xD;
+&lt;/ul></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

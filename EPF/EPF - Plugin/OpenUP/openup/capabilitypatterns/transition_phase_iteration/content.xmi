@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="_mtb_AfL5Edm6Nvont3uinw" guid="_mtb_AfL5Edm6Nvont3uinw"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="_mtb_AvL5Edm6Nvont3uinw" guid="_mtb_AvL5Edm6Nvont3uinw"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="_mtb_APL5Edm6Nvont3uinw" guid="_mtb_APL5Edm6Nvont3uinw"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="_mtb_A_L5Edm6Nvont3uinw" guid="_mtb_A_L5Edm6Nvont3uinw"/>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="_mtb-__L5Edm6Nvont3uinw" guid="_mtb-__L5Edm6Nvont3uinw">
+    <mainDescription>&lt;p>Na fase de Transição, os principais objetivos são fazer ajustes finos na funcionalidade, desempenho e qualidade geral da versão beta do produto a partir do final da fase de Construção.&lt;/p></mainDescription>
+  </org.eclipse.epf.uma:ProcessDescription>
+</xmi:XMI>

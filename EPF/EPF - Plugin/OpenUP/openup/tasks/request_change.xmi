@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_Nr0S4KeqEdmKDbQuyzCoqQ" name="submit_change_request,_0mwzEclgEdmt3adZL5Dmdw" guid="_Nr0S4KeqEdmKDbQuyzCoqQ" changeDate="2005-07-07T18:57:19.105-0300" version="7.2.0">
+  <sections xmi:id="_qEkewKuoEdmEGLSmmpF1Sg" name="Recolha informações de solicitações de mudança" guid="_qEkewKuoEdmEGLSmmpF1Sg">
+    <sectionDescription>&lt;p>Recolha as informações necessárias para descrever a solicitação de mudança. Devendo incluir uma descrição da mudança solicitada, a razão para a mudança (defeito ou melhoria), o artefato afetado incluindo a versão e a prioridade de execução da mudança. Se possível, forneça uma estimativa do esforço necessário para executar a mudança.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_r2aP0KuoEdmEGLSmmpF1Sg" name="Atualize a Lista de Itens de Trabalho" guid="_r2aP0KuoEdmEGLSmmpF1Sg">
+    <sectionDescription>&lt;p>Atualize a &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a> para documentar a informação recolhida no passo anterior.&lt;/p></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

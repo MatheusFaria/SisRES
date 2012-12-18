@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_NrVKsKeqEdmKDbQuyzCoqQ" name="create_test_cases,_0iwc0clgEdmt3adZL5Dmdw" guid="_NrVKsKeqEdmKDbQuyzCoqQ" changeDate="2007-06-05T18:36:55.703-0300" version="1.0.0">
+  <sections xmi:id="_IJFSsKuSEdmhFZtkg1nakg" name="Revise os requisitos a serem testados" guid="_IJFSsKuSEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Trabalhe com o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/analyst_39D7C49B.html&quot; guid=&quot;_0VxJsMlgEdmt3adZL5Dmdw&quot;>Analista&lt;/a> e o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/developer_C633AB7.html&quot; guid=&quot;_0YDosMlgEdmt3adZL5Dmdw&quot;>Desenvolvedor&lt;/a> para identificar quais cenários necessitam de novos ou adicionais casos de teste. Revise o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/iteration_plan_B46FED39.html&quot; guid=&quot;_0aQBEslgEdmt3adZL5Dmdw&quot;>Plano de Iteração&lt;/a> para assegurar que você entendeu o escopo de desenvolvimento para a iteração corrente.&lt;br />&#xD;
+&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_aDe_ILGcEdubqf8m_Zrvvg" name="Identifique Casos de Teste relevantes" guid="_aDe_ILGcEdubqf8m_Zrvvg">
+    <sectionDescription>&lt;p>Identifique os caminhos nos cenários como condições únicas de teste. Considere os caminhos alternativos ou de exceções com perspectivas positivas e negativas.&lt;/p>&#xD;
+&#xD;
+&lt;p>Discuta o requisito com o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholder&lt;/a> para identificar outras condições de satisfação para os requisitos.&lt;/p>&#xD;
+&#xD;
+&lt;p>Relacione cada caso de teste com um nome único que identifique a condição que ele avalia ou o resultado esperado.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_LpbM8KuSEdmhFZtkg1nakg" name="Descreva os Casos de Teste" guid="_LpbM8KuSEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Para cada caso de teste, escreva uma descrição resumida com um resultado esperado. Assegure-se que um leitor casual possa entender claramente a diferença entre os casos de teste. Anote as precondições e pós-condições lógicas que se aplicam a cada caso de teste. Opcionalmente, descreva os passos para o caso de teste.&lt;/p>&#xD;
+&#xD;
+&lt;p>Verifique que os casos de teste satisfaçam as diretrizes da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/checklists/test_case_9D3F2E96.html&quot; guid=&quot;_0Zxf8MlgEdmt3adZL5Dmdw&quot;>Lista de Verificação: Caso de Teste.&lt;/a>.&lt;/p>&#xD;
+&#xD;
+&lt;p>Para mais informações sobre casos de teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/templates/test_case_A18913A5.html&quot; guid=&quot;_0dT8IMlgEdmt3adZL5Dmdw&quot;>Template: Caso de Teste&lt;/a>.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_NK18YKuSEdmhFZtkg1nakg" name="Identifique os dados de teste necessários" guid="_NK18YKuSEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Revise cada caso de teste e anote onde os dados de entrada ou saída possam ser necessários. Identifique o tipo, quantidade e singularidade do dado necessário e adicione essas observações no caso de teste. Concentre-se na articulação dos dados necessários e não na criação de dados específicos.&lt;/p>&#xD;
+&#xD;
+&lt;p>Para mais informações sobre a seleção de dados de teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/checklists/test_case_9D3F2E96.html&quot; guid=&quot;_0Zxf8MlgEdmt3adZL5Dmdw&quot;>Lista de Verificação: Caso de Teste&lt;/a>.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Ok_mMKuSEdmhFZtkg1nakg" name="Compartilhe e avalie os Casos de Teste" guid="_Ok_mMKuSEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Percorra os casos de teste com o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/analyst_39D7C49B.html&quot; guid=&quot;_0VxJsMlgEdmt3adZL5Dmdw&quot;>Analista&lt;/a> e o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/developer_C633AB7.html&quot; guid=&quot;_0YDosMlgEdmt3adZL5Dmdw&quot;>Desenvolvedor&lt;/a> responsáveis pelo cenário relacionado. Se for possível, o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholder&lt;/a> também deve participar.&lt;/p>&#xD;
+&#xD;
+&lt;p>Pergunte aos participantes se eles concordam que &lt;em>se os casos teste passarem&lt;/em>, eles considerarão os requisitos implementados. Elicite idéias de teste adicionais do &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/roles/analyst_39D7C49B.html&quot; guid=&quot;_0VxJsMlgEdmt3adZL5Dmdw&quot;>Analista&lt;/a> e do &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholder&lt;/a> para assegurar que você entendeu o comportamento esperado do cenário.&lt;/p>&#xD;
+&#xD;
+&lt;p>Durante a revisão, assegure-se que:&lt;/p>&#xD;
+&#xD;
+&lt;ul>&#xD;
+&#xD;
+    &lt;li>Os &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/use_case_22BE66E2.html&quot; guid=&quot;_0VGbUMlgEdmt3adZL5Dmdw&quot;>Casos de Uso&lt;/a> e a &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/supporting_requirements_spec_7D9DD47C.html&quot; guid=&quot;_BVh9cL-CEdqb7N6KIeDL8Q&quot;>Especificação de Requisitos Suplementares&lt;/a>, planejados para a iteração corrente, tenham casos de teste associados.&lt;/li>&#xD;
+&#xD;
+    &lt;li>Todos os participantes devem concordar com os resultados esperados dos casos de teste.&lt;/li>&#xD;
+&#xD;
+    &lt;li>Não existem &lt;em>outras&lt;/em> condições de satisfação para o requisito a ser testado, o que indica uma falta de um caso de teste ou um requisito ausente.&lt;/li>&#xD;
+&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <keyConsiderations>&lt;p>Desenvolva os casos de teste paralelamente aos requisitos de forma que o &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/roles/analyst_39D7C49B.html&quot; guid=&quot;_0VxJsMlgEdmt3adZL5Dmdw&quot;>Analista&lt;/a> e o &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholder&lt;/a> possam concordar com as condições específicas de satisfação para cada requisito. Os casos de teste agem como critérios de aceitação, expandindo sobre a intenção do sistema através de cenários reais de utilização. Isto permite aos membros da equipe medir o progresso em termos de casos de teste executados com sucesso.&lt;/p></keyConsiderations>
+  <purpose>&lt;p>Para alcançar um entendimento comum das condições específicas que a solução deve satisfazer.&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

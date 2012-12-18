@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-SJrpVySJ2npYs8NwGvnHjw" name="arch_mech,_mzxI0A4LEduibvKwrGxWxA" guid="-SJrpVySJ2npYs8NwGvnHjw" authors="Mark Dickson" changeDate="2007-07-20T13:24:08.076-0300" changeDescription="Simplified text explaining mechanism concept" version="1.0.0">
+  <mainDescription>&lt;p>O valor na definição de mecanismos de arquitetura é que eles:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>Mostram explicitamente aspectos dos mecanismos da solução que são comuns em todo o sistema. Isto lhe ajuda a planejar.&lt;/li>&#xD;
+    &lt;li>Coloca marcadores para que os desenvolvedores construam os aspectos do sistema uma vez e reusem-nos. Isto reduz a carga de trabalho.&lt;/li>&#xD;
+    &lt;li>Promove o desenvolvimento de um conjunto consistente de serviços. Isto faz com que o sistema fique mais fácil de manter.&lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;p>Um mecanismo arquitetural pode ter três estados: análise, design e implementação. Estas categorias refletem a maturidade da descrição do mecanismo. O estado muda à medida que níveis sucessivos de detalhe são descobertos quando você refina os requisitos arquiteturalmente significantes em software funcional. As categorias estão resumidas na tabela a seguir.&lt;/p>&lt;strong>Estados de um Mecanismo Arquitetural&lt;/strong> &#xD;
+&lt;table style=&quot;WIDTH: 806px; HEIGHT: 228px&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot; width=&quot;806&quot; summary=&quot;Tipos de Mecanismos Arquiteturais&quot; border=&quot;1&quot;>&#xD;
+    &lt;tbody valign=&quot;top&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;th scope=&quot;col&quot;>Estado&lt;/th>&#xD;
+            &lt;th scope=&quot;col&quot;>Descrição&lt;/th>&#xD;
+        &lt;/tr>&#xD;
+        &lt;tr>&#xD;
+            &lt;td>Análise&lt;/td>&#xD;
+            &lt;td>Uma solução conceitual para um problema técnico comum. Por exemplo, a persistência é uma solução abstrata para o requisito comum de armazenamento de dados. A finalidade desta categoria é simplesmente identificar a necessidade de projetar e implementar um mecanismo arquitetural, e para capturar atributos básicos para esse mecanismo.&lt;/td>&#xD;
+        &lt;/tr>&#xD;
+        &lt;tr>&#xD;
+            &lt;td>&#xD;
+                Design&#xD;
+            &lt;/td>&#xD;
+            &lt;td>Refinando de um mecanismo de análise em uma tecnologia concreta (por exemplo, um RDBMS). A finalidade desta categoria é guiar a seleção precisa do produto ou da tecnologia.&lt;/td>&#xD;
+        &lt;/tr>&#xD;
+        &lt;tr>&#xD;
+            &lt;td>Implementação&lt;/td>&#xD;
+            &lt;td>&#xD;
+                &lt;p>Um refinamento adicional de um mecanismo de design em uma especificação para o software. Isto pode ser apresentado como um padrão de design ou código de exemplo.&lt;/p>&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/tbody>&#xD;
+&lt;/table>&lt;br />&#xD;
+&lt;p>Esteja ciente que estes estados freqüentemente se referenciam como mecanismos de análise, design e implementação. São sinônimos e representam meramente os mecanismos arquiteturais em diferentes estados de desenvolvimento. A transição de um estado para outro pode ser óbvia ou intuitiva. Conseqüentemente, pode acontecer em poucos segundos. De outra forma, pode também necessitar de maiores considerações de análise e design, por muito tempo. O diagrama a seguir ilustra a transição de mecanismos arquiteturais de um estado a outro.&lt;/p>&#xD;
+&lt;p>O ponto importante é que estas categorias de mecanismos aplicam-se aos mesmos conceitos em diferentes estados. A única diferença entre elas é de refinamento ou detalhe. Consulte &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/arch_mech_2932DFB6.html&quot; guid=&quot;_mzxI0A4LEduibvKwrGxWxA&quot;>Mecanismo Arquitetural&lt;/a> para mais informações. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/examples/architectural_mechanisms_415C32A3.html&quot; guid=&quot;_O39h0O9pEdu635i_iQ5Jag&quot;>Exemplo: Mecanismo Arquitetural&lt;/a> para uma lista de mecanismos típicos.&lt;/p>&#xD;
+&lt;p>A principal razão para o uso de mecanismos arquiteturais como uma abordagem para análise e design é que eles facilitam a evolução de aspectos do sistema arquiteturalmente significantes. Isto permite à equipe manter uma arquitetura coesiva permitindo que detalhes de implementação sejam postergados até que eles sejam realmente necessários.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Máquina de Estado para Mecanismos Arquiteturais&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img style=&quot;WIDTH: 876px; HEIGHT: 115px&quot; height=&quot;113&quot; alt=&quot;Estado de Mecanismo Arquitetural&quot;     src=&quot;./resources/arch_mechanisms_state_machine.JPG&quot; width=&quot;600&quot; />&lt;br />&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;p>Mecanismos arquiteturais representam aspectos chave da solução técnica que precisam ser padronizados em todo o projeto. Todos no projeto devem tratar estes conceitos da mesma forma, e reutilizar o mesmo mecanismo em seus códigos.&lt;/p>&#xD;
+&lt;p>Os Mecanismos Arquiteturais são usados para satisfazer requisitos arquiteturalmente significantes. Eles normalmente se igualam a serviços técnicos ou componentes de framework no software, e formam a base para padronizar a forma que o software funciona. Sendo assim, eles são elementos importantes de toda a arquitetura de software. A definição dos mecanismos arquiteturais permite-lhe decidir se os componentes de software existentes podem ser reutilizados para fornecer o comportamento necessário ou se um novo software deve ser comprado ou construído.&lt;/p>&#xD;
+&lt;p>O principal ponto a ser entendido quando da discussão dos mecanismos arquiteturais é que a sua definição reside somente em fazer escolhas sobre &lt;b>qual&lt;/b> tecnologia será usada para satisfazer os requisitos arquiteturalmente significantes. Não é a produção de design detalhado. Este é um engano comum. A criação de design detalhado e de software que mostra &lt;b>como&lt;/b> mecanismos específicos são satisfeitos é uma tarefa do desenvolvimento.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

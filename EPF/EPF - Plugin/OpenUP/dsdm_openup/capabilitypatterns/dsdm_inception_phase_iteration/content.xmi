@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-RisdjIoyu2KDPw8Tf0yf6Q" guid="-RisdjIoyu2KDPw8Tf0yf6Q"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-kzqgz3-ty_mOgre-ohge1w" guid="-kzqgz3-ty_mOgre-ohge1w"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-IGq2E1sf9UB7f1C7wZa-mw" guid="-IGq2E1sf9UB7f1C7wZa-mw"/>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-8SfyIqRR4DzSo0CHvolvXA" guid="-8SfyIqRR4DzSo0CHvolvXA">
+    <mainDescription>&lt;p>&#xD;
+    The project starts with the assumption that the business case has been created, the &lt;a class=&quot;elementlinkwithusertext&quot;&#xD;
+    href=&quot;./../../openup_basic/roles/project_manager.html&quot; guid=&quot;_0a0o0MlgEdmt3adZL5Dmdw&quot;>project manager&lt;/a> has been&#xD;
+    identified, the team (at least for the first iteration) has been defined, the development environment (including tools&#xD;
+    and infrastructure) is in place, and the process to be followed is the &lt;a class=&quot;elementlinkwithusertext&quot;&#xD;
+    href=&quot;./../../openup_basic/deliveryprocesses/openup_basic_process.html&quot; guid=&quot;_0uyGoMlgEdmt3adZL5Dmdw&quot;>delivery&#xD;
+    process&lt;/a> suggested by this published process description. The number and length of each Inception iteration will&#xD;
+    vary depending upon the needs of the project.&lt;br />&#xD;
+    &lt;br />&#xD;
+&lt;/p></mainDescription>
+    <alternatives>This iteration template does not include any activities that result in any implementation. In some projects there will have&#xD;
+to be some implementation work done to meet the objectives of Inception. In those cases, additional activities should be&#xD;
+added to handle that.</alternatives>
+  </org.eclipse.epf.uma:ProcessDescription>
+</xmi:XMI>

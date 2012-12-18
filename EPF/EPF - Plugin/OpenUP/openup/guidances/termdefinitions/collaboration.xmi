@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Kzkvb-KnfJTCo1rPJafgRA" name="new_term_definition,_aUGUAOIuEduy7p_Bq6eDDg" guid="-Kzkvb-KnfJTCo1rPJafgRA" changeDate="2007-04-11T21:05:56.329-0300" version="1.0.0">
+  <mainDescription>Um grupo de pessoas que cooperam em conjunto para resolver um problema de negócio significativo e claramente definido. A alta colaboração necessita de um ambiente de confiança onde o diálogo seja disciplinado e focado na solução do problema de negócio.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

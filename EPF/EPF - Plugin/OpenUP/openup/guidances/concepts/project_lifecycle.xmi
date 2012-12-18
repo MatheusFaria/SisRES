@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-ebKPqn9bWfbh1K2spgOwWQ" name="project_lifecycle,_nSfVwCNYEdyCq8v2ZO4QcA" guid="-ebKPqn9bWfbh1K2spgOwWQ" changeDate="2007-07-22T20:27:25.317-0300" version="7.2.0">
+  <mainDescription>&lt;p>O ciclo de vida de projeto fornece aos &lt;em>Stakeholders&lt;/em> supervisão, transparência e mecanismos de orientação para controlar o orçamento do projeto, escopo, exposição ao risco, valor fornecido e outros aspectos do processo.&lt;/p>&#xD;
+&lt;p>Cada iteração gera um incremento de produto, o que constitui uma oportunidade para que os Stakeholders entendam qual valor foi entregue e quão bem acompanhado o projeto está. Ele também fornece à equipe de desenvolvimento a oportunidade de fazer alterações no projeto para otimizar os resultados.&lt;/p>&#xD;
+&lt;p>O OpenUP organiza as iterações em um conjunto de fases. Cada fase termina com um marco destinado a proporcionar supervisão, pela descoberta e solução das questões que normalmente são críticas para os interessados:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/concepts/inception_phase_C4456871.html&quot; guid=&quot;_0hmKgBOMEduCNqgZdt_OaA&quot;>Concepção&lt;/a>. Nós estamos de acordo com o escopo e os objetivos do projeto, e se ele deve continuar?&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/concepts/elaboration_phase_BE880435.html&quot; guid=&quot;_2plxwBOMEduCNqgZdt_OaA&quot;>Elaboração&lt;/a>. Não estamos de acordo que a arquitetura executável seja utilizada para o desenvolvimento da aplicação, e também que o valor entregue até ao momento, bem como os riscos remanescentes são aceitáveis?&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/concepts/construction_phase_873B6559.html&quot; guid=&quot;_48EKsBOMEduCNqgZdt_OaA&quot;>Construção&lt;/a>. Será que nós temos uma aplicação que está suficientemente perto de ser liberada de forma que possamos mudar o principal foco da equipe para os ajustes, o polimento e a garantia de uma implementação bem sucedida?&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/concepts/transition_phase_DD5986E5.html&quot; guid=&quot;__ca5UBOMEduCNqgZdt_OaA&quot;>Transição&lt;/a>. A aplicação está pronta para liberação?&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Se, na fase de revisão, a resposta for Sim para as perguntas acima o projeto deve continuar. Se a resposta for Não, a fase é postergada (normalmente, acrescentando uma iteração extra), até que seja recebida uma resposta satisfatória, ou os Stakeholders determinem que o projeto deva ser cancelado.&lt;/p>&#xD;
+&lt;p>Um dos objetivos do ciclo de vida do projeto é focar em dois dos principais orientadores dos Stakeholders: redução dos riscos e criação de valor. As fases do OpenUP focam a equipe na redução dos riscos relacionados às questões a serem respondidas ao final da fase, e no monitoramento da criação de valor, veja a figura abaixo.&lt;/p>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;img height=&quot;268&quot; alt=&quot;À medida que o projeto avança, o risco diminui e o valor aumenta.&quot; src=&quot;./resources/project_lifecycle.jpg&quot;     width=&quot;500&quot; /> &#xD;
+&lt;/blockquote>&#xD;
+&lt;p dir=&quot;ltr&quot;>&#xD;
+    &lt;em>Redução dos riscos (curva vermelha) e criação de valor (curva verde) durante o ciclo de vida do projeto.&lt;/em>&#xD;
+&lt;/p>&#xD;
+&lt;p dir=&quot;ltr&quot;>O risco é uma manifestação da probabilidade de acontecer coisas inesperadas no projeto, e dificulta a criação de valor. O risco é diretamente proporcional à incerteza nas estimativas, e os Stakeholders geralmente querem saber, o mais cedo possível, qual o valor que o projeto pode entregar no tempo estipulado. Em muitos casos, você reduz o risco quando cria valor através da implementação e teste das capacidades mais críticas. Entretanto, existem situações em que a redução dos riscos e a imediata criação de valor estão em contradição entre si, veja &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/core_principle_balance_793DD27.html&quot; guid=&quot;_ssG6MMvpEdqukPpotm3DYg&quot;>Equilibrar as prioridades concorrentes para maximizar o benefício aos Stakeholders&lt;/a>.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

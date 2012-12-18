@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-aN0zy068ovKHgmkkoYqoYQ" name=",_zGqO0MDpEduTGJ8i4u8TMw" guid="-aN0zy068ovKHgmkkoYqoYQ" changeDate="2007-03-22T10:14:36.428-0300" version="1.0.0">
+  <mainDescription>&lt;h3>Explicação&lt;/h3>&#xD;
+&lt;p>Para entender totalmente o objetivo do sistema, você deve saber para quem é o sistema, isto é: Quem usará o sistema? A resposta para esta pergunta é: os Atores.&lt;/p>&#xD;
+&lt;p>Um Ator é um papel que uma pessoa ou um sistema externo desempenha quando interage com um sistema. Uma instância de um Ator pode ser um indivíduo ou um sistema externo, entretanto cada Ator fornece uma perspectiva única e importante do sistema que é compartilhada por todas as instâncias do Ator.&lt;/p>&#xD;
+&lt;p>Essa diferença entre um ator e uma instância de um ator é ilustrada abaixo. A Figura 1 mostra um caso em que Ivar e Mark são operadores de uma máquina de reciclagem. Quando usam a máquina, cada um é representado por uma instância do ator chamado Operador que espera certa funcionalidade do sistema (Imprimir Informes Diários neste exemplo).&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;322&quot; alt=&quot;&quot; src=&quot;./resources/md_acto2.gif&quot; width=&quot;396&quot; /> &#xD;
+&lt;/p>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>&#xD;
+        &lt;strong>Figura 1: Exemplo de Ator com múltiplas instâncias&lt;/strong> &#xD;
+    &lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;p>De forma inversa, o mesmo usuário pode agir como vários atores (isto é, a mesma pessoa pode desempenhar diferentes papéis). Na Figura 2, Charlie usa o Sistema de Tratamento de Depósito primariamente como Gerente de Depósito, mas às vezes ele também usa o sistema como um membro comum da equipe de funcionários. Cada um desses atores espera diferentes funcionalidades do sistema.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;139&quot; alt=&quot;&quot; src=&quot;./resources/md_acto3.gif&quot; width=&quot;367&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>&#xD;
+        &lt;strong>Figura 2: Exemplo de usuário desempenhando diferentes papéis.&lt;/strong>&lt;br />&#xD;
+    &lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;p>Os Atores lhe ajudam a identificar interfaces externas e determinar o escopo do sistema (o que está dentro do sistema versus o que está fora dos limites do sistema). Cada Ator possui casos de uso associados que descrevem o que o ator em particular espera do sistema. Será muito difícil, se não impossível, avaliar a abrangência do conjunto de casos de uso sem o contexto fornecido pelos Atores associados. Além disso, a falta de um ator pode resultar na perda de perspectivas de Stakeholder importantes, resultando numa solução que não satisfaz todas as necessidades do Stakeholder.&lt;/p>&#xD;
+&lt;p>Portanto, a identificação dos Atores do sistema deve ser feita cedo no ciclo de vida. Os Atores são capturados, incluindo seus nomes, descrições resumidas e relacionamentos com casos de uso no &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/workproducts/uc_model_85965D1B.html&quot; guid=&quot;_W2SgEDR5EdutE_HNDTJk5Q&quot;>Artefato: Modelo de Casos de Uso&lt;/a>.&lt;/p>&#xD;
+&lt;h3>Propriedades dos Atores&lt;/h3>&#xD;
+&lt;h4>Nome&lt;/h4>&#xD;
+&lt;p>Cada ator deve ter um nome que descreva claramente o papel desempenhado pelo usuário.&lt;/p>&#xD;
+&lt;h4>Descrição Resumida&lt;/h4>&#xD;
+&lt;p>Cada ator deve ter uma descrição resumida descreva claramente:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>O que ou quem o ator representa.&lt;/li>&#xD;
+    &lt;li>Por que o ator é necessário.&lt;/li>&#xD;
+    &lt;li>Qual interesse o ator tem no sistema?&lt;/li>&#xD;
+    &lt;li>As principais características do ator.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>As principais características do ator são importantes porque elas podem influenciar como o sistema será desenvolvido, por exemplo, características da interface de usuário tais como acessibilidade ou globalização. Exemplos de importantes características são:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>O nível de conhecimento do ator sobre o domínio&lt;/li>&#xD;
+    &lt;li>O nível de experiência computacional do ator&lt;/li>&#xD;
+    &lt;li>As habilidades e dificuldades do ator&lt;/li>&#xD;
+    &lt;li>A linguagem nativa do ator&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

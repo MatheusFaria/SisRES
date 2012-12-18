@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_4LuPMMPcEdmbOvqy4O0adg" name="test_script,_0Z9tMMlgEdmt3adZL5Dmdw" guid="_4LuPMMPcEdmbOvqy4O0adg" changeDate="2005-07-26T17:21:21.082-0300" version="1.0.0">
+  <sections xmi:id="_13iTQBOkEdyl0eKFlAahCA" name="O script de teste tem um nome único que identifica a condição que ele avalia?" guid="_13iTQBOkEdyl0eKFlAahCA">
+    <sectionDescription>&lt;p>O nome indica claramente a condição avaliada ou o resultado esperado? Por exemplo, &quot;ABC99&quot; pose ser único, mas não indica claramente qual condição ele avalia. Ao contrário, &quot;UI99 O usuário não autenticado foi solicitado a executar o login&quot; ou &quot;BR27 Caracteres alfanuméricos não são permitidos em códigos postais&quot; indicam as condições de teste e os resultados esperados.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_DiPTsE_cEduqM_QlWBlZ_g" name="O script de teste está em conformidade com o respectivo caso de teste?" guid="_DiPTsE_cEduqM_QlWBlZ_g">
+    <sectionDescription>&lt;p>O script de teste identifica os casos de teste que ele implementa? Assegure-se que o script de teste esteja em conformidade com a especificação estabelecida no caso de teste. O caso de teste captura as condições lógicas de satisfação do teste, e o script de teste deve implementar esta intenção.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_5_92wE_cEduqM_QlWBlZ_g" name="O script de teste é prescritivo e inequívoco?" guid="_5_92wE_cEduqM_QlWBlZ_g">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>O script de teste tem um critério claro para o sucesso ou o fracasso? (ele é binário?)&lt;/li>&#xD;
+    &lt;li>O script usa um estilo solicitação-resposta nos seus passos? (ele tem forma de procedimento?)&lt;/li>&#xD;
+    &lt;li>Cada entrada específica tem um resultado esperado específico? (ele é declarativo?)&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_hU9AABOkEdyl0eKFlAahCA" name="Todos os dados necessários foram especificados?" guid="_hU9AABOkEdyl0eKFlAahCA">
+    <sectionDescription>&lt;p>Assegure que o script de teste contém ou referencia todos os dados de teste necessários para executar o script.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_wFJzABOmEdyl0eKFlAahCA" name="Todas as pós-condições do caso de teste relacionado estão avaliadas por um passo no script de teste?" guid="_wFJzABOmEdyl0eKFlAahCA"/>
+  <sections xmi:id="_Ko30MBOlEdyl0eKFlAahCA" name="O script de teste inicia e termina apropriadamente?" guid="_Ko30MBOlEdyl0eKFlAahCA">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>O script de teste identifica as precondições que devem estar presentes antes dele iniciar?&lt;/li>&#xD;
+    &lt;li>O script de teste restaura o estado do sistema após a sua execução, independente de ter finalizado com sucesso ou de ter falhado?&lt;/li>&#xD;
+    &lt;li>O script de teste pode ser executado sem afetar o resultado de outros scripts de teste? De outra forma, o script de teste pode ser executado em qualquer seqüência? Se não puder, a seqüência de dependência foi identificada? A dependência pode ser identificada no script de teste, na suíte de teste ou de outra forma (tal como pelo uso de uma ferramenta).&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-HDfMzDXoilK-f2iNreHRVg" name=",_IHRO8EvHEdunZcj9T5hrMQ" guid="-HDfMzDXoilK-f2iNreHRVg" changeDate="2007-05-03T15:22:39.708-0300" version="1.0.0">
+  <mainDescription>Captura os requisitos como uma seqüência das ações executadas por um sistema que produzem um resultado de valor observável para aqueles que interagem com o sistema.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-dLRBfqnBlgy_0_H13LmV3A" name="new_term_definition,_GH6WUMaJEduMlb2cQZNTYw" guid="-dLRBfqnBlgy_0_H13LmV3A" changeDate="2007-02-27T14:37:06.441-0300" version="7.2.0">
+  <mainDescription>Coleções de conteúdo estruturado criadas para direcionar a publicação e facilitar a navegação. São especificadas usando &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/custom_category_554AC4D6.html&quot; guid=&quot;_eqw94MaFEduMlb2cQZNTYw&quot;>categorias personalizadas&lt;/a>.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

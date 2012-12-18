@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_yWHeDdnmEdmO6L4XMImrsA" name="stakeholder,_yWHeDNnmEdmO6L4XMImrsA" guid="_yWHeDdnmEdmO6L4XMImrsA" version="7.2.0">
+  <mainDescription>Um indivíduo que é materialmente afetado pelo resultado do &lt;a class=&quot;elementLink&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/process_68E308B4.html&quot; guid=&quot;_yQ5m2NnmEdmO6L4XMImrsA&quot;>processo&lt;/a> (ou seja, o &lt;a class=&quot;elementLink&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/deliverable_BFE1A5A9.html&quot; guid=&quot;_yFbWoNnmEdmO6L4XMImrsA&quot;>entregável&lt;/a> que o processo produz).</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

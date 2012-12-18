@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_qktWQMM0EdmSIPI87WLu3g" name="vision,_0WoFUMlgEdmt3adZL5Dmdw" guid="_qktWQMM0EdmSIPI87WLu3g" changeDate="2005-07-07T17:30:32.042-0300" version="1.0.0">
+  <sections xmi:id="_VwoioAeiEduWycDgioo5rg" name="Você explorou completamente qual é o problema por trás do problema?" guid="_VwoioAeiEduWycDgioo5rg">
+    <sectionDescription>&lt;p>Tenha certeza que você encontrou a causa fundamental do problema ou necessidade do Stakeholder. Normalmente, os Stakeholders definem soluções ao invés de expressar o problema ou a dificuldade que estão experimentando. Conseqüentemente, eles podem não ter identificado o problema corretamente ou a solução correta.&lt;/p>&#xD;
+&lt;p>Por exemplo, &quot;Não podemos dar assistência aos clientes que querem comprar on-line&quot; é melhor que &quot;Precisamos de um sistema de comprar on-line”.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_dBs8gAeiEduWycDgioo5rg" name="A declaração do problema foi formulada corretamente?" guid="_dBs8gAeiEduWycDgioo5rg">
+    <sectionDescription>Tenha certeza que você obteve acordo sobre o problema a ser resolvido.</sectionDescription>
+  </sections>
+  <sections xmi:id="_jGUxYAeiEduWycDgioo5rg" name="A lista de Stakeholders esta completa e correta?" guid="_jGUxYAeiEduWycDgioo5rg">
+    <sectionDescription>Tenha certeza que você não esqueceu nenhum Stakeholder. Se você fez isto, você provavelmente ainda não capturou todas as perspectivas que você precisa considerar.</sectionDescription>
+  </sections>
+  <sections xmi:id="_s-be8AeiEduWycDgioo5rg" name="Todos concordam com a definição das fronteiras do sistema?" guid="_s-be8AeiEduWycDgioo5rg">
+    <sectionDescription>Defina o que está &lt;strong>dentro&lt;/strong> e o que esta &lt;strong>fora&lt;/strong> das fronteiras do sistema. Este é um passo crítico na definição do escopo do trabalho.</sectionDescription>
+  </sections>
+  <sections xmi:id="_z1uG4AeiEduWycDgioo5rg" name="Você explorou suficientemente as restrições a serem colocadas no sistema?" guid="_z1uG4AeiEduWycDgioo5rg">
+    <sectionDescription>Não esqueça dos requisitos não-funcionais e das restrições. Estes, geralmente são os maiores custos de desenvolvimento.</sectionDescription>
+  </sections>
+  <sections xmi:id="_7KzeEAeiEduWycDgioo5rg" name="Você considerou todos os tipos de restrições, incluindo políticas, econômicas e ambientais?" guid="_7KzeEAeiEduWycDgioo5rg">
+    <sectionDescription>&lt;p>Estas restrições não-técnicas normalmente conduzem a problemas mais tarde.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_DymaUAejEduWycDgioo5rg" name="Todas as principais características do sistema foram identificadas e definidas?" guid="_DymaUAejEduWycDgioo5rg">
+    <sectionDescription>Faça uma verificação completa, comparando as características com a declaração do problema, para ter certeza que você não esqueceu alguma característica crítica.</sectionDescription>
+  </sections>
+  <sections xmi:id="_LRX5AAejEduWycDgioo5rg" name="As características do sistema irão resolver os problemas que foram identificados?" guid="_LRX5AAejEduWycDgioo5rg">
+    <sectionDescription>Todas as características do sistema são realmente necessárias? Talvez você possa reduzir o escopo.</sectionDescription>
+  </sections>
+  <sections xmi:id="_UGRdIAejEduWycDgioo5rg" name="As características estão consistentes com as restrições que você identificou?" guid="_UGRdIAejEduWycDgioo5rg">
+    <sectionDescription>&lt;p>Certifique-se de que não existam requisitos conflitantes. Se você encontrar conflitos, resolva-os agora.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_5y4uAAhUEduRe8TeoBmuGg" name="Alguém, que não esteja familiarizado com o projeto, pode entender o que você espera que o projeto vá conseguir, lendo o documento de Visão?" guid="_5y4uAAhUEduRe8TeoBmuGg">
+    <sectionDescription>O propósito do documento de Visão é descrever os objetivos do projeto de forma que as pessoas não técnicas, que não estão envolvidas diretamente com o projeto, possam entender.</sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

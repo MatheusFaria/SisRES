@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_NqYIcKeqEdmKDbQuyzCoqQ" name="tester,_0ZM4MclgEdmt3adZL5Dmdw" guid="_NqYIcKeqEdmKDbQuyzCoqQ" changeDate="2006-09-26T17:51:28.608-0300" version="1.0.0">
+  <mainDescription>&lt;p>Este papel é responsável principalmente pelas seguintes tarefas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Identificar os testes que necessitam ser executados&lt;/li>&#xD;
+    &lt;li>Identificar a abordagem de implementação mais apropriada para um determinado teste&lt;/li>&#xD;
+    &lt;li>Implementar testes individuais&lt;/li>&#xD;
+    &lt;li>Preparar e executar os testes&lt;/li>&#xD;
+    &lt;li>Registrar os resultados e verificar se os testes executaram&lt;/li>&#xD;
+    &lt;li>Analisar e recuperar dos erros de execução&lt;/li>&#xD;
+    &lt;li>Comunicar os resultados do teste à equipe&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <skills>&lt;p>Uma pessoa que execute este papel deve ter as seguintes habilidades:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Conhecimento de abordagens e técnicas de teste&lt;/li>&#xD;
+    &lt;li>Habilidades de diagnóstico e solução de problemas&lt;/li>&#xD;
+    &lt;li>Conhecimento do sistema ou aplicação a ser testada (desejável)&lt;/li>&#xD;
+    &lt;li>Conhecimento da arquitetura de sistemas e de rede (desejável)&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Onde testes automatizados forem necessários, considere solicitar estas qualificações adicionais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Treinamento no uso apropriado de ferramentas da automatização de teste&lt;/li>&#xD;
+    &lt;li>Experiência no uso de ferramentas da automatização de teste&lt;/li>&#xD;
+    &lt;li>Habilidades de programação&lt;/li>&#xD;
+    &lt;li>Habilidades de depuração e diagnóstico&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Nota&lt;/strong>: Os requisitos específicos de habilidade variam dependendo do tipo de teste que você está conduzindo. Por exemplo, as habilidades necessárias para usar com sucesso ferramentas de automatização de teste de carga de sistema são diferentes daquelas necessárias para a automatização de testes funcionais do sistema.&lt;/p></skills>
+  <assignmentApproaches>&lt;p>Este papel pode ser atribuído das seguintes formas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Atribua um ou mais membros da equipe de teste para executar este papel. Esta é uma abordagem razoavelmente padrão e é particularmente apropriada para equipes pequenas, bem como para equipes de qualquer tamanho onde a equipe for composta de um grupo experiente de testadores com níveis de habilidade relativamente iguais.&lt;/li>&#xD;
+    &lt;li>Atribua um ou mais membros da equipe de teste para executar somente este papel. Isto funciona bem em equipes grandes. É também útil separar responsabilidades quando alguém da equipe de teste tem mais experiência com automatização de testes do que os outros membros da equipe.&lt;/li>&#xD;
+    &lt;li>Atribua um ou mais membros da equipe que estejam executando outro papel no projeto para serem responsáveis pelo teste de alguma parte das capacidades do sistema. O membro da equipe terá que ter as habilidades apropriadas de teste&lt;/li>&#xD;
+&lt;/ul></assignmentApproaches>
+</org.eclipse.epf.uma:RoleDescription>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-SQyJsrOEI73uLZzjRVmSBA" name="outcome,_LNAAcB_iEdqAHrsQ7-jSbw" guid="-SQyJsrOEI73uLZzjRVmSBA" changeDate="2006-09-28T18:18:20.984-0300" version="7.2.0">
+  <mainDescription>&lt;p>&lt;!--StartFragment-->&#xD;
+    Descreve principalmente um &lt;a class=&quot;elementLink&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/work_product_826E4C22.html&quot; guid=&quot;_H4JXwB_SEdq6CKKKq4D7YA&quot;>produto de trabalho&lt;/a> intangível que é um resultado ou estado. Um resultado também pode ser usado para representar um produto de trabalho informal.&lt;!--EndFragment-->&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

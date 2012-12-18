@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-zfl87vJBFdinDB02ArLXOQ" name="new_concept,_HZGFsKrPEdu6T6WyNqBzqQ" guid="-zfl87vJBFdinDB02ArLXOQ" changeDate="2007-01-23T09:48:34.453-0200" version="7.2.0">
+  <mainDescription>&lt;p align=&quot;left&quot;>A Linguagem de Modelagem Unificada [&lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>UML05&lt;/a>] define &lt;em>componente&lt;/em> da seguinte forma:&lt;/p>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;blockquote>&#xD;
+        &lt;p>Uma parte modular de um sistema que encapsula seu conteúdo e cuja manifestação seja substituível dentro de seu ambiente. Um componente define seu comportamento em termos de interfaces fornecidas e requeridas. Desta forma, um componente serve como um tipo, cuja conformidade é definida por suas interfaces fornecidas e requeridas (abrangendo suas semânticas estática e dinâmica). (Veja &lt;strong>Representação UML&lt;/strong> ao final desta seção para definições das versões mais atuais da UML).&lt;/p>&#xD;
+        &lt;p>Um &lt;em>componente&lt;/em> é definido como um subtipo de classe estruturada. Conseqüentemente, um componente tem atributos e operações, pode participar nas associações e nas generalizações e tem estrutura e portas internas.&lt;/p>&#xD;
+    &lt;/blockquote>&#xD;
+&lt;/blockquote>&#xD;
+&lt;p align=&quot;left&quot;>Existem estereótipos padrão da UML que se aplicam aos componentes, incluindo &amp;lt;&amp;lt;subsystem&amp;gt;&amp;gt; para modelar componentes de larga escala, &amp;lt;&amp;lt;specification&amp;gt;&amp;gt; e &amp;lt;&amp;lt;realization&amp;gt;&amp;gt; para modelar componentes com definições distintas de especificações e realizações, onde uma especificação pode ter múltiplas realizações.&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>Aqui, nós usamos o termo &lt;em>componente&lt;/em> de uma forma mais geral do que a definição da UML. Ao invés de definir o componente como tendo características modulares, de implantação e de substituição, nós recomendamos estas características dos componentes como desejáveis. Veja a seção sobre Característica de Substituição do Componente.&lt;/p>&#xD;
+&lt;h4 align=&quot;left&quot;>Modelagem dos componentes&lt;/h4>&#xD;
+&lt;p align=&quot;left&quot;>O componente da UML é uma construção de modelagem que fornece as seguintes capacidades:&lt;/p>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;ul>&#xD;
+        &lt;li>Agrupar classes para definir uma parte mais genérica de um sistema&lt;/li>&#xD;
+        &lt;li>Separar as interfaces visíveis da implementação interna&lt;/li>&#xD;
+        &lt;li>Executar instâncias de tempo-de-execução&lt;/li>&#xD;
+    &lt;/ul>&#xD;
+&lt;/div>&#xD;
+&lt;p align=&quot;left&quot;>Um componente inclui interfaces &lt;strong>fornecidas&lt;/strong> e &lt;strong>requeridas&lt;/strong> que formam a base para agrupar os componentes. Uma &lt;strong>interface fornecida&lt;/strong> é tanto implementada diretamente pelo componente como por uma de suas classes de realização ou sub-componentes, ou é o tipo de uma porta do componente fornecida. Uma &lt;strong>interface requerida&lt;/strong> é designada por uma dependência de uso do componente ou de uma de suas classes de realização ou sub-componentes, ou é o tipo de uma porta requerida.&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>Um componente tem uma visão externa (ou visão de &lt;em>caixa escura&lt;/em>) através de suas propriedades e operações publicamente visíveis. Opcionalmente, um comportamento tal como uma máquina de estado de protocolo pode ser anexada a uma interface, uma porta, e ao próprio componente para definir a visão externa mais precisamente fazendo com que restrições dinâmicas na seqüência da operação chamem explicitamente. A ligação entre componentes em um sistema, ou o outro contexto, pode ser definida estruturalmente usando dependências entre as interfaces dos componentes (tipicamente em diagramas de componentes).&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>Opcionalmente, você pode fazer uma especificação mais detalhada da colaboração estrutural usando partes e conectores em estruturas compostas para especificar a colaboração do papel ou do nível da instância entre os componentes. Esta é a visão interna do componente (ou visão de &lt;em>caixa branca&lt;/em>) através de suas propriedades privativas e classes de realização ou sub-componentes. Esta visão mostra como o comportamento externo é realizado internamente. O mapeamento entre as visões externas e internas é feito por dependências em diagramas de componentes ou em conectores de delegação para as partes internas em diagramas compostos de estrutura.&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>A recomendação é usar componentes para a representação de subsistemas de design.&lt;/p>&#xD;
+&lt;h4 align=&quot;left&quot;>Representação UML&lt;/h4>&#xD;
+&lt;p align=&quot;left&quot;>A definição de &lt;em>componente&lt;/em> na UML mudou durante o tempo com a liberação de diferentes versões. A versão da UML pode ser restringida pelas características das ferramentas de modelagem que você usa. Esta é a razão pela qual as definições de 1.3 a 2.0 estão sendo fornecidas aqui.&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>A UML 2.0 define &lt;em>componente&lt;/em> como:&lt;/p>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;blockquote>&#xD;
+        &lt;p align=&quot;left&quot;>…uma parte modular de um sistema que encapsula seu conteúdo e cuja manifestação seja substituível dentro de seu ambiente.&lt;/p>&#xD;
+        &lt;p align=&quot;left&quot;>Um componente define seu comportamento em termos de interfaces fornecidas e requeridas. Desta forma, um componente serve como um tipo cuja conformidade é definida por suas interfaces fornecidas e requeridas (abrangendo suas semânticas estática e dinâmica).&lt;/p>&#xD;
+    &lt;/blockquote>&#xD;
+&lt;/blockquote>&#xD;
+&lt;p align=&quot;left&quot;>A UML 1.5 define &lt;em>componente&lt;/em> como:&lt;/p>&#xD;
+&lt;blockquote>&#xD;
+    &lt;blockquote>&#xD;
+        &lt;div align=&quot;left&quot;>Uma parte modular de um sistema que pode ser implantada e substituída e que encapsula a implementação e expõe um conjunto de interfaces. Um componente é normalmente especificado por uma ou mais classes ou sub-componentes que residem nele e podem ser implementados por um ou mais artefatos (por exemplo: arquivos binários, executáveis ou scripts).&lt;/div>&#xD;
+        &lt;div align=&quot;left&quot;>&#xD;
+            &lt;p>Na UML 1.3 e em suas versões mais antigas, a notação de componente foi usada para representar arquivos na implementação. Os arquivos não são mais considerados componentes pelas definições mais novas da UML. Entretanto, muitas ferramentas e perfis UML ainda usam a notação de componente para representar arquivos.&lt;/p>&#xD;
+        &lt;/div>&#xD;
+    &lt;/blockquote>&#xD;
+&lt;/blockquote></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

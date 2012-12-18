@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_yG6kZNnmEdmO6L4XMImrsA" name="document,_yG6kY9nmEdmO6L4XMImrsA" guid="_yG6kZNnmEdmO6L4XMImrsA" version="7.2.0">
+  <mainDescription>Um documento é um conjunto de informações destinadas a serem representadas em papel, ou em um meio de comunicação que use uma metáfora de papel. A metáfora de papel inclui o conceito de páginas, e tem uma seqüência de conteúdos, implícita ou explícita. A informação está em texto ou em imagens bidimensionais. Exemplos de metáforas de papel são documentos de processadores de palavra, planilhas, cronogramas, gráficos de Gantt, páginas web e apresentações de slides em retro-projetores.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

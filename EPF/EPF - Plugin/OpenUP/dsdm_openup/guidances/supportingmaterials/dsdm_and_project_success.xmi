@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-54NahWY8JkAUdLZj9TqOTw" name="new_supporting_material,_mszl0FllEdu-hcil0jQ6jA" guid="-54NahWY8JkAUdLZj9TqOTw" changeDate="2006-10-27T07:20:22.172-0300" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    DSDM aims not only to prevent failure but to bring success, by delivering systems that:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        satisfy the real requirements of business, in order of importance&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        support the way the business needs to work&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        are delivered on time and within budget&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        are delivered quickly, and yet are robust and right (e.g. the right level of quality, the right functionality, the&#xD;
+        right performance, security and maintainability).&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Solutions built with DSDM&amp;nbsp;do not focus purely on speed&amp;nbsp;at the expense of quality. DSDM focuses on the&#xD;
+    priorities of the business and delivers what can safely be delivered within the time and cost constraints of the&#xD;
+    project, in priority order determined by the business needs and the objectives of the project.&lt;br />&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    &lt;a id=&quot;Summary_of_the_benefits_of_using_DSDM&quot; name=&quot;Summary_of_the_benefits_of_using_DSDM&quot;>Summary of the benefits of&#xD;
+    using DSDM&lt;/a>&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    Using an iterative process based on prototyping, DSDM involves the system's end-users throughout the project lifecycle.&#xD;
+    This has many benefits, for example:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        the users are more likely to claim ownership of the system&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        the risk of building the wrong system is greatly reduced&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        the final system is more likely to meet the users' real business requirements&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        the users will be better trained, since their representatives will define and co-ordinate the training required&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        implementation is more likely to go smoothly, because of the co-operation of all parties concerned throughout&#xD;
+        development.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

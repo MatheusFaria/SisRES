@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ProcessDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="--NZMnDuKFchwZm3rFJv1jg" name="develop_solution,_h2-iAfimEdmugcVr9AdHjQ" guid="--NZMnDuKFchwZm3rFJv1jg" version="1.0.0">
+  <mainDescription>&lt;h3>Introdução&lt;/h3>&#xD;
+&lt;p>Execute esta atividade como uma forma de executar o planejamento e o desenvolvimento baseado em metas. O trabalho é selecionado pelos desenvolvedores e o progresso do trabalho é acompanhado com base nas metas alcançadas pelo uso do código fonte projetado, testado pelos desenvolvedores e integrado.&lt;/p>&#xD;
+&lt;h4>Contexto do que está sendo desenvolvido&lt;/h4>&#xD;
+&lt;p>Um contexto pode ser especificado quando um requisito for atribuído para ser desenvolvido, especificando assim o tamanho do requisito a ser desenvolvido em uma iteração. O desenvolvimento pode focar em uma camada (tal como a interface de usuário, a lógica de negócio ou o acesso à base de dados), em um componente, e assim por diante.&lt;/p>&#xD;
+&lt;p>Independente de um contexto estar especificado ou não, a responsabilidade do desenvolvedor é de executar o design e a implementação deste requisito. O desenvolvedor também escreve e executa os testes de desenvolvedor para certificar-se que a implementação funciona como projetada, de forma unitária e integrada no código base.&lt;/p>&#xD;
+&lt;h4>Visão geral do fluxo de trabalho&lt;/h4>&#xD;
+&lt;p>Mudanças típicas exigem algum esforço para projetar a solução antes de passar para a implementação, mesmo que seja apenas um exercício mental que resulte em um produto de trabalho de curto prazo. O design para alterações triviais na implementação existente (por exemplo, para suportar algum requisito) pode ser auto-evidente no contexto da arquitetura e do design existentes.&lt;/p>&#xD;
+&lt;p>Uma vez que a organização da solução técnica esteja evidente, o desenvolvimento e o teste da implementação acontecem. O desenvolvimento e o teste podem ser feitos como um curto ciclo interno da atividade até que os testes de desenvolvedor sejam executados com sucesso.&lt;/p>&#xD;
+&lt;p>A execução dos testes sem falhas, não significa necessariamente que a solução seja de alta qualidade e adequada. É apropriado revisar o design neste ponto. Esse caminho é cíclico no processo, uma vez que qualquer alteração no design pode afetar os testes de desenvolvedor e a implementação.&lt;/p>&#xD;
+&lt;p>Se os testes passarem o design da solução for adequado, existe mais um ciclo possível. É melhor manter a implementação e os ciclos internos de design evolucionário, os mais curtos possíveis. Elabore alguma solução de design, de pequena escala, para uma parte do item de trabalho, implemente e teste esta parte da solução, verifique a qualidade, e então continue até que esta parte do design esteja funcionando. Então, no ciclo mais externo da atividade, volte e projete uma outra parte do item de trabalho para se aproximar da conclusão.&lt;/p></mainDescription>
+  <purpose>&lt;ul>&#xD;
+    &lt;li>Para desenvolvedores: Para criar uma solução para o item de trabalho, o qual eles são responsáveis.&lt;/li>&#xD;
+    &lt;li>Para gerentes de projeto: Para ter uma forma, baseada em metas, de acompanhar o status do projeto.&lt;/li>&#xD;
+&lt;/ul></purpose>
+  <alternatives>Este padrão permite que os testes sejam criados antes da implementação, enquanto a implementação está acontecendo, ou após o código ter sido implementado; algumas organizações podem querer aplicar um padrão que seja mais prescritivamente do tipo testar-primeiro ou testar-depois. Adicionalmente, é saudável revisar o design após algum código funcional ter sido escrito; esta idéia não está explicitamente capturada neste padrão.</alternatives>
+  <usageNotes>&lt;p>Esta atividade ocorre várias vezes durante cada iteração. Normalmente, existe uma instância para cada item de trabalho planejado para a iteração. Quando instanciado em um plano de projeto, o padrão transforma-se em uma tarefa de desenvolvimento a ser escolhida por um ou mais desenvolvedores, e deve ser renomeada, para incluir o nome real do requisito. Opcionalmente, as palavras &lt;strong>Incremento de Solução&lt;/strong> podem ser suprimidas, e então você pode instanciar o padrão da seguinte forma:&lt;/p>&#xD;
+&lt;blockquote>&#xD;
+    &lt;p align=&quot;left&quot;>Desenvolver o nome_do_requisito (dentro do contexto nome_do_contexto)&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;p>Se um contexto for especificado, haverá uma instância deste padrão para cada requisito em cada contexto.&lt;/p>&#xD;
+&lt;blockquote>&#xD;
+    &lt;p>&#xD;
+        &lt;strong>Exemplo&lt;/strong>&#xD;
+    &lt;/p>&#xD;
+    &lt;ol>&#xD;
+        &lt;li>Desenvolver o cenário 1 (dentro do contexto interface do usuário)&lt;/li>&#xD;
+        &lt;li>Desenvolver o cenário 1 (dentro do contexto lógica de negócio e acesso ao banco de dados)&lt;/li>&#xD;
+        &lt;li>Desenvolver o cenário 2&lt;/li>&#xD;
+        &lt;li>Desenvolver o requisito suplementar 1&lt;/li>&#xD;
+    &lt;/ol>&#xD;
+&lt;/blockquote>&#xD;
+&lt;p>Note que existem quatro instâncias deste padrão no exemplo acima:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>As duas primeiras estão relacionadas ao mesmo requisito (cenário 1), mas em dois contextos diferentes.&lt;/li>&#xD;
+    &lt;li>As duas últimas estão relacionadas a requisitos diferentes e sem contexto especificado.&lt;/li>&#xD;
+&lt;/ul></usageNotes>
+</org.eclipse.epf.uma:ProcessDescription>

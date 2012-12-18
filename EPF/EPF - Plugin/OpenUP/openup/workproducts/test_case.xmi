@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_NqYIdKeqEdmKDbQuyzCoqQ" name="test_case,_0ZS-0MlgEdmt3adZL5Dmdw" guid="_NqYIdKeqEdmKDbQuyzCoqQ" changeDate="2006-09-20T20:57:14.165-0300" version="7.2.0">
+  <mainDescription>&lt;p>Um caso de teste especifica as condições que necessitam ser validadas para permitir a avaliação de alguns aspectos particulares do sistema sob teste. Um caso de teste é mais formal do que uma idéia de teste e normalmente tem a forma de uma especificação. Em ambientes menos formais, casos de teste podem ser criados pela identificação de um ID único, um nome, dados de teste associados e resultados esperados. Para um exemplo deste tipo de caso de teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/templates/test_case_A18913A5.html&quot; guid=&quot;_0dT8IMlgEdmt3adZL5Dmdw&quot;>Template: Caso de Teste&lt;/a>.&lt;/p>&#xD;
+&lt;p>Os casos de teste podem ser derivados de várias fontes, mas normalmente incluirão um subconjunto de requisitos (tais como casos de uso, características de desempenho, necessidades de confiabilidade) e outros tipos de atributos de qualidade. Para mais informações sobre tipos de teste e seus relacionamentos com os atributos de qualidade do teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/types_of_test_CAE80710.html&quot; guid=&quot;_0aJ6cMlgEdmt3adZL5Dmdw&quot;>Conceito: Tipos de Teste&lt;/a>.&lt;/p></mainDescription>
+  <purpose>&lt;p>A finalidade deste artefato é:&lt;/p>&#xD;
+&#xD;
+&lt;ul>&#xD;
+&#xD;
+    &lt;li>fornecer uma maneira para capturar entradas de teste, condições e resultados esperados para um sistema.&lt;/li>&#xD;
+&#xD;
+    &lt;li>identificar sistematicamente aspectos do software a serem testados&lt;/li>&#xD;
+&#xD;
+    &lt;li>especificar se um resultado esperado foi alcançado baseando-se na verificação de um requisito do sistema, grupo de requisitos ou cenário.&lt;/li>&#xD;
+&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

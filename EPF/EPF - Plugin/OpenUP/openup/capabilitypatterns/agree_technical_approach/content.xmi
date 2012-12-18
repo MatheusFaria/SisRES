@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ProcessDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_mtb_DfL5Edm6Nvont3uinw" guid="_mtb_DfL5Edm6Nvont3uinw" version="1.0.0">
+  <mainDescription>&lt;p>A meta desta atividade é definir uma abordagem técnica para o sistema que suporte os requisitos do projeto, respeitando as restrições colocadas no sistema e na equipe de desenvolvimento. O arquiteto deve fazer o seguinte:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Trabalhar com a equipe para criar um esboço inicial da abordagem técnica para o sistema proposto&lt;/li>&#xD;
+    &lt;li>Assegurar que as decisões técnicas sejam adequadamente capturadas e comunicadas&lt;/li>&#xD;
+    &lt;li>Assegurar que a equipe tenha informações suficientes para entender a abordagem que você está usando&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>O trabalho realizado aqui não pretende produzir uma especificação técnica detalhada e geral para o sistema. Ao invés disso, deve decidir a abordagem técnica geral em alto nível.&lt;/p>&#xD;
+&lt;p>Você deve focar na comprovação da arquitetura com software funcional. Se a solução for semelhante a uma solução previamente produzida (ou for um domínio de solução bem conhecido), então ela provavelmente será boa o suficiente para referenciar o exemplo como evidência de viabilidade da abordagem. Em alguns casos, pode ser necessário desenvolver um ou mais protótipos para validar algumas decisões ou esclarecer alguns requisitos.&lt;/p>&#xD;
+&lt;p>A conclusão deste trabalho deve produzir apenas as informações suficientes para comunicar a arquitetura para a equipe e para demonstrar a sua viabilidade para o cliente. Isso permite que o projeto avance, para que você possa aperfeiçoar a arquitetura e colocá-la em uma linha de base.&lt;/p></mainDescription>
+  <howtoStaff>&lt;p>Esta atividade é mais bem executada de forma colaborativa pela equipe, com o arquiteto agindo como um ponto focal para coordenar e facilitar as decisões.&lt;/p></howtoStaff>
+  <usageNotes>&lt;p>O maior esforço ocorre no início do projeto; depois disso, você deve avaliar o sistema regularmente para garantir que o design ainda está caminhando junto com a arquitetura.&lt;/p></usageNotes>
+</org.eclipse.epf.uma:ProcessDescription>

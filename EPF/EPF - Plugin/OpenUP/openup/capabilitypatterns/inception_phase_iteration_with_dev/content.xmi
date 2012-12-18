@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-4oS0VykpXrxIgjOZ-cnxBA" guid="-4oS0VykpXrxIgjOZ-cnxBA"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-b3TJgLtX7LUCLMudQxC0ew" guid="-b3TJgLtX7LUCLMudQxC0ew"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-iqGmMfJDB9tBhzKP85VsYw" guid="-iqGmMfJDB9tBhzKP85VsYw"/>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-yxjWI5Gdje0hqIhEcec-JA" guid="-yxjWI5Gdje0hqIhEcec-JA">
+    <mainDescription>&lt;p>O projeto inicia com a suposição de que o caso de negócio foi criado, o &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../openup/roles/project_manager_E657F936.html&quot; guid=&quot;_0a0o0MlgEdmt3adZL5Dmdw&quot;>gerente de projeto&lt;/a> foi identificado, a equipe (pelo menos para a primeira iteração) foi definida, o ambiente de desenvolvimento (incluindo as ferramentas e a infra-estrutura) está em vigor, e o processo a ser seguido é o &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../openup/deliveryprocesses/openup_lifecycle_2CB8A7DA.html&quot; guid=&quot;_0uyGoMlgEdmt3adZL5Dmdw&quot;>processo de entrega&lt;/a> sugerido por esta descrição de processo publicada. A quantidade e a duração de cada iteração de Concepção irão variar, dependendo das necessidades do projeto.&lt;/p></mainDescription>
+    <alternatives>Este template de iteração especificamente inclui atividades para desenvolver um pedaço da arquitetura para comprovar a viabilidade, ou investigar alguma outra área de risco. Em muitos projetos não será necessário fazer qualquer trabalho detalhado de arquitetura ou de implementação para alcançar os objetivos da Concepção. Nestes casos, estas atividades devem ser excluídas.</alternatives>
+  </org.eclipse.epf.uma:ProcessDescription>
+</xmi:XMI>

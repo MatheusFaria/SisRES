@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:PracticeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-d52DSMTRmpjSgcF1NhMUQA" name="new_practice,_IFFSwFleEdul8L-IGeA7TA" guid="-d52DSMTRmpjSgcF1NhMUQA" changeDate="2006-10-11T17:24:56.640-0300" version="1.0.0">
+  <mainDescription>DSDM teams consist of both developers and users. They must be able to make decisions as requirements are refined and&#xD;
+possibly changed. They must be able to agree that certain levels of functionality, usability, etc. are acceptable without&#xD;
+frequent recourse to higher-level management.</mainDescription>
+</org.eclipse.epf.uma:PracticeDescription>

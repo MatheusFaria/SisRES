@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-yEWkrWZ3VUcjZPhq6bvScg" name="new_concept,_2jyfUAhVEduRe8TeoBmuGg" guid="-yEWkrWZ3VUcjZPhq6bvScg" changeDate="2007-02-27T16:29:36.889-0300" version="1.0.0">
+  <mainDescription>&lt;h3>Explicação&lt;/h3>&#xD;
+&lt;p>Um modelo de caso de uso é um modelo que descreve como diferentes tipos de usuários interagem com o sistema para resolver um problema. Como tal, ele descreve as metas dos usuários, as interações entre os usuários e o sistema, bem como o comportamento necessário do sistema para satisfazer estas metas.&lt;/p>&#xD;
+&lt;p>Um modelo de caso de uso consiste em um conjunto de elementos de modelo. Os elementos de modelo mais importantes são: casos de uso, atores e as relações entre eles.&lt;/p>&#xD;
+&lt;p>Um diagrama de caso de uso é usado para descrever graficamente um subconjunto do modelo para simplificar a comunicação. Normalmente existirão vários diagramas de caso de uso associados a um determinado modelo, cada um mostrando um subconjunto de elementos de modelo relevantes para um determinado fim. O mesmo elemento de modelo pode ser exibido em vários diagramas de caso de uso, mas cada instância tem que ser consistente. Se alguma ferramenta for usada para manter o modelo de caso de uso, esta restrição de consistência deve ser automatizada, de forma que quaisquer alterações em um elemento de modelo (alteração do nome, por exemplo) serão automaticamente refletidas em todos os diagramas de caso de uso que mostram o elemento.&lt;/p>&#xD;
+&lt;p>O modelo de caso de uso pode conter pacotes que são usados para estruturar o modelo e simplificar a análise, a comunicação, a navegação, o desenvolvimento, a manutenção e o planejamento.&lt;/p>&#xD;
+&lt;p>Muito do modelo de caso de uso é na verdade textual, com o texto capturado nas &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/templates/uc_specification_E97E98B0.html&quot; guid=&quot;_0cpNwMlgEdmt3adZL5Dmdw&quot;>Especificações de Caso de Uso&lt;/a> que estão associadas a cada elemento de modelo de caso de uso. Estas especificações descrevem o fluxo de eventos do caso de uso.&lt;/p>&#xD;
+&lt;p>O modelo de caso de uso serve como um unificador em todo o desenvolvimento do sistema. É usado como a principal especificação dos requisitos funcionais para o sistema, servindo como base para a análise e o design, como uma entrada para o planejamento da iteração, como base para a definição de casos de teste e como base para a documentação dos usuários.&lt;/p>&#xD;
+&lt;h3>Elementos de modelo básicos&lt;/h3>&#xD;
+&lt;p>O modelo de caso de uso contém, no mínimo, os seguintes elementos de modelo básicos.&lt;/p>&#xD;
+&lt;h4>Ator&lt;/h4>&#xD;
+&lt;p>Um elemento de modelo que representa cada ator. São suas propriedades o nome e uma descrição resumida do ator. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/concepts/actor_411726C.html&quot; guid=&quot;_zGqO0MDpEduTGJ8i4u8TMw&quot;>Conceito: Ator&lt;/a> para obter mais informações.&lt;/p>&#xD;
+&lt;h4>Caso de Uso&lt;/h4>&#xD;
+&lt;p>Um elemento de modelo que representa cada caso de uso. São suas propriedades o nome do caso de uso e sua especificação. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/workproducts/use_case_22BE66E2.html&quot; guid=&quot;_0VGbUMlgEdmt3adZL5Dmdw&quot;>Artefato: Caso de Uso&lt;/a> e &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/concepts/use_case_BB199D1B.html&quot; guid=&quot;_KudM0NcJEdqz_d2XWoVt6Q&quot;>Conceito: Caso de Uso&lt;/a> para obter mais informações.&lt;/p>&#xD;
+&lt;h4>Associações&lt;/h4>&#xD;
+&lt;p>As associações são usadas para descrever os relacionamentos entre os atores e os casos de uso que eles participam. Este relacionamento é comumente conhecido como uma &quot;associação de comunicação&quot;.&lt;/p>&#xD;
+&lt;h3>Elementos de modelo avançados&lt;/h3>&#xD;
+&lt;p>O modelo de caso de uso pode conter também os seguintes elementos de modelo avançados.&lt;/p>&#xD;
+&lt;h4>Assunto&lt;/h4>&#xD;
+&lt;p>Um elemento de modelo que representa o limite do sistema de interesse.&lt;/p>&#xD;
+&lt;h4>Pacote de Caso de Uso&lt;/h4>&#xD;
+&lt;p>Um elemento de modelo utilizado para estruturar o modelo de caso de uso e simplificar a análise, a comunicação, a navegação e o planejamento. Se existirem muitos casos uso ou atores, você pode usar os pacotes de Caso de Uso para estruturar o modelo de caso de uso da mesma forma que você usa pastas ou diretórios para estruturar as informações no seu disco rígido.&lt;/p>&#xD;
+&lt;p>Você pode dividir um modelo de caso de uso em pacotes de caso de uso por várias razões, incluindo:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Para refletir a ordem, configuração ou unidades de implantação no sistema acabado, ajudando assim no planejamento de iteração.&lt;/li>&#xD;
+    &lt;li>Para ajudar o desenvolvimento em paralelo, dividindo o problema em peças de tamanho apropriado.&lt;/li>&#xD;
+    &lt;li>Para simplificar a comunicação com os diferentes Stakeholders, através da criação de pacotes contendo casos de uso e atores relevantes para um determinado Stakeholder.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h4>Generalizações&lt;/h4>&#xD;
+&lt;p>Um relacionamento entre atores para ajudar na reutilização de propriedades comuns.&lt;/p>&#xD;
+&lt;h4>Dependências&lt;/h4>&#xD;
+&lt;p>Vários tipos de dependência entre casos de uso estão definidos na UML. Em especial, &amp;lt;&amp;lt;extend&amp;gt;&amp;gt; e &amp;lt;&amp;lt;include&amp;gt;&amp;gt;.&lt;/p>&#xD;
+&lt;p>&amp;lt;&amp;lt;extend&amp;gt;&amp;gt; é utilizada para incluir um comportamento opcional de um caso de uso extensor para um caso de uso estendido.&lt;/p>&#xD;
+&lt;p>&amp;lt;&amp;lt;include&amp;gt;&amp;gt; é utilizada para incluir um comportamento comum de um caso de uso incluído para um caso de uso base, a fim de suportar a reutilização do comportamento comum.&lt;/p>&#xD;
+&lt;p>Esta última é a dependência mais usada e é útil para:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fatorar o comportamento do caso de uso base que não seja necessário para a compreensão da finalidade principal do caso de uso simplificando a comunicação.&lt;/li>&#xD;
+    &lt;li>Fatorar o comportamento que é comum em dois ou mais casos de uso para maximizar a reutilização, simplificar a manutenção e assegurar a consistência.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h3>Exemplo de Diagrama de Caso de Uso&lt;/h3>&#xD;
+&lt;p>A Figura 1 mostra um diagrama de caso de uso de um modelo de caso de uso de um Caixa Automático (ATM).&lt;/p>&#xD;
+&lt;p>&#xD;
+     &lt;img height=&quot;410&quot; alt=&quot;Figura 1: Diagrama de Caso de Uso do ATM&quot; src=&quot;./resources/atm_uc_diagram.GIF&quot; width=&quot;565&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p>Figura 1: Diagrama de Caso de Uso do ATM&lt;/p>&#xD;
+&lt;p>Este diagrama mostra o assunto (atm:ATM), quatro atores (Cliente, Banco, Caixa e Profissional de Manutenção), cinco casos de uso (Retirar Dinheiro, Transferir Fundos, Depositar Fundos, Recarregar Máquina e Validar Usuário), três dependências &amp;lt;&amp;lt;include&amp;gt;&amp;gt; e as associações entre os atores e os casos de uso.&lt;/p>&#xD;
+&lt;p>Os casos de uso Retirar Dinheiro, Depositar Fundos e Transferir Fundos precisam identificar o usuário no sistema. Esse comportamento pode ser extraído para um novo caso de uso incluído chamado Validar Usuário, o qual os três casos de uso básicos incluem. Os casos de uso base são independentes do método utilizado para identificação do usuário, que é encapsulado no caso de uso de inclusão. Do ponto de vista dos casos de uso base, não importa se o método de identificação irá ler um cartão magnético, ou escanear a retina. Eles só dependem do resultado de Validar Usuário.&lt;/p>&#xD;
+&lt;p>Note que a Figura 1 é apenas uma visão parcial do modelo de caso de uso. O modelo completo também inclui as descrições de cada ator, as descrições de cada caso de uso e as especificações para cada caso de uso. Para um exemplo mais completo de utilização deste modelo veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/examples/uc_model_evolve_960F136B.html&quot; guid=&quot;_t4QdAMNqEdu2IdAIaWZyAw&quot;>Exemplo: Evolução do Modelo de Caso de Uso&lt;/a>.&lt;br />&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

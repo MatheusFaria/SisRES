@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-QBSZ9hFRr8q6kvRyq1cESQ" name="uma,_cj6jkB_PEdq6CKKKq4D7YA" guid="-QBSZ9hFRr8q6kvRyq1cESQ" changeDate="2005-09-07T15:44:46.648-0300" version="7.2.0">
+  <mainDescription>Acrônimo para Arquitetura de Método Unificada. A UMA é uma arquitetura no estado-da-arte para a concepção, especificação e armazenamento de meta dados de métodos e processos.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

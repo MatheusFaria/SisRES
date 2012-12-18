@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-hOtatvr8wIjqW8UD0MSGhQ" name="risk,_ii2LUEvGEdunZcj9T5hrMQ" guid="-hOtatvr8wIjqW8UD0MSGhQ" changeDate="2007-04-16T15:54:31.437-0300" version="1.0.0">
+  <mainDescription>Uma condição que pode potencialmente afetar, impedir ou limitar o sucesso de um sistema. Os riscos do projeto podem ser vistos como ameaças ou oportunidades.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

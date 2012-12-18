@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-gqNN4DnROmJpgKtrdguhpg" name="new_checklist,_7BZa0DIdEduDTv4Y1akVTA" guid="-gqNN4DnROmJpgKtrdguhpg" changeDate="2006-08-22T17:38:14.915-0300" version="7.2.0">
+  <sections xmi:id="_qO41ADIfEduDTv4Y1akVTA" name="Todos os riscos potenciais do projeto foram identificados" guid="_qO41ADIfEduDTv4Y1akVTA">
+    <sectionDescription>&lt;ul>&#xD;
+    &#xD;
+  &lt;li>Você identificou qualquer coisa que possa lhe deter no caminho para o sucesso do projeto?&lt;/li>&#xD;
+    &lt;li>Você envolveu a equipe e os Stakeholders na identificação de riscos?&lt;/li>&#xD;
+    &#xD;
+  &lt;li>Você tem certeza de que várias categorias foram consideradas (técnicas, gestão de projeto, organizacionais e externas)?&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Liste todos os riscos potenciais, dando uma descrição e um tipo (direto ou indireto). Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/concepts/risk_AF5840DA.html&quot; guid=&quot;_0bsLgMlgEdmt3adZL5Dmdw&quot;>Conceito: Risco&lt;/a> para maiores informações.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_5RiSkDe2EduD7J48kKN20g" name="Todos os riscos estão descritos inequivocamente?" guid="_5RiSkDe2EduD7J48kKN20g">
+    <sectionDescription>Os riscos estão capturados e descritos de forma clara, concisa e inequívoca? Siga também estas regras ao descrever estratégias de resposta para os riscos. Isto lhe ajudará a evitar trabalho desnecessário e - mais importante - aumentar a probabilidade de que os riscos estejam identificados e controlados efetivamente.</sectionDescription>
+  </sections>
+  <sections xmi:id="_2rpQoDIfEduDTv4Y1akVTA" name="Todos os principais riscos foram avaliados?" guid="_2rpQoDIfEduDTv4Y1akVTA">
+    <sectionDescription>&lt;ul>&#xD;
+&#xD;
+    &lt;li>A equipe avaliou a ordem de magnitude de cada risco (probabilidade x impacto)?&lt;/li>&#xD;
+&#xD;
+    &#xD;
+  &lt;li>Os riscos estão classificados de acordo com suas magnitudes? Isto permite que você trate os riscos de magnitude mais elevada o mais cedo no projeto?&lt;/li>&#xD;
+&#xD;
+    &#xD;
+  &lt;li>Foi escolhida uma estratégia de resposta para os riscos de maior magnitude?&lt;/li>&#xD;
+&#xD;
+&lt;/ul>&#xD;
+&#xD;
+&lt;p>Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/concepts/risk_AF5840DA.html&quot; guid=&quot;_0bsLgMlgEdmt3adZL5Dmdw&quot;>Conceito: Risco&lt;/a> e &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/guidelines/risk_management_B1256EB4.html&quot; guid=&quot;_VNxL4ACsEdu8m4dIntu6jA&quot;>Diretriz: Gerenciando Riscos&lt;/a> para mais informações.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_hSFaYDe3EduD7J48kKN20g" name="Existe interdependência entre os riscos?" guid="_hSFaYDe3EduD7J48kKN20g">
+    <sectionDescription>&lt;span style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial&quot;>Certifique-se que você estabeleceu interdependência entre riscos de forma apropriada. Por exemplo, o acontecimento de um risco pode aumentar a probabilidade de ocorrência de outro risco, ou aumentar o impacto que outro risco causa no projeto. Se os riscos dependerem entre si, você pode necessitar de uma estratégia de resposta para atenuar todos os riscos interdependentes ao mesmo tempo, ou revisar a lista de riscos para atualizar a magnitude dos riscos dependentes.&lt;/span></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

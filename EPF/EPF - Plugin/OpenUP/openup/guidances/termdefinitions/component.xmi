@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-BWZsh3vKrqSOzfkBJmDTLA" name=",_d82_AEvDEdunZcj9T5hrMQ" guid="-BWZsh3vKrqSOzfkBJmDTLA" changeDate="2007-05-30T15:34:33.699-0300" version="1.0.0">
+  <mainDescription>&lt;p>Uma parte encapsulada do sistema que é não trivial, quase independente, substituível e que cumpra uma função específica no contexto de uma arquitetura bem definida. Um componente está em conformidade e fornece a realização de um conjunto de interfaces.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

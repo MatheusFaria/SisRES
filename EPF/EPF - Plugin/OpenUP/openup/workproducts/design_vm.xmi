@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.uma="http://www.ibm.com/uma/1.0.2/uma.ecore" xmi:id="-vErMTo5DGQ1v_3_GNsccNw" name="design_vm,_ZTGAYL3uEdqLRJZPGVbHDA" guid="-vErMTo5DGQ1v_3_GNsccNw" changeDate="2006-07-30T08:17:30.553-0400">
+  <representationOptions>Whether&amp;nbsp;maintained as a complete, semantically-rich&amp;nbsp;model of the design in some tool or represented informally
+for the sake of investigation and communication, the design should be rendered visually.</representationOptions>
+</com.ibm.uma:ArtifactDescription>

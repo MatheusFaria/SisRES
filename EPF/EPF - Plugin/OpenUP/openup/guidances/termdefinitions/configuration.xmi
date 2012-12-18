@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-VPoMu7qzVX9grE4-nB3kMw" name=",__Cw30ElxEducWJcS4yanqg" guid="-VPoMu7qzVX9grE4-nB3kMw" changeDate="2006-09-21T10:07:10.404-0300" version="7.2.0">
+  <mainDescription>Atributos funcionais, físicos e de desempenho de um produto, ou combinação de produtos, existente ou planejado.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

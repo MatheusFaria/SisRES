@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-YMvJ5LwexkcVWWqLdm5-nQ" name=",_siyjEEvCEdunZcj9T5hrMQ" guid="-YMvJ5LwexkcVWWqLdm5-nQ" changeDate="2007-04-16T15:58:21.493-0300" version="1.0.0">
+  <mainDescription>Descreve a &quot;planta baixa&quot; para desenvolvimento de software, frequentemente representada por visões arquiteturais. Também contém o raciocínio, as suposições, as explicações e as implicações das decisões que foram tomadas na formação da arquitetura, bem como o mapeamento global entre as visões.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

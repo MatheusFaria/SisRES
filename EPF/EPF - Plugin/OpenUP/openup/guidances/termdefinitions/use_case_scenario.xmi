@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-t3jNM5ZWkYtzB8A4Chz2Vw" name=",_oXmYMEvGEdunZcj9T5hrMQ" guid="-t3jNM5ZWkYtzB8A4Chz2Vw" changeDate="2007-05-03T15:24:12.190-0300" version="1.0.0">
+  <mainDescription>Representa instâncias específicas do caso de uso que correspondem a entradas específicas do ator ou condições específicas do ambiente. Cada cenário descreve formas alternativas de comportamento do sistema, ou pode descrever falhas e casos de exceção.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

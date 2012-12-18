@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-cy0DcnEk7uJJ1OOH3_E6rg" name="new_supporting_material,_Pt_fYBjoEduxUfEVCtmW4Q" guid="-cy0DcnEk7uJJ1OOH3_E6rg" changeDate="2007-05-03T18:33:23.114-0300" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    &lt;img height=&quot;192&quot; alt=&quot;Ciclo de Vida do OpenUP&quot; src=&quot;./resources/openup_lifecycle.jpg&quot; width=&quot;667&quot; usemap=&quot;#map&quot;     border=&quot;0&quot; /> &#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;map id=&quot;Map&quot; name=&quot;Map&quot;>&#xD;
+        &lt;area shape=&quot;rect&quot; alt=&quot;Link para o conceito da fase de concepção&quot; coords=&quot;116,7,175,25&quot; href=&quot;./../../../openup/guidances/concepts/inception_phase_C4456871.html&quot; guid=&quot;_0hmKgBOMEduCNqgZdt_OaA&quot;>&lt;/area>&#xD;
+        &lt;area shape=&quot;rect&quot; alt=&quot;Link para o conceito da fase de elaboração&quot; coords=&quot;255,11,327,27&quot; href=&quot;./../../../openup/guidances/concepts/elaboration_phase_BE880435.html&quot; guid=&quot;_2plxwBOMEduCNqgZdt_OaA&quot;>&lt;/area>&#xD;
+        &lt;area shape=&quot;rect&quot; alt=&quot;Link para o conceito da fase de construção&quot; coords=&quot;395,11,476,27&quot; href=&quot;./../../../openup/guidances/concepts/construction_phase_873B6559.html&quot; guid=&quot;_48EKsBOMEduCNqgZdt_OaA&quot;>&lt;/area>&#xD;
+        &lt;area shape=&quot;rect&quot; alt=&quot;Link para o conceito da fase de transição&quot; coords=&quot;554,10,619,27&quot; href=&quot;./../../../openup/guidances/concepts/transition_phase_DD5986E5.html&quot; guid=&quot;__ca5UBOMEduCNqgZdt_OaA&quot;>&lt;/area>&#xD;
+        &lt;area shape=&quot;rect&quot; alt=&quot;Link para o processo de entrega da iteração da fase de concepção&quot; coords=&quot;39,98,100,162&quot; href=&quot;./../../../openup/capabilitypatterns/inception_phase_iteration_C2188B46.html&quot; guid=&quot;_0o3r4slgEdmt3adZL5Dmdw&quot;>&lt;/area>&#xD;
+        &lt;area shape=&quot;rect&quot; alt=&quot;Link para o processo de entrega da iteração da fase de elaboração&quot; coords=&quot;188,99,250,168&quot; href=&quot;./../../../openup/capabilitypatterns/elaboration_phase_iteration_97E7400D.html&quot; guid=&quot;_0sTaYMlgEdmt3adZL5Dmdw&quot;>&lt;/area>&#xD;
+        &lt;area shape=&quot;rect&quot; alt=&quot;Link para o processo de entrega da iteração da fase de construção&quot; coords=&quot;332,100,397,165&quot; href=&quot;./../../../openup/capabilitypatterns/construction_phase_iteration_FB82CA56.html&quot; guid=&quot;_y-3IrutQEdqc1LGhiSPqRg&quot;>&lt;/area>&#xD;
+        &lt;area shape=&quot;rect&quot; alt=&quot;Link para o processo de entrega da iteração da fase de transição&quot; coords=&quot;480,98,541,167&quot; href=&quot;./../../../openup/capabilitypatterns/transition_phase_iteration_87676AD2.html&quot; guid=&quot;_0rQRgMlgEdmt3adZL5Dmdw&quot;>&lt;/area>&#xD;
+    &lt;/map>&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

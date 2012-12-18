@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_LxX6AMM2EdmSIPI87WLu3g" name="vision,_0cW54MlgEdmt3adZL5Dmdw" guid="_LxX6AMM2EdmSIPI87WLu3g" changeDate="2006-05-09T15:32:25.328-0300">
+  <attachments>resources/vision_tpl.dot</attachments>
+</org.eclipse.epf.uma:GuidanceDescription>

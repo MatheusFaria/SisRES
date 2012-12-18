@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_NqePEKeqEdmKDbQuyzCoqQ" name="test_log,_0ZlSsMlgEdmt3adZL5Dmdw" guid="_NqePEKeqEdmKDbQuyzCoqQ" changeDate="2007-05-17T13:41:34.484-0300" version="7.2.0">
+  <mainDescription>Este artefato fornece um registro detalhado, normalmente baseado no tempo, que serve como verificação de que um conjunto de testes foi executado, bem como fornece informações relacionadas ao sucesso dos testes. O foco está na criação de um registro exato, que permita o diagnóstico de pós-execução dos resultados do teste. Estes dados serão analisados posteriormente para ajudar a determinar os resultados de algum aspecto do esforço de teste.</mainDescription>
+  <purpose>&lt;ul>&#xD;
+    &lt;li>Para verificar que um conjunto de testes foi executado&lt;/li>&#xD;
+    &lt;li>Para fornecer informações relacionadas ao sucesso dos testes&lt;/li>&#xD;
+&lt;/ul></purpose>
+  <representationOptions>&lt;p>Visto que isto é uma coleção de dados brutos para análise posterior, podem ser representados de diversas formas.&lt;/p>&#xD;
+&lt;p>Algumas sugestões são:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Para testes manuais, registre os resultados reais em uma cópia do Script de Teste manual.&lt;/li>&#xD;
+    &lt;li>Para testes automatizados, direcione a saída para arquivos de registro de forma que você possa referenciar o Script de Teste automatizado.&lt;/li>&#xD;
+    &lt;li>Acompanhe os dados brutos dos resultados em uma ferramenta de gerenciamento de testes.&lt;/li>&#xD;
+&lt;/ul></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

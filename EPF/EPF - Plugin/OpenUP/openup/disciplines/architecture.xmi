@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_Bbq2MLv-EdmmUvZAZjqE3g" name="architecture,_0TX9AMlgEdmt3adZL5Dmdw" guid="_Bbq2MLv-EdmmUvZAZjqE3g" changeDate="2007-07-12T17:53:55.102-0300" version="1.0.0">
+  <mainDescription>&lt;p>O Propósito desta disciplina é evoluir uma arquitetura robusta para o sistema.&lt;/p>&#xD;
+&lt;p>A disciplina de Arquitetura está relacionada com outras disciplinas, da seguinte forma:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>A disciplina de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/requirements_4467C860.html&quot; guid=&quot;_0TR2ZMlgEdmt3adZL5Dmdw&quot;>Requisitos&lt;/a> fornece os requisitos arquiteturalmente significantes.&lt;/li>&#xD;
+    &lt;li>A disciplina de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/development_B5D1D8A.html&quot; guid=&quot;_0TeDoMlgEdmt3adZL5Dmdw&quot;>Desenvolvimento&lt;/a> projeta e implementa a arquitetura.&lt;/li>&#xD;
+    &lt;li>A disciplina de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/test_FB85069.html&quot; guid=&quot;_0TkKQMlgEdmt3adZL5Dmdw&quot;>Teste&lt;/a> verifica a estabilidade e o quanto a arquitetura está correta.&lt;/li>&#xD;
+    &lt;li>A disciplina de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/disciplines/project_management_AFB03A6.html&quot; guid=&quot;_0TqQ4MlgEdmt3adZL5Dmdw&quot;>Gestão de Projeto&lt;/a> planeja o projeto e cada iteração.&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <keyConsiderations>&lt;p>Criar e aplicar mecanismos arquiteturais é essencial para criar uma arquitetura robusta. Veja mais sobre mecanismos arquiteturais em &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/customcategories/architectural_mechanisms_ADED0B26.html&quot; guid=&quot;_2l8U4K4sEdudp4CB-AFxtw&quot;>Mecanismos Arquiteturais&lt;/a>.&lt;/p></keyConsiderations>
+</org.eclipse.epf.uma:ContentDescription>

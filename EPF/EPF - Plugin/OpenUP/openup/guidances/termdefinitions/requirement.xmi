@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-0sCBiohjw_wBDKk0WEeDJQ" name="new_term_definition,_feKVQLULEdqI644ssJaKYg" guid="-0sCBiohjw_wBDKk0WEeDJQ" authors="Chris Sibbald" changeDate="2007-05-03T15:21:14.600-0300" changeDescription="Added term definition for &quot;requirement&quot;." version="0.2">
+  <mainDescription>&lt;ol>&#xD;
+    &lt;li>Uma capacidade necessária para o usuário resolver um problema e alcançar um objetivo.&lt;/li>&#xD;
+    &lt;li>Uma capacidade que deve ser alcançada ou possuída por um sistema ou componente de sistema para satisfazer um contrato, padrão, especificação ou outra documentação formalmente imposta &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#THA00&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[THA00]&lt;/a>.&lt;br />&#xD;
+    &lt;/li>&#xD;
+&lt;/ol></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

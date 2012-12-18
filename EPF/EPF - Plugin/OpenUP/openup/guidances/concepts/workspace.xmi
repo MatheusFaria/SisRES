@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_Dfmk8MPiEdmbOvqy4O0adg" name="workspace,_0cEmAMlgEdmt3adZL5Dmdw" guid="_Dfmk8MPiEdmbOvqy4O0adg" changeDate="2006-09-21T16:22:51.449-0300" version="1.0.0">
+  <mainDescription>&lt;p align=&quot;left&quot;>Para equipes pequenas, os espaços de trabalho compartilhados podem funcionar muito bem, mas é necessário coordenar as atividades entre membros da equipe para evitar conflitos.&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>A melhor abordagem é que cada desenvolvedor tenha uma área privativa para o desenvolvimento e teste de seus produtos do trabalho. Este espaço de trabalho deve ser isolado de modo que as mudanças conflitantes feitas pelos outros não interfiram com o progresso de seu trabalho. Entretanto, não deve ser tão isolado de forma que o trabalho do desenvolvedor fique indisponível para a equipe.&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>Adicionalmente, os espaços de trabalho isolados podem ser criados para cada fase de teste, tal como os testes de integração e testes de sistema. Esta abordagem de espaços de trabalho oferece diversos benefícios &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#WIB04&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[WIB04]&lt;/a>:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;p>Os desenvolvedores podem implementar, testar, e depurar alterações no software sem serem afetados pelas alterações feitas pelos outros membros da equipe até que seu trabalho esteja pronto. Quando estiver pronto, o desenvolvedor pode atualizar seu ambiente isolado para testar as mudanças feitas pelos outros desenvolvedores.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>Com espaços de trabalho separados para os testes de integração e de sistema, uma equipe poderia usar uma metodologia que assegurasse que as mudanças tivessem que passar pelos testes de integração antes que outros desenvolvedores as utilizassem, diminuindo desse modo o tempo gasto com a solução de problemas de integração. Por exemplo, se dois membros da equipe fizerem mudanças incompatíveis sem notarem, e ambas as mudanças estiverem imediatamente disponíveis para todos na equipe, todos os membros da equipe poderão perder tempo tentando consertar uma construção inconsistente. Inversamente, se ambas as mudanças tivessem que passar pelos testes de integração antes de serem distribuídas para os outros, o problema poderia ser detectado e reparado por uma pessoa com mínimo impacto para a equipe.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>Pela definição de uma área de integração para coletar e agrupar as últimas alterações feitas, a equipe pode integrar com mais freqüência. Esta é uma das melhores práticas bem conhecida para reduzir o custo e o tempo totais para entregar projetos de software.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>A área de testes de sistema, que é usada para a preparação de liberações, é isolada das mudanças contínuas feitas pelos desenvolvedores e contém somente as configurações que passaram pelos testes de integração. Isto permite que você controle o conteúdo da liberação ao mesmo tempo em que os desenvolvedores continuem com seu trabalho.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

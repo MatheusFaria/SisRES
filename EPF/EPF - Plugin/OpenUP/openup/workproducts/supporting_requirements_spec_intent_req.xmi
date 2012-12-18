@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-SUqkkwrs1D_5YXZls-3YBg" name=",_oclg0DRXEdudA-StyUUwnw" guid="-SUqkkwrs1D_5YXZls-3YBg" changeDate="2007-05-31T10:05:37.479-0300" version="7.2.0">
+  <representationOptions>&lt;h4>Opção: Usar a Lista de Itens de Trabalho&lt;/h4>&#xD;
+&lt;p>Considere o registro dos Requisitos Suplementares na &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, que você pode usar para priorizar e controlar os requisitos. Se os Stakeholders estiverem confortáveis em acessar os requisitos diretamente a partir da Lista de Itens de Trabalho ou acessar um informe gerado automaticamente a partir dela, você não necessitará de um documento em separado.&lt;/p>&#xD;
+&lt;h4>Opção: Incluir como Parte do Documento de Visão&lt;/h4>&#xD;
+&lt;p>Considere incluir alguns tipos de Requisitos Suplementares no documento de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/vision_2E71B03C.html&quot; guid=&quot;_0WVxcMlgEdmt3adZL5Dmdw&quot;>Visão&lt;/a>. Para manter a Visão estável, use esta opção para os tipos de requisitos que necessitem de menos refinamento, tais como Qualidades do Produto, Documentação ou Conformidade.&lt;br />&#xD;
+&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

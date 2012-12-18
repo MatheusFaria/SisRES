@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-FsyxZy4tyX8k5CxT5Jww_w" name="new_template,_ItYXcNa9Edqrw4BYKyYKiA" guid="-FsyxZy4tyX8k5CxT5Jww_w" authors="Ana Paula Valente Pereira (apereira@whatever.pt) and Chris Sibbald" changeDate="2007-06-06T09:29:16.579-0300" version="0.4">
+  <mainDescription>Este template fornece um ponto de partida para capturar os requisitos suplementares de forma consistente e fornecer uma lista de verificação útil para determinar os tipos de requisitos que são aplicáveis. Não se espera que as seções do template sejam preenchidas em sua totalidade. Personalize-o para suas necessidades particulares.</mainDescription>
+  <attachments>resources/supporting_req_spec.dot</attachments>
+</org.eclipse.epf.uma:GuidanceDescription>

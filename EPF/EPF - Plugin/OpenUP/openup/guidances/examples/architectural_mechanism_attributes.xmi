@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-8LfKJab2khAUjdmnImaXPA" name="architecture_mechanism_attributes,_eQ_s8Om5Edupia_tZIXEqg" guid="-8LfKJab2khAUjdmnImaXPA" changeDate="2007-06-24T19:15:17.390-0300" version="7.2.0">
+  <mainDescription>&lt;p>A seguir é mostrado como se capturam informações de &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/arch_mech_2932DFB6.html&quot; guid=&quot;_mzxI0A4LEduibvKwrGxWxA&quot;>Mecanismos Arquiteturais&lt;/a>. Este exemplo mostra dois mecanismos possíveis: Persistência e Comunicação.&lt;/p>&#xD;
+&lt;h1>Persistência&lt;/h1>&#xD;
+&lt;p>Para todas as classes com instâncias que podem tornar-se persistentes, você precisa identificar:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Granularidade&lt;/b>: Qual é o alcance do tamanho dos objetos a serem persistidos?&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Volume&lt;/b>: Quantos objetos (número) você precisa manter persistentes?&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Duração&lt;/b>: Quanto tempo normalmente o objeto precisa ser mantido?&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Mecanismo de Recuperação&lt;/b>: Como um objeto é identificado e recuperado de forma exclusiva?&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Freqüência de Atualização&lt;/b>: Os objetos são mais ou menos constantes? Eles são permanentemente atualizados?&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Confiabilidade&lt;/b>: Os objetos precisam sobreviver a uma falha do processo, do processador, ou de todo o sistema?&lt;/p>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h1>Comunicação&lt;/h1>&#xD;
+&lt;p>Para todos os elementos de modelo que necessitam se comunicar com os componentes ou serviços que estejam em execução em outros processos ou threads, você precisará identificar:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Latência&lt;/b>: Quão rápido os processos devem se comunicar com os outros?&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Sincronismo&lt;/b>: Comunicação assíncrona&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Tamanho da Mensagem&lt;/b>: Um espectro pode ser mais adequado do que um único número&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Protocolo&lt;/b>: Controle de fluxo, buffering, etc.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Note que aqui não existem informações em nível de design ou especificação. Ao invés, trata-se mais da reunião e refinação dos requisitos arquiteturalmente significantes.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:GuidanceDescription>

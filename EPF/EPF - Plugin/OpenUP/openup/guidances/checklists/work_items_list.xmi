@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-BTXdT-1bO6nbAPf25q0_yA" name="new_checklist,_xlrdEAVtEdy3F_fZDaPZVA" guid="-BTXdT-1bO6nbAPf25q0_yA" version="7.2.0">
+  <sections xmi:id="_U7JSUAbNEdy1uLAzgK8btg" name="Todos os Itens de Trabalho estão descritos inequivocamente?" guid="_U7JSUAbNEdy1uLAzgK8btg">
+    <sectionDescription>&lt;p>Cada Item de Trabalho tem um nome e uma descrição clara? Isto ajuda a equipe a estimar o tamanho do Item de Trabalho. Se for necessário, inclua links na Lista de Itens de Trabalho para referenciar material onde maiores detalhes estejam disponíveis.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_dL2nwAVuEdy3F_fZDaPZVA" name="Os Itens de Trabalho estão priorizados?" guid="_dL2nwAVuEdy3F_fZDaPZVA">
+    <sectionDescription>&lt;p align=&quot;left&quot;>Cada Item de Trabalho foi priorizado com base no valor de negócio? Isto ajuda a equipe a selecionar os Itens de Trabalho que serão entregues em cada iteração.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_bF3LoAVuEdy3F_fZDaPZVA" name="Os Itens de Trabalho estão estimados?" guid="_bF3LoAVuEdy3F_fZDaPZVA">
+    <sectionDescription>&lt;p align=&quot;left&quot;>Todos os Itens de devem ser estimados com base no valor de negócio? Isto ajudará a equipe a selecionar os Itens de Trabalho que serão entregues em cada iteração.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_O7VloAbFEdy1uLAzgK8btg" name="Os Itens de Trabalho estão sendo acompanhados?" guid="_O7VloAbFEdy1uLAzgK8btg">
+    <sectionDescription>&lt;p align=&quot;left&quot;>Cada Item de Trabalho tem um atributo de estado? Isto ajuda a equipe a acompanhar seu projeto de desenvolvimento.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_tENnkAVuEdy3F_fZDaPZVA" name="Os Itens de Trabalho agendados tem o tamanho certo?" guid="_tENnkAVuEdy3F_fZDaPZVA">
+    <sectionDescription>Se um Item de Trabalho estiver agendado para uma iteração, então ele deve ser subdividido em Itens de Trabalho que possam ser completados em um prazo razoável (de algumas horas até alguns dias). Isto ajudará a equipe a ser mais produtiva e produzirá estimativas de esforço mais detalhadas, veja &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a>.&lt;br align=&quot;left&quot; />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

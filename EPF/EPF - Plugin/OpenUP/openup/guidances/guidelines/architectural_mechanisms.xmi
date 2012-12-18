@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-bP4wJKW0CrR9pL0yz20r3Q" name="new_guideline,_J6BKgNvIEduv2KOT-Teh6w" guid="-bP4wJKW0CrR9pL0yz20r3Q" changeDate="2007-07-20T13:28:21.240-0300" version="7.2.0">
+  <mainDescription>&lt;p>Os mecanismos arquiteturais representam conceitos técnicos fundamentais que serão padronizados por toda a solução. Eles são refinados durante o projeto em três estados, representados pelas três categorias de Mecanismos Arquiteturais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Mecanismo de Análise&lt;/strong>, que dá ao mecanismo um nome, uma descrição resumida e alguns atributos básicos derivados dos requisitos do projeto&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Mecanismo de Design&lt;/strong>, que são mais concretos e assumem alguns detalhes do ambiente de implementação&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Mecanismo de Implementação&lt;/strong>, que especifica a exata implementação de cada mecanismo&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Quando o &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/roles/architect_E7A12309.html&quot; guid=&quot;_0X9iEMlgEdmt3adZL5Dmdw&quot;>Arquiteto&lt;/a> identifica inicialmente um mecanismo arquitetural ele esta estabelecendo um marcador que diz para a equipe, &quot;Nós iremos lidar com este aspecto do sistema de forma padronizada. Descobriremos os detalhes mais tarde.&quot; À medida que o projeto avança, os mecanismos arquiteturais são gradualmente refinados até que se tornem parte do software.&lt;/p>&#xD;
+&lt;h4>Mecanismos de Análise&lt;/h4>&#xD;
+&lt;p>Os mecanismos de análise são os estados iniciais para os mecanismos arquiteturais. São identificados no início do projeto e representam marcações para futuro desenvolvimento de software. Eles permitem à equipe focar na compreensão dos requisitos sem se distrair com as especificidades de uma implementação complexa. Os mecanismos de análise são descobertos pelo levantamento dos requisitos e pela procura de conceitos técnicos recorrentes. Segurança, persistência e interfaces legadas são alguns exemplos. Com efeito, o &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/roles/architect_E7A12309.html&quot; guid=&quot;_0X9iEMlgEdmt3adZL5Dmdw&quot;>Arquiteto&lt;/a> reúne os requisitos que descrevem tópicos arquiteturalmente importantes colocando-os em uma única lista. Tornando-os mais fáceis de serem gerenciados.&lt;/p>&#xD;
+&lt;p>Os mecanismos de análise são descritos com termos simples:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Nome&lt;/strong>: identifica o mecanismo.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Atributos Básicos&lt;/strong>: definem os requisitos do mecanismo. Estes atributos podem variar dependendo do mecanismo que está sendo analisado. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/examples/architectural_mechanism_attributes_B0ECA2F7.html&quot; guid=&quot;_eQ_s8Om5Edupia_tZIXEqg&quot;>Exemplo: Atributos dos Mecanismos Arquiteturais&lt;/a> para mais orientação.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Uma vez que a lista de mecanismos de análise tenha sido definida, ela pode ser priorizada e os mecanismos refinados de acordo com os objetivos da iteração. Não é necessário desenvolver todo o conjunto de mecanismos arquiteturais em software funcional de uma única vez. Muitas vezes é mais sensato desenvolver apenas os mecanismos necessários para suportar a funcionalidade a ser entregue na iteração atual.&lt;/p>&#xD;
+&lt;h4>Mecanismos de Design&lt;/h4>&#xD;
+&lt;p>Os mecanismos de design representam decisões sobre tecnologias concretas que serão usadas para desenvolver mecanismos arquiteturais. Por exemplo, a decisão de usar um RDBMS para persistência. Normalmente nada mais complexo do que isso (embora, evidentemente, o esforço envolvido na tomada de decisões pode, por vezes, ser muito complexo).&lt;/p>&#xD;
+&lt;p>A decisão sobre quando aperfeiçoar um mecanismo arquitetônico do estado de análise para o de projeto é em grande parte arbitrária. Frequentemente haverá restrições em vigor no projeto que forcem a tomada de decisão a respeito de algumas destas questões. Por exemplo, pode existir um padrão corporativo para bancos de dados significando que a decisão para a adoção de um mecanismo de persistência possa ser tomada no primeiro dia do projeto.&lt;/p>&#xD;
+&lt;p>Em outras ocasiões, a decisão pode direcionar para produtos que a equipe do projeto ainda não adquiriu. Neste caso, a decisão tem de ser tomada em tempo hábil para permitir os produtos necessários sejam colocados à disposição da equipe.&lt;/p>&#xD;
+&lt;p>Muitas vezes, pode ser útil desenvolver um código prototípico para provar que estas decisões estão sólidas. O &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/roles/architect_E7A12309.html&quot; guid=&quot;_0X9iEMlgEdmt3adZL5Dmdw&quot;>Arquiteto&lt;/a> deve estar seguro de que as tecnologias selecionadas sejam capazes de atender os requisitos. Os atributos capturados com os mecanismos de análise correspondentes deverão ser usados como critérios para comprovar a validade das decisões.&lt;/p>&#xD;
+&lt;h4>Mecanismo de Implementação&lt;/h4>&#xD;
+&lt;p>Um mecanismo de implementação especifica a implementação real para o mecanismo arquitetural (daí o nome). Ele pode ser modelado como um padrão de design ou representado como código de exemplo.&lt;/p>&#xD;
+&lt;p>O melhor momento para produzir o mecanismo de implementação é normalmente quando a primeira parte da funcionalidade necessária é agendada para desenvolvimento. O &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/roles/architect_E7A12309.html&quot; guid=&quot;_0X9iEMlgEdmt3adZL5Dmdw&quot;>Arquiteto&lt;/a> e o &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/roles/developer_C633AB7.html&quot; guid=&quot;_0YDosMlgEdmt3adZL5Dmdw&quot;>Desenvolvedor&lt;/a> trabalham juntos para desenvolvê-lo.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

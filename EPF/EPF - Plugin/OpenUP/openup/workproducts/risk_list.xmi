@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-4VJ_0upihz-bR7VRlm63Vw" name="risk_list,_Ckay8Cc_EduIsqH1Q6ZuqA" guid="-4VJ_0upihz-bR7VRlm63Vw" changeDate="2007-04-17T18:05:52.818-0300" version="1.0.0">
+  <mainDescription>&lt;p>Esta lista identifica, em ordem decrescente de prioridade, todos os &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/termdefinitions/risk_33255339.html&quot; guid=&quot;_ii2LUEvGEdunZcj9T5hrMQ&quot;>Riscos&lt;/a> associados ao projeto. Serve como um ponto central para as atividades do projeto e é a base na qual as iterações são organizadas.&lt;/p>&#xD;
+&lt;p>Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/risk_AF5840DA.html&quot; guid=&quot;_0bsLgMlgEdmt3adZL5Dmdw&quot;>Conceito: Risco&lt;/a> para mais detalhes.&lt;!--EndFragment-->&#xD;
+&lt;/p></mainDescription>
+  <keyConsiderations>&lt;p>Esta lista deve capturar os riscos críticos e sérios. Se você notar que esta lista se estende além de 20 itens, considere cuidadosamente se são realmente riscos sérios. Acompanhar mais de 20 riscos é uma tarefa onerosa.&lt;/p></keyConsiderations>
+  <purpose>Para capturar os riscos percebidos que podem afetar o sucesso do projeto.</purpose>
+  <representationOptions>&lt;h4>Opção: lista de riscos capturada no plano de projeto&lt;/h4>&#xD;
+&lt;p>Nesta abordagem a lista com todos os riscos é colocada no plano de projeto. O plano de iteração conterá somente as tarefas que deverão ser feitas durante a iteração para atenuar os riscos. Isto irá assegurar que o plano de iteração contenha somente as informações da iteração. O plano de projeto tem que ser revisado constantemente à medida que você atualiza os riscos.&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

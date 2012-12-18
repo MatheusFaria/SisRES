@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_eUfzwMMyEdmdo9HxCRR_Gw" name="requirements,_0Wh-sMlgEdmt3adZL5Dmdw" guid="_eUfzwMMyEdmdo9HxCRR_Gw" changeDate="2006-12-21T14:21:47.640-0200" version="1.0.0">
+  <mainDescription>&lt;p>O conjunto de requisitos é a lista de tarefas da equipe de projeto.&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>Os requisitos definem o que é necessário e dão foco à equipe do projeto. Eles são o método primário para comunicar os objetivos do projeto para todos na equipe.&lt;/p>&#xD;
+&lt;div class=&quot;O&quot; v:shape=&quot;_x0000_s1026&quot;>&#xD;
+    &lt;div style=&quot;mso-line-spacing: '100 30 0'&quot;>Os requisitos definem:&lt;/div>&#xD;
+&lt;/div>&#xD;
+&lt;ul>&#xD;
+    &lt;li>O que os Stakeholders necessitam; e&lt;/li>&#xD;
+    &lt;li>O que o sistema deve ter para satisfazer as necessidades dos Stakeholders.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p align=&quot;left&quot;>Os requisitos são a base para capturar e comunicar necessidades, gerenciar expectativas, priorizar e atribuir trabalho, verificar e validar o sistema (aceitação) e gerenciar o escopo do projeto.&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>Os requisitos podem tomar diferentes formas, incluindo Casos de Uso e Cenários, texto não-estruturado, texto estruturado, ou uma combinação, e podem ser declarados em diferentes níveis de detalhamento. No nível mais alto de detalhamento, as &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/termdefinitions/feature_4ED64AEE.html&quot; guid=&quot;_PgYREAeYEduWycDgioo5rg&quot;>características&lt;/a> definem os serviços que o sistema deve fornecer para resolver o problema do cliente. Elas são capturadas como texto estruturado ou não-estruturado no &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/workproducts/vision_2E71B03C.html&quot; guid=&quot;_0WVxcMlgEdmt3adZL5Dmdw&quot;>Artefato: Visão&lt;/a>. No próximo nível de detalhamento, Casos de Uso definem a funcionalidade que o sistema deve fornecer para entregar as características requisitadas. Eles são capturados como Casos de Uso (veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/workproducts/use_case_22BE66E2.html&quot; guid=&quot;_0VGbUMlgEdmt3adZL5Dmdw&quot;>Artefato: Caso de Uso&lt;/a>) que descrevem a seqüência de ações executadas pelo sistema para gerar um resultado de valor observável.&lt;/p>&#xD;
+&lt;p>Um sistema deve funcionar de acordo com o comportamento que os Casos de Uso especificam. Entretanto, há requisitos de sistema que não representam um comportamento específico:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Requisitos legais e regulamentários, assim como padrões de aplicação&lt;/li>&#xD;
+    &lt;li>Atributos de qualidade do sistema a ser construído, incluindo requisitos de usabilidade, confiabilidade, desempenho e suportabilidade&lt;/li>&#xD;
+    &lt;li>Requisitos de interface para poder comunicar com sistemas externos&lt;/li>&#xD;
+    &lt;li>Restrições de design, tais como sistemas operacionais e ambientes e compatibilidade com outro software&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Esses requisitos de qualidade são frequentemente referenciados como requisitos &lt;strong>não-funcionais&lt;/strong>.&lt;/p>&#xD;
+&lt;p>Os requisitos de qualidade, que se aplicam ao sistema como um todo, são capturados como texto estruturado no &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/workproducts/supporting_requirements_spec_7D9DD47C.html&quot; guid=&quot;_BVh9cL-CEdqb7N6KIeDL8Q&quot;>Artefato: Especificação de Requisitos Suplementares&lt;/a>. Os requisitos de qualidade que são associados com um Caso de Uso em particular são normalmente capturados no próprio Caso de Uso para simplificar a revisão, o entendimento e a manutenção.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

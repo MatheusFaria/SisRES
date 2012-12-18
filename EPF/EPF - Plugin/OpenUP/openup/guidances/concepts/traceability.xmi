@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-TksCtMgc0b4QqzwzniGvIw" name="traceability_1,_eYtQQO0KEdqHTdbLTmC5IQ" guid="-TksCtMgc0b4QqzwzniGvIw" authors="Chris Sibbald" changeDate="2007-04-05T10:08:15.287-0300" changeDescription="Added concept in accordance with Feb 23, 2006 minutes of RM SIG meeting." version="0.1">
+  <mainDescription>&lt;p align=&quot;left&quot;>A capacidade de rastreamento serve para o entendimento de como os requisitos de alto nível (objetivos, metas, intenções, aspirações, expectativas e necessidades) são transformados em requisitos de baixo nível, como eles são implementados e como eles são verificados.&lt;/p>&#xD;
+&lt;p>O uso da capacidade de rastreamento pode fornecer os seguintes benefícios &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#HUL05&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[HUL05]&lt;/a>:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Maior confiança no atendimento dos objetivos&lt;/strong>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>A capacidade de rastreamento aumenta a confiança de que os objetivos serão alcançados permitindo que a análise de cobertura assegure que tudo que foi acordado para ser feito, foi feito.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Habilidade para avaliar o impacto de mudanças&lt;/strong>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>A capacidade de rastreamento permite que o impacto das mudanças (custo, cronograma e técnico) seja avaliado antes do trabalho começar.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Justificativa melhorada&lt;/strong>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>A capacidade de rastreamento esclarece como o trabalho contribui para o projeto como um todo.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Habilidade para acompanhar o progresso&lt;/strong>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>A capacidade de rastreamento suporta o acompanhamento do projeto assegurando que os requisitos estão implementados. Por exemplo, pela verificação de que um artefato de design e teste existe para cada requisito.&lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Habilidade para comparar custos versus benefícios&lt;/strong>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>A comparação dos componentes de produto com os requisitos permite que você compare os benefícios contra os custos.&lt;/p>&#xD;
+&lt;/blockquote></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

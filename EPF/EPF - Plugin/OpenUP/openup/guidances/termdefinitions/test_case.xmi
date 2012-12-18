@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-6oW2YOnoWq_xPpmoil91KA" name="test_case,_U4RYEEvOEdunZcj9T5hrMQ" guid="-6oW2YOnoWq_xPpmoil91KA" version="7.2.0">
+  <mainDescription>&lt;p>Especificação de um conjunto de entradas, condições de execução e resultados esperados do teste que necessitam ser validadas para permitir a avaliação de alguns aspectos particulares do sistema sob teste.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

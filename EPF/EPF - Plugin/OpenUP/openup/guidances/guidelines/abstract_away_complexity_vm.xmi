@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-OcMsciNn-UtD9fTHj26LGA" name="new_guideline,_34jWsLcIEduRNaXpzCOLXQ" guid="-OcMsciNn-UtD9fTHj26LGA" changeDate="2007-02-07T22:14:24.390-0200" version="7.2.0">
+  <mainDescription>&lt;h4>Principais perspectivas do modelo&lt;/h4>&#xD;
+&lt;p>A modelagem ajuda a aumentar o nível de abstração porque simplifica idéias complexas e representa-as visualmente, como ilustrações. Bons modelos podem transmitir informações que ajudem a equipe a visualizar, especificar, construir e documentar o software. A Linguagem Unificada de Modelagem (UML) fornece uma abordagem com padrão industrial para modelagem de software.&lt;/p>&#xD;
+&lt;p>Ao aplicar esta estratégia, você pode usar as seguintes técnicas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Identificar as principais perspectivas&lt;/strong>: Foco na modelagem daquilo que importa. Poucos (ou nenhum) projetos se beneficiam da modelagem de todo o design com um grande nível de detalhe. Certifique-se de que você compreende porque está modelando algo e quem se beneficiará com isso.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Comunicar as principais perspectivas arquiteturais&lt;/strong>: Mesmo que você escolha modelar muito pouco do seu design, normalmente é vantajoso produzir os diagramas que comunicam os principais aspectos arquiteturais do sistema. Transmitir a panorâmica do design a toda a equipe ajuda-lhes a compreender a abordagem geral e a desenvolver um software coesivo.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Esboçar o Design&lt;/strong>: Nem todos os modelos necessitam ser detalhados completamente e apresentados em uma ferramenta de modelagem de software. É perfeitamente aceitável (se não desejável) produzir esboços desenhados a mão em papel ou em um quadro branco quando você está explorando e comunicando a arquitetura e o design com sua equipe. Você pode usar uma câmera digital ou um quadro branco eletrônico para capturar estes diagramas e compartilha-los. Para muitos projetos pequenos, isto é normalmente tudo o que você precisa. Veja &lt;a href=&quot;http://www.agilemodeling.com/&quot;>http://www.agilemodeling.com/&lt;/a>, Para mais informações.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Usar uma ferramenta de modelagem se necessário&lt;/strong>: Se os membros da equipe estiverem alterando modelos durante todo o projeto, compartilhando padrões e estruturas, depurando o design, descrevendo o comportamento, etc., então será difícil trabalhar com fotos estáticas ou papel. A equipe pode querer capturar o design em uma ferramenta de modelagem de software. Além de comunicar o design à equipe, um outro benefício desta ferramenta é a geração do código estrutural dos modelos. Muitas ferramentas de desenvolvimento de software permitem que você veja o código na forma de modelos, tornando mais fácil o entendimento dos aspectos estáticos e dinâmicos de um código complexo.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Acordar uma notação padrão&lt;/strong>: Em um ambiente de equipe, é importante que os outros possam compreender seus diagramas sem muita explicação. Escolher uma notação padrão permite que os outros compreendam rapidamente seus diagramas sem ambigüidade. A Linguagem Unificada de Modelagem é um exemplo de uma notação largamente conhecida.&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

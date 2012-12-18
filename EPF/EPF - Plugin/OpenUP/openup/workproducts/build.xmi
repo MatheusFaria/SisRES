@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_NqSB0KeqEdmKDbQuyzCoqQ" name="build,_0YuXEMlgEdmt3adZL5Dmdw" guid="_NqSB0KeqEdmKDbQuyzCoqQ" changeDate="2007-01-30T18:24:06.639-0200" version="7.2.0">
+  <mainDescription>&lt;p>Esta versão de trabalho do sistema é o resultado da colocação da implementação do sistema em um processo de construção (normalmente um script automatizado de construção) que cria uma versão executável do sistema, ou que funcione. Esta versão executável do sistema terá tipicamente uma quantidade de arquivos de suporte que também são considerados como parte deste artefato composto.&lt;/p></mainDescription>
+  <keyConsiderations>&lt;p>Em um ciclo de vida iterativo, cada construção deve evoluir a partir da construção da iteração anterior, adicionando mais funcionalidade e aumentando a qualidade.&lt;/p>&#xD;
+&#xD;
+&lt;p>A finalidade das primeiras construções que minimizam ou eliminam um risco, ou verificam decisões arquiteturais, é conseguir construções consistentemente estáveis nas iterações posteriores.&lt;/p></keyConsiderations>
+  <purpose>Entregar um valor incremental ao usuário e ao cliente, e fornecer um artefato testável para verificação.</purpose>
+  <reasonsForNotNeeding>&lt;p>Sempre será necessária uma versão operacional do sistema.&lt;/p></reasonsForNotNeeding>
+  <representationOptions>&lt;p>Este produto de trabalho é quase sempre um produto composto, feito de numerosas partes necessárias para tornar o sistema executável. Conseqüentemente uma construção é mais do que arquivos executáveis; ela inclui arquivos de configuração, arquivos de ajuda e repositórios de dados que serão agrupados, resultando no produto que será executado pelos usuários. As partes específicas irão variar de acordo com a tecnologia em uso.&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_71hDkMPgEdmbOvqy4O0adg" name="iteration_plan,_0auiMMlgEdmt3adZL5Dmdw" guid="_71hDkMPgEdmbOvqy4O0adg" changeDate="2007-05-23T00:38:35.754-0300" version="7.2.0">
+  <mainDescription>&lt;h3>Introdução&lt;/h3>&#xD;
+&lt;p>A meta do planejamento da iteração é estabelecer alguns objetivos de alto nível do que será realizado durante a iteração, produzir um plano suficientemente detalhado indicando quem deve fazer o que para realizar os objetivos e definir como avaliar se o que deveria ser realizado foi feito.&lt;/p>&#xD;
+&lt;p>O planejamento da iteração deve ser feito preferencialmente com toda a equipe, incluindo os Stakeholders, em uma reunião com poucas horas de duração e no começo de uma iteração. Isto assegura que todos compreendam o que deve ser feito e torna os participantes comprometidos com o sucesso da equipe. Em alguns casos é recomendável reunir, com antecedência, o Gerente de Projeto, um Arquiteto e um Analista para preparar a reunião e elaborar um esboço do plano da iteração.&lt;/p>&#xD;
+&lt;h3>Defina Objetivos de Alto Nível&lt;/h3>&#xD;
+&lt;p>Um aspecto importante de uma iteração é concentrar os esforços da equipe para a liberação, em um curto prazo, de algo que tenha valor mensurável. Documente de um a cinco objetivos de alto nível para ter certeza que você não perderá o foco daquilo que deve ser realizado durante a iteração. Normalmente, o plano de projeto deve esboçar um ou mais objetivos para cada iteração, e esses objetivos devem ser usados como ponto de partida. Se você necessitar, esclareça ou detalhe os objetivos durante o planejamento da iteração.&lt;/p>&#xD;
+&lt;p>Os objetivos são normalmente baseados nos seguintes fatores:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Riscos críticos ainda não atenuados&lt;/strong>: As metas da iteração normalmente incluem a redução dos riscos mais críticos.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Tempo alocado à iteração&lt;/strong>: As iterações têm normalmente um tempo de execução definido, então o Gerente de Projeto deve assegurar-se de que os objetivos da iteração sejam realísticos em relação ao tempo e aos recursos alocados à iteração.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>As características de maior prioridade&lt;/strong>: Os requisitos são priorizados para assegurar que as características críticas da aplicação sejam desenvolvidas e testadas o mais cedo possível.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h3>Produza um Plano de Iteração&lt;/h3>&#xD;
+&lt;p>Existe um Plano por Iteração que deve esboçar quem implementará qual Item de Trabalho e em quanto tempo. Visto que as iterações têm um tempo de execução definido, precisamos avaliar quantas horas de trabalho real serão necessárias para implementar os Itens de Trabalho que pertencem à iteração, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/guidelines/agile_estimation_A4EF42B3.html&quot; guid=&quot;_CGHskBEdEdqY7JB6N6CW2w&quot;>Diretriz: Estimativa Ágil&lt;/a> Vamos supor que você tenha 6 membros de equipe, 15 dias de trabalho em sua iteração e, na média, pode fazer 5 horas reais de trabalho por pessoa ao dia. Isto lhe dará 6x15x5h = 450 horas de trabalho real. Note que na média os membros da equipe trabalham somente de 4 a 6 horas reais de projeto por dia, pois existe um tempo que é consumido por E-mails, reuniões, e outras atividades não relacionadas diretamente ao projeto.&lt;/p>&#xD;
+&lt;p>A equipe deverá então revisar e atualizar as prioridades de todos os itens de alta prioridade da Lista de Itens de Trabalho, para certificar-se de que um Item de Trabalho importante não fique fora da lista do que deve ser feito nesta iteração.&lt;/p>&#xD;
+&lt;p>Escolha o Item de trabalho de mais alta prioridade e veja se ele combina com os objetivos da iteração. Se combinar, avalie se o Item de Trabalho é muito grande para caber na iteração. Se for muito grande, divida-o em Itens de Trabalho menores. Uma vez que o Item de Trabalho esteja decomposto, a equipe irá determinar se pegará um ou mais Itens de Trabalho filhos.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;em>Exemplo: A equipe gostaria de fazer o Item de Trabalho &quot;Desenvolver o Caso de Uso A&quot;, mas ele gastaria aproximadamente 300 horas para ser desenvolvido, então eles descobrem que só é necessária uma parte do caso de uso para conseguir os objetivos da iteração, permitindo que façam outros Itens de Trabalho de alta prioridade. Eles dividem o Item de Trabalho em 5 Itens de Trabalho menores, que representam diferentes cenários do caso de uso A. A equipe decide fazer um dos cinco cenários identificados nesta iteração.&lt;/em>&#xD;
+&lt;/p>&#xD;
+&lt;p>Quando uma equipe decidir fazer um Item de Trabalho, ela irá atribuir o trabalho a um ou mais membros da equipe. De uma forma ideal, isto é feito pela prontificação dos membros da equipe para executar o trabalho, desde que isto faça com que as pessoas fiquem motivadas e comprometidas para fazê-lo, mas dependendo da cultura, a atribuição do trabalho poderá ser feita pelo gerente de projeto.&lt;/p>&#xD;
+&lt;p>O próximo passo é para que os membros da equipe avaliem quantas horas ou dias reais serão necessários para fazer o trabalho. De uma forma ideal, você deseja que cada trabalho atribuído dure no máximo até 2 dias. Se o Item de Trabalho for muito grande, considere dividi-lo em Itens de trabalho menores.&lt;/p>&#xD;
+&lt;p>A equipe soma as estimativas reais de cada Item de Trabalho atribuído, e verificam se eles podem se comprometer com mais trabalho.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;em>Exemplo: Jose comprometeu-se em desenvolver o cenário escolhido para o caso de uso A. Ele acha que necessitará de 50 horas, então ele decidiu desenvolver o trabalho em um grupo de tarefas, e pede que outros membros da equipe ajudem com várias sub-tarefas:&lt;/em>&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;em>Detalhar os requisitos (Jose) - 5 horas&lt;/em>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;em>Projetar o cenário (Jose, Ana e Davi) - 5 horas&lt;/em>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;em>Implementar e testar as mudanças de Bd (Ana) - 12 horas&lt;/em>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;em>Implementar e testar a camada servidor (Davi) - 16 horas&lt;/em>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;em>Implementar e testar a camada cliente (Jose) - 12 horas&lt;/em>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;em>Total - 50 horas&lt;/em>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>À medida que os Itens de Trabalho são decompostos em tarefas menores, as estimativas podem ser melhoradas. Você também compreende melhor o que deve ser feito, e se outro membro da equipe pode ser mais indicado para executar um subconjunto das tarefas.&lt;/p>&#xD;
+&lt;p>A equipe determina agora se estão dispostos a fazer um outro Item de Trabalho, comparando as horas reais definidas com as horas reais disponíveis. Neste caso, a equipe comprometeu-se somente com 50 horas, e ainda existem outras 400 horas disponíveis.&lt;/p>&#xD;
+&lt;h3>Defina Critérios de Avaliação&lt;/h3>&#xD;
+&lt;p>É crítico que esteja claro para todos os membros da equipe e outros Stakeholders como você medirá o sucesso ao fim da iteração. Os critérios óbvios de sucesso devem ser aqueles os quais você possa testar a funcionalidade implementada, e onde pouco ou nenhum defeito seja detectado. Ter defeitos demais torna impossível usar a funcionalidade, e impedirá retornos significativos. Os objetivos de teste e os casos de teste devem ser descritos claramente.&lt;/p>&#xD;
+&lt;p>Podem existir outros critérios de sucesso, tais como que você demonstre as capacidades a um determinado grupo de Stakeholders com comentários de revisão favoráveis, ou que você possa demonstrar com sucesso ou tornar disponível uma pré-visualização técnica em uma conferência.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

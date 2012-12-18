@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Rcm_MlViENAvFFyIe9V3dQ" name="find_and_outline_actors_and_ucs,_eyL0wCu-EdqSxKAVa9kmvA" guid="-Rcm_MlViENAvFFyIe9V3dQ" changeDate="2007-03-22T10:08:23.977-0300" version="1.0.0">
+  <mainDescription>&lt;h1>Encontrando atores&lt;/h1>&#xD;
+&lt;p>Encontre as entidades externas com quem o sistema em desenvolvimento deve interagir. Os candidatos são os grupos de usuários que necessitarão da ajuda do sistema para executar suas tarefas e as funções primárias e secundárias do sistema, assim como outros sistemas, hardware e software externos.&lt;/p>&#xD;
+&lt;p>Defina cada Ator candidato escrevendo seu nome e uma descrição resumida. Inclua a área de responsabilidade do Ator e as metas que o ator tentará alcançar quando usar o sistema. Elimine os Atores candidatos que não possuam nenhuma meta. Para mais informações sobre os Atores e suas propriedades, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/concepts/actor_411726C.html&quot; guid=&quot;_zGqO0MDpEduTGJ8i4u8TMw&quot;>Conceito: Ator&lt;/a>.&lt;/p>&#xD;
+&lt;p>Estas perguntas são úteis para identificação dos Atores:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Quem fornecerá, usará ou excluirá informações do sistema?&lt;/li>&#xD;
+    &lt;li>Quem usará o sistema?&lt;/li>&#xD;
+    &lt;li>Quem está interessado em uma determinada funcionalidade ou serviço fornecido pelo sistema?&lt;/li>&#xD;
+    &lt;li>Quem suportará e manterá o sistema?&lt;/li>&#xD;
+    &lt;li>Quais são os recursos externos ao sistema?&lt;/li>&#xD;
+    &lt;li>Quais outros sistemas precisarão interagir com o sistema em desenvolvimento?&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Revise a lista de Stakeholders que você capturou na Declaração da Visão. Nem todos os Stakeholders serão Atores (isto é, nem todos vão interagir diretamente com o sistema em desenvolvimento), mas esta lista de Stakeholders é útil para identificar candidatos a Atores.&lt;/p>&#xD;
+&lt;h1>Encontrando prováveis casos de uso&lt;/h1>&#xD;
+&lt;p>A melhor forma de encontrar casos de uso é considerar o que cada Ator requisita do sistema. Para cada Ator, humano ou não, pergunte:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &#xD;
+  &lt;li>Quais são as metas que o Ator tentará alcançar com o sistema?&lt;/li>&#xD;
+    &lt;li>Quais são as principais tarefas que o Ator quer que o sistema execute?&lt;/li>&#xD;
+    &lt;li>O Ator irá criar, armazenar, alterar, excluir ou ler dados no sistema?&lt;/li>&#xD;
+    &lt;li>O Ator terá que informar ao sistema sobre mudanças externas repentinas?&lt;/li>&#xD;
+    &#xD;
+  &lt;li>O Ator precisa ser informado sobre certas ocorrências no sistema, tais como indisponibilidade de rede?&lt;/li>&#xD;
+    &lt;li>O Ator executará a inicialização ou desligamento do sistema?&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Entender como a organização alvo trabalha e como este sistema de informações pode ser incorporado nas operações existentes pode dar uma idéia do entorno do sistema. Essa informação pode revelar outros casos de uso candidatos.&lt;/p>&#xD;
+&lt;p>Dê um nome único e uma descrição resumida que descreva claramente as metas de cada caso de uso. Se o caso de uso candidato não possuir metas, pergunte-se por que ele existe e então identifique um objetivo ou elimine-o. Para mais informações sobre os casos de uso e suas propriedades, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/concepts/use_case_BB199D1B.html&quot; guid=&quot;_KudM0NcJEdqz_d2XWoVt6Q&quot;>Conceito: Caso de Uso&lt;/a>.&lt;/p>&#xD;
+&lt;h1>Descrevendo Casos de Uso&lt;/h1>&#xD;
+&lt;p>Sem entrar em detalhes, escreva um rascunho do fluxo de eventos dos casos de uso identificados como sendo de alta prioridade. Inicialmente, escreva uma simples descrição passo-a-passo do fluxo básico do caso de uso. A descrição passo-a-passo é uma simples lista ordenada de interações entre o Ator e o sistema. Por exemplo, a descrição do fluxo básico do caso de uso Retirar Dinheiro de um sistema de caixa eletrônico seria algo assim:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>O cliente insere o cartão bancário.&lt;/li>&#xD;
+    &lt;li>O sistema valida o cartão e solicita que a pessoa entre a senha.&lt;/li>&#xD;
+    &lt;li>O cliente entra com a senha.&lt;/li>&#xD;
+    &lt;li>O sistema valida a senha e solicita que o cliente selecione uma ação.&lt;/li>&#xD;
+    &lt;li>O cliente seleciona Retirar Dinheiro.&lt;/li>&#xD;
+    &lt;li>O sistema solicita que o cliente escolha de qual conta.&lt;/li>&#xD;
+    &lt;li>O cliente seleciona uma conta.&lt;/li>&#xD;
+    &lt;li>O sistema solicita a quantia.&lt;/li>&#xD;
+    &lt;li>O cliente entra a quantia a retirar.&lt;/li>&#xD;
+    &#xD;
+  &lt;li>O sistema valida a quantia (assumindo fundos suficientes), e disponibiliza o dinheiro e o recibo.&lt;/li>&#xD;
+    &lt;li>O cliente retira o dinheiro e o recibo, e então recupera o cartão bancário.&lt;/li>&#xD;
+    &lt;li>O caso de uso termina.&lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;p>À medida que você cria a descrição passo-a-passo do fluxo básico de eventos, você pode descobrir fluxos alternativos e de exceção. Por exemplo, o que acontece se o cliente entrar com uma senha inválida? Capture cada fluxo alternativo que você tenha identificado para não esquece-lo. Você pode preencher os detalhes depois. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/examples/uc_model_evolve_960F136B.html&quot; guid=&quot;_t4QdAMNqEdu2IdAIaWZyAw&quot;>Exemplo: Evolução do Modelo de Caso de Uso&lt;/a> para mais informações sobre como o caso de uso evolui.&lt;/p>&#xD;
+&lt;h1>Relacionamentos entre Atores e casos de uso&lt;/h1>&#xD;
+&lt;p>Os relacionamentos entre os Atores e os casos de uso devem ser capturados ou documentados. Existem várias formas de fazer isso. Se você está usando um modelo de casos de uso no projeto, você pode criar diagramas de caso de uso para mostrar como os Atores e os casos de uso se relacionam. Veja &lt;a href=&quot;./../../../openup/guidances/guidelines/uc_model_4C64E97D.html&quot; guid=&quot;_0VAUsMlgEdmt3adZL5Dmdw&quot;>Diretriz: Modelo de Casos de Uso&lt;/a> para mais informações.&lt;/p>&#xD;
+&lt;p>Se você não estiver usando um modelo de casos de uso para o projeto, tenha certeza de que cada caso de uso identifica os Atores primários e secundários associados a ele.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

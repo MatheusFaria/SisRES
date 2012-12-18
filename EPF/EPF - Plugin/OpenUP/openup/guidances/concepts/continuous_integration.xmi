@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-dhAMzNZNWufBnW0fPYQtBA" name="continuous_integration,_NApSVdtxEdq7ovUqqSoGBQ" guid="-dhAMzNZNWufBnW0fPYQtBA" changeDate="2007-06-14T14:04:57.895-0300" version="7.2.0">
+  <mainDescription>&lt;p>A integração contínua é uma prática de implementação onde os membros da equipe integram seu trabalho com &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/change_set_430BF233.html&quot; guid=&quot;_1QU9MAIoEdyLh7vsrHZ4YA&quot;>Conjuntos de Mudanças&lt;/a> completados por outros desenvolvedores e testam a aplicação antes de tornar seu trabalho disponível para os outros. Isto permite a detecção de erros de integração o mais cedo possível, tais como erros de compilação, notificações do sistema de gerenciamento de configuração e erros relatados pela suíte de teste. Idealmente a integração é feita automaticamente antes da &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/guidelines/promoting_changes_9087B764.html&quot; guid=&quot;_SM4YIL6dEdqti4GwqTkbsQ&quot;>Promoção das Mudanças&lt;/a>.&lt;/p>&#xD;
+&lt;p>A Integração Contínua fornece os seguintes benefícios:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>Melhoria no feedback. A integração contínua mostra progresso constante e demonstrável.&lt;/li>&#xD;
+    &lt;li>Melhoria na detecção de erros. A integração contínua permite rapidamente detectar e tratar os erros rapidamente, normalmente minutos após eles terem sido introduzidos no produto. A integração contínua efetiva necessita de testes de unidade automatizados com cobertura de código apropriada.&lt;/li>&#xD;
+    &lt;li>Melhoria na colaboração. A integração contínua permite que os membros da equipe trabalhem juntos com segurança. Eles sabem que podem fazer uma mudança no código, integrar o sistema e determinar rapidamente se as suas alterações conflitam com as outras.&lt;/li>&#xD;
+    &lt;li>Melhoria na integração do sistema. Pela Integração continua durante o projeto você sabe que pode realmente construir o sistema, atenuando desse modo as surpresas da integração no fim do ciclo de vida.&lt;/li>&#xD;
+    &lt;li>Quantidade reduzida de mudanças paralelas que precisam ser mescladas e testadas.&lt;/li>&#xD;
+    &lt;li>Quantidade reduzida de erros encontrados durante o teste de sistema. Todos os conflitos são resolvidos antes de tornar as novas mudanças disponíveis, pela pessoa que está na melhor posição para resolvê-los.&lt;/li>&#xD;
+    &lt;li>Redução do risco técnico. Você tem sempre um sistema atualizado para poder ser testado.&lt;/li>&#xD;
+    &lt;li>Redução do risco gerencial. Pela integração contínua do sistema você sabe exatamente quanta funcionalidade já construiu até o momento, melhorando sua habilidade de prever quando, e se, você realmente irá entregar a funcionalidade desejada.&lt;/li>&#xD;
+&lt;/ol></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

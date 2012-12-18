@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_NrC20qeqEdmKDbQuyzCoqQ" name="design_solution,_0fshwMlgEdmt3adZL5Dmdw" guid="_NrC20qeqEdmKDbQuyzCoqQ" changeDate="2007-07-25T16:19:31.752-0300" version="1.0.0">
+  <mainDescription>&lt;p>Esta tarefa serve para projetar parte do sistema, não o sistema inteiro. Deve ser aplicada com base em um pequeno grupo dos requisitos. Os requisitos que orientam o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/design_D677D182.html&quot; guid=&quot;_0WuL8slgEdmt3adZL5Dmdw&quot;>Design&lt;/a> podem ser requisitos funcionais baseados em cenários, requisitos não-funcionais ou uma combinação destes.&lt;/p>&#xD;
+&lt;p>Esta tarefa pode ser aplicada em um contexto específico tal como os elementos de acesso à base de dados necessários para algum cenário. Neste caso a tarefa pode ser aplicada outra vez mais tarde, para tratar um contexto diferente com os mesmos requisitos. Tenha em mente que para construir uma funcionalidade que tenha valor para os usuários, todos os contextos precisarão ser projetados e implementados. Por exemplo, para completar uma parte da capacidade do sistema ela deverá ser projetada e implementada em todos os seus contextos, tais como a interface de usuário, as regras de negócio, o acesso à base de dados, etc.&lt;/p>&#xD;
+&lt;p>Para coesão e completude, esta tarefa é descrita como passos de início-ao-fim do design de um cenário de uso do sistema. Na prática, esta tarefa será executada várias vezes quando o design for considerado pela primeira vez, as partes forem implementadas, mais design for realizado com base no que foi aprendido, etc. A aplicação mais saudável desta tarefa está na grande proximidade da implementação.&lt;/p>&#xD;
+&lt;p>Se esta tarefa estiver sendo executada em um elemento arquiteturalmente significante, os resultados deste design devem ser referenciados pelo &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/architecture_notebook_9BB92433.html&quot; guid=&quot;_0XAf0MlgEdmt3adZL5Dmdw&quot;>Caderno de Arquitetura&lt;/a>. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/determine_architecturally_significant_requirements_817DFD9B.html&quot; guid=&quot;_D3JXMNvKEduv2KOT-Teh6w&quot;>Diretriz: Determinar os Requisitos Arquiteturalmente Significantes&lt;/a> para mais informações.&lt;/p></mainDescription>
+  <sections xmi:id="_4Z7WYKuKEdmhFZtkg1nakg" name="Compreenda os detalhes dos requisitos" guid="_4Z7WYKuKEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Examine os &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/use_case_22BE66E2.html&quot; guid=&quot;_0VGbUMlgEdmt3adZL5Dmdw&quot;>Casos de Uso&lt;/a> relevantes e a &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/supporting_requirements_spec_7D9DD47C.html&quot; guid=&quot;_BVh9cL-CEdqb7N6KIeDL8Q&quot;>Especificação de Requisitos Suplementares&lt;/a> para compreender o escopo da tarefa de design e as expectativas sobre o Design. Trabalhe com os &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholders&lt;/a> e o Analista para esclarecer informações ambíguas ou incompletas. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/analyze_the_design_4C4750C0.html&quot; guid=&quot;__MnggPTdEduDKIuqTXQ8SA&quot;>Diretriz: Analisar o Design&lt;/a>.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&lt;p>Se os requisitos não estiverem representados em algum tipo de cenário (por exemplo, um requisito não-funcional pôde não ter um cenário associado a ele), um cenário terá que ser identificado para exercitar apropriadamente os requisitos sob consideração.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&lt;p>Se for determinado que os requisitos estejam incompletos ou incorretos, trabalhe com um analista e um Stakeholder para melhorar os requisitos e possivelmente submeta uma solicitação de mudança para os requisitos.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Ci7aYFixEdusJoWkvSRO9Q" name="Compreenda a arquitetura" guid="_Ci7aYFixEdusJoWkvSRO9Q">
+    <sectionDescription>&lt;p>Revise o Caderno de Arquitetura para identificar mudanças e adições à arquitetura. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/evolve_the_design_3C9D6965.html&quot; guid=&quot;_C4U9QPTeEduDKIuqTXQ8SA&quot;>Diretriz: Evoluir o Design&lt;/a> para mais informações. Trabalhe com o arquiteto se houver alguma incerteza sobre a compreensão das partes relevantes da arquitetura ou sobre a conformidade da estratégia de design.&lt;/p>&#xD;
+&lt;p>Este passo pode ser ignorado se, não houve alterações na arquitetura na iteração anterior.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_--6tYKuKEdmhFZtkg1nakg" name="Identifique elementos de design" guid="_--6tYKuKEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Identifique os elementos que colaboram entre si para fornecer o comportamento desejado. Isto pode começar com as principais abstrações identificadas no Caderno de Arquitetura, no design, na análise de domínio e na análise clássica dos requisitos (filtragem de substantivo) para derivar os elementos que serão necessários para cumpri-los. O &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/guidelines/entity_control_boundary_pattern_C4047897.html&quot; guid=&quot;_uF-QYEAhEdq_UJTvM1DM2Q&quot;>Padrão Entidade-Controle-Fronteira&lt;/a> fornece um bom começo para identificar elementos. Veja também &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/analyze_the_design_4C4750C0.html&quot; guid=&quot;__MnggPTdEduDKIuqTXQ8SA&quot;>Diretriz: Analisar o Design&lt;/a>.&lt;/p>&#xD;
+&lt;p>Os elementos de design existentes devem ser examinados para determinar se eles podem participar na colaboração. É um erro criar todos os novos elementos em cada execução desta tarefa.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_A_LU8KuLEdmhFZtkg1nakg" name="Determine como os elementos colaboram para realizar o cenário" guid="_A_LU8KuLEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Percorra o cenário distribuindo as responsabilidades aos elementos participantes e assegurando que eles têm os relacionamentos necessários para colaborar.&lt;/p>&#xD;
+&lt;p>Estas responsabilidades podem ser simples declarações do comportamento atribuídas aos elementos; não necessitam ser especificações detalhadas de operações com parâmetros, etc. De forma similar, os relacionamentos podem ser definidos apenas nesta etapa. Esta etapa serve para assegurar que um modelo de qualidade esteja sendo criado e que seja robusto o bastante para suportar os requisitos. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/analyze_the_design_4C4750C0.html&quot; guid=&quot;__MnggPTdEduDKIuqTXQ8SA&quot;>Diretriz: Analisar o Design&lt;/a>.&lt;/p>&#xD;
+&lt;p>Verifique o Caderno de Arquitetura e o trabalho de design prévio para criar uma colaboração consistente. Trabalhe com o Arquiteto para entender os detalhes e as motivações da arquitetura. Procure reutilizar relações e comportamentos existentes ou aplique estruturas similares para simplificar o design de todo o sistema.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ENwJwKuLEdmhFZtkg1nakg" name="Refine as decisões de design" guid="_ENwJwKuLEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Refine o design até um nível apropriado de detalhe para orientar a implementação e assegurar que se adapta à arquitetura. Nesta etapa o design pode levar em consideração a linguagem de implementação real e outras decisões técnicas. Revise a identificação dos elementos e das colaborações que realizam os cenários se for necessário enquanto este refinamento leva em consideração detalhes em um nível menor de abstração. Discuta questões sobre teste, tais como os elementos de design que são difíceis de testar ou áreas críticas de desempenho, com o Testador e o Arquiteto.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&lt;p>Evolua o design, analisando as alterações recentes no maior contexto do design e determine se as técnicas de re-fatoração e re-elaboração irão melhorar a robustez, a flexibilidade e a compreensão do design. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/evolve_the_design_3C9D6965.html&quot; guid=&quot;_C4U9QPTeEduDKIuqTXQ8SA&quot;>Diretriz: Evoluir o Design&lt;/a> para mais informações.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&lt;p>Incorpore os &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/arch_mech_2932DFB6.html&quot; guid=&quot;_mzxI0A4LEduibvKwrGxWxA&quot;>Mecanismos Arquiteturais&lt;/a>. Aplique uma estrutura consistente dos elementos e organização do comportamento como em outras áreas do design e use os padrões identificados na arquitetura.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_KNZYAKuLEdmhFZtkg1nakg" name="Projete o interior (para elementos grandes ou complexos)" guid="_KNZYAKuLEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Projete elementos grandes ou complexos ou algum comportamento interno complexo mais detalhadamente.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&lt;p>Isto pode apenas envolver o planejamento de um algoritmo que possa ser executado para produzir o comportamento desejado. Adicione operações, atributos e relacionamentos adicionais para suportar as expectativas de um elemento.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&lt;p>Projete o estado do elemento sobre o curso de sua vida para assegurar o comportamento apropriado em várias circunstâncias. Pode ser útil descrever uma máquina de estado para os elementos com estados complexos.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_mUVt8BfnEduD353bkQ4frw" name="Avalie o Design" guid="_mUVt8BfnEduD353bkQ4frw">
+    <sectionDescription>&lt;p>Avalie o design de objeto para acoplamento, coesão e outras medidas de qualidade de design.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&lt;p>Considere o design de vários ângulos para assegurar que seja um design de alta qualidade e comunicável. Trabalhe com outros membros técnicos da equipe; uma parte independente pode fornecer uma perspective nova. Use o Testador e o Arquiteto para  fornecerem perspectivas sobre a qualidade e aderência do design à arquitetura. Entretanto, ao identificar potenciais revisores tenha em mente que se alguém puder adicionar valor revisando o design, então talvez ele possa adicionar ainda mais valor participando ativamente no próprio esforço de design. Se falhas de design forem identificadas, melhore o design.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&lt;p>Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/design_E36137FA.html&quot; guid=&quot;_bFjlAPTYEduDKIuqTXQ8SA&quot;>Conceito: Design&lt;/a>, &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/analyze_the_design_4C4750C0.html&quot; guid=&quot;__MnggPTdEduDKIuqTXQ8SA&quot;>Diretriz: Analisar o Design&lt;/a>e &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/evolve_the_design_3C9D6965.html&quot; guid=&quot;_C4U9QPTeEduDKIuqTXQ8SA&quot;>Diretriz: Evoluir o Design&lt;/a> para mais informações.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_OGYbwKuLEdmhFZtkg1nakg" name="Comunique o Design" guid="_OGYbwKuLEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Comunique o design do sistema para aqueles que necessitam compreende-lo. Embora isto esteja descrito daqui até o fim da tarefa, a comunicação deve acontecer em todas as etapas. Trabalhar colaborativamente é sempre melhor do que revisar o trabalho depois dele estar completo.&lt;/p>&#xD;
+&lt;p>Aqui estão algumas formas de comunicar o design:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Modelos formais especificados em UML.&lt;/li>&#xD;
+    &lt;li>Diagramas informais que mostrem a estrutura estática e capturem o comportamento dinâmico.&lt;/li>&#xD;
+    &lt;li>Código comentado que comunique informações sobre a estrutura estática. Podendo ser complementado com descrições textuais do comportamento colaborativo através dos módulos de código.&lt;/li>&#xD;
+    &lt;li>Modelos de dados para descrever o esquema da base de dados.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Aqui estão alguns exemplos dos indivíduos que precisarão entender o design do sistema:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Os desenvolvedores que implementarão uma solução baseados no design.&lt;/li>&#xD;
+    &lt;li>Os arquitetos que podem revisar o design para assegurar que se conforma com a arquitetura ou que possa examinar o design para oportunidades de melhoria na arquitetura.&lt;/li>&#xD;
+    &lt;li>Outros projetistas que podem examinar o design para aplicabilidade em outras partes do sistema.&lt;/li>&#xD;
+    &lt;li>Desenvolvedores ou outros projetistas que estarão trabalhando em outras partes do sistema que dependerão dos elementos projetados nesta tarefa.&lt;/li>&#xD;
+    &lt;li>Outros revisores que revisarão o design em relação à qualidade e aderência aos padrões.&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <keyConsiderations>&lt;p>Cada etapa nesta tarefa pode fazer com que todas as etapas precedentes sejam revisadas a luz de novas informações e decisões. Por exemplo, ao determinar como os elementos colaboram você pode encontrar uma falha nos requisitos que lhe remetem ao início após conversar com o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/analyst_39D7C49B.html&quot; guid=&quot;_0VxJsMlgEdmt3adZL5Dmdw&quot;>Analista&lt;/a>. Ou quando da avaliação do design, um revisor poderia notar que um elemento reutilizável que está sendo usado não funciona como esperado e pode fazer com que você identifique novos elementos para utilizar em seu lugar.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;p>Considere a arquitetura ao executar esta tarefa. Todo trabalho de design deve ser feito considerando a arquitetura na qual o Design existe. Além disso, determinados elementos de design serão considerados arquiteturalmente significantes; estes elementos irão demandar atualizações na arquitetura.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;p>Esta tarefa será aplicada várias vezes. O design é mais bem executado em pequenas partes.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;p>Mesmo ao começar o design para um projeto espera-se que existam frameworks e elementos reutilizáveis. Cada etapa desta tarefa deve dar atenção ao Design e a &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/implementation_917CA61E.html&quot; guid=&quot;_0YoQcMlgEdmt3adZL5Dmdw&quot;>Implementação&lt;/a> existentes, utilizando elementos existentes quando possível e emulando ou melhorando os elementos existentes de acordo com o necessário ao projetar esta parte da solução.&lt;/p>&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;p>Aplique padrões durante toda esta tarefa. Os padrões representam designs aprovados e seu uso promove qualidade e consistência em todo o Design.&lt;/p></keyConsiderations>
+  <purpose>&lt;p>A finalidade desta tarefa é descrever os elementos do sistema de modo que suportem o comportamento necessário, sejam de alta qualidade, e adaptem-se a arquitetura.&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

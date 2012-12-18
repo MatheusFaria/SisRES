@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_YIYIYMM1EdmSIPI87WLu3g" name="design,_0XSzsMlgEdmt3adZL5Dmdw" guid="_YIYIYMM1EdmSIPI87WLu3g" changeDate="2007-03-18T20:57:27.416-0300" version="1.0.0">
+  <mainDescription>&lt;p>Os itens nesta lista de verificação representam boas práticas para criar e comunicar um design robusto. Tente trabalhar cada item com a maior extensão possível para criar o melhor design. Pode não ser possível utilizar todos os itens, e alguns itens podem ser utilizados com abrangência limitada. Nestes casos, tenha certeza que existem boas razões para utilizar um item parcialmente ou não utiliza-lo.&lt;/p>&#xD;
+&lt;p>O design pode ser feito diariamente. Use esta lista de verificação regularmente para assegurar um design robusto, consistente e compreensível. Faça com que o design seja bom o bastante para as metas específicas que estão sendo tratadas pelo uso desta lista de verificação para identificar as áreas que foram deixadas de lado, ignoradas ou insuficientemente direcionadas.&lt;/p></mainDescription>
+  <sections xmi:id="_sO-NINVUEduaE6F4-SvXzg" name="O design está entendível?" guid="_sO-NINVUEduaE6F4-SvXzg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>O design está organizado de forma que os membros da equipe possam encontrar facilmente as informações que eles estão procurando?&lt;/li>&#xD;
+  &lt;li>O design está simples o bastante ao mesmo tempo em que cumpre os objetivos do design e fornece direção suficiente para as pessoas que implementam?&lt;/li>&#xD;
+  &lt;li>O design não está nem muito simples nem muito avançado? A sofisticação do design deve ser apropriada para o nível de experiência dos outros membros da equipe e dos Stakeholders técnicos. Isto se aplica ao conceito e à representação do design.&lt;/li>&#xD;
+  &lt;li>O design expressa o que o projetista deseja expressar?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_7DUXMNTQEduaE6F4-SvXzg" name="O design está consistente?" guid="_7DUXMNTQEduaE6F4-SvXzg">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>O design segue algum padrão de design?&lt;/li>&#xD;
+    &lt;li>O design aplica outros idiomas consistentemente?&lt;/li>&#xD;
+    &lt;li>Os nomes dos elementos de design estão consistentes e fáceis de interpretar?&lt;/li>&#xD;
+    &lt;li>Alguma parte do design contradiz uma outra parte de forma que ponha o projeto em risco?&lt;/li>&#xD;
+    &lt;li>Se o design estiver construído visualmente, a notação usada para descrever o design está sendo utilizada consistentemente de forma que ele possa ser entendido e inequívoco?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_V_LgsNTREduaE6F4-SvXzg" name="O design está manutenível?" guid="_V_LgsNTREduaE6F4-SvXzg">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>O design está estruturado o bastante para ser mantido?&lt;/li>&#xD;
+    &lt;li>O design está pronto para acomodar apropriadamente mudanças esperadas? O design não deve ser super-construído para tratar &lt;em>qualquer&lt;/em> mudança possível, somente as mudanças razoavelmente esperadas.&lt;/li>&#xD;
+    &lt;li>As áreas redundantes do design foram removidas de forma que a implementação não contenha código redundante?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_ySbT4NTREduaE6F4-SvXzg" name="É possível rastrear o design?" guid="_ySbT4NTREduaE6F4-SvXzg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>Está claro como os elementos de design se relacionam com os requisitos? Isto não precisa envolver uma estratégia de rastreamento complexa, mas existe alguma forma de descobrir qual parte do design suporta um requisito em particular?&lt;/li>&#xD;
+  &lt;li>Quais partes da implementação suportam claramente cada elemento de design?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_tywgENTQEduaE6F4-SvXzg" name="O design reflete os objetivos arquiteturais do sistema?" guid="_tywgENTQEduaE6F4-SvXzg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>O design está em conformidade com a arquitetura conforme o especificado?&lt;/li>&#xD;
+  &lt;li>Ele usa os padrões arquiteturais apropriadamente?&lt;/li>&#xD;
+  &lt;li>Os Mecanismos Arquiteturais estão sendo usados apropriadamente? Estão sendo usados em todas as circunstâncias onde são aplicáveis?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_nMogoNTQEduaE6F4-SvXzg" name="Os elementos de design são modulares?" guid="_nMogoNTQEduaE6F4-SvXzg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>Os elementos de design têm alta coesão interna? O grau de interação da unidade demonstra que todas as partes internas estão juntas?&lt;/li>&#xD;
+  &lt;li>Os elementos de design têm baixo acoplamento? Existe uma mínima independência entre os elementos de design? Quando os elementos de design dependem uns dos outros, eles são construídos o mais simples possível e de forma que o elemento cliente não será afetado pelas mudanças nas partes internas do elemento fornecedor?&lt;/li>&#xD;
+  &lt;li>Os elementos de design estão definidos com interfaces abstratas de forma que mudanças possam ser feitas na implementação interna sem afetar os elementos de design clientes?&lt;/li>&#xD;
+  &lt;li>Cada elemento de design representa uma abstração claramente definida?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_19E2INTQEduaE6F4-SvXzg" name="O sistema pode ser implementado a partir das informações no design?" guid="_19E2INTQEduaE6F4-SvXzg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>Existe suficiente detalhamento para direcionar a implementação?&lt;/li>&#xD;
+  &lt;li>O design restringe a implementação somente o necessário? O design permite que a pessoa de implementação tenha liberdade de implementá-lo apropriadamente?&lt;/li>&#xD;
+  &lt;li>O design é viável? É um design que pode ser razoavelmente implementado pela equipe, utilizando as tecnologias selecionadas durante o projeto?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_F_AWwNTTEduaE6F4-SvXzg" name="O design fornece bastantes informações para os testes de desenvolvedor?" guid="_F_AWwNTTEduaE6F4-SvXzg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>O design fornece bastantes informações para a criação dos testes de desenvolvedor? O ambiente esperado e as restrições nos métodos estão claros?&lt;/li>&#xD;
+  &lt;li>As colaborações entre os elementos de design estão bastante claras de forma que os testes de integração possam ser criados?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_upZp0NT0EduaE6F4-SvXzg" name="O design descreve o sistema em um nível apropriado de abstração?" guid="_upZp0NT0EduaE6F4-SvXzg">
+    <sectionDescription>O design descreve o sistema em um nível apropriado de abstração, mostrando os objetivos? Isto normalmente significa que o sistema está descrito em níveis diferentes de abstração e em diferentes perspectivas.</sectionDescription>
+  </sections>
+  <sections xmi:id="_Nqih0NVREduaE6F4-SvXzg" name="O design suporta uma perspectiva genérica do sistema?" guid="_Nqih0NVREduaE6F4-SvXzg">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>O design pode ser entendido como um conjunto de subsistemas altamente ordenados?&lt;/li>&#xD;
+    &lt;li>As dependências de subsistema estão documentadas?&lt;/li>&#xD;
+    &lt;li>As interfaces estão definidas claramente para cada subsistema? Cada subsistema está projetado de forma que seus serviços possam ser acessados através da interface sem a necessidade de acessar as partes internas?&lt;/li>&#xD;
+    &lt;li>Cada subsistema está projetado de forma que qualquer um possa trabalhar em um elemento sem ter que entender as partes internas dos outros elementos?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

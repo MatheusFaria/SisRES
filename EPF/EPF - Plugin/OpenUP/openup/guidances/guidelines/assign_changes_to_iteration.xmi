@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-bUmvEAAtFf6B0aUCux8k9Q" name="changes_at_iter_bound,__yQQ4L6REdqti4GwqTkbsQ" guid="-bUmvEAAtFf6B0aUCux8k9Q" changeDate="2007-07-23T13:47:48.685-0300" version="7.2.0">
+  <mainDescription>&lt;p>A maioria dos processos iterativos de desenvolvimento de software recomenda que mudanças não sejam introduzidas durante uma iteração. A principal idéia é que as iterações devam ser curtas e com escopo claramente definido de modo que possam ter sua duração controlada.&lt;/p>&#xD;
+&lt;p>Para limitar o escopo dentro de uma iteração, as solicitações de mudança devem ser revisadas e priorizadas o mais rápido possível, mas só atribuídas para implementação em uma iteração futura através da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Artefato: Lista de Itens de Trabalho&lt;/a>.&lt;/p>&#xD;
+&lt;p>Visto que as iterações são relativamente curtas esta estratégia não deve causar atraso no atendimento das solicitações de mudança urgentes ou importantes.&lt;/p>&#xD;
+&lt;p>Uma notável exceção é um defeito descoberto durante os testes que impeça a equipe de alcançar os objetivos da iteração. Neste caso, é razoável atribuir o item de trabalho para a iteração atual visto que ele não representa uma mudança de escopo, mas representa um trabalho não terminado.&lt;/p>&#xD;
+&lt;p>Faça as seguintes considerações ao escolher a iteração futura que atenderá a solicitação de mudança:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Agrupe solicitações de mudança similares na mesma iteração. Por exemplo, as solicitações de mudança focadas na mesma funcionalidade ou que são interdependentes.&lt;/li>&#xD;
+    &lt;li>Atribua as solicitações de mudança que tratam os maiores riscos na mais próxima iteração possível.&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

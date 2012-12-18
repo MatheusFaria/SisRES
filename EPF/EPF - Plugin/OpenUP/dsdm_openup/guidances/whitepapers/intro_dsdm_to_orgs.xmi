@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-R2aeguSI1a7K7MobT1UcQQ" name="new_whitepaper,_PceS4FllEdu-hcil0jQ6jA" guid="-R2aeguSI1a7K7MobT1UcQQ" changeDate="2006-10-11T18:16:14.828-0300" version="1.0.0">
+  <mainDescription>Click to open document : &lt;a href=&quot;./resources/guidelines_for_introducing_dsdm_into_an_organisation.pdf&quot; target=&quot;_blank&quot;>guidelines_for_introducing_dsdm_into_an_organisation.pdf&lt;/a></mainDescription>
+</org.eclipse.epf.uma:GuidanceDescription>

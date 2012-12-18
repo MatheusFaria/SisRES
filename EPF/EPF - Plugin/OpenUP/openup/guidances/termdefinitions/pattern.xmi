@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-VJBtRm2brEKpRlnLWNF8_g" name=",_ctrEgEvCEdunZcj9T5hrMQ" guid="-VJBtRm2brEKpRlnLWNF8_g" changeDate="2007-04-16T16:00:59.528-0300" version="1.0.0">
+  <mainDescription>Uma solução generalizada que pode ser implementada e aplicada em uma situação do problema (um contexto).</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

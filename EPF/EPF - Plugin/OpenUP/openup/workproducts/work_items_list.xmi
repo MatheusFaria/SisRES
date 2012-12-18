@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-buxz4BVToq97bSxaqyjySg" name="work_items_list,_rGNWsCbSEdqh1LYUOGRh2A" guid="-buxz4BVToq97bSxaqyjySg" changeDate="2007-07-23T22:32:27.546-0300" version="1.0.0">
+  <mainDescription>&lt;p>Este artefato fornece um ponto focal para toda a equipe:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornece uma lista que contém todas as solicitações de melhorias ou capacidades adicionais para a aplicação. Note que alguns destes pedidos podem nunca ser implementados, ou ser implementados em projetos posteriores.&lt;/li>&#xD;
+    &lt;li>Fornece uma lista de todo trabalho a ser estimado, priorizado e atribuído dentro do projeto. A lista de riscos é priorizada separadamente.&lt;/li>&#xD;
+    &lt;li>Fornece um lugar único para que à equipe de desenvolvimento saiba quais &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a> precisam ser entregues, possui referências do material necessário para realizar o trabalho e para relatar o progresso feito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes são os itens de trabalho típicos desta lista.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de Uso e referências às especificações de caso de uso&lt;/li>&#xD;
+    &lt;li>Requisitos suplementares&lt;/li>&#xD;
+    &lt;li>Solicitações de mudança e de melhoria&lt;/li>&#xD;
+    &lt;li>Defeitos&lt;/li>&#xD;
+    &lt;li>Tarefas de desenvolvimento&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></mainDescription>
+  <purpose>Coletar todas as solicitações de trabalho que irão potencialmente ser executados no projeto, de forma que o trabalho possa ser priorizado, o esforço ser estimado e o progresso acompanhado.</purpose>
+  <representationOptions>&lt;h3>Como um planilha ou banco de dados&lt;/h3>&#xD;
+&lt;p>A Lista de Itens de Trabalho pode ser confeccionada como um artefato separado, representado por uma planilha ou uma tabela do banco de dados. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/examples/work_items_list_F527B77D.html&quot; guid=&quot;_nHomIDgzEdu4E8ZdmlYjtA&quot;>Exemplo: Lista de Itens de Trabalho&lt;/a>.&lt;/p>&#xD;
+&lt;h3>Em ferramentas específicas&lt;/h3>&#xD;
+&lt;p>As ferramentas de Gestão de Projeto, Gestão de Requisitos e de Solicitação de Mudança são opções para registrar a lista do trabalho a ser feito.&lt;/p>&#xD;
+&lt;h3>Como parte do Plano de Iteração&lt;/h3>&#xD;
+&lt;p>O &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/iteration_plan_B46FED39.html&quot; guid=&quot;_0aQBEslgEdmt3adZL5Dmdw&quot;>Plano de Iteração&lt;/a> normalmente referencia Itens de Trabalho que estão atribuídos a iteração. Se a equipe estiver elaborando o plano de iteração em um Quadro-Branco por exemplo, ela pode escolher referenciar os itens de trabalho de alto nível na Lista de Itens de Trabalho que esteja atribuída à iteração, e manter os itens de trabalho filhos, de baixo nível, usados para acompanhar o trabalho cotidiano somente no plano de iteração.&lt;br />&#xD;
+&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

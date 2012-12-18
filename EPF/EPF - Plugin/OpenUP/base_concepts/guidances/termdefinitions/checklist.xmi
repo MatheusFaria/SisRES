@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-d9uOWrjeHbE_1Xu2RIs-0A" name="new_term_definition,_7vpJsMaCEduMlb2cQZNTYw" guid="-d9uOWrjeHbE_1Xu2RIs-0A" changeDate="2007-02-27T14:01:08.783-0300" version="7.2.0">
+  <mainDescription>Identifica uma série de itens que necessitam ser completados ou verificados. As listas de verificação são frequentemente usadas em revisões tais como inspeções.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

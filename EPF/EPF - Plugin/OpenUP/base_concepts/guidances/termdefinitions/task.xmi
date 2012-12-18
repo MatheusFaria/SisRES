@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_x459k9nmEdmO6L4XMImrsA" name="task,_x459ktnmEdmO6L4XMImrsA" guid="_x459k9nmEdmO6L4XMImrsA" changeDate="2005-08-12T01:05:04.825-0300" version="7.2.0">
+  <mainDescription>Uma unidade de trabalho que um &lt;i>&lt;a class=&quot;elementLink&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/role_37A0C602.html&quot; guid=&quot;_yUefQNnmEdmO6L4XMImrsA&quot;>papel&lt;/a>&lt;/i> pode ser solicitado a executar.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

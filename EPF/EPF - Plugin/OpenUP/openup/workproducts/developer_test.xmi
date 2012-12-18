@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_NqSB0qeqEdmKDbQuyzCoqQ" name="developer_test,_0YuXEclgEdmt3adZL5Dmdw" guid="_NqSB0qeqEdmKDbQuyzCoqQ" changeDate="2006-12-21T15:11:53.042-0200" version="1.0.0">
+  <mainDescription>&lt;p>Este artefato cobre todas as etapas necessárias para validar um componente de software. Especifica as entradas do teste, condições de execução e os resultados previstos. Estes detalhes são identificados com a finalidade de avaliar um aspecto particular de um cenário.&lt;/p>&#xD;
+&lt;p>Os testes devem ser auto-documentados de forma que fique clara sua conclusão, independente do componente ter funcionado corretamente.&lt;/p></mainDescription>
+  <purpose>Avaliar que um componente de software funciona de acordo com o que foi especificado.</purpose>
+  <impactOfNotHaving>A não existência de testes de desenvolvedor pode inibir o desenvolvimento iterativo, porque não há nenhuma garantia de que os componentes estejam funcionando corretamente quando forem modificados através das iterações.</impactOfNotHaving>
+  <reasonsForNotNeeding>Se os testes puderem ser embutidos no código real em produção, poderá não ser necessário um produto de trabalho separado. Entretanto, algum nível de suporte para teste de desenvolvedor é sempre necessário.</reasonsForNotNeeding>
+  <briefOutline>&lt;p>Não há nenhum template predefinido para este produto de trabalho e uma ferramenta de teste poderá afetar a forma como o produto de trabalho será tratado, entretanto, seguem algumas questões que devem ser consideradas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>instanciação&lt;/li>&#xD;
+    &lt;li>Entradas&lt;/li>&#xD;
+    &lt;li>&#xD;
+        Script&#xD;
+    &lt;/li>&#xD;
+    &lt;li>Resultados Esperados&lt;/li>&#xD;
+    &lt;li>Critérios de Avaliação&lt;/li>&#xD;
+    &lt;li>Limpeza&lt;/li>&#xD;
+&lt;/ul></briefOutline>
+  <representationOptions>&lt;p align=&quot;left&quot;>Recomendações e opções para representar este produto de trabalho:&lt;/p>&#xD;
+&lt;h4>Recomendação: Unidade de Código Automatizada&lt;/h4>&#xD;
+&lt;p>A técnica mais apropriada para executar estes testes é usar um código que teste completamente os componentes e que você possa executá-lo regularmente quando você atualizar o sistema durante o desenvolvimento.&lt;/p>&#xD;
+&lt;p>Quando a codificação é a única forma de testar, você deve preocupar-se em assegurar que o código esteja auto documentando, incluindo as especificações de quais circunstâncias você está testando e qual instanciação ou limpeza é necessária para que o teste funcione corretamente.&lt;/p>&#xD;
+&lt;h4>Opção: Instruções Manuais&lt;/h4>&#xD;
+&lt;p>Em alguns casos, as instruções manuais podem ser suficientes. Por exemplo, ao testar uma interface de usuário, um Desenvolvedor poderá percorrer um script, explicando o componente. Neste caso, pode ainda ser valioso criar uma parte do teste que foque exatamente na interface de usuário. Desta forma, o Desenvolvedor pode seguir o script sem ter que percorrer um grupo complicado de instruções para ir até uma tela ou página em particular.&lt;/p>&#xD;
+&lt;h4>Opção: Código Embutido&lt;/h4>&#xD;
+&lt;p>Determinadas tecnologias (tais como a Anotação de Teste Java™ 5) permitem embutir testes na implementação. Nesses casos, haverá um produto de trabalho lógico, mas ele será assimilado no código que você está testando. Leve em consideração, aqui também, que você deve assegurar que o código esteja auto documentando.&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

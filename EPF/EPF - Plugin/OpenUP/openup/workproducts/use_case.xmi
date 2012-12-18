@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_zHZW8qYSEdmvhNXG0Oc2uA" name="use_case,_0VGbUMlgEdmt3adZL5Dmdw" guid="_zHZW8qYSEdmvhNXG0Oc2uA" changeDate="2006-09-13T18:58:40.026-0300" version="7.2.0">
+  <purpose>&lt;p>A principal finalidade do Caso de Uso é capturar o comportamento necessário ao sistema sob a perspectiva do usuário final, para alcançar um ou mais objetivos. Diferentes usuários se beneficiam de formas diferentes, naturalmente:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Clientes&lt;/strong> usam-nos para descrever, ou pelo menos aprovar a descrição, do comportamento do sistema.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Usuários potenciais&lt;/strong> usam-nos para compreender o comportamento do sistema.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Arquitetos&lt;/strong> usam-nos para identificar a funcionalidade arquiteturalmente significante.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Desenvolvedores&lt;/strong> usam-nos para compreender o comportamento requerido do sistema de forma que eles possam identificar classes a partir do fluxo de eventos dos Casos de Uso.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Testadores&lt;/strong> usam-nos como uma base para identificar um subconjunto de Casos de Teste necessários.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Gerentes&lt;/strong> usam-nos para planejar e avaliar o trabalho de cada iteração.&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Escritores técnicos&lt;/strong> usam-nos para compreender a seqüência de comportamento do sistema que eles necessitam descrever na documentação.&lt;/li>&#xD;
+&lt;/ul></purpose>
+  <representationOptions>&lt;p>Decida a extensão da elaboração dos Casos de Uso:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &#xD;
+  &lt;li>Descrever somente fluxos principais?&lt;/li>&#xD;
+    &#xD;
+  &lt;li>Descrever somente os Casos de Uso mais importantes?&lt;/li>&#xD;
+    &#xD;
+  &lt;li>Descrever totalmente as precondições e pós-condições?&lt;/li>&#xD;
+    &#xD;
+  &lt;li>Descrever os cenários primeiro, e então aumentar o nível de abstração descrevendo fluxos de Caso de Uso?&lt;/li>&#xD;
+&lt;/ul></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_5rJ78Lj3Edmy88CC3LfB_w" name="define_vision,_0fOAoMlgEdmt3adZL5Dmdw" guid="_5rJ78Lj3Edmy88CC3LfB_w" changeDate="2007-02-28T11:02:00.035-0300" version="1.0.0">
+  <sections xmi:id="_tvzDULwPEdm6DujQZORGLQ" name="Identifique os Stakeholders" guid="_tvzDULwPEdm6DujQZORGLQ">
+    <sectionDescription>&lt;p>Identifique os tomadores de decisão, clientes, potenciais usuários, parceiros, peritos do domínio, analistas da indústria e outras partes interessadas (veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Papel: Stakeholder&lt;/a>). Desenvolva perfis dos potenciais (ou atuais) usuários do sistema que correspondem aos papéis dos atores humanos do sistema que você está desenvolvendo. Documente a informação inicial sobre os principais usuários e seu ambiente na &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/vision_2E71B03C.html&quot; guid=&quot;_0WVxcMlgEdmt3adZL5Dmdw&quot;>Visão&lt;/a>.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_sa5F4LwPEdm6DujQZORGLQ" name="Adquira consenso sobre o problema a ser resolvido" guid="_sa5F4LwPEdm6DujQZORGLQ">
+    <sectionDescription>Evite se apressar na definição da solução. Primeiro obtenha um consenso na definição do problema perguntando aos Stakeholders o que eles enxergam como problema. Então busque as causas primárias, ou o &quot;problema atrás do problema&quot;. Utilize técnicas como as descritas na &lt;a class=&quot;elementlinkwithtype&quot; href=&quot;./../../openup/guidances/guidelines/req_gathering_techniques_8CB8E44C.html&quot; guid=&quot;_OnoNQNSAEdmLhZ9H5Plxyw&quot;>Diretriz: Técnicas Para Obtenção de Requisitos&lt;/a>. Formule a declaração do problema, e preencha então a seção correspondente do &lt;a class=&quot;elementlinkwithtype&quot; href=&quot;./../../openup/guidances/templates/vision_C2DEEF73.html&quot; guid=&quot;_0cW54MlgEdmt3adZL5Dmdw&quot;>Template: Visão&lt;/a>. Sua finalidade é ajudar a distinguir as soluções e respostas dos problemas e questões.&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <sections xmi:id="_rliOAOz2Edq2wJOsmRwmhg" name="Capture um vocabulário comum" guid="_rliOAOz2Edq2wJOsmRwmhg">
+    <sectionDescription>Cada projeto tem sua própria terminologia especializada que todos na equipe devem compreender bem para se comunicar eficazmente com os Stakeholders. Trabalhe com os Stakeholders para criar um glossário que defina acrônimos, abreviaturas e termos técnicos e de negócio relevantes. Trabalhe com os Stakeholders para expandir e refinar continuamente o glossário durante todo o ciclo de vida do projeto.</sectionDescription>
+  </sections>
+  <sections xmi:id="_vGg-oLwPEdm6DujQZORGLQ" name="Obtenha as solicitações dos Stakeholders" guid="_vGg-oLwPEdm6DujQZORGLQ">
+    <sectionDescription>&lt;p>Utilize o método mais apropriado para recolher informações, tais como os que estão na &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/req_gathering_techniques_8CB8E44C.html&quot; guid=&quot;_OnoNQNSAEdmLhZ9H5Plxyw&quot;>Diretriz: Técnicas Para Obtenção de Requisitos&lt;/a>. Cada um é aplicável a uma situação particular ou para um tipo específico de Stakeholder.&lt;/p>&#xD;
+&lt;p>Se você puder se encontrar pessoalmente com os Stakeholders, então você poderá conduzir uma entrevista ou uma sessão de brainstorming. Esta colaboração face-a-face é extremamente valiosa e reduz as possibilidades da equipe de projeto não entender as necessidades dos Stakeholders.&lt;/p>&#xD;
+&lt;p>Alguns requisitos podem já ter sido documentados em uma Lista de Itens de Trabalho existente. Isto pode normalmente ser usado como um sólido ponto de partida do qual um conjunto completo de requisitos possa ser criado.&lt;/p>&#xD;
+&lt;p>Qualquer requisito obtido durante esta etapa deve ser capturado na Lista de Itens de Trabalho.&lt;/p>&#xD;
+&lt;p>Para mais informações, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/tasks/find_and_outline_requirements_90D272B9.html&quot; guid=&quot;_P9cMUPV_EdmdHa9MmVPgqQ&quot;>Tarefa: Encontrar e Descrever Requisitos&lt;/a>.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_z7ZC4LwPEdm6DujQZORGLQ" name="Defina os limites do sistema" guid="_z7ZC4LwPEdm6DujQZORGLQ">
+    <sectionDescription>&lt;p>Encontre e defina a linha que divide a solução e o mundo real que a cerca. Identifique as interfaces, bem como as informações de entrada e saída trocadas com os usuários, máquinas ou sistemas.&lt;/p>&#xD;
+&lt;p>Colabore com o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/project_manager_E657F936.html&quot; guid=&quot;_0a0o0MlgEdmt3adZL5Dmdw&quot;>Gerente de Projeto&lt;/a> e o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/architect_E7A12309.html&quot; guid=&quot;_0X9iEMlgEdmt3adZL5Dmdw&quot;>Arquiteto&lt;/a> visto que as decisões relativas aos limites do sistema terão um grande impacto no custo, no cronograma e na arquitetura do sistema.&lt;/p>&#xD;
+&lt;p>Um &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/uc_model_85965D1B.html&quot; guid=&quot;_W2SgEDR5EdutE_HNDTJk5Q&quot;>Modelo de Caso de Uso&lt;/a> é uma técnica que pode ser útil na definição dos limites do sistema. Para mais informações, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/tasks/find_and_outline_requirements_90D272B9.html&quot; guid=&quot;_P9cMUPV_EdmdHa9MmVPgqQ&quot;>Tarefa: Encontrar e Descrever Requisitos&lt;/a>.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_1LVn0LwPEdm6DujQZORGLQ" name="Identifique as restrições no sistema" guid="_1LVn0LwPEdm6DujQZORGLQ">
+    <sectionDescription>&lt;p>Considere as várias fontes de restrições que podem afetar o design ou o próprio projeto:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Políticas&lt;/li>&#xD;
+    &lt;li>Econômicas (orçamento, licenciamento)&lt;/li>&#xD;
+    &lt;li>Ambientais (restrições regulamentárias, legais, padrões)&lt;/li>&#xD;
+    &lt;li>Técnicas (plataformas, tecnologias)&lt;/li>&#xD;
+    &lt;li>Viabilidade (cronograma, alocação de recursos, terceirização)&lt;/li>&#xD;
+    &lt;li>Sistemas (compatibilidade das soluções, suporte do sistema operacional e ambientes).&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Colabore com o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/project_manager_E657F936.html&quot; guid=&quot;_0a0o0MlgEdmt3adZL5Dmdw&quot;>Gerente de Projeto&lt;/a> e o &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/architect_E7A12309.html&quot; guid=&quot;_0X9iEMlgEdmt3adZL5Dmdw&quot;>Arquiteto&lt;/a> visto que as decisões relativas às restrições no sistema terão um grande impacto no custo, no cronograma e na arquitetura do sistema.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_2VixILwPEdm6DujQZORGLQ" name="Defina as características do sistema" guid="_2VixILwPEdm6DujQZORGLQ">
+    <sectionDescription>&lt;p>Trabalhe com os Stakeholders para capturar uma lista das &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../openup/guidances/termdefinitions/feature_4ED64AEE.html&quot; guid=&quot;_PgYREAeYEduWycDgioo5rg&quot;>características&lt;/a> que eles querem no sistema, descrevendo-as resumidamente e registrando os &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/concepts/requirement_attributes_4AC73153.html&quot; guid=&quot;_VQ268O0KEdqHTdbLTmC5IQ&quot;>atributos&lt;/a> para ajudar a definir suas prioridades e status gerais no projeto.&lt;/p>&#xD;
+&#xD;
+&lt;p>Atualize a &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/vision_2E71B03C.html&quot; guid=&quot;_0WVxcMlgEdmt3adZL5Dmdw&quot;>Visão&lt;/a> para capturar as características identificadas e seus atributos.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AhjmAL-GEdqb7N6KIeDL8Q" name="Obtenha consenso" guid="_AhjmAL-GEdqb7N6KIeDL8Q">
+    <sectionDescription>Conduza uma revisão da Visão do projeto com os Stakeholders mais relevantes e a com a equipe de desenvolvimento para assegurar o consenso, avaliar a qualidade e identificar as mudanças necessárias. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/effective_req_reviews_5913D369.html&quot; guid=&quot;_E-dPIL-GEdqb7N6KIeDL8Q&quot;>Diretriz: Revisão Eficaz de Requisitos&lt;/a> para mais informações.</sectionDescription>
+  </sections>
+  <purpose>A solução é proposta para um problema que todos reconhecem. Os Stakeholders colaboram com a equipe de desenvolvimento para expressar e documentar seus problemas, necessidades e potenciais características para o sistema de forma que a equipe de projeto possa compreender melhor o que tem que ser feito.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

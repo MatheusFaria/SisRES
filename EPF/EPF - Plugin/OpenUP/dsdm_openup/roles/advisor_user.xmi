@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-QgM8056Fguftr1Ufj4F5Ng" name="new_role,_avOA0FkVEdul8L-IGeA7TA" guid="-QgM8056Fguftr1Ufj4F5Ng" changeDate="2006-10-11T09:26:06.125-0300" version="1.0.0">
+  <mainDescription>&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Providing information on request&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Participation in the prototyping and review processes offering advice and guidance on issues of practical import&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Approval of designs and prototypes as acceptable for use&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Assisting with business and usability testing.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <keyConsiderations>&lt;p>&#xD;
+    The Advisor User role may be held by a panel of people who attend workshops and workshop-style presentations of&#xD;
+    prototypes. In this way the breadth of user experiences can be captured in a dynamic environment.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Outside pre-arranged events, the &lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/roles/ambassador_user.html&quot; guid=&quot;_ctbZ8FkVEdul8L-IGeA7TA&quot;>Ambassador User&lt;/a> role provides the two-way channel for information about the project to the Advisor Users.&#xD;
+&lt;/p></keyConsiderations>
+  <skills>&lt;ul class=&quot;noindent&quot;>
+    &lt;li>
+        Practical knowledge of the business area
+    &lt;/li>
+    &lt;li>
+        Ability to communicate knowledge and ideas.
+    &lt;/li>
+&lt;/ul></skills>
+</org.eclipse.epf.uma:RoleDescription>

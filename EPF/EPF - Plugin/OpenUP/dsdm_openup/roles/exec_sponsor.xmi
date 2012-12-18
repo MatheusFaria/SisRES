@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-O82bp6CRMKHXA20aNFeV6w" name="new_role,_fULZwFkVEdul8L-IGeA7TA" guid="-O82bp6CRMKHXA20aNFeV6w" changeDate="2006-10-11T09:47:23.109-0300" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    This is a high-level business role. The Executive Sponsor is the &quot;project champion&quot; who is committed to the project,&#xD;
+    its approach and wants the system. The role ultimately &quot;owns&quot; the system and has responsibility for it. The Executive&#xD;
+    Sponsor must hold a sufficiently high position in the organisation to be able to resolve business issues (e.g. to force&#xD;
+    open closed doors) and make financial decisions. This role has a crucial responsibility to ensure and enable fast&#xD;
+    progress throughout the project, cutting through the bureaucracy and politics that impede development.&#xD;
+&lt;/p>&#xD;
+&lt;h5>&#xD;
+    &lt;a id=&quot;Responsibilities&quot; name=&quot;Responsibilities&quot;>Responsibilities&lt;/a>&#xD;
+&lt;/h5>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Ensuring the decision-making process for escalated project issues is effective and rapid&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Responding to escalated issues&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Ensuring that funds and other resources are made available as needed&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Monitoring the continued business case for the project&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Commitment and availability throughout the development cycle.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <skills>&lt;ul class=&quot;noindent&quot;>
+    &lt;li>
+        Ability to commit appropriate funds and resources
+    &lt;/li>
+    &lt;li>
+        Ability to question
+    &lt;/li>
+    &lt;li>
+        Decisiveness
+    &lt;/li>
+    &lt;li>
+        Political awareness
+    &lt;/li>
+    &lt;li>
+        Business knowledge
+    &lt;/li>
+&lt;/ul></skills>
+  <assignmentApproaches>&lt;p>
+    The Executive Sponsor role and Visionary role may often be held by the same person
+&lt;/p></assignmentApproaches>
+</org.eclipse.epf.uma:RoleDescription>

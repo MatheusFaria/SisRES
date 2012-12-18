@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_Nlw1oGWqEduXS5SsNQFBeg" guid="_Nlw1oGWqEduXS5SsNQFBeg">
+    <resourceDescriptors xmi:id="_Nlw1oWWqEduXS5SsNQFBeg" id="-eF2lt7VydLjXgYjekq1JYA" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_Nl5_kGWqEduXS5SsNQFBeg" id="-io5IVl6cfL13mITtSQZ6qw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_Nl5_kWWqEduXS5SsNQFBeg" id="-ekFhym49Ew6H0sL1MJ5yNw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_Nl5_kmWqEduXS5SsNQFBeg" id="-jLx3JjiFCqSKsnGO-5SDKw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_NmDwkGWqEduXS5SsNQFBeg" id="-q6sRit33qxBD7OweLhVeQA" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_1VgqoFogEdug9t_2UE7UhQ" name="OpenUP_DSDM" guid="_1VgqoFogEdug9t_2UE7UhQ">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_1VzlklogEdug9t_2UE7UhQ" name="dsdm_inception_phase_iteration" guid="_1VzlklogEdug9t_2UE7UhQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_1Vzlk1ogEdug9t_2UE7UhQ" name="dsdm_inception_phase_iteration" guid="_1Vzlk1ogEdug9t_2UE7UhQ" presentationName="Inception Iteration [1..n]" superActivities="_1VzlkFogEdug9t_2UE7UhQ" variabilityType="extends">
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0hmKgBOMEduCNqgZdt_OaA"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_oS1Yj1nzEdug9t_2UE7UhQ#_oS1Y1VnzEdug9t_2UE7UhQ"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_1Vzl_1ogEdug9t_2UE7UhQ" name="dsdm_elaboration_phase_iteration" guid="_1Vzl_1ogEdug9t_2UE7UhQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_1Vzme1ogEdug9t_2UE7UhQ" name="dsdm_elaboration_phase_iteration" guid="_1Vzme1ogEdug9t_2UE7UhQ" presentationName="Elaboration Iteration [1..n]" superActivities="_1VzlkFogEdug9t_2UE7UhQ" isRepeatable="true" linkToPredecessor="_1VzmfFogEdug9t_2UE7UhQ" variabilityType="extends">
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_2plxwBOMEduCNqgZdt_OaA"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_oSrniFnzEdug9t_2UE7UhQ#_oS1YjlnzEdug9t_2UE7UhQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_1VzmfFogEdug9t_2UE7UhQ" guid="_1VzmfFogEdug9t_2UE7UhQ" linkType="finishToFinish" pred="_1VzmflogEdug9t_2UE7UhQ"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_1Vqb1logEdug9t_2UE7UhQ" name="dsdm_construction_phase_iteration" guid="_1Vqb1logEdug9t_2UE7UhQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_1VqcnFogEdug9t_2UE7UhQ" name="dsdm_construction_phase_iteration" guid="_1VqcnFogEdug9t_2UE7UhQ" presentationName="Construction Iteration [1..n]" superActivities="_1VzlkFogEdug9t_2UE7UhQ" isRepeatable="true" linkToPredecessor="_1Vqb11ogEdug9t_2UE7UhQ" variabilityType="extends">
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_48EKsBOMEduCNqgZdt_OaA"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_oSYsAVnzEdug9t_2UE7UhQ#_oSYsBFnzEdug9t_2UE7UhQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_1Vqb11ogEdug9t_2UE7UhQ" guid="_1Vqb11ogEdug9t_2UE7UhQ" linkType="finishToFinish" pred="_1VqcnVogEdug9t_2UE7UhQ"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_1VgrCFogEdug9t_2UE7UhQ" name="dsdm_transition_phase_iteration" guid="_1VgrCFogEdug9t_2UE7UhQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_1VgrCVogEdug9t_2UE7UhQ" name="dsdm_transition_phase_iteration" guid="_1VgrCVogEdug9t_2UE7UhQ" presentationName="Transition Iteration [1..n]" superActivities="_1VzlkFogEdug9t_2UE7UhQ" isRepeatable="true" linkToPredecessor="_1Vqb1VogEdug9t_2UE7UhQ" variabilityType="extends">
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#__ca5UBOMEduCNqgZdt_OaA"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_oSrm_lnzEdug9t_2UE7UhQ#_oSrnhFnzEdug9t_2UE7UhQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_1Vqb1VogEdug9t_2UE7UhQ" guid="_1Vqb1VogEdug9t_2UE7UhQ" linkType="finishToFinish" pred="_1VqcnlogEdug9t_2UE7UhQ"/>
+    </childPackages>
+    <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_1VzmflogEdug9t_2UE7UhQ" name="lifecycle_objectives" guid="_1VzmflogEdug9t_2UE7UhQ" presentationName="Lifecycle Objectives Milestone" briefDescription="The end of the Inception phase is the first major project milestone, the Lifecycle  Objectives Milestone." superActivities="_1VzlkFogEdug9t_2UE7UhQ" linkToPredecessor="_1Vzmf1ogEdug9t_2UE7UhQ">
+      <presentation xmi:id="-eF2lt7VydLjXgYjekq1JYA" href="uma://-eF2lt7VydLjXgYjekq1JYA#-eF2lt7VydLjXgYjekq1JYA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_1VqcnVogEdug9t_2UE7UhQ" name="lifecycle_architecture" guid="_1VqcnVogEdug9t_2UE7UhQ" presentationName="Lifecycle Architecture Milestone" briefDescription="At the end of the Elaboration phase is the second important project milestone, the Lifecycle Architecture Milestone." superActivities="_1VzlkFogEdug9t_2UE7UhQ" linkToPredecessor="_1VqcoFogEdug9t_2UE7UhQ">
+      <presentation xmi:id="-io5IVl6cfL13mITtSQZ6qw" href="uma://-eF2lt7VydLjXgYjekq1JYA#-io5IVl6cfL13mITtSQZ6qw"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_1VqcnlogEdug9t_2UE7UhQ" name="initial_operational_capability" guid="_1VqcnlogEdug9t_2UE7UhQ" presentationName="Initial Operational Capability Milestone" briefDescription="The end of Construction phase is the third important project milestone, the Initial  Operational Capability Milestone." superActivities="_1VzlkFogEdug9t_2UE7UhQ" linkToPredecessor="_1VzmfVogEdug9t_2UE7UhQ">
+      <presentation xmi:id="-ekFhym49Ew6H0sL1MJ5yNw" href="uma://-eF2lt7VydLjXgYjekq1JYA#-ekFhym49Ew6H0sL1MJ5yNw"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_1VgqoVogEdug9t_2UE7UhQ" name="product_release" guid="_1VgqoVogEdug9t_2UE7UhQ" presentationName="Product Release Milestone" briefDescription="The end of the Transition phase is the fourth important project milestone, the  Product Release Milestone, which is the result of the customer reviewing and accepting  the project deliverables." superActivities="_1VzlkFogEdug9t_2UE7UhQ" linkToPredecessor="_1Vqcn1ogEdug9t_2UE7UhQ">
+      <presentation xmi:id="-jLx3JjiFCqSKsnGO-5SDKw" href="uma://-eF2lt7VydLjXgYjekq1JYA#-jLx3JjiFCqSKsnGO-5SDKw"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_1Vzmf1ogEdug9t_2UE7UhQ" guid="_1Vzmf1ogEdug9t_2UE7UhQ" linkType="finishToFinish" pred="_1Vzlk1ogEdug9t_2UE7UhQ"/>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_1VqcoFogEdug9t_2UE7UhQ" guid="_1VqcoFogEdug9t_2UE7UhQ" linkType="finishToFinish" pred="_1Vzme1ogEdug9t_2UE7UhQ"/>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_1VzmfVogEdug9t_2UE7UhQ" guid="_1VzmfVogEdug9t_2UE7UhQ" linkType="finishToFinish" pred="_1VqcnFogEdug9t_2UE7UhQ"/>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_1Vqcn1ogEdug9t_2UE7UhQ" guid="_1Vqcn1ogEdug9t_2UE7UhQ" linkType="finishToFinish" pred="_1VgrCVogEdug9t_2UE7UhQ"/>
+    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_1VzlkFogEdug9t_2UE7UhQ" name="OpenUP_DSDM" guid="_1VzlkFogEdug9t_2UE7UhQ" presentationName="OpenUP Lifecycle with DSDM Stakeholder Plugin" briefDescription="This delivery process defines a software development process that supports the  core principles of OpenUP. It is designed to support small co-located teams with active user involvement in their daily activities." isPlanned="false" breakdownElements="_1Vzlk1ogEdug9t_2UE7UhQ _1VzmflogEdug9t_2UE7UhQ _1Vzme1ogEdug9t_2UE7UhQ _1VqcnVogEdug9t_2UE7UhQ _1VqcnFogEdug9t_2UE7UhQ _1VqcnlogEdug9t_2UE7UhQ _1VgrCVogEdug9t_2UE7UhQ _1VgqoVogEdug9t_2UE7UhQ">
+      <ownedRules xmi:id="_1VzlkVogEdug9t_2UE7UhQ" name="diagram" guid="_1VzlkVogEdug9t_2UE7UhQ" body="ad_image_uri=_pWURUFq7EduPD_03X_F_pA|publish_ad_image=true|add_image_uri=|publish_add_image=false|wpd_image_uri=|publish_wpd_image=false"/>
+      <methodElementProperty xmi:id="_PCdLgUSKEeKIHoRDpe9VIw" name="process_synFree" value="true"/>
+      <presentation xmi:id="-q6sRit33qxBD7OweLhVeQA" href="uma://-eF2lt7VydLjXgYjekq1JYA#-q6sRit33qxBD7OweLhVeQA"/>
+      <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_48EKsBOMEduCNqgZdt_OaA"/>
+      <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_2plxwBOMEduCNqgZdt_OaA"/>
+      <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0hmKgBOMEduCNqgZdt_OaA"/>
+      <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#__ca5UBOMEduCNqgZdt_OaA"/>
+      <supportingMaterials href="uma://_Nq0WYFkVEdul8L-IGeA7TA#_pWURUFq7EduPD_03X_F_pA"/>
+      <includesPatterns href="uma://_0oSdEclgEdmt3adZL5Dmdw#_0o3r4slgEdmt3adZL5Dmdw"/>
+      <includesPatterns href="uma://_0rWYIMlgEdmt3adZL5Dmdw#_0sTaYMlgEdmt3adZL5Dmdw"/>
+      <includesPatterns href="uma://_0qrpwMlgEdmt3adZL5Dmdw#_0rQRgMlgEdmt3adZL5Dmdw"/>
+      <includesPatterns href="uma://_y-etQOtQEdqc1LGhiSPqRg#_y-3IrutQEdqc1LGhiSPqRg"/>
+      <defaultContext href="uma://_y62TUKVPEdmMZJIzZ1W7Pw#_ZUWSwFlsEdu-hcil0jQ6jA"/>
+      <validContext href="uma://_y62TUKVPEdmMZJIzZ1W7Pw#_ZUWSwFlsEdu-hcil0jQ6jA"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

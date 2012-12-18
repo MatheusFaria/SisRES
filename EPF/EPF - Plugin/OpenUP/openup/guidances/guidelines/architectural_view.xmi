@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-cnGBBA4NXmhTIjHjlHx4Mw" name=",_T9nygClEEduLGM8dfVsrKg" guid="-cnGBBA4NXmhTIjHjlHx4Mw" changeDate="2006-08-22T15:29:43.831-0300" version="1.0.0">
+  <mainDescription>&lt;p>Como um arquiteto, você pode considerar as seguintes visões (nem todas as visões são relevantes a todos os sistemas ou todos Stakeholders). Este grupo de visões é conhecido como Visões 4+1 da Arquitetura de Software [&lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>KRU95&lt;/a>].&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;254&quot; alt=&quot;Visões 4+1 da Arquitetura de Software&quot; src=&quot;./resources/4plus1_2.jpg&quot; width=&quot;405&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;p>Visão de Caso de Uso: Descreve a funcionalidade do sistema, suas interfaces externas, e seus principais usuários. A visão de caso de uso contém o &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/workproducts/uc_model_intent_req_ucm_17B6B2A6.html&quot; guid=&quot;_0UCrZclgEdmt3adZL5Dmdw&quot;>Modelo de Caso de Uso&lt;/a>. Esta visão é obrigatória quando do uso das Visões 4+1, porque todos os elementos da arquitetura devem ser derivados dos requisitos.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>Visão Lógica: Descreve como o sistema é estruturado, em termos de unidades de implementação. Os elementos são pacotes, classes e interfaces. O relacionamento entre os elementos mostra as dependências, as realizações de interface, os relacionamentos parte-todo e assim por diante. Nota: Esta visão é obrigatória quando do uso das Visões 4+1 da Arquitetura de Software.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>Visão de Implementação: Descreve como os artefatos de desenvolvimento estão organizados no sistema de arquivos. Os elementos são arquivos e diretórios (quaisquer itens de configuração). Isto inclui os artefatos de desenvolvimento e os artefatos de implantação. Esta visão é opcional quando do uso das Visões 4+1.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>Visão de Processo: Descreve como o sistema de tempo-de-execução é estruturado na forma de um conjunto de elementos que têm interações e comportamento de tempo-de-execução. A estrutura de tempo-de-execução normalmente tem pouca semelhança com a estrutura de código. Consiste de redes de comutação rápida de objetos de comunicação. Os elementos são componentes que têm presença em tempo de execução (processos, threads, Enterprise JavaBeans™ (EJB™), servlets, DLLs, etc), data stores, e conectores complexos, tais como queues. A interação entre os elementos varia, de acordo com a tecnologia. Esta visão é útil para pensarmos sobre os atributos de qualidade do sistema de tempo-de-execução, tais como desempenho e confiabilidade. Esta visão é opcional quando do uso das Visões 4+1.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>Visão de Implantação: Descreve como o sistema é mapeado para o hardware. Esta visão é opcional quando do uso das Visões 4+1.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Adicionalmente, você pode representar também:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;p>Visão de dados: Uma Especialização da visão lógica. Use esta visão se a persistência for um aspecto significativo do sistema e se a conversão do modelo de design para o modelo de dados não for feita automaticamente pelos mecanismos de persistência.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    &lt;br />&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

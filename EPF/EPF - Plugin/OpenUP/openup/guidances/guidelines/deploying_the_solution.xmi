@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-aOaMjqW4RZWOiHT1_U1NNw" name="deploying_the_solution,_yYlQoC3xEdycYKq0PulnEQ" guid="-aOaMjqW4RZWOiHT1_U1NNw" changeDate="2007-07-23T17:14:50.468-0300" version="7.2.0">
+  <mainDescription>&lt;h3>Planejando Iterações de Transição&lt;/h3>&#xD;
+&lt;p>O software pode ser implantado em um ambiente de produção ao final de qualquer iteração nas fases de Construção ou Transição. A implantação na produção antes do fim do projeto pode ser feita para reduzir os riscos pela validação da aplicação, dos scripts de implantação, do ambiente de implantação e para obter opiniões valiosas das equipes de operações e sistemas, bem como do usuário final. Estas primeiras implantações são normalmente feitas para uma quantidade limitada de público alvo ou apenas uma parte das aplicações. Para que a implantação funcione, uma ou mais iterações deverão estar focadas no trabalho necessário para liberar o sistema com sucesso. Na fase de Transição, uma ou mais iterações poderão ser dedicadas à preparação de uma implantação tranquila. A quantidade de iterações depende da complexidade do sistema de vários outros fatores, como listados abaixo. Quando do planejamento para implantação, a lista de itens de trabalho deve ser atualizada com as tarefas relacionadas a:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Solução de defeitos&lt;/li>&#xD;
+    &lt;li>Teste dos scripts de instalação ou implantação para evitar surpresas na implantação real&lt;/li>&#xD;
+    &lt;li>Atualização de quaisquer ambientes de teste operacional e de suporte utilizados para simular problemas de produção&lt;/li>&#xD;
+    &lt;li>Realização de esforços de teste específicos de liberação, tais como teste piloto ou de versão beta para um grupo de usuários finais, onde o sistema será implantado&lt;/li>&#xD;
+    &lt;li>Condução de revisões de aceitação com os Stakeholders, incluindo o esforço de teste para aceitação final da liberação, onde as pessoas que estão fora da equipe são envolvidas e decidem se ela realmente atende às suas necessidades&lt;/li>&#xD;
+    &lt;li>Finalização da documentação pertinente, tais como os manuais operacionais e de sistema, documentação de usuário final e notas de versão.&lt;/li>&#xD;
+    &lt;li>Criação de itens físicos, tais como a mídia de instalação&lt;/li>&#xD;
+    &lt;li>Substituição ou instalação de recursos físicos, incluindo estações de trabalho, servidores de rede e componentes&lt;/li>&#xD;
+    &lt;li>Substituição de softwares existentes por novas versões&lt;/li>&#xD;
+    &lt;li>Atualização de bases de dados existentes, incluindo qualquer migração de dados relevante ou mudanças nos esquemas do banco de dados&lt;/li>&#xD;
+    &lt;li>População com dados de produção&lt;/li>&#xD;
+    &lt;li>Treinamento de usuários finais e do pessoal operacional e de suporte&lt;/li>&#xD;
+    &lt;li>Acerto de eventuais discrepâncias constatadas durante a fase de Transição&lt;/li>&#xD;
+    &lt;li>Preparação de sistemas e processos operacionais e de gestão&lt;/li>&#xD;
+    &lt;li>Treinamento da equipe que dará manutenção e evoluirá o sistema&lt;/li>&#xD;
+    &lt;li>Implantação do software no ambiente de produção&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Veja [&lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#AMB07&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>AMB07&lt;/a>] para mais informações.&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;span style=&quot;BACKGROUND-COLOR: rgb(255,255,255)&quot;>Revisando Iterações de Transição&lt;/span>&lt;br />&#xD;
+&lt;/h3>&#xD;
+&lt;p>As revisões das iterações de transição têm um foco diferente das outras iterações no ciclo de vida do projeto. A meta não é fazer Brainstorm sobre quais características serão desenvolvidas a seguir. Ao invés, as revisões deverão avaliar os procedimentos e recursos de gerenciamento da liberação, a qualidade do software e quão preparados estão os usuários e as equipes operacionais para enfrentar a transição do software para o ambiente de produção.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-XnXEM7GkN21zwj7pKPmu3A" name="new_term_definition,_BangwMaJEduMlb2cQZNTYw" guid="-XnXEM7GkN21zwj7pKPmu3A" changeDate="2007-02-27T14:36:33.570-0300" version="7.2.0">
+  <mainDescription>Uma categoria padrão utilizada como um contêiner para os &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/tool_mentor_264766F3.html&quot; guid=&quot;_yYy-mdnmEdmO6L4XMImrsA&quot;>mentores de ferramenta&lt;/a>. Pode também fornecer descrições gerais da ferramenta e de suas capacidades gerais.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

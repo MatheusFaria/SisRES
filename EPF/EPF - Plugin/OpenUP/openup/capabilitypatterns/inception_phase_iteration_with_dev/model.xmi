@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_S6i60CvgEdyElfIvS2TI_w" guid="_S6i60CvgEdyElfIvS2TI_w">
+    <resourceDescriptors xmi:id="_S6i60SvgEdyElfIvS2TI_w" id="-4oS0VykpXrxIgjOZ-cnxBA" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_S7IJoCvgEdyElfIvS2TI_w" id="-b3TJgLtX7LUCLMudQxC0ew" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_S7OQQCvgEdyElfIvS2TI_w" id="-iqGmMfJDB9tBhzKP85VsYw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_S7OQQSvgEdyElfIvS2TI_w" id="-yxjWI5Gdje0hqIhEcec-JA" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_OM6uECvgEdyElfIvS2TI_w" name="inception_phase_iteration_with_dev" guid="_OM6uECvgEdyElfIvS2TI_w">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_ONA0sivgEdyElfIvS2TI_w" name="initiate_project" guid="_ONA0sivgEdyElfIvS2TI_w">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_ONA0syvgEdyElfIvS2TI_w" name="initiate_project" guid="_ONA0syvgEdyElfIvS2TI_w" presentationName="Iniciar o Projeto" superActivities="_OM6uESvgEdyElfIvS2TI_w" variabilityType="extends">
+        <presentation xmi:id="-4oS0VykpXrxIgjOZ-cnxBA" href="uma://-4oS0VykpXrxIgjOZ-cnxBA#-4oS0VykpXrxIgjOZ-cnxBA"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_0pWNAslgEdmt3adZL5Dmdw#_0pWNA8lgEdmt3adZL5Dmdw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_OM6uEivgEdyElfIvS2TI_w" name="identify_and_refine_requirements" guid="_OM6uEivgEdyElfIvS2TI_w">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_ONA0sCvgEdyElfIvS2TI_w" name="identify_and_refine_requirements" guid="_ONA0sCvgEdyElfIvS2TI_w" presentationName="Identificar e Refinar os Requisitos" superActivities="_OM6uESvgEdyElfIvS2TI_w" linkToPredecessor="_PJUPcCvhEdyElfIvS2TI_w" variabilityType="extends">
+        <methodElementProperty xmi:id="_SsIEUCvgEdyElfIvS2TI_w" name="publish_add" value="true"/>
+        <presentation xmi:id="-b3TJgLtX7LUCLMudQxC0ew" href="uma://-4oS0VykpXrxIgjOZ-cnxBA#-b3TJgLtX7LUCLMudQxC0ew"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_0o9ygMlgEdmt3adZL5Dmdw#_0o9ygclgEdmt3adZL5Dmdw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_PJUPcCvhEdyElfIvS2TI_w" guid="_PJUPcCvhEdyElfIvS2TI_w" linkType="finishToFinish" pred="_ONA0syvgEdyElfIvS2TI_w"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_ONA0tivgEdyElfIvS2TI_w" name="agree_technical_approach" guid="_ONA0tivgEdyElfIvS2TI_w">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_ONA0uCvgEdyElfIvS2TI_w" name="agree_technical_approach" guid="_ONA0uCvgEdyElfIvS2TI_w" presentationName="Obter Acordo Sobre a Abordagem Técnica" isOptional="true" superActivities="_OM6uESvgEdyElfIvS2TI_w" linkToPredecessor="_coGxACv7EdyElfIvS2TI_w" variabilityType="extends">
+        <methodElementProperty xmi:id="_SsIEUSvgEdyElfIvS2TI_w" name="publish_add" value="true"/>
+        <presentation xmi:id="-iqGmMfJDB9tBhzKP85VsYw" href="uma://-4oS0VykpXrxIgjOZ-cnxBA#-iqGmMfJDB9tBhzKP85VsYw"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_0sluQclgEdmt3adZL5Dmdw#_0sluQslgEdmt3adZL5Dmdw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_coGxACv7EdyElfIvS2TI_w" guid="_coGxACv7EdyElfIvS2TI_w" linkType="finishToFinish" pred="_ONA0syvgEdyElfIvS2TI_w"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_ONA0tCvgEdyElfIvS2TI_w" name="manage_iteration" guid="_ONA0tCvgEdyElfIvS2TI_w">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_ONA0tSvgEdyElfIvS2TI_w" name="manage_iteration" guid="_ONA0tSvgEdyElfIvS2TI_w" presentationName="Planejar e Gerenciar a iteração" isPlanned="false" superActivities="_OM6uESvgEdyElfIvS2TI_w" isOngoing="true" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_0nJNkclgEdmt3adZL5Dmdw#_0nJNkslgEdmt3adZL5Dmdw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_ceCDQCvgEdyElfIvS2TI_w" name="develop_architecture_spike" guid="_ceCDQCvgEdyElfIvS2TI_w">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_ceCDQSvgEdyElfIvS2TI_w" name="develop_architecture_spike" guid="_ceCDQSvgEdyElfIvS2TI_w" presentationName="Desenvolver Incremento da Arquitetura" superActivities="_OM6uESvgEdyElfIvS2TI_w" linkToPredecessor="_pXdz0CvgEdyElfIvS2TI_w" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_0sx7iclgEdmt3adZL5Dmdw#_0sx7islgEdmt3adZL5Dmdw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_pXdz0CvgEdyElfIvS2TI_w" guid="_pXdz0CvgEdyElfIvS2TI_w" linkType="finishToFinish" pred="_ONA0uCvgEdyElfIvS2TI_w"/>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_OM6uESvgEdyElfIvS2TI_w" name="inception_phase_iteration_with_dev" guid="_OM6uESvgEdyElfIvS2TI_w" presentationName="Iteração da Fase de Concepção" briefDescription="Este template de iteração define as atividades (e os papéis e produtos de trabalhos associados) realizadas em uma iteração típica na fase de Concepção, se houver a necessidade de executar algum trabalho detalhado de arquitetura, incluindo o desenvolvimento de um incremento arquitetural." breakdownElements="_ONA0syvgEdyElfIvS2TI_w _ONA0tSvgEdyElfIvS2TI_w _ONA0sCvgEdyElfIvS2TI_w _ONA0uCvgEdyElfIvS2TI_w _ceCDQSvgEdyElfIvS2TI_w">
+      <methodElementProperty xmi:id="_O5y-wUSKEeKIHoRDpe9VIw" name="process_synFree" value="true"/>
+      <presentation xmi:id="-yxjWI5Gdje0hqIhEcec-JA" href="uma://-4oS0VykpXrxIgjOZ-cnxBA#-yxjWI5Gdje0hqIhEcec-JA"/>
+      <defaultContext href="uma://_y62TUKVPEdmMZJIzZ1W7Pw#_0u-T4clgEdmt3adZL5Dmdw"/>
+      <validContext href="uma://_y62TUKVPEdmMZJIzZ1W7Pw#_0u-T4clgEdmt3adZL5Dmdw"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

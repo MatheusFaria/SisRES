@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-zCM2ucJJxc_bQr_LoHlSaQ" name="promoting_changes,_SM4YIL6dEdqti4GwqTkbsQ" guid="-zCM2ucJJxc_bQr_LoHlSaQ" changeDate="2007-06-14T11:46:11.002-0300" version="1.0.0">
+  <mainDescription>&lt;p>Durante o desenvolvimento iterativo de software a equipe cria vários &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/change_set_430BF233.html&quot; guid=&quot;_1QU9MAIoEdyLh7vsrHZ4YA&quot;>Conjuntos de Mudanças&lt;/a> que são combinados em uma &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/workproducts/build_95D7D8FD.html&quot; guid=&quot;_0YuXEMlgEdmt3adZL5Dmdw&quot;>Construção&lt;/a>. Uma construção é iniciada quando o trabalho de um ou mais colaboradores for terminado e quando todos os conflitos entre as mudanças forem resolvidos. A construção está sujeita então a uma bateria de testes para determinar se está com qualidade suficiente para ser colocada em produção.&lt;/p>&#xD;
+&lt;p>À medida que as mudanças progridem do desenvolvimento para a produção é benéfico conhecer duas de suas características:&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Contexto do Teste&lt;/strong> - identificando os elementos e suas versões que serão testadas juntamente&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Quais mudanças estão nesta construção (itens de trabalho completos)&lt;/li>&#xD;
+    &lt;li>Quais mudanças estão parcialmente nesta construção (itens de trabalho que estão parcialmente completos)&lt;/li>&#xD;
+    &lt;li>Quais mudanças não estão nesta construção (itens de trabalho que não estão nesta construção)&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Nível de Verificação&lt;/strong> - identificando a quantidade de teste que está completa. Por exemplo,&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Unidade Testada&lt;/li>&#xD;
+    &lt;li>Integração Testada&lt;/li>&#xD;
+    &lt;li>Sistema Testado&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>O ciclo de vida de promoção coordena e sincroniza os esforços da equipe de desenvolvimento. Este ciclo de vida consiste dos seguintes passos:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>As mudanças são introduzidas no sistema na forma de &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/change_set_430BF233.html&quot; guid=&quot;_1QU9MAIoEdyLh7vsrHZ4YA&quot;>Conjuntos de Mudanças&lt;/a> completos&lt;/li>&#xD;
+    &lt;li>Uma construção é gerada identificando claramente as mudanças incluídas nela&lt;/li>&#xD;
+    &lt;li>Os testes são executados&lt;/li>&#xD;
+    &lt;li>Quando os testes forem bem sucedidos, as mudanças serão marcadas com o nível apropriado de verificação através de rotulação, colocação em linha de base ou outra técnica relacionada.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Finalmente todos os testes necessários são completados e um novo incremento do sistema está pronto.&lt;/p>&#xD;
+&lt;p>&lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/workspace_722BBA90.html&quot; guid=&quot;_0cEmAMlgEdmt3adZL5Dmdw&quot;>Espaços de Trabalho&lt;/a> separados são frequentemente usados como contexto para cada nível de teste. À medida que as mudanças são adicionadas ao &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/workspace_722BBA90.html&quot; guid=&quot;_0cEmAMlgEdmt3adZL5Dmdw&quot;>Espaço de Trabalho&lt;/a>, sua consistência é verificada e elas são testadas. Isto assegura que o esforço de testar uma construção seja aplicado ao conjunto de mudanças correto, torna o contexto para o teste estável, e também permite que os desenvolvedores continuem trabalhando na próxima construção enquanto os testes estiverem sendo executados.&lt;/p>&#xD;
+&lt;p>Um ciclo de vida de promoção de mudanças, tal como este, oferece três principais benefícios&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>Reduz o esforço porque não há nenhuma razão para executar testes em estágios posteriores até que as mudanças passem do estágio atual. Por exemplo, você não mobiliza recursos para executar Testes de Sistema em uma construção até que ela passe pelos Testes de Desenvolvedor.&lt;/li>&#xD;
+    &lt;li>Ajuda a assegurar que um conjunto de mudanças, que tenha sido movido para a produção, tenha sido primeiramente submetido ao nível apropriado de teste.&lt;/li>&#xD;
+    &lt;li>Simplifica a depuração de erros visto que os desenvolvedores podem basear seu trabalho, em um conjunto de mudanças aprovado, de forma isolada das mudanças executadas por outros desenvolvedores.&lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;p>Para um exemplo desta abordagem, veja &lt;a href=&quot;http://www.agiledata.org/essays/sandboxes.html&quot; target=&quot;_blank&quot;>Caixas-de-areia de Desenvolvimento: Uma &quot;Melhor&quot; Prática Ágil&lt;/a>.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

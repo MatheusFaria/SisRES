@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-EytH4BCNGiHF6pZrp8ISCw" name="new_concept,_eFElAOK2EdqHEo0wLIc5jg" guid="-EytH4BCNGiHF6pZrp8ISCw" authors="Mark Dickson" changeDate="2006-07-07T08:53:04.786-0300" changeDescription="First Draft" version="1.0">
+  <mainDescription>&lt;p>Nem todos os requisitos têm igual significância na arquitetura. Alguns desempenham um papel importante na determinação da arquitetura do sistema, mas outros não.&lt;/p>&#xD;
+&lt;p>Decidir se um requisito específico é arquiteturalmente significante é normalmente uma questão de julgamento. Normalmente, eles são requisitos tecnicamente desafiantes, tecnicamente restritivos ou centrais para a finalidade do sistema.&lt;/p>&#xD;
+&lt;p>Bons exemplos de Requisitos Arquiteturalmente Significantes são:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>O sistema deve gravar cada modificação nos registros do cliente para finalidade de auditoria.&lt;/li>&#xD;
+    &lt;li>O sistema deve responder dentro de 5 segundos.&lt;/li>&#xD;
+    &lt;li>O sistema deve ser implantado no Microsoft Windows XP e no Linux.&lt;/li>&#xD;
+    &lt;li>O sistema deve encriptar todo o tráfego da rede.&lt;/li>&#xD;
+    &lt;li>O sistema ATM deve dispensar o dinheiro sob demanda para portadores de contas validadas e com saldo suficiente.&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

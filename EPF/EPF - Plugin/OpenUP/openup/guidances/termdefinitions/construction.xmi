@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-5wJmUR0WqX7lCIxsyqFsdA" name=",_0sD60EvDEdunZcj9T5hrMQ" guid="-5wJmUR0WqX7lCIxsyqFsdA" changeDate="2007-05-02T13:55:40.503-0300" version="1.0.0">
+  <mainDescription>A terceira fase do ciclo de vida de projeto do OpenUP, na qual o software é evoluído de uma arquitetura executável em linha de base até o momento em que esteja pronto para ser entregue à comunidade de usuários.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

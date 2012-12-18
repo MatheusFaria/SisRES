@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-GRJW_KNOJoEQF3r6lmBrEw" name=",_0hmKgBOMEduCNqgZdt_OaA" guid="-GRJW_KNOJoEQF3r6lmBrEw" changeDate="2007-07-11T12:07:24.031-0300" version="1.0.0">
+  <mainDescription>&lt;p>A finalidade desta fase é conseguir concordância de todos os Stakeholders sobre os objetivos do ciclo de vida para o projeto, e tomar a decisão de continuar ou parar o projeto.&lt;/p>&#xD;
+&lt;p>Existem quatro objetivos na fase de Concepção que esclarecem o escopo, os objetivos do projeto e a viabilidade da solução pretendida &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#KRO03&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[KRO03]&lt;/a>:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Determine a&lt;/b> &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/workproducts/vision_2E71B03C.html&quot; guid=&quot;_0WVxcMlgEdmt3adZL5Dmdw&quot;>&lt;b>Visão&lt;/b>&lt;/a>, o escopo do sistema, e seus limites. Identifique &lt;b>quem&lt;/b> está interessado no sistema e &lt;b>porque&lt;/b> (veja &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholders&lt;/a>).&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Identifique as principais funcionalidades do sistema.&lt;/b> Decida quais requisitos são mais críticos.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Determine pelo menos uma solução possível.&lt;/b> Identifique pelo menos uma arquitetura candidata e sua viabilidade.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Entenda&lt;/b> o custo, o cronograma e os riscos associados ao projeto.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;h4>Principais considerações&lt;/h2>&#xD;
+&lt;p>Os projetos podem ter uma ou mais iterações na fase de Concepção. Entre algumas razões para ter múltiplas iterações na fase de Concepção, você encontra:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Sistema sem precedentes.&lt;/li>&#xD;
+    &lt;li>Muitos Stakeholders com necessidades conflitantes e relacionamentos complexos.&lt;/li>&#xD;
+    &lt;li>Grandes riscos demandam a criação de um protótipo ou prova de conceito.&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

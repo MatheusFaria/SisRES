@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-ketzwgDgY82DMyfuHqu3Cw" name=",_U_olUEvDEdunZcj9T5hrMQ" guid="-ketzwgDgY82DMyfuHqu3Cw" changeDate="2007-04-16T15:45:58.679-0300" version="1.0.0">
+  <mainDescription>Requisitos que definem atributos de qualidade do sistema necessários tais como desempenho, usabilidade e confiabilidade, bem como os requisitos funcionais globais que não são capturados nos artefatos de requisitos comportamentais tais como os casos de uso.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

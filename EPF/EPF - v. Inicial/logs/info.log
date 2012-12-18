@@ -1,0 +1,358 @@
+Info: CustomCategory:Categoria SisRes: 15 mini seconds publishing element
+Info: DeliveryProcess:SisRES: 625 mini seconds publishing element
+Info: DeliveryProcess:SisRES: 5770 mini seconds publishing process specific layout data
+Info: Phase:Iniciação: 184 mini seconds publishing element
+Info: Iteration:Iteração de iniciação: 322 mini seconds publishing element
+Info: Activity:Iniciar o projeto: 262 mini seconds publishing element
+Info: TaskDescriptor:Gerar o Plano de Projeto: 9 mini seconds publishing element
+Info: TaskDescriptor:Desenvolver solução técnica: 6 mini seconds publishing element
+Info: : 1104 mini-second(s) publishing element Activity:Iniciar o projeto[SisRES\deliveryprocesses\Iniciar o projeto_6C8ECE9E.html]
+Info: Activity:Iniciar o projeto: 1104 mini seconds publishing element
+Info: TaskDescriptor:Gerar o Plano de Iteração: 24 mini seconds publishing element
+Info: Activity:Preparar ambiente: 155 mini seconds publishing element
+Info: TaskDescriptor:Ferramentas: 4 mini seconds publishing element
+Info: TaskDescriptor:Gerenciar Iteração: 9 mini seconds publishing element
+Info: TaskDescriptor:Avaliação de resultados: 10 mini seconds publishing element
+Info: Activity:Iniciar o projeto: 322 mini seconds publishing element
+Info: TaskDescriptor:Identificar os requisitos do sistema: 8 mini seconds publishing element
+Info: TaskDescriptor:Detalhar cenários de Casos de Usos: 6 mini seconds publishing element
+Info: TaskDescriptor:Fazer casos de teste: 19 mini seconds publishing element
+Info: Activity:Iniciar o projeto: 176 mini seconds publishing element
+Info: TaskDescriptor:Documento de Arquitetura: 6 mini seconds publishing element
+Info: Phase:Planejamento: 230 mini seconds publishing element
+Info: Iteration:Iteração de elaboração: 409 mini seconds publishing element
+Info: Activity:Planejar e gerenciar a iteração: 672 mini seconds publishing element
+Info: TaskDescriptor:Gerar o Plano de Iteração: 10 mini seconds publishing element
+Info: Activity:Planejar e gerenciar a iteração: 156 mini seconds publishing element
+Info: TaskDescriptor:Ferramentas: 5 mini seconds publishing element
+Info: TaskDescriptor:Gerar o Plano de Iteração_1: 10 mini seconds publishing element
+Info: TaskDescriptor:Avaliação de resultados: 9 mini seconds publishing element
+Info: Activity:Planejar e gerenciar a iteração: 339 mini seconds publishing element
+Info: TaskDescriptor:Identificar os requisitos do sistema: 8 mini seconds publishing element
+Info: TaskDescriptor:Detalhar cenários de Casos de Usos: 8 mini seconds publishing element
+Info: TaskDescriptor:Fazer casos de teste: 7 mini seconds publishing element
+Info: Activity:Planejar e gerenciar a iteração: 186 mini seconds publishing element
+Info: Activity:Desenvolver solução técnica: 376 mini seconds publishing element
+Info: TaskDescriptor:Desenvolver solução técnica: 5 mini seconds publishing element
+Info: TaskDescriptor:Implementar teste do desenvolvedor: 5 mini seconds publishing element
+Info: TaskDescriptor:Implementar solução: 6 mini seconds publishing element
+Info: TaskDescriptor:Executar testes do desenvolvedor: 5 mini seconds publishing element
+Info: TaskDescriptor:Gerar Build: 5 mini seconds publishing element
+Info: Activity:Planejar e gerenciar a iteração: 441 mini seconds publishing element
+Info: TaskDescriptor:Desenvolver solução técnica: 7 mini seconds publishing element
+Info: TaskDescriptor:Implementar teste do desenvolvedor: 8 mini seconds publishing element
+Info: TaskDescriptor:Implementar solução: 7 mini seconds publishing element
+Info: TaskDescriptor:Executar testes do desenvolvedor: 8 mini seconds publishing element
+Info: TaskDescriptor:Gerar Build: 6 mini seconds publishing element
+Info: Activity:Planejar e gerenciar a iteração: 229 mini seconds publishing element
+Info: TaskDescriptor:Implementar dos Testes: 9 mini seconds publishing element
+Info: TaskDescriptor:Executar testes: 7 mini seconds publishing element
+Info: Activity:Planejar e gerenciar a iteração: 309 mini seconds publishing element
+Info: TaskDescriptor:Pedido de mudança: 6 mini seconds publishing element
+Info: Phase:Transição: 227 mini seconds publishing element
+Info: Iteration:Iteração de construção: 363 mini seconds publishing element
+Info: Activity:Planejar e gerenciar iteração: 726 mini seconds publishing element
+Info: TaskDescriptor:Gerar o Plano de Iteração: 13 mini seconds publishing element
+Info: Activity:Preparar ambiente: 174 mini seconds publishing element
+Info: TaskDescriptor:Ferramentas: 4 mini seconds publishing element
+Info: TaskDescriptor:Gerenciar Iteração: 8 mini seconds publishing element
+Info: TaskDescriptor:Avaliação de resultados: 9 mini seconds publishing element
+Info: Activity:Identificar e refinar requisitos: 729 mini seconds publishing element
+Info: TaskDescriptor:Identificar os requisitos do sistema: 10 mini seconds publishing element
+Info: TaskDescriptor:Detalhar cenários de Casos de Usos: 6 mini seconds publishing element
+Info: TaskDescriptor:Fazer casos de teste: 7 mini seconds publishing element
+Info: Activity:Desenvolver solução incremental: 424 mini seconds publishing element
+Info: TaskDescriptor:Desenvolver solução técnica: 5 mini seconds publishing element
+Info: TaskDescriptor:Implementar teste do desenvolvedor: 6 mini seconds publishing element
+Info: TaskDescriptor:Implementar solução: 7 mini seconds publishing element
+Info: TaskDescriptor:Executar testes do desenvolvedor: 6 mini seconds publishing element
+Info: TaskDescriptor:Gerar Build: 6 mini seconds publishing element
+Info: Activity:Testar solução: 219 mini seconds publishing element
+Info: TaskDescriptor:Implementar dos Testes: 7 mini seconds publishing element
+Info: TaskDescriptor:Executar testes: 8 mini seconds publishing element
+Info: Activity:Tarefas em andamento: 341 mini seconds publishing element
+Info: TaskDescriptor:Pedido de mudança: 6 mini seconds publishing element
+Info: Phase:Transição: 214 mini seconds publishing element
+Info: Iteration:Iteração de transição: 309 mini seconds publishing element
+Info: Activity:Planejar e gerenciar iteração: 743 mini seconds publishing element
+Info: TaskDescriptor:Gerar o Plano de Iteração: 10 mini seconds publishing element
+Info: Activity:Preparar ambiente: 158 mini seconds publishing element
+Info: TaskDescriptor:Ferramentas: 4 mini seconds publishing element
+Info: TaskDescriptor:Gerenciar Iteração: 9 mini seconds publishing element
+Info: TaskDescriptor:Avaliação de resultados: 21 mini seconds publishing element
+Info: Activity:Desenvolver solução técnica: 458 mini seconds publishing element
+Info: TaskDescriptor:Desenvolver solução técnica: 5 mini seconds publishing element
+Info: TaskDescriptor:Implementar teste do desenvolvedor: 6 mini seconds publishing element
+Info: TaskDescriptor:Implementar solução: 7 mini seconds publishing element
+Info: TaskDescriptor:Executar testes do desenvolvedor: 5 mini seconds publishing element
+Info: TaskDescriptor:Gerar Build: 5 mini seconds publishing element
+Info: Activity:Testar solução: 234 mini seconds publishing element
+Info: TaskDescriptor:Implementar Testes: 7 mini seconds publishing element
+Info: TaskDescriptor:Executar testes: 7 mini seconds publishing element
+Info: Activity:Tarefas em andamento: 281 mini seconds publishing element
+Info: TaskDescriptor:Pedido de mudança: 5 mini seconds publishing element
+Info: RoleDescriptor:Analista: 7 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 5 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 3 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 6 mini seconds publishing element
+Info: RoleDescriptor:Tester: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Build: 11 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de teste: 7 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Design: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Arquitetura: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 7 mini seconds publishing element
+Info: WorkProductDescriptor:Ferramentas_1: 15 mini seconds publishing element
+Info: WorkProductDescriptor:Implementação: 9 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de itens de trabalho: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de riscos: 11 mini seconds publishing element
+Info: WorkProductDescriptor:Log de teste: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Plano da iteração: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Plano do projeto: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Script de teste: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Teste de desenvolvedor: 6 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 12 mini seconds publishing element
+Info: RoleDescriptor:Analista: 11 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 13 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 9 mini seconds publishing element
+Info: RoleDescriptor:Tester: 11 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de itens de trabalho: 15 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 9 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Plano da iteração: 16 mini seconds publishing element
+Info: WorkProductDescriptor:Plano do projeto: 7 mini seconds publishing element
+Info: RoleDescriptor:Analista: 9 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 5 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 6 mini seconds publishing element
+Info: RoleDescriptor:Tester: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 12 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 24 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de itens de trabalho: 7 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 6 mini seconds publishing element
+Info: RoleDescriptor:Analista: 7 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 4 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Arquitetura_1: 7 mini seconds publishing element
+Info: Task:Gerar o Plano de Projeto: 28 mini seconds publishing element
+Info: Role:Gerente: 184 mini seconds publishing element
+Info: Role:Analista: 166 mini seconds publishing element
+Info: Artifact:Caso de uso: 75 mini seconds publishing element
+Info: Artifact:Lista de itens de trabalho: 80 mini seconds publishing element
+Info: Artifact:Modelo de caso de uso: 75 mini seconds publishing element
+Info: Artifact:Plano do projeto: 35 mini seconds publishing element
+Info: Task:Desenvolver solução técnica: 51 mini seconds publishing element
+Info: RoleDescriptor:Analista: 5 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 5 mini seconds publishing element
+Info: Role:Arquiteto: 140 mini seconds publishing element
+Info: Role:Desenvolvedor: 178 mini seconds publishing element
+Info: Role:Tester: 208 mini seconds publishing element
+Info: Artifact:Lista de riscos: 37 mini seconds publishing element
+Info: Task:Gerar o Plano de Iteração: 40 mini seconds publishing element
+Info: Task:Ferramentas: 33 mini seconds publishing element
+Info: Artifact:Ferramentas: 43 mini seconds publishing element
+Info: Task:Gerenciar Iteração: 31 mini seconds publishing element
+Info: Task:Avaliação de resultados: 34 mini seconds publishing element
+Info: Task:Identificar os requisitos do sistema: 31 mini seconds publishing element
+Info: Task:Fazer casos de teste: 33 mini seconds publishing element
+Info: Artifact:Caso de teste: 53 mini seconds publishing element
+Info: Task:Detalhar cenários de Casos de Usos: 43 mini seconds publishing element
+Info: Task:Documento de Arquitetura: 23 mini seconds publishing element
+Info: Artifact:Documento de Arquitetura: 43 mini seconds publishing element
+Info: RoleDescriptor:Analista: 7 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 8 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 6 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 11 mini seconds publishing element
+Info: RoleDescriptor:Tester: 7 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de teste: 7 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Arquitetura: 9 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Ferramentas_1: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de itens de trabalho: 9 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de riscos: 11 mini seconds publishing element
+Info: WorkProductDescriptor:Log de teste: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Plano da iteração: 10 mini seconds publishing element
+Info: WorkProductDescriptor:Plano do projeto: 4 mini seconds publishing element
+Info: RoleDescriptor:Analista: 6 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 6 mini seconds publishing element
+Info: RoleDescriptor:Analista: 7 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 6 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 17 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 7 mini seconds publishing element
+Info: RoleDescriptor:Tester: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de itens de trabalho: 9 mini seconds publishing element
+Info: WorkProductDescriptor:Plano da iteração: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Log de teste: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 4 mini seconds publishing element
+Info: RoleDescriptor:Analista: 9 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 5 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 5 mini seconds publishing element
+Info: RoleDescriptor:Tester: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 10 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 10 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de itens de trabalho: 5 mini seconds publishing element
+Info: RoleDescriptor:Analista: 6 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 3 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 3 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 7 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 7 mini seconds publishing element
+Info: RoleDescriptor:Tester: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Build: 9 mini seconds publishing element
+Info: WorkProductDescriptor:Implementação: 10 mini seconds publishing element
+Info: WorkProductDescriptor:Design: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Teste de desenvolvedor: 6 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 9 mini seconds publishing element
+Info: RoleDescriptor:Tester: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 14 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Log de teste: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Script de teste: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de teste: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Build: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Implementação: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Script de teste: 7 mini seconds publishing element
+Info: WorkProductDescriptor:Log de teste: 5 mini seconds publishing element
+Info: RoleDescriptor:Analista: 5 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 5 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 5 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 6 mini seconds publishing element
+Info: RoleDescriptor:Tester: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de itens de trabalho: 7 mini seconds publishing element
+Info: RoleDescriptor:Analista: 5 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 3 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 6 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 11 mini seconds publishing element
+Info: RoleDescriptor:Tester: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 3 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 4 mini seconds publishing element
+Info: Task:Implementar teste do desenvolvedor: 31 mini seconds publishing element
+Info: Task:Executar testes do desenvolvedor: 44 mini seconds publishing element
+Info: Task:Gerar Build: 33 mini seconds publishing element
+Info: Artifact:Build: 49 mini seconds publishing element
+Info: Artifact:Teste de desenvolvedor: 29 mini seconds publishing element
+Info: Artifact:Log de teste: 69 mini seconds publishing element
+Info: Artifact:Script de teste: 47 mini seconds publishing element
+Info: Task:Implementar solução: 32 mini seconds publishing element
+Info: Task:Implementar Testes: 28 mini seconds publishing element
+Info: Task:Executar testes: 40 mini seconds publishing element
+Info: Task:Pedido de mudança: 33 mini seconds publishing element
+Info: RoleDescriptor:Analista: 10 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 9 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 19 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 12 mini seconds publishing element
+Info: RoleDescriptor:Tester: 9 mini seconds publishing element
+Info: WorkProductDescriptor:Build: 10 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de teste: 7 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 7 mini seconds publishing element
+Info: WorkProductDescriptor:Design: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Arquitetura: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Ferramentas_1: 7 mini seconds publishing element
+Info: WorkProductDescriptor:Implementação: 11 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de itens de trabalho: 16 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de riscos: 11 mini seconds publishing element
+Info: WorkProductDescriptor:Log de teste: 7 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Plano da iteração: 16 mini seconds publishing element
+Info: WorkProductDescriptor:Plano do projeto: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Script de teste: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Teste de desenvolvedor: 7 mini seconds publishing element
+Info: RoleDescriptor:Analista: 10 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 5 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 6 mini seconds publishing element
+Info: RoleDescriptor:Tester: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 13 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 7 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 11 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de itens de trabalho: 6 mini seconds publishing element
+Info: RoleDescriptor:Analista: 16 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 4 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 3 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 7 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 12 mini seconds publishing element
+Info: RoleDescriptor:Tester: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Log de teste: 6 mini seconds publishing element
+Info: RoleDescriptor:Tester: 8 mini seconds publishing element
+Info: RoleDescriptor:Analista: 5 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de teste: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Build: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Implementação: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Script de teste: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Log de teste: 5 mini seconds publishing element
+Info: RoleDescriptor:Analista: 6 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 6 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 5 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 7 mini seconds publishing element
+Info: RoleDescriptor:Tester: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de itens de trabalho: 8 mini seconds publishing element
+Info: RoleDescriptor:Analista: 6 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 5 mini seconds publishing element
+Info: RoleDescriptor:Analista: 11 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 9 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 9 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 12 mini seconds publishing element
+Info: RoleDescriptor:Tester: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Build: 9 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de teste: 16 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Design: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Arquitetura: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Ferramentas_1: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Implementação: 10 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de itens de trabalho: 15 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de riscos: 12 mini seconds publishing element
+Info: WorkProductDescriptor:Log de teste: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Plano da iteração: 16 mini seconds publishing element
+Info: WorkProductDescriptor:Plano do projeto: 7 mini seconds publishing element
+Info: WorkProductDescriptor:Script de teste: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Teste de desenvolvedor: 6 mini seconds publishing element
+Info: RoleDescriptor:Analista: 6 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 3 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 3 mini seconds publishing element
+Info: WorkProductDescriptor:Documento de Visão: 10 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 13 mini seconds publishing element
+Info: RoleDescriptor:Tester: 4 mini seconds publishing element
+Info: WorkProductDescriptor:Caso de uso: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Modelo de caso de uso: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Log de teste: 5 mini seconds publishing element
+Info: RoleDescriptor:Tester: 8 mini seconds publishing element
+Info: RoleDescriptor:Analista: 5 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 5 mini seconds publishing element
+Info: WorkProductDescriptor:Build: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Implementação: 16 mini seconds publishing element
+Info: WorkProductDescriptor:Script de teste: 8 mini seconds publishing element
+Info: WorkProductDescriptor:Log de teste: 5 mini seconds publishing element
+Info: RoleDescriptor:Analista: 5 mini seconds publishing element
+Info: RoleDescriptor:Arquiteto: 5 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 5 mini seconds publishing element
+Info: RoleDescriptor:Gerente: 6 mini seconds publishing element
+Info: RoleDescriptor:Tester: 6 mini seconds publishing element
+Info: WorkProductDescriptor:Lista de itens de trabalho: 8 mini seconds publishing element
+Info: RoleDescriptor:Analista: 5 mini seconds publishing element
+Info: RoleDescriptor:Desenvolvedor: 4 mini seconds publishing element
+Info: Artifact:Design: 31 mini seconds publishing element
+Info: Artifact:Documento de Visão: 74 mini seconds publishing element
+Info: Artifact:Implementação: 57 mini seconds publishing element
+Info: Artifact:Plano da iteração: 41 mini seconds publishing element
+Info: Artifact:Processo de projeto definido: 10 mini seconds publishing element
+Info: RoleSet:openup_roles: 13 mini seconds publishing element
+Info: Artifact:Release: 10 mini seconds publishing element
+Info: Task:Executar release: 10 mini seconds publishing element
+Info: : Publishing time: 0 minutes 24 seconds

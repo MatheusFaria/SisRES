@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-mFnoIulBQ7JrxiaHVCrE7A" name="new_checklist,_OhJKUNWsEduaE6F4-SvXzg" guid="-mFnoIulBQ7JrxiaHVCrE7A" changeDate="2007-07-25T16:48:32.932-0300" version="1.0.0">
+  <mainDescription>&lt;p>Os itens nesta lista de verificação representam boas práticas para criar uma implementação de alta qualidade. Tente trabalhar cada item com a maior extensão possível para criar a melhor implementação. Pode não ser possível utilizar todos os itens, e alguns itens podem ser utilizados com abrangência limitada. Nestes casos, tenha certeza que existem boas razões para utilizar um item parcialmente ou não utiliza-lo.&lt;/p>&#xD;
+&lt;p>Esta lista de verificação não deve ser considerada somente para revisões pesadas de código Cada desenvolvedor deve manter em mente os critérios de qualidade constantes nestes itens de verificação durante a codificação. Quando os desenvolvedores trabalham juntos, a revisão, de acordo com esses critérios, deve ser feita imediatamente de forma que a qualidade esteja assegurada logo assim que eles escrevam o código.&lt;/p>&#xD;
+&lt;p>A divergência apropriada dos critérios de qualidade descritos aqui pode ser somente um comentário na implementação de forma que os desenvolvedores que examinarem o código no futuro saibam por que a exceção ocorreu.&lt;/p></mainDescription>
+  <sections xmi:id="_q8zSoNWsEduaE6F4-SvXzg" name="A implementação está em conformidade com a arquitetura e o design?" guid="_q8zSoNWsEduaE6F4-SvXzg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>A implementação está estruturada da forma que está especificado no design?&lt;/li>&#xD;
+  &lt;li>Todas as funções do design estão implementadas?&lt;/li>&#xD;
+  &lt;li>Todas as interfaces do design estão implementadas de acordo com suas especificações?&lt;/li>&#xD;
+  &lt;li>A implementação adere a todas as restrições arquiteturais e de design?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_vb-zsNWsEduaE6F4-SvXzg" name="A implementação é testável?" guid="_vb-zsNWsEduaE6F4-SvXzg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>Você pode testar o comportamento esperado no nível de unidade?&lt;/li>&#xD;
+  &lt;li>O código está escrito de forma que todos os caminhos possam ser exercitados?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_djoQENXCEduaE6F4-SvXzg" name="A implementação está correta?" guid="_djoQENXCEduaE6F4-SvXzg">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>A implementação passou em todos os testes de desenvolvedor com sucesso?&lt;/li>&#xD;
+  &lt;li>A implementação suporta os critérios de aceitação dos casos de testes?&lt;/li>&#xD;
+  &lt;li>Todo o código é executável (sem áreas mortas)?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_D4YyoO24EduHHNqbab9GOA" name="A implementação está entendível?" guid="_D4YyoO24EduHHNqbab9GOA">
+    <sectionDescription>&lt;ul>&#xD;
+  &lt;li>A implementação expressa claramente a intenção do desenvolvedor?&lt;/li>&#xD;
+  &lt;li>O código está aderente às diretrizes de codificação? Se um conjunto de Diretrizes de codificação não foi identificado, o código deve ser verificado para uma variedade de questões de consistência, tais como convenção de nomes, indentação, espaçamento, etc.&lt;/li>&#xD;
+  &lt;li>Os nomes das variáveis são fáceis de entender? Eles descrevem o propósito da variável?&lt;/li>&#xD;
+  &lt;li>Todos os comentários são necessários para o entendimento do código associado? Os comentários devem melhorar o entendimento do código, ao invés de simplesmente repeti-lo&lt;/li>&#xD;
+  &lt;li>Todos os comentários estão corretos?&lt;/li>&#xD;
+  &lt;li>A implementação corresponde exatamente à documentação?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_klOGANvBEduy3tw_ntB-3g" name="Não existe nenhuma redundância?" guid="_klOGANvBEduy3tw_ntB-3g">
+    <sectionDescription>&lt;p>Não existe nenhuma redundância na implementação? (Identifique candidatos para re-fatoração)&lt;/p></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

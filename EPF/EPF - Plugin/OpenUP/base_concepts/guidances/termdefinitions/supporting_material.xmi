@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-_-iQ4eQyiQVM7YhXcb90-g" name="new_term_definition,_SwvUgMaIEduMlb2cQZNTYw" guid="-_-iQ4eQyiQVM7YhXcb90-g" changeDate="2007-02-27T14:33:31.807-0300" version="7.2.0">
+  <mainDescription>Uma &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/guidance_549AC394.html&quot; guid=&quot;_83ttAB_NEdq6CKKKq4D7YA&quot;>orientação&lt;/a>, que é um agrupamento para outros tipos de orientação não definidas especificamente em outros lugares.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

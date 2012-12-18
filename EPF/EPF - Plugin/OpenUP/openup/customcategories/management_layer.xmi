@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-q8ubSlQ5miYcY1JXdj1fbQ" name="management_layer,_Aoz2gEmcEdu0xduwSKie-w" guid="-q8ubSlQ5miYcY1JXdj1fbQ" changeDate="2007-03-28T19:43:47.079-0300" version="1.0.0">
+  <mainDescription>&lt;p>É importante notar que a camada de Gestão é construída sob a fundamental &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/customcategories/collab_commun_layer_A3CDA6EF.html&quot; guid=&quot;_r8cVIEmbEdu0xduwSKie-w&quot;>Camada de comunicação e colaboração&lt;/a> para refletir a natureza colaborativa do gerenciamento de um projeto OpenUP. O gerente não deve planejar uma iteração sozinho, e então comunicar aos membros da equipe suas atribuições. Ao invés, o gerente deve agir mais como um instrutor, envolvendo toda a equipe no processo de planejamento para assegurar que:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>O conhecimento de todos está refletido no plano&lt;/li>&#xD;
+    &lt;li>Todos os membros da equipe estimaram seu próprio trabalho&lt;/li>&#xD;
+    &lt;li>Cada membro da equipe prontifica-se para pegar uma tarefa, mesmo sem ter sido dito exatamente o que deve ser feito&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Você encontra as tarefas da camada de Gestão na disciplina de &lt;strong>Gestão de Projeto&lt;/strong>, e os produtos de trabalho correspondentes no domínio Gestão de Projeto.&lt;/p>&#xD;
+&lt;p>A camada de Gestão está escrita de forma que sua organização possa modificá-la para se ajustar ao seu estilo de desenvolvimento, sem necessariamente afetar como você lida com as outras camadas (&lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/customcategories/solution_layer_8AA9BF96.html&quot; guid=&quot;_HEVvgEmcEdu0xduwSKie-w&quot;>camada de Solução&lt;/a> e &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/customcategories/intent_layer_33C0EF8F.html&quot; guid=&quot;_57_ZMEmbEdu0xduwSKie-w&quot;>camada de Intenção&lt;/a>).&lt;br />&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

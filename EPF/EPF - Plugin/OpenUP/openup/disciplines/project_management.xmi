@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_GybfgLv-EdmmUvZAZjqE3g" name="project_management,_0TqQ4MlgEdmt3adZL5Dmdw" guid="_GybfgLv-EdmmUvZAZjqE3g" changeDate="2007-07-16T08:25:33.306-0300" version="1.0.0">
+  <mainDescription>&lt;p>O propósito desta disciplina é:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Encorajar o consenso dos Stakeholders na priorização da seqüência de trabalho&lt;/li>&#xD;
+    &lt;li>Simular a colaboração da equipe na criação de planos de projeto de longo prazo e de curto prazo.&lt;/li>&#xD;
+    &lt;li>Manter a equipe focada na entrega contínua do software testado para a avaliação dos Stakeholders&lt;/li>&#xD;
+    &lt;li>Ajudar a criar um ambiente de trabalho eficaz para maximizar a produtividade da equipe&lt;/li>&#xD;
+    &lt;li>Manter os Stakeholders e a equipe informados sobre o progresso do projeto&lt;/li>&#xD;
+    &lt;li>Fornecer uma estrutura para controlar o risco do projeto e para adaptar-se continuamente às mudanças&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>A Gestão de Projeto é uma disciplina tipo guarda-chuva que afeta, e é afetada por, todas as outras disciplinas. As atividades da gestão de projeto adicionam valor ao criar um ambiente de trabalho de elevado desempenho onde:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Os Stakeholders acreditem na habilidade da equipe de entregar, com sucesso, algo valoroso e entender as capacidades e restrições da plataforma técnica&lt;/li>&#xD;
+    &lt;li>Os membros da equipe de projeto compreendam os desejos dos Stakeholders e confirmem que compreenderam, produzindo continuamente um produto de software executável para avaliação&lt;br />&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_6u9ZsKYcEdmvhNXG0Oc2uA" name="implementation,_0YoQcMlgEdmt3adZL5Dmdw" guid="_6u9ZsKYcEdmvhNXG0Oc2uA" authors="Jim Ruehlin" changeDate="2007-03-02T15:47:39.492-0300" version="1.0.0">
+  <mainDescription>&lt;p>Este artefato é a coleção de um ou mais dos seguintes elementos:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Arquivos de código fonte&lt;/li>&#xD;
+    &lt;li>Arquivos de dados&lt;/li>&#xD;
+    &lt;li>Scripts de construção&lt;/li>&#xD;
+    &lt;li>Outros arquivos que são transformados no sistema executável&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <purpose>&lt;p>Para representar as partes físicas que compõem o sistema a ser construído, organizado de forma que seja compreensível e gerenciável.&lt;/p></purpose>
+  <representationOptions>&lt;p>Arquivos de implementação representados como arquivos no sistema de arquivos local. As pastas de arquivos (diretórios), representadas como pacotes, agrupam os arquivos em unidades lógicas.&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

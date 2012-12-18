@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_TZiasMM1EdmSIPI87WLu3g" name="component,_0YP18MlgEdmt3adZL5Dmdw" guid="_TZiasMM1EdmSIPI87WLu3g" changeDate="2007-05-30T15:38:20.555-0300" version="1.0.0">
+  <mainDescription>&lt;p align=&quot;left&quot;>A indústria e a literatura de software usam o termo &lt;strong>componente&lt;/strong> para referenciar muitas coisas diferentes. É usado normalmente com sentido amplo para significar uma parte constituinte. Também é normalmente usado com sentido restrito para denotar as características específicas que permitem a recolocação e a montagem em sistemas maiores.&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>Aqui. Nós usamos o termo &lt;em>componente&lt;/em> para significar &lt;strong>uma parte encapsulada de um sistema&lt;/strong> que é não trivial, quase independente, substituível e que cumpra uma função específica no contexto de uma arquitetura bem definida. Incluindo dois tipos de componentes:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;div align=&quot;left&quot;>&#xD;
+            &lt;p>&#xD;
+                &lt;strong>Componente de design&lt;/strong>, uma significativa parte do design encapsulada que inclui subsistemas de design e, às vezes, significantes classes de design e pacotes de design.&lt;/p>&#xD;
+        &lt;/div>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;div align=&quot;left&quot;>&#xD;
+            &lt;p>&#xD;
+                &lt;strong>Componente de implementação&lt;/strong>, uma significativa parte encapsulada da implementação, geralmente o código que implementa um componente de design.&lt;/p>&#xD;
+        &lt;/div>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p align=&quot;left&quot;>Idealmente, a implementação reflete o design; sendo assim, você pode simplesmente se referenciar aos &lt;em>componentes&lt;/em>, visto que cada componente tem um design e uma implementação.&lt;/p>&#xD;
+&lt;h4 align=&quot;left&quot;>Capacidade de substituição do componente&lt;/h4>&#xD;
+&lt;p align=&quot;left&quot;>Na terminologia da UML, os componentes podem ser substituíveis. Entretanto, isto pode simplesmente significar que o componente expõe um conjunto de interfaces que escondem sua implementação.&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>Existem outros tipos de capacidade de substituição mais fortes:&lt;/p>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;ul>&#xD;
+        &lt;li>&#xD;
+            &lt;p>&#xD;
+                &lt;strong>Capacidade de substituição de arquivo fonte&lt;/strong>: se duas classes forem implementadas em um único arquivo de código fonte, então essas classes não poderão ser controladas e ter versões de forma separada. Entretanto, se um grupo de arquivos implementa completamente um único componente, e nenhum outro, então os arquivos fonte do componente são substituíveis. Esta característica torna mais fácil o uso do controle de versão, o uso do arquivo como uma linha de base, e a reutilização do arquivo fonte.&lt;/p>&#xD;
+        &lt;/li>&#xD;
+        &lt;li>&#xD;
+            &lt;p>&#xD;
+                &lt;strong>Capacidade de substituição da implantação&lt;/strong>: se duas classes forem implantadas em um único arquivo executável, então as classes não têm capacidade de substituição independente em um sistema implantado. É desejável que os componentes mais genéricos sejam substituíveis durante a implantação, o que permite que as novas versões do componente sejam implantadas sem a necessidade da reconstrução dos outros componentes. Isto significa geralmente que existe um arquivo ou um grupo de arquivos que implantam este componente, e nenhum outro componente.&lt;/p>&#xD;
+        &lt;/li>&#xD;
+        &lt;li>&#xD;
+            &lt;p>&#xD;
+                &lt;strong>Capacidade de substituição em tempo de execução&lt;/strong>: se um componente pode ser implantado em um sistema em execução, então ele é conhecido como um &lt;em>substituível em tempo de execução&lt;/em>. Isto permite a atualização do software sem perda de disponibilidade.&lt;/p>&#xD;
+        &lt;/li>&#xD;
+        &lt;li>&#xD;
+            &lt;p>&#xD;
+                &lt;strong>Transparência de localização&lt;/strong>: os componentes com interfaces endereçáveis por rede são referenciados como tendo &lt;em>transparência de localização&lt;/em>. Isto permite que os componentes sejam re-alocados em outros servidores ou sejam replicados em múltiplos servidores para suportar tolerância à falhas, balanceamento de carga, etc. Estes tipos de componentes são normalmente referenciados como componentes &lt;em>distribuídos&lt;/em> ou &lt;em>que podem ser distribuídos&lt;/em>.&lt;/p>&#xD;
+        &lt;/li>&#xD;
+    &lt;/ul>&#xD;
+&lt;/div>&#xD;
+&lt;h4 align=&quot;left&quot;>Instanciação de componente&lt;/h4>&#xD;
+&lt;p align=&quot;left&quot;>Um componente pode ou não ser diretamente instanciado em tempo de execução.&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>Um componente indiretamente instanciado é implementado, ou realizado, por um grupo de classes, sub-componentes, ou partes. O próprio componente não aparece na implementação; serve meramente como um design que uma implementação deverá seguir. As classes de realização, sub-componentes ou partes devem cobrir todas as operações especificadas na interface do componente. A forma de implementar o componente é de responsabilidade da pessoa que implementa.&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>Um componente diretamente instanciado especifica sua própria implementação encapsulada. É instanciado como um objeto endereçável, o que significa que um componente de design tem uma construção correspondente na linguagem de implementação; conseqüentemente ele pode ser referenciado explicitamente.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_KEldgMM1EdmSIPI87WLu3g" name="actor,_0VrDEMlgEdmt3adZL5Dmdw" guid="_KEldgMM1EdmSIPI87WLu3g" changeDate="2005-07-07T17:18:05.934-0300" version="7.2.0">
+  <sections xmi:id="_ytiigAYQEdubLa3RRn5f4A" name="Você encontrou todos os atores" guid="_ytiigAYQEdubLa3RRn5f4A">
+    <sectionDescription>Você encontrou todos os papéis no ambiente do sistema? Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/guidelines/find_and_outline_actors_and_ucs_BB5516A9.html&quot; guid=&quot;_eyL0wCu-EdqSxKAVa9kmvA&quot;>Diretriz: Encontrar e Descrever Atores e Casos de Uso&lt;/a> para algumas perguntas que podem auxiliar na identificação de atores.</sectionDescription>
+  </sections>
+  <sections xmi:id="_AcjQMAYREdubLa3RRn5f4A" name="Cada ator está envolvido com no mínimo um caso de uso?" guid="_AcjQMAYREdubLa3RRn5f4A">
+    <sectionDescription>Se você não puder identificar um caso de uso associado a um ator, talvez o ator deva ser desconsiderado ou você tenha esquecido algum caso de uso.</sectionDescription>
+  </sections>
+  <sections xmi:id="_P3mo8AYREdubLa3RRn5f4A" name="Você pode identificar pelo menos duas pessoas, ou sistemas externos, que poderão executar o papel de um determinado ator?" guid="_P3mo8AYREdubLa3RRn5f4A">
+    <sectionDescription>Se você não puder, verifique se o papel que o ator representa pertence a outro ator. Se este for o caso, você deve mesclar os atores.</sectionDescription>
+  </sections>
+  <sections xmi:id="_b640oAYREdubLa3RRn5f4A" name="Um determinado ator irá usar o sistema de formas totalmente diferentes?" guid="_b640oAYREdubLa3RRn5f4A">
+    <sectionDescription>&lt;p>Se for verdade, você provavelmente terá mais de um ator.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_iOHtQAYREdubLa3RRn5f4A" name="Um ator tem vários propósitos, completamente diferentes, para usar o sistema?" guid="_iOHtQAYREdubLa3RRn5f4A">
+    <sectionDescription>Se for verdade, pode ser que exista mais de um ator</sectionDescription>
+  </sections>
+  <sections xmi:id="_ptfB0AYREdubLa3RRn5f4A" name="Você considerou papéis administrativos e de manutenção?" guid="_ptfB0AYREdubLa3RRn5f4A">
+    <sectionDescription>É comum focar nos usuários rotineiros do sistema e esquecer dos papéis administrativos e de manutenção tais como criações de contas de usuário, gerenciamento de direitos de acesso, execução de backups, etc. Assegure-se que você tenha capturado esses atores.</sectionDescription>
+  </sections>
+  <sections xmi:id="_2i_UoAYREdubLa3RRn5f4A" name="Cada ator tem uma descrição clara de seu papel?" guid="_2i_UoAYREdubLa3RRn5f4A">
+    <sectionDescription>Cada ator deve ter uma descrição resumida do papel e do principal objetivo que ele tem no uso do sistema.</sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

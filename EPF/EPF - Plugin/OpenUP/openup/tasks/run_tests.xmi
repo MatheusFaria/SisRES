@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_NrbRUqeqEdmKDbQuyzCoqQ" name="run_tests,_0jVEkMlgEdmt3adZL5Dmdw" guid="_NrbRUqeqEdmKDbQuyzCoqQ" changeDate="2007-06-01T17:21:00.703-0300" version="1.0.0">
+  <sections xmi:id="_xnl4oA_hEdyi96l9YvaMVA" name="Revise os itens trabalhos concluídos na construção" guid="_xnl4oA_hEdyi96l9YvaMVA">
+    <sectionDescription>Revise os itens de trabalho que foram integrados na construção desde o último ciclo de teste. Foque na identificação de qualquer requisito anteriormente não implementado ou que esteja falhando, e que seja esperado que alcance as condições de satisfação.</sectionDescription>
+  </sections>
+  <sections xmi:id="_3Fd2kA_hEdyi96l9YvaMVA" name="Selecione os Scripts de Teste" guid="_3Fd2kA_hEdyi96l9YvaMVA">
+    <sectionDescription>&lt;p>Selecione os Scripts de Teste relacionados aos itens de trabalho concluídos na construção.&lt;/p>&#xD;
+&lt;p>Idealmente, cada ciclo de teste deverá executar todos os scripts de teste, mas alguns tipos de testes consomem muito tempo e deve ser questionada a sua inclusão em cada ciclo de teste. Para testes manuais ou que consomem muito tempo, inclua scripts de teste que forneçam o resultado mais útil sobre o amadurecimento da solução com base nos objetivos da iteração.&lt;/p>&#xD;
+&lt;p>Planeje suítes de teste para simplificar o processo de seleção de testes para cada construção (veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/test_suite_D54EEBED.html&quot; guid=&quot;_0aDz0MlgEdmt3adZL5Dmdw&quot;>Diretriz: Suíte de Teste&lt;/a>).&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_gV408KuSEdmhFZtkg1nakg" name="Execute Scripts de Teste na construção" guid="_gV408KuSEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Execute os testes usando procedimentos passo-a-passo no &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/test_script_39A30BA2.html&quot; guid=&quot;_0ZfMEMlgEdmt3adZL5Dmdw&quot;>Script de Teste&lt;/a>.&lt;/p>&#xD;
+&lt;p>Para scripts de teste automatizados, inicie a execução do teste. Os scripts de teste automatizados devem ser executados em suítes na sequência correta, e gravar os resultados do teste no Registro de Teste.&lt;/p>&#xD;
+&lt;p>Para executar um script de teste manual, estabeleça suas precondições e execute os passos registrando os resultados no &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/test_log_CBA2FDF4.html&quot; guid=&quot;_0ZlSsMlgEdmt3adZL5Dmdw&quot;>Registro de Teste&lt;/a>, e execute qualquer passo de desmontagem.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_0XzAwDO2EduqsLmIADMQ9g" name="Analise e comunique os resultados dos testes" guid="_0XzAwDO2EduqsLmIADMQ9g">
+    <sectionDescription>&lt;p>Coloque os resultados do teste em um local que seja acessível a toda a equipe, tal como um quadro branco ou uma Wiki.&lt;/p>&#xD;
+&lt;p>Para cada script de teste que tenha falhado, analise o Registro de Teste para identificar a causa da falha do teste. Comece com os testes que você esperava que passassem nesta construção mas que falharam, o que pode indicar itens de trabalho recém entregues que não atendem as condições de satisfação. Então revise os scripts de teste que previamente passaram e que agora estão falhando, o que pode indicar problemas regressivos na construção.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Se um teste falhou porque a solução não atendeu as condições de satisfação para o caso de teste, registre o problema na Lista de Itens de trabalho. No item de trabalho, identifique claramente o comportamento observado, o comportamento esperado e os passos necessários para repetir o problema. Dos testes que falharam, anote qual identificou primeiro o problema.&lt;/li>&#xD;
+    &lt;li>Se um teste falhou por causa de uma mudança no sistema (tal como uma mudança na interface de usuário), mas a implementação ainda atenda as condições de satisfação do caso de teste, atualize o script de teste para executar com sucesso na nova implementação.&lt;/li>&#xD;
+    &lt;li>Se um teste falhou porque o script de teste estava incorreto (um falso resultado negativo) ou passou quando era esperado que falhasse (um falso resultado positivo), atualize o script de teste para implementar corretamente as condições de satisfação do teste caso. Se o caso de teste para um requisito for inválido, execute a &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/tasks/request_change_A048C387.html&quot; guid=&quot;_0mwzEclgEdmt3adZL5Dmdw&quot;>Tarefa: Solicitação de Mudança&lt;/a> para modificar as condições de satisfação para o requisito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>É melhor atualizar os scripts de teste o mais rápido e continuamente possível (veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/tasks/implement_test_scripts_26F00282.html&quot; guid=&quot;_0jO98MlgEdmt3adZL5Dmdw&quot;>Tarefa: Implementar Scripts de Teste&lt;/a>). Se a mudança no script de teste for trivial, atualize o teste enquanto estiver analisando seus resultados. Se a mudança não for uma tarefa trivial, envie-a para a Lista de Itens de trabalho de forma que possa ser priorizada junto com as outras tarefas.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_i3flUBB5Edyy0ZcrPg8jlg" name="Forneça feedback para a equipe" guid="_i3flUBB5Edyy0ZcrPg8jlg">
+    <sectionDescription>&lt;p>Resuma e forneça feedback para a equipe sobre quanto a construção satisfaz os requisitos previstos para a iteração. Focalize na medição do progresso em termos de testes executados com sucesso.&lt;/p>&#xD;
+&lt;p>Explique os resultados do ciclo de teste na forma de tendências gerais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Quantos testes foram selecionados para a construção, e qual o seu status (passou, falhou, bloqueado, não executou, etc.)?&lt;/li>&#xD;
+    &lt;li>Quantos problemas foram acrescentados à Lista de Itens de Trabalho, e quais são seus status e severidade?&lt;/li>&#xD;
+    &lt;li>Para scripts de teste que foram bloqueados ou não executados, quais foram as principais razões (tais como problemas conhecidos)?&lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <keyConsiderations>&lt;ul>&#xD;
+    &lt;li>Execute todos os testes com a maior freqüência possível. Idealmente, execute todos os scripts de teste em cada construção implantada no ambiente de teste. Se isso for impraticável, execute testes de regressão para a funcionalidade existente, e concentre o ciclo de testes nos itens de trabalho concluídos na nova construção.&lt;/li>&#xD;
+    &lt;li>Mesmo os scripts de teste, que se espera que falhem, fornecem resultados valiosos (veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/test_first_design_21C77ADF.html&quot; guid=&quot;_0Y6kUMlgEdmt3adZL5Dmdw&quot;>Diretriz: Design Teste-primeiro&lt;/a>). Entretanto, uma vez que um script de teste passe, ele não deverá falhar em subseqüentes construções da solução.&lt;/li>&#xD;
+&lt;/ul></keyConsiderations>
+  <purpose>&lt;p>Para fornecer feedback para a equipe sobre como uma &lt;a href=&quot;./../../openup/workproducts/build_95D7D8FD.html&quot; guid=&quot;_0YuXEMlgEdmt3adZL5Dmdw&quot;>construção&lt;/a> satisfaz os requisitos.&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

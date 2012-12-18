@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_Nx8icKYdEdmvhNXG0Oc2uA" name="analyst,_0VxJsMlgEdmt3adZL5Dmdw" guid="_Nx8icKYdEdmvhNXG0Oc2uA" changeDate="2007-01-05T12:44:25.904-0200" version="1.0.0">
+  <skills>&lt;p>Um analista necessita dos seguintes conhecimentos e habilidades:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Perícia em identificação e entendimento de problemas e oportunidades&lt;/li>&#xD;
+    &lt;li>Habilidade de articular as necessidades que estão associadas com os principais problemas a serem resolvidos ou com a oportunidade a ser percebida&lt;/li>&#xD;
+    &lt;li>Habilidade de colaborar eficazmente com toda a equipe em sessões colaborativas de trabalho, workshops, sessões JAD e outras técnicas.&lt;/li>&#xD;
+    &lt;li>Boa capacidade de comunicação verbal e escrita&lt;/li>&#xD;
+    &lt;li>Conhecimento dos domínios de negócio e de tecnologia ou habilidade de absorver e compreender rapidamente tal informação&lt;/li>&#xD;
+&lt;/ul></skills>
+  <assignmentApproaches>&lt;p>Este papel pode ser atribuído das seguintes formas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Em equipes pequenas e ágeis este papel é normalmente compartilhado por diversos membros que executam também outros papéis. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/self_organize_work_assignments_F47FC314.html&quot; guid=&quot;_rmBEkJjsEduad8I_c-ogIA&quot;>Diretriz: Auto Organizar Atribuições de Trabalho&lt;/a> e &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/guidelines/staffing_project_70705561.html&quot; guid=&quot;_Jq64EJjsEduad8I_c-ogIA&quot;>Diretriz: Alocando Pessoal ao Projeto&lt;/a> para mais informações sobre esta abordagem.&lt;/li>&#xD;
+    &lt;li>Um (ou mais) membros da equipe executam este papel exclusivamente. Esta abordagem comumente adotada é apropriada para requisitos complexos que são difíceis de capturar.&lt;/li>&#xD;
+    &lt;li>Um (ou mais) membros da equipe executam este papel e o papel de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/tester_9859B590.html&quot; guid=&quot;_0ZM4MclgEdmt3adZL5Dmdw&quot;>Testador&lt;/a>. Esta é uma boa opção para equipes de teste pequenas ou com poucos recursos.&lt;/li>&#xD;
+&lt;/ul></assignmentApproaches>
+</org.eclipse.epf.uma:RoleDescription>

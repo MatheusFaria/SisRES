@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_y-_PIMPdEdmbOvqy4O0adg" name="types_of_test,_0aJ6cMlgEdmt3adZL5Dmdw" guid="_y-_PIMPdEdmbOvqy4O0adg" changeDate="2007-05-30T14:59:45.281-0300" version="7.2.0">
+  <mainDescription>&lt;h3>Introdução&lt;/h3>&#xD;
+&lt;p>Existe muito mais no teste de soluções orientadas a software do que simplesmente avaliar as funções, a interface e as características de tempo de resposta. Testes adicionais devem focar em outros atributos de requisito, tais como:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>integridade (resistência à falha)&lt;/li>&#xD;
+    &lt;li>habilidade de ser instalado e executado em diferentes plataformas&lt;/li>&#xD;
+    &lt;li>habilidade de lidar com muitas requisições simultâneas&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Para conseguir isto, os testadores desenvolvem diferentes tipos de teste. Cada tipo de teste tem um objetivo e uma técnica de suporte específicos. Cada técnica foca no teste de uma ou mais características ou atributos da solução.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;em>Os membros da equipe executam estes tipos de teste em diferentes escopos&lt;/em>. Enquanto os &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/roles/tester_9859B590.html&quot; guid=&quot;_0ZM4MclgEdmt3adZL5Dmdw&quot;>Testadores&lt;/a> estão preocupados com a solução como um todo, os &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../openup/roles/developer_C633AB7.html&quot; guid=&quot;_0YDosMlgEdmt3adZL5Dmdw&quot;>Desenvolvedores&lt;/a> estão normalmente focados em uma unidade ou componente específico da &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/workproducts/implementation_917CA61E.html&quot; guid=&quot;_0YoQcMlgEdmt3adZL5Dmdw&quot;>Implementação&lt;/a>.&lt;/p>&#xD;
+&lt;h3>Dimensão de Qualidade: Funcionalidade&lt;/h3>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Teste funcional&lt;/strong>: Testes focados na validação das funções da solução como esperado, fornecendo os serviços, métodos ou casos de uso necessários. Este teste é implementado e executado em diferentes alvos-de-teste, incluindo unidades, unidades integradas, aplicações e sistemas.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Teste de segurança&lt;/strong>: Testes focados em garantir que os dados (ou sistemas) do alvo-de-teste estejam acessíveis somente aos atores para os quais eles se destinam. Este teste é implementado e executado em vários alvos-de-teste.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Teste de volume&lt;/strong>: Testes focados em verificar a capacidade do alvo-de-teste de lidar com grandes volumes de dados, tanto de entrada como de saída ou persistentes. O teste de volume inclui estratégias tais como criar consultas que retornam todo o conteúdo da base de dados, ou que tenham tantas restrições que nenhum dado seja retornado, ou onde a entrada de dados tenha a quantidade máxima de dados para cada campo.&lt;/p>&#xD;
+&lt;h3>Dimensão de Qualidade: Usabilidade&lt;/h3>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Teste de integridade&lt;/strong>: Testes que focam em avaliar a robustez (resistência �  falhas) do alvo-de-teste, e conformidade técnica com a linguagem, sintaxe e utilização de recursos. Este teste é implementado e executado em diferentes alvos, normalmente unidades de implementação e componentes.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Teste de estrutura&lt;/strong>: Testes que focam em avaliar a aderência do alvo-de-teste ao seu design e formação. Por exemplo, com aplicações Web, estes testes devem garantir que todos os links estejam conectados, o conteúdo apropriado seja exibido e que não exista conteúdo órfão.&lt;/p>&#xD;
+&lt;h3>Dimensão de Qualidade: Confiança&lt;/h3>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Teste de stress&lt;/strong>: Um tipo de teste de confiança que foca em avaliar como o sistema responde sobre condições anormais. O Stress no sistema pode incluir cargas de trabalho extremas, memória insuficiente, serviços e hardware indisponíveis ou recursos compartilhados limitados. Estes testes são normalmente executados para obter um melhor entendimento sobre como, e em quais áreas, o sistema irá parar de funcionar, para que os planos de contingência e a manutenção evolutiva possam ser planejados e orçados com bastante antecedência.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Teste de comparação de desempenho (Benchmark)&lt;/strong>: Um tipo de teste que compara o desempenho de um alvo-de-teste novo ou desconhecido, com uma carga de trabalho de referência conhecida.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Teste de contenção&lt;/strong>: Testes focados em avaliar a habilidade do alvo-de-teste tratar de forma aceitável a demanda de múltiplos atores sob o mesmo recurso (dados gravados, memória, etc.).&lt;/p>&#xD;
+&lt;h3>Dimensão de Qualidade: Desempenho&lt;/h3>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Teste de carga&lt;/strong>: Um tipo de teste de desempenho utilizado para avaliar os limites de operação de um sistema sob diversas cargas de trabalho enquanto o sistema sob teste continua estável. Em algumas variações, a carga de trabalho mantém-se constante e a configuração do sistema sob teste é variada. Geralmente as medições são tomadas baseadas na taxa de transferência da carga de trabalho e no tempo de resposta de transação. As variações na carga de trabalho geralmente incluem emulação da média e do pico da carga de trabalho que ocorre dentro de tolerâncias operacionais normais.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Perfil de desempenho&lt;/strong>: Um teste onde o perfil de andamento do alvo-de-teste é monitorado, incluindo fluxo de execução, acesso a dados, chamadas a funções e sistemas para identificar e lidar com gargalos de desempenho e processos ineficientes.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Teste de configuração&lt;/strong>: Testes focados em garantir que o alvo-de-teste funcione como o esperado em diferentes configurações de hardware e software. Este teste pode também ser implementado como um teste de desempenho do sistema.&lt;/p>&#xD;
+&lt;h3>Dimensão de Qualidade: Suportabilidade&lt;/h3>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Teste de instalação&lt;/strong>: Teste focado em garantir que o alvo-de-teste seja instalado conforme o esperado em diferentes configurações de hardware e software, e sob diferentes condições (tais como espaço em disco insuficiente ou interrupções de energia). Este teste é implementado e executado em aplicações e sistemas.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

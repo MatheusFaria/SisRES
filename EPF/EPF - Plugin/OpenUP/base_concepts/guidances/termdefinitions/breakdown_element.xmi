@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-7pbyO29v0VnsosWHabeZDQ" name="breakdown_element,_cvdpEB_LEdq6CKKKq4D7YA" guid="-7pbyO29v0VnsosWHabeZDQ" changeDate="2005-09-22T23:07:46.580-0300" version="7.2.0">
+  <mainDescription>Qualquer elemento modelado na &lt;a class=&quot;elementLink&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/uma_73BA0C0C.html&quot; guid=&quot;_cj6jkB_PEdq6CKKKq4D7YA&quot;>UMA&lt;/a> que seja parte de uma estrutura de &lt;a class=&quot;elementLink&quot; href=&quot;./../../../base_concepts/guidances/termdefinitions/process_68E308B4.html&quot; guid=&quot;_yQ5m2NnmEdmO6L4XMImrsA&quot;>processo&lt;/a>.&lt;!--EndFragment--></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-lyFPsJDEEZPvbruD5RZyuw" name=",_LKlnwFk1Edul8L-IGeA7TA" guid="-lyFPsJDEEZPvbruD5RZyuw" changeDate="2006-10-11T17:16:58.421-0300" version="1.0.0">
+  <keyConsiderations>&lt;p>&#xD;
+    The &lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/roles/ambassador_user.html&quot; guid=&quot;_ctbZ8FkVEdul8L-IGeA7TA&quot;>Ambassador User&lt;/a> should take the lead in this task, deferring to the &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup_basic/roles/analyst.html&quot; guid=&quot;_0VxJsMlgEdmt3adZL5Dmdw&quot;>Analyst&lt;/a>&amp;nbsp;where specific requirements management techniques and expertise are&#xD;
+    required.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The Ambassador User has overall responsibility for agreeing the precise scope and priority of the&#xD;
+    requirements.&amp;nbsp;The &lt;u>&lt;font color=&quot;#800080&quot;>&lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/roles/advisor_user.html&quot; guid=&quot;_avOA0FkVEdul8L-IGeA7TA&quot;>Advisor User&lt;/a>(&lt;/font>&lt;/u>s) and other stakeholders will provide&amp;nbsp;additional&amp;nbsp;sources of requirements. The Analyst&#xD;
+    will render the requirements into a format that enables software to be developed and tested. The &lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/roles/visionary.html&quot; guid=&quot;_hQJ-QFkVEdul8L-IGeA7TA&quot;>Visionary&lt;/a>&#xD;
+    will verify that the scope of the requirements supports the &lt;a class=&quot;elementLink&quot; href=&quot;./../../dsdm_openup/workproducts/dsdm_vision.html&quot; guid=&quot;_uotsEFkbEdul8L-IGeA7TA&quot;>Vision&lt;/a>.&#xD;
+&lt;/p></keyConsiderations>
+</org.eclipse.epf.uma:TaskDescription>

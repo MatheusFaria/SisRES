@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-zgZazCL7OVzI7xB6URm_pg" name=",_v4RyoFowEdug9t_2UE7UhQ" guid="-zgZazCL7OVzI7xB6URm_pg" changeDate="2006-10-27T07:17:15.565-0300" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    Traditionally, if the system fails to meet the requirements as set out in the specification, it is the fault of the&#xD;
+    developers or, if the system meets the specification but is actually of little use to the business, it is the fault of&#xD;
+    the customers. It is rarely viewed as a joint responsibility.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Because of the technical nature of their work, IT staff use a language that is adapted for their particular needs.&#xD;
+    Similarly, the customers have their own jargon, which is often less arcane than that of IT but still creates a&#xD;
+    communications barrier.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    DSDM uses collaborative techniques to surmount these problems. The strong focus on collaboration in DSDM projects&#xD;
+    enables a ‘no blame’ culture that eliminates much of the lack of understanding between customers and suppliers to&#xD;
+    create a win-win environment.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Collaborative approaches and mechanisms include:&#xD;
+&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        Senior management commitment to strong and continuing business involvement during the project, i.e.&#xD;
+        customers&amp;nbsp;as an integral part of&amp;nbsp;development teams.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Facilitated workshops throughout the lifecycle (not just for requirements capture and reviews) to capture the&#xD;
+        broader business and technical views so achieving consensus at crucial steps in the process.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Evolutionary prototyping, i.e. partial system builds that are driven by and regularly reviewed by the customers.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Partitioning the responsibility for work products so that the knowledge of the team members is used. appropriately,&#xD;
+        e.g. the customer focus create help text that really means something to the users of the system.&#xD;
+    &lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;p>&#xD;
+    From the above it is clear that the ability to collaborate changes the way people work and therefore introduces new&#xD;
+    responsibilities to all roles. This plug-in to OpenUP provides some help towards effective collaboration through the&#xD;
+    inclusion of the DSDM&amp;nbsp;business roles and responsibilities that are relevant to OpenUP.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

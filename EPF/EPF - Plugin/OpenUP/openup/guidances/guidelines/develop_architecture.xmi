@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-t7mQSRPYITkMoYRVNz7jQg" name="develop_architecture,_mDf2EBapEduSTJywppIxVQ" guid="-t7mQSRPYITkMoYRVNz7jQg" changeDate="2007-04-13T09:42:38.234-0300" version="1.0.0">
+  <mainDescription>&lt;h1>Identifique os elementos de design arquiteturalmente significantes&lt;/h1>&#xD;
+&lt;p align=&quot;left&quot;>Considere cada cenário de alta prioridade que está dentro do escopo do projeto. Percorra as ações que o cenário inicia, e destaque as áreas da arquitetura que são fatores da realização ou implementação dos requisitos.&lt;/p>&#xD;
+&lt;p>A identificação de componentes irá ajudar a esconder a complexidade do sistema e o ajudará a trabalhar em um nível superior. Os componentes precisam ser internamente coesos e fornecer serviços externos através de uma interface limitada. A identificação dos componentes pode ser baseada nas camadas arquiteturais, escolhas de implantação ou nas principais abstrações. Faça estas perguntas para si próprio:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>O que está logicamente ou funcionalmente relacionado (o mesmo caso uso ou serviço, por exemplo)?&lt;/li>&#xD;
+    &#xD;
+  &lt;li>Quais entidades fornecem serviços para vários outros serviços?&lt;/li>&#xD;
+    &lt;li>Quais entidades dependem umas das outras? Fortemente ou fracamente?&lt;/li>&#xD;
+    &lt;li>Quais entidades você deve ser capaz de trocar independentemente das outras?&lt;/li>&#xD;
+    &lt;li>O que será executado no mesmo processador ou nó de rede?&lt;/li>&#xD;
+    &lt;li>Quais partes estão restritas por semelhantes requisitos de desempenho?&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Cada componente inclui entidades do domínio do problema, classes de controle que coordenam tarefas complexas dentro dos componentes e interfaces que gerenciam a comunicação com o ambiente. A interface para cada elemento instanciado está identificada. Neste ponto, as interfaces não precisam ser tão detalhadas como as assinaturas, mas elas precisam documentar a necessidade dos elementos, o que eles podem usar e o que eles podem ser dependentes.&lt;/p>&#xD;
+&lt;p>Os padrões identificados definem os tipos de elementos, mas não uma quantidade específica. Aplique os padrões escolhidos para definir um novo conjunto de elementos que estejam em conformidade com os padrões. A funcionalidade será atribuída aos elementos instanciados.&lt;/p>&#xD;
+&lt;h1>Refine os Mecanismos Arquiteturais&lt;/h1>&#xD;
+&lt;p>Considere cada cenário de qualidade com prioridade alta, e associe cada um deles aos Mecanismos Arquiteturais. Refine os mecanismos para identificar a tecnologia específica que irá lidar com cada mecanismo no escopo. Por exemplo, para o mecanismo de Persistência, pode ser adequado utilizar um sistema de gerenciamento de banco de dados relacional, como o MySQL. Considere a seleção da tecnologia no contexto dos requisitos e restrições.&lt;/p>&#xD;
+&lt;p>Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/concepts/arch_mech_2932DFB6.html&quot; guid=&quot;_mzxI0A4LEduibvKwrGxWxA&quot;>Conceito: Mecanismo Arquitetural&lt;/a> para mais informações.&lt;/p>&#xD;
+&lt;h2 align=&quot;left&quot;>Associe o software ao hardware&lt;/h2>&#xD;
+&lt;p align=&quot;left&quot;>Produza uma associação precisa dos componentes de software implantáveis aos nós de rede.&lt;/p>&#xD;
+&lt;h2>Defina as arquiteturas de desenvolvimento e teste&lt;/h2>&#xD;
+&lt;p>A configuração dos ambientes onde o sistema será desenvolvido e testado pode ser diferente do ambiente de produção, e isso pode ter um impacto sobre a solução. Por exemplo:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Pode ser necessário o desenvolvimento de software adicional para suportar os testes.&lt;/li>&#xD;
+    &lt;li>Pode ser necessário definir configurações alternativas de implantação para ambientes diferentes, em resposta às restrições do hardware de desenvolvimento e testes.&lt;/li>&#xD;
+    &lt;li>Múltiplos ambientes podem ser necessários para suportar diferentes categorias de testes (tais como testes de desempenho ou de aceitação pelo usuário). Estes terão que ser especificados.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes cenários, embora não seja desejável, muitas vezes são impostos à equipe através de várias restrições. Consequentemente, a arquitetura para estes diferentes ambientes terá que ser especificada com especial atenção para diferenças significantes. Certifique-se de considerar o impacto de qualquer diferença na qualidade da arquitetura de produção global.&lt;/p>&#xD;
+&lt;h2>Valide a arquitetura&lt;/h2>&#xD;
+&lt;p>A forma mais segura de validar a arquitetura é através de software. O software desenvolvido até o final da fase de Elaboração é altamente direcionado para validar a arquitetura (até o ponto em que possa ser colocado em linha de base), proporcionando certo nível de estabilidade durante a fase de Construção.&lt;/p>&#xD;
+&lt;p>Ele também pode ser útil para efetuar validações simples, percorrendo os principais conceitos e modelos de design, talvez usando um quadro branco ou outras técnicas colaborativas. Isso pode ajudar a refinar a concepção, mas não será um substituto para a construção de algum software.&lt;/p>&#xD;
+&lt;h2>Comunique as decisões&lt;/h2>&#xD;
+&lt;p>Você pode documentar e comunicar suas decisões de várias formas, por exemplo:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &#xD;
+  &lt;li>Publicação de código fonte de referência&lt;/li>&#xD;
+    &#xD;
+  &lt;li>Publicação de modelos de referência&lt;/li>&#xD;
+    &#xD;
+  &lt;li>Publicação de documentação da arquitetura de software&lt;/li>&#xD;
+    &#xD;
+  &lt;li>Apresentações formais do material&lt;/li>&#xD;
+    &#xD;
+  &lt;li>Demonstrações informais da arquitetura&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:PracticeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-ze2xy_aeVuIJ_Ix519DyCw" name="new_practice,_7VZUEFldEdul8L-IGeA7TA" guid="-ze2xy_aeVuIJ_Ix519DyCw" changeDate="2006-10-11T17:24:09.234-0300" version="1.0.0">
+  <mainDescription>DSDM is a user-centred approach. If users are not closely involved throughout the development lifecycle, delays will occur&#xD;
+as decisions are made and users may feel that the final solution is imposed by the developers and/or their own management.&#xD;
+Users are not outside the development team acting as suppliers of information and reviewers of results but are active&#xD;
+participants in the development process.</mainDescription>
+</org.eclipse.epf.uma:PracticeDescription>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-h1poMaxtQbmg6hD5772oVw" name=",_t7JOkEvtEdunZcj9T5hrMQ" guid="-h1poMaxtQbmg6hD5772oVw" changeDate="2006-09-24T15:22:03.239-0300" version="7.2.0">
+  <mainDescription>Uma descrição da amplitude do comportamento de um sistema, especificando os limites do domínio do problema ou do sistema.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

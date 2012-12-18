@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-QpMXBM5_A8w0pRyIT5n5yA" name="change_set,_1QU9MAIoEdyLh7vsrHZ4YA" guid="-QpMXBM5_A8w0pRyIT5n5yA" changeDate="2007-05-31T20:18:27.346-0300" version="7.2.0">
+  <mainDescription>&lt;p>Um conjunto de mudanças é um grupamento lógico de mudanças relacionadas feitas na implementação e nos artefatos de suporte. Conjuntos de mudanças são definidos para um fim específico e englobam todas as mudanças feitas para atingir esse fim.&lt;/p>&#xD;
+&lt;p>Os conjuntos de mudanças permitem que várias mudanças relacionadas sejam referenciadas como único item, simplificando o acompanhamento do progresso desse item através do ciclo de vida de desenvolvimento.&lt;/p>&#xD;
+&lt;p>O conjunto de mudanças constitui a unidade básica de controle de configuração, de responsabilidade, e de colaboração da equipe de desenvolvimento. Além disso, os conjuntos de mudanças rastreiam as dependências entre as mudanças nos artefatos facilitando a descoberta e correção de incoerências na configuração. A relação entre os itens de um conjunto de mudanças pode ser usada para verificar se todas as mudanças relacionadas foram incluídas em uma construção.&lt;/p>&#xD;
+&lt;p>Os conjuntos de mudanças têm as seguintes características:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>Os conjuntos de mudanças consistem de mudanças que são agrupadas podem ser construídas e testadas em conjunto.&lt;/li>&#xD;
+    &lt;li>Os conjuntos de mudanças são de propriedade de um único desenvolvedor.&lt;/li>&#xD;
+    &lt;li>Os conjuntos de mudanças representam pequenas e verificáveis alterações no sistema.&lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;p>Vários conjuntos de mudanças podem estar relacionados a um único Item de trabalho.&lt;/p>&#xD;
+&lt;p>Os conjuntos de mudanças são também conhecidos como tarefas de Gestão de Mudança, conjuntos de atividade de mudança, listas de mudança ou pacotes de mudança.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

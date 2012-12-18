@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-I-2SvZtjELUYDQO0jvdxEA" name="new_guideline,_SYDjUMUKEdu5GrwIlTJV7g" guid="-I-2SvZtjELUYDQO0jvdxEA" changeDate="2007-02-25T17:57:17.640-0300" version="7.2.0">
+  <mainDescription>&lt;h4>Capturar decisões arquiteturais (Modelagem Visual)&lt;/h4>&#xD;
+&lt;p>Você vai achar útil desenvolver estes três diagramas da Linguagem Unificada de Modelagem (UML) nesta fase:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Mapa de camadas&lt;/strong> (representado como um diagrama de classes usando pacotes), que descreve as camadas de nível superior da arquitetura&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Esboço do diagrama de implantação&lt;/strong>, que descreve a topologia de rede esperada&lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Diagrama de classe simples&lt;/strong>, que mostra as principais abstrações e qualquer relacionamento evidente entre elas&lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

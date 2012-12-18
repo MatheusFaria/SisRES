@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="_d2aMwKrMEdmqUqi7YGiSxw" name="implement_solution,_0hyzgMlgEdmt3adZL5Dmdw" guid="_d2aMwKrMEdmqUqi7YGiSxw" authors="Jim Ruehlin, Brian Lyons" changeDate="2007-07-25T16:31:18.594-0300" version="1.0">
+  <mainDescription>&lt;p>Geralmente, esta tarefa é focada em um elemento específico, tal como uma classe ou um componente, mas não necessariamente precisa ser.&lt;/p>&#xD;
+&lt;p>uma parcela do design é implementada ao executar esta tarefa. Esta tarefa pode ser executada várias vezes durante uma iteração. Na verdade, é melhor executar esta tarefa no menor escopo possível para estreitar o ciclo entre ela e as tarefas relacionadas com os testes de desenvolvedor e considerações sobre o design.&lt;/p></mainDescription>
+  <sections xmi:id="_2sxisE2iEduU655MA_3VXg" name="Determine uma estratégia" guid="_2sxisE2iEduU655MA_3VXg">
+    <sectionDescription>&lt;p>Determine uma estratégia, baseada no design e nos teste de desenvolvedor, indicando como você irá implementar a solução. As opções fundamentais são:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>Aplique recursos reutilizáveis existentes.&lt;/li>&#xD;
+    &lt;li>Modele o design detalhadamente e gere o código fonte (pela transformação do modelo).&lt;/li>&#xD;
+    &lt;li>Escreva o código fonte.&lt;/li>&#xD;
+    &lt;li>Qualquer combinação das opções descritas.&lt;/li>&#xD;
+&lt;/ol></sectionDescription>
+  </sections>
+  <sections xmi:id="_iMMWoKuPEdmhFZtkg1nakg" name="Identifique oportunidades para reuso" guid="_iMMWoKuPEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Identifique algum código existente ou elementos de implementação que possa ser reutilizado em parte da &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/implementation_917CA61E.html&quot; guid=&quot;_0YoQcMlgEdmt3adZL5Dmdw&quot;>Implementação&lt;/a> que você esteja criando ou alterando. Uma compreensão detalhada de todo o design é muito útil porque é mais fácil encontrar oportunidades de reuso quando se tem uma completa compreensão da solução proposta.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_pjehkNb7Edq_LtLvi4w2yw" name="Transforme o design em implementação" guid="_pjehkNb7Edq_LtLvi4w2yw">
+    <sectionDescription>&lt;p>Se você estiver usando ferramentas de modelagem sofisticadas, poderá gerar uma parte do código fonte necessário a partir do modelo. Note que a programação é comumente necessária para terminar a implementação, após o modelo de design ter sido transformado em código.&lt;/p>&#xD;
+&lt;p>Mesmo sem ferramentas, pode existir uma quantidade de código a ser criado pela verificação do design e dos testes de desenvolvedor.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_mFQ58KuPEdmhFZtkg1nakg" name="Escreva o código fonte" guid="_mFQ58KuPEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Escreva o código fonte de forma que a implementação esteja em conformidade com o design e o comportamento desejados. Você deve tentar a reutilização ou a geração de código sempre que possível, mas ainda necessitará de alguma programação. Para isso, considere o seguinte:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Examine os requisitos. Pelo fato de algumas informações dos requisitos não se traduzirem diretamente em seu design você deve examinar os requisitos para se assegurar que eles estejam inteiramente contemplados na implementação.&lt;/li>&#xD;
+    &lt;li>Re-fatore o código para melhorar o design. A &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/refactoring_1B63BA3B.html&quot; guid=&quot;_Poc7IPDzEdqYgerqi84oCA&quot;>Re-fatoração&lt;/a> é uma técnica onde a qualidade do código é melhorada através de mudanças pequenas e seguras.&lt;/li>&#xD;
+    &lt;li>Ajuste os resultados da implementação existente melhorando o desempenho, a interface de usuário, a segurança, e outras áreas não funcionais.&lt;/li>&#xD;
+    &lt;li>Adicione detalhes faltantes, tais como a conclusão da lógica das operações ou a adição de classes de suporte e estruturas de dados.&lt;/li>&#xD;
+    &lt;li>Cuide das condições limítrofes.&lt;/li>&#xD;
+    &lt;li>Trate as circunstâncias incomuns ou os estados de erro.&lt;/li>&#xD;
+    &lt;li>Restrinja o comportamento (impedindo que os usuários ou funções externas executem fluxos, cenários ou combinações de opções ilegais).&lt;/li>&#xD;
+    &lt;li>Adicione seções críticas para código multi-thread ou reentrante.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Embora diversas considerações estejam listadas aqui, existe um caminho claro para saber quando o código fonte esta pronto. A solução foi implementada quando ela passa pelos testes de desenvolvedor. Outras considerações podem cuidar da re-fatoração do código para melhorá-lo quando ele estiver completo e correto.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ni25UKuPEdmhFZtkg1nakg" name="Avalie a implementação" guid="_ni25UKuPEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Verifique que a implementação está ajustada à sua finalidade. Examine o código para determinar se ele executa a função desejada. Esta é uma etapa de garantia da qualidade que é executada além dos testes e está descrita em outras tarefas. Considere estas estratégias:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Programação em pares. Pela divisão da equipe em pares de implementadores, você avalia eficazmente o código assim que ele começa a ser escrito.&lt;/li>&#xD;
+    &lt;li>Leia o código para encontrar erros comuns. Considere manter uma lista de verificação dos erros encontrados para servir como uma memória de referência.&lt;/li>&#xD;
+    &lt;li>Use ferramentas para verificar erros de implementação e código impróprio. Por exemplo, use um verificador de regras de código estático ou ajuste o compilador para o nível mais detalhado de advertências.&lt;/li>&#xD;
+    &lt;li>Use ferramentas que possam visualizar o código. A visualização de código, tal como as visualizações UML na IDE Eclipse, ajudam os desenvolvedores a identificar questões tais como acoplamento excessivo ou dependências circulares.&lt;/li>&#xD;
+    &lt;li>Execute inspeções informais direcionadas ao código. Peça aos colegas para revisar pequenas seções críticas do código e código com funcionalidades significativas. Evite a revisão de grandes seções de código.&lt;/li>&#xD;
+    &lt;li>Use um Testador para assegurar que a implementação é compreensível e testável pelos recursos de teste.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Melhore a implementação baseada nos resultados destas avaliações.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_q5XiIKuPEdmhFZtkg1nakg" name="Comunique decisões significantes" guid="_q5XiIKuPEdmhFZtkg1nakg">
+    <sectionDescription>&lt;p>Comunique o impacto de mudanças inesperadas no design e nos requisitos.&lt;/p>&#xD;
+&lt;p>As questões e as restrições descobertas durante a implementação do sistema devem ser comunicadas à equipe. O impacto das questões descobertas durante a implementação deve ser incorporado nas decisões futuras. Se for apropriado, atualize os requisitos para refletir as ambigüidades identificadas e resolvidas na implementação de modo que possam ser testadas, tornando possível controlar as expectativas dos &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholders&lt;/a>. Similarmente, atualize o design para refletir novas restrições e questões descobertas durante a implementação para ter certeza que a nova informação será comunicada para os outros desenvolvedores.&lt;/p>&#xD;
+&lt;p>Normalmente, não há necessidade de efetuar uma solicitação de mudança se a mudança requerida for pequena e a mesma pessoa estiver projetando e implementando o elemento de código. Esse indivíduo pode fazer a mudança no design diretamente. Se a mudança requerida tiver um grande impacto, pode ser necessário comunicar essa mudança aos outros membros da equipe através de uma solicitação de mudança.&lt;/p></sectionDescription>
+  </sections>
+  <keyConsiderations>&lt;p>É melhor quando os testes de desenvolvedor já existem, de forma que haja uma definição inequívoca do que é considerado comportamento correto. A implementação deverá ser testada imediatamente.&lt;/p></keyConsiderations>
+  <purpose>&lt;p>A finalidade desta tarefa é produzir uma implementação para uma parte da solução (tal como uma classe ou um componente), ou reparar um ou mais defeitos. Normalmente o resultado é um código fonte novo ou modificado, que normalmente é referenciado pela implementação.&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

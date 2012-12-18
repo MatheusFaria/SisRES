@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-bbpT_BdDRrv6waNI365Qhg" name=",_48EKsBOMEduCNqgZdt_OaA" guid="-bbpT_BdDRrv6waNI365Qhg" changeDate="2007-07-11T12:08:23.500-0300" version="1.0.0">
+  <mainDescription>&lt;p>O objetivo nesta fase é o desenvolvimento, com custo eficiente, de um produto completo (uma versão operacional do sistema) que pode ser implantado na comunidade de usuários &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../../openup/guidances/supportingmaterials/references_6CCF393.html#KRO03&quot; guid=&quot;_9ToeIB83Edqsvps02rpOOg&quot;>[KRO03]&lt;/a>:&lt;/p>&#xD;
+&lt;p>Os objetivos abaixo, para a fase de Construção, irão lhe ajudar a alcançar esta meta:&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Desenvolver de forma iterativa um produto completo que esteja pronto para ser entregue à comunidade de usuários&lt;/b>. Descreva os requisitos restantes, preencha os detalhes do projeto, termine a implementação e teste o software. Libere as versões incrementais alfa e beta do sistema e determine se os usuários já estão prontos para que a aplicação possa ser implantada. Ajustes e preparações adicionais para a implantação final são esperados na &lt;a class=&quot;elementLink&quot; href=&quot;./../../../openup/guidances/concepts/transition_phase_DD5986E5.html&quot; guid=&quot;__ca5UBOMEduCNqgZdt_OaA&quot;>Fase de Transição&lt;/a>.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;p>&#xD;
+            &lt;b>Minimize os custos de desenvolvimento e consiga algum grau de paralelismo&lt;/b>. Otimize os recursos e aumente o paralelismo de desenvolvimento entre os desenvolvedores ou as equipes de desenvolvimento, como por exemplo, atribuindo os componentes que podem ser desenvolvidos independentemente para desenvolvedores distintos.&lt;/p>&#xD;
+    &lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;h4>Principais considerações&lt;/h4>&#xD;
+&lt;p>Normalmente, a fase de Construção tem mais iterações (duas ou mais) do que as outras fases.&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

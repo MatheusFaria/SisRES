@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-fCBrf_5JlrmuKgyrCaKGOA" name="requirement_attributes_1,_VQ268O0KEdqHTdbLTmC5IQ" guid="-fCBrf_5JlrmuKgyrCaKGOA" authors="Chris Sibbald" changeDate="2007-04-10T12:00:56.070-0300" version="0.2">
+  <mainDescription>&lt;p>Os Atributos dos Requisitos são as propriedades de um requisito. Os atributos capturam importantes informações adicionais de cada requisito. Estas informações podem ser utilizadas para responder a pesquisas sobre o status do projeto de desenvolvimento.&lt;/p>&#xD;
+&lt;h4>Exemplos de atributos&lt;/h4>&#xD;
+&lt;p>Segue abaixo uma lista de atributos normalmente usados em pequenos projetos, acompanhados de uma descrição resumida dos seus significados. Alguns atributos são mais bem descritos como números, enquanto outros são mais bem descritos como datas, valores booleanos (verdadeiro ou falso) ou campos de texto livre. Outros atributos podem ser expressos como listas enumeradas. Por exemplo, a prioridade pode ter valores como alta, média ou baixa.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Prioridade&lt;/strong> - Declaração da importância relativa do requisito para os Stakeholders (alta, média, baixa).&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Atribuído a&lt;/strong> - Quem na organização é responsável por certificar que o requisito foi satisfeito (nome da pessoa ou da organização).&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Iteração Alvo&lt;/strong> - A iteração na qual está planejado que o requisito será implementado (número ou texto).&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Estimativa de tamanho&lt;/strong> - lhe dá uma estimativa de alto nível para o esforço necessário para implementar e verificar o requisito, normalmente medida usando uma unidade neutra tal como pontos. Veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../openup/guidances/guidelines/agile_estimation_A4EF42B3.html&quot; guid=&quot;_CGHskBEdEdqY7JB6N6CW2w&quot;>Diretriz: Estimativa Ágil&lt;/a> para mais informações.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Esforço Restante&lt;/strong> - Uma estimativa do esforço necessário para implementar e verificar os requisitos restantes (horas).&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Status de Conclusão&lt;/strong> - O progresso da implementação de um requisito. Pode ser capturado como uma lista enumerada (Completo, Parcialmente Concluído, Não Iniciado) ou pode ser inferida a partir do atributo Esforço Restante.&lt;/p>&#xD;
+&lt;p>Quando estes atributos têm valores atribuídos para cada requisito, torna-se fácil responder a perguntas típicas sobre o projeto, tais como:&lt;/p>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>&#xD;
+        &lt;em>Quantos requisitos deverão ser implementadas na iteração atual?&lt;br /> &lt;/em> (consulte o atributo &lt;strong>Iteração Alvo&lt;/strong>)&lt;/p>&#xD;
+    &lt;p>&#xD;
+        &lt;em>Qual a percentagem dos requisitos de alta prioridade que já está implementada?&lt;br /> &lt;/em> (consulte os atributos &lt;strong>Status de Conclusão&lt;/strong> e &lt;strong>Prioridade&lt;/strong>)&lt;/p>&#xD;
+    &lt;p>&#xD;
+        &lt;em>Quantos requisitos atribuídos à iteração atual ainda não foram implementados?&lt;br /> &lt;/em> (consulte os atributos &lt;strong>Iteração Alvo&lt;/strong> e &lt;strong>Status de Conclusão&lt;/strong>)&lt;/p>&#xD;
+    &lt;p>&#xD;
+        &lt;em>Quais requisitos estão atribuídos para mim?&lt;br /> &lt;/em> (consulte o atributo &lt;strong>Atribuído a&lt;/strong>)&lt;br />&#xD;
+    &lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;p>Exemplos de outros atributos de requisitos úteis são:&lt;/p>&#xD;
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>&#xD;
+    &lt;p>&#xD;
+        &lt;strong>Origem&lt;/strong> - Pessoa, documento ou outra fonte de um determinado requisito. É útil para determinar a quem fazer perguntas ou agrupar requisitos de acordo com a pessoa que faz a solicitação.&lt;/p>&#xD;
+    &lt;p>&#xD;
+        &lt;strong>Comentários&lt;/strong> - Comentários do revisor ou autor sobre o requisito.&lt;/p>&#xD;
+    &lt;p>&#xD;
+        &lt;strong>Dificuldade&lt;/strong> - Uma indicação do nível de esforço necessário ou quão difícil será implementar o requisito (alta, média, baixa).&lt;/p>&#xD;
+    &lt;p>&#xD;
+        &lt;strong>Risco&lt;/strong> - Medida de certeza sobre a satisfação (ou não) do requisito. Pode ser alto, médio, baixo ou números inteiros numa escala de zero a dez.&lt;/p>&#xD;
+    &lt;p>&#xD;
+        &lt;strong>ID do Teste&lt;/strong> - Identificação de um teste específico ou outro método de verificação.&lt;/p>&#xD;
+&lt;/blockquote></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

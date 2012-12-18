@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_z-Z5MOtQEdqc1LGhiSPqRg" guid="_z-Z5MOtQEdqc1LGhiSPqRg">
+    <resourceDescriptors xmi:id="_z-Z5MetQEdqc1LGhiSPqRg" id="-OC3td1csl7lqV15vimYOaw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_z-yTsOtQEdqc1LGhiSPqRg" id="-C3RmtvThtego5U5cOk8uCA" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_z_2DoOtQEdqc1LGhiSPqRg" id="-239OBD2wagT2qp8fuPWcHQ" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_fwowIEbpEduLBN1xMBngqw" id="-Xfm5yDx3AVScrP1ZdLT-Sw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_u6fOsUbqEdu_9u69oWmeLA" id="-y0fMHq2z6qGyUlEC8ptYCQ" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_Gi_joE9HEdudU75l2xOQTw" id="-yIYJv-X_OmLGox-TBmsEOQ" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_Rk_4gU9HEdudU75l2xOQTw" id="-q-X9OHGNRjU5gIyWVibSGQ" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_y-etQOtQEdqc1LGhiSPqRg" name="construction_phase_iteration" guid="_y-etQOtQEdqc1LGhiSPqRg">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_y-k0a-tQEdqc1LGhiSPqRg" name="manage_iteration" guid="_y-k0a-tQEdqc1LGhiSPqRg">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_y-k0bOtQEdqc1LGhiSPqRg" name="manage_iteration" guid="_y-k0bOtQEdqc1LGhiSPqRg" presentationName="Planejar e Gerenciar a iteração" isPlanned="false" superActivities="_y-3IrutQEdqc1LGhiSPqRg" isOngoing="true" variabilityType="extends">
+        <presentation xmi:id="-OC3td1csl7lqV15vimYOaw" href="uma://-OC3td1csl7lqV15vimYOaw#-OC3td1csl7lqV15vimYOaw"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_0nJNkclgEdmt3adZL5Dmdw#_0nJNkslgEdmt3adZL5Dmdw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_y-q7QOtQEdqc1LGhiSPqRg" name="test_solution" guid="_y-q7QOtQEdqc1LGhiSPqRg">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_y-3IretQEdqc1LGhiSPqRg" name="test_solution" guid="_y-3IretQEdqc1LGhiSPqRg" presentationName="Testar a Solução" hasMultipleOccurrences="true" superActivities="_y-3IrutQEdqc1LGhiSPqRg" variabilityType="extends">
+        <presentation xmi:id="-C3RmtvThtego5U5cOk8uCA" href="uma://-OC3td1csl7lqV15vimYOaw#-C3RmtvThtego5U5cOk8uCA"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_0nz79MlgEdmt3adZL5Dmdw#_0nz79clgEdmt3adZL5Dmdw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_y_PjEOtQEdqc1LGhiSPqRg" name="ongoing_tasks" guid="_y_PjEOtQEdqc1LGhiSPqRg">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_y_PjTOtQEdqc1LGhiSPqRg" name="ongoing_tasks" guid="_y_PjTOtQEdqc1LGhiSPqRg" presentationName="Executar Tarefas Contínuas" isPlanned="false" superActivities="_y-3IrutQEdqc1LGhiSPqRg" isOngoing="true" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_0pJ_xclgEdmt3adZL5Dmdw#_0pJ_xslgEdmt3adZL5Dmdw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_eE5nEEbpEduLBN1xMBngqw" name="identify_and_refine_requirements" guid="_eE5nEEbpEduLBN1xMBngqw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_eE5nEUbpEduLBN1xMBngqw" name="identify_and_refine_requirements" guid="_eE5nEUbpEduLBN1xMBngqw" presentationName="Identificar e Refinar os Requisitos" briefDescription="Detalhar um conjunto de requisitos (um ou mais casos de uso, cenários ou requisitos suplementares)." superActivities="_y-3IrutQEdqc1LGhiSPqRg" breakdownElements="_eFeO0EbpEduLBN1xMBngqw _eFeO0UbpEduLBN1xMBngqw _eFeO0kbpEduLBN1xMBngqw _eFeO00bpEduLBN1xMBngqw _eGoFYkbpEduLBN1xMBngqw _eGoFY0bpEduLBN1xMBngqw _eGoFZEbpEduLBN1xMBngqw _eGuMBUbpEduLBN1xMBngqw _eGuMB0bpEduLBN1xMBngqw _eG0SoEbpEduLBN1xMBngqw _eHAf4EbpEduLBN1xMBngqw _eHAf4UbpEduLBN1xMBngqw _eHAf4kbpEduLBN1xMBngqw __BTFAClZEdytYo99TZh2Ng __1T74ClZEdytYo99TZh2Ng _piI90DlJEdyTZ9G7ByfQTw">
+        <presentation xmi:id="-Xfm5yDx3AVScrP1ZdLT-Sw" href="uma://-OC3td1csl7lqV15vimYOaw#-Xfm5yDx3AVScrP1ZdLT-Sw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_eFeO0EbpEduLBN1xMBngqw" name="analyst" guid="_eFeO0EbpEduLBN1xMBngqw" presentationName="Analista" briefDescription="A pessoa neste papel representa os interesses do cliente e do usuário final recolhendo informações dos Stakeholders para entender o problema a ser resolvido, capturando os requisitos e definindo suas prioridades." hasMultipleOccurrences="true" superActivities="_eE5nEUbpEduLBN1xMBngqw" modifies="_eGoFY0bpEduLBN1xMBngqw _eGoFZEbpEduLBN1xMBngqw _eFeO0UbpEduLBN1xMBngqw _eFeO00bpEduLBN1xMBngqw" responsibleFor="_eG0SoEbpEduLBN1xMBngqw _eGoFZEbpEduLBN1xMBngqw _eFeO00bpEduLBN1xMBngqw _eFeO0kbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6m3EUSKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <Role href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0VxJsMlgEdmt3adZL5Dmdw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_eFeO0UbpEduLBN1xMBngqw" name="use_case" guid="_eFeO0UbpEduLBN1xMBngqw" presentationName="Caso de Uso" briefDescription="Este artefato captura a seqüência das ações executadas por um sistema que tenham um resultado de valor observável para aqueles que interagem com o sistema." hasMultipleOccurrences="true" superActivities="_eE5nEUbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6neIESKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0kNwINk1Edq2Q8qZoWbvGA"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_KudM0NcJEdqz_d2XWoVt6Q"/>
+        <examples href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_JLOiIMNvEdu2IdAIaWZyAw"/>
+        <templates href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0cpNwMlgEdmt3adZL5Dmdw"/>
+        <WorkProduct href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0VGbUMlgEdmt3adZL5Dmdw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_eFeO0kbpEduLBN1xMBngqw" name="vision" guid="_eFeO0kbpEduLBN1xMBngqw" presentationName="Visão" briefDescription="Este artefato contém a definição da visão dos Stakeholders a respeito do produto a ser desenvolvido, especificada em termos das principais características e necessidades dos Stakeholders. Contém um esboço dos principais requisitos vislumbrados para o sistema." superActivities="_eE5nEUbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6eUMESKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0WoFUMlgEdmt3adZL5Dmdw"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_jxn9EO0HEdqHTdbLTmC5IQ"/>
+        <templates href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0cW54MlgEdmt3adZL5Dmdw"/>
+        <WorkProduct href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0WVxcMlgEdmt3adZL5Dmdw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_eFeO00bpEduLBN1xMBngqw" name="uc_model" guid="_eFeO00bpEduLBN1xMBngqw" presentationName="Modelo de Caso de Uso" briefDescription="Este artefato captura um modelo das funções desejadas do sistema e de seu ambiente, e serve como um contrato entre o cliente e os desenvolvedores." superActivities="_eE5nEUbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6dtIkSKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0U6OEMlgEdmt3adZL5Dmdw"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0VrDEMlgEdmt3adZL5Dmdw"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0kNwINk1Edq2Q8qZoWbvGA"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_2jyfUAhVEduRe8TeoBmuGg"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_zGqO0MDpEduTGJ8i4u8TMw"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_KudM0NcJEdqz_d2XWoVt6Q"/>
+        <examples href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_t4QdAMNqEdu2IdAIaWZyAw"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0VAUsMlgEdmt3adZL5Dmdw"/>
+        <WorkProduct href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_W2SgEDR5EdutE_HNDTJk5Q"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_eGoFYkbpEduLBN1xMBngqw" name="find_and_outline_requirements" guid="_eGoFYkbpEduLBN1xMBngqw" presentationName="Encontrar e Descrever os Requisitos" briefDescription="Esta tarefa descreve como encontrar e descrever os requisitos do sistema de forma que o escopo do trabalho possa ser determinado." superActivities="_eE5nEUbpEduLBN1xMBngqw" isSynchronizedWithSource="false" additionallyPerformedBy="_eGuMB0bpEduLBN1xMBngqw __BTFAClZEdytYo99TZh2Ng __1T74ClZEdytYo99TZh2Ng _eHAf4UbpEduLBN1xMBngqw" mandatoryInput="_eG0SoEbpEduLBN1xMBngqw _eFeO0kbpEduLBN1xMBngqw" output="_eGoFY0bpEduLBN1xMBngqw _eGoFZEbpEduLBN1xMBngqw _eFeO0UbpEduLBN1xMBngqw _eFeO00bpEduLBN1xMBngqw" performedPrimarilyBy="_eFeO0EbpEduLBN1xMBngqw">
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_jxn9EO0HEdqHTdbLTmC5IQ"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_Vael8CGMEdu3VKXZx45D3A"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0VrDEMlgEdmt3adZL5Dmdw"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0kNwINk1Edq2Q8qZoWbvGA"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0U6OEMlgEdmt3adZL5Dmdw"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0Wh-sMlgEdmt3adZL5Dmdw"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_KudM0NcJEdqz_d2XWoVt6Q"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_VXZ5wO0IEdqHTdbLTmC5IQ"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_zGqO0MDpEduTGJ8i4u8TMw"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_2jyfUAhVEduRe8TeoBmuGg"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_OnoNQNSAEdmLhZ9H5Plxyw"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_eyL0wCu-EdqSxKAVa9kmvA"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_wr24gNcGEdqz_d2XWoVt6Q"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_E-dPIL-GEdqb7N6KIeDL8Q"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_1AOsMO0JEdqHTdbLTmC5IQ"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_6jXzYNcKEdqz_d2XWoVt6Q"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0VAUsMlgEdmt3adZL5Dmdw"/>
+        <Task href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_P9cMUPV_EdmdHa9MmVPgqQ"/>
+        <selectedSteps href="uma://-Yt8TXGkE1rwydXR34apsrg#_XRKgkAFoEduDPKiaP0pu-Q"/>
+        <selectedSteps href="uma://_P9iS8PV_EdmdHa9MmVPgqQ#_5is40NccEdu5tJAZnuAhYQ"/>
+        <selectedSteps href="uma://_P9iS8PV_EdmdHa9MmVPgqQ#_0WhHsN-eEdqiM_wFaqLjNg"/>
+        <selectedSteps href="uma://_P9iS8PV_EdmdHa9MmVPgqQ#_Mgb9IC4DEduBP8F-6-95NQ"/>
+        <mandatoryInputExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_rGNWsCbSEdqh1LYUOGRh2A"/>
+        <outputExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_Wn7HcNcEEdqz_d2XWoVt6Q"/>
+        <selectedStepsExclude href="uma://_P9iS8PV_EdmdHa9MmVPgqQ#_ckG-cCY-EdqNHcQ-rAojXw"/>
+        <selectedStepsExclude href="uma://_P9iS8PV_EdmdHa9MmVPgqQ#_GAr3IOz3Edq2wJOsmRwmhg"/>
+        <selectedStepsExclude href="uma://_P9iS8PV_EdmdHa9MmVPgqQ#_fDbgkCY-EdqNHcQ-rAojXw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_eGoFY0bpEduLBN1xMBngqw" name="work_items_list" guid="_eGoFY0bpEduLBN1xMBngqw" presentationName="Lista de Itens de Trabalho" briefDescription="Este artefato contém uma lista de todo trabalho agendado para ser feito dentro do projeto, bem como o trabalho proposto que pode afetar o produto neste ou em projetos futuros. Cada Item de trabalho pode conter referências a informações que sejam relevantes para realizar o trabalho descrito no item." superActivities="_eE5nEUbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6sWoESKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_xlrdEAVtEdy3F_fZDaPZVA"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_S80VwCNbEdyCq8v2ZO4QcA"/>
+        <examples href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_nHomIDgzEdu4E8ZdmlYjtA"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_7vEXEMA4EdqSgKaj2SZBmg"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_CGHskBEdEdqY7JB6N6CW2w"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_oVMZADSoEdy07ZJqOGUGaQ"/>
+        <templates href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_QwUJYDg0Edu4E8ZdmlYjtA"/>
+        <reports href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_ePrt8Dj3EduxovfWMDsntw"/>
+        <reports href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_uAzgkDg3Edu4E8ZdmlYjtA"/>
+        <WorkProduct href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_rGNWsCbSEdqh1LYUOGRh2A"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_eGoFZEbpEduLBN1xMBngqw" name="supporting_requirements_spec" guid="_eGoFZEbpEduLBN1xMBngqw" presentationName="Especificação de Requisitos Suplementares" briefDescription="Este artefato captura todos os requisitos do sistema não capturados nos cenários ou nos casos de uso, incluindo requisitos de atributos de qualidade e requisitos funcionais globais." superActivities="_eE5nEUbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6dtIUSKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_Vael8CGMEdu3VKXZx45D3A"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_jxn9EO0HEdqHTdbLTmC5IQ"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_VXZ5wO0IEdqHTdbLTmC5IQ"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_wr24gNcGEdqz_d2XWoVt6Q"/>
+        <templates href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_ItYXcNa9Edqrw4BYKyYKiA"/>
+        <WorkProduct href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_BVh9cL-CEdqb7N6KIeDL8Q"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_eGuMBUbpEduLBN1xMBngqw" name="detail_requirements" guid="_eGuMBUbpEduLBN1xMBngqw" presentationName="Detalhar os Requisitos" briefDescription="Esta tarefa descreve como detalhar os requisitos para o sistema." superActivities="_eE5nEUbpEduLBN1xMBngqw" isSynchronizedWithSource="false" additionallyPerformedBy="_eGuMB0bpEduLBN1xMBngqw __BTFAClZEdytYo99TZh2Ng __1T74ClZEdytYo99TZh2Ng _eHAf4UbpEduLBN1xMBngqw" mandatoryInput="_eGoFZEbpEduLBN1xMBngqw _eFeO0kbpEduLBN1xMBngqw _eG0SoEbpEduLBN1xMBngqw _eFeO0UbpEduLBN1xMBngqw _eFeO00bpEduLBN1xMBngqw _piI90DlJEdyTZ9G7ByfQTw" output="_eGoFZEbpEduLBN1xMBngqw _eFeO0UbpEduLBN1xMBngqw" performedPrimarilyBy="_eFeO0EbpEduLBN1xMBngqw">
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_jxn9EO0HEdqHTdbLTmC5IQ"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_Vael8CGMEdu3VKXZx45D3A"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0kNwINk1Edq2Q8qZoWbvGA"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0Wh-sMlgEdmt3adZL5Dmdw"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_KudM0NcJEdqz_d2XWoVt6Q"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_VXZ5wO0IEdqHTdbLTmC5IQ"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_VQ268O0KEdqHTdbLTmC5IQ"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_eYtQQO0KEdqHTdbLTmC5IQ"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_HrZGIA4MEduibvKwrGxWxA"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_2jyfUAhVEduRe8TeoBmuGg"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_4BJ_YCxSEdqjsdw1QLH_6Q"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_E-dPIL-GEdqb7N6KIeDL8Q"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_1AOsMO0JEdqHTdbLTmC5IQ"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_6jXzYNcKEdqz_d2XWoVt6Q"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_qq0GMAXkEduj_7BEUj1JfQ"/>
+        <Task href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0e1mIMlgEdmt3adZL5Dmdw"/>
+        <selectedSteps href="uma://_Nqwi8KeqEdmKDbQuyzCoqQ#_vWeHMCxSEdqjsdw1QLH_6Q"/>
+        <selectedSteps href="uma://_Nqwi8KeqEdmKDbQuyzCoqQ#_B47VwCxTEdqjsdw1QLH_6Q"/>
+        <selectedSteps href="uma://-_mfd9ziTwQV_5LE80jJw4g#_w2JYgEf6EduISP1GQDlvVQ"/>
+        <selectedSteps href="uma://_Nqwi8KeqEdmKDbQuyzCoqQ#_BYbboN-bEdqiM_wFaqLjNg"/>
+        <outputExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_Wn7HcNcEEdqz_d2XWoVt6Q"/>
+        <outputExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_W2SgEDR5EdutE_HNDTJk5Q"/>
+        <selectedStepsExclude href="uma://_Nqwi8KeqEdmKDbQuyzCoqQ#_2389cOz2Edq2wJOsmRwmhg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_eGuMB0bpEduLBN1xMBngqw" name="stakeholder" guid="_eGuMB0bpEduLBN1xMBngqw" presentationName="Stakeholder" briefDescription="Este papel representa grupos de interessados cujas necessidades devem ser satisfeitas pelo projeto. É um papel que pode ser executado por qualquer um que seja (ou potencialmente possa ser) materialmente afetado pelo resultado do projeto." hasMultipleOccurrences="true" superActivities="_eE5nEUbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6qhcESKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <Role href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_dTa6gMAYEdqX-s4mWhkyqQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_eG0SoEbpEduLBN1xMBngqw" name="glossary" guid="_eG0SoEbpEduLBN1xMBngqw" presentationName="Glossário" briefDescription="Este artefato define termos importantes usados no projeto. Estes termos são a base para a colaboração eficaz com os Stakeholders e outros membros da equipe." superActivities="_eE5nEUbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6dtIESKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <WorkProduct href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_Wn7HcNcEEdqz_d2XWoVt6Q"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_eHAf4EbpEduLBN1xMBngqw" name="create_test_case" guid="_eHAf4EbpEduLBN1xMBngqw" presentationName="Criar os Casos de Teste" briefDescription="Desenvolver os casos de teste e os dados de teste para os requisitos a serem testados." superActivities="_eE5nEUbpEduLBN1xMBngqw" isSynchronizedWithSource="false" additionallyPerformedBy="_eFeO0EbpEduLBN1xMBngqw" mandatoryInput="_eFeO0UbpEduLBN1xMBngqw" optionalInput="_eHAf4kbpEduLBN1xMBngqw" output="_eHAf4kbpEduLBN1xMBngqw" performedPrimarilyBy="_eHAf4UbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6osQESKEeKIHoRDpe9VIw" name="descriptor_customization" value="1"/>
+        <Task href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0iwc0clgEdmt3adZL5Dmdw"/>
+        <selectedSteps href="uma://_NrVKsKeqEdmKDbQuyzCoqQ#_IJFSsKuSEdmhFZtkg1nakg"/>
+        <selectedSteps href="uma://_NrVKsKeqEdmKDbQuyzCoqQ#_LpbM8KuSEdmhFZtkg1nakg"/>
+        <selectedSteps href="uma://_NrVKsKeqEdmKDbQuyzCoqQ#_NK18YKuSEdmhFZtkg1nakg"/>
+        <selectedSteps href="uma://_NrVKsKeqEdmKDbQuyzCoqQ#_Ok_mMKuSEdmhFZtkg1nakg"/>
+        <additionallyPerformedByExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_dTa6gMAYEdqX-s4mWhkyqQ"/>
+        <additionallyPerformedByExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0YDosMlgEdmt3adZL5Dmdw"/>
+        <optionalInputExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_BVh9cL-CEdqb7N6KIeDL8Q"/>
+        <selectedStepsExclude href="uma://_NrVKsKeqEdmKDbQuyzCoqQ#_aDe_ILGcEdubqf8m_Zrvvg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_eHAf4UbpEduLBN1xMBngqw" name="tester" guid="_eHAf4UbpEduLBN1xMBngqw" presentationName="Testador" briefDescription="Este papel é responsável pelas principais atividades do esforço de teste. Estas atividades incluem identificar, definir, implementar e conduzir os testes necessários, bem como registrar e analisar os resultados dos testes." hasMultipleOccurrences="true" superActivities="_eE5nEUbpEduLBN1xMBngqw" modifies="_eHAf4kbpEduLBN1xMBngqw" responsibleFor="_eHAf4kbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6m3EESKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <Role href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0ZM4MclgEdmt3adZL5Dmdw"/>
+        <responsibleForExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0ZlSsMlgEdmt3adZL5Dmdw"/>
+        <responsibleForExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0ZfMEMlgEdmt3adZL5Dmdw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_eHAf4kbpEduLBN1xMBngqw" name="test_case" guid="_eHAf4kbpEduLBN1xMBngqw" presentationName="Caso de Teste" briefDescription="Este artefato é a especificação de um conjunto de entradas de teste, condições de execução e resultados esperados, identificados com a finalidade de fazer a avaliação de algum aspecto particular de um cenário." hasMultipleOccurrences="true" superActivities="_eE5nEUbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6jzwESKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0Zxf8MlgEdmt3adZL5Dmdw"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0aJ6cMlgEdmt3adZL5Dmdw"/>
+        <templates href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0dT8IMlgEdmt3adZL5Dmdw"/>
+        <WorkProduct href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0ZS-0MlgEdmt3adZL5Dmdw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="__BTFAClZEdytYo99TZh2Ng" name="architect" guid="__BTFAClZEdytYo99TZh2Ng" presentationName="Arquiteto" briefDescription="Este papel é responsável por definir a arquitetura de software, incluindo a tomada das principais decisões técnicas que orientam todo o design e a implementação do projeto." isPlanned="false" superActivities="_eE5nEUbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6qhcUSKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_9gocwMvoEdqukPpotm3DYg"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#__O7tAMVvEduLYZUGfgZrkQ"/>
+        <Role href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0X9iEMlgEdmt3adZL5Dmdw"/>
+        <responsibleForExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0XAf0MlgEdmt3adZL5Dmdw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="__1T74ClZEdytYo99TZh2Ng" name="developer" guid="__1T74ClZEdytYo99TZh2Ng" presentationName="Desenvolvedor" briefDescription="Este papel é responsável por desenvolver uma parte do sistema, incluindo a construção de seu design de forma que ele atenda a arquitetura e possivelmente a prototipagem da interface de usuário, e então implementar, executar o teste de unidade e integrar os componentes que são parte da solução." isPlanned="false" superActivities="_eE5nEUbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6qhckSKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <Role href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0YDosMlgEdmt3adZL5Dmdw"/>
+        <responsibleForExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0YuXEMlgEdmt3adZL5Dmdw"/>
+        <responsibleForExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0WuL8slgEdmt3adZL5Dmdw"/>
+        <responsibleForExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0YuXEclgEdmt3adZL5Dmdw"/>
+        <responsibleForExclude href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0YoQcMlgEdmt3adZL5Dmdw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_piI90DlJEdyTZ9G7ByfQTw" name="iteration_plan" guid="_piI90DlJEdyTZ9G7ByfQTw" presentationName="Plano de Iteração" briefDescription="Um plano detalhado que descreve os objetivos, as atribuições de trabalho e os critérios de avaliação para a iteração." isPlanned="false" superActivities="_eE5nEUbpEduLBN1xMBngqw">
+        <methodElementProperty xmi:id="_O6ydQESKEeKIHoRDpe9VIw" name="descriptor_createdByReference" value="true"/>
+        <checklists href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_OHRDMAarEdy1uLAzgK8btg"/>
+        <concepts href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_lam4ADkBEduxovfWMDsntw"/>
+        <examples href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_TuNhIEE4EdulKujnGUuxbg"/>
+        <guidelines href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0auiMMlgEdmt3adZL5Dmdw"/>
+        <templates href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0dBoQMlgEdmt3adZL5Dmdw"/>
+        <reports href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_uAzgkDg3Edu4E8ZdmlYjtA"/>
+        <WorkProduct href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0aQBEslgEdmt3adZL5Dmdw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_nen3UOxwEduRmOwej6Grog" name="develop_solution" guid="_nen3UOxwEduRmOwej6Grog">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_nen3UexwEduRmOwej6Grog" name="develop_solution" guid="_nen3UexwEduRmOwej6Grog" presentationName="Desenvolver um Incremento da Solução" hasMultipleOccurrences="true" superActivities="_y-3IrutQEdqc1LGhiSPqRg" variabilityType="extends">
+        <methodElementProperty xmi:id="_n5zXICEYEdy8morYWHvpBw" name="publish_ad" value="true"/>
+        <methodElementProperty xmi:id="_n5zXISEYEdy8morYWHvpBw" name="publish_add" value="true"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_h2-iAPimEdmugcVr9AdHjQ#_h2-iAfimEdmugcVr9AdHjQ"/>
+      </processElements>
+    </childPackages>
+    <diagrams xmi:id="_jB0fECEZEdy8morYWHvpBw" guid="_jB0fECEZEdy8morYWHvpBw">
+      <property xmi:id="_jB0fEiEZEdy8morYWHvpBw" guid="_jB0fEiEZEdy8morYWHvpBw" key="autolayout" value="true"/>
+      <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_jB0fESEZEdy8morYWHvpBw" guid="_jB0fESEZEdy8morYWHvpBw" presentation="Activity Detail" element="_y-3IrutQEdqc1LGhiSPqRg"/>
+    </diagrams>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_y-3IrutQEdqc1LGhiSPqRg" name="construction_phase_iteration" guid="_y-3IrutQEdqc1LGhiSPqRg" presentationName="Iteração da Fase de Construção" briefDescription="Este template de iteração define as atividades (e os papéis e produtos de trabalhos associados) realizadas em uma iteração típica na fase de Construção." isRepeatable="true" breakdownElements="_y-k0bOtQEdqc1LGhiSPqRg _eE5nEUbpEduLBN1xMBngqw _nen3UexwEduRmOwej6Grog _y-3IretQEdqc1LGhiSPqRg _y_PjTOtQEdqc1LGhiSPqRg">
+      <ownedRules xmi:id="_y-3Ir-tQEdqc1LGhiSPqRg" guid="_y-3Ir-tQEdqc1LGhiSPqRg"/>
+      <methodElementProperty xmi:id="_O605gESKEeKIHoRDpe9VIw" name="process_synFree" value="true"/>
+      <presentation xmi:id="-239OBD2wagT2qp8fuPWcHQ" href="uma://-OC3td1csl7lqV15vimYOaw#-239OBD2wagT2qp8fuPWcHQ"/>
+      <defaultContext href="uma://_y62TUKVPEdmMZJIzZ1W7Pw#_0u-T4clgEdmt3adZL5Dmdw"/>
+      <validContext href="uma://_y62TUKVPEdmMZJIzZ1W7Pw#_0u-T4clgEdmt3adZL5Dmdw"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

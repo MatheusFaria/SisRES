@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-3MMugrRt4H5NPnZe38OAjA" name=",_Dq0GQAIoEdyLh7vsrHZ4YA" guid="-3MMugrRt4H5NPnZe38OAjA" changeDate="2007-05-28T15:31:33.068-0300" version="7.2.0">
+  <sections xmi:id="_xVY94A06EdyKD8XBf_Hbrw" name="Integre elementos implementados" guid="_xVY94A06EdyKD8XBf_Hbrw">
+    <sectionDescription>&lt;p>No &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/workspace_722BBA90.html&quot; guid=&quot;_0cEmAMlgEdmt3adZL5Dmdw&quot;>Espaço de Trabalho&lt;/a> relevante, combine todos os &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/change_set_430BF233.html&quot; guid=&quot;_1QU9MAIoEdyLh7vsrHZ4YA&quot;>Conjuntos de Mudança&lt;/a> concluídos e que não estejam na última linha de base. Resolva qualquer conflito nas versões dos artefatos removendo um dos conjuntos de mudança que criou o conflito ou criando um novo conjunto de mudança que inclua versões fundidas dos artefatos conflitantes.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_hbwWQA07EdyKD8XBf_Hbrw" name="Crie a Construção" guid="_hbwWQA07EdyKD8XBf_Hbrw">
+    <sectionDescription>&lt;p>Crie a Construção. Os detalhes deste passo dependem da linguagem de implementação e do ambiente de desenvolvimento; podem envolver a compilação e a linkedição (no caso das linguagens compiladas) e outros processos que resultem em um incremento executável do sistema.&lt;/p>&#xD;
+&#xD;
+&lt;p>Exemplos desse passos são:&lt;/p>&#xD;
+&#xD;
+&lt;ol>&#xD;
+&#xD;
+    &lt;li>Compilar e linkeditar os artefatos fonte para criar um executável&lt;/li>&#xD;
+&#xD;
+    &lt;li>Carregar objetos binários em um banco de teste ou simulador&lt;/li>&#xD;
+&#xD;
+    &lt;li>Executar um script para carregar ou atualizar esquemas de base de dados&lt;/li>&#xD;
+&#xD;
+    &lt;li>Empacotar e implantar aplicações web&lt;br />&#xD;
+&#xD;
+    &lt;/li>&#xD;
+&#xD;
+&lt;/ol></sectionDescription>
+  </sections>
+  <sections xmi:id="_S5vB0A08EdyKD8XBf_Hbrw" name="Testar elementos integrados" guid="_S5vB0A08EdyKD8XBf_Hbrw">
+    <sectionDescription>&lt;p>&#xD;
+&#xD;
+    Execute os &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/tasks/run_developer_tests_73D7DBC4.html&quot; guid=&quot;_0iYCUMlgEdmt3adZL5Dmdw&quot;>Testes de Desenvolvedor&lt;/a> nos elementos integrados para verificar que eles se comportam da mesma forma que quando estavam isolados. Garanta que o escopo destes testes seja o mais amplo possível, assegurando que os últimos conjuntos de mudanças não façam com que os testes de desenvolvedor falhem em outras áreas do sistema.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Dm_bEA09EdyKD8XBf_Hbrw" name="Torne as mudanças disponíveis" guid="_Dm_bEA09EdyKD8XBf_Hbrw">
+    <sectionDescription>&lt;p>Assim que os testes terminarem com sucesso e à construção for considerada &quot;boa&quot;, os resultados deverão ser disponibilizados para o resto da equipe pela &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/guidelines/promoting_changes_9087B764.html&quot; guid=&quot;_SM4YIL6dEdqti4GwqTkbsQ&quot;>Promoção das Mudanças&lt;/a>. Os detalhes deste passo dependem das ferramentas de gestão de configuração em uso, mas em geral isso envolve a colocação de um conjunto de mudança testado no repositório de gestão de configuração, para que ele sirva como base para o desenvolvimento do próximo incremento de sistema. Esta é a essência da &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/continuous_integration_87682D06.html&quot; guid=&quot;_B3xkEPD0EdqYgerqi84oCA&quot;>Integração Contínua&lt;/a>.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_1yKnAA1BEdyKD8XBf_Hbrw" name="Execute &quot;Testes Falsos&quot;" guid="_1yKnAA1BEdyKD8XBf_Hbrw">
+    <sectionDescription>&lt;p>Várias construções serão criadas em cada iteração. Para cada construção, este passo deverá ser realizado apenas quando conjuntos de mudança forem entregues para satisfazer os requisitos da construção.&lt;/p>&#xD;
+&#xD;
+&lt;p>Execute um subconjunto de testes de sistema para assegurar que a construção esteja adequada antes de comprometer recursos para o escopo completo de testes de sistema. Enquanto o nível de testes varia, concentre-se em ganhar a confiança de que o incremento seja de qualidade suficiente para estabelecer uma linha de base para os testes de sistema.&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Vf5kEA1CEdyKD8XBf_Hbrw" name="Crie uma linha de base" guid="_Vf5kEA1CEdyKD8XBf_Hbrw">
+    <sectionDescription>&lt;p>Várias construções serão criadas em cada iteração. Para cada construção, este passo deverá ser realizado apenas quando conjuntos de mudança forem entregues para satisfazer os requisitos da construção.&lt;/p>&#xD;
+&#xD;
+&lt;p>O procedimento para esse passo depende das ferramentas de gestão de configuração em uso.&lt;/p>&#xD;
+&#xD;
+&lt;p>Crie uma linha de base que identifique inequivocamente a configuração para a construção que esteja pronta para os testes de sistema. Identifique a versão de cada elemento de implementação e de cada artefato de suporte que foram usados para criar esta construção.&lt;/p></sectionDescription>
+  </sections>
+  <keyConsiderations>&lt;p>Para ser eficaz na aplicação da prática de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/continuous_integration_87682D06.html&quot; guid=&quot;_B3xkEPD0EdqYgerqi84oCA&quot;>Integração Contínua&lt;/a>, o tempo para integrar, construir e testar o incremento deve ser curto o bastante de forma que ele possa ser executado várias vezes por dia. As alterações devem ser subdivididas em &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/change_set_430BF233.html&quot; guid=&quot;_1QU9MAIoEdyLh7vsrHZ4YA&quot;>Conjuntos de Mudança&lt;/a>, relativamente pequenos, que possam ser implementados, integrados e testados rapidamente.&lt;/p></keyConsiderations>
+  <purpose>O objetivo desta tarefa é integrar todas as mudanças feitas no código base pelos desenvolvedores e realizar os testes mínimos no incremento de sistema para validar a construção. A meta é identificar problemas na integração, o mais rápido possível de forma que possam ser facilmente corrigidos pela pessoa certa e no momento certo.</purpose>
+</org.eclipse.epf.uma:TaskDescription>
