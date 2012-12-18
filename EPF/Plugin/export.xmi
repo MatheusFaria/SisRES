@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI epf:version="1.5.1" xmi:version="2.0" xmlns:epf="http://www.eclipse.org/epf" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:xmi="http://www.omg.org/XMI">
+<org.eclipse.epf.uma.resourcemanager:ResourceManager guid="_mtb_FPL5Edm6Nvont3uinw" xmi:id="_mtb_FPL5Edm6Nvont3uinw">
+<subManagers href="uma://_L0_eYDvhEeKhCuBsHWJ1Ug#_L1FlADvhEeKhCuBsHWJ1Ug" xmi:id="_L1FlADvhEeKhCuBsHWJ1Ug">
+</subManagers>
+<resourceDescriptors id="_y62TUKVPEdmMZJIzZ1W7Pw" uri="" xmi:id="_mtiFgPL5Edm6Nvont3uinw">
+</resourceDescriptors>
+<resourceDescriptors id="_L0_eYDvhEeKhCuBsHWJ1Ug" uri="SisRES/plugin.xmi" xmi:id="_L1FlATvhEeKhCuBsHWJ1Ug">
+</resourceDescriptors>
+</org.eclipse.epf.uma.resourcemanager:ResourceManager>
+<org.eclipse.epf.uma:MethodLibrary guid="_y62TUKVPEdmMZJIzZ1W7Pw" name="library.xmi" xmi:id="_y62TUKVPEdmMZJIzZ1W7Pw">
+<methodElementProperty name="library_synFree" value="true" xmi:id="_PC7sokSKEeKIHoRDpe9VIw">
+</methodElementProperty>
+<methodPlugins href="uma://_L0_eYDvhEeKhCuBsHWJ1Ug#_L0_eYDvhEeKhCuBsHWJ1Ug" xmi:id="_L0_eYDvhEeKhCuBsHWJ1Ug">
+</methodPlugins>
+<methodElementProperty value="0">
+</methodElementProperty>
+<methodElementProperty value="_0TLvwMlgEdmt3adZL5Dmdw">
+</methodElementProperty>
+<methodElementProperty value="openup">
+</methodElementProperty>
+<methodElementProperty value="_WCUhAO8KEdmKSqa_gSYthg">
+</methodElementProperty>
+<methodElementProperty value="base_concepts">
+</methodElementProperty>
+<methodElementProperty value="_Nq0WYFkVEdul8L-IGeA7TA">
+</methodElementProperty>
+<methodElementProperty value="dsdm_openup">
+</methodElementProperty>
+<methodElementProperty value="_L0_eYDvhEeKhCuBsHWJ1Ug">
+</methodElementProperty>
+<methodElementProperty value="SisRES">
+</methodElementProperty>
+</org.eclipse.epf.uma:MethodLibrary>
+</xmi:XMI>
