@@ -29,7 +29,7 @@
             <methodElementProperty xmi:id="_JhP4sEibEeKveLAxMqzgTg" name="CategoryElementsSortType" value="Manual"/>
             <referenceWorkflows href="uma://_b4PfkDvhEeKhCuBsHWJ1Ug#_b4PfkTvhEeKhCuBsHWJ1Ug"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_uSzEcDvjEeKhCuBsHWJ1Ug" name="gerencia_projeto" guid="_uSzEcDvjEeKhCuBsHWJ1Ug" presentationName="Gerência de Projeto" tasks="_TT60cDvpEeKhCuBsHWJ1Ug _qCAdUDvmEeKhCuBsHWJ1Ug _IlrQcDvmEeKhCuBsHWJ1Ug _IhzoAEhmEeK3vv9-2cemvw _meskcEhkEeK3vv9-2cemvw _isEVEDvnEeKhCuBsHWJ1Ug _fTDAQDvmEeKhCuBsHWJ1Ug _-CASMEhuEeK3vv9-2cemvw _C6c9kDvnEeKhCuBsHWJ1Ug">
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_uSzEcDvjEeKhCuBsHWJ1Ug" name="gerencia_projeto" guid="_uSzEcDvjEeKhCuBsHWJ1Ug" presentationName="Gerência de Projeto" tasks="_TT60cDvpEeKhCuBsHWJ1Ug _qCAdUDvmEeKhCuBsHWJ1Ug _IlrQcDvmEeKhCuBsHWJ1Ug _IhzoAEhmEeK3vv9-2cemvw _meskcEhkEeK3vv9-2cemvw _isEVEDvnEeKhCuBsHWJ1Ug _fTDAQDvmEeKhCuBsHWJ1Ug _-CASMEhuEeK3vv9-2cemvw _C6c9kDvnEeKhCuBsHWJ1Ug _V1rrcElvEeK1JIiH4f8oDA _Jt-A0ElxEeK1JIiH4f8oDA _2dcyYElwEeK1JIiH4f8oDA __sWx8ElwEeK1JIiH4f8oDA _rbUhsElwEeK1JIiH4f8oDA _qH5YsEl1EeK1JIiH4f8oDA">
             <methodElementProperty xmi:id="_xD4sADvjEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
           </contentElements>
         </childPackages>
@@ -39,8 +39,12 @@
         <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eaDvhEeKhCuBsHWJ1Ug" name="StandardCategories" guid="_L0_eaDvhEeKhCuBsHWJ1Ug"/>
         <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eaTvhEeKhCuBsHWJ1Ug" name="CustomCategories" guid="_L0_eaTvhEeKhCuBsHWJ1Ug">
           <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_eajvhEeKhCuBsHWJ1Ug" name="Hidden" guid="_L0_eajvhEeKhCuBsHWJ1Ug">
-            <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_L0_eazvhEeKhCuBsHWJ1Ug" name="Custom Categories" guid="_L0_eazvhEeKhCuBsHWJ1Ug"/>
+            <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_L0_eazvhEeKhCuBsHWJ1Ug" name="Custom Categories" guid="_L0_eazvhEeKhCuBsHWJ1Ug" categorizedElements="_zA2L4EiwEeKtaum1wyQOLg"/>
           </childPackages>
+          <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_zA2L4EiwEeKtaum1wyQOLg" name="sisres" guid="_zA2L4EiwEeKtaum1wyQOLg" presentationName="SisRES">
+            <methodElementProperty xmi:id="_2VDuoEiwEeKtaum1wyQOLg" name="me_edited" value="true"/>
+            <categorizedElements xsi:type="org.eclipse.epf.uma:DeliveryProcess" href="uma://_b4PfkDvhEeKhCuBsHWJ1Ug#_b4PfkTvhEeKhCuBsHWJ1Ug"/>
+          </contentElements>
         </childPackages>
       </childPackages>
       <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_L0_ebDvhEeKhCuBsHWJ1Ug" name="CoreContent" guid="_L0_ebDvhEeKhCuBsHWJ1Ug">
@@ -230,6 +234,48 @@
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_aDQaQDvpEeKhCuBsHWJ1Ug" name="plano_iteracao" guid="_aDQaQDvpEeKhCuBsHWJ1Ug" presentationName="Plano de Iteração">
             <methodElementProperty xmi:id="_fdcyEDvpEeKhCuBsHWJ1Ug" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_V1rrcElvEeK1JIiH4f8oDA" name="analise_riscos" guid="_V1rrcElvEeK1JIiH4f8oDA" presentationName="Analise de riscos" briefDescription="Analise de riscos do projeto" output="_Es3sMEl2EeK1JIiH4f8oDA">
+            <methodElementProperty xmi:id="_rXvesElvEeK1JIiH4f8oDA" name="me_edited" value="true"/>
+            <performedBy href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0a0o0MlgEdmt3adZL5Dmdw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_rbUhsElwEeK1JIiH4f8oDA" name="estimar_custo" guid="_rbUhsElwEeK1JIiH4f8oDA" presentationName="Estimar Custo, tempo e esforço" briefDescription="Estimativa dos custos do projeto, incluindo tempo e esforço da equipe." output="_G76WoEl2EeK1JIiH4f8oDA">
+            <methodElementProperty xmi:id="_2BeoEElwEeK1JIiH4f8oDA" name="me_edited" value="true"/>
+            <performedBy href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0a0o0MlgEdmt3adZL5Dmdw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_2dcyYElwEeK1JIiH4f8oDA" name="determinar_qualidade" guid="_2dcyYElwEeK1JIiH4f8oDA" presentationName="Determinar fatores de Qualidade" briefDescription="Atividade de determinação dos fatores de qualidade do sistema." output="_Cf7TgEl2EeK1JIiH4f8oDA">
+            <methodElementProperty xmi:id="_IwUs0ElxEeK1JIiH4f8oDA" name="me_edited" value="true"/>
+            <performedBy href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0a0o0MlgEdmt3adZL5Dmdw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="__sWx8ElwEeK1JIiH4f8oDA" name="elaborar_estrategias_RH" guid="__sWx8ElwEeK1JIiH4f8oDA" presentationName="Elaborar estratégias de RH" briefDescription="Elaborar as estratégias de Recursos Humanos." output="_DcIdEEl2EeK1JIiH4f8oDA">
+            <methodElementProperty xmi:id="_IdM8gElxEeK1JIiH4f8oDA" name="me_edited" value="true"/>
+            <performedBy href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0a0o0MlgEdmt3adZL5Dmdw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_Jt-A0ElxEeK1JIiH4f8oDA" name="definir_escopo" guid="_Jt-A0ElxEeK1JIiH4f8oDA" presentationName="Definir Escopo" briefDescription="Definição do escopo do projeto." output="_FdnzsEl2EeK1JIiH4f8oDA">
+            <methodElementProperty xmi:id="_OCS8wElxEeK1JIiH4f8oDA" name="me_edited" value="true"/>
+            <performedBy href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0a0o0MlgEdmt3adZL5Dmdw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_Wnn-YElyEeK1JIiH4f8oDA" name="documento_plano_projeto" guid="_Wnn-YElyEeK1JIiH4f8oDA" presentationName="Documento do Plano do Projeto" briefDescription="Documento que contem o plano de todo o projeto, numa visão macro.">
+            <methodElementProperty xmi:id="_BO_XcElzEeK1JIiH4f8oDA" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_qH5YsEl1EeK1JIiH4f8oDA" name="gerar_plano_projeto" guid="_qH5YsEl1EeK1JIiH4f8oDA" presentationName="Gerar o plano de Projeto" briefDescription="Redigir o documento de plano de projeto&#xD;&#xA;" mandatoryInput="_Cf7TgEl2EeK1JIiH4f8oDA _DcIdEEl2EeK1JIiH4f8oDA _Es3sMEl2EeK1JIiH4f8oDA _FdnzsEl2EeK1JIiH4f8oDA _G76WoEl2EeK1JIiH4f8oDA" output="_Wnn-YElyEeK1JIiH4f8oDA">
+            <methodElementProperty xmi:id="_vnf08El1EeK1JIiH4f8oDA" name="me_edited" value="true"/>
+            <performedBy href="uma://_0TLvwMlgEdmt3adZL5Dmdw#_0a0o0MlgEdmt3adZL5Dmdw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_Cf7TgEl2EeK1JIiH4f8oDA" name="documento_qualidade" guid="_Cf7TgEl2EeK1JIiH4f8oDA" presentationName="Documento de fatores de qualidade" briefDescription="Documento que explica como foram geridos os fatores de qualidade do projeto.">
+            <methodElementProperty xmi:id="_40XXsEl2EeK1JIiH4f8oDA" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_DcIdEEl2EeK1JIiH4f8oDA" name="documento_estrategias_RH" guid="_DcIdEEl2EeK1JIiH4f8oDA" presentationName="Documento das estratégias de Recursos Humanos" briefDescription="Documento que elicita as estratégias adotadas para melhor utilização dos recursos humanos disponíveis.">
+            <methodElementProperty xmi:id="_ob57gEl2EeK1JIiH4f8oDA" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_Es3sMEl2EeK1JIiH4f8oDA" name="documento_riscos" guid="_Es3sMEl2EeK1JIiH4f8oDA" presentationName="Documento de Riscos" briefDescription="Documento com estimativa dos provaveis riscos do projeto.">
+            <methodElementProperty xmi:id="_dVp_0El2EeK1JIiH4f8oDA" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_FdnzsEl2EeK1JIiH4f8oDA" name="escopo" guid="_FdnzsEl2EeK1JIiH4f8oDA" presentationName="Escopo do Projeto" briefDescription="Documento que detalha o escopo do projeto.">
+            <methodElementProperty xmi:id="_BHTeQEl3EeK1JIiH4f8oDA" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_G76WoEl2EeK1JIiH4f8oDA" name="planilha_custos" guid="_G76WoEl2EeK1JIiH4f8oDA" presentationName="Planilha de Custos" briefDescription="Planilha de custos, esforço e tempo do projeto.">
+            <methodElementProperty xmi:id="_RtlwgEl2EeK1JIiH4f8oDA" name="me_edited" value="true"/>
           </contentElements>
         </childPackages>
       </childPackages>

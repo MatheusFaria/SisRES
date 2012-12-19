@@ -484,4 +484,601 @@
 &lt;/ul>&#xD;
 &lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></refinedDescription>
   </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-8MRjI3RNRw7jVZaH_PsZbg" name="project_manager,_UAU24UlwEeK1JIiH4f8oDA" guid="-8MRjI3RNRw7jVZaH_PsZbg">
+    <refinedDescription>&lt;p>Este papel:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Instrui a equipe para conduzir um resultado de êxito do projeto e aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pelo resultado do projeto e pela aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pela avaliação dos riscos do projeto e pelo controle destes riscos através de estratégias de atenuação.&lt;/li>&#xD;
+    &lt;li>Aplica o conhecimento, as habilidades, as ferramentas e as técnicas de gestão em uma grande quantidade de tarefas a fim entregar o resultado desejado para um projeto em particular de forma temporizada.&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-jJ8czKPd_ajgAuNhm_kUCA" name="iteration_plan,_UAWsEUlwEeK1JIiH4f8oDA" guid="-jJ8czKPd_ajgAuNhm_kUCA">
+    <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-9RKCyNoy2v-vLr8p-6V29Q" name="work_items_list,_UAWsFElwEeK1JIiH4f8oDA" guid="-9RKCyNoy2v-vLr8p-6V29Q">
+    <refinedDescription>&lt;p>Este artefato fornece um ponto focal para toda a equipe:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornece uma lista que contém todas as solicitações de melhorias ou capacidades adicionais para a aplicação. Note que alguns destes pedidos podem nunca ser implementados, ou ser implementados em projetos posteriores.&lt;/li>&#xD;
+    &lt;li>Fornece uma lista de todo trabalho a ser estimado, priorizado e atribuído dentro do projeto. A lista de riscos é priorizada separadamente.&lt;/li>&#xD;
+    &lt;li>Fornece um lugar único para que à equipe de desenvolvimento saiba quais &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a> precisam ser entregues, possui referências do material necessário para realizar o trabalho e para relatar o progresso feito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes são os itens de trabalho típicos desta lista.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de Uso e referências às especificações de caso de uso&lt;/li>&#xD;
+    &lt;li>Requisitos suplementares&lt;/li>&#xD;
+    &lt;li>Solicitações de mudança e de melhoria&lt;/li>&#xD;
+    &lt;li>Defeitos&lt;/li>&#xD;
+    &lt;li>Tarefas de desenvolvimento&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-wt17Ty55F4OSVHjxfxPY8A" name="any_role,_1tl7YUlzEeK1JIiH4f8oDA" guid="-wt17Ty55F4OSVHjxfxPY8A">
+    <refinedDescription>&lt;p>Este papel permite que qualquer um em uma equipe execute tarefas gerais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Acessar artefatos no sistema de controle de versões para desenvolvimento e manutenção&lt;/li>&#xD;
+    &lt;li>Submeter solicitações de mudança para o projeto&lt;/li>&#xD;
+    &lt;li>Participar nas avaliações e revisões&lt;/li>&#xD;
+    &lt;li>Prontificar-se para trabalhar em uma determinada iteração&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-cslh5df-jIHIuSTFVCZjPA" name="project_manager,_1tl7ZElzEeK1JIiH4f8oDA" guid="-cslh5df-jIHIuSTFVCZjPA">
+    <refinedDescription>&lt;p>Este papel:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Instrui a equipe para conduzir um resultado de êxito do projeto e aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pelo resultado do projeto e pela aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pela avaliação dos riscos do projeto e pelo controle destes riscos através de estratégias de atenuação.&lt;/li>&#xD;
+    &lt;li>Aplica o conhecimento, as habilidades, as ferramentas e as técnicas de gestão em uma grande quantidade de tarefas a fim entregar o resultado desejado para um projeto em particular de forma temporizada.&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-53ioGNXFPGbCnuBUhQxuYw" name="iteration_plan,_1tnJgUlzEeK1JIiH4f8oDA" guid="-53ioGNXFPGbCnuBUhQxuYw">
+    <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-jiPb7QTcTfPrOXITQKPKoQ" name="work_items_list,_1tnJhElzEeK1JIiH4f8oDA" guid="-jiPb7QTcTfPrOXITQKPKoQ">
+    <refinedDescription>&lt;p>Este artefato fornece um ponto focal para toda a equipe:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornece uma lista que contém todas as solicitações de melhorias ou capacidades adicionais para a aplicação. Note que alguns destes pedidos podem nunca ser implementados, ou ser implementados em projetos posteriores.&lt;/li>&#xD;
+    &lt;li>Fornece uma lista de todo trabalho a ser estimado, priorizado e atribuído dentro do projeto. A lista de riscos é priorizada separadamente.&lt;/li>&#xD;
+    &lt;li>Fornece um lugar único para que à equipe de desenvolvimento saiba quais &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a> precisam ser entregues, possui referências do material necessário para realizar o trabalho e para relatar o progresso feito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes são os itens de trabalho típicos desta lista.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de Uso e referências às especificações de caso de uso&lt;/li>&#xD;
+    &lt;li>Requisitos suplementares&lt;/li>&#xD;
+    &lt;li>Solicitações de mudança e de melhoria&lt;/li>&#xD;
+    &lt;li>Defeitos&lt;/li>&#xD;
+    &lt;li>Tarefas de desenvolvimento&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-AvFLIjVGY5YS5dXYtNGHzg" name="vision,_tCuqwUl4EeKHJ-K7LFAw7Q" guid="-AvFLIjVGY5YS5dXYtNGHzg">
+    <refinedDescription>&lt;p>Este artefato fornece uma visão completa do sistema de software em desenvolvimento e dá suporte ao contrato entre o cliente e a organização de desenvolvimento. Cada projeto necessita de uma fonte para capturar as expectativas dos Stakeholders.&lt;/p>&#xD;
+&lt;p>Este artefato é escrito a partir da perspectiva dos clientes, focando nas características essenciais do sistema e nos níveis aceitáveis de qualidade. O artefato deve incluir uma descrição de quais &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/termdefinitions/feature_4ED64AEE.html&quot; guid=&quot;_PgYREAeYEduWycDgioo5rg&quot;>Características&lt;/a> serão incluídas, bem como as que foram consideradas, mas não incluídas.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-Fjb_LmMRoNIyKCAjONxULA" name="supporting_requirements_spec,_tCuqxEl4EeKHJ-K7LFAw7Q" guid="-Fjb_LmMRoNIyKCAjONxULA">
+    <refinedDescription>&lt;p>Juntos, os Requisitos Suplementares e os Casos de Uso definem todos os requisitos do sistema. Os Casos de Uso descrevem os requisitos comportamentais do sistema, e os Requisitos Suplementares descrevem todos os outros requisitos que não são capturados nas Especificações de Caso de Uso. Ao fazer esta distinção simplificamos a manutenção.&lt;/p>&#xD;
+&lt;p>Os Requisitos Suplementares podem ser categorizados de acordo com o modelo FURPS+ (Funcional, Usabilidade, Confiabilidade, Desempenho, Suportabilidade + Restrições). Para mais informações sobre esta classificação, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/supporting_requirements_B2C4D610.html&quot; guid=&quot;_VXZ5wO0IEdqHTdbLTmC5IQ&quot;>Conceito: Requisitos Suplementares &lt;/a>.&lt;/p>&#xD;
+&lt;p>A figura abaixo ilustra o relacionamento entre os Requisitos Suplementares, as Especificações de Caso de Uso e os Atores.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;400&quot; alt=&quot;&quot; src=&quot;./resources/supporting_reguirements2.gif&quot; width=&quot;600&quot; />&#xD;
+&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-d2s3qO9_eUXxClYHA_MMfA" name="glossary,_tCuqx0l4EeKHJ-K7LFAw7Q" guid="-d2s3qO9_eUXxClYHA_MMfA">
+    <keyConsiderations>&lt;p>Em alguns projetos que não envolvem modelagem de negócio ou domínio, o Glossário é o principal artefato para registrar as informações sobre o domínio do negócio do projeto.&lt;/p>&#xD;
+&lt;p>Embora listado como uma saída ou entrada das tarefas associadas com a disciplina de requisitos, este artefato pode ser atualizado a qualquer momento, por qualquer papel, assim que novos termos sejam identificados.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>O glossário ajuda a evitar problemas de comunicação fornecendo dois recursos essenciais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Um local central para procurar termos e abreviaturas que sejam novos para os membros da equipe de desenvolvimento&lt;/li>&#xD;
+    &lt;li>Definições dos termos que são usados de formas específicas dentro do domínio&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>As definições para os termos do Glossário vêm de diversas fontes, tais como documentos de requisitos, especificações e discussões com os Stakeholders e com os peritos do domínio.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-gdrtOAKwoI_mr5GFqWaN6A" name="any_role,_tCzjQkl4EeKHJ-K7LFAw7Q" guid="-gdrtOAKwoI_mr5GFqWaN6A">
+    <refinedDescription>&lt;p>Este papel permite que qualquer um em uma equipe execute tarefas gerais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Acessar artefatos no sistema de controle de versões para desenvolvimento e manutenção&lt;/li>&#xD;
+    &lt;li>Submeter solicitações de mudança para o projeto&lt;/li>&#xD;
+    &lt;li>Participar nas avaliações e revisões&lt;/li>&#xD;
+    &lt;li>Prontificar-se para trabalhar em uma determinada iteração&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-MV8GJq46GxFuSXV-ezo0Hw" name="project_manager,_tCzjRUl4EeKHJ-K7LFAw7Q" guid="-MV8GJq46GxFuSXV-ezo0Hw">
+    <refinedDescription>&lt;p>Este papel:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Instrui a equipe para conduzir um resultado de êxito do projeto e aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pelo resultado do projeto e pela aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pela avaliação dos riscos do projeto e pelo controle destes riscos através de estratégias de atenuação.&lt;/li>&#xD;
+    &lt;li>Aplica o conhecimento, as habilidades, as ferramentas e as técnicas de gestão em uma grande quantidade de tarefas a fim entregar o resultado desejado para um projeto em particular de forma temporizada.&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-xo1T1VabYEFpXoBs6XzpYw" name="iteration_plan,_tC1Yckl4EeKHJ-K7LFAw7Q" guid="-xo1T1VabYEFpXoBs6XzpYw">
+    <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-x2g4N8GwaX0Cjeczk1w7DQ" name="work_items_list,_tC1_gUl4EeKHJ-K7LFAw7Q" guid="-x2g4N8GwaX0Cjeczk1w7DQ">
+    <refinedDescription>&lt;p>Este artefato fornece um ponto focal para toda a equipe:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornece uma lista que contém todas as solicitações de melhorias ou capacidades adicionais para a aplicação. Note que alguns destes pedidos podem nunca ser implementados, ou ser implementados em projetos posteriores.&lt;/li>&#xD;
+    &lt;li>Fornece uma lista de todo trabalho a ser estimado, priorizado e atribuído dentro do projeto. A lista de riscos é priorizada separadamente.&lt;/li>&#xD;
+    &lt;li>Fornece um lugar único para que à equipe de desenvolvimento saiba quais &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a> precisam ser entregues, possui referências do material necessário para realizar o trabalho e para relatar o progresso feito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes são os itens de trabalho típicos desta lista.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de Uso e referências às especificações de caso de uso&lt;/li>&#xD;
+    &lt;li>Requisitos suplementares&lt;/li>&#xD;
+    &lt;li>Solicitações de mudança e de melhoria&lt;/li>&#xD;
+    &lt;li>Defeitos&lt;/li>&#xD;
+    &lt;li>Tarefas de desenvolvimento&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-1bAqbqMv_VpPlaeXVP0vdw" name="vision,_tC8GIUl4EeKHJ-K7LFAw7Q" guid="-1bAqbqMv_VpPlaeXVP0vdw">
+    <refinedDescription>&lt;p>Este artefato fornece uma visão completa do sistema de software em desenvolvimento e dá suporte ao contrato entre o cliente e a organização de desenvolvimento. Cada projeto necessita de uma fonte para capturar as expectativas dos Stakeholders.&lt;/p>&#xD;
+&lt;p>Este artefato é escrito a partir da perspectiva dos clientes, focando nas características essenciais do sistema e nos níveis aceitáveis de qualidade. O artefato deve incluir uma descrição de quais &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/termdefinitions/feature_4ED64AEE.html&quot; guid=&quot;_PgYREAeYEduWycDgioo5rg&quot;>Características&lt;/a> serão incluídas, bem como as que foram consideradas, mas não incluídas.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-CbSdKHlcqC2OJhUHGeH6ig" name="supporting_requirements_spec,_tC8GJEl4EeKHJ-K7LFAw7Q" guid="-CbSdKHlcqC2OJhUHGeH6ig">
+    <refinedDescription>&lt;p>Juntos, os Requisitos Suplementares e os Casos de Uso definem todos os requisitos do sistema. Os Casos de Uso descrevem os requisitos comportamentais do sistema, e os Requisitos Suplementares descrevem todos os outros requisitos que não são capturados nas Especificações de Caso de Uso. Ao fazer esta distinção simplificamos a manutenção.&lt;/p>&#xD;
+&lt;p>Os Requisitos Suplementares podem ser categorizados de acordo com o modelo FURPS+ (Funcional, Usabilidade, Confiabilidade, Desempenho, Suportabilidade + Restrições). Para mais informações sobre esta classificação, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/supporting_requirements_B2C4D610.html&quot; guid=&quot;_VXZ5wO0IEdqHTdbLTmC5IQ&quot;>Conceito: Requisitos Suplementares &lt;/a>.&lt;/p>&#xD;
+&lt;p>A figura abaixo ilustra o relacionamento entre os Requisitos Suplementares, as Especificações de Caso de Uso e os Atores.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;400&quot; alt=&quot;&quot; src=&quot;./resources/supporting_reguirements2.gif&quot; width=&quot;600&quot; />&#xD;
+&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-MWGs65RdqQJoGrcxmWgUpA" name="glossary,_tC8GJ0l4EeKHJ-K7LFAw7Q" guid="-MWGs65RdqQJoGrcxmWgUpA">
+    <keyConsiderations>&lt;p>Em alguns projetos que não envolvem modelagem de negócio ou domínio, o Glossário é o principal artefato para registrar as informações sobre o domínio do negócio do projeto.&lt;/p>&#xD;
+&lt;p>Embora listado como uma saída ou entrada das tarefas associadas com a disciplina de requisitos, este artefato pode ser atualizado a qualquer momento, por qualquer papel, assim que novos termos sejam identificados.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>O glossário ajuda a evitar problemas de comunicação fornecendo dois recursos essenciais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Um local central para procurar termos e abreviaturas que sejam novos para os membros da equipe de desenvolvimento&lt;/li>&#xD;
+    &lt;li>Definições dos termos que são usados de formas específicas dentro do domínio&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>As definições para os termos do Glossário vêm de diversas fontes, tais como documentos de requisitos, especificações e discussões com os Stakeholders e com os peritos do domínio.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-rBVal07gfsH36jiFZiQCKg" name="project_manager,_tC_JcUl4EeKHJ-K7LFAw7Q" guid="-rBVal07gfsH36jiFZiQCKg">
+    <refinedDescription>&lt;p>Este papel:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Instrui a equipe para conduzir um resultado de êxito do projeto e aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pelo resultado do projeto e pela aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pela avaliação dos riscos do projeto e pelo controle destes riscos através de estratégias de atenuação.&lt;/li>&#xD;
+    &lt;li>Aplica o conhecimento, as habilidades, as ferramentas e as técnicas de gestão em uma grande quantidade de tarefas a fim entregar o resultado desejado para um projeto em particular de forma temporizada.&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-CdlKdI6rUUdjV8IO5GEqdA" name="iteration_plan,_tDAXkkl4EeKHJ-K7LFAw7Q" guid="-CdlKdI6rUUdjV8IO5GEqdA">
+    <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-93L5VYmpFnrq4a7GMEb9tw" name="work_items_list,_tDAXlUl4EeKHJ-K7LFAw7Q" guid="-93L5VYmpFnrq4a7GMEb9tw">
+    <refinedDescription>&lt;p>Este artefato fornece um ponto focal para toda a equipe:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornece uma lista que contém todas as solicitações de melhorias ou capacidades adicionais para a aplicação. Note que alguns destes pedidos podem nunca ser implementados, ou ser implementados em projetos posteriores.&lt;/li>&#xD;
+    &lt;li>Fornece uma lista de todo trabalho a ser estimado, priorizado e atribuído dentro do projeto. A lista de riscos é priorizada separadamente.&lt;/li>&#xD;
+    &lt;li>Fornece um lugar único para que à equipe de desenvolvimento saiba quais &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a> precisam ser entregues, possui referências do material necessário para realizar o trabalho e para relatar o progresso feito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes são os itens de trabalho típicos desta lista.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de Uso e referências às especificações de caso de uso&lt;/li>&#xD;
+    &lt;li>Requisitos suplementares&lt;/li>&#xD;
+    &lt;li>Solicitações de mudança e de melhoria&lt;/li>&#xD;
+    &lt;li>Defeitos&lt;/li>&#xD;
+    &lt;li>Tarefas de desenvolvimento&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-Sp79k-5QN6M5emmRnk153w" name="vision,_tDEB8kl4EeKHJ-K7LFAw7Q" guid="-Sp79k-5QN6M5emmRnk153w">
+    <refinedDescription>&lt;p>Este artefato fornece uma visão completa do sistema de software em desenvolvimento e dá suporte ao contrato entre o cliente e a organização de desenvolvimento. Cada projeto necessita de uma fonte para capturar as expectativas dos Stakeholders.&lt;/p>&#xD;
+&lt;p>Este artefato é escrito a partir da perspectiva dos clientes, focando nas características essenciais do sistema e nos níveis aceitáveis de qualidade. O artefato deve incluir uma descrição de quais &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/termdefinitions/feature_4ED64AEE.html&quot; guid=&quot;_PgYREAeYEduWycDgioo5rg&quot;>Características&lt;/a> serão incluídas, bem como as que foram consideradas, mas não incluídas.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-EcT-Tb-6grBDeO0N3r9l4Q" name="supporting_requirements_spec,_tDEB9Ul4EeKHJ-K7LFAw7Q" guid="-EcT-Tb-6grBDeO0N3r9l4Q">
+    <refinedDescription>&lt;p>Juntos, os Requisitos Suplementares e os Casos de Uso definem todos os requisitos do sistema. Os Casos de Uso descrevem os requisitos comportamentais do sistema, e os Requisitos Suplementares descrevem todos os outros requisitos que não são capturados nas Especificações de Caso de Uso. Ao fazer esta distinção simplificamos a manutenção.&lt;/p>&#xD;
+&lt;p>Os Requisitos Suplementares podem ser categorizados de acordo com o modelo FURPS+ (Funcional, Usabilidade, Confiabilidade, Desempenho, Suportabilidade + Restrições). Para mais informações sobre esta classificação, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/supporting_requirements_B2C4D610.html&quot; guid=&quot;_VXZ5wO0IEdqHTdbLTmC5IQ&quot;>Conceito: Requisitos Suplementares &lt;/a>.&lt;/p>&#xD;
+&lt;p>A figura abaixo ilustra o relacionamento entre os Requisitos Suplementares, as Especificações de Caso de Uso e os Atores.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;400&quot; alt=&quot;&quot; src=&quot;./resources/supporting_reguirements2.gif&quot; width=&quot;600&quot; />&#xD;
+&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-3SPfPc0Bki_jktsFegGWrQ" name="glossary,_tDEB-El4EeKHJ-K7LFAw7Q" guid="-3SPfPc0Bki_jktsFegGWrQ">
+    <keyConsiderations>&lt;p>Em alguns projetos que não envolvem modelagem de negócio ou domínio, o Glossário é o principal artefato para registrar as informações sobre o domínio do negócio do projeto.&lt;/p>&#xD;
+&lt;p>Embora listado como uma saída ou entrada das tarefas associadas com a disciplina de requisitos, este artefato pode ser atualizado a qualquer momento, por qualquer papel, assim que novos termos sejam identificados.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>O glossário ajuda a evitar problemas de comunicação fornecendo dois recursos essenciais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Um local central para procurar termos e abreviaturas que sejam novos para os membros da equipe de desenvolvimento&lt;/li>&#xD;
+    &lt;li>Definições dos termos que são usados de formas específicas dentro do domínio&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>As definições para os termos do Glossário vêm de diversas fontes, tais como documentos de requisitos, especificações e discussões com os Stakeholders e com os peritos do domínio.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-aR-8Mvhjrv8VBlIgeotHCQ" name="project_manager,_tDOaAkl4EeKHJ-K7LFAw7Q" guid="-aR-8Mvhjrv8VBlIgeotHCQ"/>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-vAK-1fX8Ngyh71pVO7RMHA" name="iteration_plan,_tDPoIUl4EeKHJ-K7LFAw7Q" guid="-vAK-1fX8Ngyh71pVO7RMHA"/>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-7THQpBL9FbLekAxjUTdu-A" name="work_items_list,_tDPoJEl4EeKHJ-K7LFAw7Q" guid="-7THQpBL9FbLekAxjUTdu-A"/>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-gWWV_eyOhkQxc5SV8JWa_g" name="project_manager,_tDITYUl4EeKHJ-K7LFAw7Q" guid="-gWWV_eyOhkQxc5SV8JWa_g">
+    <refinedDescription>&lt;p>Este papel:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Instrui a equipe para conduzir um resultado de êxito do projeto e aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pelo resultado do projeto e pela aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pela avaliação dos riscos do projeto e pelo controle destes riscos através de estratégias de atenuação.&lt;/li>&#xD;
+    &lt;li>Aplica o conhecimento, as habilidades, as ferramentas e as técnicas de gestão em uma grande quantidade de tarefas a fim entregar o resultado desejado para um projeto em particular de forma temporizada.&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-kaFj7ZFV6AjtgcAUITuN6Q" name="iteration_plan,_tDI6cUl4EeKHJ-K7LFAw7Q" guid="-kaFj7ZFV6AjtgcAUITuN6Q">
+    <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-FlRK50CnOVqKrNKx8CirRA" name="work_items_list,_tDI6dEl4EeKHJ-K7LFAw7Q" guid="-FlRK50CnOVqKrNKx8CirRA">
+    <refinedDescription>&lt;p>Este artefato fornece um ponto focal para toda a equipe:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornece uma lista que contém todas as solicitações de melhorias ou capacidades adicionais para a aplicação. Note que alguns destes pedidos podem nunca ser implementados, ou ser implementados em projetos posteriores.&lt;/li>&#xD;
+    &lt;li>Fornece uma lista de todo trabalho a ser estimado, priorizado e atribuído dentro do projeto. A lista de riscos é priorizada separadamente.&lt;/li>&#xD;
+    &lt;li>Fornece um lugar único para que à equipe de desenvolvimento saiba quais &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a> precisam ser entregues, possui referências do material necessário para realizar o trabalho e para relatar o progresso feito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes são os itens de trabalho típicos desta lista.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de Uso e referências às especificações de caso de uso&lt;/li>&#xD;
+    &lt;li>Requisitos suplementares&lt;/li>&#xD;
+    &lt;li>Solicitações de mudança e de melhoria&lt;/li>&#xD;
+    &lt;li>Defeitos&lt;/li>&#xD;
+    &lt;li>Tarefas de desenvolvimento&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-9HgAE3hBn_4M_-cDHZZjTw" name="any_role,_tDW84Ul4EeKHJ-K7LFAw7Q" guid="-9HgAE3hBn_4M_-cDHZZjTw">
+    <refinedDescription>&lt;p>Este papel permite que qualquer um em uma equipe execute tarefas gerais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Acessar artefatos no sistema de controle de versões para desenvolvimento e manutenção&lt;/li>&#xD;
+    &lt;li>Submeter solicitações de mudança para o projeto&lt;/li>&#xD;
+    &lt;li>Participar nas avaliações e revisões&lt;/li>&#xD;
+    &lt;li>Prontificar-se para trabalhar em uma determinada iteração&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-cpmmkj8otsl9oO9Dpa7eKQ" name="vision,_tDYLAUl4EeKHJ-K7LFAw7Q" guid="-cpmmkj8otsl9oO9Dpa7eKQ">
+    <refinedDescription>&lt;p>Este artefato fornece uma visão completa do sistema de software em desenvolvimento e dá suporte ao contrato entre o cliente e a organização de desenvolvimento. Cada projeto necessita de uma fonte para capturar as expectativas dos Stakeholders.&lt;/p>&#xD;
+&lt;p>Este artefato é escrito a partir da perspectiva dos clientes, focando nas características essenciais do sistema e nos níveis aceitáveis de qualidade. O artefato deve incluir uma descrição de quais &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/termdefinitions/feature_4ED64AEE.html&quot; guid=&quot;_PgYREAeYEduWycDgioo5rg&quot;>Características&lt;/a> serão incluídas, bem como as que foram consideradas, mas não incluídas.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-WNg637qNnr1tTkPNoenr-w" name="supporting_requirements_spec,_tDYLBEl4EeKHJ-K7LFAw7Q" guid="-WNg637qNnr1tTkPNoenr-w">
+    <refinedDescription>&lt;p>Juntos, os Requisitos Suplementares e os Casos de Uso definem todos os requisitos do sistema. Os Casos de Uso descrevem os requisitos comportamentais do sistema, e os Requisitos Suplementares descrevem todos os outros requisitos que não são capturados nas Especificações de Caso de Uso. Ao fazer esta distinção simplificamos a manutenção.&lt;/p>&#xD;
+&lt;p>Os Requisitos Suplementares podem ser categorizados de acordo com o modelo FURPS+ (Funcional, Usabilidade, Confiabilidade, Desempenho, Suportabilidade + Restrições). Para mais informações sobre esta classificação, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/supporting_requirements_B2C4D610.html&quot; guid=&quot;_VXZ5wO0IEdqHTdbLTmC5IQ&quot;>Conceito: Requisitos Suplementares &lt;/a>.&lt;/p>&#xD;
+&lt;p>A figura abaixo ilustra o relacionamento entre os Requisitos Suplementares, as Especificações de Caso de Uso e os Atores.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;400&quot; alt=&quot;&quot; src=&quot;./resources/supporting_reguirements2.gif&quot; width=&quot;600&quot; />&#xD;
+&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-hnqkbP-COfrlTXXLczk7xg" name="glossary,_tDYLB0l4EeKHJ-K7LFAw7Q" guid="-hnqkbP-COfrlTXXLczk7xg">
+    <keyConsiderations>&lt;p>Em alguns projetos que não envolvem modelagem de negócio ou domínio, o Glossário é o principal artefato para registrar as informações sobre o domínio do negócio do projeto.&lt;/p>&#xD;
+&lt;p>Embora listado como uma saída ou entrada das tarefas associadas com a disciplina de requisitos, este artefato pode ser atualizado a qualquer momento, por qualquer papel, assim que novos termos sejam identificados.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>O glossário ajuda a evitar problemas de comunicação fornecendo dois recursos essenciais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Um local central para procurar termos e abreviaturas que sejam novos para os membros da equipe de desenvolvimento&lt;/li>&#xD;
+    &lt;li>Definições dos termos que são usados de formas específicas dentro do domínio&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>As definições para os termos do Glossário vêm de diversas fontes, tais como documentos de requisitos, especificações e discussões com os Stakeholders e com os peritos do domínio.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-xvGLYziPAdlstaBZxV4WZQ" name="project_manager,_tDv-cUl4EeKHJ-K7LFAw7Q" guid="-xvGLYziPAdlstaBZxV4WZQ">
+    <refinedDescription>&lt;p>Este papel:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Instrui a equipe para conduzir um resultado de êxito do projeto e aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pelo resultado do projeto e pela aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pela avaliação dos riscos do projeto e pelo controle destes riscos através de estratégias de atenuação.&lt;/li>&#xD;
+    &lt;li>Aplica o conhecimento, as habilidades, as ferramentas e as técnicas de gestão em uma grande quantidade de tarefas a fim entregar o resultado desejado para um projeto em particular de forma temporizada.&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-4eSZ_h-1vI1VdAMrHCimbg" name="iteration_plan,_tDwlgUl4EeKHJ-K7LFAw7Q" guid="-4eSZ_h-1vI1VdAMrHCimbg">
+    <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-gsBUX-mDSO-DB1NeXqV58g" name="work_items_list,_tDwlhEl4EeKHJ-K7LFAw7Q" guid="-gsBUX-mDSO-DB1NeXqV58g">
+    <refinedDescription>&lt;p>Este artefato fornece um ponto focal para toda a equipe:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornece uma lista que contém todas as solicitações de melhorias ou capacidades adicionais para a aplicação. Note que alguns destes pedidos podem nunca ser implementados, ou ser implementados em projetos posteriores.&lt;/li>&#xD;
+    &lt;li>Fornece uma lista de todo trabalho a ser estimado, priorizado e atribuído dentro do projeto. A lista de riscos é priorizada separadamente.&lt;/li>&#xD;
+    &lt;li>Fornece um lugar único para que à equipe de desenvolvimento saiba quais &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a> precisam ser entregues, possui referências do material necessário para realizar o trabalho e para relatar o progresso feito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes são os itens de trabalho típicos desta lista.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de Uso e referências às especificações de caso de uso&lt;/li>&#xD;
+    &lt;li>Requisitos suplementares&lt;/li>&#xD;
+    &lt;li>Solicitações de mudança e de melhoria&lt;/li>&#xD;
+    &lt;li>Defeitos&lt;/li>&#xD;
+    &lt;li>Tarefas de desenvolvimento&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-0qeXErCTOMsajaFHx_Td6Q" name="architect,_tDpQwUl4EeKHJ-K7LFAw7Q" guid="-0qeXErCTOMsajaFHx_Td6Q">
+    <keyConsiderations>Este papel coloca ênfase no princípio central de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/core_principle_focus_346C6FAF.html&quot; guid=&quot;_9gocwMvoEdqukPpotm3DYg&quot;>Focar na arquitetura, o mais cedo possível, para reduzir os riscos e organizar o desenvolvimento&lt;/a>.</keyConsiderations>
+    <refinedDescription>&lt;p>Este papel conduz ou coordena o design técnico do sistema e tem a responsabilidade total de facilitar as principais decisões técnicas expressas na forma de arquitetura de software. Isto normalmente inclui a identificação e documentação dos aspectos arquiteturalmente significantes do sistema como visões que descrevem requisitos, design, implementação e distribuição.&lt;/p>&#xD;
+&lt;p>Este papel também é responsável por fornecer o raciocínio para estas decisões, balancear os interesses dos Stakeholders, reduzir os riscos técnicos e assegurar que as decisões sejam eficazmente comunicadas, validadas e seguidas.&lt;/p>&#xD;
+&lt;p>Este papel está bastante envolvido na organização da equipe em torno da arquitetura, trabalhando junto ao &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/project_manager_E657F936.html&quot; guid=&quot;_0a0o0MlgEdmt3adZL5Dmdw&quot;>Gerente de Projeto&lt;/a> na alocação da equipe e no planejamento do projeto.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-us_LrLKg50pSnYtxkBxUdQ" name="tester,_tDs7IUl4EeKHJ-K7LFAw7Q" guid="-us_LrLKg50pSnYtxkBxUdQ">
+    <refinedDescription>&lt;p>Este papel é responsável principalmente pelas seguintes tarefas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Identificar os testes que necessitam ser executados&lt;/li>&#xD;
+    &lt;li>Identificar a abordagem de implementação mais apropriada para um determinado teste&lt;/li>&#xD;
+    &lt;li>Implementar testes individuais&lt;/li>&#xD;
+    &lt;li>Preparar e executar os testes&lt;/li>&#xD;
+    &lt;li>Registrar os resultados e verificar se os testes executaram&lt;/li>&#xD;
+    &lt;li>Analisar e recuperar dos erros de execução&lt;/li>&#xD;
+    &lt;li>Comunicar os resultados do teste à equipe&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-tneFLq03aN0HNAI4kUoTBw" name="test_case,_tDtiMUl4EeKHJ-K7LFAw7Q" guid="-tneFLq03aN0HNAI4kUoTBw">
+    <refinedDescription>&lt;p>Um caso de teste especifica as condições que necessitam ser validadas para permitir a avaliação de alguns aspectos particulares do sistema sob teste. Um caso de teste é mais formal do que uma idéia de teste e normalmente tem a forma de uma especificação. Em ambientes menos formais, casos de teste podem ser criados pela identificação de um ID único, um nome, dados de teste associados e resultados esperados. Para um exemplo deste tipo de caso de teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/templates/test_case_A18913A5.html&quot; guid=&quot;_0dT8IMlgEdmt3adZL5Dmdw&quot;>Template: Caso de Teste&lt;/a>.&lt;/p>&#xD;
+&lt;p>Os casos de teste podem ser derivados de várias fontes, mas normalmente incluirão um subconjunto de requisitos (tais como casos de uso, características de desempenho, necessidades de confiabilidade) e outros tipos de atributos de qualidade. Para mais informações sobre tipos de teste e seus relacionamentos com os atributos de qualidade do teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/types_of_test_CAE80710.html&quot; guid=&quot;_0aJ6cMlgEdmt3adZL5Dmdw&quot;>Conceito: Tipos de Teste&lt;/a>.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-MTfuyHHH6ysKXLy4W7RhVA" name="test_log,_tDtiNEl4EeKHJ-K7LFAw7Q" guid="-MTfuyHHH6ysKXLy4W7RhVA">
+    <refinedDescription>Este artefato fornece um registro detalhado, normalmente baseado no tempo, que serve como verificação de que um conjunto de testes foi executado, bem como fornece informações relacionadas ao sucesso dos testes. O foco está na criação de um registro exato, que permita o diagnóstico de pós-execução dos resultados do teste. Estes dados serão analisados posteriormente para ajudar a determinar os resultados de algum aspecto do esforço de teste.</refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-4OWCBbTVhUE1wUrIo84lMg" name="any_role,_tDhU8Ul4EeKHJ-K7LFAw7Q" guid="-4OWCBbTVhUE1wUrIo84lMg">
+    <refinedDescription>&lt;p>Este papel permite que qualquer um em uma equipe execute tarefas gerais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Acessar artefatos no sistema de controle de versões para desenvolvimento e manutenção&lt;/li>&#xD;
+    &lt;li>Submeter solicitações de mudança para o projeto&lt;/li>&#xD;
+    &lt;li>Participar nas avaliações e revisões&lt;/li>&#xD;
+    &lt;li>Prontificar-se para trabalhar em uma determinada iteração&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-kVjr9D4oe58bCtxILLNVZw" name="architect,_tDhU9El4EeKHJ-K7LFAw7Q" guid="-kVjr9D4oe58bCtxILLNVZw">
+    <keyConsiderations>Este papel coloca ênfase no princípio central de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/core_principle_focus_346C6FAF.html&quot; guid=&quot;_9gocwMvoEdqukPpotm3DYg&quot;>Focar na arquitetura, o mais cedo possível, para reduzir os riscos e organizar o desenvolvimento&lt;/a>.</keyConsiderations>
+    <refinedDescription>&lt;p>Este papel conduz ou coordena o design técnico do sistema e tem a responsabilidade total de facilitar as principais decisões técnicas expressas na forma de arquitetura de software. Isto normalmente inclui a identificação e documentação dos aspectos arquiteturalmente significantes do sistema como visões que descrevem requisitos, design, implementação e distribuição.&lt;/p>&#xD;
+&lt;p>Este papel também é responsável por fornecer o raciocínio para estas decisões, balancear os interesses dos Stakeholders, reduzir os riscos técnicos e assegurar que as decisões sejam eficazmente comunicadas, validadas e seguidas.&lt;/p>&#xD;
+&lt;p>Este papel está bastante envolvido na organização da equipe em torno da arquitetura, trabalhando junto ao &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/project_manager_E657F936.html&quot; guid=&quot;_0a0o0MlgEdmt3adZL5Dmdw&quot;>Gerente de Projeto&lt;/a> na alocação da equipe e no planejamento do projeto.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-h6luS4ebt8_bJPPbv3eIsw" name="vision,_tDjxMUl4EeKHJ-K7LFAw7Q" guid="-h6luS4ebt8_bJPPbv3eIsw">
+    <refinedDescription>&lt;p>Este artefato fornece uma visão completa do sistema de software em desenvolvimento e dá suporte ao contrato entre o cliente e a organização de desenvolvimento. Cada projeto necessita de uma fonte para capturar as expectativas dos Stakeholders.&lt;/p>&#xD;
+&lt;p>Este artefato é escrito a partir da perspectiva dos clientes, focando nas características essenciais do sistema e nos níveis aceitáveis de qualidade. O artefato deve incluir uma descrição de quais &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/termdefinitions/feature_4ED64AEE.html&quot; guid=&quot;_PgYREAeYEduWycDgioo5rg&quot;>Características&lt;/a> serão incluídas, bem como as que foram consideradas, mas não incluídas.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-j08TOyxLXtRSAQOAFVHFXg" name="supporting_requirements_spec,_tDjxNEl4EeKHJ-K7LFAw7Q" guid="-j08TOyxLXtRSAQOAFVHFXg">
+    <refinedDescription>&lt;p>Juntos, os Requisitos Suplementares e os Casos de Uso definem todos os requisitos do sistema. Os Casos de Uso descrevem os requisitos comportamentais do sistema, e os Requisitos Suplementares descrevem todos os outros requisitos que não são capturados nas Especificações de Caso de Uso. Ao fazer esta distinção simplificamos a manutenção.&lt;/p>&#xD;
+&lt;p>Os Requisitos Suplementares podem ser categorizados de acordo com o modelo FURPS+ (Funcional, Usabilidade, Confiabilidade, Desempenho, Suportabilidade + Restrições). Para mais informações sobre esta classificação, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/supporting_requirements_B2C4D610.html&quot; guid=&quot;_VXZ5wO0IEdqHTdbLTmC5IQ&quot;>Conceito: Requisitos Suplementares &lt;/a>.&lt;/p>&#xD;
+&lt;p>A figura abaixo ilustra o relacionamento entre os Requisitos Suplementares, as Especificações de Caso de Uso e os Atores.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;400&quot; alt=&quot;&quot; src=&quot;./resources/supporting_reguirements2.gif&quot; width=&quot;600&quot; />&#xD;
+&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-BWjBAt32ygLuA7oOzhkUuw" name="glossary,_tDkYQUl4EeKHJ-K7LFAw7Q" guid="-BWjBAt32ygLuA7oOzhkUuw">
+    <keyConsiderations>&lt;p>Em alguns projetos que não envolvem modelagem de negócio ou domínio, o Glossário é o principal artefato para registrar as informações sobre o domínio do negócio do projeto.&lt;/p>&#xD;
+&lt;p>Embora listado como uma saída ou entrada das tarefas associadas com a disciplina de requisitos, este artefato pode ser atualizado a qualquer momento, por qualquer papel, assim que novos termos sejam identificados.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>O glossário ajuda a evitar problemas de comunicação fornecendo dois recursos essenciais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Um local central para procurar termos e abreviaturas que sejam novos para os membros da equipe de desenvolvimento&lt;/li>&#xD;
+    &lt;li>Definições dos termos que são usados de formas específicas dentro do domínio&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>As definições para os termos do Glossário vêm de diversas fontes, tais como documentos de requisitos, especificações e discussões com os Stakeholders e com os peritos do domínio.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-9jlJtdGFzMiDs4j1tAP3rg" name="project_manager,_tDb1ZEl4EeKHJ-K7LFAw7Q" guid="-9jlJtdGFzMiDs4j1tAP3rg">
+    <refinedDescription>&lt;p>Este papel:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Instrui a equipe para conduzir um resultado de êxito do projeto e aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pelo resultado do projeto e pela aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pela avaliação dos riscos do projeto e pelo controle destes riscos através de estratégias de atenuação.&lt;/li>&#xD;
+    &lt;li>Aplica o conhecimento, as habilidades, as ferramentas e as técnicas de gestão em uma grande quantidade de tarefas a fim entregar o resultado desejado para um projeto em particular de forma temporizada.&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-29QcEfbVtV9sY-6Gb4wYsA" name="iteration_plan,_tDdDgkl4EeKHJ-K7LFAw7Q" guid="-29QcEfbVtV9sY-6Gb4wYsA">
+    <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-8uJhChHMOeSy0woro3q_Cg" name="work_items_list,_tDdDhUl4EeKHJ-K7LFAw7Q" guid="-8uJhChHMOeSy0woro3q_Cg">
+    <refinedDescription>&lt;p>Este artefato fornece um ponto focal para toda a equipe:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornece uma lista que contém todas as solicitações de melhorias ou capacidades adicionais para a aplicação. Note que alguns destes pedidos podem nunca ser implementados, ou ser implementados em projetos posteriores.&lt;/li>&#xD;
+    &lt;li>Fornece uma lista de todo trabalho a ser estimado, priorizado e atribuído dentro do projeto. A lista de riscos é priorizada separadamente.&lt;/li>&#xD;
+    &lt;li>Fornece um lugar único para que à equipe de desenvolvimento saiba quais &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a> precisam ser entregues, possui referências do material necessário para realizar o trabalho e para relatar o progresso feito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes são os itens de trabalho típicos desta lista.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de Uso e referências às especificações de caso de uso&lt;/li>&#xD;
+    &lt;li>Requisitos suplementares&lt;/li>&#xD;
+    &lt;li>Solicitações de mudança e de melhoria&lt;/li>&#xD;
+    &lt;li>Defeitos&lt;/li>&#xD;
+    &lt;li>Tarefas de desenvolvimento&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-t0p4CzNBS0FQ5rhc7M42Zw" name="project_manager,_tD36QUl4EeKHJ-K7LFAw7Q" guid="-t0p4CzNBS0FQ5rhc7M42Zw">
+    <refinedDescription>&lt;p>Este papel:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Instrui a equipe para conduzir um resultado de êxito do projeto e aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pelo resultado do projeto e pela aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pela avaliação dos riscos do projeto e pelo controle destes riscos através de estratégias de atenuação.&lt;/li>&#xD;
+    &lt;li>Aplica o conhecimento, as habilidades, as ferramentas e as técnicas de gestão em uma grande quantidade de tarefas a fim entregar o resultado desejado para um projeto em particular de forma temporizada.&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-1yuZgt-a00WEz2CXeXNCcw" name="iteration_plan,_tD4hUUl4EeKHJ-K7LFAw7Q" guid="-1yuZgt-a00WEz2CXeXNCcw">
+    <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-UmoVbnlrvOUvLqrxGM2AGA" name="work_items_list,_tD4hVEl4EeKHJ-K7LFAw7Q" guid="-UmoVbnlrvOUvLqrxGM2AGA">
+    <refinedDescription>&lt;p>Este artefato fornece um ponto focal para toda a equipe:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornece uma lista que contém todas as solicitações de melhorias ou capacidades adicionais para a aplicação. Note que alguns destes pedidos podem nunca ser implementados, ou ser implementados em projetos posteriores.&lt;/li>&#xD;
+    &lt;li>Fornece uma lista de todo trabalho a ser estimado, priorizado e atribuído dentro do projeto. A lista de riscos é priorizada separadamente.&lt;/li>&#xD;
+    &lt;li>Fornece um lugar único para que à equipe de desenvolvimento saiba quais &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a> precisam ser entregues, possui referências do material necessário para realizar o trabalho e para relatar o progresso feito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes são os itens de trabalho típicos desta lista.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de Uso e referências às especificações de caso de uso&lt;/li>&#xD;
+    &lt;li>Requisitos suplementares&lt;/li>&#xD;
+    &lt;li>Solicitações de mudança e de melhoria&lt;/li>&#xD;
+    &lt;li>Defeitos&lt;/li>&#xD;
+    &lt;li>Tarefas de desenvolvimento&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-14X9Ja3WHAkMvKWRHje2_A" name="tester,_tD0P4Ul4EeKHJ-K7LFAw7Q" guid="-14X9Ja3WHAkMvKWRHje2_A">
+    <refinedDescription>&lt;p>Este papel é responsável principalmente pelas seguintes tarefas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Identificar os testes que necessitam ser executados&lt;/li>&#xD;
+    &lt;li>Identificar a abordagem de implementação mais apropriada para um determinado teste&lt;/li>&#xD;
+    &lt;li>Implementar testes individuais&lt;/li>&#xD;
+    &lt;li>Preparar e executar os testes&lt;/li>&#xD;
+    &lt;li>Registrar os resultados e verificar se os testes executaram&lt;/li>&#xD;
+    &lt;li>Analisar e recuperar dos erros de execução&lt;/li>&#xD;
+    &lt;li>Comunicar os resultados do teste à equipe&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-Mm7yzrPnNeF4_CzZjuhCig" name="test_case,_tD1eAUl4EeKHJ-K7LFAw7Q" guid="-Mm7yzrPnNeF4_CzZjuhCig">
+    <refinedDescription>&lt;p>Um caso de teste especifica as condições que necessitam ser validadas para permitir a avaliação de alguns aspectos particulares do sistema sob teste. Um caso de teste é mais formal do que uma idéia de teste e normalmente tem a forma de uma especificação. Em ambientes menos formais, casos de teste podem ser criados pela identificação de um ID único, um nome, dados de teste associados e resultados esperados. Para um exemplo deste tipo de caso de teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/templates/test_case_A18913A5.html&quot; guid=&quot;_0dT8IMlgEdmt3adZL5Dmdw&quot;>Template: Caso de Teste&lt;/a>.&lt;/p>&#xD;
+&lt;p>Os casos de teste podem ser derivados de várias fontes, mas normalmente incluirão um subconjunto de requisitos (tais como casos de uso, características de desempenho, necessidades de confiabilidade) e outros tipos de atributos de qualidade. Para mais informações sobre tipos de teste e seus relacionamentos com os atributos de qualidade do teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/types_of_test_CAE80710.html&quot; guid=&quot;_0aJ6cMlgEdmt3adZL5Dmdw&quot;>Conceito: Tipos de Teste&lt;/a>.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-DokG1hdTvoo7GXEoEPVXlA" name="test_log,_tD1eBEl4EeKHJ-K7LFAw7Q" guid="-DokG1hdTvoo7GXEoEPVXlA">
+    <refinedDescription>Este artefato fornece um registro detalhado, normalmente baseado no tempo, que serve como verificação de que um conjunto de testes foi executado, bem como fornece informações relacionadas ao sucesso dos testes. O foco está na criação de um registro exato, que permita o diagnóstico de pós-execução dos resultados do teste. Estes dados serão analisados posteriormente para ajudar a determinar os resultados de algum aspecto do esforço de teste.</refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-Zj2Dn0tzg-QAr4upChc1YA" name="project_manager,_tEBrQUl4EeKHJ-K7LFAw7Q" guid="-Zj2Dn0tzg-QAr4upChc1YA">
+    <refinedDescription>&lt;p>Este papel:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Instrui a equipe para conduzir um resultado de êxito do projeto e aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pelo resultado do projeto e pela aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pela avaliação dos riscos do projeto e pelo controle destes riscos através de estratégias de atenuação.&lt;/li>&#xD;
+    &lt;li>Aplica o conhecimento, as habilidades, as ferramentas e as técnicas de gestão em uma grande quantidade de tarefas a fim entregar o resultado desejado para um projeto em particular de forma temporizada.&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-Ucd5_6w-Tdu8oIubMflF9A" name="iteration_plan,_tEC5YUl4EeKHJ-K7LFAw7Q" guid="-Ucd5_6w-Tdu8oIubMflF9A">
+    <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-tVCXl-H3NEX39DztyTHKAg" name="work_items_list,_tEC5ZEl4EeKHJ-K7LFAw7Q" guid="-tVCXl-H3NEX39DztyTHKAg">
+    <refinedDescription>&lt;p>Este artefato fornece um ponto focal para toda a equipe:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornece uma lista que contém todas as solicitações de melhorias ou capacidades adicionais para a aplicação. Note que alguns destes pedidos podem nunca ser implementados, ou ser implementados em projetos posteriores.&lt;/li>&#xD;
+    &lt;li>Fornece uma lista de todo trabalho a ser estimado, priorizado e atribuído dentro do projeto. A lista de riscos é priorizada separadamente.&lt;/li>&#xD;
+    &lt;li>Fornece um lugar único para que à equipe de desenvolvimento saiba quais &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a> precisam ser entregues, possui referências do material necessário para realizar o trabalho e para relatar o progresso feito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes são os itens de trabalho típicos desta lista.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de Uso e referências às especificações de caso de uso&lt;/li>&#xD;
+    &lt;li>Requisitos suplementares&lt;/li>&#xD;
+    &lt;li>Solicitações de mudança e de melhoria&lt;/li>&#xD;
+    &lt;li>Defeitos&lt;/li>&#xD;
+    &lt;li>Tarefas de desenvolvimento&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-4zSjN4LhT04IXaymNJmQgw" name="tester,_tD9Z0kl4EeKHJ-K7LFAw7Q" guid="-4zSjN4LhT04IXaymNJmQgw">
+    <refinedDescription>&lt;p>Este papel é responsável principalmente pelas seguintes tarefas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Identificar os testes que necessitam ser executados&lt;/li>&#xD;
+    &lt;li>Identificar a abordagem de implementação mais apropriada para um determinado teste&lt;/li>&#xD;
+    &lt;li>Implementar testes individuais&lt;/li>&#xD;
+    &lt;li>Preparar e executar os testes&lt;/li>&#xD;
+    &lt;li>Registrar os resultados e verificar se os testes executaram&lt;/li>&#xD;
+    &lt;li>Analisar e recuperar dos erros de execução&lt;/li>&#xD;
+    &lt;li>Comunicar os resultados do teste à equipe&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-eEpNj0PvToC_t5VVBdb2BQ" name="test_case,_tD-n8Ul4EeKHJ-K7LFAw7Q" guid="-eEpNj0PvToC_t5VVBdb2BQ">
+    <refinedDescription>&lt;p>Um caso de teste especifica as condições que necessitam ser validadas para permitir a avaliação de alguns aspectos particulares do sistema sob teste. Um caso de teste é mais formal do que uma idéia de teste e normalmente tem a forma de uma especificação. Em ambientes menos formais, casos de teste podem ser criados pela identificação de um ID único, um nome, dados de teste associados e resultados esperados. Para um exemplo deste tipo de caso de teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/templates/test_case_A18913A5.html&quot; guid=&quot;_0dT8IMlgEdmt3adZL5Dmdw&quot;>Template: Caso de Teste&lt;/a>.&lt;/p>&#xD;
+&lt;p>Os casos de teste podem ser derivados de várias fontes, mas normalmente incluirão um subconjunto de requisitos (tais como casos de uso, características de desempenho, necessidades de confiabilidade) e outros tipos de atributos de qualidade. Para mais informações sobre tipos de teste e seus relacionamentos com os atributos de qualidade do teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/types_of_test_CAE80710.html&quot; guid=&quot;_0aJ6cMlgEdmt3adZL5Dmdw&quot;>Conceito: Tipos de Teste&lt;/a>.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-aZcmvHxbVxRVdWeAcXO3TQ" name="test_log,_tD-n9El4EeKHJ-K7LFAw7Q" guid="-aZcmvHxbVxRVdWeAcXO3TQ">
+    <refinedDescription>Este artefato fornece um registro detalhado, normalmente baseado no tempo, que serve como verificação de que um conjunto de testes foi executado, bem como fornece informações relacionadas ao sucesso dos testes. O foco está na criação de um registro exato, que permita o diagnóstico de pós-execução dos resultados do teste. Estes dados serão analisados posteriormente para ajudar a determinar os resultados de algum aspecto do esforço de teste.</refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-TEIIrnDVNcgGDn7g7trbmw" name="project_manager,_tEKOIkl4EeKHJ-K7LFAw7Q" guid="-TEIIrnDVNcgGDn7g7trbmw">
+    <refinedDescription>&lt;p>Este papel:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Instrui a equipe para conduzir um resultado de êxito do projeto e aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pelo resultado do projeto e pela aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pela avaliação dos riscos do projeto e pelo controle destes riscos através de estratégias de atenuação.&lt;/li>&#xD;
+    &lt;li>Aplica o conhecimento, as habilidades, as ferramentas e as técnicas de gestão em uma grande quantidade de tarefas a fim entregar o resultado desejado para um projeto em particular de forma temporizada.&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-lo5j1ULD6LhJuC8loIf3Nw" name="iteration_plan,_tELcQUl4EeKHJ-K7LFAw7Q" guid="-lo5j1ULD6LhJuC8loIf3Nw">
+    <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-nezNd7dpVSSwUh0Md-KUtA" name="work_items_list,_tELcREl4EeKHJ-K7LFAw7Q" guid="-nezNd7dpVSSwUh0Md-KUtA">
+    <refinedDescription>&lt;p>Este artefato fornece um ponto focal para toda a equipe:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornece uma lista que contém todas as solicitações de melhorias ou capacidades adicionais para a aplicação. Note que alguns destes pedidos podem nunca ser implementados, ou ser implementados em projetos posteriores.&lt;/li>&#xD;
+    &lt;li>Fornece uma lista de todo trabalho a ser estimado, priorizado e atribuído dentro do projeto. A lista de riscos é priorizada separadamente.&lt;/li>&#xD;
+    &lt;li>Fornece um lugar único para que à equipe de desenvolvimento saiba quais &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a> precisam ser entregues, possui referências do material necessário para realizar o trabalho e para relatar o progresso feito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes são os itens de trabalho típicos desta lista.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de Uso e referências às especificações de caso de uso&lt;/li>&#xD;
+    &lt;li>Requisitos suplementares&lt;/li>&#xD;
+    &lt;li>Solicitações de mudança e de melhoria&lt;/li>&#xD;
+    &lt;li>Defeitos&lt;/li>&#xD;
+    &lt;li>Tarefas de desenvolvimento&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-UoutV1Cu4UNd-7fWNR5LPw" name="tester,_tEHK0kl4EeKHJ-K7LFAw7Q" guid="-UoutV1Cu4UNd-7fWNR5LPw">
+    <refinedDescription>&lt;p>Este papel é responsável principalmente pelas seguintes tarefas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Identificar os testes que necessitam ser executados&lt;/li>&#xD;
+    &lt;li>Identificar a abordagem de implementação mais apropriada para um determinado teste&lt;/li>&#xD;
+    &lt;li>Implementar testes individuais&lt;/li>&#xD;
+    &lt;li>Preparar e executar os testes&lt;/li>&#xD;
+    &lt;li>Registrar os resultados e verificar se os testes executaram&lt;/li>&#xD;
+    &lt;li>Analisar e recuperar dos erros de execução&lt;/li>&#xD;
+    &lt;li>Comunicar os resultados do teste à equipe&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="--LkpLHxKZssI9_Ja3WK29w" name="test_case,_tEJAAUl4EeKHJ-K7LFAw7Q" guid="--LkpLHxKZssI9_Ja3WK29w">
+    <refinedDescription>&lt;p>Um caso de teste especifica as condições que necessitam ser validadas para permitir a avaliação de alguns aspectos particulares do sistema sob teste. Um caso de teste é mais formal do que uma idéia de teste e normalmente tem a forma de uma especificação. Em ambientes menos formais, casos de teste podem ser criados pela identificação de um ID único, um nome, dados de teste associados e resultados esperados. Para um exemplo deste tipo de caso de teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/templates/test_case_A18913A5.html&quot; guid=&quot;_0dT8IMlgEdmt3adZL5Dmdw&quot;>Template: Caso de Teste&lt;/a>.&lt;/p>&#xD;
+&lt;p>Os casos de teste podem ser derivados de várias fontes, mas normalmente incluirão um subconjunto de requisitos (tais como casos de uso, características de desempenho, necessidades de confiabilidade) e outros tipos de atributos de qualidade. Para mais informações sobre tipos de teste e seus relacionamentos com os atributos de qualidade do teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/types_of_test_CAE80710.html&quot; guid=&quot;_0aJ6cMlgEdmt3adZL5Dmdw&quot;>Conceito: Tipos de Teste&lt;/a>.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-UMleLB6kcAjMxzTjqWP1AQ" name="test_log,_tEJABEl4EeKHJ-K7LFAw7Q" guid="-UMleLB6kcAjMxzTjqWP1AQ">
+    <refinedDescription>Este artefato fornece um registro detalhado, normalmente baseado no tempo, que serve como verificação de que um conjunto de testes foi executado, bem como fornece informações relacionadas ao sucesso dos testes. O foco está na criação de um registro exato, que permita o diagnóstico de pós-execução dos resultados do teste. Estes dados serão analisados posteriormente para ajudar a determinar os resultados de algum aspecto do esforço de teste.</refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-LPTutF2LHW6f4WqkpIKAzw" name="tester,_tEN4gUl4EeKHJ-K7LFAw7Q" guid="-LPTutF2LHW6f4WqkpIKAzw">
+    <refinedDescription>&lt;p>Este papel é responsável principalmente pelas seguintes tarefas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Identificar os testes que necessitam ser executados&lt;/li>&#xD;
+    &lt;li>Identificar a abordagem de implementação mais apropriada para um determinado teste&lt;/li>&#xD;
+    &lt;li>Implementar testes individuais&lt;/li>&#xD;
+    &lt;li>Preparar e executar os testes&lt;/li>&#xD;
+    &lt;li>Registrar os resultados e verificar se os testes executaram&lt;/li>&#xD;
+    &lt;li>Analisar e recuperar dos erros de execução&lt;/li>&#xD;
+    &lt;li>Comunicar os resultados do teste à equipe&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-pNgSkZUem9h8n8QXghUQKg" name="test_case,_tEPGoUl4EeKHJ-K7LFAw7Q" guid="-pNgSkZUem9h8n8QXghUQKg">
+    <refinedDescription>&lt;p>Um caso de teste especifica as condições que necessitam ser validadas para permitir a avaliação de alguns aspectos particulares do sistema sob teste. Um caso de teste é mais formal do que uma idéia de teste e normalmente tem a forma de uma especificação. Em ambientes menos formais, casos de teste podem ser criados pela identificação de um ID único, um nome, dados de teste associados e resultados esperados. Para um exemplo deste tipo de caso de teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/templates/test_case_A18913A5.html&quot; guid=&quot;_0dT8IMlgEdmt3adZL5Dmdw&quot;>Template: Caso de Teste&lt;/a>.&lt;/p>&#xD;
+&lt;p>Os casos de teste podem ser derivados de várias fontes, mas normalmente incluirão um subconjunto de requisitos (tais como casos de uso, características de desempenho, necessidades de confiabilidade) e outros tipos de atributos de qualidade. Para mais informações sobre tipos de teste e seus relacionamentos com os atributos de qualidade do teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/types_of_test_CAE80710.html&quot; guid=&quot;_0aJ6cMlgEdmt3adZL5Dmdw&quot;>Conceito: Tipos de Teste&lt;/a>.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-q29h3EV3WV9IYDscuWjRZg" name="test_log,_tEPtsUl4EeKHJ-K7LFAw7Q" guid="-q29h3EV3WV9IYDscuWjRZg">
+    <refinedDescription>Este artefato fornece um registro detalhado, normalmente baseado no tempo, que serve como verificação de que um conjunto de testes foi executado, bem como fornece informações relacionadas ao sucesso dos testes. O foco está na criação de um registro exato, que permita o diagnóstico de pós-execução dos resultados do teste. Estes dados serão analisados posteriormente para ajudar a determinar os resultados de algum aspecto do esforço de teste.</refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-1KIOse2Gls3s9OBIlZrayg" name="project_manager,_tEQ70kl4EeKHJ-K7LFAw7Q" guid="-1KIOse2Gls3s9OBIlZrayg">
+    <refinedDescription>&lt;p>Este papel:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Instrui a equipe para conduzir um resultado de êxito do projeto e aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pelo resultado do projeto e pela aceitação do produto pelo cliente.&lt;/li>&#xD;
+    &lt;li>É responsável pela avaliação dos riscos do projeto e pelo controle destes riscos através de estratégias de atenuação.&lt;/li>&#xD;
+    &lt;li>Aplica o conhecimento, as habilidades, as ferramentas e as técnicas de gestão em uma grande quantidade de tarefas a fim entregar o resultado desejado para um projeto em particular de forma temporizada.&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-9VWpf3ym4Tq_vX5S1piK4Q" name="iteration_plan,_tERi4Ul4EeKHJ-K7LFAw7Q" guid="-9VWpf3ym4Tq_vX5S1piK4Q">
+    <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-encbhr2VIwln1gxiSLHpfg" name="work_items_list,_tESJ8Ul4EeKHJ-K7LFAw7Q" guid="-encbhr2VIwln1gxiSLHpfg">
+    <refinedDescription>&lt;p>Este artefato fornece um ponto focal para toda a equipe:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Fornece uma lista que contém todas as solicitações de melhorias ou capacidades adicionais para a aplicação. Note que alguns destes pedidos podem nunca ser implementados, ou ser implementados em projetos posteriores.&lt;/li>&#xD;
+    &lt;li>Fornece uma lista de todo trabalho a ser estimado, priorizado e atribuído dentro do projeto. A lista de riscos é priorizada separadamente.&lt;/li>&#xD;
+    &lt;li>Fornece um lugar único para que à equipe de desenvolvimento saiba quais &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/micro_increments_C8773066.html&quot; guid=&quot;_S80VwCNbEdyCq8v2ZO4QcA&quot;>Micro-Incrementos&lt;/a> precisam ser entregues, possui referências do material necessário para realizar o trabalho e para relatar o progresso feito.&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Estes são os itens de trabalho típicos desta lista.&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Casos de Uso e referências às especificações de caso de uso&lt;/li>&#xD;
+    &lt;li>Requisitos suplementares&lt;/li>&#xD;
+    &lt;li>Solicitações de mudança e de melhoria&lt;/li>&#xD;
+    &lt;li>Defeitos&lt;/li>&#xD;
+    &lt;li>Tarefas de desenvolvimento&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>Os itens de trabalho podem ter um escopo muito grande, especialmente os direcionados a melhorias, tais como &quot;Apoio ao Planejamento Financeiro&quot; para uma aplicação financeira pessoal. Para permitir que aplicação seja desenvolvida em micro-incrementos, os Itens de Trabalho são analisados e subdivididos em itens de trabalho menores de forma que possam ser atribuídos a uma iteração, tais como um cenário de caso de uso para &quot;Calcular lucro líquido&quot;. Uma subdivisão adicional pode ser necessária para identificar as tarefas apropriadas a serem atribuídas aos desenvolvedores, tais como &quot;Desenvolver Interface de Usuário para Calcular o Lucro Líquido&quot;. Isto significa que os itens de trabalho normalmente têm relacionamentos pai-filho, onde o nível mais baixo é uma especificação e um dispositivo de rastreamento para os micro-incrementos.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
 </xmi:XMI>
