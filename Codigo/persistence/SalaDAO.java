@@ -127,7 +127,8 @@ public class SalaDAO {
 		
 		pst.close();
 		rs.close();
-		rs2.close();
+		if(rs2 != null)
+			rs2.close();
 		con.close();
 		return vet;
 	}

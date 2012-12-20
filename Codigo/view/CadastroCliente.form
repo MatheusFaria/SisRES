@@ -29,7 +29,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="jLabel1" max="32767" attributes="0"/>
+                          <Component id="telefoneLbl" max="32767" attributes="0"/>
                           <Component id="emailLbl" max="32767" attributes="0"/>
                           <Component id="cpfLbl" max="32767" attributes="0"/>
                           <Component id="matriculaLbl" alignment="0" max="32767" attributes="0"/>
@@ -41,7 +41,7 @@
                           <Component id="matriculaTxtField" pref="453" max="32767" attributes="0"/>
                           <Component id="cpfTxtField" alignment="1" pref="453" max="32767" attributes="0"/>
                           <Component id="emailTxtField" alignment="0" pref="453" max="32767" attributes="0"/>
-                          <Component id="emailTxtField1" alignment="1" pref="453" max="32767" attributes="0"/>
+                          <Component id="telefoneTxtField" alignment="1" pref="453" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
@@ -80,8 +80,8 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                  <Component id="emailTxtField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="telefoneLbl" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                  <Component id="telefoneTxtField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -114,36 +114,57 @@
         <Property name="text" type="java.lang.String" value="E-mail: "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="telefoneLbl">
       <Properties>
         <Property name="text" type="java.lang.String" value="Telefone: "/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="nomeTxtField">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="matriculaTxtField">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="cpfTxtField">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="emailTxtField">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="emailTxtField1">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emailTxtField1ActionPerformed"/>
-      </Events>
+    <Component class="javax.swing.JTextField" name="telefoneTxtField">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="cadastroBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cadastrar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cadastroBtnActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="cancelBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelBtnActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

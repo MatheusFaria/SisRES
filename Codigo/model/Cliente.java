@@ -71,8 +71,17 @@ public abstract class Cliente {
 		try{	
 			if("".equals(cpf))
 				throw new ClienteException(CPF_BRANCO);
-			else if(this.validarCpf(cpf))
-				this.cpf = cpf;
+			else if(cpf.matches("[\\d]{3,3}.[\\d]{3,3}.[\\d]{3,3}-[\\d]{2,2}$"))
+			{
+				cpf = 	cpf.split("[\\. | -]")[0] + 
+						cpf.split("[\\. | -]")[1] + 
+						cpf.split("[\\. | -]")[2] + 
+						cpf.split("[\\. | -]")[3];
+				if(this.validarCpf(cpf))
+					this.cpf = cpf;
+				else
+					throw new ClienteException(CPF_INVALIDO);
+			}
 			else
 				throw new ClienteException(CPF_INVALIDO);
 		} catch(StringIndexOutOfBoundsException e)

@@ -26,7 +26,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="panelReserva1" min="-2" pref="245" max="-2" attributes="0"/>
+              <Component id="panelReserva1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="panelReserva" max="32767" attributes="0"/>
           </Group>
@@ -43,7 +43,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="panelReserva" max="32767" attributes="0"/>
-                  <Component id="panelReserva1" pref="89" max="32767" attributes="0"/>
+                  <Component id="panelReserva1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
               <Component id="fundoLbl" min="-2" pref="45" max="-2" attributes="0"/>
@@ -104,7 +104,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="equipamentoBtn">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Equipamento"/>
+            <Property name="text" type="java.lang.String" value="Equipamento" postCode="equipamentoBtn.setEnabled(false);"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="equipamentoBtnActionPerformed"/>
@@ -157,7 +157,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="alunoBtn">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Aluno"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor" postCode="alunoBtn.setEnabled(false);">
+              <Connection code="&quot;Aluno&quot;" type="code"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="alunoBtnActionPerformed"/>
