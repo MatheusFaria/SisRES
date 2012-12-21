@@ -269,6 +269,7 @@ public class SalaView extends JDialog {
         this.tabelaPatrimonio.setModel(fillTable());
 
     } 
+    
     private void excluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirActionPerformed
         try {
             // TODO add your handling code here:
@@ -278,8 +279,13 @@ public class SalaView extends JDialog {
                 return;
             }
             
-            ManterSala.getInstance().excluir(ManterSala.getInstance().getSalas_vet().get(index));
-            JOptionPane.showMessageDialog(this, "Sala excluida com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE, null);
+            int confirm = JOptionPane.showConfirmDialog(this, "Deseja mesmo excluir Professor: " 
+                    + ManterSala.getInstance().getSalas_vet().get(index).getDescricao() + "?", "Excluir", JOptionPane.YES_NO_OPTION);
+            
+            if(confirm == JOptionPane.YES_OPTION){
+                ManterSala.getInstance().excluir(ManterSala.getInstance().getSalas_vet().get(index));
+                JOptionPane.showMessageDialog(this, "Sala excluida com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE, null);
+            }
             this.tabelaPatrimonio.setModel(fillTable());
             
         } catch (PatrimonioException ex) {
