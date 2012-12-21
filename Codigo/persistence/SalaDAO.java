@@ -12,7 +12,7 @@ import exception.PatrimonioException;
 
 public class SalaDAO {
 
-		private static final String SALA_JA_EXISTENTE = "Sala já cadastrada.";
+		private static final String SALA_JA_EXISTENTE = "Sala ja cadastrada.";
 	
 	//Singleton
 		private static SalaDAO instance;
@@ -30,9 +30,9 @@ public class SalaDAO {
 		PreparedStatement pst = con.prepareStatement("SELECT * FROM patrimonio WHERE " +
 				"patrimonio.codigo = \"" + sala.getCodigo() + "\" and " +
 				"patrimonio.descricao = \"" + sala.getDescricao() + "\";");
-		ResultSet rs = pst.executeQuery();//armazena os dados de execução do comando sql acima
+		ResultSet rs = pst.executeQuery();//armazena os dados de execuï¿½ï¿½o do comando sql acima
 		
-		if(!rs.next())//se não houver, insere um 'patrimonio'
+		if(!rs.next())//se nï¿½o houver, insere um 'patrimonio'
 		{
 			this.updateQuery("INSERT INTO " +
 					"patrimonio (codigo, descricao) VALUES (" +
@@ -127,8 +127,8 @@ public class SalaDAO {
 		
 		pst.close();
 		rs.close();
-		if(rs2 != null)
-			rs2.close();
+                if(rs2 != null)
+                    rs2.close();
 		con.close();
 		return vet;
 	}

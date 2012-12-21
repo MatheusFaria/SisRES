@@ -23,7 +23,7 @@ public class Sala extends Patrimonio {
 
 	public void setCapacidade(String capacidade) throws PatrimonioException {
 		try{
-			if("".equals(capacidade))
+			if(capacidade.isEmpty())
 				throw new PatrimonioException(CAPACIDADE_BRANCO);
 			else if(capacidade.matches("[\\d]+"))
 				this.capacidade = capacidade;

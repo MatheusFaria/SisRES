@@ -1,3 +1,7 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package view;
 
 import control.ManterSala;
@@ -8,7 +12,10 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import model.Sala;
 
-
+/**
+ *
+ * @author Parley
+ */
 public class AlterarSala extends CadastroSala{
     
     private int index;
@@ -34,6 +41,7 @@ public class AlterarSala extends CadastroSala{
     
     private void cadastroBtnActionPerformed(java.awt.event.ActionEvent evt) {
         try {
+            //Sala sala = new Sala(codigoTxtField.getText(), jTextArea1.getText(), capacidadeTxtField.getText());
             control.ManterSala.getInstance().alterar(codigoTxtField.getText(), jTextArea1.getText(), capacidadeTxtField.getText(),
                     ManterSala.getInstance().getSalas_vet().get(index));
             

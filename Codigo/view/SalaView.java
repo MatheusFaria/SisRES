@@ -1,3 +1,7 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package view;
 
 import control.ManterSala;
@@ -14,8 +18,15 @@ import javax.swing.table.DefaultTableModel;
 import model.Sala;
 import persistence.FactoryConnection;
 
-
+/**
+ *
+ * @author Parley
+ */
 public class SalaView extends JDialog {
+
+    /**
+     * Creates new form ClienteView
+     */
    
     public SalaView(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -23,21 +34,18 @@ public class SalaView extends JDialog {
     }
 
       
-    private Vector <String> fillDataVector(int index) {
-        try {
-            
-            Vector <String> nomesTabela = new Vector<String> ();
-            nomesTabela.add(ManterSala.getInstance().getSalas_vet().get(index).getCodigo());
-            nomesTabela.add(ManterSala.getInstance().getSalas_vet().get(index).getDescricao());
-            nomesTabela.add(ManterSala.getInstance().getSalas_vet().get(index).getCapacidade());
-            
-            return nomesTabela;
-        } catch (SQLException ex) {
-            Logger.getLogger(SalaView.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (PatrimonioException ex) {
-            Logger.getLogger(SalaView.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return null;
+    private Vector <String> fillDataVector(Sala sala) {
+          
+        if(sala == null)
+            return null;
+        
+        Vector <String> nomesTabela = new Vector<String> ();
+        nomesTabela.add(sala.getCodigo());
+        nomesTabela.add(sala.getDescricao());
+        nomesTabela.add(sala.getCapacidade());
+
+        return nomesTabela;
+        
     }
     
     private DefaultTableModel fillTable(){
@@ -51,16 +59,15 @@ public class SalaView extends JDialog {
             table.addColumn("Capacidade");
             while(i.hasNext()){
                 Sala sala =  i.next();
-                int index = ManterSala.getInstance().getSalas_vet().indexOf(sala);
-                table.addRow(fillDataVector(index));
+                table.addRow(fillDataVector(sala));
             }
             
             return table;
-        } catch (SQLException ex) {
-            Logger.getLogger(SalaView.class.getName()).log(Level.SEVERE, null, ex);
         } catch (PatrimonioException ex) {
-            Logger.getLogger(SalaView.class.getName()).log(Level.SEVERE, null, ex);
-        }
+            JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+        } 
         
         return null;
     }
@@ -87,7 +94,7 @@ public class SalaView extends JDialog {
         visualizarBtn = new javax.swing.JButton();
         panelLista = new javax.swing.JPanel();
         pesquisarLbl = new javax.swing.JLabel();
-        pesquisarBtn = new javax.swing.JButton();
+       // pesquisarBtn = new javax.swing.JButton();
         pesquisarTextField = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelaPatrimonio = new javax.swing.JTable();
@@ -105,6 +112,7 @@ public class SalaView extends JDialog {
         });
 
         alterar.setText("Alterar");
+        //alterar.setEnabled(false);
         alterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 alterarActionPerformed(evt);
@@ -112,6 +120,7 @@ public class SalaView extends JDialog {
         });
 
         excluir.setText("Excluir");
+        //excluir.setEnabled(false);
         excluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 excluirActionPerformed(evt);
@@ -149,7 +158,8 @@ public class SalaView extends JDialog {
         );
 
         pesquisarLbl.setText("Digite a sala desejada: ");
-
+        
+        /**
         pesquisarBtn.setText("Pesquisar");
         pesquisarBtn.setEnabled(false);
         pesquisarBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -157,19 +167,14 @@ public class SalaView extends JDialog {
                 pesquisarBtnActionPerformed(evt);
             }
         });
-
+        */
+        
         pesquisarTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pesquisarTextFieldActionPerformed(evt);
             }
         });
-        pesquisarTextField.addInputMethodListener(new java.awt.event.InputMethodListener() {
-            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
-            }
-            public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
-                pesquisarTextFieldInputMethodTextChanged(evt);
-            }
-        });
+       
 
         javax.swing.GroupLayout panelListaLayout = new javax.swing.GroupLayout(panelLista);
         panelLista.setLayout(panelListaLayout);
@@ -179,9 +184,9 @@ public class SalaView extends JDialog {
                 .addContainerGap()
                 .addComponent(pesquisarLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(pesquisarTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pesquisarTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pesquisarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                //.addComponent(pesquisarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         panelListaLayout.setVerticalGroup(
@@ -190,13 +195,14 @@ public class SalaView extends JDialog {
                 .addContainerGap()
                 .addGroup(panelListaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(pesquisarLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pesquisarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    //.addComponent(pesquisarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pesquisarTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         tabelaPatrimonio.setModel(fillTable());
         tabelaPatrimonio.setRowSelectionAllowed(true);
+        //tabelaPatrimonio.setSelectionMode();
         
         jScrollPane1.setViewportView(tabelaPatrimonio);
 
@@ -227,24 +233,27 @@ public class SalaView extends JDialog {
         );
 
         pack();
-    }
+    }// </editor-fold>//GEN-END:initComponents
 
     
-    private void pesquisarBtnActionPerformed(java.awt.event.ActionEvent evt) {
+    
+    protected void pesquisarTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pesquisarTextFieldActionPerformed
+        String nome = this.pesquisarTextField.getText();
+        if(nome.isEmpty())
+            JOptionPane.showMessageDialog(this, "Nenhum texto digitado", "Erro", JOptionPane.ERROR_MESSAGE, null);
+        else
+            JOptionPane.showMessageDialog(this, "Funciona", "Teste", JOptionPane.WARNING_MESSAGE, null);
     }
 
-    private void pesquisarTextFieldActionPerformed(java.awt.event.ActionEvent evt) {
-    }
-
-    private void pesquisarTextFieldInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
-        pesquisarBtn.setEnabled(true);
-    }
-
-    private void cadastrarActionPerformed(java.awt.event.ActionEvent evt) {
+   
+    private void cadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarActionPerformed
+        
         CadastroSala cadastro = new CadastroSala(new javax.swing.JFrame(), true);
         cadastro.setResizable(false);
         cadastro.setVisible(true);
-        this.tabelaPatrimonio.setModel(fillTable());   
+        this.tabelaPatrimonio.setModel(fillTable());
+        
+        
     }
 
     private void alterarActionPerformed(java.awt.event.ActionEvent evt) {
@@ -253,30 +262,32 @@ public class SalaView extends JDialog {
             JOptionPane.showMessageDialog(this, "Selecione uma linha!", "Erro", JOptionPane.ERROR_MESSAGE, null);
             return;
         }
+        
         AlterarSala alteracao = new AlterarSala(new javax.swing.JFrame(), true, index);
         alteracao.setResizable(false);
         alteracao.setVisible(true);
         this.tabelaPatrimonio.setModel(fillTable());
 
     } 
-    private void excluirActionPerformed(java.awt.event.ActionEvent evt) {
+    private void excluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirActionPerformed
         try {
+            // TODO add your handling code here:
             int index = this.tabelaPatrimonio.getSelectedRow();
             if(index < 0){
                 JOptionPane.showMessageDialog(this, "Selecione uma linha!", "Erro", JOptionPane.ERROR_MESSAGE, null);
                 return;
             }
             
+            ManterSala.getInstance().excluir(ManterSala.getInstance().getSalas_vet().get(index));
             JOptionPane.showMessageDialog(this, "Sala excluida com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE, null);
             this.tabelaPatrimonio.setModel(fillTable());
             
-            ManterSala.getInstance().excluir(ManterSala.getInstance().getSalas_vet().get(index));
         } catch (PatrimonioException ex) {
             JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
         }
-    }
+    }//GEN-LAST:event_excluirActionPerformed
 
     
     protected javax.swing.JButton alterar;
@@ -285,7 +296,7 @@ public class SalaView extends JDialog {
     protected javax.swing.JScrollPane jScrollPane1;
     protected javax.swing.JPanel panelBotoes;
     protected javax.swing.JPanel panelLista;
-    protected javax.swing.JButton pesquisarBtn;
+    //protected javax.swing.JButton pesquisarBtn;
     protected javax.swing.JLabel pesquisarLbl;
     protected javax.swing.JTextField pesquisarTextField;
     protected javax.swing.JTable tabelaPatrimonio;

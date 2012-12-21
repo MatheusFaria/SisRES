@@ -9,7 +9,7 @@ import model.Sala;
 
 public class ManterSala {
 
-	private Vector<Sala> salas_vet;
+	private Vector<Sala> salas_vet = new Vector<Sala>();
 	private static ManterSala instance;
 
 	private ManterSala() {

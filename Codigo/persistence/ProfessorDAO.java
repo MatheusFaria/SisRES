@@ -128,8 +128,8 @@ public class ProfessorDAO {
 		
 		pst.close();
 		rs.close();
-		if(rs2 != null)
-			rs2.close();
+                if(rs2 != null)
+                    rs2.close();
 		con.close();
 		return vet;
 	}

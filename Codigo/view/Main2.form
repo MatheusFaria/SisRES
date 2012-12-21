@@ -104,7 +104,8 @@
         </Component>
         <Component class="javax.swing.JButton" name="equipamentoBtn">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Equipamento" postCode="equipamentoBtn.setEnabled(false);"/>
+            <Property name="text" type="java.lang.String" value="Equipamento"/>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="equipamentoBtnActionPerformed"/>
@@ -157,9 +158,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="alunoBtn">
           <Properties>
-            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor" postCode="alunoBtn.setEnabled(false);">
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="&quot;Aluno&quot;" type="code"/>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="alunoBtnActionPerformed"/>

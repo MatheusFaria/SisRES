@@ -16,7 +16,7 @@ public class Professor extends Cliente {
 
 	public void setMatricula(String matricula) throws ClienteException {
 		try{	
-			if("".equals(matricula))
+			if("".equals(matricula) || matricula.isEmpty())
 				throw new ClienteException(MATRICULA_BRANCO);
 			//else if(matricula.matches("PATTERN"))//TODO colocar o pattern
 				//this.matricula = matricula;

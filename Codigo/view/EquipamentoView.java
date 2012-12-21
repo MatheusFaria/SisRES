@@ -4,8 +4,14 @@
  */
 package view;
 
+import control.ManterSala;
+import exception.PatrimonioException;
+import java.sql.SQLException;
+import java.util.Iterator;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.Patrimonio;
+import model.Sala;
 
 /**
  *
@@ -22,31 +28,27 @@ public class EquipamentoView extends SalaView {// implements CadastroGeral{
         setComponents();
     }
     
-    private DefaultTableModel fillTable(){
-        DefaultTableModel table = new DefaultTableModel(
-            new Patrimonio [][] {
-                
-            },
-            new String [] {
-                "Codigo", "Nome"
+    private DefaultTableModel fillTable(){ //MODIFICAR PARA PATRIMONIO QUANDO FOR FEITA A CLASSE;
+        try {
+            DefaultTableModel table = new DefaultTableModel();
+            
+            Iterator  i = ManterSala.getInstance().getSalas_vet().iterator();
+                        
+            table.addColumn("Codigo");     
+            table.addColumn("Nome");
+            while(i.hasNext()){
+                //Sala sala =  i.next();
+                //table.addRow(fillDataVector(sala));
             }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        };
-        return table;
+            
+            return table;
+        } catch (PatrimonioException ex) {
+            JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+        }
+        
+        return null;
     
     }
     
@@ -236,18 +238,7 @@ public class EquipamentoView extends SalaView {// implements CadastroGeral{
     }// </editor-fold>//GEN-END:initComponents
     */
     
-    private void pesquisarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pesquisarBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pesquisarBtnActionPerformed
-
-    private void pesquisarTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pesquisarTextFieldActionPerformed
-               // TODO add your handling code here:
-    }//GEN-LAST:event_pesquisarTextFieldActionPerformed
-
-    private void pesquisarTextFieldInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_pesquisarTextFieldInputMethodTextChanged
-        pesquisarBtn.setEnabled(true);
-    }//GEN-LAST:event_pesquisarTextFieldInputMethodTextChanged
-
+    
     private void cadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarActionPerformed
         // TODO add your handling code here:
         CadastroEquipamento cadastro = new CadastroEquipamento(new javax.swing.JFrame(), true);
@@ -258,10 +249,10 @@ public class EquipamentoView extends SalaView {// implements CadastroGeral{
 
     private void alterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alterarActionPerformed
         // TODO add your handling code here:
-        CadastroEquipamento alterar = new CadastroEquipamento(new javax.swing.JFrame(), true);
-        alterar.codigoTxtField.setText("a");
-        alterar.setResizable(false);
-        alterar.setVisible(true);
+        CadastroEquipamento alteracao = new CadastroEquipamento(new javax.swing.JFrame(), true);
+        alteracao.codigoTxtField.setText("a");
+        alteracao.setResizable(false);
+        alteracao.setVisible(true);
     }//GEN-LAST:event_alterarActionPerformed
 
     private void excluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirActionPerformed

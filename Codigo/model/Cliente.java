@@ -1,6 +1,7 @@
 package model;
 
 import exception.ClienteException;
+import util.Util;
 
 /*Para fazer uma melhor validacoa e captura do dados
  * se pega todos os dados como string.
@@ -20,7 +21,7 @@ public abstract class Cliente {
 		private final String CPF_INVALIDO = "CPF Invalido.";
 		private final String CPF_BRANCO = "CPF em Branco.";
 		private final String TELEFONE_INVALIDO = "Telefone Invalido.";
-		//private final String TELEFONE_BRANCO = "Telefone em Branco.";
+		private final String TELEFONE_BRANCO = "Telefone em Branco.";
 		private final String EMAIL_INVALIDO = "E-mail Invalido.";
 		//private final String EMAIL_BRANCO = "E-mail em Branco.";
 	
@@ -29,6 +30,7 @@ public abstract class Cliente {
 			String telefone, String email) throws ClienteException{
 		this.setNome(nome);
 		this.setCpf(cpf);
+                this.setMatricula(matricula);
 		this.setTelefone(telefone);
 		this.setEmail(email);
 	}
@@ -71,23 +73,17 @@ public abstract class Cliente {
 		try{	
 			if("".equals(cpf))
 				throw new ClienteException(CPF_BRANCO);
-			else if(cpf.matches("[\\d]{3,3}.[\\d]{3,3}.[\\d]{3,3}-[\\d]{2,2}$"))
-			{
-				cpf = 	cpf.split("[\\. | -]")[0] + 
-						cpf.split("[\\. | -]")[1] + 
-						cpf.split("[\\. | -]")[2] + 
-						cpf.split("[\\. | -]")[3];
-				if(this.validarCpf(cpf))
-					this.cpf = cpf;
-				else
-					throw new ClienteException(CPF_INVALIDO);
-			}
+			else if(Util.validarCpf(cpf))
+				this.cpf = cpf;
 			else
 				throw new ClienteException(CPF_INVALIDO);
 		} catch(StringIndexOutOfBoundsException e)
 		{
 			throw new ClienteException(CPF_INVALIDO);
-		}
+		} catch(NumberFormatException e)
+		{
+			throw new ClienteException(CPF_INVALIDO);
+		} 
 	}
 	
 	public void setTelefone(String telefone) throws ClienteException {
@@ -124,57 +120,5 @@ public abstract class Cliente {
 				", telefone=" + telefone + ", email=" + email
 				+ "]";
 	}
-	
-	private boolean validarCpf(String cpf) {
-
-		int d1, d2;
-		int digito1, digito2, resto;
-		int digitoCPF;
-		String	nDigResult;
-
-		d1 = d2 = 0;
-		digito1 = digito2 = resto = 0;
-
-		for (int nCount = 1; nCount < cpf.length() -1; nCount++)
-		{
-			 digitoCPF = Integer.valueOf (cpf.substring(nCount -1, nCount)).intValue();
-
-			 //multiplique a ultima casa por 2 a seguinte por 3 a seguinte por 4 e assim por diante.
-			 d1 = d1 + ( 11 - nCount ) * digitoCPF;
-
-			 //para o segundo digito repita o procedimento incluindo o primeiro digito calculado no passo anterior.
-			 d2 = d2 + ( 12 - nCount ) * digitoCPF;
-		};
-
-		//Primeiro resto da divisão por 11.
-		resto = (d1 % 11);
-
-		//Se o resultado for 0 ou 1 o digito é 0 caso contrário o digito é 11 menos o resultado anterior.
-		if (resto < 2)
-			 digito1 = 0;
-		else
-			 digito1 = 11 - resto;
-
-		d2 += 2 * digito1;
-
-		//Segundo resto da divisão por 11.
-		resto = (d2 % 11);
-
-		//Se o resultado for 0 ou 1 o digito é 0 caso contrário o digito é 11 menos o resultado anterior.
-		if (resto < 2)
-			 digito2 = 0;
-		else
-			 digito2 = 11 - resto;
-
-		//Digito verificador do CPF que está sendo validado.
-		String nDigVerific = cpf.substring (cpf.length()-2, cpf.length());
-
-		//Concatenando o primeiro resto com o segundo.
-		nDigResult = String.valueOf(digito1) + String.valueOf(digito2);
-
-		//comparar o digito verificador do cpf com o primeiro resto + o segundo resto.
-		return nDigVerific.equals(nDigResult);
-
-	} // fim do método validarCpf
 
 }

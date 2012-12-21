@@ -1,3 +1,7 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package view;
 
 import control.ManterProfessor;
@@ -5,6 +9,10 @@ import exception.ClienteException;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
+/**
+ *
+ * @author Parley
+ */
 public class AlterarProfessor extends CadastroCliente{
     
     int index;
@@ -31,9 +39,11 @@ public class AlterarProfessor extends CadastroCliente{
     
     private void cadastroBtnActionPerformed(java.awt.event.ActionEvent evt) {
         try {
+            //Sala sala = new Sala(codigoTxtField.getText(), jTextArea1.getText(), capacidadeTxtField.getText());
             control.ManterProfessor.getInstance().alterar(nomeTxtField.getText(), cpfTxtField.getText(), matriculaTxtField.getText(), 
                     telefoneTxtField.getText(), emailTxtField.getText(),
                     ManterProfessor.getInstance().getProfessores_vet().get(index));
+            
             
             JOptionPane.showMessageDialog(this, "Sala Alterada com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE, null);
             this.setVisible(false);
