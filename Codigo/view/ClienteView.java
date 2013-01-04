@@ -224,25 +224,17 @@ public class ClienteView extends javax.swing.JDialog {
     }//GEN-LAST:event_cadastrarBtnActionPerformed
 
     private void alterarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alterarBtnActionPerformed
-       try {
-            // TODO add your handling code here:
-            int index = this.tabelaCliente.getSelectedRow();
-            if(index < 0){
-                JOptionPane.showMessageDialog(this, "Selecione uma linha!", "Erro", JOptionPane.ERROR_MESSAGE, null);
-                return;
-            }
-            
-            AlterarProfessor alterar = new AlterarProfessor(new javax.swing.JFrame(), true, index);
-            alterar.setResizable(false);
-            alterar.setVisible(true);
-            ManterProfessor.getInstance().excluir(ManterProfessor.getInstance().getProfessores_vet().get(index));
-            this.tabelaCliente.setModel(fillTable());
-            
-        } catch (ClienteException ex) {
-            JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
-        } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+        // TODO add your handling code here:
+        int index = this.tabelaCliente.getSelectedRow();
+        if(index < 0){
+            JOptionPane.showMessageDialog(this, "Selecione uma linha!", "Erro", JOptionPane.ERROR_MESSAGE, null);
+            return;
         }
+        
+        AlterarProfessor alterar = new AlterarProfessor(new javax.swing.JFrame(), true, index);
+        alterar.setResizable(false);
+        alterar.setVisible(true);
+        this.tabelaCliente.setModel(fillTable());
     }//GEN-LAST:event_alterarBtnActionPerformed
 
     private void excluirBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirBtnActionPerformed
