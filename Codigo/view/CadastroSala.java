@@ -130,6 +130,7 @@ public class CadastroSala extends javax.swing.JDialog implements CadastroGeral{
             this.setVisible(false);
             
         } catch (PatrimonioException ex) {
+        
             JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
         } catch (SQLException ex){
             JOptionPane.showMessageDialog(this, ex.getSQLState() + "\n" + ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
