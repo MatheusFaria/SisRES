@@ -35,7 +35,12 @@ public class ManterProfessor {
 
 	public void alterar(String nome, String cpf, String matricula,
 			String telefone, String email, Professor prof) throws ClienteException, SQLException {
-		Professor prof_velho = prof;
+		Professor prof_velho = new Professor(
+								prof.getNome(),
+								prof.getCpf(),
+								prof.getMatricula(),
+								prof.getTelefone(),
+								prof.getEmail());
 		prof.setNome(nome);
 		prof.setCpf(cpf);
 		prof.setMatricula(matricula);

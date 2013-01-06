@@ -70,7 +70,7 @@ public class ProfessorDAO {
 	}
 
 	public void alterar(Professor prof_velho, Professor prof_novo) throws SQLException {			
-		this.updateQuery("UPDATE cliente SET " +
+		String msg = "UPDATE cliente SET " +
 				"nome = \"" + prof_novo.getNome() + "\", " +
 				"cpf = \"" + prof_novo.getCpf() + "\", " +
 				"telefone = \"" + prof_novo.getTelefone() + "\", " +
@@ -81,8 +81,14 @@ public class ProfessorDAO {
 				"cliente.cpf = \"" + prof_velho.getCpf() + "\" and " +
 				"cliente.telefone = \"" + prof_velho.getTelefone() + "\" and " +
 				"cliente.email = \"" + prof_velho.getEmail() + "\" and " +
-				"cliente.matricula = \"" + prof_velho.getMatricula() + "\";"
-				);
+				"cliente.matricula = \"" + prof_velho.getMatricula() + "\";";
+		Connection con =  FactoryConnection.getInstance().getConnection();
+		con.setAutoCommit(false);
+		PreparedStatement pst = con.prepareStatement(msg);
+		pst.executeUpdate();
+		con.commit();
+		pst.close();
+		con.close();
 	}
 
 	public void excluir(Professor prof) throws SQLException {
