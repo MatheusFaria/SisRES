@@ -21,6 +21,7 @@ public class AlterarProfessor extends CadastroCliente{
         super(parent, modal);
         this.setTitle("Alterar");
         this.cadastroBtn.setText("Alterar");
+        
         try {
             this.nomeTxtField.setText(ManterProfessor.getInstance().getProfessores_vet().get(index).getNome());
             this.emailTxtField.setText(ManterProfessor.getInstance().getProfessores_vet().get(index).getEmail());
@@ -28,7 +29,6 @@ public class AlterarProfessor extends CadastroCliente{
             this.matriculaTxtField.setText(ManterProfessor.getInstance().getProfessores_vet().get(index).getMatricula());
             this.cpfTxtField.setText(ManterProfessor.getInstance().getProfessores_vet().get(index).getCpf());
             
-            this.index = index;
             
         } catch (ClienteException ex) {
             JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
@@ -37,7 +37,8 @@ public class AlterarProfessor extends CadastroCliente{
         }
     }
     
-    private void cadastroBtnActionPerformed(java.awt.event.ActionEvent evt) {
+    /**
+    protected void cadastroBtnActionPerformed(java.awt.event.ActionEvent evt) {
         try {
             //Sala sala = new Sala(codigoTxtField.getText(), jTextArea1.getText(), capacidadeTxtField.getText());
             control.ManterProfessor.getInstance().alterar(nomeTxtField.getText(), cpfTxtField.getText(), matriculaTxtField.getText(), 
@@ -45,7 +46,7 @@ public class AlterarProfessor extends CadastroCliente{
                     ManterProfessor.getInstance().getProfessores_vet().get(index));
             
             
-            JOptionPane.showMessageDialog(this, "Sala Alterada com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE, null);
+            JOptionPane.showMessageDialog(this, "Cadastro alterado com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE, null);
             this.setVisible(false);
             
         } catch (ClienteException ex) {
@@ -55,4 +56,5 @@ public class AlterarProfessor extends CadastroCliente{
         }
         
     }
+    */
 }

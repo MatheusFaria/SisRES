@@ -38,7 +38,7 @@ public class Main2 extends javax.swing.JFrame {
         fundoLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         fundoLbl.setText("SisRES");
 
-        //panelReserva1.setBorder(javax.swing.BorderFactory.createTitledBorder("Reserva"));
+        panelReserva1.setBorder(javax.swing.BorderFactory.createTitledBorder("Reserva"));
 
         salaBtn.setText("Sala");
         salaBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -76,7 +76,7 @@ public class Main2 extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        //panelReserva.setBorder(javax.swing.BorderFactory.createTitledBorder("Cadastro"));
+        panelReserva.setBorder(javax.swing.BorderFactory.createTitledBorder("Cadastro"));
 
         professorBtn.setText("Professor");
         professorBtn.addActionListener(new java.awt.event.ActionListener() {

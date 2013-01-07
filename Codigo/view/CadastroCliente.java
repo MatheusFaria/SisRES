@@ -140,6 +140,7 @@ public class CadastroCliente extends javax.swing.JDialog {//implements CadastroG
     }// </editor-fold>//GEN-END:initComponents
 
     private void cadastroBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastroBtnActionPerformed
+        
         try {
             // TODO add your handling code here:
             ManterProfessor.getInstance().inserir(nomeTxtField.getText(), cpfTxtField.getText(),
@@ -152,9 +153,8 @@ public class CadastroCliente extends javax.swing.JDialog {//implements CadastroG
             JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
-        } //catch (NullPointerException ex)
-        {
-            //JOptionPane.showMessageDialog(this, ex.getLocalizedMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+        } catch (NullPointerException ex){
+            JOptionPane.showMessageDialog(this, ex.getLocalizedMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
         }
     }//GEN-LAST:event_cadastroBtnActionPerformed
 
