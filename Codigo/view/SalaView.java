@@ -267,8 +267,9 @@ public class SalaView extends JDialog {
             AlterarSala alteracao = new AlterarSala(new javax.swing.JFrame(), true, index);
             alteracao.setResizable(false);
             alteracao.setVisible(true);
-            this.tabelaPatrimonio.setModel(fillTable());
             ManterSala.getInstance().excluir(ManterSala.getInstance().getSalas_vet().get(index));
+            this.tabelaPatrimonio.setModel(fillTable());
+            
             
             
         } catch (PatrimonioException ex) {

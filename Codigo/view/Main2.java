@@ -41,7 +41,6 @@ public class Main2 extends javax.swing.JFrame {
         panelReserva1.setBorder(javax.swing.BorderFactory.createTitledBorder("Reserva"));
 
         salaBtn.setText("Sala");
-        salaBtn.setEnabled(false);
         salaBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 salaBtnActionPerformed(evt);
