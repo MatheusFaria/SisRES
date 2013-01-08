@@ -21,6 +21,11 @@ public class AlterarProfessor extends CadastroCliente{
         super(parent, modal);
         this.setTitle("Alterar");
         this.cadastroBtn.setText("Alterar");
+        this.cadastroBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alterarBtnActionPerformed(evt);
+            }
+        });
         
         try {
             this.nomeTxtField.setText(ManterProfessor.getInstance().getProfessores_vet().get(index).getNome());
@@ -37,8 +42,8 @@ public class AlterarProfessor extends CadastroCliente{
         }
     }
     
-    /**
-    protected void cadastroBtnActionPerformed(java.awt.event.ActionEvent evt) {
+    
+    protected void alterarBtnActionPerformed(java.awt.event.ActionEvent evt) {
         try {
             //Sala sala = new Sala(codigoTxtField.getText(), jTextArea1.getText(), capacidadeTxtField.getText());
             control.ManterProfessor.getInstance().alterar(nomeTxtField.getText(), cpfTxtField.getText(), matriculaTxtField.getText(), 
@@ -56,5 +61,5 @@ public class AlterarProfessor extends CadastroCliente{
         }
         
     }
-    */
+    
 }

@@ -26,6 +26,7 @@ public class Main2 extends javax.swing.JFrame {
         fundoLbl = new javax.swing.JLabel();
         panelReserva1 = new javax.swing.JPanel();
         salaBtn = new javax.swing.JButton();
+        salaBtn.setEnabled(false);
         equipamentoBtn = new javax.swing.JButton();
         panelReserva = new javax.swing.JPanel();
         professorBtn = new javax.swing.JButton();
