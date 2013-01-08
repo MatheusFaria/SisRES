@@ -24,6 +24,12 @@ public class AlterarSala extends CadastroSala{
         super(parent, modal);
         this.setTitle("Alterar");
         this.cadastroBtn.setText("Alterar");
+        cadastroBtn.addActionListener(null);
+        cadastroBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadastroBtnActionPerformed(evt);
+            }
+        });
         try {
             
             this.codigoTxtField.setText(ManterSala.getInstance().getSalas_vet().get(index).getCodigo());

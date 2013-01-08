@@ -257,7 +257,7 @@ public class SalaView extends JDialog {
     }
 
     private void alterarActionPerformed(java.awt.event.ActionEvent evt) {
-        try {
+        //try {
             int index = this.tabelaPatrimonio.getSelectedRow();
             if(index < 0){
                 JOptionPane.showMessageDialog(this, "Selecione uma linha!", "Erro", JOptionPane.ERROR_MESSAGE, null);
@@ -267,17 +267,18 @@ public class SalaView extends JDialog {
             AlterarSala alteracao = new AlterarSala(new javax.swing.JFrame(), true, index);
             alteracao.setResizable(false);
             alteracao.setVisible(true);
-            ManterSala.getInstance().excluir(ManterSala.getInstance().getSalas_vet().get(index));
+            //ManterSala.getInstance().excluir(ManterSala.getInstance().getSalas_vet().get(index));
             this.tabelaPatrimonio.setModel(fillTable());
             
             
             
+        /*
         } catch (PatrimonioException ex) {
             JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
         }
-        
+        */
         
 
     } 
