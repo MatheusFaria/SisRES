@@ -30,9 +30,9 @@ public class SalaDAO {
 		PreparedStatement pst = con.prepareStatement("SELECT * FROM patrimonio WHERE " +
 				"patrimonio.codigo = \"" + sala.getCodigo() + "\" and " +
 				"patrimonio.descricao = \"" + sala.getDescricao() + "\";");
-		ResultSet rs = pst.executeQuery();//armazena os dados de execu��o do comando sql acima
+		ResultSet rs = pst.executeQuery();
 		
-		if(!rs.next())//se n�o houver, insere um 'patrimonio'
+		if(!rs.next())
 		{
 			this.updateQuery("INSERT INTO " +
 					"patrimonio (codigo, descricao) VALUES (" +
@@ -48,16 +48,12 @@ public class SalaDAO {
 		
 		if(!rs.next())
 		{
-			this.updateQuery("INSERT INTO sala (capacidade, id_patrimonio) VALUES (" +
-				"\"" + sala.getCapacidade() + "\", (" +
-				"SELECT id_patrimonio FROM patrimonio WHERE " +
-				"patrimonio.codigo = \"" + sala.getCodigo() + "\" and " +
-				"patrimonio.descricao = \"" + sala.getDescricao() +  "\");"
+			this.updateQuery("INSERT INTO sala (id_patrimonio, capacidade) VALUES (" +
+					"(SELECT id_patrimonio FROM patrimonio WHERE " +
+					"patrimonio.codigo = \"" + sala.getCodigo() + "\" and " +
+					"patrimonio.descricao = \"" + sala.getDescricao() +  "\"), " +
+					Integer.parseInt(sala.getCapacidade()) + ");"
 			);
-/**INSERT INTO sala (capacidade, id_patrimonio) VALUES ("30",
- *  (SELECT id_patrimonio FROM patrimonio 
- *  WHERE patrimonio.codigo = "123" and 
- *  patrimonio.descricao = "sem descricao"));*/
 		}
 		else{
 			throw new PatrimonioException(SALA_JA_EXISTENTE);
@@ -70,35 +66,45 @@ public class SalaDAO {
 
 
 	public void alterar(Sala old_sala, Sala new_sala) throws SQLException {
-		this.updateQuery("UPDATE sala SET " +
-				"sala.capacidade = \"" + new_sala.getCapacidade() + "\"" +
+		String msg ="UPDATE sala SET " +
+				"capacidade = " + new_sala.getCapacidade() +
 				" WHERE " +
-				"sala.id_patrimonio = \"(" +
-				"SELECT id_patrimonio FROM patrimonio WHERE " +
+				"sala.id_patrimonio = " +
+				"(SELECT id_patrimonio FROM patrimonio WHERE " +
 				"patrimonio.codigo = \"" + old_sala.getCodigo() + "\" and " +
-				"patrimonio.descricao = \"" + old_sala.getDescricao() +  "\") and" +
-				"sala.capacidade = \" " + old_sala.getCapacidade() + "\";" +
+				"patrimonio.descricao = \"" + old_sala.getDescricao() +  "\") and " +
+				"sala.capacidade = \"" + old_sala.getCapacidade() + "\"; ";
 				
-				"UPDATE patrimonio SET" +				
-				"patrimonio.codigo = \"" + new_sala.getCodigo() + "\", " +
-				"patrimonio.descricao = \"" + new_sala.getDescricao() + "\", " +
+		String msg2 = "UPDATE patrimonio SET " +				
+				"codigo = \"" + new_sala.getCodigo() + "\", " +
+				"descricao = \"" + new_sala.getDescricao() + "\"" +
 				" WHERE " +
 				"patrimonio.codigo = \"" + old_sala.getCodigo() + "\" and " +
-				"patrimonio.descricao = \"" + old_sala.getDescricao() +  "\");" 
-				);
+				"patrimonio.descricao = \"" + old_sala.getDescricao() +  "\";";
+
+		Connection con =  FactoryConnection.getInstance().getConnection();
+		con.setAutoCommit(false);
+		PreparedStatement pst = con.prepareStatement(msg);
+		pst.executeUpdate();
+		con.commit();
+		pst = con.prepareStatement(msg2);
+		pst.executeUpdate();
+		con.commit();
+		pst.close();
+		con.close();
 	}
 
 	public void excluir(Sala sala) throws SQLException {
 		this.updateQuery("DELETE FROM sala WHERE " +
-				"sala.id_patrimonio = \"(" +
+				"id_patrimonio = (" +
 				"SELECT id_patrimonio FROM patrimonio WHERE " +
 				"patrimonio.codigo = \"" + sala.getCodigo() + "\" and " +
-				"patrimonio.descricao = \"" + sala.getDescricao() +  "\") and" +
-				"sala.capacidade = \" " + sala.getCapacidade() + "\";"				
+				"patrimonio.descricao = \"" + sala.getDescricao() +  "\") and " +
+				"sala.capacidade = \"" + sala.getCapacidade() + "\";"				
 				);
 		this.updateQuery("DELETE FROM patrimonio WHERE " +
 				"patrimonio.codigo = \"" + sala.getCodigo() + "\" and " +
-				"patrimonio.descricao = \"" + sala.getDescricao() +  "\");" 
+				"patrimonio.descricao = \"" + sala.getDescricao() +  "\";" 
 				);		
 	}
 
@@ -121,21 +127,20 @@ public class SalaDAO {
 			pst = con.prepareStatement("SELECT * FROM patrimonio WHERE id_patrimonio = " 
 															+ rs.getString("id_patrimonio"));
 			rs2 = pst.executeQuery();
-			
-			vet.add(this.fetchSala(rs2, rs));
+			rs2.next();
+			vet.add(this.fetchSala(rs2, rs.getString("capacidade")));
 		}
 		
 		pst.close();
 		rs.close();
-                if(rs2 != null)
-                    rs2.close();
+        if(rs2 != null)
+        	rs2.close();
 		con.close();
 		return vet;
 	}
 	
-	private Sala fetchSala(ResultSet rs2, ResultSet rs) throws PatrimonioException, SQLException{
-		rs.next();
-		return new Sala(rs2.getString("codigo"), rs2.getString("descricao"), rs.getString("capacidade"));
+	private Sala fetchSala(ResultSet rs2, String capacidade) throws PatrimonioException, SQLException{
+		return new Sala(rs2.getString("codigo"), rs2.getString("descricao"), capacidade);
 	}
 	
 	private void updateQuery(String msg) throws SQLException{

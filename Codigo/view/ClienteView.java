@@ -9,12 +9,9 @@ import exception.ClienteException;
 import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.Vector;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.Professor;
-import model.Sala;
 
 /**
  *

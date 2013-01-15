@@ -142,6 +142,8 @@ public class CadastroCliente extends javax.swing.JDialog {//implements CadastroG
     private void cadastroBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastroBtnActionPerformed
         
         try {
+        	if(cadastroBtn.getText().equals("Cadastrar"))
+        	{
             // TODO add your handling code here:
             ManterProfessor.getInstance().inserir(nomeTxtField.getText(), cpfTxtField.getText(),
                      matriculaTxtField.getText(), telefoneTxtField.getText(), emailTxtField.getText());
@@ -149,6 +151,15 @@ public class CadastroCliente extends javax.swing.JDialog {//implements CadastroG
             JOptionPane.showMessageDialog(this, "Professor Cadastrado com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE, null);
             
             this.setVisible(false);
+        	} else if (cadastroBtn.getText().equals("Alterar")) {
+        		control.ManterProfessor.getInstance().alterar(nomeTxtField.getText(), cpfTxtField.getText(), matriculaTxtField.getText(), 
+                        telefoneTxtField.getText(), emailTxtField.getText(),
+                        ManterProfessor.getInstance().getProfessores_vet().get(index));
+                
+                
+                JOptionPane.showMessageDialog(this, "Cadastro alterado com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE, null);
+                this.setVisible(false);
+        	}
         } catch (ClienteException ex) {
             JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
         } catch (SQLException ex) {
@@ -165,6 +176,7 @@ public class CadastroCliente extends javax.swing.JDialog {//implements CadastroG
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    protected int index = 0;
     protected javax.swing.JButton cadastroBtn;
     private javax.swing.JButton cancelBtn;
     private javax.swing.JLabel cpfLbl;

@@ -33,7 +33,8 @@ public class ManterSala {
 	}
 
 	public void alterar(String codigo, String descricao, String capacidade, Sala sala) throws PatrimonioException, SQLException {
-		Sala old_sala = sala;
+		Sala old_sala = new Sala(sala.getCodigo(), sala.getDescricao(),
+								sala.getCapacidade());
 		sala.setCodigo(codigo);
 		sala.setDescricao(descricao);
 		sala.setCapacidade(capacidade);

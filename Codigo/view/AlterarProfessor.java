@@ -21,11 +21,7 @@ public class AlterarProfessor extends CadastroCliente{
         super(parent, modal);
         this.setTitle("Alterar");
         this.cadastroBtn.setText("Alterar");
-        this.cadastroBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                alterarBtnActionPerformed(evt);
-            }
-        });
+        super.index = index;
         
         try {
             this.nomeTxtField.setText(ManterProfessor.getInstance().getProfessores_vet().get(index).getNome());

@@ -26,7 +26,6 @@ public class Main2 extends javax.swing.JFrame {
         fundoLbl = new javax.swing.JLabel();
         panelReserva1 = new javax.swing.JPanel();
         salaBtn = new javax.swing.JButton();
-        salaBtn.setEnabled(false);
         equipamentoBtn = new javax.swing.JButton();
         panelReserva = new javax.swing.JPanel();
         professorBtn = new javax.swing.JButton();
@@ -146,17 +145,14 @@ public class Main2 extends javax.swing.JFrame {
 
     private void salaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salaBtnActionPerformed
         // TODO add your handling code here:
-        SalaView room = new SalaView(this,true);
+    	SalaView room = new SalaView(this,true);
         room.setResizable(false);
-        room.setVisible(true);
-        
+        room.setVisible(true);        
     }//GEN-LAST:event_salaBtnActionPerformed
 
     private void equipamentoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equipamentoBtnActionPerformed
         // TODO add your handling code here:
-        EquipamentoView equipament = new EquipamentoView(this,true);
-        equipament.setResizable(false);
-        equipament.setVisible(true);
+        
     }//GEN-LAST:event_equipamentoBtnActionPerformed
 
     private void professorBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_professorBtnActionPerformed
