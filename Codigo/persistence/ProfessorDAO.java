@@ -21,67 +21,49 @@ public class ProfessorDAO {
 			return instance;
 		}
 	//
-	
-	public void incluir(Professor prof) throws SQLException, ClienteException {
-		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM cliente WHERE " +
-				"cliente.nome = \"" + prof.getNome() + "\" and " +
-				"cliente.cpf = \"" + prof.getCpf() + "\" and " +
-				"cliente.telefone = \"" + prof.getTelefone() + "\" and " +
-				"cliente.email = \"" + prof.getEmail() + "\" and " +
-				"cliente.matricula = \"" + prof.getMatricula() + "\";");
-		ResultSet rs = pst.executeQuery();
-		
-		if(!rs.next())
-		{
-			this.updateQuery("INSERT INTO " +
-					"cliente (nome, cpf, telefone, email, matricula) VALUES (" +
-					"\"" + prof.getNome() + "\", " +
-					"\"" + prof.getCpf()+ "\", " +
-					"\"" + prof.getTelefone() + "\", " +
-					"\"" + prof.getEmail() + "\", " +
-					"\"" + prof.getMatricula() + "\"); "
-				);
+		public void incluir(Professor prof) throws SQLException, ClienteException {
+			Connection con = FactoryConnection.getInstance().getConnection();
+			PreparedStatement pst = con.prepareStatement("SELECT * FROM professor WHERE " +
+					"professor.nome = \"" + prof.getNome() + "\" and " +
+					"professor.cpf = \"" + prof.getCpf() + "\" and " +
+					"professor.telefone = \"" + prof.getTelefone() + "\" and " +
+					"professor.email = \"" + prof.getEmail() + "\" and " +
+					"professor.matricula = \"" + prof.getMatricula() + "\";");
+			ResultSet rs = pst.executeQuery();
+			
+			if(!rs.next())
+			{
+				this.updateQuery("INSERT INTO " +
+						"professor (nome, cpf, telefone, email, matricula) VALUES (" +
+						"\"" + prof.getNome() + "\", " +
+						"\"" + prof.getCpf()+ "\", " +
+						"\"" + prof.getTelefone() + "\", " +
+						"\"" + prof.getEmail() + "\", " +
+						"\"" + prof.getMatricula() + "\"); "
+					);
+			}
+			else {
+				throw new ClienteException(PROFESSOR_JA_EXISTENTE);
+			}
+			
+			rs.close();
+			pst.close();
+			con.close();
 		}
-		else {
-			pst = con.prepareStatement("SELECT * FROM professor WHERE " +
-				"id_cliente = " + rs.getString("id_cliente"));
-			rs = pst.executeQuery();
-		}
-		
-		if(!rs.next())
-		{
-			this.updateQuery("INSERT INTO professor (id_cliente) " +
-				"SELECT id_cliente FROM cliente WHERE " +
-				"cliente.nome = \"" + prof.getNome() + "\" and " +
-				"cliente.cpf = \"" + prof.getCpf() + "\" and " +
-				"cliente.telefone = \"" + prof.getTelefone() + "\" and " +
-				"cliente.email = \"" + prof.getEmail() + "\" and " +
-				"cliente.matricula = \"" + prof.getMatricula() + "\";"
-			);
-		}
-		else{
-			throw new ClienteException(PROFESSOR_JA_EXISTENTE);
-		}
-		
-		rs.close();
-		pst.close();
-		con.close();
-	}
 
 	public void alterar(Professor prof_velho, Professor prof_novo) throws SQLException {			
-		String msg = "UPDATE cliente SET " +
+		String msg = "UPDATE professor SET " +
 				"nome = \"" + prof_novo.getNome() + "\", " +
 				"cpf = \"" + prof_novo.getCpf() + "\", " +
 				"telefone = \"" + prof_novo.getTelefone() + "\", " +
 				"email = \"" + prof_novo.getEmail() + "\", " +
 				"matricula = \"" + prof_novo.getMatricula() + "\""+
 				" WHERE " +
-				"cliente.nome = \"" + prof_velho.getNome() + "\" and " +
-				"cliente.cpf = \"" + prof_velho.getCpf() + "\" and " +
-				"cliente.telefone = \"" + prof_velho.getTelefone() + "\" and " +
-				"cliente.email = \"" + prof_velho.getEmail() + "\" and " +
-				"cliente.matricula = \"" + prof_velho.getMatricula() + "\";";
+				"professor.nome = \"" + prof_velho.getNome() + "\" and " +
+				"professor.cpf = \"" + prof_velho.getCpf() + "\" and " +
+				"professor.telefone = \"" + prof_velho.getTelefone() + "\" and " +
+				"professor.email = \"" + prof_velho.getEmail() + "\" and " +
+				"professor.matricula = \"" + prof_velho.getMatricula() + "\";";
 		Connection con =  FactoryConnection.getInstance().getConnection();
 		con.setAutoCommit(false);
 		PreparedStatement pst = con.prepareStatement(msg);
@@ -92,21 +74,12 @@ public class ProfessorDAO {
 	}
 
 	public void excluir(Professor prof) throws SQLException {
-		this.updateQuery("DELETE FROM professor WHERE id_cliente = " +
-				"(SELECT id_cliente FROM cliente WHERE " +
-				"cliente.nome = \"" + prof.getNome() + "\" and " +
-				"cliente.cpf = \"" + prof.getCpf() + "\" and " +
-				"cliente.telefone = \"" + prof.getTelefone() + "\" and " +
-				"cliente.email = \"" + prof.getEmail() + "\" and " +
-				"cliente.matricula = \"" + prof.getMatricula() + "\");"
-				);
-		
-		this.updateQuery("DELETE FROM cliente WHERE " +
-				"cliente.nome = \"" + prof.getNome() + "\" and " +
-				"cliente.cpf = \"" + prof.getCpf() + "\" and " +
-				"cliente.telefone = \"" + prof.getTelefone() + "\" and " +
-				"cliente.email = \"" + prof.getEmail() + "\" and " +
-				"cliente.matricula = \"" + prof.getMatricula() + "\";"
+		this.updateQuery("DELETE FROM professor WHERE " +
+				"professor.nome = \"" + prof.getNome() + "\" and " +
+				"professor.cpf = \"" + prof.getCpf() + "\" and " +
+				"professor.telefone = \"" + prof.getTelefone() + "\" and " +
+				"professor.email = \"" + prof.getEmail() + "\" and " +
+				"professor.matricula = \"" + prof.getMatricula() + "\";"
 				);
 	}
 
@@ -126,8 +99,8 @@ public class ProfessorDAO {
 		
 		while(rs.next())
 		{
-			pst = con.prepareStatement("SELECT * FROM cliente WHERE id_cliente = " 
-															+ rs.getString("id_cliente"));
+			pst = con.prepareStatement("SELECT * FROM professor WHERE id_professor = " 
+															+ rs.getString("id_professor"));
 			rs2 = pst.executeQuery();
 			vet.add(this.fetchProfessor(rs2));
 		}
