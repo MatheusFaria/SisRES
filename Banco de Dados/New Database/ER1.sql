@@ -1,5 +1,5 @@
 CREATE TABLE Aluno (
- id_aluno INT NOT NULL,
+ id_aluno INT NOT NULL AUTO_INCREMENT,
  nome VARCHAR(100) NOT NULL,
  cpf VARCHAR(11) NOT NULL,
  telefone VARCHAR(10),
@@ -11,7 +11,7 @@ ALTER TABLE Aluno ADD CONSTRAINT PK_Aluno PRIMARY KEY (id_aluno);
 
 
 CREATE TABLE Equipamento (
- id_equipamento INT NOT NULL,
+ id_equipamento INT NOT NULL AUTO_INCREMENT,
  codigo VARCHAR(15),
  descricao VARCHAR(120)
 );
@@ -20,7 +20,7 @@ ALTER TABLE Equipamento ADD CONSTRAINT PK_Equipamento PRIMARY KEY (id_equipament
 
 
 CREATE TABLE Professor (
- id_professor INT NOT NULL,
+ id_professor INT NOT NULL AUTO_INCREMENT,
  nome VARCHAR(10) NOT NULL,
  cpf VARCHAR(11) NOT NULL,
  telefone VARCHAR(10),
@@ -32,7 +32,7 @@ ALTER TABLE Professor ADD CONSTRAINT PK_Professor PRIMARY KEY (id_professor);
 
 
 CREATE TABLE Sala (
- id_sala INT NOT NULL,
+ id_sala INT NOT NULL AUTO_INCREMENT,
  codigo VARCHAR(10) NOT NULL,
  descricao VARCHAR(120),
  capacidade INT
