@@ -58,11 +58,11 @@ public class SalaDAO {
 		String msg = "UPDATE sala SET " +				
 				"codigo = \"" + new_sala.getCodigo() + "\", " +
 				"descricao = \"" + new_sala.getDescricao() + "\", " +
-				"capacidade = " + new_sala.getCapacidade()+
-				"\"" +
+				"capacidade = " + new_sala.getCapacidade() +
 				" WHERE " +
 				"sala.codigo = \"" + old_sala.getCodigo() + "\" and " +
-				"sala.descricao = \"" + old_sala.getDescricao() +  "\";";
+				"sala.descricao = \"" + old_sala.getDescricao() +  "\" and " +
+				"sala.capacidade = " + old_sala.getCapacidade() +";";
 
 		Connection con =  FactoryConnection.getInstance().getConnection();
 		con.setAutoCommit(false);

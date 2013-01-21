@@ -1,31 +1,77 @@
 package view;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+
 import java.sql.SQLException;
-import java.util.Vector;
+import java.util.Scanner;
 
-import persistence.FactoryConnection;
-import persistence.SalaDAO;
-
-import control.ManterProfessor;
 import control.ManterSala;
-import exception.ClienteException;
 import exception.PatrimonioException;
-import model.Professor;
+import exception.PatrimonioException;
 import model.Sala;
 
 public class MainTeste {
 	
-	public static void main(String[] args) throws ClienteException, SQLException, PatrimonioException {
+	static Scanner scan = new Scanner(System.in);
+	
+	public static void main(String[] args){
 		
-		Sala s = new Sala("121212", "SalaG", "23");
+		Sala p = null;
+		Sala p2 = null;
+		try {
+			p = new Sala("S3", "Sala de Estudos", "30");
+			p2 = new Sala("S10", "Laboratorio", "40");
+		} catch (PatrimonioException e) {
+			e.printStackTrace();
+		}
 		
-		ManterSala.getInstance().alterar("121212", "SalaG", "54", s);
 		
-
-		System.out.println("Ok!");
+		
+		//Cadastrar
+		try {
+			ManterSala.getInstance().inserir("S3", "Sala de Estudos", "30");
+		} catch (PatrimonioException e1) {
+			e1.printStackTrace();
+		} catch (SQLException e1) {
+			e1.printStackTrace();
+		}
+		
+		
+		System.out.println("Ok! 1");
+		scan.nextLine();//Parada para a conferencia direto no Banco
+		//SELECT * FROM TABLE Sala;
+		
+		
+		
+		
+		//Alterar
+		try {
+			ManterSala.getInstance().alterar("S10", "Laboratorio", "40", p);
+		} catch (PatrimonioException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
+		System.out.println("Ok! 2");
+		scan.nextLine();//Parada para a conferencia direto no Banco
+		//SELECT * FROM TABLE Sala;
+		
+		
+		
+		
+		//Excluir
+		try {
+			ManterSala.getInstance().excluir(p2);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
+		//SELECT * FROM TABLE Sala;
+		
+		//Chegando aqui sem erros e as alterações ocorrendo no banco, as funções estão funcionado corretamente;
+		System.out.println("Ok! 3");
 	}
 
 }
