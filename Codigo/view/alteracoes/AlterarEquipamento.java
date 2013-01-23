@@ -1,20 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package view.alteracoes;
-
-import view.cadastros.CadastroPatrimonio;
-import control.ManterPatrimonio;
-import exception.PatrimonioException;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JOptionPane;
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package view.alteracoes;
 
 import control.ManterPatrimonio;
@@ -35,6 +18,8 @@ public class AlterarEquipamento extends CadastroEquipamento{
         super(parent, modal);
         this.setTitle("Alterar");
         this.cadastroBtn.setText("Alterar");
+        this.capacidadeLbl.setVisible(false);
+        this.capacidadeTxtField.setVisible(false);
         
         try {
             
