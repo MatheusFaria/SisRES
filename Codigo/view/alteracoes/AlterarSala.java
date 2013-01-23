@@ -1,0 +1,65 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package view.alteracoes;
+
+import view.cadastros.CadastroPatrimonio;
+import control.ManterSala;
+import exception.PatrimonioException;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import model.Sala;
+
+/**
+ *
+ * @author Parley
+ */
+public class AlterarSala extends CadastroPatrimonio {
+
+	private int index2 = 0;
+
+	public AlterarSala(java.awt.Frame parent, boolean modal, int index) {
+		super(parent, modal);
+		this.setTitle("Alterar");
+		this.cadastroBtn.setText("Alterar");
+		index2 = index;
+		
+		try {
+
+			this.codigoTxtField.setText(ManterSala.getInstance().getSalas_vet().get(index).getCodigo());
+			this.capacidadeTxtField.setText(ManterSala.getInstance().getSalas_vet().get(index).getCapacidade());
+			this.descricaoTextArea.setText(ManterSala.getInstance().getSalas_vet().get(index).getDescricao());
+			this.index2 = index;
+
+		} catch (PatrimonioException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		} catch (SQLException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		} catch (NullPointerException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		}
+
+	}
+	
+	@Override
+	protected void cadastroAction() {
+		try {
+			
+			ManterSala.getInstance().alterar(codigoTxtField.getText(), descricaoTextArea.getText(), capacidadeTxtField.getText(),
+				ManterSala.getInstance().getSalas_vet().get(index2));
+
+			JOptionPane.showMessageDialog(this, "Sala Alterada com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE, null);
+			this.setVisible(false);
+
+		} catch (PatrimonioException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		} catch (SQLException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		}
+	}
+
+	
+}
