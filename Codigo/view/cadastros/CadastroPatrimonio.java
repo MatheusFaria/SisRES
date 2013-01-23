@@ -1,21 +1,11 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package view.cadastros;
-
-import exception.PatrimonioException;
-import java.sql.SQLException;
-import javax.swing.JOptionPane;
-
 /**
- *
  * @author Parley
+ * @editor Aulus
  */
 public abstract class CadastroPatrimonio extends javax.swing.JDialog{
-
     /**
-     * Creates new form CadastroCliente
+     * Creates new form CadastroPatrimonio
      */
     public CadastroPatrimonio(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -77,12 +67,12 @@ public abstract class CadastroPatrimonio extends javax.swing.JDialog{
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(descricaoLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(capacidadeLbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            //.addComponent(capacidadeLbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(codigoLbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jScrollPane1)
-                            .addComponent(capacidadeTxtField)
+                            //.addComponent(capacidadeTxtField)
                             .addComponent(codigoTxtField)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -101,8 +91,9 @@ public abstract class CadastroPatrimonio extends javax.swing.JDialog{
                     .addComponent(codigoTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(capacidadeLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(capacidadeTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    //.addComponent(capacidadeLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    //.addComponent(capacidadeTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                   )
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(descricaoLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -119,13 +110,11 @@ public abstract class CadastroPatrimonio extends javax.swing.JDialog{
     
     private void cadastroBtnActionPerformed(java.awt.event.ActionEvent evt) {
         cadastroAction();
-	    
     }
     
     protected void cancelBtnActionPerformed(java.awt.event.ActionEvent evt) {
         this.setVisible(false);
     }
-    
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     protected javax.swing.JButton cadastroBtn;
@@ -134,9 +123,9 @@ public abstract class CadastroPatrimonio extends javax.swing.JDialog{
     protected javax.swing.JTextField codigoTxtField;
     protected javax.swing.JLabel descricaoLbl;
     protected javax.swing.JScrollPane jScrollPane1;
-    //protected javax.swing.JTextPane jTextPane1;
     protected javax.swing.JLabel capacidadeLbl;
     protected javax.swing.JTextField capacidadeTxtField;
     protected javax.swing.JTextArea descricaoTextArea;
     // End of variables declaration//GEN-END:variables
 }
+
