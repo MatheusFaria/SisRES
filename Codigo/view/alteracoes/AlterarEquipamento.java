@@ -25,7 +25,7 @@ import view.cadastros.CadastroEquipamento;
 
 /**
  * @author Parley
- * 
+ * @editor Aulus
  */
 public class AlterarEquipamento extends CadastroEquipamento{
     
