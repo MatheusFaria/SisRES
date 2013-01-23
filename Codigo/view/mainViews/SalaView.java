@@ -12,7 +12,7 @@ import java.util.Vector;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.Sala;
-import view.alteracoes.AlterarSala;
+import view.alteracoes.AlterarEquipamento;
 import view.cadastros.CadastroPatrimonio;
 import view.cadastros.CadastroSala;
 
@@ -24,6 +24,7 @@ public class SalaView extends PatrimonioView {
 
 	public SalaView(java.awt.Frame parent, boolean modal) {
 		super(parent, modal);
+		pesquisarLbl.setText("Digite a sala desejada: ");
 	}
 
 	protected Vector<String> fillDataVector(Sala sala) {
@@ -33,6 +34,7 @@ public class SalaView extends PatrimonioView {
 		}
 
 		Vector<String> nomesTabela = new Vector<String>();
+		
 		nomesTabela.add(sala.getCodigo());
 		nomesTabela.add(sala.getDescricao());
 		nomesTabela.add(sala.getCapacidade());
@@ -58,6 +60,7 @@ public class SalaView extends PatrimonioView {
 			}
 
 			return table;
+			
 		} catch (PatrimonioException ex) {
 			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
 		} catch (SQLException ex) {
@@ -78,7 +81,7 @@ public class SalaView extends PatrimonioView {
 	@Override
 	protected void alterarAction(int index) {
 		
-		AlterarSala alteracao = new AlterarSala(new javax.swing.JFrame(), true, index);
+		AlterarEquipamento alteracao = new AlterarEquipamento(new javax.swing.JFrame(), true, index);
 		alteracao.setResizable(false);
 		alteracao.setVisible(true);
 		this.tabelaPatrimonio.setModel(fillTable());

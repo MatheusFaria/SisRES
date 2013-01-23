@@ -4,7 +4,7 @@
  */
 package view.mainViews;
 
-import view.alteracoes.AlterarSala;
+import view.alteracoes.AlterarEquipamento;
 import view.cadastros.CadastroPatrimonio;
 import control.ManterSala;
 import exception.PatrimonioException;
@@ -105,7 +105,7 @@ public abstract class PatrimonioView extends JDialog {
 			.addComponent(visualizarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
 			.addContainerGap(31, Short.MAX_VALUE)));
 
-		pesquisarLbl.setText("Digite a sala desejada: ");
+		
 
 
 		pesquisarTextField.addActionListener(new java.awt.event.ActionListener() {

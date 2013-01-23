@@ -155,11 +155,11 @@ public class Main2 extends javax.swing.JFrame {
     }//GEN-LAST:event_salaBtnActionPerformed
 
     private void equipamentoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equipamentoBtnActionPerformed
-	    
-	    EquipamentoView equipamento = new EquipamentoView(this, true);
+
+	    PatrimonioView equipamento = new EquipamentoView(this, true);
 	    equipamento.setResizable(false);
 	    equipamento.setVisible(true);
-	     
+
     }//GEN-LAST:event_equipamentoBtnActionPerformed
 
     private void professorBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_professorBtnActionPerformed
@@ -182,7 +182,7 @@ public class Main2 extends javax.swing.JFrame {
 	public static void main(String args[]) {
 		/* Set the Nimbus look and feel */
 		//<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+		/* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
 		 * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
 		 */
 		try {

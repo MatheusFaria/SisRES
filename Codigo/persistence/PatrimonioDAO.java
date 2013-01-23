@@ -72,8 +72,7 @@ public class PatrimonioDAO {
 		(	
 			"DELETE FROM equipamento WHERE " +
 			"equipamento.codigo = \"" + equipamento.getCodigo() + "\" and " +
-			"equipamento.descricao = \"" + equipamento.getDescricao() +  "\" and " +
-			"\";"				
+			"equipamento.descricao = \"" + equipamento.getDescricao() +  "\";"				
 		);		
 	}
 
