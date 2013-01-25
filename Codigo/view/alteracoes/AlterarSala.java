@@ -4,14 +4,11 @@
  */
 package view.alteracoes;
 
-import view.cadastros.CadastroPatrimonio;
 import control.ManterSala;
 import exception.PatrimonioException;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import model.Sala;
+import view.cadastros.CadastroPatrimonio;
 
 /**
  *

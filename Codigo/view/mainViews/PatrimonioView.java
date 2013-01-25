@@ -1,3 +1,7 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package view.mainViews;
 
 import javax.swing.JDialog;
@@ -5,16 +9,18 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
+ *
  * @author Parley
- * @editor Aulus
  */
- 
 public abstract class PatrimonioView extends JDialog {
 
+	/**
+	 * Creates new form ClienteView
+	 */
 	public PatrimonioView(java.awt.Frame parent, boolean modal) {
 		super(parent, modal);
 		initComponents();
-		}
+	}
 
 	protected abstract DefaultTableModel fillTable();
 
@@ -46,21 +52,21 @@ public abstract class PatrimonioView extends JDialog {
 		cadastrar.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				cadastrarActionPerformed(evt);
-				}
+			}
 		});
 
 		alterar.setText("Alterar");
 		alterar.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				alterarActionPerformed(evt);
-				}
+			}
 		});
 
 		excluir.setText("Excluir");
 		excluir.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				excluirActionPerformed(evt);
-				}
+			}
 		});
 
 		visualizarBtn.setText("Visualizar Horarios");
@@ -91,7 +97,8 @@ public abstract class PatrimonioView extends JDialog {
 			.addComponent(visualizarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
 			.addContainerGap(31, Short.MAX_VALUE)));
 
-		pesquisarLbl.setText("Digite a sala desejada: ");
+		
+
 
 		pesquisarTextField.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,6 +156,7 @@ public abstract class PatrimonioView extends JDialog {
 			.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE))
 			.addComponent(panelBotoes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
 			.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+
 		pack();
 	}// </editor-fold>//GEN-END:initComponents
 
@@ -162,6 +170,7 @@ public abstract class PatrimonioView extends JDialog {
 	}
 
 	private void cadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarActionPerformed
+
 		cadastrarAction();
 	}
 

@@ -12,7 +12,7 @@ import java.util.Vector;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.Sala;
-import view.alteracoes.AlterarEquipamento;
+import view.alteracoes.AlterarSala;
 import view.cadastros.CadastroPatrimonio;
 import view.cadastros.CadastroSala;
 
@@ -81,7 +81,7 @@ public class SalaView extends PatrimonioView {
 	@Override
 	protected void alterarAction(int index) {
 		
-		AlterarEquipamento alteracao = new AlterarEquipamento(new javax.swing.JFrame(), true, index);
+		AlterarSala alteracao = new AlterarSala(new javax.swing.JFrame(), true, index);
 		alteracao.setResizable(false);
 		alteracao.setVisible(true);
 		this.tabelaPatrimonio.setModel(fillTable());

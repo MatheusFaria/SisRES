@@ -4,14 +4,14 @@
  */
 package view.mainViews;
 
-import view.alteracoes.AlterarAluno;
-import view.cadastros.CadastroCliente;
-import view.cadastros.CadastroAluno;
 import control.ManterAluno;
 import exception.ClienteException;
 import java.sql.SQLException;
 import java.util.Iterator;
 import javax.swing.JOptionPane;
+import view.alteracoes.AlterarAluno;
+import view.cadastros.CadastroAluno;
+import view.cadastros.CadastroCliente;
 
 /**
  *
