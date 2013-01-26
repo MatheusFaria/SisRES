@@ -50,19 +50,32 @@ public class EquipamentoDAO {
 	}
 
 
-	public void alterar(Equipamento old_equipamento, Equipamento new_equipamento) throws SQLException {			
-		String msg = 	"UPDATE equipamento SET " +				
+	public void alterar(Equipamento old_equipamento, Equipamento new_equipamento) throws SQLException, PatrimonioException {
+		Connection con = FactoryConnection.getInstance().getConnection();
+		PreparedStatement pst = con.prepareStatement("SELECT * FROM equipamento WHERE " +
+				"equipamento.codigo = \"" + new_equipamento.getCodigo() + "\" and " +
+				"equipamento.descricao = \"" + new_equipamento.getDescricao() + "\";");
+		ResultSet rs = pst.executeQuery();
+		
+		if(!rs.next())
+		{
+			String msg = "UPDATE equipamento SET " +				
 						"codigo = \"" + new_equipamento.getCodigo() + "\", " +
 						"descricao = \"" + new_equipamento.getDescricao() + "\"" +
 						" WHERE " +
 						"equipamento.codigo = \"" + old_equipamento.getCodigo() + "\" and " +
 						"equipamento.descricao = \"" + old_equipamento.getDescricao() +  "\";";
 		
-		Connection con =  FactoryConnection.getInstance().getConnection();
-		con.setAutoCommit(false);
-		PreparedStatement pst = con.prepareStatement(msg);
-		pst.executeUpdate();
-		con.commit();
+			con.setAutoCommit(false);
+			pst = con.prepareStatement(msg);
+			pst.executeUpdate();
+			con.commit();
+		}
+		else {
+			throw new PatrimonioException(Equipamento_JA_EXISTENTE);
+		}
+				
+		rs.close();
 		pst.close();
 		con.close();
 	}

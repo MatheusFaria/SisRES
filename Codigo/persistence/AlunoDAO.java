@@ -51,8 +51,19 @@ public class AlunoDAO {
 			con.close();
 		}
 
-	public void alterar(Aluno aluno_velho, Aluno aluno_novo) throws SQLException {			
-		String msg = "UPDATE aluno SET " +
+	public void alterar(Aluno aluno_velho, Aluno aluno_novo) throws SQLException, ClienteException {
+		Connection con = FactoryConnection.getInstance().getConnection();
+		PreparedStatement pst = con.prepareStatement("SELECT * FROM aluno WHERE " +
+				"aluno.nome = \"" + aluno_novo.getNome() + "\" and " +
+				"aluno.cpf = \"" + aluno_novo.getCpf() + "\" and " +
+				"aluno.telefone = \"" + aluno_novo.getTelefone() + "\" and " +
+				"aluno.email = \"" + aluno_novo.getEmail() + "\" and " +
+				"aluno.matricula = \"" + aluno_novo.getMatricula() + "\";");
+		ResultSet rs = pst.executeQuery();
+		
+		if(!rs.next())
+		{
+			String msg = "UPDATE aluno SET " +
 				"nome = \"" + aluno_novo.getNome() + "\", " +
 				"cpf = \"" + aluno_novo.getCpf() + "\", " +
 				"telefone = \"" + aluno_novo.getTelefone() + "\", " +
@@ -64,11 +75,16 @@ public class AlunoDAO {
 				"aluno.telefone = \"" + aluno_velho.getTelefone() + "\" and " +
 				"aluno.email = \"" + aluno_velho.getEmail() + "\" and " +
 				"aluno.matricula = \"" + aluno_velho.getMatricula() + "\";";
-		Connection con =  FactoryConnection.getInstance().getConnection();
-		con.setAutoCommit(false);
-		PreparedStatement pst = con.prepareStatement(msg);
-		pst.executeUpdate();
-		con.commit();
+			con.setAutoCommit(false);
+			pst = con.prepareStatement(msg);
+			pst.executeUpdate();
+			con.commit();
+		}
+		else {
+			throw new ClienteException(ALUNO_JA_EXISTENTE);
+		}
+		
+		rs.close();
 		pst.close();
 		con.close();
 	}

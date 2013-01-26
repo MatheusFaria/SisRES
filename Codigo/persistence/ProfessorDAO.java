@@ -51,24 +51,38 @@ public class ProfessorDAO {
 			con.close();
 		}
 
-	public void alterar(Professor prof_velho, Professor prof_novo) throws SQLException {			
-		String msg = "UPDATE professor SET " +
-				"nome = \"" + prof_novo.getNome() + "\", " +
-				"cpf = \"" + prof_novo.getCpf() + "\", " +
-				"telefone = \"" + prof_novo.getTelefone() + "\", " +
-				"email = \"" + prof_novo.getEmail() + "\", " +
-				"matricula = \"" + prof_novo.getMatricula() + "\""+
-				" WHERE " +
-				"professor.nome = \"" + prof_velho.getNome() + "\" and " +
-				"professor.cpf = \"" + prof_velho.getCpf() + "\" and " +
-				"professor.telefone = \"" + prof_velho.getTelefone() + "\" and " +
-				"professor.email = \"" + prof_velho.getEmail() + "\" and " +
-				"professor.matricula = \"" + prof_velho.getMatricula() + "\";";
-		Connection con =  FactoryConnection.getInstance().getConnection();
-		con.setAutoCommit(false);
-		PreparedStatement pst = con.prepareStatement(msg);
-		pst.executeUpdate();
-		con.commit();
+	public void alterar(Professor prof_velho, Professor prof_novo) throws SQLException, ClienteException {
+		Connection con = FactoryConnection.getInstance().getConnection();
+		PreparedStatement pst = con.prepareStatement("SELECT * FROM professor WHERE " +
+				"professor.nome = \"" + prof_novo.getNome() + "\" and " +
+				"professor.cpf = \"" + prof_novo.getCpf() + "\" and " +
+				"professor.telefone = \"" + prof_novo.getTelefone() + "\" and " +
+				"professor.email = \"" + prof_novo.getEmail() + "\" and " +
+				"professor.matricula = \"" + prof_novo.getMatricula() + "\";");
+		ResultSet rs = pst.executeQuery();
+		
+		if(!rs.next()){
+			String msg = "UPDATE professor SET " +
+					"nome = \"" + prof_novo.getNome() + "\", " +
+					"cpf = \"" + prof_novo.getCpf() + "\", " +
+					"telefone = \"" + prof_novo.getTelefone() + "\", " +
+					"email = \"" + prof_novo.getEmail() + "\", " +
+					"matricula = \"" + prof_novo.getMatricula() + "\""+
+					" WHERE " +
+					"professor.nome = \"" + prof_velho.getNome() + "\" and " +
+					"professor.cpf = \"" + prof_velho.getCpf() + "\" and " +
+					"professor.telefone = \"" + prof_velho.getTelefone() + "\" and " +
+					"professor.email = \"" + prof_velho.getEmail() + "\" and " +
+					"professor.matricula = \"" + prof_velho.getMatricula() + "\";";
+			con.setAutoCommit(false);
+			pst = con.prepareStatement(msg);
+			pst.executeUpdate();
+			con.commit();
+		}else {
+			throw new ClienteException(PROFESSOR_JA_EXISTENTE);
+		}
+		
+		rs.close();
 		pst.close();
 		con.close();
 	}

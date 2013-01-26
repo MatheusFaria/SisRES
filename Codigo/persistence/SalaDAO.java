@@ -54,8 +54,18 @@ public class SalaDAO {
 	}
 
 
-	public void alterar(Sala old_sala, Sala new_sala) throws SQLException {			
-		String msg = "UPDATE sala SET " +				
+	public void alterar(Sala old_sala, Sala new_sala) throws SQLException, PatrimonioException {
+		Connection con = FactoryConnection.getInstance().getConnection();
+		PreparedStatement pst = con.prepareStatement("SELECT * FROM sala WHERE " +
+				"sala.codigo = \"" + new_sala.getCodigo() + "\" and " +
+				"sala.descricao = \"" + new_sala.getDescricao() + "\" and " +
+				"sala.capacidade = \"" + new_sala.getCapacidade() +
+				"\";");
+		ResultSet rs = pst.executeQuery();
+		
+		if(!rs.next())
+		{
+			String msg = "UPDATE sala SET " +				
 				"codigo = \"" + new_sala.getCodigo() + "\", " +
 				"descricao = \"" + new_sala.getDescricao() + "\", " +
 				"capacidade = " + new_sala.getCapacidade() +
@@ -63,12 +73,16 @@ public class SalaDAO {
 				"sala.codigo = \"" + old_sala.getCodigo() + "\" and " +
 				"sala.descricao = \"" + old_sala.getDescricao() +  "\" and " +
 				"sala.capacidade = " + old_sala.getCapacidade() +";";
-
-		Connection con =  FactoryConnection.getInstance().getConnection();
-		con.setAutoCommit(false);
-		PreparedStatement pst = con.prepareStatement(msg);
-		pst.executeUpdate();
-		con.commit();
+			con.setAutoCommit(false);
+			pst = con.prepareStatement(msg);
+			pst.executeUpdate();
+			con.commit();
+		}
+		else {
+			throw new PatrimonioException(SALA_JA_EXISTENTE);
+		}
+				
+		rs.close();
 		pst.close();
 		con.close();
 	}
