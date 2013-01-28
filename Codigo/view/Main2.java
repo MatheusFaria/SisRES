@@ -1,10 +1,10 @@
 package view;
 
-import view.mainViews.ProfessorView;
-import view.mainViews.PatrimonioView;
-import view.mainViews.ClienteView;
 import view.mainViews.AlunoView;
+import view.mainViews.ClienteView;
 import view.mainViews.EquipamentoView;
+import view.mainViews.PatrimonioView;
+import view.mainViews.ProfessorView;
 import view.mainViews.SalaView;
 
 /**

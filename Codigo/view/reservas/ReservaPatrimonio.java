@@ -2,6 +2,7 @@ package view.reservas;
 
 import java.util.Iterator;
 import java.util.Vector;
+import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -16,20 +17,21 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
 		initComponents();
 	}
 
-	protected Vector<String> fillDataVector() {
+	protected Vector<String> fillDataVector(String horario) {
 
 		Vector<String> nomesTabela = new Vector<String>();
-
+		nomesTabela.add(horario);
 		return nomesTabela;
 
 	}
 
 	protected DefaultTableModel fillTable() {
+
+		final int NUMERO_LINHAS = 7;
+		int i = 0;
 		DefaultTableModel table = new DefaultTableModel();
 
-		//Iterator<Cliente> i = getIterator();
-
-		table.addColumn("");
+		table.addColumn("HORARIO");
 		table.addColumn("Segunda");
 		table.addColumn("Terça");
 		table.addColumn("Quarta");
@@ -37,15 +39,39 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
 		table.addColumn("Sexta");
 		table.addColumn("Sábado");
 		
+		int a = 8, b = 10;
 		
-/*
-		while (i.hasNext()) {
+		while (i < NUMERO_LINHAS) {
 			
-			Cliente cliente = i.next();
-			table.addRow(fillDataVector(cliente));
+			String horario = "" + a + " - " + b;
+			table.addRow(fillDataVector(horario));
+			a=b;
+			b+=2;
+			i++;
 		}
-*/
+		
 		return table;
+	}
+	
+	public static void main(String args[]){
+		try {
+			for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+				if ("Nimbus".equals(info.getName())) {
+					javax.swing.UIManager.setLookAndFeel(info.getClassName());
+					break;
+				}
+			}
+		} catch (ClassNotFoundException ex) {
+			java.util.logging.Logger.getLogger(ReservaPatrimonio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+		} catch (InstantiationException ex) {
+			java.util.logging.Logger.getLogger(ReservaPatrimonio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+		} catch (IllegalAccessException ex) {
+			java.util.logging.Logger.getLogger(ReservaPatrimonio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+		} catch (javax.swing.UnsupportedLookAndFeelException ex) {
+			java.util.logging.Logger.getLogger(ReservaPatrimonio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+		}
+		ReservaPatrimonio r = new ReservaPatrimonio(new JFrame(), true);
+		r.setVisible(true);
 	}
 	
 	/**
@@ -63,14 +89,21 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
                 TabelaHorarios = new javax.swing.JTable();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+                setResizable(false);
 
                 ReservarBtn.setText("Reservar");
 
                 CancelarReservaBtn.setText("Cancelar Reserva");
 
                 TabelaHorarios.setAutoCreateRowSorter(true);
+                TabelaHorarios.setModel(fillTable());
+                TabelaHorarios.setCellSelectionEnabled(true);
                 TabelaHorarios.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+                TabelaHorarios.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
                 jScrollPane1.setViewportView(TabelaHorarios);
+                for(int i = 0; i < this.TabelaHorarios.getRowCount(); i++){
+                        this.TabelaHorarios.setRowHeight(i, 100);
+                }
 
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
                 getContentPane().setLayout(layout);
@@ -78,11 +111,11 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
                                 .addGap(14, 14, 14)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(ReservarBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(CancelarReservaBtn, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1147, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(ReservarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(CancelarReservaBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE))
                                 .addContainerGap())
                 );
                 layout.setVerticalGroup(
@@ -95,7 +128,7 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(layout.createSequentialGroup()
                                 .addContainerGap()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 439, Short.MAX_VALUE)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 629, Short.MAX_VALUE)
                                 .addContainerGap())
                 );
 
