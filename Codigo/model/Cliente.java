@@ -18,12 +18,16 @@ public abstract class Cliente {
 	//Mensagens de Erro e Alertas
 		private final String NOME_INVALIDO = "Nome Invalido.";
 		private final String NOME_BRANCO = "Nome em Branco.";
+		private final String NOME_NULO = "Nome esta Nulo.";
 		private final String CPF_INVALIDO = "CPF Invalido.";
 		private final String CPF_BRANCO = "CPF em Branco.";
+		private final String CPF_NULO = "CPF esta Nulo.";
 		private final String TELEFONE_INVALIDO = "Telefone Invalido.";
-		private final String TELEFONE_BRANCO = "Telefone em Branco.";
+		//private final String TELEFONE_BRANCO = "Telefone em Branco.";
+		private final String TELEFONE_NULO = "Telefone esta Nulo.";
 		private final String EMAIL_INVALIDO = "E-mail Invalido.";
 		//private final String EMAIL_BRANCO = "E-mail em Branco.";
+		private final String EMAIL_NULO = "E-mail esta Nulo.";
 	
 	
 	public Cliente(String nome, String cpf, String matricula,
@@ -56,8 +60,10 @@ public abstract class Cliente {
 	}
 	
 	public void setNome(String nome) throws ClienteException{
-		try{	
-			if("".equals(nome))
+		try{
+			if(nome == null)
+				throw new ClienteException(NOME_NULO);
+			else if("".equals(nome))
 				throw new ClienteException(NOME_BRANCO);
 			else if(nome.matches("[a-zA-Z\\s]+"))
 				this.nome = nome;
@@ -70,22 +76,24 @@ public abstract class Cliente {
 	}
 	
 	public void setCpf(String cpf) throws ClienteException {
-		try{	
-			if("".equals(cpf))
+		try{
+			if(cpf == null)
+				throw new ClienteException(CPF_NULO);
+			else if("".equals(cpf))
 				throw new ClienteException(CPF_BRANCO);
 			else if(cpf.matches("[\\d]{3,3}.[\\d]{3,3}.[\\d]{3,3}-[\\d]{2,2}$"))
 			{
-				cpf = 	cpf.split("[\\. | -]")[0] + 
+				if(this.validarCpf(
+						cpf.split("[\\. | -]")[0] + 
 						cpf.split("[\\. | -]")[1] + 
 						cpf.split("[\\. | -]")[2] + 
-						cpf.split("[\\. | -]")[3];
-				
+						cpf.split("[\\. | -]")[3]))
+					this.cpf = cpf;
+				else
+					throw new ClienteException(CPF_INVALIDO);
 			}
-			if(this.validarCpf(cpf))
-				this.cpf = cpf;
 			else
 				throw new ClienteException(CPF_INVALIDO);
-				//throw new ClienteException(CPF_INVALIDO);
 		} catch(StringIndexOutOfBoundsException e)
 		{
 			throw new ClienteException(CPF_INVALIDO);
@@ -96,8 +104,10 @@ public abstract class Cliente {
 	}
 	
 	public void setTelefone(String telefone) throws ClienteException {
-		try{	
-			if("".equals(telefone))
+		try{
+			if(telefone == null)
+				throw new ClienteException(TELEFONE_NULO);
+			else if("".equals(telefone))
 				this.telefone = telefone;
 			else if(telefone.matches("(\\([\\d]{2,3}\\))?[ ]*[\\d]{4,4}[ ]*-[ ]*[\\d]{4,4}[ ]*$"))
 				this.telefone = telefone;
@@ -114,7 +124,7 @@ public abstract class Cliente {
 			if(email != null)
 				this.email = email;
 			else
-				throw new ClienteException(EMAIL_INVALIDO);
+				throw new ClienteException(EMAIL_NULO);
 		} catch(StringIndexOutOfBoundsException e)
 		{
 			throw new ClienteException(EMAIL_INVALIDO);
@@ -125,11 +135,11 @@ public abstract class Cliente {
 	
 	@Override
 	public String toString() {
-		return "Cliente [nome=" + nome + ", cpf=" + cpf +
-				", telefone=" + telefone + ", email=" + email
+		return "Cliente [nome=" + nome + ", cpf=" + cpf + ", telefone="
+				+ telefone + ", email=" + email + ", matricula=" + matricula
 				+ "]";
 	}
-	
+
 	private boolean validarCpf(String cpf) {
 
 		int d1, d2;
