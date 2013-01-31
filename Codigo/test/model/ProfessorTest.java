@@ -12,6 +12,12 @@ import org.junit.Test;
 import exception.ClienteException;
 
 public class ProfessorTest {
+	
+	/**
+	 *	Os teste da classe Cliente foram feitos aqui, por se tratar de uma classe
+	 * abstrata, ela nao eh instaciavel, entao todas as suas funcionalidade foram
+	 * testadas a partir das instancias da classe Professor.
+	 */
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -113,6 +119,11 @@ public class ProfessorTest {
 	@Test (expected= ClienteException.class)
 	public void testMatriculaVazia() throws ClienteException {
 		new Professor("Nome", "868.563.327-34", "", "1234-5678", "Nome@email");
+	}
+	
+	@Ignore //(expected= ClienteException.class)
+	public void testMatriculaDespadronizada() throws ClienteException {
+		new Professor("Nome", "868.563.327-34", "123456", "1234-5678", "Nome@email");
 	}
 	
 	@Test (expected= ClienteException.class)

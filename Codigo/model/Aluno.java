@@ -7,6 +7,7 @@ public class Aluno extends Cliente {
 	//Mensagens de Erro e Alertas
 		private final String MATRICULA_INVALIDO = "Matricula Invalido.";
 		private final String MATRICULA_BRANCO = "Matricula em Branco.";
+		private final String MATRICULA_NULO = "Matricula esta Nula.";
 		
 	
 	public Aluno(String nome, String cpf, String matricula,
@@ -15,11 +16,13 @@ public class Aluno extends Cliente {
 	}
 
 	public void setMatricula(String matricula) throws ClienteException {
-		try{	
-			if("".equals(matricula) || matricula.isEmpty())
+		try{
+			if(matricula == null)
+				throw new ClienteException(MATRICULA_NULO);
+			else if("".equals(matricula) || matricula.isEmpty())
 				throw new ClienteException(MATRICULA_BRANCO);
-			//else if(matricula.matches("PATTERN"))//TODO colocar o pattern
-				//this.matricula = matricula;
+			//else if(matricula.matches("^[\\d]{2,2}/[\\d]{5,7}$"))
+				//super.matricula = matricula;
 			//else
 				//throw new ClienteException(MATRICULA_INVALIDO);
 			super.matricula = matricula;//
