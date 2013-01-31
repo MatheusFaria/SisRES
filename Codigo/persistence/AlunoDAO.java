@@ -10,6 +10,7 @@ import exception.ClienteException;
 public class AlunoDAO {
 
 	private static final String ALUNO_JA_EXISTENTE = "O Aluno ja esta cadastrado.";
+	private static final String ALUNO_NAO_EXISTENTE = "O Aluno nao esta cadastrado.";
 	
 	//Singleton
 		private static AlunoDAO instance;
@@ -21,17 +22,8 @@ public class AlunoDAO {
 			return instance;
 		}
 	//
-		public void incluir(Aluno aluno) throws SQLException, ClienteException {
-			Connection con = FactoryConnection.getInstance().getConnection();
-			PreparedStatement pst = con.prepareStatement("SELECT * FROM aluno WHERE " +
-					"aluno.nome = \"" + aluno.getNome() + "\" and " +
-					"aluno.cpf = \"" + aluno.getCpf() + "\" and " +
-					"aluno.telefone = \"" + aluno.getTelefone() + "\" and " +
-					"aluno.email = \"" + aluno.getEmail() + "\" and " +
-					"aluno.matricula = \"" + aluno.getMatricula() + "\";");
-			ResultSet rs = pst.executeQuery();
-			
-			if(!rs.next())
+	public void incluir(Aluno aluno) throws SQLException, ClienteException {
+			if(!this.inDB(aluno))
 			{
 				this.updateQuery("INSERT INTO " +
 						"aluno (nome, cpf, telefone, email, matricula) VALUES (" +
@@ -45,23 +37,15 @@ public class AlunoDAO {
 			else {
 				throw new ClienteException(ALUNO_JA_EXISTENTE);
 			}
-			
-			rs.close();
-			pst.close();
-			con.close();
 		}
 
 	public void alterar(Aluno aluno_velho, Aluno aluno_novo) throws SQLException, ClienteException {
 		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM aluno WHERE " +
-				"aluno.nome = \"" + aluno_novo.getNome() + "\" and " +
-				"aluno.cpf = \"" + aluno_novo.getCpf() + "\" and " +
-				"aluno.telefone = \"" + aluno_novo.getTelefone() + "\" and " +
-				"aluno.email = \"" + aluno_novo.getEmail() + "\" and " +
-				"aluno.matricula = \"" + aluno_novo.getMatricula() + "\";");
-		ResultSet rs = pst.executeQuery();
+		PreparedStatement pst;
 		
-		if(!rs.next())
+		if(!this.inDB(aluno_velho))
+			throw new ClienteException(ALUNO_NAO_EXISTENTE);
+		else if(!this.inDB(aluno_novo))
 		{
 			String msg = "UPDATE aluno SET " +
 				"nome = \"" + aluno_novo.getNome() + "\", " +
@@ -83,13 +67,14 @@ public class AlunoDAO {
 		else {
 			throw new ClienteException(ALUNO_JA_EXISTENTE);
 		}
-		
-		rs.close();
+
 		pst.close();
 		con.close();
 	}
 
-	public void excluir(Aluno aluno) throws SQLException {
+	public void excluir(Aluno aluno) throws SQLException, ClienteException {
+		if(this.inDB(aluno))
+		{
 		this.updateQuery("DELETE FROM aluno WHERE " +
 				"aluno.nome = \"" + aluno.getNome() + "\" and " +
 				"aluno.cpf = \"" + aluno.getCpf() + "\" and " +
@@ -97,11 +82,9 @@ public class AlunoDAO {
 				"aluno.email = \"" + aluno.getEmail() + "\" and " +
 				"aluno.matricula = \"" + aluno.getMatricula() + "\";"
 				);
-	}
-
-	public Aluno buscar(Aluno aluno) throws SQLException {
-		//TODO
-		return null;
+		}
+		else
+			throw new ClienteException(ALUNO_NAO_EXISTENTE);
 	}
 
 	public Vector<Aluno> buscarTodos() throws SQLException, ClienteException {
@@ -127,6 +110,36 @@ public class AlunoDAO {
                     rs2.close();
 		con.close();
 		return vet;
+	}
+	
+	public boolean inDB(Aluno aluno) throws SQLException{
+		Connection con = FactoryConnection.getInstance().getConnection();
+		PreparedStatement pst = con.prepareStatement("SELECT * FROM aluno WHERE " +
+				"aluno.nome = \"" + aluno.getNome() + "\" and " +
+				"aluno.cpf = \"" + aluno.getCpf() + "\" and " +
+				"aluno.telefone = \"" + aluno.getTelefone() + "\" and " +
+				"aluno.email = \"" + aluno.getEmail() + "\" and " +
+				"aluno.matricula = \"" + aluno.getMatricula() + "\";");
+		ResultSet rs = pst.executeQuery();
+		
+		if(!rs.next())
+		{
+			rs.close();
+			pst.close();
+			con.close();
+			return false;
+		}
+		else {
+			rs.close();
+			pst.close();
+			con.close();
+			return true;
+		}
+	}
+	
+	public Aluno buscar(Aluno aluno) throws SQLException {
+		//TODO
+		return null;
 	}
 	
 	private Aluno fetchAluno(ResultSet rs) throws ClienteException, SQLException{
