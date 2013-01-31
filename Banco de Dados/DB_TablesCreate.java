@@ -35,7 +35,7 @@ public class DB_TablesCreate {
 					"id_aluno INT NOT NULL AUTO_INCREMENT," +
 					"nome VARCHAR(100) NOT NULL," +
 					"cpf VARCHAR(14) NOT NULL," +
-					"telefone VARCHAR(10)," +
+					"telefone VARCHAR(15)," +
 					"email VARCHAR(60)," +
 					"matricula VARCHAR(15) NOT NULL," +
 					"PRIMARY KEY (id_aluno));");
@@ -48,9 +48,9 @@ public class DB_TablesCreate {
 		
 		uptodate("CREATE TABLE IF NOT EXISTS Professor (" +
 				 "id_professor INT NOT NULL AUTO_INCREMENT," +
-				 "nome VARCHAR(10) NOT NULL," +
+				 "nome VARCHAR(100) NOT NULL," +
 				 "cpf VARCHAR(14) NOT NULL," +
-				 "telefone VARCHAR(10)," +
+				 "telefone VARCHAR(15)," +
 				 "email VARCHAR(60)," +
 				 "matricula VARCHAR(15) NOT NULL," +
 				 "PRIMARY KEY (id_professor))");
