@@ -10,6 +10,7 @@ import exception.ClienteException;
 public class ProfessorDAO {
 
 	private static final String PROFESSOR_JA_EXISTENTE = "O Professor ja esta cadastrado.";
+	private static final String PROFESSOR_NAO_EXISTENTE = "O Professor nao esta cadastrado.";
 	
 	//Singleton
 		private static ProfessorDAO instance;
@@ -21,17 +22,10 @@ public class ProfessorDAO {
 			return instance;
 		}
 	//
-		public void incluir(Professor prof) throws SQLException, ClienteException {
-			Connection con = FactoryConnection.getInstance().getConnection();
-			PreparedStatement pst = con.prepareStatement("SELECT * FROM professor WHERE " +
-					"professor.nome = \"" + prof.getNome() + "\" and " +
-					"professor.cpf = \"" + prof.getCpf() + "\" and " +
-					"professor.telefone = \"" + prof.getTelefone() + "\" and " +
-					"professor.email = \"" + prof.getEmail() + "\" and " +
-					"professor.matricula = \"" + prof.getMatricula() + "\";");
-			ResultSet rs = pst.executeQuery();
+	
+	public void incluir(Professor prof) throws SQLException, ClienteException {
 			
-			if(!rs.next())
+			if(!this.inDB(prof))
 			{
 				this.updateQuery("INSERT INTO " +
 						"professor (nome, cpf, telefone, email, matricula) VALUES (" +
@@ -46,22 +40,16 @@ public class ProfessorDAO {
 				throw new ClienteException(PROFESSOR_JA_EXISTENTE);
 			}
 			
-			rs.close();
-			pst.close();
-			con.close();
-		}
+	}
 
 	public void alterar(Professor prof_velho, Professor prof_novo) throws SQLException, ClienteException {
 		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM professor WHERE " +
-				"professor.nome = \"" + prof_novo.getNome() + "\" and " +
-				"professor.cpf = \"" + prof_novo.getCpf() + "\" and " +
-				"professor.telefone = \"" + prof_novo.getTelefone() + "\" and " +
-				"professor.email = \"" + prof_novo.getEmail() + "\" and " +
-				"professor.matricula = \"" + prof_novo.getMatricula() + "\";");
-		ResultSet rs = pst.executeQuery();
+		PreparedStatement pst;
 		
-		if(!rs.next()){
+		if(!this.inDB(prof_velho)){
+			throw new ClienteException(PROFESSOR_NAO_EXISTENTE);
+		}
+		else if(!this.inDB(prof_novo)){
 			String msg = "UPDATE professor SET " +
 					"nome = \"" + prof_novo.getNome() + "\", " +
 					"cpf = \"" + prof_novo.getCpf() + "\", " +
@@ -82,24 +70,22 @@ public class ProfessorDAO {
 			throw new ClienteException(PROFESSOR_JA_EXISTENTE);
 		}
 		
-		rs.close();
 		pst.close();
 		con.close();
 	}
 
-	public void excluir(Professor prof) throws SQLException {
-		this.updateQuery("DELETE FROM professor WHERE " +
+	public void excluir(Professor prof) throws SQLException, ClienteException {
+		if(this.inDB(prof)){
+			this.updateQuery("DELETE FROM professor WHERE " +
 				"professor.nome = \"" + prof.getNome() + "\" and " +
 				"professor.cpf = \"" + prof.getCpf() + "\" and " +
 				"professor.telefone = \"" + prof.getTelefone() + "\" and " +
 				"professor.email = \"" + prof.getEmail() + "\" and " +
 				"professor.matricula = \"" + prof.getMatricula() + "\";"
 				);
-	}
-
-	public Professor buscar(Professor prof) throws SQLException {
-		//TODO
-		return null;
+		}
+		else
+			throw new ClienteException(PROFESSOR_NAO_EXISTENTE);
 	}
 
 	public Vector<Professor> buscarTodos() throws SQLException, ClienteException {
@@ -121,10 +107,39 @@ public class ProfessorDAO {
 		
 		pst.close();
 		rs.close();
-                if(rs2 != null)
-                    rs2.close();
+        if(rs2 != null)
+        	rs2.close();
 		con.close();
 		return vet;
+	}
+	
+	public boolean inDB(Professor prof) throws SQLException{
+		Connection con = FactoryConnection.getInstance().getConnection();
+		PreparedStatement pst = con.prepareStatement("SELECT * FROM professor WHERE " +
+				"professor.nome = \"" + prof.getNome() + "\" and " +
+				"professor.cpf = \"" + prof.getCpf() + "\" and " +
+				"professor.telefone = \"" + prof.getTelefone() + "\" and " +
+				"professor.email = \"" + prof.getEmail() + "\" and " +
+				"professor.matricula = \"" + prof.getMatricula() + "\";");
+		ResultSet rs = pst.executeQuery();
+		
+		if(!rs.next()){
+			rs.close();
+			pst.close();
+			con.close();
+			return false;
+		}
+		else {
+			rs.close();
+			pst.close();
+			con.close();
+			return true;
+		}
+	}
+	
+	public Professor buscar(Professor prof) throws SQLException {
+		//TODO
+		return null;
 	}
 	
 	private Professor fetchProfessor(ResultSet rs) throws ClienteException, SQLException{
