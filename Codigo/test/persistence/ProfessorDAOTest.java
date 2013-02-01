@@ -2,20 +2,17 @@ package test.persistence;
 
 import static org.junit.Assert.*;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.Vector;
 
 import model.Professor;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import exception.ClienteException;
 
-import persistence.FactoryConnection;
 import persistence.ProfessorDAO;
 
 public class ProfessorDAOTest {
@@ -49,6 +46,14 @@ public class ProfessorDAOTest {
 		Professor p = new Professor("Nome para Incluir", "868.563.327-34", "123456", "1234-5678", "Nome@email");
 		ProfessorDAO.getInstance().incluir(p);
 		assertTrue("Testando Inclusao no Banco", ProfessorDAO.getInstance().inDB(p));
+	}
+	
+	@Test
+	public void testBuscarVet() throws ClienteException, SQLException {
+		Professor p = new Professor("Nome para Incluir", "868.563.327-34", "123456", "1234-5678", "Nome@email");
+		Vector<Professor> vet = ProfessorDAO.getInstance().buscarTodos();
+		Professor q = vet.lastElement();
+		assertTrue("Testando Busca no Banco", 	p.equals(q));
 	}
 	
 	@Test

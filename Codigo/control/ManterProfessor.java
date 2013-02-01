@@ -10,7 +10,7 @@ import model.Professor;
 public class ManterProfessor {
 
 	private static ManterProfessor instance;
-	private Vector<Professor> professores_vet = new Vector<Professor>();//eh necessario iniciar o vetor com o getProfessores_vet
+	private Vector<Professor> professores_vet = new Vector<Professor>();
 	
 	private ManterProfessor() {
 	}
@@ -49,7 +49,7 @@ public class ManterProfessor {
 		ProfessorDAO.getInstance().alterar(prof_velho, prof);
 	}
 
-	public void excluir(Professor professor) throws SQLException {
+	public void excluir(Professor professor) throws SQLException, ClienteException {
 		ProfessorDAO.getInstance().excluir(professor);
 		this.professores_vet.remove(professor);
 	}

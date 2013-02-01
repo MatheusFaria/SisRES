@@ -95,20 +95,12 @@ public class ProfessorDAO {
 		
 		PreparedStatement pst = con.prepareStatement("SELECT * FROM professor;");
 		ResultSet rs = pst.executeQuery();
-		ResultSet rs2 = null;
 		
 		while(rs.next())
-		{
-			pst = con.prepareStatement("SELECT * FROM professor WHERE id_professor = " 
-															+ rs.getString("id_professor"));
-			rs2 = pst.executeQuery();
-			vet.add(this.fetchProfessor(rs2));
-		}
+			vet.add(this.fetchProfessor(rs));
 		
 		pst.close();
 		rs.close();
-        if(rs2 != null)
-        	rs2.close();
 		con.close();
 		return vet;
 	}
@@ -143,7 +135,6 @@ public class ProfessorDAO {
 	}
 	
 	private Professor fetchProfessor(ResultSet rs) throws ClienteException, SQLException{
-		rs.next();
 		return new Professor(rs.getString("nome"), rs.getString("cpf"), rs.getString("matricula"),
 				rs.getString("telefone"), rs.getString("email"));
 	}
