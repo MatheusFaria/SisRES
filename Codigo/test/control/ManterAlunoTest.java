@@ -16,6 +16,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import persistence.AlunoDAO;
+
 import control.ManterAluno;
 import exception.ClienteException;
 
@@ -52,6 +54,12 @@ public class ManterAlunoTest {
 	@After
 	public void tearDown() throws Exception {
 		instance = null;
+	}
+	@Test
+	public void testSingleton() {
+		ManterAluno p = ManterAluno.getInstance();
+		ManterAluno q = ManterAluno.getInstance();
+		assertSame("Testando o Padrao Singleton", p, q);
 	}
 
 	/**
