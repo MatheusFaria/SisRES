@@ -10,7 +10,7 @@ import model.Aluno;
 public class ManterAluno {
 
 	private static ManterAluno instance;
-	private Vector<Aluno> alunos_vet = new Vector<Aluno>();//eh necessario iniciar o vetor com o getProfessores_vet
+	private Vector<Aluno> alunos_vet = new Vector<Aluno>();
 
 	private ManterAluno() {
 	}
