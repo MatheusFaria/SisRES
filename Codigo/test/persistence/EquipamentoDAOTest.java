@@ -4,15 +4,22 @@
  */
 package test.persistence;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertTrue;
+
+import java.sql.SQLException;
 import java.util.Vector;
+
 import model.Equipamento;
-import org.junit.After;
+
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
 import persistence.EquipamentoDAO;
-import static org.junit.Assert.*;
+import exception.PatrimonioException;
 
 /**
  *
@@ -20,103 +27,88 @@ import static org.junit.Assert.*;
  */
 public class EquipamentoDAOTest {
 	
+
+	static EquipamentoDAO instance;
+	
 	public EquipamentoDAOTest() {
 	}
 	
 	@BeforeClass
-	public static void setUpClass() {
+	public static void setUpClass() throws PatrimonioException, SQLException {
+		instance = EquipamentoDAO.getInstance();
 	}
 	
 	@AfterClass
-	public static void tearDownClass() {
+	public static void tearDownClass() throws SQLException, PatrimonioException {
+		instance = null;
 	}
 	
-	@Before
-	public void setUp() {
+	@Test
+	public void testInstance() {
+		assertTrue("Instanciando EquipamentoDAO",instance instanceof EquipamentoDAO);
 	}
 	
-	@After
-	public void tearDown() {
-	}
-
-	/**
-	 * Test of getInstance method, of class EquipamentoDAO.
-	 */
 	@Test
-	public void testGetInstance() {
-		System.out.println("getInstance");
-		EquipamentoDAO expResult = null;
-		EquipamentoDAO result = EquipamentoDAO.getInstance();
-		assertEquals(expResult, result);
-		// TODO review the generated test code and remove the default call to fail.
-		fail("The test case is a prototype.");
+	public void testSingleton() {
+		EquipamentoDAO inst = EquipamentoDAO.getInstance();
+		assertSame("Testando o Padrao Singleton", instance, inst);
 	}
-
-	/**
-	 * Test of incluir method, of class EquipamentoDAO.
-	 */
+	
 	@Test
-	public void testIncluir() throws Exception {
-		System.out.println("incluir");
-		Equipamento equipamento = null;
-		EquipamentoDAO instance = null;
-		instance.incluir(equipamento);
-		// TODO review the generated test code and remove the default call to fail.
-		fail("The test case is a prototype.");
+	public void testIncluir() throws PatrimonioException, SQLException {
+		Equipamento antigo = new Equipamento("codigo", "descricao - antigo");
+		instance.incluir(antigo);
+		assertTrue("Testando Inclusao no Banco", instance.inDB(antigo));
 	}
-
-	/**
-	 * Test of alterar method, of class EquipamentoDAO.
-	 */
 	@Test
-	public void testAlterar() throws Exception {
-		System.out.println("alterar");
-		Equipamento old_equipamento = null;
-		Equipamento new_equipamento = null;
-		EquipamentoDAO instance = null;
-		instance.alterar(old_equipamento, new_equipamento);
-		// TODO review the generated test code and remove the default call to fail.
-		fail("The test case is a prototype.");
+	public void testBuscarTodos() throws SQLException, PatrimonioException {
+		Vector<Equipamento> busca = instance.buscarTodos();
+		assertNotNull("Testando a busca de elementos no BD.", busca);
 	}
-
-	/**
-	 * Test of excluir method, of class EquipamentoDAO.
-	 */
+	
 	@Test
-	public void testExcluir() throws Exception {
-		System.out.println("excluir");
-		Equipamento equipamento = null;
-		EquipamentoDAO instance = null;
-		instance.excluir(equipamento);
-		// TODO review the generated test code and remove the default call to fail.
-		fail("The test case is a prototype.");
+	public void testAlterar() throws PatrimonioException, SQLException {
+		Equipamento antigo = new Equipamento("codigo", "descricao - antigo");
+		Equipamento novo = new Equipamento("codigo", "descricao - alterada");
+		instance.alterar(antigo, novo);
+		assertTrue("Testando Alteracao no Banco", instance.inDB(novo));
 	}
-
-	/**
-	 * Test of buscar method, of class EquipamentoDAO.
-	 */
+	
+	@Test (expected= PatrimonioException.class)
+	public void testIncluirExistente() throws PatrimonioException, SQLException {
+		Equipamento novo = new Equipamento("codigo", "descricao - alterada");
+		instance.incluir(novo);
+		instance.incluir(novo);
+	}
+	
+	@Test (expected= PatrimonioException.class)
+	public void testAlterarNaoExistente() throws PatrimonioException, SQLException {
+		Equipamento equip = new Equipamento("codigo", "eqpt nao existente");
+		Equipamento equipAlter = new Equipamento("codigo", "eqpt nao existente alteraddo");
+		instance.alterar(equip, equipAlter);
+	}
+	
+	@Test (expected= PatrimonioException.class)
+	public void testAlterarIgual() throws PatrimonioException, SQLException {
+		Equipamento novo = new Equipamento("codigo", "descricao - alterada");
+		instance.alterar(novo, novo);
+	}
+	
+	@Test (expected= PatrimonioException.class)
+	public void testExcluirNaoExistente() throws PatrimonioException, SQLException {
+		Equipamento eq = new Equipamento("codigo"," nao existe descricao");
+		instance.excluir(eq);
+		instance.excluir(eq);
+	}
+	
 	@Test
-	public void testBuscar() {
-		System.out.println("buscar");
-		EquipamentoDAO instance = null;
-		Equipamento expResult = null;
-		Equipamento result = instance.buscar();
-		assertEquals(expResult, result);
-		// TODO review the generated test code and remove the default call to fail.
-		fail("The test case is a prototype.");
-	}
+	public void testExcluirExistente() throws PatrimonioException, SQLException {
 
-	/**
-	 * Test of buscarTodos method, of class EquipamentoDAO.
-	 */
-	@Test
-	public void testBuscarTodos() throws Exception {
-		System.out.println("buscarTodos");
-		EquipamentoDAO instance = null;
-		Vector expResult = null;
-		Vector result = instance.buscarTodos();
-		assertEquals(expResult, result);
-		// TODO review the generated test code and remove the default call to fail.
-		fail("The test case is a prototype.");
+		//Equipamento antigo = new Equipamento("codigo", "descricao - antigo");
+		Equipamento novo = new Equipamento("codigo", "descricao - alterada");
+		instance.excluir(novo);
+		//instance.excluir(antigo);
+		assertFalse("Testando Exclusao no Banco", instance.inDB(novo));
 	}
+	
 }

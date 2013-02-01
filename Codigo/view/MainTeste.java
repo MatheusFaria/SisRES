@@ -62,7 +62,12 @@ public class MainTeste {
 		
 		//Excluir
 		try {
-			ManterSala.getInstance().excluir(p2);
+			try {
+				ManterSala.getInstance().excluir(p2);
+			} catch (PatrimonioException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

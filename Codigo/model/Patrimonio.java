@@ -60,4 +60,16 @@ public class Patrimonio {
 		return "Patrimonio [codigo=" + codigo + ", descricao=" + descricao
 			+ "]";
 	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return super.equals(obj);
+	}
+
+	public boolean equals(Equipamento e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

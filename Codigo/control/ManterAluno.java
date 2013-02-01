@@ -50,7 +50,7 @@ public class ManterAluno {
 		AlunoDAO.getInstance().alterar(aluno_velho, aluno);
 	}
 
-	public void excluir(Aluno aluno) throws SQLException {
+	public void excluir(Aluno aluno) throws SQLException, ClienteException {
 		AlunoDAO.getInstance().excluir(aluno);
 		this.alunos_vet.remove(aluno);
 	}

@@ -41,7 +41,7 @@ public class ManterSala {
 		SalaDAO.getInstance().alterar(old_sala, sala);
 	}
 
-	public void excluir(Sala sala) throws SQLException {
+	public void excluir(Sala sala) throws SQLException, PatrimonioException {
 		SalaDAO.getInstance().excluir(sala);
 		this.salas_vet.remove(sala);
 	}

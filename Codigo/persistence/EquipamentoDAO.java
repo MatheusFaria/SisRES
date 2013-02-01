@@ -26,7 +26,10 @@ public class EquipamentoDAO {
 		}
 	//
 
-	public void incluir(Equipamento equipamento) throws SQLException, PatrimonioException {		
+	public void incluir(Equipamento equipamento) throws SQLException, PatrimonioException {	
+		if(equipamento == null)
+			throw new PatrimonioException("Equipamento invalido");
+		
 		if(!this.inDB(equipamento)){
 			this.updateQuery("INSERT INTO " +
 					"equipamento (codigo, descricao) VALUES (" +
@@ -41,6 +44,9 @@ public class EquipamentoDAO {
 
 
 	public void alterar(Equipamento old_equipamento, Equipamento new_equipamento) throws SQLException, PatrimonioException {
+		if(old_equipamento == null || new_equipamento == null)
+			throw new PatrimonioException("Equipamento invalido");
+		
 		Connection con = FactoryConnection.getInstance().getConnection();
 		PreparedStatement pst;
 		
@@ -69,6 +75,10 @@ public class EquipamentoDAO {
 	}
 
 	public void excluir(Equipamento equipamento) throws SQLException, PatrimonioException {
+		if(equipamento == null)
+			throw new PatrimonioException("Equipamento invalido");
+		
+		
 		if(this.inDB(equipamento)){
 			this.updateQuery("DELETE FROM equipamento WHERE " +
 				"equipamento.codigo = \"" + equipamento.getCodigo() + "\" and " +
@@ -105,7 +115,11 @@ public class EquipamentoDAO {
 		return vet;
 	}
 	
-	public boolean inDB(Equipamento e) throws SQLException	{
+	public boolean inDB(Equipamento e) throws SQLException, PatrimonioException	{
+		if(e == null)
+			throw new PatrimonioException("Equipamento invalido");
+		
+		
 		Connection con = FactoryConnection.getInstance().getConnection();
 		PreparedStatement pst = con.prepareStatement("SELECT * FROM equipamento WHERE " +
 				"equipamento.codigo = \"" + e.getCodigo() + "\" and " +
