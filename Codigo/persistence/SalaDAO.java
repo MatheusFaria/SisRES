@@ -90,20 +90,12 @@ public class SalaDAO {
 		
 		PreparedStatement pst = con.prepareStatement("SELECT * FROM sala;");
 		ResultSet rs = pst.executeQuery();
-		ResultSet rs2 = null;
 		
 		while(rs.next())
-		{
-			pst = con.prepareStatement("SELECT * FROM sala WHERE id_sala = " 
-															+ rs.getString("id_sala"));
-			rs2 = pst.executeQuery();
-			vet.add(this.fetchSala(rs2));
-		}
+			vet.add(this.fetchSala(rs));
 		
 		pst.close();
 		rs.close();
-        if(rs2 != null)
-        	rs2.close();
 		con.close();
 		return vet;
 	}
@@ -137,9 +129,8 @@ public class SalaDAO {
 		return null;
 	}
 
-	private Sala fetchSala(ResultSet rs2) throws PatrimonioException, SQLException{
-		rs2.next();
-		return new Sala(rs2.getString("codigo"), rs2.getString("descricao"), rs2.getString("capacidade"));
+	private Sala fetchSala(ResultSet rs) throws PatrimonioException, SQLException{
+		return new Sala(rs.getString("codigo"), rs.getString("descricao"), rs.getString("capacidade"));
 	}
 	
 	private void updateQuery(String msg) throws SQLException{

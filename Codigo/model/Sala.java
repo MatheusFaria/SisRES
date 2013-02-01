@@ -10,6 +10,7 @@ public class Sala extends Patrimonio {
 	//Mensagens de Erro e Alertas
 		private final String CAPACIDADE_INVALIDO = "Codigo Invalido.";
 		private final String CAPACIDADE_BRANCO = "Codigo em Branco.";
+		private final String CAPACIDADE_NULA = "Codigo esta nula.";
 			
 		
 	public Sala(String codigo, String descricao, String capacidade) throws PatrimonioException {
@@ -23,7 +24,9 @@ public class Sala extends Patrimonio {
 
 	public void setCapacidade(String capacidade) throws PatrimonioException {
 		try{
-			if(capacidade.isEmpty())
+			if(capacidade == null)
+				throw new PatrimonioException(CAPACIDADE_NULA);
+			else if(capacidade.isEmpty())
 				throw new PatrimonioException(CAPACIDADE_BRANCO);
 			else if(capacidade.matches("[\\d]+"))
 				this.capacidade = capacidade;
@@ -36,4 +39,13 @@ public class Sala extends Patrimonio {
 		this.capacidade = capacidade;
 	}
 
+	public boolean equals(Sala b){
+		if(this.getCapacidade().equals(b.getCapacidade()) && 
+				this.getCodigo().equals(b.getCodigo()) &&
+				this.getDescricao().equals(b.getDescricao())){
+			return true;
+		}
+		
+		return false;
+	}
 }
