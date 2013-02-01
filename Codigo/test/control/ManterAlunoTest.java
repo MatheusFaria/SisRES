@@ -16,8 +16,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import persistence.AlunoDAO;
-
 import control.ManterAluno;
 import exception.ClienteException;
 
