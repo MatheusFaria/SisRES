@@ -1,11 +1,11 @@
-package test.model;
+package test;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ ProfessorTest.class })
+@SuiteClasses({ AlunoSuite.class, EquipamentoSuite.class, ProfessorSuite.class })
 public class AllTests {
 
 }

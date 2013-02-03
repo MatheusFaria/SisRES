@@ -1,60 +1,54 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package test.model;
 
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 import model.Equipamento;
 
 import org.junit.Test;
 
 import exception.PatrimonioException;
 
-/**
- *
- * @author Parley
- */
 public class EquipamentoTest {
 
-	@Test()
-	public void testEquipamento() throws PatrimonioException {
+	@Test
+	public void testInstance() throws PatrimonioException {
 		assertTrue(new Equipamento("codigo", "descricao") instanceof Equipamento);
 	}
 	
-	@Test()
-	public void testGetNome() throws PatrimonioException {
+	@Test
+	public void testNome() throws PatrimonioException {
 		String codigo = "codigo";
-		Equipamento eq;	
-		eq = new Equipamento(codigo, "descricao");
+		Equipamento eq = new Equipamento(codigo, "descricao");
 		assertTrue("codigo diferente instanciado", codigo == eq.getCodigo());
 	}
 	
-	@Test()
-	public void testGetDescricao() throws PatrimonioException {
+	@Test
+	public void testDescricao() throws PatrimonioException {
 		String descricao = "descricao";
-		Equipamento eq;	
-		eq = new Equipamento("codigo", descricao);
+		Equipamento eq = new Equipamento("codigo", descricao);
 		assertTrue("Descricao diferente instanciada", descricao == eq.getDescricao());
 	}
 	
+	
+	
+	
 	@Test(expected = exception.PatrimonioException.class)
-	public void testEquipamentoDescricaoVazia() throws PatrimonioException {
+	public void testDescricaoVazia() throws PatrimonioException {
 		new Equipamento("abc", "");
-		fail("Deveria lancar PatrimonioException");
 	}
 	
 	@Test(expected = exception.PatrimonioException.class)
-	public void testEquipamentoCodigoVazio() throws PatrimonioException {
+	public void testCodigoVazio() throws PatrimonioException {
 		new Equipamento("", "abc");
-		fail("Deveria lancar PatrimonioException");
 	}
 	
 	@Test(expected = exception.PatrimonioException.class)
-	public void testEquipamentoCamposNulos() throws PatrimonioException {
-		new Equipamento("", "");
-		fail("Deveria lancar PatrimonioException");
+	public void testCodigoNulo() throws PatrimonioException {
+		new Equipamento(null, "abc");
+	}
+	
+	@Test(expected = exception.PatrimonioException.class)
+	public void testDescricaoNulo() throws PatrimonioException {
+		new Equipamento("abc", null);
 	}
 	
 }

@@ -11,6 +11,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+
 import control.ManterProfessor;
 import exception.ClienteException;
 
@@ -39,7 +40,9 @@ public class ManterProfessorTest {
 		ManterProfessor p = ManterProfessor.getInstance();
 		ManterProfessor q = ManterProfessor.getInstance();
 		assertSame("Teste Singleton de ManterProfessor", p, q);
-	}	
+	}
+	
+	
 	
 	@Test
 	public void testIncluirVet() throws ClienteException, SQLException {

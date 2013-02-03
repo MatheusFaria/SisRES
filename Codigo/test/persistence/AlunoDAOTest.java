@@ -2,7 +2,6 @@ package test.persistence;
 
 import static org.junit.Assert.*;
 
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Vector;
 
@@ -10,12 +9,10 @@ import model.Aluno;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import exception.ClienteException;
 
-import persistence.FactoryConnection;
 import persistence.AlunoDAO;
 
 public class AlunoDAOTest {
@@ -52,8 +49,10 @@ public class AlunoDAOTest {
 	}
 	@Test
 	public void testBuscarTodos() throws SQLException, ClienteException {
-		Vector<Aluno> busca = AlunoDAO.getInstance().buscarTodos();
-		assertFalse("Testando a busca de elementos no BD.", busca.isEmpty());
+		Aluno p = new Aluno("TestInclusao", "040.757.021-70", "1234", "9999-9999", "Nome@email");
+		Vector<Aluno> vet = AlunoDAO.getInstance().buscarTodos();
+		Aluno q = vet.lastElement();
+		assertTrue("Testando Busca no Banco", 	p.equals(q));
 	}
 	
 	@Test
@@ -96,7 +95,7 @@ public class AlunoDAOTest {
 	
 	@Test (expected= ClienteException.class)
 	public void testExcluirNaoExistente() throws ClienteException, SQLException {
-		Aluno p = new Aluno("TestInclusao", "040.757.021-70", "1234", "8888-8888", "Nome@email");
+		Aluno p = new Aluno("TestInclusao", "040.757.021-70", "1234", "9999-9999", "Nome@email");
 		AlunoDAO.getInstance().excluir(p);
 		AlunoDAO.getInstance().excluir(p);
 	}

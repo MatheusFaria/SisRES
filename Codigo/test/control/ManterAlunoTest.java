@@ -7,14 +7,11 @@ import java.util.Vector;
 
 import model.Aluno;
 
-import org.junit.After;
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import control.ManterAluno;
-import control.ManterProfessor;
 import exception.ClienteException;
 
 public class ManterAlunoTest {
@@ -31,6 +28,12 @@ public class ManterAlunoTest {
 	}
 
 	
+	
+	@Test
+	public void testGetInstance() {
+		assertTrue("Verifica método getInstance().", ManterAluno.getInstance() instanceof ManterAluno);
+	}
+
 	@Test
 	public void testSingleton() {
 		ManterAluno p = ManterAluno.getInstance();
@@ -38,27 +41,20 @@ public class ManterAlunoTest {
 		assertSame("Testando o Padrao Singleton", p, q);
 	}
 
-	/**
-	 * Test method for {@link control.ManterAluno#getInstance()}.
-	 */
-	@Test
-	public void testGetInstance() {
-		assertNotNull("Verifica método getInstance().", ManterAluno.getInstance() instanceof ManterAluno);
-		//fail("Get instance retorna objeto nulo");
-	}
-
+	
+	
 	@Test
 	public void testInserir() throws ClienteException, SQLException {
-		Aluno a = new Aluno("Marina", "040.757.021-70", "12345", "3333-3333", "maria@email");
-		ManterAluno.getInstance().inserir("Marina", "040.757.021-70", "12345", "3333-3333", "maria@email");
+		Aluno a = new Aluno("Nome para Incluir", "868.563.327-34", "123456", "1234-5678", "Nome@email");
+		ManterAluno.getInstance().inserir("Nome para Incluir", "868.563.327-34", "123456", "1234-5678", "Nome@email");
 		
 		assertTrue("Verifica se o aluno foi inserido.", alunos.lastElement().equals(a));
 	}
 	
 	@Test 
 	public void testAlterar() throws ClienteException, SQLException {
-		Aluno a = new Aluno("Marina", "040.757.021-70", "12345", "3333-3333", "maria@email");
-		ManterAluno.getInstance().alterar("Maria", "040.757.021-70", "12345", "3333-3333", "maria@email", alunos.lastElement());
+		Aluno a = new Aluno("Nome para Alterar",  "868.563.327-34", "123456", "1234-5678", "Nome@email");
+		ManterAluno.getInstance().alterar("Nome para Alterar",  "868.563.327-34", "123456", "1234-5678", "Nome@email", alunos.lastElement());
 		
 		assertNotNull("Verifica se os dados foram alterados.", alunos.lastElement().equals(a));
 	}

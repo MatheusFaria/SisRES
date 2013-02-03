@@ -1,18 +1,11 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package test.control;
 
 import control.ManterEquipamento;
-import control.ManterProfessor;
-import exception.ClienteException;
 import exception.PatrimonioException;
 
 import java.sql.SQLException;
 import java.util.Vector;
 import model.Equipamento;
-import model.Professor;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -20,13 +13,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
-/**
- *
- * @author Parley
- */
 public class ManterEquipamentoTest {
 
 	ManterEquipamento instance;

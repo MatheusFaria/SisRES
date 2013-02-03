@@ -9,8 +9,10 @@ public class Patrimonio {
 	//Mensagens de Erro e Alertas
 	private final String CODIGO_INVALIDO = "Codigo Invalido.";
 	private final String CODIGO_BRANCO = "Codigo em Branco.";
+	private final String CODIGO_NULO = "Codigo esta Nulo.";
 	private final String DESCRICAO_INVALIDO = "Descricao Invalido.";
 	private final String DESCRICAO_BRANCO = "Descricao em Branco.";
+	private final String DESCRICAO_NULO = "Descricao esta Nula.";
 
 	public Patrimonio(String codigo, String descricao) throws PatrimonioException {
 		this.setCodigo(codigo);
@@ -27,7 +29,9 @@ public class Patrimonio {
 
 	public void setCodigo(String codigo) throws PatrimonioException {
 		try {
-			if ("".equals(codigo)) {
+			if(codigo == null)
+				throw new PatrimonioException(CODIGO_NULO);
+			else if ("".equals(codigo)) {
 				throw new PatrimonioException(CODIGO_BRANCO);
 			}
 			//else if(codigo.matches("PATTERN"))
@@ -37,14 +41,14 @@ public class Patrimonio {
 			this.codigo = codigo;//
 		} catch (StringIndexOutOfBoundsException e) {
 			throw new PatrimonioException(CODIGO_INVALIDO);
-		} catch (NullPointerException e) {
-			throw new PatrimonioException(CODIGO_BRANCO);
 		}
 	}
 
 	public void setDescricao(String descricao) throws PatrimonioException {
 		try {
-			if ("".equals(descricao)) {
+			if(descricao == null)
+				throw new PatrimonioException(DESCRICAO_NULO);
+			else if ("".equals(descricao)) {
 				throw new PatrimonioException(DESCRICAO_BRANCO);
 			}
 			this.descricao = descricao;
@@ -59,17 +63,5 @@ public class Patrimonio {
 	public String toString() {
 		return "Patrimonio [codigo=" + codigo + ", descricao=" + descricao
 			+ "]";
-	}
-
-
-	@Override
-	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
-		return super.equals(obj);
-	}
-
-	public boolean equals(Equipamento e) {
-		// TODO Auto-generated method stub
-		return false;
 	}
 }
