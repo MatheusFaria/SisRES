@@ -71,7 +71,7 @@ public class SalaDAO {
 	}
 
 	public void excluir(Sala sala) throws SQLException, PatrimonioException {
-		if(!this.inDB(sala)){
+		if(this.inDB(sala)){
 			this.updateQuery("DELETE FROM sala WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
 				"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
