@@ -27,7 +27,10 @@ public class SalaDAO {
 	//
 
 	public void incluir(Sala sala) throws SQLException, PatrimonioException {		
-		if(!this.inDB(sala)){
+		if(this.inDB(sala)){
+			throw new PatrimonioException(SALA_JA_EXISTENTE);
+		}
+		else {
 			this.updateQuery("INSERT INTO " +
 					"sala (codigo, descricao, capacidade) VALUES (" +
 					"\"" + sala.getCodigo() + "\", " +
@@ -36,27 +39,29 @@ public class SalaDAO {
 					"\"); "
 				);
 		}
-		else {
-			throw new PatrimonioException(SALA_JA_EXISTENTE);
-		}
 	}
 
 
 	public void alterar(Sala old_sala, Sala new_sala) throws SQLException, PatrimonioException {
+	
+		if(old_sala == null || new_sala == null)
+			throw new PatrimonioException("Equipamento invalido");
+		
 		Connection con = FactoryConnection.getInstance().getConnection();
 		PreparedStatement pst;
 		
 		if(!this.inDB(old_sala))
 			throw new PatrimonioException(SALA_NAO_EXISTENTE);
-		if(!this.inDB(new_sala)){
+		
+		else if(!this.inDB(new_sala)){
 			String msg = "UPDATE sala SET " +				
-				"codigo = \"" + new_sala.getCodigo() + "\", " +
-				"descricao = \"" + new_sala.getDescricao() + "\", " +
-				"capacidade = " + new_sala.getCapacidade() +
-				" WHERE " +
-				"sala.codigo = \"" + old_sala.getCodigo() + "\" and " +
-				"sala.descricao = \"" + old_sala.getDescricao() +  "\" and " +
-				"sala.capacidade = " + old_sala.getCapacidade() +";";
+					"codigo = \"" + new_sala.getCodigo() + "\", " +
+					"descricao = \"" + new_sala.getDescricao() + "\", " +
+					"capacidade = \"" + new_sala.getCapacidade() + "\"" +
+					" WHERE " +
+					"sala.codigo = \"" + old_sala.getCodigo() + "\" and " +
+					"sala.descricao = \"" + old_sala.getDescricao() +  "\" and " +
+					"sala.capacidade = \"" + old_sala.getCapacidade() + "\";";
 			con.setAutoCommit(false);
 			pst = con.prepareStatement(msg);
 			pst.executeUpdate();
