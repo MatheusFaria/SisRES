@@ -35,4 +35,10 @@ public class SalaDAOTest {
 		assertTrue("Instanciando SalaDAO", SalaDAO.getInstance() instanceof SalaDAO);
 	}
 	
+	@Test
+	public void testSingleton() {
+		SalaDAO inst1 = SalaDAO.getInstance();
+		SalaDAO inst2 = SalaDAO.getInstance();
+		assertSame("Testando o Padrao Singleton", inst2, inst1);
+	}
 }
