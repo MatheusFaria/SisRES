@@ -19,7 +19,7 @@ import exception.PatrimonioException;
 
 
 public class SalaDAOTest {
-  
+	
 	@BeforeClass
 	public static void setUpClass() throws PatrimonioException, SQLException {
 	
@@ -82,11 +82,19 @@ public class SalaDAOTest {
 		Sala novo = new Sala("codigo", "descricao", "capacidade");
 		SalaDAO.getInstance().alterar(novo, novo);
 	}
-
+	
 	@Test (expected= PatrimonioException.class)
 	public void testExcluirNaoExistente() throws PatrimonioException, SQLException {
 		Sala eq = new Sala("codigo", "descricao", "capacidade");
 		SalaDAO.getInstance().excluir(eq);
 		SalaDAO.getInstance().excluir(eq);
 	}
+	
+	@Test
+	public void testExcluirExistente() throws PatrimonioException, SQLException {
+		Sala novo = new Sala("codigo", "descricao - alterada", "capacidade - alterada");
+		SalaDAO.getInstance().excluir(novo);
+		assertFalse("Testando Exclusao no Banco", SalaDAO.getInstance().inDB(novo));
+	}
+	
 }
