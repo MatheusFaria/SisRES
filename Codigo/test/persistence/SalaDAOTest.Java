@@ -76,4 +76,10 @@ public class SalaDAOTest {
 		Sala equipAlter = new Sala("codigo", "descricao", "capacidade");
 		SalaDAO.getInstance().alterar(equip, equipAlter);
 	}
+	
+	@Test (expected= PatrimonioException.class)
+	public void testAlterarIgual() throws PatrimonioException, SQLException {
+		Sala novo = new Sala("codigo", "descricao", "capacidade");
+		SalaDAO.getInstance().alterar(novo, novo);
+	}
 }
