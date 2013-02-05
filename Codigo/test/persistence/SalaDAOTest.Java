@@ -48,4 +48,10 @@ public class SalaDAOTest {
 		SalaDAO.getInstance().incluir(antigo);
 		assertTrue("Testando Inclusao no Banco", SalaDAO.getInstance().inDB(antigo));
 	}
+	
+	@Test
+	public void testBuscarTodos() throws SQLException, PatrimonioException {
+		Vector<Sala> busca = SalaDAO.getInstance().buscarTodos();
+		assertNotNull("Testando a busca de elementos no BD.", busca);
+	}
 }
