@@ -15,9 +15,11 @@ public class Sala extends Patrimonio {
 		
 	public Sala(String codigo, String descricao, String capacidade) throws PatrimonioException {
 		super(codigo, descricao);
-		this.capacidade = capacidade;
+		
+		setCapacidade(capacidade);
+		
 	}
-
+	
 	public String getCapacidade() {
 		return capacidade;
 	}
@@ -26,17 +28,15 @@ public class Sala extends Patrimonio {
 		try{
 			if(capacidade == null)
 				throw new PatrimonioException(CAPACIDADE_NULA);
-			else if(capacidade.isEmpty())
+			else if("".equals(capacidade))
 				throw new PatrimonioException(CAPACIDADE_BRANCO);
-			else if(capacidade.matches("[\\d]+"))
-				this.capacidade = capacidade;
 			else
-				throw new PatrimonioException(CAPACIDADE_INVALIDO);
+				this.capacidade = capacidade;
+		
 		} catch(StringIndexOutOfBoundsException e)
 		{
 			throw new PatrimonioException(CAPACIDADE_INVALIDO);
 		}
-		this.capacidade = capacidade;
 	}
 
 	public boolean equals(Sala b){
