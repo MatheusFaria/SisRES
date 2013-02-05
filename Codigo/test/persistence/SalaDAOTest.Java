@@ -41,4 +41,11 @@ public class SalaDAOTest {
 		SalaDAO inst2 = SalaDAO.getInstance();
 		assertSame("Testando o Padrao Singleton", inst2, inst1);
 	}
+	
+	@Test
+	public void testIncluir() throws PatrimonioException, SQLException {
+		Sala antigo = new Sala("codigo", "descricao", "capacidade");
+		SalaDAO.getInstance().incluir(antigo);
+		assertTrue("Testando Inclusao no Banco", SalaDAO.getInstance().inDB(antigo));
+	}
 }
