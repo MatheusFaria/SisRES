@@ -82,4 +82,11 @@ public class SalaDAOTest {
 		Sala novo = new Sala("codigo", "descricao", "capacidade");
 		SalaDAO.getInstance().alterar(novo, novo);
 	}
+
+	@Test (expected= PatrimonioException.class)
+	public void testExcluirNaoExistente() throws PatrimonioException, SQLException {
+		Sala eq = new Sala("codigo", "descricao", "capacidade");
+		SalaDAO.getInstance().excluir(eq);
+		SalaDAO.getInstance().excluir(eq);
+	}
 }
