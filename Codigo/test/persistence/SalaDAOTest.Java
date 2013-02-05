@@ -62,4 +62,11 @@ public class SalaDAOTest {
 		SalaDAO.getInstance().alterar(antigo, novo);
 		assertTrue("Testando Alteracao no Banco", SalaDAO.getInstance().inDB(novo));
 	}
+	
+	@Test (expected= PatrimonioException.class)
+	public void testIncluirExistente() throws PatrimonioException, SQLException {
+		Sala novo = new Sala("codigo", "descricao", "capacidade");
+		SalaDAO.getInstance().incluir(novo);
+		SalaDAO.getInstance().incluir(novo);
+	}
 }
