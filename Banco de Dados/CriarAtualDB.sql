@@ -1,6 +1,4 @@
-DROP DATABASE IF EXISTS sisres_db;
 CREATE DATABASE sisres_db;
-CREATE USER 'testuser'@'localhost' IDENTIFIED BY 'password';
 USE sisres_db;
 GRANT ALL ON sisres_db.* TO 'testuser'@'localhost';
 
@@ -86,5 +84,3 @@ ALTER TABLE Reserva_Sala_Aluno ADD CONSTRAINT FK_Reserva_Sala_Aluno_1 FOREIGN KE
 
 ALTER TABLE Reserva_Sala_Professor ADD CONSTRAINT FK_Reserva_Sala_Professor_0 FOREIGN KEY (id_professor) REFERENCES Professor (id_professor);
 ALTER TABLE Reserva_Sala_Professor ADD CONSTRAINT FK_Reserva_Sala_Professor_1 FOREIGN KEY (id_sala) REFERENCES Sala (id_sala);
-
-
