@@ -54,11 +54,17 @@ public class Patrimonio {
 			this.descricao = descricao;
 		} catch (StringIndexOutOfBoundsException e) {
 			throw new PatrimonioException(DESCRICAO_INVALIDO);
-		} catch (NullPointerException e) {
-			throw new PatrimonioException(DESCRICAO_BRANCO);
 		}
 	}
 
+	public boolean equals(Patrimonio e){
+		if( this.getCodigo().equals(e.getCodigo()) && 
+			this.getDescricao().equals(e.getDescricao()))
+			return true;
+		
+		return false;
+	}
+	
 	@Override
 	public String toString() {
 		return "Patrimonio [codigo=" + codigo + ", descricao=" + descricao

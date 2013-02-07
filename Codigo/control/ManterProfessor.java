@@ -8,18 +8,19 @@ import exception.ClienteException;
 import model.Professor;
 
 public class ManterProfessor {
-
-	private static ManterProfessor instance;
+	
 	private Vector<Professor> professores_vet = new Vector<Professor>();
 	
-	private ManterProfessor() {
+	//Singleton
+		private static ManterProfessor instance;
+		private ManterProfessor() {
 	}
-	public static ManterProfessor getInstance() {
+		public static ManterProfessor getInstance() {
 		if(instance == null)
 			instance = new ManterProfessor();
 		return instance;
 	}
-
+	//
 	
 	public Vector<Professor> getProfessores_vet() throws SQLException, ClienteException{
 		this.professores_vet = ProfessorDAO.getInstance().buscarTodos();

@@ -21,7 +21,7 @@ public class Professor extends Cliente {
 				throw new ClienteException(MATRICULA_NULO);
 			else if("".equals(matricula) || matricula.isEmpty())
 				throw new ClienteException(MATRICULA_BRANCO);
-			//else if(matricula.matches("PATTERN"))//TODO colocar o pattern
+			//else if(matricula.matches("PATTERN"))
 				//this.matricula = matricula;
 			//else
 				//throw new ClienteException(MATRICULA_INVALIDO);
@@ -30,18 +30,6 @@ public class Professor extends Cliente {
 		{
 			throw new ClienteException(MATRICULA_INVALIDO);
 		}
-	}
-
-	public boolean equals(Professor b){
-		if(	super.getNome().equals(b.getNome()) &&
-			super.getCpf().equals(b.getCpf()) &&
-			super.getMatricula().equals(b.getMatricula()) &&
-			super.getEmail().equals(b.getEmail()) &&
-			super.getTelefone().equals(b.getTelefone())){
-			
-			return true;
-		}
-		return false;
 	}
 	
 }

@@ -34,7 +34,7 @@ public abstract class Cliente {
 			String telefone, String email) throws ClienteException{
 		this.setNome(nome);
 		this.setCpf(cpf);
-                this.setMatricula(matricula);
+        this.setMatricula(matricula);
 		this.setTelefone(telefone);
 		this.setEmail(email);
 	}
@@ -109,8 +109,9 @@ public abstract class Cliente {
 				throw new ClienteException(TELEFONE_NULO);
 			else if("".equals(telefone))
 				this.telefone = telefone;
-			else if(telefone.matches("(\\([\\d]{2,3}\\))?[ ]*[\\d]{4,4}[ ]*-[ ]*[\\d]{4,4}[ ]*$"))
-				this.telefone = telefone;
+			//Telefone será guardado sem espaços.
+			else if(telefone.matches("(\\([ ]*[\\d]{2,3}[ ]*\\))?[ ]*[\\d]{4,4}[ ]*-?[ ]*[\\d]{4,4}[ ]*$"))
+				this.telefone = telefone.replaceAll(" ", "");
 			else
 				throw new ClienteException(TELEFONE_INVALIDO);
 		} catch(StringIndexOutOfBoundsException e)
@@ -140,6 +141,18 @@ public abstract class Cliente {
 				+ "]";
 	}
 
+	public boolean equals(Cliente b){
+		if(	this.getNome().equals(b.getNome()) &&
+			this.getCpf().equals(b.getCpf()) &&
+			this.getMatricula().equals(b.getMatricula()) &&
+			this.getEmail().equals(b.getEmail()) &&
+			this.getTelefone().equals(b.getTelefone())){
+			
+			return true;
+		}
+		return false;
+	}
+	
 	private boolean validarCpf(String cpf) {
 
 		int d1, d2;

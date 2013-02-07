@@ -9,18 +9,19 @@ import model.Equipamento;
 public class ManterEquipamento {
 
 	private Vector<Equipamento> Equipamento_vet = new Vector<Equipamento>();
-	private static ManterEquipamento instance;
-
-	private ManterEquipamento() {
+	
+	//Singleton
+		private static ManterEquipamento instance;
+		private ManterEquipamento() {
 	}
-
-	public static ManterEquipamento getInstance() {
+		public static ManterEquipamento getInstance() {
 		if (instance == null) {
 			instance = new ManterEquipamento();
 		}
 		return instance;
 	}
-
+	//
+		
 	public Vector<Equipamento> getEquipamento_vet() throws SQLException, PatrimonioException {
 		this.Equipamento_vet = EquipamentoDAO.getInstance().buscarTodos();
 		return this.Equipamento_vet;

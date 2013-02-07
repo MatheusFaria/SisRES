@@ -31,17 +31,5 @@ public class Aluno extends Cliente {
 			throw new ClienteException(MATRICULA_INVALIDO);
 		}
 	}
-
-	public boolean equals(Aluno b){
-		if(	super.getNome().equals(b.getNome()) &&
-			super.getCpf().equals(b.getCpf()) &&
-			super.getMatricula().equals(b.getMatricula()) &&
-			super.getEmail().equals(b.getEmail()) &&
-			super.getTelefone().equals(b.getTelefone())){
-			
-			return true;
-		}
-		return false;
-	}
 }
 

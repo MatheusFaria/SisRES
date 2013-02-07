@@ -10,17 +10,18 @@ import model.Sala;
 public class ManterSala {
 
 	private Vector<Sala> salas_vet = new Vector<Sala>();
-	private static ManterSala instance;
-
-	private ManterSala() {
-	}
-
-	public static ManterSala getInstance() {
+	
+	//Singleton
+		private static ManterSala instance;
+		private ManterSala() {
+		}
+		public static ManterSala getInstance() {
 		if(instance == null)
 			instance = new ManterSala();
 		return instance;
 	}
-	
+	//
+		
 	public Vector<Sala> getSalas_vet() throws SQLException, PatrimonioException{
 		this.salas_vet = SalaDAO.getInstance().buscarTodos();
 		return this.salas_vet;
