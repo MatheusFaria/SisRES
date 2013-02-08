@@ -25,7 +25,7 @@ public abstract class Cliente {
 		private final String TELEFONE_INVALIDO = "Telefone Invalido.";
 		//private final String TELEFONE_BRANCO = "Telefone em Branco.";
 		private final String TELEFONE_NULO = "Telefone esta Nulo.";
-		private final String EMAIL_INVALIDO = "E-mail Invalido.";
+		//private final String EMAIL_INVALIDO = "E-mail Invalido.";
 		//private final String EMAIL_BRANCO = "E-mail em Branco.";
 		private final String EMAIL_NULO = "E-mail esta Nulo.";
 	
@@ -60,76 +60,53 @@ public abstract class Cliente {
 	}
 	
 	public void setNome(String nome) throws ClienteException{
-		try{
-			if(nome == null)
-				throw new ClienteException(NOME_NULO);
-			else if("".equals(nome))
-				throw new ClienteException(NOME_BRANCO);
-			else if(nome.matches("[a-zA-Z\\s]+"))
-				this.nome = nome;
-			else
-				throw new ClienteException(NOME_INVALIDO);
-		} catch(StringIndexOutOfBoundsException e)
-		{
+		if(nome == null)
+			throw new ClienteException(NOME_NULO);
+		else if("".equals(nome.trim()))
+			throw new ClienteException(NOME_BRANCO);
+		else if(nome.trim().matches("[a-zA-Z][a-zA-Z\\s]+"))
+			this.nome = nome.trim();
+		else
 			throw new ClienteException(NOME_INVALIDO);
-		}
 	}
 	
 	public void setCpf(String cpf) throws ClienteException {
-		try{
-			if(cpf == null)
-				throw new ClienteException(CPF_NULO);
-			else if("".equals(cpf))
-				throw new ClienteException(CPF_BRANCO);
-			else if(cpf.matches("[\\d]{3,3}.[\\d]{3,3}.[\\d]{3,3}-[\\d]{2,2}$"))
-			{
-				if(this.validarCpf(
-						cpf.split("[\\. | -]")[0] + 
-						cpf.split("[\\. | -]")[1] + 
-						cpf.split("[\\. | -]")[2] + 
-						cpf.split("[\\. | -]")[3]))
-					this.cpf = cpf;
-				else
-					throw new ClienteException(CPF_INVALIDO);
-			}
+		if(cpf == null)
+			throw new ClienteException(CPF_NULO);
+		else if("".equals(cpf))
+			throw new ClienteException(CPF_BRANCO);
+		else if(cpf.matches("[\\d]{3,3}.[\\d]{3,3}.[\\d]{3,3}-[\\d]{2,2}$"))
+		{
+			if(this.validarCpf(
+					cpf.split("[\\. | -]")[0] + 
+					cpf.split("[\\. | -]")[1] + 
+					cpf.split("[\\. | -]")[2] + 
+					cpf.split("[\\. | -]")[3]))
+				this.cpf = cpf;
 			else
 				throw new ClienteException(CPF_INVALIDO);
-		} catch(StringIndexOutOfBoundsException e)
-		{
+		}
+		else
 			throw new ClienteException(CPF_INVALIDO);
-		} catch(NumberFormatException e)
-		{
-			throw new ClienteException(CPF_INVALIDO);
-		} 
 	}
 	
 	public void setTelefone(String telefone) throws ClienteException {
-		try{
-			if(telefone == null)
-				throw new ClienteException(TELEFONE_NULO);
-			else if("".equals(telefone))
-				this.telefone = telefone;
-			//Telefone será guardado sem espaços.
-			else if(telefone.matches("(\\([ ]*[\\d]{2,3}[ ]*\\))?[ ]*[\\d]{4,4}[ ]*-?[ ]*[\\d]{4,4}[ ]*$"))
-				this.telefone = telefone.replaceAll(" ", "");
-			else
-				throw new ClienteException(TELEFONE_INVALIDO);
-		} catch(StringIndexOutOfBoundsException e)
-		{
+		if(telefone == null)
+			throw new ClienteException(TELEFONE_NULO);
+		else if("".equals(telefone))
+			this.telefone = telefone;
+		//Telefone será guardado sem espaços.
+		else if(telefone.matches("(\\([ ]*[\\d]{2,3}[ ]*\\))?[ ]*[\\d]{4,4}[ ]*-?[ ]*[\\d]{4,4}[ ]*$"))
+			this.telefone = telefone.replaceAll(" ", "");
+		else
 			throw new ClienteException(TELEFONE_INVALIDO);
-		}
 	}
 	
 	public void setEmail(String email) throws ClienteException {
-		try{
-			if(email != null)
-				this.email = email;
-			else
-				throw new ClienteException(EMAIL_NULO);
-		} catch(StringIndexOutOfBoundsException e)
-		{
-			throw new ClienteException(EMAIL_INVALIDO);
-		}
+		if(email == null)
+			throw new ClienteException(EMAIL_NULO);
+		else
+			this.email = email;
 	}
 	
 	public abstract void setMatricula(String matricula) throws ClienteException;
