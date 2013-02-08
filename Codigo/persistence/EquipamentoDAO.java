@@ -43,8 +43,6 @@ public class EquipamentoDAO {
 					"\"" + equipamento.getDescricao()+ "\");"
 					);
 		}
-		else
-			throw new PatrimonioException(EQUIPAMENTO_JA_EXISTENTE);
 	}
 
 	public void alterar(Equipamento old_equipamento, Equipamento new_equipamento) throws SQLException, PatrimonioException {
@@ -60,7 +58,7 @@ public class EquipamentoDAO {
 			throw new PatrimonioException(EQUIPAMENTO_NAO_EXISTENTE);
 		else if(this.inOtherDB(old_equipamento))
 			throw new PatrimonioException(EQUIPAMENTO_EM_USO);
-		else if(this.inDBCodigo(new_equipamento.getCodigo()))
+		else if(this.inDBCodigo(new_equipamento.getCodigo()) && new_equipamento.getCodigo() != old_equipamento.getCodigo())
 			throw new PatrimonioException(CODIGO_JA_EXISTENTE);
 		else if(!this.inDB(new_equipamento))
 		{
@@ -75,11 +73,13 @@ public class EquipamentoDAO {
 			pst = con.prepareStatement(msg);
 			pst.executeUpdate();
 			con.commit();
+
+			pst.close();
+			
 		}
-		else
+		/**else
 			throw new PatrimonioException(EQUIPAMENTO_JA_EXISTENTE);
-		
-		pst.close();
+		*/
 		con.close();
 	}
 

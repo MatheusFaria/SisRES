@@ -4,6 +4,7 @@ import control.ManterEquipamento;
 import exception.PatrimonioException;
 
 import java.sql.SQLException;
+import java.util.Iterator;
 import java.util.Vector;
 import model.Equipamento;
 
@@ -17,71 +18,96 @@ import org.junit.Test;
 
 public class ManterEquipamentoTest {
 
-	ManterEquipamento instance;
-	Vector<Equipamento> vector;
-	static Equipamento e;
-
+	static ManterEquipamento instance;
+	Vector<Equipamento> todos;
+	Equipamento e;
+ 
 	public ManterEquipamentoTest() {
 	}
 
 	@BeforeClass
 	public static void setUpClass() throws PatrimonioException {
-		e = new Equipamento("codigo", "descricao");
+		instance = ManterEquipamento.getInstance();
 	}
 
 	@AfterClass
 	public static void tearDownClass() {
-		e = null;
+		instance = null;
 	}
 
 	@Before
 	public void setUp() throws Exception {
-		instance = ManterEquipamento.getInstance();
-		vector = instance.getEquipamento_vet();
+		e = new Equipamento("codigo", "descricao");
+		instance.inserir("codigo","descricao");
+		todos = instance.getEquipamento_vet();
 	}
 
 	@After
-	public void tearDown() {
+	public void tearDown() throws SQLException, PatrimonioException {
+		todos = instance.getEquipamento_vet();
+		Iterator<Equipamento> i = todos.iterator();
+		while(i.hasNext()){
+			e = i.next();
+			instance.excluir(e);
+		}
+		e = null;
 	}
 	
 	@Test
 	public void testGetEquipamento_vet() throws Exception {
-		vector = instance.getEquipamento_vet();
-		assertNotNull(vector);
+		assertNotNull(todos);
 	}
 	
 	@Test
 	public void testGetInstance() {
-		ManterEquipamento result = ManterEquipamento.getInstance();
-		assertNotNull("Get Instance falhou",result);
+		assertNotNull("Get Instance falhou",instance);
 	}
 	
 	@Test
 	public void testSingleton(){
 		ManterEquipamento me = ManterEquipamento.getInstance();
-		ManterEquipamento me2 = ManterEquipamento.getInstance();
-		assertSame("Instancias diferentes", me, me2);
+		assertSame("Instancias diferentes", me, instance);
 		
 	}
 
 	@Test
 	public void testIncluirVet() throws SQLException, PatrimonioException {
-		instance.inserir("codigo","descricao");
-		assertTrue("Teste de Inclusao no Equipamento Vet.", vector.lastElement().equals(e));
+		assertNotNull("Teste de Inclusao no Equipamento Vet.", procurarNoVetor(e));
 	}
 	
 	@Test
 	public void testAlterarVet() throws SQLException, PatrimonioException {
-		e = new Equipamento("codigo alterado", "descricao alterarda");
-		instance.alterar("codigo alterado", "descricao alterarda", vector.lastElement());
-		assertTrue("Teste de Inclusao no Equipamento Vet.", vector.lastElement().equals(e));
+		instance.alterar("codigo alterado", "descricao alterarda", e);
+		Equipamento e2 = new Equipamento("codigo alterado", "descricao alterarda");
+		assertNotNull("Teste de Inclusao no Equipamento Vet.", procurarNoVetor(e2));
 	}
 	
-	@Test
-	public void testExcluirVet() throws SQLException, PatrimonioException {
-		e = vector.lastElement();
+	@Test(expected = PatrimonioException.class)
+	public void testAlterarNaoExistente() throws SQLException, PatrimonioException {
+		Equipamento eq = new Equipamento("codigo", "nao existe");
+		instance.alterar("codigo alterado", "descricao alterarda", eq);
+	}
+	
+	@Test(expected = PatrimonioException.class)
+	public void testAlterarNull() throws SQLException, PatrimonioException {
+		instance.alterar("codigo alterado", "descricao alterarda", null);
+	}
+	
+	@Test (expected = PatrimonioException.class)
+	public void testExcluirNull() throws SQLException, PatrimonioException {
+		e = null;
 		instance.excluir(e);
-		assertFalse("Teste de Exclusao no Equipamento Vet.", vector.contains(e));
+	}
+	
+	public Equipamento procurarNoVetor(Equipamento teste) throws PatrimonioException, SQLException {
+		todos = instance.getEquipamento_vet();
+		Iterator<Equipamento> i = todos.iterator();
+		while(i.hasNext()){
+			Equipamento e = i.next();
+			if(e.equals(teste))
+				return e;			
+		}
+		return null;
 	}
 	
 }
