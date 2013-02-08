@@ -133,30 +133,9 @@ public class EquipamentoDAO {
 	}
 	
 	
-	private boolean inDB(Equipamento e) throws SQLException, PatrimonioException	{
+	private boolean inDBGeneric(String query) throws SQLException{
 		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM equipamento WHERE " +
-				"equipamento.codigo = \"" + e.getCodigo() + "\" and " +
-				"equipamento.descricao = \"" + e.getDescricao() + "\";");
-		ResultSet rs = pst.executeQuery();
-		
-		if(!rs.next()){
-			rs.close();
-			pst.close();
-			con.close();
-			return false;
-		}
-		else {
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
-	}
-	private boolean inDBCodigo(String codigo) throws SQLException{
-		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM equipamento WHERE " +
-				"codigo = \"" + codigo + "\";");
+		PreparedStatement pst = con.prepareStatement(query);
 		ResultSet rs = pst.executeQuery();
 		
 		if(!rs.next())
@@ -173,29 +152,21 @@ public class EquipamentoDAO {
 			return true;
 		}
 	}
+	private boolean inDB(Equipamento e) throws SQLException, PatrimonioException{
+		return this.inDBGeneric("SELECT * FROM equipamento WHERE " +
+				"equipamento.codigo = \"" + e.getCodigo() + "\" and " +
+				"equipamento.descricao = \"" + e.getDescricao() + "\";");
+	}
+	private boolean inDBCodigo(String codigo) throws SQLException{
+		return this.inDBGeneric("SELECT * FROM equipamento WHERE " +
+				"codigo = \"" + codigo + "\";");
+	}
 	private boolean inOtherDB(Equipamento e) throws SQLException{
-		Connection con =  FactoryConnection.getInstance().getConnection();
-		
-		PreparedStatement pst = con.prepareStatement(
+		return this.inDBGeneric(
 				"SELECT * FROM reserva_equipamento WHERE " +
 				"id_equipamento = (SELECT id_equipamento FROM equipamento WHERE " +
 				"equipamento.codigo = \"" + e.getCodigo() + "\" and " +
 				"equipamento.descricao = \"" + e.getDescricao() +  "\");");
-		ResultSet rs = pst.executeQuery();
-		
-		if(!rs.next())
-		{
-			rs.close();
-			pst.close();
-			con.close();
-			return false;
-		}
-		else {
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
 	}
 
 	

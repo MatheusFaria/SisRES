@@ -154,112 +154,65 @@ public class ProfessorDAO {
 	}
 	
 	
-	private boolean inDB(Professor prof) throws SQLException{
+	private boolean inDBGeneric(String query) throws SQLException{
 		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM professor WHERE " +
+		PreparedStatement pst = con.prepareStatement(query);
+		ResultSet rs = pst.executeQuery();
+		
+		if(!rs.next())
+		{
+			rs.close();
+			pst.close();
+			con.close();
+			return false;
+		}
+		else {
+			rs.close();
+			pst.close();
+			con.close();
+			return true;
+		}
+	}
+	private boolean inDB(Professor prof) throws SQLException{
+		return this.inDBGeneric("SELECT * FROM professor WHERE " +
 				"professor.nome = \"" + prof.getNome() + "\" and " +
 				"professor.cpf = \"" + prof.getCpf() + "\" and " +
 				"professor.telefone = \"" + prof.getTelefone() + "\" and " +
 				"professor.email = \"" + prof.getEmail() + "\" and " +
 				"professor.matricula = \"" + prof.getMatricula() + "\";");
-		ResultSet rs = pst.executeQuery();
-		
-		if(!rs.next()){
-			rs.close();
-			pst.close();
-			con.close();
-			return false;
-		}
-		else {
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
 	}
 	private boolean inDBCpf(String codigo) throws SQLException{
-		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM professor WHERE " +
+		return this.inDBGeneric("SELECT * FROM professor WHERE " +
 				"cpf = \"" + codigo + "\";");
-		ResultSet rs = pst.executeQuery();
-		
-		if(!rs.next())
-		{
-			rs.close();
-			pst.close();
-			con.close();
-			return false;
-		}
-		else {
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
 	}
 	private boolean inDBMatricula(String codigo) throws SQLException{
-		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM professor WHERE " +
+		return this.inDBGeneric("SELECT * FROM professor WHERE " +
 				"matricula = \"" + codigo + "\";");
-		ResultSet rs = pst.executeQuery();
-		
-		if(!rs.next())
-		{
-			rs.close();
-			pst.close();
-			con.close();
-			return false;
-		}
-		else {
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
 	}
 	private boolean inOtherDB(Professor prof) throws SQLException{
-		Connection con =  FactoryConnection.getInstance().getConnection();
-		
-		PreparedStatement pst = con.prepareStatement(
+		if ( this.inDBGeneric(
 				"SELECT * FROM reserva_sala_professor WHERE " +
 				"id_professor = (SELECT id_professor FROM professor WHERE " +
 				"professor.nome = \"" + prof.getNome() + "\" and " +
 				"professor.cpf = \"" + prof.getCpf() + "\" and " +
 				"professor.telefone = \"" + prof.getTelefone() + "\" and " +
 				"professor.email = \"" + prof.getEmail() + "\" and " +
-				"professor.matricula = \"" + prof.getMatricula() + "\");");
-		ResultSet rs = pst.executeQuery();
-		
-		if(rs.next())
+				"professor.matricula = \"" + prof.getMatricula() + "\");") == false)
 		{
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
+			if(this.inDBGeneric(
+					"SELECT * FROM reserva_equipamento WHERE " +
+					"id_professor = (SELECT id_professor FROM professor WHERE " +
+					"professor.nome = \"" + prof.getNome() + "\" and " +
+					"professor.cpf = \"" + prof.getCpf() + "\" and " +
+					"professor.telefone = \"" + prof.getTelefone() + "\" and " +
+					"professor.email = \"" + prof.getEmail() + "\" and " +
+					"professor.matricula = \"" + prof.getMatricula() + "\");") == false)
+			{
+				return false;
+			}
 		}
 		
-		pst = con.prepareStatement(
-				"SELECT * FROM reserva_equipamento WHERE " +
-				"id_professor = (SELECT id_professor FROM professor WHERE " +
-				"professor.nome = \"" + prof.getNome() + "\" and " +
-				"professor.cpf = \"" + prof.getCpf() + "\" and " +
-				"professor.telefone = \"" + prof.getTelefone() + "\" and " +
-				"professor.email = \"" + prof.getEmail() + "\" and " +
-				"professor.matricula = \"" + prof.getMatricula() + "\");");
-		rs = pst.executeQuery();
-		
-		if(rs.next())
-		{
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
-		
-		rs.close();
-		pst.close();
-		con.close();
-		return false;
+		return true;
 	}
 	
 	

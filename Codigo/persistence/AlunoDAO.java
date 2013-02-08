@@ -156,74 +156,43 @@ public class AlunoDAO {
 	}
 	
 	
-	private boolean inDB(Aluno aluno) throws SQLException{
+	private boolean inDBGeneric(String query) throws SQLException{
 		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM aluno WHERE " +
+		PreparedStatement pst = con.prepareStatement(query);
+		ResultSet rs = pst.executeQuery();
+		
+		if(!rs.next())
+		{
+			rs.close();
+			pst.close();
+			con.close();
+			return false;
+		}
+		else {
+			rs.close();
+			pst.close();
+			con.close();
+			return true;
+		}
+	}
+	private boolean inDB(Aluno aluno) throws SQLException{
+		return this.inDBGeneric("SELECT * FROM aluno WHERE " +
 				"aluno.nome = \"" + aluno.getNome() + "\" and " +
 				"aluno.cpf = \"" + aluno.getCpf() + "\" and " +
 				"aluno.telefone = \"" + aluno.getTelefone() + "\" and " +
 				"aluno.email = \"" + aluno.getEmail() + "\" and " +
 				"aluno.matricula = \"" + aluno.getMatricula() + "\";");
-		ResultSet rs = pst.executeQuery();
-		
-		if(!rs.next())
-		{
-			rs.close();
-			pst.close();
-			con.close();
-			return false;
-		}
-		else {
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
 	}
 	private boolean inDBCpf(String codigo) throws SQLException{
-		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM aluno WHERE " +
+		return this.inDBGeneric("SELECT * FROM aluno WHERE " +
 				"aluno.cpf = \"" + codigo + "\";");
-		ResultSet rs = pst.executeQuery();
-		
-		if(!rs.next())
-		{
-			rs.close();
-			pst.close();
-			con.close();
-			return false;
-		}
-		else {
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
 	}
 	private boolean inDBMatricula(String codigo) throws SQLException{
-		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM aluno WHERE " +
+		return this.inDBGeneric("SELECT * FROM aluno WHERE " +
 				"aluno.matricula = \"" + codigo + "\";");
-		ResultSet rs = pst.executeQuery();
-		
-		if(!rs.next())
-		{
-			rs.close();
-			pst.close();
-			con.close();
-			return false;
-		}
-		else {
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
 	}
-	private boolean inOtherDB(Aluno aluno) throws SQLException, ClienteException{		
-		Connection con =  FactoryConnection.getInstance().getConnection();
-		
-		PreparedStatement pst = con.prepareStatement(
+	private boolean inOtherDB(Aluno aluno) throws SQLException, ClienteException{
+		return this.inDBGeneric(
 				"SELECT * FROM reserva_sala_aluno WHERE " +
 				"id_aluno = (SELECT id_aluno FROM aluno WHERE " +
 				"aluno.nome = \"" + aluno.getNome() + "\" and " +
@@ -231,21 +200,6 @@ public class AlunoDAO {
 				"aluno.telefone = \"" + aluno.getTelefone() + "\" and " +
 				"aluno.email = \"" + aluno.getEmail() + "\" and " +
 				"aluno.matricula = \"" + aluno.getMatricula() + "\");");
-		ResultSet rs = pst.executeQuery();
-		
-		if(!rs.next())
-		{
-			rs.close();
-			pst.close();
-			con.close();
-			return false;
-		}
-		else {
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
 	}
 	
 	

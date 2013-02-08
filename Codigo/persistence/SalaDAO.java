@@ -137,88 +137,56 @@ public class SalaDAO {
 	}
 	
 	
-	private boolean inDB(Sala sala) throws SQLException{
+	private boolean inDBGeneric(String query) throws SQLException{
 		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM sala WHERE " +
+		PreparedStatement pst = con.prepareStatement(query);
+		ResultSet rs = pst.executeQuery();
+		
+		if(!rs.next())
+		{
+			rs.close();
+			pst.close();
+			con.close();
+			return false;
+		}
+		else {
+			rs.close();
+			pst.close();
+			con.close();
+			return true;
+		}
+	}
+	private boolean inDB(Sala sala) throws SQLException{
+		return this.inDBGeneric("SELECT * FROM sala WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
 				"sala.descricao = \"" + sala.getDescricao() + "\" and " +
 				"sala.capacidade = \"" + sala.getCapacidade() +
 				"\";");
-		ResultSet rs = pst.executeQuery();
-		
-		if(!rs.next())
-		{
-			rs.close();
-			pst.close();
-			con.close();
-			return false;
-		}
-		else {
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
 	}
 	private boolean inDBCodigo(String codigo) throws SQLException{
-		Connection con = FactoryConnection.getInstance().getConnection();
-		PreparedStatement pst = con.prepareStatement("SELECT * FROM sala WHERE " +
+		return this.inDBGeneric("SELECT * FROM sala WHERE " +
 				"sala.codigo = \"" + codigo + "\";");
-		ResultSet rs = pst.executeQuery();
-		
-		if(!rs.next())
-		{
-			rs.close();
-			pst.close();
-			con.close();
-			return false;
-		}
-		else {
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
 	}
 	private boolean inOtherDB(Sala sala) throws SQLException{
-		Connection con =  FactoryConnection.getInstance().getConnection();
-		
-		PreparedStatement pst = con.prepareStatement(
+		if( this.inDBGeneric(
 				"SELECT * FROM reserva_sala_professor WHERE " +
 				"id_sala = (SELECT id_sala FROM equipamento WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
 				"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
-				"sala.capacidade = " + sala.getCapacidade() +");");
-		ResultSet rs = pst.executeQuery();
-		
-		if(rs.next())
+				"sala.capacidade = " + sala.getCapacidade() +");") == false)
 		{
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
+			if(this.inDBGeneric(
+					"SELECT * FROM reserva_sala_aluno WHERE " +
+							"id_sala = (SELECT id_sala FROM equipamento WHERE " +
+							"sala.codigo = \"" + sala.getCodigo() + "\" and " +
+							"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
+							"sala.capacidade = " + sala.getCapacidade() +");") == false)
+			{
+				return false;
+			}
 		}
 		
-		pst = con.prepareStatement(
-				"SELECT * FROM reserva_sala_aluno WHERE " +
-				"id_sala = (SELECT id_sala FROM equipamento WHERE " +
-				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
-				"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
-				"sala.capacidade = " + sala.getCapacidade() +");");
-		rs = pst.executeQuery();
-		
-		if(rs.next())
-		{
-			rs.close();
-			pst.close();
-			con.close();
-			return true;
-		}
-		
-		rs.close();
-		pst.close();
-		con.close();
-		return false;
+		return true;
 	}
 	
 	
