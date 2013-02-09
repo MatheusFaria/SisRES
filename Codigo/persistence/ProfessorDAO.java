@@ -36,20 +36,14 @@ public class ProfessorDAO {
 				throw new ClienteException(CPF_JA_EXISTENTE);
 			else if(this.inDBMatricula(prof.getMatricula()))
 				throw new ClienteException(MATRICULA_JA_EXISTENTE);
-			else if(!this.inDB(prof))
-			{
-				this.updateQuery("INSERT INTO " +
+			this.updateQuery("INSERT INTO " +
 						"professor (nome, cpf, telefone, email, matricula) VALUES (" +
 						"\"" + prof.getNome() + "\", " +
 						"\"" + prof.getCpf()+ "\", " +
 						"\"" + prof.getTelefone() + "\", " +
 						"\"" + prof.getEmail() + "\", " +
 						"\"" + prof.getMatricula() + "\"); "
-					);
-			}
-			else
-				throw new ClienteException(PROFESSOR_JA_EXISTENTE);
-			
+					);			
 	}
 
 	public void alterar(Professor prof_velho, Professor prof_novo) throws SQLException, ClienteException {
@@ -57,6 +51,7 @@ public class ProfessorDAO {
 			throw new ClienteException(PROFESSOR_NULO);
 		if(prof_novo == null)
 			throw new ClienteException(PROFESSOR_NULO);
+		
 		Connection con = FactoryConnection.getInstance().getConnection();
 		PreparedStatement pst;
 		
@@ -64,9 +59,9 @@ public class ProfessorDAO {
 			throw new ClienteException(PROFESSOR_NAO_EXISTENTE);
 		if(this.inOtherDB(prof_velho))
 			throw new ClienteException(PROFESSOR_EM_USO);
-		else if(this.inDBCpf(prof_novo.getCpf()))
+		else if(prof_velho.getCpf() != prof_novo.getCpf() && this.inDBCpf(prof_novo.getCpf()))
 			throw new ClienteException(CPF_JA_EXISTENTE);
-		else if(this.inDBMatricula(prof_novo.getMatricula()))
+		else if(prof_velho.getMatricula() != prof_novo.getMatricula() && this.inDBMatricula(prof_novo.getMatricula()))
 			throw new ClienteException(MATRICULA_JA_EXISTENTE);
 		else if(!this.inDB(prof_novo)){
 			String msg = "UPDATE professor SET " +
@@ -136,7 +131,7 @@ public class ProfessorDAO {
 	 * Metodos Privados
 	 * */
 	
-	private Vector<Professor> buscar(String query) throws SQLException, ClienteException {
+	private Vector<Professor> buscar(String query) throws SQLException, ClienteException {		
 		Vector<Professor> vet = new Vector<Professor>();
 		
 		Connection con =  FactoryConnection.getInstance().getConnection();

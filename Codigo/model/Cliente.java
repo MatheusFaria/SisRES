@@ -122,8 +122,8 @@ public abstract class Cliente {
 		if(	this.getNome().equals(b.getNome()) &&
 			this.getCpf().equals(b.getCpf()) &&
 			this.getMatricula().equals(b.getMatricula()) &&
-			this.getEmail().equals(b.getEmail()) &&
-			this.getTelefone().equals(b.getTelefone())){
+			this.getTelefone().equals(b.getTelefone()) &&
+			this.getEmail().equals(b.getEmail())){
 			
 			return true;
 		}

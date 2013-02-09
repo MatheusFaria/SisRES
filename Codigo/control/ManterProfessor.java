@@ -14,13 +14,13 @@ public class ManterProfessor {
 	//Singleton
 		private static ManterProfessor instance;
 		private ManterProfessor() {
-	}
+		}
 		public static ManterProfessor getInstance() {
 		if(instance == null)
 			instance = new ManterProfessor();
 		return instance;
-	}
-	//
+		}
+	// 
 	
 	public Vector<Professor> getProfessores_vet() throws SQLException, ClienteException{
 		this.professores_vet = ProfessorDAO.getInstance().buscarTodos();
