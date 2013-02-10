@@ -182,9 +182,10 @@ public class SalaDAOTest {
 	
 	@Test
 	public void testExcluirExistente() throws PatrimonioException, SQLException {
-		Sala novo = new Sala("codigo", "descricao - alterada", "capacidade - alterada");
-		SalaDAO.getInstance().excluir(novo);
-		assertFalse("Testando Exclusao no Banco", SalaDAO.getInstance().inDB(novo));
+		setUpAlterar();
+		SalaDAO.getInstance().excluir(sala);
+		assertFalse("Testando Exclusao no Banco", this.inDB(sala));
+		tearDownAlterar();
 	}
 	
 }
