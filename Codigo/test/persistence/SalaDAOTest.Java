@@ -144,6 +144,15 @@ public class SalaDAOTest {
 		assertTrue("Testando Alteracao no Banco", this.inDB(sala_new));
 		tearDownAlterar();
 	}
+
+	@Test
+	public void testAlterarCapacidade() throws PatrimonioException, SQLException {
+		setUpAlterar();
+		sala_new = new Sala("codigo", "descricao", "2");
+		SalaDAO.getInstance().alterar(sala, sala_new);
+		assertTrue("Testando Alteracao no Banco", this.inDB(sala_new));
+		tearDownAlterar();
+	}
 	
 	@Test (expected= PatrimonioException.class)
 	public void testIncluirExistente() throws PatrimonioException, SQLException {
