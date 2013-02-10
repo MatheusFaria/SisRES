@@ -2,6 +2,9 @@ package test.control;
 
 import static org.junit.Assert.*;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Vector;
 
@@ -10,6 +13,8 @@ import model.Aluno;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import persistence.FactoryConnection;
 
 import control.ManterAluno;
 import exception.ClienteException;
@@ -31,40 +36,140 @@ public class ManterAlunoTest {
 	
 	@Test
 	public void testGetInstance() {
-		assertTrue("Verifica método getInstance().", ManterAluno.getInstance() instanceof ManterAluno);
+		assertTrue("Verifica método getInstance() de ManterAluno.", ManterAluno.getInstance() instanceof ManterAluno);
 	}
 
 	@Test
 	public void testSingleton() {
 		ManterAluno p = ManterAluno.getInstance();
 		ManterAluno q = ManterAluno.getInstance();
-		assertSame("Testando o Padrao Singleton", p, q);
+		assertSame("Testando o Padrao Singleton em ManterAluno", p, q);
 	}
 
 	
 	
 	@Test
 	public void testInserir() throws ClienteException, SQLException {
-		Aluno a = new Aluno("Nome para Incluir", "868.563.327-34", "123456", "1234-5678", "Nome@email");
-		ManterAluno.getInstance().inserir("Nome para Incluir", "868.563.327-34", "123456", "1234-5678", "Nome@email");
+		Aluno aluno = new Aluno("Incluindo", "040.757.021-70", "123456", "9999-9999", "aluno@email");
+		ManterAluno.getInstance().inserir("Incluindo", "040.757.021-70", "123456", "9999-9999", "aluno@email");
 		
-		assertTrue("Verifica se o aluno foi inserido.", alunos.lastElement().equals(a));
+		boolean resultado = this.estaNoBanco("SELECT * FROM aluno WHERE " +
+				"aluno.nome = \"" + aluno.getNome() + "\" and " +
+				"aluno.cpf = \"" + aluno.getCpf() + "\" and " +
+				"aluno.telefone = \"" + aluno.getTelefone() + "\" and " +
+				"aluno.email = \"" + aluno.getEmail() + "\" and " +
+				"aluno.matricula = \"" + aluno.getMatricula() + "\";");
+				
+		if(resultado){
+			this.executaNoBanco("DELETE FROM aluno WHERE " +
+					"aluno.nome = \"" + aluno.getNome() + "\" and " +
+					"aluno.cpf = \"" + aluno.getCpf() + "\" and " +
+					"aluno.telefone = \"" + aluno.getTelefone() + "\" and " +
+					"aluno.email = \"" + aluno.getEmail() + "\" and " +
+					"aluno.matricula = \"" + aluno.getMatricula() + "\";");
+		}
+		
+		Aluno a = alunos.lastElement();
+		boolean resultado2 = aluno.equals(a);
+		alunos.remove(alunos.lastElement());
+		assertTrue("Teste de Inclusao do Aluno.", resultado == true && resultado2 == true);
 	}
 	
-	@Test 
+	
+	@Test
 	public void testAlterar() throws ClienteException, SQLException {
-		Aluno a = new Aluno("Nome para Alterar",  "868.563.327-34", "123456", "1234-5678", "Nome@email");
-		ManterAluno.getInstance().alterar("Nome para Alterar",  "868.563.327-34", "123456", "1234-5678", "Nome@email", alunos.lastElement());
+		Aluno aluno = new Aluno("Incluindo", "040.757.021-70", "123456", "9999-9999", "aluno@email");
+		Aluno a = new Aluno("Alterando", "040.757.021-70", "123456", "9999-9999", "Nome@email");
 		
-		assertNotNull("Verifica se os dados foram alterados.", alunos.lastElement().equals(a));
+		this.executaNoBanco("INSERT INTO " +
+				"aluno (nome, cpf, telefone, email, matricula) VALUES (" +
+				"\"" + aluno.getNome() + "\", " +
+				"\"" + aluno.getCpf()+ "\", " +
+				"\"" + aluno.getTelefone() + "\", " +
+				"\"" + aluno.getEmail() + "\", " +
+				"\"" + aluno.getMatricula() + "\"); ");
+		
+		ManterAluno.getInstance().alterar("Alterando", "040.757.021-70", "123456", 
+				"9999-9999", "Nome@email", aluno);
+		
+		boolean resultado =  this.estaNoBanco("SELECT * FROM aluno WHERE " +
+				"aluno.nome = \"" + a.getNome() + "\" and " +
+				"aluno.cpf = \"" + a.getCpf() + "\" and " +
+				"aluno.telefone = \"" + a.getTelefone() + "\" and " +
+				"aluno.email = \"" + a.getEmail() + "\" and " +
+				"aluno.matricula = \"" + a.getMatricula() + "\";");
+		if(resultado)
+			this.executaNoBanco("DELETE FROM aluno WHERE " +
+					"aluno.nome = \"" + a.getNome() + "\" and " +
+					"aluno.cpf = \"" + a.getCpf() + "\" and " +
+					"aluno.telefone = \"" + a.getTelefone() + "\" and " +
+					"aluno.email = \"" + a.getEmail() + "\" and " +
+					"aluno.matricula = \"" + a.getMatricula() + "\";");
+		
+		assertTrue("Teste de Alteracao do Aluno.", resultado);
 	}
-
-	@Test 
+	
+	@Test
 	public void testExcluir() throws ClienteException, SQLException {
-		Aluno a = alunos.lastElement();
-		ManterAluno.getInstance().excluir(a);
+		Aluno aluno = new Aluno("Incluindo", "040.757.021-70", "123456", "9999-9999", "aluno@email");
 		
-		assertFalse("Verifica se o objeto foi excluido.", alunos.contains(a));
+		this.executaNoBanco("INSERT INTO " +
+				"aluno (nome, cpf, telefone, email, matricula) VALUES (" +
+				"\"" + aluno.getNome() + "\", " +
+				"\"" + aluno.getCpf()+ "\", " +
+				"\"" + aluno.getTelefone() + "\", " +
+				"\"" + aluno.getEmail() + "\", " +
+				"\"" + aluno.getMatricula() + "\");");
+		
+		ManterAluno.getInstance().excluir(aluno);
+		
+		boolean resultado =  this.estaNoBanco("SELECT * FROM aluno WHERE " +
+				"aluno.nome = \"" + aluno.getNome() + "\" and " +
+				"aluno.cpf = \"" + aluno.getCpf() + "\" and " +
+				"aluno.telefone = \"" + aluno.getTelefone() + "\" and " +
+				"aluno.email = \"" + aluno.getEmail() + "\" and " +
+				"aluno.matricula = \"" + aluno.getMatricula() + "\";");
+		if(resultado)
+			this.executaNoBanco("DELETE FROM aluno WHERE " +
+					"aluno.nome = \"" + aluno.getNome() + "\" and " +
+					"aluno.cpf = \"" + aluno.getCpf() + "\" and " +
+					"aluno.telefone = \"" + aluno.getTelefone() + "\" and " +
+					"aluno.email = \"" + aluno.getEmail() + "\" and " +
+					"aluno.matricula = \"" + aluno.getMatricula() + "\";");
+		
+		boolean resultado2 = true;
+		if(alunos.size() > 0)
+			resultado2 = !alunos.lastElement().equals(aluno);
+		
+		assertTrue("Teste de Exclusao do Professor.", resultado == false && resultado2 == true);
 	}
-
+	
+	
+	
+	private void executaNoBanco(String msg) throws SQLException{
+		Connection con =  FactoryConnection.getInstance().getConnection();
+		PreparedStatement pst = con.prepareStatement(msg);
+		pst.executeUpdate();
+		pst.close();
+		con.close();
+	}
+	private boolean estaNoBanco(String query) throws SQLException{
+		Connection con = FactoryConnection.getInstance().getConnection();
+		PreparedStatement pst = con.prepareStatement(query);
+		ResultSet rs = pst.executeQuery();
+		
+		if(!rs.next())
+		{
+			rs.close();
+			pst.close();
+			con.close();
+			return false;
+		}
+		else {
+			rs.close();
+			pst.close();
+			con.close();
+			return true;
+		}
+	}
 }
