@@ -40,11 +40,12 @@ public class Sala extends Patrimonio {
 	}
 
 	public boolean equals(Sala b){
-		if( super.equals(b) &&
-			this.getDescricao().equals(b.getDescricao())){
+		if(this.getCodigo().equals(b.getCodigo()) &&
+			this.getDescricao().equals(b.getDescricao()) &&
+			this.getCapacidade().equals(b.getCapacidade()))
+			{
 			return true;
 		}
-		
 		return false;
 	}
 }
