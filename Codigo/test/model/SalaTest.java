@@ -45,6 +45,15 @@ public class SalaTest {
 	}
 	
 	@Test
+	public void testNotEqualsCodigo() throws PatrimonioException {
+		setUp();
+		Sala sala_new = new Sala("c", "descricao", "1");
+		assertFalse("Falha no Equals.", sala.equals(sala_new));
+		sala_new = null;
+		tearDown();
+	}
+	
+	@Test
 	public void testCodigo() throws PatrimonioException {
 		setUp();
 		assertEquals("codigo diferente instanciado", "codigo", sala.getCodigo());
