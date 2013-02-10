@@ -2,33 +2,47 @@ package test.model;
 
 import static org.junit.Assert.*;
 import model.Sala;
-
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
-
 import exception.PatrimonioException;
 
 public class SalaTest {
-
-  @Test
-  public void testInstance() throws PatrimonioException {
-		assertTrue(new Sala("codigo", "descricao","capacidade") instanceof Sala);
+	
+	Sala sala;
+	
+	@Before
+	public void setUp() throws PatrimonioException{
+		sala = new Sala("codigo", "descricao", "1");
+	}
+	
+	@After
+	public void tearDown() throws PatrimonioException{
+		sala = null;
+	}
+	
+	@Test
+    public void testInstance() throws PatrimonioException {
+		assertTrue(new Sala("codigo", "descricao","1") instanceof Sala);
 	}
 	
 	@Test
 	public void testCodigo() throws PatrimonioException {
-		Sala eq = new Sala("codigo", "descricao","capacidade");
-		assertEquals("codigo diferente instanciado", "codigo", eq.getCodigo());
+		setUp();
+		assertEquals("codigo diferente instanciado", "codigo", sala.getCodigo());
+		tearDown();
 	}
 	
 	@Test
 	public void testDescricao() throws PatrimonioException {
-		Sala eq = new Sala("codigo", "descricao","capacidade");
-		assertEquals("Descricao diferente instanciada", "descricao", eq.getDescricao());
+		setUp();
+		assertEquals("Descricao diferente instanciada", "descricao", sala.getDescricao());
+		tearDown();
 	}	
 	
 	@Test(expected = exception.PatrimonioException.class)
 	public void testDescricaoVazia() throws PatrimonioException {
-		new Sala("codigo", "", "capacidade");
+		new Sala("codigo", "", "1");
 	}
 	
 	@Test(expected = exception.PatrimonioException.class)
@@ -38,17 +52,17 @@ public class SalaTest {
 	
 	@Test(expected = exception.PatrimonioException.class)
 	public void testCodigoVazio() throws PatrimonioException {
-		new Sala("", "descricao","capacidade");
+		new Sala("", "descricao","1");
 	}
 	
 	@Test(expected = exception.PatrimonioException.class)
 	public void testCodigoNulo() throws PatrimonioException {
-		new Sala(null, "descricao", "capacidade");
+		new Sala(null, "descricao", "1");
 	}
 	
 	@Test(expected = exception.PatrimonioException.class)
 	public void testDescricaoNulo() throws PatrimonioException {
-		new Sala("codigo", null,"capacidade");
+		new Sala("codigo", null,"1");
 	}
 	
 	@Test(expected = exception.PatrimonioException.class)
