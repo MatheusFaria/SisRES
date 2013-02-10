@@ -58,8 +58,8 @@ public class SalaDAO {
 		
 		if(!this.inDB(old_sala))
 			throw new PatrimonioException(SALA_NAO_EXISTENTE);
-		else if(this.inOtherDB(old_sala))
-			throw new PatrimonioException(SALA_EM_USO);
+		else if(this.inOtherDB(old_sala))						// aqui ele falha tentando acessar uma tabela inexistente.
+			throw new PatrimonioException(SALA_EM_USO);			// aqui tb.
 		else if(this.inDBCodigo(new_sala.getCodigo()))
 			throw new PatrimonioException(CODIGO_JA_EXISTENTE);
 		if(!this.inDB(new_sala)){
@@ -86,8 +86,8 @@ public class SalaDAO {
 	public void excluir(Sala sala) throws SQLException, PatrimonioException {
 		if(sala == null)
 			throw new PatrimonioException(SALA_NULA);
-		else if(this.inOtherDB(sala))
-			throw new PatrimonioException(SALA_EM_USO);
+			else if(this.inOtherDB(sala))						//aqui ele falha tentando acessar uma tabela inexistente.
+				throw new PatrimonioException(SALA_EM_USO);		//aqui tb.
 		else if(this.inDB(sala)){
 			this.updateQuery("DELETE FROM sala WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
@@ -111,7 +111,7 @@ public class SalaDAO {
 		return this.buscar("SELECT * FROM sala WHERE descricao = " + "\"" + valor + "\";");
 	}
 	public Vector<Sala> buscarPorCapacidade(String valor) throws SQLException, PatrimonioException {
-		return this.buscar("SELECT * FROM sala WHERE descricao = " + valor + ";");
+		return this.buscar("SELECT * FROM sala WHERE capacidade = " + valor + ";");
 	}
 	
 	
@@ -156,7 +156,7 @@ public class SalaDAO {
 			return true;
 		}
 	}
-	public boolean inDB(Sala sala) throws SQLException{
+	private boolean inDB(Sala sala) throws SQLException{
 		return this.inDBGeneric("SELECT * FROM sala WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
 				"sala.descricao = \"" + sala.getDescricao() + "\" and " +
