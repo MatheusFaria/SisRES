@@ -196,4 +196,12 @@ public class SalaDAOTest {
 		tearDownAlterar();
 	}
 	
+	@Test
+	public void testBuscarDescricao() throws PatrimonioException, SQLException {
+		setUpAlterar();
+		busca = SalaDAO.getInstance().buscarPorDescricao("descricao");
+		assertTrue("Testando Busca no Banco", busca.size() > 0);
+		tearDownAlterar();
+	}
+	
 }
