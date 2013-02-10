@@ -219,4 +219,32 @@ public class SalaDAOTest {
 		pst.close();
 		con.close();
 	}
+
+	private boolean inDB(Sala sala) throws SQLException{
+		return this.inDBGeneric("SELECT * FROM sala WHERE " +
+				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
+				"sala.descricao = \"" + sala.getDescricao() + "\" and " +
+				"sala.capacidade = \"" + sala.getCapacidade() +
+				"\";");
+	}
+	
+	private boolean inDBGeneric(String query) throws SQLException{
+		Connection con = FactoryConnection.getInstance().getConnection();
+		PreparedStatement pst = con.prepareStatement(query);
+		ResultSet rs = pst.executeQuery();
+		
+		if(!rs.next())
+		{
+			rs.close();
+			pst.close();
+			con.close();
+			return false;
+		}
+		else {
+			rs.close();
+			pst.close();
+			con.close();
+			return true;
+		}
+	}
 }
