@@ -39,47 +39,23 @@ public class ManterSala {
 		return null;
 	}
 
-	//os blocos try catch dos métodos seguintes são para evitar estourar um exceção para o último nível.
-	//as tabelas que ele tenta consultar no banco não foram criadas.
-	
 	public void inserir(String codigo, String descricao, String capacidade) throws PatrimonioException, SQLException {
-				try{
-					Sala sala = new Sala(codigo, descricao, capacidade);
-					SalaDAO.getInstance().incluir(sala);
-					this.salas_vet.add(sala);
-				}
-				catch(PatrimonioException e)
-				{
-					//tratar as exceção aqui.
-				}
-			
+				Sala sala = new Sala(codigo, descricao, capacidade);
+				SalaDAO.getInstance().incluir(sala);
+				this.salas_vet.add(sala);	
 	}
 
 	public void alterar(String codigo, String descricao, String capacidade, Sala sala) throws PatrimonioException, SQLException {
-		
-			try {
 				Sala old_sala = new Sala(sala.getCodigo(), sala.getDescricao(), sala.getCapacidade());
 				sala.setCodigo(codigo);
 				sala.setDescricao(descricao);
 				sala.setCapacidade(capacidade);
 				SalaDAO.getInstance().alterar(old_sala, sala);
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				//tabela faltando no banco.
-			}
-	
 	}
 
 	public void excluir(Sala sala) throws SQLException, PatrimonioException {
-		
-			try {
 				SalaDAO.getInstance().excluir(sala);
 				this.salas_vet.remove(sala);
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				//tabela faltando no banco.
-			}
-		
 	}
 
 }
