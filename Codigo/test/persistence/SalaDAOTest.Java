@@ -19,6 +19,9 @@ import exception.PatrimonioException;
 
 
 public class SalaDAOTest {
+
+	private Sala sala, sala_new;
+	private Vector<Sala> busca;	
 	
 	@BeforeClass
 	public static void setUpClass() throws PatrimonioException, SQLException {
@@ -29,6 +32,24 @@ public class SalaDAOTest {
 	public static void tearDownClass() throws SQLException, PatrimonioException {
 		
 	}	
+	
+	@Before
+	public void setUp() throws SQLException, PatrimonioException {
+		sala = new Sala("codigo", "descricao", "1");
+		
+	}
+	
+	//criar outros testes de alterar.
+	@Before
+	public void setUpAlterar() throws SQLException, PatrimonioException {
+		sala = new Sala("codigo_old", "descricao", "1");
+		sala_new = new Sala("codigo", "descricao", "2");
+		this.executaNoBanco("INSERT INTO " +
+				"sala (codigo, descricao, capacidade) VALUES (" +
+				"\"" + sala.getCodigo() + "\", " +
+				"\"" + sala.getDescricao() + "\", " +
+				"\"" + sala.getCapacidade() + "\"); ");
+	}
 	
 	@Test
 	public void testInstance() {
