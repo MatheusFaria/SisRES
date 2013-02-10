@@ -170,8 +170,8 @@ public class SalaDAOTest {
 	
 	@Test (expected= PatrimonioException.class)
 	public void testAlterarIgual() throws PatrimonioException, SQLException {
-		Sala novo = new Sala("codigo", "descricao", "capacidade");
-		SalaDAO.getInstance().alterar(novo, novo);
+		setUpAlterar();
+		SalaDAO.getInstance().alterar(sala, sala);
 	}
 	
 	@Test (expected= PatrimonioException.class)
