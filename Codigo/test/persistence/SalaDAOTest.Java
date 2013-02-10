@@ -118,13 +118,13 @@ public class SalaDAOTest {
 		Vector<Sala> busca = SalaDAO.getInstance().buscarTodos();
 		assertNotNull("Testando a busca de elementos no BD.", busca);
 	}
-	
+
 	@Test
 	public void testAlterar() throws PatrimonioException, SQLException {
-		Sala antigo = new Sala("codigo", "descricao", "capacidade");
-		Sala novo = new Sala("codigo", "descricao - alterada", "capacidade - alterada");
-		SalaDAO.getInstance().alterar(antigo, novo);
-		assertTrue("Testando Alteracao no Banco", SalaDAO.getInstance().inDB(novo));
+		setUpAlterar();
+		SalaDAO.getInstance().alterar(sala, sala_new);
+		assertTrue("Testando Alteracao no Banco", this.inDB(sala_new));
+		tearDownAlterar();
 	}
 	
 	@Test (expected= PatrimonioException.class)
