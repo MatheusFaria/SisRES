@@ -211,4 +211,12 @@ public class SalaDAOTest {
 		assertTrue("Testando Busca no Banco", busca.size() > 0);
 		tearDownAlterar();
 	}
+
+	private void executaNoBanco(String msg) throws SQLException{
+		Connection con =  FactoryConnection.getInstance().getConnection();
+		PreparedStatement pst = con.prepareStatement(msg);
+		pst.executeUpdate();
+		pst.close();
+		con.close();
+	}
 }
