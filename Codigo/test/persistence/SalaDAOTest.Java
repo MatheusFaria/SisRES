@@ -176,9 +176,8 @@ public class SalaDAOTest {
 	
 	@Test (expected= PatrimonioException.class)
 	public void testExcluirNaoExistente() throws PatrimonioException, SQLException {
-		Sala eq = new Sala("codigo", "descricao", "capacidade");
-		SalaDAO.getInstance().excluir(eq);
-		SalaDAO.getInstance().excluir(eq);
+		setUp();
+		SalaDAO.getInstance().excluir(sala);
 	}
 	
 	@Test
