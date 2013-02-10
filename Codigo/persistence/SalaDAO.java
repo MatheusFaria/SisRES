@@ -88,7 +88,7 @@ public class SalaDAO {
 			throw new PatrimonioException(SALA_NULA);
 		else if(this.inOtherDB(sala))
 			throw new PatrimonioException(SALA_EM_USO);
-		else if(!this.inDB(sala)){
+		else if(this.inDB(sala)){
 			this.updateQuery("DELETE FROM sala WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
 				"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
@@ -156,7 +156,7 @@ public class SalaDAO {
 			return true;
 		}
 	}
-	private boolean inDB(Sala sala) throws SQLException{
+	public boolean inDB(Sala sala) throws SQLException{
 		return this.inDBGeneric("SELECT * FROM sala WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
 				"sala.descricao = \"" + sala.getDescricao() + "\" and " +
@@ -175,7 +175,7 @@ public class SalaDAO {
 				"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
 				"sala.capacidade = " + sala.getCapacidade() +");") == false)
 		{
-			if(this.inDBGeneric(
+			if( this.inDBGeneric(
 					"SELECT * FROM reserva_sala_aluno WHERE " +
 							"id_sala = (SELECT id_sala FROM equipamento WHERE " +
 							"sala.codigo = \"" + sala.getCodigo() + "\" and " +
