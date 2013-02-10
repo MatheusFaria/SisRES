@@ -51,6 +51,20 @@ public class SalaDAOTest {
 				"\"" + sala.getCapacidade() + "\"); ");
 	}
 	
+	@After
+	public void tearDownAlterar() throws SQLException, PatrimonioException {
+		this.executaNoBanco("DELETE FROM sala WHERE " +
+					"sala.codigo = \"" + sala_new.getCodigo() + "\" and " +
+					"sala.descricao = \"" + sala_new.getDescricao() +  "\" and " +
+					"sala.capacidade = \"" + sala_new.getCapacidade() + "\";"
+					);
+		this.executaNoBanco("DELETE FROM sala WHERE " +
+					"sala.codigo = \"" + sala.getCodigo() + "\" and " +
+					"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
+					"sala.capacidade = \"" + sala.getCapacidade() + "\";"
+					);				
+	}
+
 	@Test
 	public void testInstance() {
 		assertTrue("Instanciando SalaDAO", SalaDAO.getInstance() instanceof SalaDAO);
