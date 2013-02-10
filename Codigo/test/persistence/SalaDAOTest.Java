@@ -5,21 +5,27 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Vector;
 
 import model.Sala;
 
+import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import persistence.FactoryConnection;
 import persistence.SalaDAO;
 import exception.PatrimonioException;
 
 
 public class SalaDAOTest {
-
+	
 	private Sala sala, sala_new;
 	private Vector<Sala> busca;	
 	
@@ -64,13 +70,13 @@ public class SalaDAOTest {
 					"sala.capacidade = \"" + sala.getCapacidade() + "\";"
 					);				
 	}
-
+	
 	@After
 	public void tearDown() throws SQLException, PatrimonioException {
 		sala = null;
 		sala_new = null;
 	}	
-
+	
 	@Test
 	public void testInstance() {
 		assertTrue("Instanciando SalaDAO", SalaDAO.getInstance() instanceof SalaDAO);
@@ -84,13 +90,19 @@ public class SalaDAOTest {
 	}
 	
 	@Test
+	public void testBuscarTodos() throws SQLException, PatrimonioException {
+		busca = SalaDAO.getInstance().buscarTodos();
+		assertNotNull("Testando a busca de elementos no BD.", busca);
+	}
+	
+	@Test
 	public void testIncluir() throws PatrimonioException, SQLException {
 		setUp();
 		SalaDAO.getInstance().incluir(sala);
 		assertTrue("Testando Inclusao no Banco", this.inDB(sala));
 		tearDownAlterar();
 	}
-	
+
 	@Test (expected= PatrimonioException.class)
 	public void testIncluirExistente() throws PatrimonioException, SQLException {
 		setUp();
@@ -105,20 +117,14 @@ public class SalaDAOTest {
 		SalaDAO.getInstance().alterar(null ,sala);
 		tearDownAlterar();
 	}
-
+	
 	@Test (expected= PatrimonioException.class)
 	public void testAlterarSegundoNulo() throws PatrimonioException, SQLException {
 		setUpAlterar();
 		SalaDAO.getInstance().alterar(sala, null);
 		tearDownAlterar();
 	}
-
-	@Test
-	public void testBuscarTodos() throws SQLException, PatrimonioException {
-		Vector<Sala> busca = SalaDAO.getInstance().buscarTodos();
-		assertNotNull("Testando a busca de elementos no BD.", busca);
-	}
-
+	
 	@Test
 	public void testAlterar() throws PatrimonioException, SQLException {
 		setUpAlterar();
@@ -135,7 +141,7 @@ public class SalaDAOTest {
 		assertTrue("Testando Alteracao no Banco", this.inDB(sala_new));
 		tearDownAlterar();
 	}
-
+	
 	@Test
 	public void testAlterarDescricao() throws PatrimonioException, SQLException {
 		setUpAlterar();
@@ -144,7 +150,7 @@ public class SalaDAOTest {
 		assertTrue("Testando Alteracao no Banco", this.inDB(sala_new));
 		tearDownAlterar();
 	}
-
+	
 	@Test
 	public void testAlterarCapacidade() throws PatrimonioException, SQLException {
 		setUpAlterar();
@@ -152,13 +158,6 @@ public class SalaDAOTest {
 		SalaDAO.getInstance().alterar(sala, sala_new);
 		assertTrue("Testando Alteracao no Banco", this.inDB(sala_new));
 		tearDownAlterar();
-	}
-	
-	@Test (expected= PatrimonioException.class)
-	public void testIncluirExistente() throws PatrimonioException, SQLException {
-		Sala novo = new Sala("codigo", "descricao", "capacidade");
-		SalaDAO.getInstance().incluir(novo);
-		SalaDAO.getInstance().incluir(novo);
 	}
 	
 	@Test (expected= PatrimonioException.class)
@@ -211,7 +210,7 @@ public class SalaDAOTest {
 		assertTrue("Testando Busca no Banco", busca.size() > 0);
 		tearDownAlterar();
 	}
-
+	
 	private void executaNoBanco(String msg) throws SQLException{
 		Connection con =  FactoryConnection.getInstance().getConnection();
 		PreparedStatement pst = con.prepareStatement(msg);
@@ -219,7 +218,7 @@ public class SalaDAOTest {
 		pst.close();
 		con.close();
 	}
-
+	
 	private boolean inDB(Sala sala) throws SQLException{
 		return this.inDBGeneric("SELECT * FROM sala WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
@@ -247,4 +246,5 @@ public class SalaDAOTest {
 			return true;
 		}
 	}
+	
 }
