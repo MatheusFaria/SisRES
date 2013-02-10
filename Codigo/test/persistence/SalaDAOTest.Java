@@ -188,4 +188,12 @@ public class SalaDAOTest {
 		tearDownAlterar();
 	}
 	
+	@Test
+	public void testBuscarCodigo() throws PatrimonioException, SQLException {
+		setUpAlterar();
+		busca = SalaDAO.getInstance().buscarPorCodigo("codigo_old");
+		assertTrue("Testando Busca no Banco", busca.size() > 0);
+		tearDownAlterar();
+	}
+	
 }
