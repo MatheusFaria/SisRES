@@ -65,6 +65,12 @@ public class SalaDAOTest {
 					);				
 	}
 
+	@After
+	public void tearDown() throws SQLException, PatrimonioException {
+		sala = null;
+		sala_new = null;
+	}	
+
 	@Test
 	public void testInstance() {
 		assertTrue("Instanciando SalaDAO", SalaDAO.getInstance() instanceof SalaDAO);
