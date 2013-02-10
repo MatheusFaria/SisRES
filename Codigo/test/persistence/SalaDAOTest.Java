@@ -98,6 +98,13 @@ public class SalaDAOTest {
 		SalaDAO.getInstance().incluir(sala);
 		tearDownAlterar();
 	}
+	
+	@Test (expected= PatrimonioException.class)
+	public void testAlterarPrimeiroNulo() throws PatrimonioException, SQLException {
+		setUp();
+		SalaDAO.getInstance().alterar(null ,sala);
+		tearDownAlterar();
+	}
 
 	@Test
 	public void testBuscarTodos() throws SQLException, PatrimonioException {
