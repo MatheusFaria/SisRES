@@ -91,6 +91,14 @@ public class SalaDAOTest {
 		tearDownAlterar();
 	}
 	
+	@Test (expected= PatrimonioException.class)
+	public void testIncluirExistente() throws PatrimonioException, SQLException {
+		setUp();
+		SalaDAO.getInstance().incluir(sala);
+		SalaDAO.getInstance().incluir(sala);
+		tearDownAlterar();
+	}
+
 	@Test
 	public void testBuscarTodos() throws SQLException, PatrimonioException {
 		Vector<Sala> busca = SalaDAO.getInstance().buscarTodos();
