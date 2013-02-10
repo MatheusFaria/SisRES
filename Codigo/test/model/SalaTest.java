@@ -40,6 +40,13 @@ public class SalaTest {
 		tearDown();
 	}	
 	
+	@Test
+	public void testCapacidade() throws PatrimonioException {
+		setUp();
+		assertEquals("Capacidade diferente instanciada", "1", sala.getCapacidade());
+		tearDown();
+	}
+	
 	@Test(expected = exception.PatrimonioException.class)
 	public void testDescricaoVazia() throws PatrimonioException {
 		new Sala("codigo", "", "1");
