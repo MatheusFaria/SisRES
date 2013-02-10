@@ -106,6 +106,13 @@ public class SalaDAOTest {
 		tearDownAlterar();
 	}
 
+	@Test (expected= PatrimonioException.class)
+	public void testAlterarSegundoNulo() throws PatrimonioException, SQLException {
+		setUpAlterar();
+		SalaDAO.getInstance().alterar(sala, null);
+		tearDownAlterar();
+	}
+
 	@Test
 	public void testBuscarTodos() throws SQLException, PatrimonioException {
 		Vector<Sala> busca = SalaDAO.getInstance().buscarTodos();
