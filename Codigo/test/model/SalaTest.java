@@ -37,11 +37,10 @@ public class SalaTest {
 	
 	@Test
 	public void testNotEqualsCapacidade() throws PatrimonioException {
-		setUp();
-		Sala sala_new = new Sala("codigo", "descricao", "2");
-		assertFalse("Falha no Equals.", sala.equals(sala_new));
-		sala_new = null;
-		tearDown();
+		Sala s = new Sala("codigo", "descricao", "1");
+		Sala s2 = new Sala("codigo", "descricao", "2");
+		assertFalse("Falha no Equals.", s.equals(s2));
+
 	}
 	
 	@Test

@@ -15,7 +15,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import persistence.FactoryConnection;
-import persistence.ProfessorDAO;
 
 
 import control.ManterProfessor;

@@ -36,15 +36,11 @@ public class SalaDAO {
 			throw new PatrimonioException(SALA_NULA);
 		else if(this.inDBCodigo(sala.getCodigo()))
 			throw new PatrimonioException(CODIGO_JA_EXISTENTE);
-		else if(!this.inDB(sala)){
-			this.updateQuery("INSERT INTO " +
+		this.updateQuery("INSERT INTO " +
 					"sala (codigo, descricao, capacidade) VALUES (" +
 					"\"" + sala.getCodigo() + "\", " +
 					"\"" + sala.getDescricao() + "\", " +
 					sala.getCapacidade() + ");");
-		}
-		else
-			throw new PatrimonioException(SALA_JA_EXISTENTE);
 	}
 
 	public void alterar(Sala old_sala, Sala new_sala) throws SQLException, PatrimonioException {
@@ -58,9 +54,9 @@ public class SalaDAO {
 		
 		if(!this.inDB(old_sala))
 			throw new PatrimonioException(SALA_NAO_EXISTENTE);
-		else if(this.inOtherDB(old_sala))			
-			throw new PatrimonioException(SALA_EM_USO);		
-		else if(this.inDBCodigo(new_sala.getCodigo()))
+		else if(this.inOtherDB(old_sala))
+			throw new PatrimonioException(SALA_EM_USO);
+		else if(old_sala.getCodigo() != new_sala.getCodigo() && this.inDBCodigo(new_sala.getCodigo()))
 			throw new PatrimonioException(CODIGO_JA_EXISTENTE);
 		if(!this.inDB(new_sala)){
 			String msg = "UPDATE sala SET " +				
@@ -86,13 +82,13 @@ public class SalaDAO {
 	public void excluir(Sala sala) throws SQLException, PatrimonioException {
 		if(sala == null)
 			throw new PatrimonioException(SALA_NULA);
-			else if(this.inOtherDB(sala))					
-				throw new PatrimonioException(SALA_EM_USO);	
+		else if(this.inOtherDB(sala))
+			throw new PatrimonioException(SALA_EM_USO);
 		else if(this.inDB(sala)){
 			this.updateQuery("DELETE FROM sala WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
 				"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
-				"sala.capacidade = \"" + sala.getCapacidade() + "\";"				
+				"sala.capacidade = " + sala.getCapacidade() + ";"				
 				);
 		}
 		else
@@ -160,27 +156,25 @@ public class SalaDAO {
 		return this.inDBGeneric("SELECT * FROM sala WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
 				"sala.descricao = \"" + sala.getDescricao() + "\" and " +
-				"sala.capacidade = \"" + sala.getCapacidade() +
-				"\";");
+				"sala.capacidade = " + sala.getCapacidade() +
+				";");
 	}
 	private boolean inDBCodigo(String codigo) throws SQLException{
 		return this.inDBGeneric("SELECT * FROM sala WHERE " +
 				"sala.codigo = \"" + codigo + "\";");
 	}
 	private boolean inOtherDB(Sala sala) throws SQLException{
-		if( this.inDBGeneric(
-				"SELECT * FROM reserva_sala_professor WHERE " +
+		if( this.inDBGeneric("SELECT * FROM reserva_sala_professor WHERE " +
 				"id_sala = (SELECT id_sala FROM sala WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
 				"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
-				"sala.capacidade = " + sala.getCapacidade() +");") == false)
+				"sala.capacidade = " + sala.getCapacidade() +" );") == false)
 		{
-			if( this.inDBGeneric(
-					"SELECT * FROM reserva_sala_aluno WHERE " +
+			if(this.inDBGeneric("SELECT * FROM reserva_sala_aluno WHERE " +
 							"id_sala = (SELECT id_sala FROM sala WHERE " +
 							"sala.codigo = \"" + sala.getCodigo() + "\" and " +
 							"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
-							"sala.capacidade = " + sala.getCapacidade() +");") == false)
+							"sala.capacidade = " + sala.getCapacidade() +" );") == false)
 			{
 				return false;
 			}

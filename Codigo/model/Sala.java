@@ -29,8 +29,6 @@ public class Sala extends Patrimonio {
 		else if("".equals(capacidade.trim()))
 			throw new PatrimonioException(CAPACIDADE_BRANCO);
 		else if(capacidade.matches("[\\d]+")){
-				if(Integer.parseInt(capacidade) < 0)
-					throw new PatrimonioException(CAPACIDADE_NEGATIVA);
 				this.capacidade = capacidade;
 		}
 		else
@@ -40,12 +38,11 @@ public class Sala extends Patrimonio {
 	}
 
 	public boolean equals(Sala b){
-		if(this.getCodigo().equals(b.getCodigo()) &&
-			this.getDescricao().equals(b.getDescricao()) &&
-			this.getCapacidade().equals(b.getCapacidade()))
-			{
+		if( super.equals(b) &&
+			this.getCapacidade().equals(b.getCapacidade())){
 			return true;
 		}
+		
 		return false;
 	}
 }

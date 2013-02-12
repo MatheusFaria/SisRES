@@ -13,7 +13,7 @@ import exception.PatrimonioException;
 public class EquipamentoDAO {
 
 	//Mensagens
-  		private static final String EQUIPAMENTO_JA_EXISTENTE = "Equipamento ja cadastrado.";
+  		//private static final String EQUIPAMENTO_JA_EXISTENTE = "Equipamento ja cadastrado.";
   		private static final String EQUIPAMENTO_NAO_EXISTENTE = "Equipamento nao cadastrado.";
   		private static final String EQUIPAMENTO_NULO = "Sala esta nula.";
 		private static final String EQUIPAMENTO_EM_USO = "Equipamento esta sendo utilizado em uma reserva.";
