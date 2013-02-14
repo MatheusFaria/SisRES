@@ -1,4 +1,4 @@
-CREATE DATABASE sisres_db;
+CREATE DATABASE IF NOT EXISTS sisres_db;
 USE sisres_db;
 GRANT ALL ON sisres_db.* TO 'testuser'@'localhost';
 
