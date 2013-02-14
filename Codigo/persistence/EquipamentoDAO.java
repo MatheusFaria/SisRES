@@ -13,7 +13,7 @@ import exception.PatrimonioException;
 public class EquipamentoDAO {
 
 	//Mensagens
-  		//private static final String EQUIPAMENTO_JA_EXISTENTE = "Equipamento ja cadastrado.";
+  		private static final String EQUIPAMENTO_JA_EXISTENTE = "Equipamento ja cadastrado.";
   		private static final String EQUIPAMENTO_NAO_EXISTENTE = "Equipamento nao cadastrado.";
   		private static final String EQUIPAMENTO_NULO = "Sala esta nula.";
 		private static final String EQUIPAMENTO_EM_USO = "Equipamento esta sendo utilizado em uma reserva.";
@@ -58,7 +58,7 @@ public class EquipamentoDAO {
 			throw new PatrimonioException(EQUIPAMENTO_NAO_EXISTENTE);
 		else if(this.inOtherDB(old_equipamento))
 			throw new PatrimonioException(EQUIPAMENTO_EM_USO);
-		else if(this.inDBCodigo(new_equipamento.getCodigo()) && new_equipamento.getCodigo() != old_equipamento.getCodigo())
+		else if(!new_equipamento.getCodigo().equals(old_equipamento.getCodigo()) && this.inDBCodigo(new_equipamento.getCodigo()))
 			throw new PatrimonioException(CODIGO_JA_EXISTENTE);
 		else if(!this.inDB(new_equipamento))
 		{
@@ -77,9 +77,8 @@ public class EquipamentoDAO {
 			pst.close();
 			
 		}
-		/**else
+		else
 			throw new PatrimonioException(EQUIPAMENTO_JA_EXISTENTE);
-		*/
 		con.close();
 	}
 

@@ -64,9 +64,9 @@ public class AlunoDAO {
 			throw new ClienteException(ALUNO_NAO_EXISTENTE);
 		else if(this.inOtherDB(aluno_velho))
 			throw new ClienteException(ALUNO_EM_USO);
-		else if(aluno_velho.getCpf() != aluno_novo.getCpf() && this.inDBCpf(aluno_novo.getCpf()))
+		else if(!aluno_velho.getCpf().equals(aluno_novo.getCpf()) && this.inDBCpf(aluno_novo.getCpf()))
 			throw new ClienteException(CPF_JA_EXISTENTE);
-		else if(aluno_velho.getMatricula() != aluno_novo.getMatricula() && this.inDBMatricula(aluno_novo.getMatricula()))
+		else if(!aluno_velho.getMatricula().equals(aluno_novo.getMatricula()) && this.inDBMatricula(aluno_novo.getMatricula()))
 				throw new ClienteException(MATRICULA_JA_EXISTENTE);
 		else if(!this.inDB(aluno_novo))
 		{

@@ -12,10 +12,10 @@ public class ProfessorDAO {
 	//Mensagens
 		private static final String PROFESSOR_JA_EXISTENTE = "O Professor ja esta cadastrado.";
 		private static final String PROFESSOR_NAO_EXISTENTE = "O Professor nao esta cadastrado.";
-		private static final String PROFESSOR_NULO = "O Aluno esta nulo.";
+		private static final String PROFESSOR_NULO = "O Professor esta nulo.";
 		private static final String PROFESSOR_EM_USO = "Sala esta sendo utilizada em uma reserva.";
-		private static final String CPF_JA_EXISTENTE = "Ja existe um aluno cadastrado com esse CPF.";
-		private static final String MATRICULA_JA_EXISTENTE = "Ja existe um aluno cadastrado com essa matricula.";
+		private static final String CPF_JA_EXISTENTE = "Ja existe um professor cadastrado com esse CPF.";
+		private static final String MATRICULA_JA_EXISTENTE = "Ja existe um professor cadastrado com essa matricula.";
 	
 	//Singleton
 		private static ProfessorDAO instance;
@@ -59,9 +59,9 @@ public class ProfessorDAO {
 			throw new ClienteException(PROFESSOR_NAO_EXISTENTE);
 		if(this.inOtherDB(prof_velho))
 			throw new ClienteException(PROFESSOR_EM_USO);
-		else if(prof_velho.getCpf() != prof_novo.getCpf() && this.inDBCpf(prof_novo.getCpf()))
+		else if(!prof_velho.getCpf().equals(prof_novo.getCpf()) && this.inDBCpf(prof_novo.getCpf()))
 			throw new ClienteException(CPF_JA_EXISTENTE);
-		else if(prof_velho.getMatricula() != prof_novo.getMatricula() && this.inDBMatricula(prof_novo.getMatricula()))
+		else if(!prof_velho.getMatricula().equals(prof_novo.getMatricula()) && this.inDBMatricula(prof_novo.getMatricula()))
 			throw new ClienteException(MATRICULA_JA_EXISTENTE);
 		else if(!this.inDB(prof_novo)){
 			String msg = "UPDATE professor SET " +

@@ -56,7 +56,7 @@ public class SalaDAO {
 			throw new PatrimonioException(SALA_NAO_EXISTENTE);
 		else if(this.inOtherDB(old_sala))
 			throw new PatrimonioException(SALA_EM_USO);
-		else if(old_sala.getCodigo() != new_sala.getCodigo() && this.inDBCodigo(new_sala.getCodigo()))
+		else if(!old_sala.getCodigo().equals(new_sala.getCodigo()) && this.inDBCodigo(new_sala.getCodigo()))
 			throw new PatrimonioException(CODIGO_JA_EXISTENTE);
 		if(!this.inDB(new_sala)){
 			String msg = "UPDATE sala SET " +				
