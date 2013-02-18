@@ -11,7 +11,7 @@ public class Sala extends Patrimonio {
 		private final String CAPACIDADE_INVALIDO = "Capacidade Invalida.";
 		private final String CAPACIDADE_BRANCO = "Capacidade em Branco.";
 		private final String CAPACIDADE_NULA = "Capacidade esta nula.";
-		private final String CAPACIDADE_NEGATIVA = "Capacidade negativa.";
+		//private final String CAPACIDADE_NEGATIVA = "Capacidade negativa.";
 			
 		
 	public Sala(String codigo, String descricao, String capacidade) throws PatrimonioException {
