@@ -46,7 +46,7 @@ public class ReservaSala extends Reserva{
 
 	public boolean equals(ReservaSala obj) {
 		return (super.equals(obj) && 
-			this.getData().equals(obj.getData()) &&
+			this.getSala().equals(obj.getSala())&&
 			this.getFinalidade().equals(obj.getFinalidade()));
 	}
 	

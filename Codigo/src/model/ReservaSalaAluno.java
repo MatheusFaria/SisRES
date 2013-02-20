@@ -12,6 +12,7 @@ public class ReservaSalaAluno extends ReservaSala{
 		private final String CADEIRAS_NULA = "O numero de cadeiras esta nulo.";
 		private final String CADEIRAS_BRANCO = "O numero de cadeiras esta em branco.";
 		private final String CADEIRAS_INVALIDA = "O numero de cadeira eh invalido.";
+		private final String CADEIRAS_ACIMA_DO_LIMITE = "A sala nao possui este numero de cadeiras para reservar.";
 		private final String CADEIRAS_PATTERN = "^[\\d]+$";
 
 	public ReservaSalaAluno(String data, String hora, Sala sala,
@@ -42,8 +43,12 @@ public class ReservaSalaAluno extends ReservaSala{
 		c = c.trim();
 		if(c.equals(""))
 			throw new ReservaException(CADEIRAS_BRANCO);
-		else if(c.matches(CADEIRAS_PATTERN))
-			this.cadeiras_reservadas = cadeiras_reservadas;
+		else if(c.matches(CADEIRAS_PATTERN)){
+			if(Integer.parseInt(super.getSala().getCapacidade()) < Integer.parseInt(cadeiras_reservadas))
+				throw new ReservaException(CADEIRAS_ACIMA_DO_LIMITE);
+			else
+				this.cadeiras_reservadas = cadeiras_reservadas;
+		}
 		else
 			throw new ReservaException(CADEIRAS_INVALIDA);
 	}

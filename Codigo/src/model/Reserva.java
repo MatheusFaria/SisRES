@@ -15,7 +15,7 @@ public class Reserva {
 		private final String HORA_INVALIDA = "A hora eh invalida.";
 		private final String HORA_BRANCA = "A hora esta em branco.";
 		private final String HORA_JA_PASSOU = "A hora escolhida ja passou.";
-		private final String HORA_PATTERN = "^[012][\\d]:[\\d][\\d]$";
+		private final String HORA_PATTERN = "^[012][\\d]:[0-5][\\d]$";
 		private final String DATA_NULA = "A data esta nula.";
 		private final String DATA_INVALIDA = "A data eh invalida.";
 		private final String DATA_BRANCA = "A data esta em branco.";
@@ -43,7 +43,7 @@ public class Reserva {
 		if(hora.equals(""))
 			throw new ReservaException(HORA_BRANCA);
 		else if(hora.matches(HORA_PATTERN)){
-			if(this.horaPassou(hora))
+			if(this.horaPassou(hora) && this.dataIgual(this.getData()))
 				throw new ReservaException(HORA_JA_PASSOU);
 			else
 				this.hora = hora;
@@ -106,13 +106,25 @@ public class Reserva {
 		
 		if(Integer.parseInt(agora[1]) > Integer.parseInt(data[1]))
 			return true;
+		else if(Integer.parseInt(agora[1]) == Integer.parseInt(data[1])){
+			dif = agora[0].length() - data[0].length();
+			data[0] = agora[0].substring(0, dif) + data[0];
+			
+			if(Integer.parseInt(agora[0]) > Integer.parseInt(data[0]))
+				return true;
+		}
+		return false;
+	}
+	
+	private boolean dataIgual(String d){
+		if(d == null)
+			return false;
 		
-		dif = agora[0].length() - data[0].length();
-		data[0] = agora[0].substring(0, dif) + data[0];
+		String agora[] = this.dataAtual().split("[./-]");
+		String data[] = d.split("[./-]");
 		
-		if(Integer.parseInt(agora[0]) > Integer.parseInt(data[0]))
+		if(agora[0].equals(data[0]) && agora[1].equals(data[1]) && agora[2].equals(data[2]))
 			return true;
-		
 		return false;
 	}
 	
