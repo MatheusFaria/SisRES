@@ -15,7 +15,7 @@ public class Reserva {
 		private final String HORA_INVALIDA = "A hora eh invalida.";
 		private final String HORA_BRANCA = "A hora esta em branco.";
 		private final String HORA_JA_PASSOU = "A hora escolhida ja passou.";
-		private final String HORA_PATTERN = "^[012][\\d]:[0-5][\\d]$";
+		private final String HORA_PATTERN = "^[012]?[\\d]:[0-5][\\d]$";
 		private final String DATA_NULA = "A data esta nula.";
 		private final String DATA_INVALIDA = "A data eh invalida.";
 		private final String DATA_BRANCA = "A data esta em branco.";
@@ -130,6 +130,8 @@ public class Reserva {
 	
 	private boolean horaPassou(String hora){
 		String agora = this.horaAtual();
+		if(hora.length() == 4)
+			hora = "0" + hora;
 		if(Integer.parseInt(agora.substring(0, 2)) > Integer.parseInt(hora.substring(0, 2)))
 			return true;
 		else if(Integer.parseInt(agora.substring(0, 2)) == Integer.parseInt(hora.substring(0, 2))){

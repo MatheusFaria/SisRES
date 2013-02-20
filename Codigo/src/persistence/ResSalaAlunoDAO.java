@@ -2,6 +2,7 @@ package persistence;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Iterator;
 import java.util.Vector;
 
 import exception.ClienteException;
@@ -16,12 +17,13 @@ public class ResSalaAlunoDAO extends DAO{
 	
 	//Mensagens e Alertas
 		private final String NULA = "Termo nulo.";
-		private final String ALUNO_INDISPONIVEL = "O Professor possui uma reserva no mesmo dia e horario.";
+		private final String ALUNO_INDISPONIVEL = "O aluno possui uma reserva no mesmo dia e horario.";
 		private final String SALA_INDISPONIVEL = "A Sala esta reservada no mesmo dia e horario.";
-		private final String ALUNO_INEXISTENTE = "Professor inexistente.";
+		private final String ALUNO_INEXISTENTE = "Aluno inexistente.";
 		private final String SALA_INEXISTENTE = "Sala inexistente";
 		private final String RESERVA_INEXISTENTE = "Reserva inexistente";
 		private final String RESERVA_EXISTENTE = "A reserva ja existe.";
+		private final String CADEIRAS_INDISPONIVEIS = "O numero de cadeiras reservadas esta indisponivel para esta sala.";
 
 	
 	//Singleton
@@ -92,22 +94,24 @@ public class ResSalaAlunoDAO extends DAO{
 
 		
 		
-	public void incluir(ReservaSalaAluno r) throws ReservaException, SQLException {
+	public void incluir(ReservaSalaAluno r) throws ReservaException, SQLException, ClienteException, PatrimonioException {
 		if(r == null)
 			throw new ReservaException(NULA);
 		else if(!this.alunoinDB(r.getAluno()))
 			throw new ReservaException(ALUNO_INEXISTENTE);
 		else if(!this.salainDB(r.getSala()))
 			throw new ReservaException(SALA_INEXISTENTE);
-		else if(this.salainReservaDB(r.getSala(), r.getData(), r.getHora()))
+		else if(this.salainReservaProfessorDB(r.getSala(), r.getData(), r.getHora()))
 			throw new ReservaException(SALA_INDISPONIVEL);
 		else if(this.alunoinReservaDB(r.getAluno(), r.getData(), r.getHora()))
 			throw new ReservaException(ALUNO_INDISPONIVEL);
+		else if(!this.haCadeiras(r.getCadeiras_reservadas(), r.getSala()))
+			throw new ReservaException(CADEIRAS_INDISPONIVEIS);
 		else
 			super.executeQuery(this.insert_into(r));
 	}
 	
-	public void alterar(ReservaSalaAluno r, ReservaSalaAluno r_new) throws ReservaException, SQLException{
+	public void alterar(ReservaSalaAluno r, ReservaSalaAluno r_new) throws ReservaException, SQLException, ClienteException, PatrimonioException{
 		if(r == null)
 			throw new ReservaException(NULA);
 		else if(r_new == null)
@@ -117,16 +121,20 @@ public class ResSalaAlunoDAO extends DAO{
 			throw new ReservaException(RESERVA_INEXISTENTE);
 		else if(this.reservainDB(r_new))
 			throw new ReservaException(RESERVA_EXISTENTE);
-		else if(!r.getData().equals(r_new.getData()) || !r.getHora().equals(r_new.getHora())){
-			if(this.alunoinReservaDB(r_new.getAluno(), r_new.getData(), r_new.getHora()))
-				throw new ReservaException(ALUNO_INDISPONIVEL);
-			else if(this.salainReservaDB(r_new.getSala(), r_new.getData(), r_new.getHora()))
-				throw new ReservaException(SALA_INDISPONIVEL);
-		}
 		else if(!this.alunoinDB(r_new.getAluno()))
 			throw new ReservaException(ALUNO_INEXISTENTE);
 		else if(!this.salainDB(r_new.getSala()))
 			throw new ReservaException(SALA_INEXISTENTE);
+		else if(!r.getData().equals(r_new.getData()) || !r.getHora().equals(r_new.getHora())){
+			if(this.alunoinReservaDB(r_new.getAluno(), r_new.getData(), r_new.getHora()))
+				throw new ReservaException(ALUNO_INDISPONIVEL);
+			else if(this.salainReservaProfessorDB(r_new.getSala(), r_new.getData(), r_new.getHora()))
+				throw new ReservaException(SALA_INDISPONIVEL);
+		}
+		if(!this.haCadeiras(""+(Integer.parseInt(r_new.getCadeiras_reservadas()) - 
+				Integer.parseInt(r.getCadeiras_reservadas()))
+				, r_new.getSala()))
+			throw new ReservaException(CADEIRAS_INDISPONIVEIS);
 		else
 			super.updateQuery(this.update(r, r_new));
 			
@@ -146,6 +154,24 @@ public class ResSalaAlunoDAO extends DAO{
 		return super.buscar("SELECT * FROM reserva_sala_aluno " +
 				"INNER JOIN sala ON sala.id_sala = reserva_sala_aluno.id_sala " +
 				"INNER JOIN aluno ON aluno.id_aluno = reserva_sala_aluno.id_aluno;");
+	}
+
+	
+	private boolean haCadeiras(String cadeiras_reservadas, Sala sala) throws SQLException, ClienteException, PatrimonioException, ReservaException {
+		Vector<Object> vet = this.buscarTodos();
+		Iterator<Object> it = vet.iterator();
+		int total = Integer.parseInt(sala.getCapacidade());
+		while(it.hasNext()){
+			ReservaSalaAluno r = (ReservaSalaAluno) it.next();
+			if(r.getSala().equals(sala))
+				total -= Integer.parseInt(r.getCadeiras_reservadas());
+		}
+		int c = Integer.parseInt(cadeiras_reservadas);
+		if(Integer.parseInt(cadeiras_reservadas) < 0)
+			c *= -1;
+		if(total >= c)
+			return true;
+		return false;
 	}
 	
 	@Override
@@ -189,8 +215,17 @@ public class ResSalaAlunoDAO extends DAO{
 				"aluno.email = \"" + aluno.getEmail() + "\" and " +
 				"aluno.matricula = \"" + aluno.getMatricula() + "\");");
 	}
-	private boolean salainReservaDB(Sala sala, String data, String hora) throws SQLException {
+	private boolean salainReservaSalaDB(Sala sala, String data, String hora) throws SQLException {
 		return super.inDBGeneric("SELECT * FROM reserva_sala_aluno WHERE " +
+				"data = \"" + data + "\" and " +
+				"hora = \"" + hora + "\" and " +
+				"id_sala = (SELECT id_sala FROM sala WHERE " +
+				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
+				"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
+				"sala.capacidade = " + sala.getCapacidade() +" );");
+	}
+	private boolean salainReservaProfessorDB(Sala sala, String data, String hora) throws SQLException {
+		return super.inDBGeneric("SELECT * FROM reserva_sala_professor WHERE " +
 				"data = \"" + data + "\" and " +
 				"hora = \"" + hora + "\" and " +
 				"id_sala = (SELECT id_sala FROM sala WHERE " +

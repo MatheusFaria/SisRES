@@ -30,22 +30,10 @@ public class ManterResSalaAluno {
 		this.rev_sala_aluno_vet = ResSalaAlunoDAO.getInstance().buscarTodos();
 		return this.rev_sala_aluno_vet;
 	}
-
-	public void inserir(String codigo, String descricao, String capacidade, 
-						String nome, String cpf, String matricula, String telefone, String email,
-						String data, String hora, String finalidade, String cadeiras_reservadas) 
-					throws PatrimonioException, SQLException, ClienteException, ReservaException {
-		
-		Sala s = new Sala(codigo, descricao, capacidade);
-		Aluno aluno = new Aluno(nome, cpf, matricula, telefone, email);
-		ReservaSalaAluno r = new ReservaSalaAluno(data, hora, s , finalidade, cadeiras_reservadas, aluno);
-		ResSalaAlunoDAO.getInstance().incluir(r);
-		this.rev_sala_aluno_vet.add(r);
-	}
 	
 	public void inserir(Sala sala, Aluno aluno,
 						String data, String hora, String finalidade, String cadeiras_reservadas) 
-					throws SQLException, ReservaException {
+					throws SQLException, ReservaException, ClienteException, PatrimonioException {
 
 		ReservaSalaAluno r = new ReservaSalaAluno(data, hora, sala , finalidade, cadeiras_reservadas, aluno);
 		ResSalaAlunoDAO.getInstance().incluir(r);
@@ -53,7 +41,7 @@ public class ManterResSalaAluno {
 	}
 
 	public void alterar(String finalidade, String cadeiras_reservadas, ReservaSalaAluno r) 
-				throws SQLException, ReservaException {
+				throws SQLException, ReservaException, ClienteException, PatrimonioException {
 		
 		ReservaSalaAluno res_old = new ReservaSalaAluno(r.getData(), r.getHora(), r.getSala() , 
 												r.getFinalidade(), r.getCadeiras_reservadas(), r.getAluno());
