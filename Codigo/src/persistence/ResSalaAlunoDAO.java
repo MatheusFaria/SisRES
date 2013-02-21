@@ -13,6 +13,7 @@ import model.Aluno;
 import model.ReservaSalaAluno;
 import model.Sala;
 
+@SuppressWarnings("unchecked")
 public class ResSalaAlunoDAO extends DAO{
 	
 	//Mensagens e Alertas
@@ -149,27 +150,28 @@ public class ResSalaAlunoDAO extends DAO{
 			super.executeQuery(this.delete_from(r));
 	}
 	
-	//TODO implementar todos os tipos de Busca, uma para cada campo. PUBLIC
-	public Vector<Object> buscarTodos() throws SQLException, ClienteException, PatrimonioException, ReservaException{
+	public Vector<ReservaSalaAluno> buscarTodos() throws SQLException, ClienteException, PatrimonioException, ReservaException{
 		return super.buscar("SELECT * FROM reserva_sala_aluno " +
 				"INNER JOIN sala ON sala.id_sala = reserva_sala_aluno.id_sala " +
 				"INNER JOIN aluno ON aluno.id_aluno = reserva_sala_aluno.id_aluno;");
 	}
 
 	
-	private boolean haCadeiras(String cadeiras_reservadas, Sala sala) throws SQLException, ClienteException, PatrimonioException, ReservaException {
-		Vector<Object> vet = this.buscarTodos();
-		Iterator<Object> it = vet.iterator();
+	public int cadeirasDisponiveis(Sala sala) throws SQLException, PatrimonioException, ClienteException, ReservaException{
+		Vector<ReservaSalaAluno> vet = this.buscarTodos();
+		Iterator<ReservaSalaAluno> it = vet.iterator();
 		int total = Integer.parseInt(sala.getCapacidade());
 		while(it.hasNext()){
-			ReservaSalaAluno r = (ReservaSalaAluno) it.next();
+			ReservaSalaAluno r = it.next();
 			if(r.getSala().equals(sala))
 				total -= Integer.parseInt(r.getCadeiras_reservadas());
 		}
-		int c = Integer.parseInt(cadeiras_reservadas);
-		if(Integer.parseInt(cadeiras_reservadas) < 0)
-			c *= -1;
-		if(total >= c)
+		return total;
+	}
+	
+	
+	private boolean haCadeiras(String cadeiras_reservadas, Sala sala) throws SQLException, ClienteException, PatrimonioException, ReservaException {
+		if(this.cadeirasDisponiveis(sala) >= Integer.parseInt(cadeiras_reservadas))
 			return true;
 		return false;
 	}
@@ -214,15 +216,6 @@ public class ResSalaAlunoDAO extends DAO{
 				"aluno.telefone = \"" + aluno.getTelefone() + "\" and " +
 				"aluno.email = \"" + aluno.getEmail() + "\" and " +
 				"aluno.matricula = \"" + aluno.getMatricula() + "\");");
-	}
-	private boolean salainReservaSalaDB(Sala sala, String data, String hora) throws SQLException {
-		return super.inDBGeneric("SELECT * FROM reserva_sala_aluno WHERE " +
-				"data = \"" + data + "\" and " +
-				"hora = \"" + hora + "\" and " +
-				"id_sala = (SELECT id_sala FROM sala WHERE " +
-				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
-				"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
-				"sala.capacidade = " + sala.getCapacidade() +" );");
 	}
 	private boolean salainReservaProfessorDB(Sala sala, String data, String hora) throws SQLException {
 		return super.inDBGeneric("SELECT * FROM reserva_sala_professor WHERE " +

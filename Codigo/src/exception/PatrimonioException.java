@@ -1,5 +1,6 @@
 package exception;
 
+@SuppressWarnings("serial")
 public class PatrimonioException extends Exception {
 
 	public PatrimonioException() {

@@ -13,7 +13,7 @@ import exception.ReservaException;
 
 public class ManterResSalaAluno {
 	
-	private Vector<Object> rev_sala_aluno_vet = new Vector<Object>();
+	private Vector<ReservaSalaAluno> rev_sala_aluno_vet = new Vector<ReservaSalaAluno>();
 	
 	//Singleton
 		private static ManterResSalaAluno instance;
@@ -26,9 +26,12 @@ public class ManterResSalaAluno {
 	}
 	//
 		
-	public Vector<Object> getResAlunoSala_vet() throws SQLException, PatrimonioException, ClienteException, ReservaException{
+	public Vector<ReservaSalaAluno> getResAlunoSala_vet() throws SQLException, PatrimonioException, ClienteException, ReservaException{
 		this.rev_sala_aluno_vet = ResSalaAlunoDAO.getInstance().buscarTodos();
 		return this.rev_sala_aluno_vet;
+	}
+	public int cadeirasDisponveis(Sala sala) throws SQLException, PatrimonioException, ClienteException, ReservaException{
+		return ResSalaAlunoDAO.getInstance().cadeirasDisponiveis(sala);
 	}
 	
 	public void inserir(Sala sala, Aluno aluno,

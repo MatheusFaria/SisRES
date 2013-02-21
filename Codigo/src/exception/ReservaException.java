@@ -1,5 +1,6 @@
 package exception;
 
+@SuppressWarnings("serial")
 public class ReservaException extends Exception{
 	
 	public ReservaException() {

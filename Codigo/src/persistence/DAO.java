@@ -18,9 +18,10 @@ public abstract class DAO {
 	 * O vetor obtido deste metodo deve ser convertido pra o vetor
 	 * do tipo que se vai utilizar, se necessario.
 	 * */
-	protected Vector<Object> buscar(String query) throws SQLException, ClienteException, 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	protected Vector buscar(String query) throws SQLException, ClienteException, 
 													PatrimonioException, ReservaException{
-		Vector<Object> vet = new Vector<Object>();
+		Vector vet = new Vector();
 		
 		Connection con =  FactoryConnection.getInstance().getConnection();
 		

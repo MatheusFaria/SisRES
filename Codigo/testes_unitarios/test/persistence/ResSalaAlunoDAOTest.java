@@ -13,7 +13,6 @@ import model.Sala;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import persistence.AlunoDAO;
@@ -26,7 +25,6 @@ import exception.PatrimonioException;
 import exception.ReservaException;
 
 public class ResSalaAlunoDAOTest {
-
 
 	private static Sala sala1;
 	private static Sala sala2;
@@ -353,6 +351,8 @@ public class ResSalaAlunoDAOTest {
 		}
 	}
 
+	
+	
 	@Test
 	public void testExcluir() throws ReservaException, ClienteException, PatrimonioException, SQLException {
 		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/34", "8:00", sala1,
@@ -383,6 +383,26 @@ public class ResSalaAlunoDAOTest {
 		if(resultado)
 			this.delete_from(reserva);
 	}
+	
+	
+	
+	@Test
+	public void testCadeirasDisponiveis() throws SQLException, PatrimonioException, ClienteException, ReservaException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/34", "8:00", sala1,
+				"Grupo de Estudos", "40", aluno1);
+		
+		ReservaSalaAluno reserva2 = new ReservaSalaAluno("21/12/34", "19:00", sala1,
+				"Grupo de Estudos", "50", aluno1);
+		
+		this.insert_into(reserva);
+		this.insert_into(reserva2);
+		int c = ResSalaAlunoDAO.getInstance().cadeirasDisponiveis(sala1);
+		this.delete_from(reserva);
+		this.delete_from(reserva2);
+		assertEquals("Teste de disponibilidade de Cadeiras", c, 30);
+	}
+
+	
 	
 	private String select_id_aluno(Aluno a){
 		return "SELECT id_aluno FROM aluno WHERE " +
@@ -415,28 +435,11 @@ public class ResSalaAlunoDAOTest {
 		"\"" + r.getData() + "\", " +
 		r.getCadeiras_reservadas();
 	}
-	private String atibutes_value_reserva_sala_aluno(ReservaSalaAluno r){
-		return "id_aluno = ( " + select_id_aluno(r.getAluno()) + " ), " +
-		"id_sala = ( " + select_id_sala(r.getSala()) + " ), " +
-		"finalidade = \"" + r.getFinalidade() + "\", " +
-		"hora = \"" + r.getHora() + "\", " +
-		"data = \"" + r.getData() + "\", " +
-		"cadeiras_reservadas = " + r.getCadeiras_reservadas();
-	}
 	private void insert_into(ReservaSalaAluno r){
 		try {
 			this.executeQuery("INSERT INTO " +
 					"reserva_sala_aluno (id_aluno, id_sala, finalidade, hora, data, cadeiras_reservadas) " +
 					"VALUES ( " + values_reserva_sala_aluno(r) + " );");
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
-	private void update(ReservaSalaAluno r, ReservaSalaAluno r2){
-		try {
-			this.updateQuery("UPDATE reserva_sala_aluno SET " + 
-					this.atibutes_value_reserva_sala_aluno(r2) +
-					this.where_reserva_sala_aluno(r) + " ;");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -476,15 +479,6 @@ public class ResSalaAlunoDAOTest {
 		Connection con =  FactoryConnection.getInstance().getConnection();
 		PreparedStatement pst = con.prepareStatement(msg);
 		pst.executeUpdate();		
-		pst.close();
-		con.close();
-	}
-	private void updateQuery(String msg) throws SQLException{
-		Connection con =  FactoryConnection.getInstance().getConnection();
-		con.setAutoCommit(false);
-		PreparedStatement pst = con.prepareStatement(msg);
-		pst.executeUpdate();
-		con.commit();
 		pst.close();
 		con.close();
 	}
