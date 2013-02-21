@@ -10,7 +10,7 @@ import javax.swing.table.DefaultTableModel;
 import model.Equipamento;
 import view.alteracoes.AlterarEquipamento;
 import view.cadastros.CadastroEquipamento;
-import view.reservas.ReservaEquipamento;
+import view.horariosReservas.HorariosReservaEquipamento;
 
 /**
  *
@@ -109,7 +109,7 @@ public class EquipamentoView extends PatrimonioView {
 
 	@Override
 	protected void visualizarAction(int index) {
-		ReservaEquipamento reserva = new ReservaEquipamento(new javax.swing.JFrame(), true, index);
+		HorariosReservaEquipamento reserva = new HorariosReservaEquipamento(new javax.swing.JFrame(), true, index);
 		reserva.setResizable(false);
 		reserva.setVisible(true);
 	}

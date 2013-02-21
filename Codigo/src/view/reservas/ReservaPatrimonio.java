@@ -1,60 +1,109 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package view.reservas;
 
+import control.ManterResSalaAluno;
+import control.ManterResSalaProfessor;
+import exception.ClienteException;
+import exception.PatrimonioException;
+import exception.ReservaException;
+import java.sql.SQLException;
 import java.util.Vector;
-import javax.swing.table.DefaultTableModel;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import model.Aluno;
+import model.Professor;
+import model.ReservaSalaAluno;
+import model.Sala;
+import persistence.AlunoDAO;
+import persistence.ProfessorDAO;
 
 /**
  *
  * @author Parley
  */
-public abstract class ReservaPatrimonio extends javax.swing.JDialog {
+public class ReservaPatrimonio extends javax.swing.JDialog {
 
-	
-	public ReservaPatrimonio(java.awt.Frame parent, boolean modal) {
+	/**
+	 * Creates new form ReservaPatrimonio
+	 */
+	private final int ALUNO = 1;
+	private final int PROF = 2;
+	private final int ERRO = -1;
+	private ManterResSalaAluno instanceAluno;
+	private ManterResSalaProfessor instanceProf;
+	private Sala sala;
+	private Aluno aluno;
+
+	public ReservaPatrimonio(java.awt.Frame parent, boolean modal, Sala sala) {
 		super(parent, modal);
 		initComponents();
+		this.sala = sala;
+		this.salaTextField.setText(sala.toString());
+		this.qntCadeirasTxtField.setText(sala.getCapacidade());
 	}
 
-	protected Vector<String> fillDataVector(String horario) {
-
-		Vector<String> nomesTabela = new Vector<String>();
-		nomesTabela.add(horario);
-		return nomesTabela;
-
+	protected void reservarAluno() throws SQLException, ReservaException, ClienteException, PatrimonioException {
+		instanceAluno.inserir(sala, aluno, this.dataTextField.getText(), this.horaTextField.getText(),
+			this.finalidadeTextField.getText(), this.qntCadeirasReservadasTextField.getText());
 	}
 
-	protected DefaultTableModel fillTable() {
+	protected void reservarProfessor() {
+	}
 
-		final int NUMERO_LINHAS = 7;
-		int i = 0;
-		DefaultTableModel table = new DefaultTableModel();
-
-		table.addColumn("HORARIO");
-		table.addColumn("Segunda");
-		table.addColumn("Ter�a");
-		table.addColumn("Quarta");
-		table.addColumn("Quinta");
-		table.addColumn("Sexta");
-		table.addColumn("Sabado");
-		
-		int a = 8, b = 10;
-		
-		while (i < NUMERO_LINHAS) {
-			
-			String horario = "" + a + " - " + b;
-			table.addRow(fillDataVector(horario));
-			a=b;
-			b+=2;
-			i++;
+	protected void getAluno() {
+		try {
+			//IMPORTANTE: PASSAR OS METODOS DE BUSCA PARA A CONTROL, PARA NAO BURLAR A ARQUITETURA
+			Vector<Aluno> alunos = AlunoDAO.getInstance().buscarCpf(this.cpfTextField.getText());
+			//TODO
+			if (alunos.isEmpty()) {
+				JOptionPane.showMessageDialog(this, "Aluno nao Cadastrado."
+					+ " Digite o CPF correto ou cadastre o aluno desejado", "Erro", JOptionPane.ERROR_MESSAGE, null);
+				return;
+			}
+			aluno = alunos.firstElement();
+			this.alunoTextField.setText(aluno.toString());
+		} catch (ClienteException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		} catch (SQLException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		} catch (NullPointerException ex) {
+			JOptionPane.showMessageDialog(this, ex.getLocalizedMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
 		}
-		
-		return table;
 	}
-	
-	protected abstract void reservarAction();
-	
-	protected abstract void cancelarReservaAction();
-	
+
+	protected void getProfessor() {
+		try {
+			//IMPORTANTE: PASSAR OS METODOS DE BUSCA PARA A CONTROL, PARA NAO BURLAR A ARQUITETURA
+			Vector<Professor> professor = ProfessorDAO.getInstance().buscarCpf(this.cpfTextField.getText());
+			//TODO
+			if (professor.isEmpty()) {
+				JOptionPane.showMessageDialog(this, "Professor nao Cadastrado."
+					+ " Digite o CPF correto ou cadastre o professor desejado", "Erro", JOptionPane.ERROR_MESSAGE, null);
+				return;
+			}
+			this.alunoTextField.setText(professor.firstElement().toString());
+		} catch (ClienteException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		} catch (SQLException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		} catch (NullPointerException ex) {
+			JOptionPane.showMessageDialog(this, ex.getLocalizedMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		}
+	}
+
+	protected int getManterInstance() {
+		if (instanceAluno != null) {
+			return ALUNO;
+		} else if (instanceProf != null) {
+			return PROF;
+		}
+		return ERRO;
+	}
+
 	/**
 	 * This method is called from within the constructor to initialize the
 	 * form. WARNING: Do NOT modify this code. The content of this method is
@@ -64,80 +113,318 @@ public abstract class ReservaPatrimonio extends javax.swing.JDialog {
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
         private void initComponents() {
 
-                ReservarBtn = new javax.swing.JButton();
-                CancelarReservaBtn = new javax.swing.JButton();
-                jScrollPane1 = new javax.swing.JScrollPane();
-                TabelaHorarios = new javax.swing.JTable();
+                alunoProfbuttonGroup = new javax.swing.ButtonGroup();
+                salaLabel = new javax.swing.JLabel();
+                salaTextField = new javax.swing.JTextField();
+                alunoLabel = new javax.swing.JLabel();
+                jPanel1 = new javax.swing.JPanel();
+                professorRadioButton = new javax.swing.JRadioButton();
+                alunoRadioButton = new javax.swing.JRadioButton();
+                alunoTextField = new javax.swing.JTextField();
+                cpfLabel = new javax.swing.JLabel();
+                cpfTextField = new javax.swing.JTextField();
+                finalidadeTextLabel = new javax.swing.JLabel();
+                finalidadeTextField = new javax.swing.JTextField();
+                qntCadeirasLabel = new javax.swing.JLabel();
+                qntCadeirasTxtField = new javax.swing.JTextField();
+                qntCadeirasReservadasLbl = new javax.swing.JLabel();
+                qntCadeirasReservadasTextField = new javax.swing.JTextField();
+                dataLabel = new javax.swing.JLabel();
+                dataTextField = new javax.swing.JTextField();
+                horaLabel = new javax.swing.JLabel();
+                horaTextField = new javax.swing.JTextField();
+                reservarButton = new javax.swing.JButton();
+                cancelarButton = new javax.swing.JButton();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+                setTitle("ReservaPatrimonio");
+                setName("ReservaPatrimonio"); // NOI18N
                 setResizable(false);
 
-                ReservarBtn.setText("Reservar");
-                ReservarBtn.addActionListener(new java.awt.event.ActionListener() {
+                salaLabel.setText("Sala: ");
+                salaLabel.setName("SalaLabel"); // NOI18N
+
+                salaTextField.setEditable(false);
+                salaTextField.setEnabled(false);
+                salaTextField.setName("Sala"); // NOI18N
+
+                alunoLabel.setText("Aluno:");
+                alunoLabel.setName("AlunoLabel"); // NOI18N
+
+                alunoProfbuttonGroup.add(professorRadioButton);
+                professorRadioButton.setText("Professor");
+                professorRadioButton.setName("professorRadioButton"); // NOI18N
+                professorRadioButton.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                ReservarBtnActionPerformed(evt);
+                                professorRadioButtonActionPerformed(evt);
                         }
                 });
 
-                CancelarReservaBtn.setText("Cancelar Reserva");
-                CancelarReservaBtn.addActionListener(new java.awt.event.ActionListener() {
+                alunoProfbuttonGroup.add(alunoRadioButton);
+                alunoRadioButton.setText("Aluno");
+                alunoRadioButton.setName("alunoRadioButton"); // NOI18N
+                alunoRadioButton.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                CancelarReservaBtnActionPerformed(evt);
+                                alunoRadioButtonActionPerformed(evt);
                         }
                 });
 
-                TabelaHorarios.setAutoCreateRowSorter(true);
-                TabelaHorarios.setModel(fillTable());
-                TabelaHorarios.setCellSelectionEnabled(true);
-                TabelaHorarios.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-                TabelaHorarios.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-                jScrollPane1.setViewportView(TabelaHorarios);
-                for(int i = 0; i < this.TabelaHorarios.getRowCount(); i++){
-                        this.TabelaHorarios.setRowHeight(i, 100);
-                }
+                javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+                jPanel1.setLayout(jPanel1Layout);
+                jPanel1Layout.setHorizontalGroup(
+                        jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(27, 27, 27)
+                                .addComponent(alunoRadioButton)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                                .addComponent(professorRadioButton)
+                                .addGap(28, 28, 28))
+                );
+                jPanel1Layout.setVerticalGroup(
+                        jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(professorRadioButton)
+                                        .addComponent(alunoRadioButton))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                );
+
+                alunoTextField.setEditable(false);
+                alunoTextField.setName("Aluno"); // NOI18N
+
+                cpfLabel.setText("Digite o CPF desejado :");
+                cpfLabel.setName("CpfLabel"); // NOI18N
+
+                cpfTextField.setName("CPF"); // NOI18N
+                cpfTextField.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                cpfTextFieldActionPerformed(evt);
+                        }
+                });
+
+                finalidadeTextLabel.setText("Finalidade: ");
+                finalidadeTextLabel.setName("FinalidadeLabel"); // NOI18N
+
+                finalidadeTextField.setName("Finalidade"); // NOI18N
+
+                qntCadeirasLabel.setText("Quantidade de Cadeiras Disponiveis: ");
+                qntCadeirasLabel.setName("QuantidadeCadeirasDisponiveisLabel"); // NOI18N
+
+                qntCadeirasTxtField.setEditable(false);
+                qntCadeirasTxtField.setEnabled(false);
+                qntCadeirasTxtField.setName("Quantidade de Cadeiras Disponiveis"); // NOI18N
+
+                qntCadeirasReservadasLbl.setText("Quantidade de Cadeiras Reservadas: ");
+                qntCadeirasReservadasLbl.setName("QuantidadeCadeirasReservadasLabel"); // NOI18N
+
+                qntCadeirasReservadasTextField.setEnabled(false);
+                qntCadeirasReservadasTextField.setName("Quantidade de Cadeiras Reservadas"); // NOI18N
+
+                dataLabel.setText("Data: ");
+
+                dataTextField.setName("Data"); // NOI18N
+
+                horaLabel.setText("Hora: ");
+                horaLabel.setName("HoraLabel"); // NOI18N
+
+                horaTextField.setName("Hora"); // NOI18N
+
+                reservarButton.setText("Reservar");
+                reservarButton.setName("Reservar"); // NOI18N
+                reservarButton.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                reservarButtonActionPerformed(evt);
+                        }
+                });
+
+                cancelarButton.setText("Cancelar");
+                cancelarButton.setName("Cancelar"); // NOI18N
+                cancelarButton.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                cancelarButtonActionPerformed(evt);
+                        }
+                });
 
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
                 getContentPane().setLayout(layout);
                 layout.setHorizontalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                                .addGap(14, 14, 14)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1147, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(ReservarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(CancelarReservaBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE))
+                                .addContainerGap()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addGap(0, 0, Short.MAX_VALUE)
+                                                .addComponent(reservarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(cancelarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(8, 8, 8))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addComponent(cpfLabel)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cpfTextField))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(qntCadeirasReservadasLbl)
+                                                        .addComponent(qntCadeirasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(qntCadeirasTxtField)
+                                                        .addComponent(qntCadeirasReservadasTextField)))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addComponent(dataLabel)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(dataTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(horaLabel)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(horaTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, Short.MAX_VALUE))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(salaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(finalidadeTextLabel)
+                                                        .addComponent(alunoLabel))
+                                                .addGap(7, 7, 7)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(alunoTextField)
+                                                        .addComponent(salaTextField)
+                                                        .addComponent(finalidadeTextField))))
                                 .addContainerGap())
                 );
                 layout.setVerticalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addComponent(ReservarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(cpfLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cpfTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(alunoTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(alunoLabel))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(CancelarReservaBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(salaTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(salaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(21, 21, 21)
+                                                .addComponent(finalidadeTextLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(18, 18, 18)
+                                                .addComponent(finalidadeTextField)))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(qntCadeirasTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(qntCadeirasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(qntCadeirasReservadasLbl)
+                                        .addComponent(qntCadeirasReservadasTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(dataLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(dataTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(horaLabel)
+                                        .addComponent(horaTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(24, 24, 24)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(reservarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cancelarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 629, Short.MAX_VALUE)
-                                .addContainerGap())
                 );
 
                 pack();
         }// </editor-fold>//GEN-END:initComponents
 
-        private void ReservarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReservarBtnActionPerformed
-                reservarAction();
-        }//GEN-LAST:event_ReservarBtnActionPerformed
+        private void cpfTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cpfTextFieldActionPerformed
+		String nome = this.cpfTextField.getText();
+		if (nome.isEmpty()) {
+			JOptionPane.showMessageDialog(this, "Nenhum CPF digitado", "Erro", JOptionPane.ERROR_MESSAGE, null);
+		} else {
+			switch (getManterInstance()) {
+				case ALUNO:
+					getAluno();
+					break;
+				case PROF:
+					getProfessor();
+					break;
+				default:
+					JOptionPane.showMessageDialog(this, "Selecione Aluno ou Professor", "Erro", JOptionPane.ERROR_MESSAGE, null);
+			}
+		}
+        }//GEN-LAST:event_cpfTextFieldActionPerformed
 
-        private void CancelarReservaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarReservaBtnActionPerformed
-                cancelarReservaAction();
-        }//GEN-LAST:event_CancelarReservaBtnActionPerformed
+        private void alunoRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alunoRadioButtonActionPerformed
+		this.alunoLabel.setText(this.alunoRadioButton.getText() + ": ");
+		this.qntCadeirasReservadasTextField.setEnabled(true);
+		this.qntCadeirasReservadasTextField.setEditable(true);
+		this.instanceAluno = ManterResSalaAluno.getInstance();
+		this.instanceProf = null;
+        }//GEN-LAST:event_alunoRadioButtonActionPerformed
+
+        private void professorRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_professorRadioButtonActionPerformed
+
+		this.alunoLabel.setText(this.professorRadioButton.getText() + ": ");
+		this.qntCadeirasReservadasTextField.setEnabled(false);
+		this.qntCadeirasReservadasTextField.setText(this.qntCadeirasTxtField.getText());
+		this.instanceProf = ManterResSalaProfessor.getInstance();
+		this.instanceAluno = null;
+        }//GEN-LAST:event_professorRadioButtonActionPerformed
+
+        private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
+               switch (getManterInstance()) {
+                        case ALUNO:
+                        try {
+                                reservarAluno();
+                        } catch (PatrimonioException ex) {
+                                JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+                        } catch (SQLException ex) {
+                                JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+                        } catch (ReservaException ex) {
+                                JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+                        } catch (ClienteException ex) {
+                                JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+                        }
+                        break;
+                        case PROF:
+                        reservarProfessor();
+                        break;
+                        default:
+                        JOptionPane.showMessageDialog(this, "Selecione Aluno ou Professor", "Erro", JOptionPane.ERROR_MESSAGE, null);
+                }
+        }//GEN-LAST:event_reservarButtonActionPerformed
+
+        private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
+               this.setVisible(false);
+        }//GEN-LAST:event_cancelarButtonActionPerformed
 
         // Variables declaration - do not modify//GEN-BEGIN:variables
-        private javax.swing.JButton CancelarReservaBtn;
-        private javax.swing.JButton ReservarBtn;
-        private javax.swing.JTable TabelaHorarios;
-        private javax.swing.JScrollPane jScrollPane1;
+        private javax.swing.JLabel alunoLabel;
+        private javax.swing.ButtonGroup alunoProfbuttonGroup;
+        private javax.swing.JRadioButton alunoRadioButton;
+        private javax.swing.JTextField alunoTextField;
+        private javax.swing.JButton cancelarButton;
+        private javax.swing.JLabel cpfLabel;
+        private javax.swing.JTextField cpfTextField;
+        private javax.swing.JLabel dataLabel;
+        private javax.swing.JTextField dataTextField;
+        private javax.swing.JTextField finalidadeTextField;
+        private javax.swing.JLabel finalidadeTextLabel;
+        private javax.swing.JLabel horaLabel;
+        private javax.swing.JTextField horaTextField;
+        private javax.swing.JPanel jPanel1;
+        private javax.swing.JRadioButton professorRadioButton;
+        private javax.swing.JLabel qntCadeirasLabel;
+        private javax.swing.JLabel qntCadeirasReservadasLbl;
+        private javax.swing.JTextField qntCadeirasReservadasTextField;
+        private javax.swing.JTextField qntCadeirasTxtField;
+        private javax.swing.JButton reservarButton;
+        private javax.swing.JLabel salaLabel;
+        private javax.swing.JTextField salaTextField;
         // End of variables declaration//GEN-END:variables
 }

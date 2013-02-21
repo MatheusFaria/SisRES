@@ -9,13 +9,15 @@ import exception.PatrimonioException;
 import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.Vector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.Sala;
 import view.alteracoes.AlterarSala;
 import view.cadastros.CadastroPatrimonio;
 import view.cadastros.CadastroSala;
-import view.reservas.ReservaSala;
+import view.horariosReservas.HorariosReservaSala;
 
 /**
  *
@@ -110,8 +112,14 @@ public class SalaView extends PatrimonioView {
 
 	@Override
 	protected void visualizarAction(int index) {
-		ReservaSala reserva = new ReservaSala(new javax.swing.JFrame(), true, index);
-		reserva.setResizable(false);
-		reserva.setVisible(true);
+		try {
+			HorariosReservaSala reserva = new HorariosReservaSala(new javax.swing.JFrame(), true, index);
+			reserva.setResizable(false);
+			reserva.setVisible(true);
+		} catch (PatrimonioException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		} catch (SQLException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		}
 	}
 }

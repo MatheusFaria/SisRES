@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package view.reservas;
+package view.horariosReservas;
 
 import control.ManterResEquipametoProfessor;
 import java.awt.Frame;
@@ -11,11 +11,11 @@ import java.awt.Frame;
  *
  * @author Parley
  */
-public class ReservaEquipamento extends ReservaPatrimonio{
+public class HorariosReservaEquipamento extends HorariosReservaPatrimonio{
 	
 	ManterResEquipametoProfessor instance;
 
-	public ReservaEquipamento(Frame parent, boolean modal, int index) {
+	public HorariosReservaEquipamento(Frame parent, boolean modal, int index) {
 		super(parent, modal);
 		instance = ManterResEquipametoProfessor.getInstance();
 	}

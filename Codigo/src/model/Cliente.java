@@ -95,7 +95,7 @@ public abstract class Cliente {
 			throw new ClienteException(TELEFONE_NULO);
 		else if("".equals(telefone))
 			this.telefone = telefone;
-		//Telefone será guardado sem espaços.
+		//Telefone serï¿½ guardado sem espaï¿½os.
 		else if(telefone.matches("(\\([ ]*[\\d]{2,3}[ ]*\\))?[ ]*[\\d]{4,4}[ ]*-?[ ]*[\\d]{4,4}[ ]*$"))
 			this.telefone = telefone.replaceAll(" ", "");
 		else
@@ -113,9 +113,11 @@ public abstract class Cliente {
 	
 	@Override
 	public String toString() {
-		return "Cliente [nome=" + nome + ", cpf=" + cpf + ", telefone="
-				+ telefone + ", email=" + email + ", matricula=" + matricula
-				+ "]";
+		return "Nome: " + nome + 
+			"\nCpf: " + cpf + 
+			"\nTelefone: " + telefone + 
+			"\nEmail: " + email + 
+			"\nMatricula: " + matricula;
 	}
 
 	public boolean equals(Cliente b){
