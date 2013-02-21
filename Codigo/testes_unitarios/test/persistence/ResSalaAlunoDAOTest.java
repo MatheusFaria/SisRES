@@ -6,6 +6,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Iterator;
+import java.util.Vector;
 
 import model.Aluno;
 import model.ReservaSalaAluno;
@@ -384,6 +386,63 @@ public class ResSalaAlunoDAOTest {
 			this.delete_from(reserva);
 	}
 	
+	
+	@Test
+	public void testBuscarPorMes() throws SQLException, PatrimonioException, ClienteException, ReservaException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/34", "8:00", sala1,
+				"Grupo de Estudos", "40", aluno1);
+		
+		ReservaSalaAluno reserva2 = new ReservaSalaAluno("21/12/34", "19:00", sala1,
+				"Grupo de Estudos", "50", aluno1);
+		
+		this.insert_into(reserva);
+		this.insert_into(reserva2);
+		Vector<ReservaSalaAluno> vet = ResSalaAlunoDAO.getInstance().buscarPorMes(12);
+		this.delete_from(reserva);
+		this.delete_from(reserva2);
+		
+		boolean resultado = false;
+		boolean resultado2 = false;
+		
+		Iterator<ReservaSalaAluno> it = vet.iterator();
+		while(it.hasNext()){
+			ReservaSalaAluno obj = it.next();
+			if(obj.equals(reserva))
+				resultado = true;
+			else if(obj.equals(reserva2))
+				resultado2 = true;
+		}
+		
+		assertTrue("Teste de busca", resultado && resultado2);
+	}
+	@Test
+	public void testBuscarPorHora() throws SQLException, PatrimonioException, ClienteException, ReservaException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/34", "9:00", sala1,
+				"Grupo de Estudos", "40", aluno1);
+		
+		ReservaSalaAluno reserva2 = new ReservaSalaAluno("21/12/34", "09:00", sala1,
+				"Grupo de Estudos", "50", aluno1);
+		
+		this.insert_into(reserva);
+		this.insert_into(reserva2);
+		Vector<ReservaSalaAluno> vet = ResSalaAlunoDAO.getInstance().buscarPorHora("09:00");
+		this.delete_from(reserva);
+		this.delete_from(reserva2);
+		
+		boolean resultado = false;
+		boolean resultado2 = false;
+		
+		Iterator<ReservaSalaAluno> it = vet.iterator();
+		while(it.hasNext()){
+			ReservaSalaAluno obj = it.next();
+			if(obj.equals(reserva))
+				resultado = true;
+			else if(obj.equals(reserva2))
+				resultado2 = true;
+		}
+		
+		assertTrue("Teste de busca", resultado && resultado2);
+	}
 	
 	
 	@Test

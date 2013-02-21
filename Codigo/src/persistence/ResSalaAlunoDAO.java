@@ -155,6 +155,30 @@ public class ResSalaAlunoDAO extends DAO{
 				"INNER JOIN sala ON sala.id_sala = reserva_sala_aluno.id_sala " +
 				"INNER JOIN aluno ON aluno.id_aluno = reserva_sala_aluno.id_aluno;");
 	}
+	public Vector<ReservaSalaAluno> buscarPorMes(int mes) throws SQLException, ClienteException, PatrimonioException, ReservaException{
+		Vector<ReservaSalaAluno> vet = super.buscar("SELECT * FROM reserva_sala_aluno " +
+				"INNER JOIN sala ON sala.id_sala = reserva_sala_aluno.id_sala " +
+				"INNER JOIN aluno ON aluno.id_aluno = reserva_sala_aluno.id_aluno;");
+		Iterator<ReservaSalaAluno> it = vet.iterator();
+		while(it.hasNext()){
+			ReservaSalaAluno obj = it.next();
+			if(Integer.parseInt(obj.getData().split("[./-]")[1]) != mes){
+				vet.remove(obj);
+			}
+		}
+		return vet;
+	}
+	public Vector<ReservaSalaAluno> buscarPorHora(String hora) throws SQLException, ClienteException, PatrimonioException, ReservaException{
+		String hora_a = "", hora_b = "";
+		if(hora.length() == 4)
+			hora_a = "0" + hora;
+		if(hora.charAt(0) == '0')
+			hora_b = hora.substring(1);
+		return super.buscar("SELECT * FROM reserva_sala_aluno " +
+				"INNER JOIN sala ON sala.id_sala = reserva_sala_aluno.id_sala " +
+				"INNER JOIN aluno ON aluno.id_aluno = reserva_sala_aluno.id_aluno " +
+				" WHERE hora = \"" + hora +"\" or hora = \"" + hora_a +"\" or hora = \"" + hora_b +"\";");
+	}
 
 	
 	public int cadeirasDisponiveis(Sala sala) throws SQLException, PatrimonioException, ClienteException, ReservaException{
