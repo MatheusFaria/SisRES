@@ -31,20 +31,8 @@ public class ManterResSalaProfessor {
 		return this.rev_sala_professor_vet;
 	}
 
-	public void inserir(String codigo, String descricao, String capacidade, 
-			String nome, String cpf, String matricula, String telefone, String email,
-			String data, String hora, String finalidade) 
-				throws PatrimonioException, SQLException, ClienteException, ReservaException {
-		
-		Sala sala = new Sala(codigo, descricao, capacidade);
-		Professor professor = new Professor(nome, cpf, matricula, telefone, email);
-		ReservaSalaProfessor reserva = new ReservaSalaProfessor(data, hora, sala, finalidade, professor);
-		ResSalaProfessorDAO.getInstance().incluir(reserva);
-		this.rev_sala_professor_vet.add(reserva);
-	}
-	
 	public void inserir(Sala sala, Professor prof,
-						String data, String hora, String finalidade, String cadeiras_reservadas) 
+						String data, String hora, String finalidade) 
 					throws SQLException, ReservaException {
 
 		ReservaSalaProfessor reserva = new ReservaSalaProfessor(data, hora, sala , finalidade, prof);
@@ -63,8 +51,8 @@ public class ManterResSalaProfessor {
 		
 	}
 
-	public void excluir(ReservaSalaProfessor r) throws SQLException, ReservaException {
-		ResSalaProfessorDAO.getInstance().excluir(r);
-		this.rev_sala_professor_vet.remove(r);
+	public void excluir(ReservaSalaProfessor reserva) throws SQLException, ReservaException {
+		ResSalaProfessorDAO.getInstance().excluir(reserva);
+		this.rev_sala_professor_vet.remove(reserva);
 	}
 }
