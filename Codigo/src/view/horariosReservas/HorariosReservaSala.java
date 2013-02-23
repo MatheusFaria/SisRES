@@ -92,7 +92,7 @@ public class HorariosReservaSala extends HorariosReservaPatrimonio {
 
 			this.mes = Integer.parseInt(this.data.substring(3, 5));
 
-			Vector v = instanceProf.getReservasMes(mes);
+			Vector v = instanceProf.buscarPorData(this.data);
 			if(v!=null)
     			for (int i = 0; i < v.size(); i++) {
     				table.addRow(fillDataVector(v.get(i), i));

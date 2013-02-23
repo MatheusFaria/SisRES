@@ -137,36 +137,16 @@ public class ResSalaProfessorDAO extends DAO{
 				"INNER JOIN sala ON sala.id_sala = reserva_sala_professor.id_sala " +
 				"INNER JOIN professor ON professor.id_professor = reserva_sala_professor.id_professor;");
 	}
+
 	
 	@SuppressWarnings("unchecked")
-	public Vector<ReservaSalaProfessor> buscarPorMes(int mes) throws SQLException, ClienteException, PatrimonioException, ReservaException{
-		Vector<ReservaSalaProfessor> reservas_prof_mes = super.buscar("SELECT * FROM reserva_sala_professor " +
-				"INNER JOIN sala ON sala.id_sala = reserva_sala_professor.id_sala " +
-				"INNER JOIN professor ON professor.id_professor = reserva_sala_professor.id_professor;");
-		Iterator<ReservaSalaProfessor> it = reservas_prof_mes.iterator();
-		while(it.hasNext()){
-			ReservaSalaProfessor obj = it.next();
-			if(Integer.parseInt(obj.getData().split("[./-]")[1]) != mes){
-				reservas_prof_mes.remove(obj);
-			}
-		}
-		return reservas_prof_mes;
-	} 
-	
-	@SuppressWarnings("unchecked")
-	public Vector<ReservaSalaProfessor> buscarPorHora(String hora) throws SQLException, ClienteException, PatrimonioException, ReservaException{
-		String hora_a = "", hora_b = "";
-		if(hora.length() == 4)
-			hora_a = "0" + hora;
-		if(hora.charAt(0) == '0')
-			hora_b = hora.substring(1);
+	public Vector<ReservaSalaProfessor> buscarPorData(String data) throws SQLException, ClienteException, PatrimonioException, ReservaException{
 		return super.buscar("SELECT * FROM reserva_sala_professor " +
 				"INNER JOIN sala ON sala.id_sala = reserva_sala_professor.id_sala " +
-				"INNER JOIN professor ON professor.id_professor = reserva_sala_professor.id_professor " +
-				" WHERE hora = \"" + hora +"\" or hora = \"" + hora_a +"\" or hora = \"" + hora_b +"\";");
-	}
-
-		
+				"INNER JOIN professor ON professor.id_professor = reserva_sala_professor.id_professor" +
+				" WHERE data = \"" + data + "\";");
+	} 
+	
 	
 	@Override
 	protected Object fetch(ResultSet rs) throws SQLException, ClienteException, PatrimonioException, ReservaException {

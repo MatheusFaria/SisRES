@@ -26,6 +26,11 @@ public class ManterResSalaProfessor {
 	}
 	//
 		
+		public Vector<ReservaSalaProfessor> buscarPorData(String data) throws SQLException, ClienteException, PatrimonioException, ReservaException{
+	        return ResSalaProfessorDAO.getInstance().buscarPorData(data);
+	    } 
+	    	
+		
 	public Vector<ReservaSalaProfessor> getResProfessorSala_vet() throws SQLException, ClienteException, PatrimonioException, ReservaException {
 		this.rev_sala_professor_vet = ResSalaProfessorDAO.getInstance().buscarTodos();
 		return this.rev_sala_professor_vet;

@@ -388,13 +388,13 @@ public class ResSalaProfessorDAOTest {
 			this.delete_from_professor(reserva);
 	}
 	
-	
+		
 	@Test
-	public void testBuscarPorMes() throws SQLException, PatrimonioException, ClienteException, ReservaException {
+	public void testBuscarPorData() throws SQLException, PatrimonioException, ClienteException, ReservaException {
 		ReservaSalaProfessor reserva = new ReservaSalaProfessor("20/12/34", "8:00", sala_a,
 				"Reuniao", professor1);
 		
-		ReservaSalaProfessor reserva2 = new ReservaSalaProfessor("21/12/34", "19:00", sala_a,
+		ReservaSalaProfessor reserva2 = new ReservaSalaProfessor("20/12/34", "19:00", sala_a,
 				"Reuniao", professor1);
 		
 		this.executeQuery("INSERT INTO reserva_sala_professor (id_professor,id_sala,finalidade,hora,data) "+
@@ -409,7 +409,7 @@ public class ResSalaProfessorDAOTest {
 						"\"" + reserva2.getFinalidade() + "\", \"" +
 						reserva2.getHora() + "\", \"" + reserva2.getData() +"\");");
 		
-		Vector<ReservaSalaProfessor> vet = ResSalaProfessorDAO.getInstance().buscarPorMes(12);
+		Vector<ReservaSalaProfessor> vet = ResSalaProfessorDAO.getInstance().buscarPorData("20/12/34");
 		
 		
 		boolean resultado = false;
@@ -425,50 +425,10 @@ public class ResSalaProfessorDAOTest {
 		}
 		
 		this.executeQuery("DELETE FROM reserva_sala_professor WHERE data = \"20/12/34\"");
-		this.executeQuery("DELETE FROM reserva_sala_professor WHERE data = \"21/12/34\"");
 		
-		assertTrue("Teste de busca por mes", resultado && resultado2);
+		assertTrue("Teste de busca por data", resultado && resultado2);
 	}
-	@Test
-	public void testBuscarPorHora() throws SQLException, PatrimonioException, ClienteException, ReservaException {
-		ReservaSalaProfessor reserva = new ReservaSalaProfessor("20/12/34", "9:00", sala_a,
-				"Reuniao", professor1);
 		
-		ReservaSalaProfessor reserva2 = new ReservaSalaProfessor("21/12/34", "09:00", sala_a,
-				"Reuniao", professor1);
-		
-		this.executeQuery("INSERT INTO reserva_sala_professor (id_professor,id_sala,finalidade,hora,data) "+
-				"VALUES ((SELECT id_professor FROM professor WHERE cpf = \"" + reserva.getProfessor().getCpf() + "\")," + 
-						"(SELECT id_sala FROM sala WHERE codigo = \"" + sala_a.getCodigo() + "\")," +
-						"\"" + reserva.getFinalidade() + "\", \"" +
-						reserva.getHora() + "\", \"" + reserva.getData() +"\");");
-		
-		this.executeQuery("INSERT INTO reserva_sala_professor (id_professor,id_sala,finalidade,hora,data) "+
-				"VALUES ((SELECT id_professor FROM professor WHERE cpf = \"" + reserva2.getProfessor().getCpf() + "\")," + 
-						"(SELECT id_sala FROM sala WHERE codigo = \"" + sala_a.getCodigo() + "\")," +
-						"\"" + reserva2.getFinalidade() + "\", \"" +
-						reserva2.getHora() + "\", \"" + reserva2.getData() +"\");");
-		
-		Vector<ReservaSalaProfessor> vet = ResSalaProfessorDAO.getInstance().buscarPorHora("09:00");
-		
-		this.executeQuery("DELETE FROM reserva_sala_professor WHERE data = \"20/12/34\"");
-		this.executeQuery("DELETE FROM reserva_sala_professor WHERE data = \"21/12/34\"");
-		
-		boolean resultado = false;
-		boolean resultado2 = false;
-		 
-		Iterator<ReservaSalaProfessor> it = vet.iterator();
-		while(it.hasNext()){
-			ReservaSalaProfessor obj = it.next();
-			if(obj.equals(reserva))
-				resultado = true;
-			else if(obj.equals(reserva2))
-				resultado2 = true;
-		}
-		
-		assertTrue("Teste de busca por horario", resultado && resultado2);
-	}
-	
 	private String select_id_professor(Professor p){
 		return "SELECT id_professor FROM professor WHERE " +
 				"professor.nome = \"" + p.getNome() + "\" and " +
