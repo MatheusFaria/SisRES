@@ -32,6 +32,7 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
 	protected ManterResSalaProfessor instanceProf;
 	protected Sala sala;
 	protected Aluno aluno;
+	protected Professor prof;
 
 	public ReservaSalaView(java.awt.Frame parent, boolean modal) throws SQLException, PatrimonioException, PatrimonioException, ClienteException, ReservaException {
 		super(parent, modal);
@@ -56,7 +57,7 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
 					+ " Digite o CPF correto ou cadastre o aluno desejado", "Erro", JOptionPane.ERROR_MESSAGE, null);
 				return;
 			}
-			aluno = alunos.firstElement();
+			this.aluno = alunos.firstElement();
 			this.alunoTextArea.setText(aluno.toString());
 		} catch (ClienteException ex) {
 			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
@@ -75,6 +76,7 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
 					+ " Digite o CPF correto ou cadastre o professor desejado", "Erro", JOptionPane.ERROR_MESSAGE, null);
 				return;
 			}
+			this.prof = professor.firstElement();
 			this.alunoTextArea.setText(professor.firstElement().toString());
 		} catch (ClienteException ex) {
 			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
@@ -165,8 +167,8 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
                                 .addGap(27, 27, 27)
                                 .addComponent(alunoRadioButton)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                                .addComponent(professorRadioButton)
-                                .addGap(28, 28, 28))
+                                .addComponent(professorRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19))
                 );
                 jPanel1Layout.setVerticalGroup(
                         jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

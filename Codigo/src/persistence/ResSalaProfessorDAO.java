@@ -22,9 +22,9 @@ public class ResSalaProfessorDAO extends DAO{
 	private final String SALA_INEXISTENTE = "Sala inexistente";
 	private final String RESERVA_INEXISTENTE = "Reserva inexistente";
 	private final String RESERVA_EXISTENTE = "A reserva ja existe.";
-	//private final String RESERVA_CANCELADA = "Havia uma reserva feita por aluno que foi substituída.";
-	
-	
+	//private final String RESERVA_CANCELADA = "Havia uma reserva feita por aluno que foi substituÃ­da.";
+
+
 	//Singleton
 		private static ResSalaProfessorDAO instance;
 		private ResSalaProfessorDAO(){
@@ -85,13 +85,13 @@ public class ResSalaProfessorDAO extends DAO{
 			private String delete_from_professor(ReservaSalaProfessor r){
 				return "DELETE FROM reserva_sala_professor " + this.where_reserva_sala_professor(r) + " ;";
 			}
-			
+
 			private String delete_from_aluno(ReservaSalaProfessor r){
 				return "DELETE FROM reserva_sala_aluno WHERE " +
 						"hora = \"" + r.getHora() + "\" and " +
 						"data = \"" + r.getData() +  " ;";
 			}
-			
+
 	public void incluir(ReservaSalaProfessor r) throws ReservaException, SQLException {
 		if(r == null)
 			throw new ReservaException(NULA);
@@ -113,13 +113,13 @@ public class ResSalaProfessorDAO extends DAO{
 		}
 		*/
 	}
-	
+
 	public void alterar(ReservaSalaProfessor r, ReservaSalaProfessor r_new) throws ReservaException, SQLException {
 		if(r == null)
 			throw new ReservaException(NULA);
 		else if(r_new == null)
 			throw new ReservaException(NULA);
-		
+
 		else if(!this.reservainDB(r))
 			throw new ReservaException(RESERVA_INEXISTENTE);
 		else if(this.reservainDB(r_new))
@@ -137,7 +137,7 @@ public class ResSalaProfessorDAO extends DAO{
 		else
 			super.updateQuery(this.update(r, r_new));
 	}
-	
+
 	public void excluir(ReservaSalaProfessor r) throws ReservaException, SQLException {
 		if(r == null)
 			throw new ReservaException(NULA);
@@ -153,7 +153,7 @@ public class ResSalaProfessorDAO extends DAO{
 				"INNER JOIN sala ON sala.id_sala = reserva_sala_professor.id_sala " +
 				"INNER JOIN professor ON professor.id_professor = reserva_sala_professor.id_professor;");
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	public Vector<ReservaSalaProfessor> buscarPorMes(int mes) throws SQLException, ClienteException, PatrimonioException, ReservaException{
 		Vector<ReservaSalaProfessor> reservas_prof_mes = super.buscar("SELECT * FROM reserva_sala_professor " +
@@ -168,7 +168,7 @@ public class ResSalaProfessorDAO extends DAO{
 		}
 		return reservas_prof_mes;
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	public Vector<ReservaSalaProfessor> buscarPorHora(String hora) throws SQLException, ClienteException, PatrimonioException, ReservaException{
 		String hora_a = "", hora_b = "";
@@ -182,21 +182,21 @@ public class ResSalaProfessorDAO extends DAO{
 				" WHERE hora = \"" + hora +"\" or hora = \"" + hora_a +"\" or hora = \"" + hora_b +"\";");
 	}
 
-		
-	
+
+
 	@Override
 	protected Object fetch(ResultSet rs) throws SQLException, ClienteException, PatrimonioException, ReservaException {
 		Professor p = new Professor(rs.getString("nome"), rs.getString("cpf"), rs.getString("matricula"),
 				rs.getString("telefone"), rs.getString("email"));
-		
+
 		Sala s = new Sala(rs.getString("codigo"), rs.getString("descricao"), rs.getString("capacidade"));
-		
+
 		ReservaSalaProfessor r = new ReservaSalaProfessor(rs.getString("data"),rs.getString("hora"),
 				s ,rs.getString("finalidade"), p);
-		
+
 		return r;
 	}
-	
+
 	private boolean professorinDB(Professor professor) throws SQLException{
 		return super.inDBGeneric("SELECT * FROM professor WHERE " +
 				"professor.nome = \"" + professor.getNome() + "\" and " +
@@ -205,7 +205,7 @@ public class ResSalaProfessorDAO extends DAO{
 				"professor.email = \"" + professor.getEmail() + "\" and " +
 				"professor.matricula = \"" + professor.getMatricula() + "\";");
 	}
-	
+
 	private boolean salainDB(Sala sala) throws SQLException{
 		return super.inDBGeneric("SELECT * FROM sala WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
@@ -213,7 +213,7 @@ public class ResSalaProfessorDAO extends DAO{
 				"sala.capacidade = " + sala.getCapacidade() +
 				";");
 	}
-	
+
 	private boolean professorinReservaDB(Professor professor, String data, String hora) throws SQLException {
 		return super.inDBGeneric("SELECT * FROM reserva_sala_professor WHERE " +
 				"data = \"" + data + "\" and " +
@@ -234,7 +234,7 @@ public class ResSalaProfessorDAO extends DAO{
 				"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
 				"sala.capacidade = " + sala.getCapacidade() +" );");
 	}
-	
+
 	private boolean reservainDB(ReservaSalaProfessor r) throws SQLException {
 		return super.inDBGeneric("SELECT * FROM reserva_sala_professor WHERE " +
 					"id_professor = (SELECT id_professor FROM professor WHERE " +

@@ -84,17 +84,20 @@ public abstract class HorariosReservaPatrimonio extends javax.swing.JDialog {
 			table.addColumn("Capacidade");
 			
 			this.mes = Integer.parseInt(this.data.substring(3, 5));
-			Vector v = instanceAluno.getReservasMes(mes);
+			
+			Vector v = instanceProf.getReservasMes(mes);
 			for(int i = 0; i < v.size(); i++){
 				table.addRow(fillDataVector(v.get(i), i));
 				
 			}
 			v.clear();
-			v = instanceProf.getResProfessorSala_vet();//getReservasMes(Integer.parseInt(this.data.substring(3, 5)));
+			
+			v = instanceAluno.getReservasMes(mes);
 			for(int i = 0; i < v.size(); i++){
 				table.addRow(fillDataVector(v.get(i), i));
 				
 			}
+			
 
 
 		} catch (SQLException ex) {
