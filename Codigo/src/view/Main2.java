@@ -1,5 +1,6 @@
 package view;
 
+import javax.swing.UIManager;
 import view.mainViews.AlunoView;
 import view.mainViews.ClienteView;
 import view.mainViews.EquipamentoView;

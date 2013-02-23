@@ -4,20 +4,25 @@
  */
 package view.horariosReservas;
 
-import control.ManterResEquipametoProfessor;
-import java.awt.Frame;
+import model.Equipamento;
+import model.Sala;
 
 /**
  *
  * @author Parley
  */
 public class HorariosReservaEquipamento extends HorariosReservaPatrimonio{
-	
-	ManterResEquipametoProfessor instance;
 
-	public HorariosReservaEquipamento(Frame parent, boolean modal, int index) {
-		super(parent, modal);
-		instance = ManterResEquipametoProfessor.getInstance();
+	Equipamento eq;
+	
+	public HorariosReservaEquipamento(java.awt.Frame parent, boolean modal, String data, Equipamento eq) {
+		super(parent, modal, data);
+		this.eq = eq;
+	}
+	
+	@Override
+	protected void cancelarReservaAction(int index) {
+		throw new UnsupportedOperationException("Not supported yet.");
 	}
 
 	@Override
@@ -26,7 +31,8 @@ public class HorariosReservaEquipamento extends HorariosReservaPatrimonio{
 	}
 
 	@Override
-	protected void cancelarReservaAction() {
+	protected void alterarAction(int index) {
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	
 }

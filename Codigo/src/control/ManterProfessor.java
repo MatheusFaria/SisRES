@@ -22,6 +22,22 @@ public class ManterProfessor {
 		}
 	// 
 	
+	public Vector<Professor> buscarNome(String valor) throws SQLException, ClienteException {
+		return ProfessorDAO.getInstance().buscarNome(valor);
+	}
+	public Vector<Professor> buscarCpf(String valor) throws SQLException, ClienteException {
+		return ProfessorDAO.getInstance().buscarCpf(valor);
+	}
+	public Vector<Professor> buscarMatricula(String valor) throws SQLException, ClienteException {
+		return ProfessorDAO.getInstance().buscarMatricula(valor);
+	}
+	public Vector<Professor> buscarEmail(String valor) throws SQLException, ClienteException {
+		return ProfessorDAO.getInstance().buscarEmail(valor);
+	}
+	public Vector<Professor> buscarTelefone(String valor) throws SQLException, ClienteException {
+		return ProfessorDAO.getInstance().buscarTelefone(valor);
+	}	
+		
 	public Vector<Professor> getProfessores_vet() throws SQLException, ClienteException{
 		this.professores_vet = ProfessorDAO.getInstance().buscarTodos();
 		return this.professores_vet;

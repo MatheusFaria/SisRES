@@ -52,8 +52,9 @@ public class ReservaSala extends Reserva{
 	
 	@Override
 	public String toString() {
-		return "ReservaSala [sala=[" + this.getSala().toString() + "], finalidade=" + this.getFinalidade()
-				+ ", toString()=" + super.toString() + "]";
+		return "\n" + this.getSala().toString() 
+			+ "\nFinalidade=" + this.getFinalidade() 
+			+ super.toString();
 	}
 
 }

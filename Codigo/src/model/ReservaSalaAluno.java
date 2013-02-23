@@ -63,9 +63,9 @@ public class ReservaSalaAluno extends ReservaSala{
 
 	@Override
 	public String toString() {
-		return "ReservaSalaAluno [aluno=" + this.getAluno().toString() + ", cadeiras_reservadas="
-				+ this.getCadeiras_reservadas() + ", toString()=" + super.toString()
-				+ "]";
+		return "Aluno: " + this.getAluno().toString()
+			+ "\nCadeiras Reservadas: " + this.getCadeiras_reservadas() 
+			+ super.toString();
 	}
 
 }

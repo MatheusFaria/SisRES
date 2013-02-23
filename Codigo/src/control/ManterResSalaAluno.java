@@ -12,42 +12,54 @@ import exception.PatrimonioException;
 import exception.ReservaException;
 
 public class ManterResSalaAluno {
-	
+
 	private Vector<ReservaSalaAluno> rev_sala_aluno_vet = new Vector<ReservaSalaAluno>();
-	
 	//Singleton
-		private static ManterResSalaAluno instance;
-		private ManterResSalaAluno() {
-		}
-		public static ManterResSalaAluno getInstance() {
-		if(instance == null)
+	private static ManterResSalaAluno instance;
+
+	private ManterResSalaAluno() {
+	}
+
+	public static ManterResSalaAluno getInstance() {
+		if (instance == null) {
 			instance = new ManterResSalaAluno();
+		}
 		return instance;
 	}
 	//
+
+	public Vector<ReservaSalaAluno> getReservasHora(String hora) throws SQLException, PatrimonioException, ClienteException, ReservaException{
+		return ResSalaAlunoDAO.getInstance().buscarPorHora(hora);
 		
-	public Vector<ReservaSalaAluno> getResAlunoSala_vet() throws SQLException, PatrimonioException, ClienteException, ReservaException{
+	}
+	
+	public Vector<ReservaSalaAluno> getReservasMes(int mes) throws SQLException, PatrimonioException, ClienteException, ReservaException{
+		return ResSalaAlunoDAO.getInstance().buscarPorMes(mes);
+	}
+	
+	public Vector<ReservaSalaAluno> getResAlunoSala_vet() throws SQLException, PatrimonioException, ClienteException, ReservaException {
 		this.rev_sala_aluno_vet = ResSalaAlunoDAO.getInstance().buscarTodos();
 		return this.rev_sala_aluno_vet;
 	}
-	public int cadeirasDisponveis(Sala sala) throws SQLException, PatrimonioException, ClienteException, ReservaException{
+
+	public int cadeirasDisponveis(Sala sala) throws SQLException, PatrimonioException, ClienteException, ReservaException {
 		return ResSalaAlunoDAO.getInstance().cadeirasDisponiveis(sala);
 	}
-	
-	public void inserir(Sala sala, Aluno aluno,
-						String data, String hora, String finalidade, String cadeiras_reservadas) 
-					throws SQLException, ReservaException, ClienteException, PatrimonioException {
 
-		ReservaSalaAluno r = new ReservaSalaAluno(data, hora, sala , finalidade, cadeiras_reservadas, aluno);
+	public void inserir(Sala sala, Aluno aluno,
+		String data, String hora, String finalidade, String cadeiras_reservadas)
+		throws SQLException, ReservaException, ClienteException, PatrimonioException {
+
+		ReservaSalaAluno r = new ReservaSalaAluno(data, hora, sala, finalidade, cadeiras_reservadas, aluno);
 		ResSalaAlunoDAO.getInstance().incluir(r);
 		this.rev_sala_aluno_vet.add(r);
 	}
 
-	public void alterar(String finalidade, String cadeiras_reservadas, ReservaSalaAluno r) 
-				throws SQLException, ReservaException, ClienteException, PatrimonioException {
-		
-		ReservaSalaAluno res_old = new ReservaSalaAluno(r.getData(), r.getHora(), r.getSala() , 
-												r.getFinalidade(), r.getCadeiras_reservadas(), r.getAluno());
+	public void alterar(String finalidade, String cadeiras_reservadas, ReservaSalaAluno r)
+		throws SQLException, ReservaException, ClienteException, PatrimonioException {
+
+		ReservaSalaAluno res_old = new ReservaSalaAluno(r.getData(), r.getHora(), r.getSala(),
+			r.getFinalidade(), r.getCadeiras_reservadas(), r.getAluno());
 		r.setFinalidade(finalidade);
 		r.setCadeiras_reservadas(cadeiras_reservadas);
 		ResSalaAlunoDAO.getInstance().alterar(res_old, r);

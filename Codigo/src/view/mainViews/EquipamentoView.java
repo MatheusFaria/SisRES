@@ -5,12 +5,14 @@ import exception.PatrimonioException;
 import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.Vector;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.Equipamento;
 import view.alteracoes.AlterarEquipamento;
 import view.cadastros.CadastroEquipamento;
-import view.horariosReservas.HorariosReservaEquipamento;
+import view.diasReservas.DiaReservaEquipamento;
+import view.horariosReservas.HorariosReservaPatrimonio;
 
 /**
  *
@@ -32,7 +34,7 @@ public class EquipamentoView extends PatrimonioView {
 		}
 
 		Vector<String> nomesTabela = new Vector<String>();
-		
+
 		nomesTabela.add(equipamento.getCodigo());
 		nomesTabela.add(equipamento.getDescricao());
 
@@ -49,13 +51,13 @@ public class EquipamentoView extends PatrimonioView {
 
 			table.addColumn("Codigo");
 			table.addColumn("Descricao");
-			
+
 			while (i.hasNext()) {
 				Equipamento equipamento = i.next();
 				table.addRow(fillDataVector(equipamento));
 			}
 			return table;
-			
+
 		} catch (PatrimonioException ex) {
 			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
 		} catch (SQLException ex) {
@@ -109,8 +111,9 @@ public class EquipamentoView extends PatrimonioView {
 
 	@Override
 	protected void visualizarAction(int index) {
-		HorariosReservaEquipamento reserva = new HorariosReservaEquipamento(new javax.swing.JFrame(), true, index);
+		DiaReservaEquipamento reserva = new DiaReservaEquipamento(new javax.swing.JFrame(), true);
 		reserva.setResizable(false);
 		reserva.setVisible(true);
+
 	}
 }

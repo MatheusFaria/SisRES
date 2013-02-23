@@ -17,7 +17,7 @@ import model.Sala;
 import view.alteracoes.AlterarSala;
 import view.cadastros.CadastroPatrimonio;
 import view.cadastros.CadastroSala;
-import view.horariosReservas.HorariosReservaSala;
+import view.diasReservas.DiaReservaSala;
 
 /**
  *
@@ -113,7 +113,7 @@ public class SalaView extends PatrimonioView {
 	@Override
 	protected void visualizarAction(int index) {
 		try {
-			HorariosReservaSala reserva = new HorariosReservaSala(new javax.swing.JFrame(), true, index);
+			DiaReservaSala reserva = new DiaReservaSala(new javax.swing.JFrame(), true, index);
 			reserva.setResizable(false);
 			reserva.setVisible(true);
 		} catch (PatrimonioException ex) {

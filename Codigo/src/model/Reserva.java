@@ -77,7 +77,8 @@ public class Reserva {
 	
 	@Override
 	public String toString() {
-		return "Reserva [hora=" + this.hora + ", data=" + this.data + "]";
+		return "\nHora=" + this.hora 
+			+ "\nData=" + this.data;
 	}
 	
 	private String dataAtual(){

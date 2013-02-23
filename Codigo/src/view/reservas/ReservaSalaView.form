@@ -32,28 +32,49 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="199" max="-2" attributes="0"/>
                       <Component id="reservarButton" min="-2" pref="82" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="cancelarButton" min="-2" pref="81" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                      <EmptySpace pref="25" max="32767" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="cpfLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="cpfTextField" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="qntCadeirasReservadasLbl" min="-2" max="-2" attributes="0"/>
-                          <Component id="qntCadeirasLabel" min="-2" pref="220" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="cpfLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cpfTextField" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="qntCadeirasReservadasLbl" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <Component id="qntCadeirasReservadasTextField" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="salaLabel" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="finalidadeTextLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="alunoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="finalidadeTextField" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane1" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane2" alignment="1" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="qntCadeirasLabel" min="-2" pref="220" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="qntCadeirasTxtField" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="qntCadeirasTxtField" max="32767" attributes="0"/>
-                          <Component id="qntCadeirasReservadasTextField" max="32767" attributes="0"/>
-                      </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="dataLabel" min="-2" max="-2" attributes="0"/>
@@ -61,28 +82,11 @@
                       <Component id="dataTextField" min="-2" pref="143" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="horaLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="horaTextField" pref="156" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="horaTextField" min="-2" pref="143" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="salaLabel" min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="finalidadeTextLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="alunoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="alunoTextField" max="32767" attributes="0"/>
-                          <Component id="salaTextField" max="32767" attributes="0"/>
-                          <Component id="finalidadeTextField" max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -90,20 +94,25 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" min="-2" pref="34" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="cpfLabel" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                   <Component id="cpfTextField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="alunoTextField" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
-                  <Component id="alunoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" pref="112" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                      <Component id="alunoLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="salaTextField" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
                   <Component id="salaLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                  <Component id="jScrollPane2" min="-2" pref="70" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" attributes="0">
@@ -115,29 +124,29 @@
                       <Component id="finalidadeTextField" max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="qntCadeirasTxtField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="qntCadeirasLabel" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
-              </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="dataLabel" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="dataTextField" alignment="3" max="32767" attributes="0"/>
+                  <Component id="horaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="horaTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="qntCadeirasReservadasLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="qntCadeirasReservadasTextField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="dataLabel" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
-                  <Component id="dataTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="horaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="horaTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="qntCadeirasLabel" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="qntCadeirasTxtField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="reservarButton" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
                   <Component id="cancelarButton" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -148,19 +157,18 @@
         <Property name="text" type="java.lang.String" value="Sala: "/>
         <Property name="name" type="java.lang.String" value="SalaLabel" noResource="true"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="salaTextField">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-        <Property name="enabled" type="boolean" value="false"/>
-        <Property name="name" type="java.lang.String" value="Sala" noResource="true"/>
-      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="alunoLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Aluno:"/>
         <Property name="name" type="java.lang.String" value="AlunoLabel" noResource="true"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel1">
 
@@ -201,6 +209,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="professorRadioButtonActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JRadioButton" name="alunoRadioButton">
           <Properties>
@@ -213,20 +224,20 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="alunoRadioButtonActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="alunoTextField">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-        <Property name="name" type="java.lang.String" value="Aluno" noResource="true"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="cpfLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Digite o CPF desejado :"/>
         <Property name="name" type="java.lang.String" value="CpfLabel" noResource="true"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="cpfTextField">
       <Properties>
@@ -235,63 +246,92 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cpfTextFieldActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="finalidadeTextLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Finalidade: "/>
         <Property name="name" type="java.lang.String" value="FinalidadeLabel" noResource="true"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="finalidadeTextField">
       <Properties>
         <Property name="name" type="java.lang.String" value="Finalidade" noResource="true"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="qntCadeirasLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Quantidade de Cadeiras Disponiveis: "/>
         <Property name="name" type="java.lang.String" value="QuantidadeCadeirasDisponiveisLabel" noResource="true"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="qntCadeirasTxtField">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
-        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="fe" green="d0" red="c8" type="rgb"/>
+        </Property>
         <Property name="name" type="java.lang.String" value="Quantidade de Cadeiras Disponiveis" noResource="true"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="qntCadeirasReservadasLbl">
       <Properties>
         <Property name="text" type="java.lang.String" value="Quantidade de Cadeiras Reservadas: "/>
         <Property name="name" type="java.lang.String" value="QuantidadeCadeirasReservadasLabel" noResource="true"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="qntCadeirasReservadasTextField">
       <Properties>
-        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="fe" green="d0" red="c8" type="rgb"/>
+        </Property>
         <Property name="name" type="java.lang.String" value="Quantidade de Cadeiras Reservadas" noResource="true"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="dataLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Data: "/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="dataTextField">
-      <Properties>
-        <Property name="name" type="java.lang.String" value="Data" noResource="true"/>
-      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="horaLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Hora: "/>
         <Property name="name" type="java.lang.String" value="HoraLabel" noResource="true"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="horaTextField">
       <Properties>
         <Property name="name" type="java.lang.String" value="Hora" noResource="true"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="reservarButton">
       <Properties>
@@ -301,6 +341,9 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="reservarButtonActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="cancelarButton">
       <Properties>
@@ -310,6 +353,67 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelarButtonActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="alunoTextArea">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="fe" green="d0" red="c8" type="rgb"/>
+            </Property>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="name" type="java.lang.String" value="AlunoTextArea" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="salaTextArea">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="fe" green="d0" red="c8" type="rgb"/>
+            </Property>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="name" type="java.lang.String" value="salaTextArea" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JTextField" name="dataTextField">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="fe" green="d0" red="c8" type="rgb"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="DiaTextField" noResource="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>

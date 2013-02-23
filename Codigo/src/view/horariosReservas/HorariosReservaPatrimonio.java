@@ -1,6 +1,11 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package view.horariosReservas;
 
 import control.ManterResSalaAluno;
+import control.ManterResSalaProfessor;
 import exception.ClienteException;
 import exception.PatrimonioException;
 import exception.ReservaException;
@@ -9,8 +14,10 @@ import java.util.Iterator;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.ReservaSalaAluno;
+import model.ReservaSalaProfessor;
 
 /**
  *
@@ -18,50 +25,78 @@ import model.ReservaSalaAluno;
  */
 public abstract class HorariosReservaPatrimonio extends javax.swing.JDialog {
 
-	private ManterResSalaAluno instance;
-	
-	public HorariosReservaPatrimonio(java.awt.Frame parent, boolean modal) {
-		super(parent, modal);
-		initComponents();
-	}
+	/**
+	 * Creates new form HorariosReservaPatrimonio
+	 */
+	ManterResSalaAluno instanceAluno;
+	ManterResSalaProfessor instanceProf;
+	protected String data;
+	int mes;
 
-	protected Vector<String> fillDataVector(Object o) {
-		
-		Vector<String> nomesTabela = new Vector<String>();
+	protected Vector<String> fillDataVector(Object o, int index) {
+		Vector <String> nomesTabela = new Vector<String>();
 		if(o instanceof ReservaSalaAluno){
 			ReservaSalaAluno r = (ReservaSalaAluno) o;
-			nomesTabela.add(r.getAluno().toString());
-			nomesTabela.add(r.getData());
-			nomesTabela.add(r.getFinalidade());
-			nomesTabela.add(r.getHora());
+			if (!data.isEmpty() && r.getData().startsWith(data.substring(0, 2))) {
+				nomesTabela.add(String.valueOf(index));
+				nomesTabela.add(r.getHora());
+				nomesTabela.add(r.getAluno().getNome());
+				nomesTabela.add(r.getAluno().getMatricula());
+				nomesTabela.add(r.getFinalidade());
+				nomesTabela.add(r.getSala().getCodigo()); 
+				nomesTabela.add(r.getSala().getDescricao());
+				nomesTabela.add(r.getCadeiras_reservadas());
+				nomesTabela.add(r.getSala().getCapacidade());
+			}
+		} else if(o instanceof ReservaSalaProfessor){
+			ReservaSalaProfessor r = (ReservaSalaProfessor) o;
+			if (!data.isEmpty() && r.getData().startsWith(data.substring(0, 2))) {
+				
+				nomesTabela.add(String.valueOf(index));
+				nomesTabela.add(r.getHora());
+				nomesTabela.add(r.getProfessor().getNome());
+				nomesTabela.add(r.getProfessor().getMatricula());
+				nomesTabela.add(r.getFinalidade());
+				nomesTabela.add(r.getSala().getCodigo()); 
+				nomesTabela.add(r.getSala().getDescricao());				
+				nomesTabela.add(r.getSala().getCapacidade());
+				nomesTabela.add(r.getSala().getCapacidade());
+			}
 		}
+
 		return nomesTabela;
 
 	}
 
 	protected DefaultTableModel fillTable() {
+		DefaultTableModel table = new DefaultTableModel();
+		instanceAluno = ManterResSalaAluno.getInstance();
+		instanceProf = ManterResSalaProfessor.getInstance();
 		try {
-			instance = ManterResSalaAluno.getInstance();
-			final int NUMERO_LINHAS = 7;
-			DefaultTableModel table = new DefaultTableModel();
-
-			table.addColumn("HORARIO");
-			table.addColumn("Segunda");
-			table.addColumn("Ter�a");
-			table.addColumn("Quarta");
-			table.addColumn("Quinta");
-			table.addColumn("Sexta");
-			table.addColumn("Sabado");
+			table.addColumn("");
+			table.addColumn("Hora:");
+			table.addColumn("Nome");
+			table.addColumn("Matricula");
+			table.addColumn("Finalidade");
+			table.addColumn("Codigo da Sala"); 
+			table.addColumn("Descricao da Sala");
+			table.addColumn("Reservadas");
+			table.addColumn("Capacidade");
 			
-			int a = 8, b = 10;
-			Iterator <Object> i = instance.getResAlunoSala_vet().iterator();
-			while (i.hasNext()) {
-				Object o = i.next();
-				table.addRow(fillDataVector(o));
+			this.mes = Integer.parseInt(this.data.substring(3, 5));
+			Vector v = instanceAluno.getReservasMes(mes);
+			for(int i = 0; i < v.size(); i++){
+				table.addRow(fillDataVector(v.get(i), i));
 				
 			}
-			
-			return table;
+			v.clear();
+			v = instanceProf.getResProfessorSala_vet();//getReservasMes(Integer.parseInt(this.data.substring(3, 5)));
+			for(int i = 0; i < v.size(); i++){
+				table.addRow(fillDataVector(v.get(i), i));
+				
+			}
+
+
 		} catch (SQLException ex) {
 			Logger.getLogger(HorariosReservaPatrimonio.class.getName()).log(Level.SEVERE, null, ex);
 		} catch (PatrimonioException ex) {
@@ -71,13 +106,24 @@ public abstract class HorariosReservaPatrimonio extends javax.swing.JDialog {
 		} catch (ReservaException ex) {
 			Logger.getLogger(HorariosReservaPatrimonio.class.getName()).log(Level.SEVERE, null, ex);
 		}
-		return null;
+		return table;
+
 	}
-	
+
+	protected abstract void cancelarReservaAction(int indexLinha);
+
 	protected abstract void reservarAction();
-	
-	protected abstract void cancelarReservaAction();
-	
+
+	protected abstract void alterarAction(int indexLinha);
+
+	public HorariosReservaPatrimonio(java.awt.Frame parent, boolean modal, String data) {
+		super(parent, modal);
+		this.data = data;
+		this.setTitle(data);
+		initComponents();
+
+	}
+
 	/**
 	 * This method is called from within the constructor to initialize the
 	 * form. WARNING: Do NOT modify this code. The content of this method is
@@ -87,81 +133,146 @@ public abstract class HorariosReservaPatrimonio extends javax.swing.JDialog {
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
         private void initComponents() {
 
-                ReservarBtn = new javax.swing.JButton();
-                CancelarReservaBtn = new javax.swing.JButton();
+                jPanel3 = new javax.swing.JPanel();
+                jPanel2 = new javax.swing.JPanel();
+                reservarButton = new javax.swing.JButton();
+                alterarButton = new javax.swing.JButton();
+                cancelarReservaButton = new javax.swing.JButton();
                 jScrollPane1 = new javax.swing.JScrollPane();
-                tabelaHorarios = new javax.swing.JTable();
+                reservasTable = new javax.swing.JTable();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-                setResizable(false);
 
-                ReservarBtn.setText("Reservar");
-                ReservarBtn.addActionListener(new java.awt.event.ActionListener() {
+                reservarButton.setText("Reservar");
+                reservarButton.setName("ReservarButton"); // NOI18N
+                reservarButton.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                ReservarBtnActionPerformed(evt);
+                                reservarButtonActionPerformed(evt);
                         }
                 });
 
-                CancelarReservaBtn.setText("Cancelar Reserva");
-                CancelarReservaBtn.addActionListener(new java.awt.event.ActionListener() {
+                alterarButton.setText("Alterar Reserva");
+                alterarButton.setName("AlterarButton"); // NOI18N
+                alterarButton.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                CancelarReservaBtnActionPerformed(evt);
+                                alterarButtonActionPerformed(evt);
                         }
                 });
 
-                tabelaHorarios.setAutoCreateRowSorter(true);
-                tabelaHorarios.setModel(fillTable());
-                tabelaHorarios.setCellSelectionEnabled(true);
-                tabelaHorarios.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-                tabelaHorarios.setName("TabelaHorarios"); // NOI18N
-                tabelaHorarios.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-                jScrollPane1.setViewportView(tabelaHorarios);
-                for(int i = 0; i < this.tabelaHorarios.getRowCount(); i++){
-                        this.tabelaHorarios.setRowHeight(i, 100);
-                }
+                cancelarReservaButton.setText("Cancelar Reserva");
+                cancelarReservaButton.setName("CancelarReservaButton"); // NOI18N
+                cancelarReservaButton.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                cancelarReservaButtonActionPerformed(evt);
+                        }
+                });
+
+                javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+                jPanel2.setLayout(jPanel2Layout);
+                jPanel2Layout.setHorizontalGroup(
+                        jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(reservarButton, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                                        .addComponent(cancelarReservaButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                                        .addComponent(alterarButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                );
+                jPanel2Layout.setVerticalGroup(
+                        jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(25, 25, 25)
+                                .addComponent(reservarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(alterarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cancelarReservaButton, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(175, Short.MAX_VALUE))
+                );
+
+                jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {alterarButton, cancelarReservaButton, reservarButton});
+
+                reservasTable.setModel(fillTable());
+                reservasTable.setName("ReservasTable"); // NOI18N
+                jScrollPane1.setViewportView(reservasTable);
+
+                javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+                jPanel3.setLayout(jPanel3Layout);
+                jPanel3Layout.setHorizontalGroup(
+                        jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 727, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())
+                );
+                jPanel3Layout.setVerticalGroup(
+                        jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                );
+
+                jPanel3Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jPanel2, jScrollPane1});
 
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
                 getContentPane().setLayout(layout);
                 layout.setHorizontalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                                .addGap(14, 14, 14)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1147, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(ReservarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(CancelarReservaBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE))
+                                .addContainerGap()
+                                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addContainerGap())
                 );
                 layout.setVerticalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addComponent(ReservarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(CancelarReservaBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(layout.createSequentialGroup()
                                 .addContainerGap()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 629, Short.MAX_VALUE)
-                                .addContainerGap())
+                                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(20, 20, 20))
                 );
 
                 pack();
         }// </editor-fold>//GEN-END:initComponents
 
-        private void ReservarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReservarBtnActionPerformed
-                reservarAction();
-        }//GEN-LAST:event_ReservarBtnActionPerformed
+        private void cancelarReservaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarReservaButtonActionPerformed
+		int indexLinha;
+		indexLinha = this.reservasTable.getSelectedRow();
+		if (indexLinha < 0 ) {
+			JOptionPane.showMessageDialog(this, "Selecione uma linha!", "Erro", JOptionPane.ERROR_MESSAGE, null);
+			return;
+		}
+		cancelarReservaAction(indexLinha);
+		this.reservasTable.setModel(fillTable());
+        }//GEN-LAST:event_cancelarReservaButtonActionPerformed
 
-        private void CancelarReservaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarReservaBtnActionPerformed
-                cancelarReservaAction();
-        }//GEN-LAST:event_CancelarReservaBtnActionPerformed
+        private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
+		reservarAction();
+		this.reservasTable.setModel(fillTable());
+        }//GEN-LAST:event_reservarButtonActionPerformed
 
+        private void alterarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alterarButtonActionPerformed
+		int indexLinha;
+		indexLinha = this.reservasTable.getSelectedRow();
+		if (indexLinha < 0 ) {
+			JOptionPane.showMessageDialog(this, "Selecione uma linha!", "Erro", JOptionPane.ERROR_MESSAGE, null);
+			return;
+		}
+		alterarAction(indexLinha);
+		this.reservasTable.setModel(fillTable());
+        }//GEN-LAST:event_alterarButtonActionPerformed
         // Variables declaration - do not modify//GEN-BEGIN:variables
-        protected javax.swing.JButton CancelarReservaBtn;
-        protected javax.swing.JButton ReservarBtn;
+        protected javax.swing.JButton alterarButton;
+        protected javax.swing.JButton cancelarReservaButton;
+        private javax.swing.JPanel jPanel2;
+        private javax.swing.JPanel jPanel3;
         private javax.swing.JScrollPane jScrollPane1;
-        protected javax.swing.JTable tabelaHorarios;
+        protected javax.swing.JButton reservarButton;
+        protected javax.swing.JTable reservasTable;
         // End of variables declaration//GEN-END:variables
 }

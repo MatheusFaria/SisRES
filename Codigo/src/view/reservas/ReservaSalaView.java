@@ -4,68 +4,60 @@
  */
 package view.reservas;
 
+import control.ManterAluno;
+import control.ManterProfessor;
 import control.ManterResSalaAluno;
 import control.ManterResSalaProfessor;
 import exception.ClienteException;
 import exception.PatrimonioException;
 import exception.ReservaException;
+import java.awt.Color;
 import java.sql.SQLException;
 import java.util.Vector;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import model.Aluno;
 import model.Professor;
-import model.ReservaSalaAluno;
 import model.Sala;
-import persistence.AlunoDAO;
-import persistence.ProfessorDAO;
 
 /**
  *
  * @author Parley
  */
-public class ReservaPatrimonio extends javax.swing.JDialog {
+public abstract class ReservaSalaView extends javax.swing.JDialog {
 
-	/**
-	 * Creates new form ReservaPatrimonio
-	 */
-	private final int ALUNO = 1;
-	private final int PROF = 2;
-	private final int ERRO = -1;
-	private ManterResSalaAluno instanceAluno;
-	private ManterResSalaProfessor instanceProf;
-	private Sala sala;
-	private Aluno aluno;
+	protected final int ALUNO = 1;
+	protected final int PROF = 2;
+	protected final int ERRO = -1;
+	protected ManterResSalaAluno instanceAluno;
+	protected ManterResSalaProfessor instanceProf;
+	protected Sala sala;
+	protected Aluno aluno;
 
-	public ReservaPatrimonio(java.awt.Frame parent, boolean modal, Sala sala) {
+	public ReservaSalaView(java.awt.Frame parent, boolean modal) throws SQLException, PatrimonioException, PatrimonioException, ClienteException, ReservaException {
 		super(parent, modal);
+		this.instanceProf = ManterResSalaProfessor.getInstance();
+		this.instanceAluno = ManterResSalaAluno.getInstance();
+		
 		initComponents();
-		this.sala = sala;
-		this.salaTextField.setText(sala.toString());
-		this.qntCadeirasTxtField.setText(sala.getCapacidade());
+		
 	}
 
-	protected void reservarAluno() throws SQLException, ReservaException, ClienteException, PatrimonioException {
-		instanceAluno.inserir(sala, aluno, this.dataTextField.getText(), this.horaTextField.getText(),
-			this.finalidadeTextField.getText(), this.qntCadeirasReservadasTextField.getText());
-	}
-
-	protected void reservarProfessor() {
-	}
-
+	abstract protected void reservarAluno();
+	abstract protected void reservarProfessor();
+	abstract protected void professorRadioButtonAction();
+	abstract protected void alunoRadioButtonAction();
+	
 	protected void getAluno() {
 		try {
-			//IMPORTANTE: PASSAR OS METODOS DE BUSCA PARA A CONTROL, PARA NAO BURLAR A ARQUITETURA
-			Vector<Aluno> alunos = AlunoDAO.getInstance().buscarCpf(this.cpfTextField.getText());
-			//TODO
+			
+			Vector<Aluno> alunos = ManterAluno.getInstance().buscarCpf(this.cpfTextField.getText());
 			if (alunos.isEmpty()) {
 				JOptionPane.showMessageDialog(this, "Aluno nao Cadastrado."
 					+ " Digite o CPF correto ou cadastre o aluno desejado", "Erro", JOptionPane.ERROR_MESSAGE, null);
 				return;
 			}
 			aluno = alunos.firstElement();
-			this.alunoTextField.setText(aluno.toString());
+			this.alunoTextArea.setText(aluno.toString());
 		} catch (ClienteException ex) {
 			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
 		} catch (SQLException ex) {
@@ -77,15 +69,13 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
 
 	protected void getProfessor() {
 		try {
-			//IMPORTANTE: PASSAR OS METODOS DE BUSCA PARA A CONTROL, PARA NAO BURLAR A ARQUITETURA
-			Vector<Professor> professor = ProfessorDAO.getInstance().buscarCpf(this.cpfTextField.getText());
-			//TODO
+			Vector<Professor> professor = ManterProfessor.getInstance().buscarCpf(this.cpfTextField.getText());
 			if (professor.isEmpty()) {
 				JOptionPane.showMessageDialog(this, "Professor nao Cadastrado."
 					+ " Digite o CPF correto ou cadastre o professor desejado", "Erro", JOptionPane.ERROR_MESSAGE, null);
 				return;
 			}
-			this.alunoTextField.setText(professor.firstElement().toString());
+			this.alunoTextArea.setText(professor.firstElement().toString());
 		} catch (ClienteException ex) {
 			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
 		} catch (SQLException ex) {
@@ -115,12 +105,10 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
 
                 alunoProfbuttonGroup = new javax.swing.ButtonGroup();
                 salaLabel = new javax.swing.JLabel();
-                salaTextField = new javax.swing.JTextField();
                 alunoLabel = new javax.swing.JLabel();
                 jPanel1 = new javax.swing.JPanel();
                 professorRadioButton = new javax.swing.JRadioButton();
                 alunoRadioButton = new javax.swing.JRadioButton();
-                alunoTextField = new javax.swing.JTextField();
                 cpfLabel = new javax.swing.JLabel();
                 cpfTextField = new javax.swing.JTextField();
                 finalidadeTextLabel = new javax.swing.JLabel();
@@ -130,11 +118,15 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
                 qntCadeirasReservadasLbl = new javax.swing.JLabel();
                 qntCadeirasReservadasTextField = new javax.swing.JTextField();
                 dataLabel = new javax.swing.JLabel();
-                dataTextField = new javax.swing.JTextField();
                 horaLabel = new javax.swing.JLabel();
                 horaTextField = new javax.swing.JTextField();
                 reservarButton = new javax.swing.JButton();
                 cancelarButton = new javax.swing.JButton();
+                jScrollPane1 = new javax.swing.JScrollPane();
+                alunoTextArea = new javax.swing.JTextArea();
+                jScrollPane2 = new javax.swing.JScrollPane();
+                salaTextArea = new javax.swing.JTextArea();
+                dataTextField = new javax.swing.JTextField();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
                 setTitle("ReservaPatrimonio");
@@ -143,10 +135,6 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
 
                 salaLabel.setText("Sala: ");
                 salaLabel.setName("SalaLabel"); // NOI18N
-
-                salaTextField.setEditable(false);
-                salaTextField.setEnabled(false);
-                salaTextField.setName("Sala"); // NOI18N
 
                 alunoLabel.setText("Aluno:");
                 alunoLabel.setName("AlunoLabel"); // NOI18N
@@ -190,9 +178,6 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 );
 
-                alunoTextField.setEditable(false);
-                alunoTextField.setName("Aluno"); // NOI18N
-
                 cpfLabel.setText("Digite o CPF desejado :");
                 cpfLabel.setName("CpfLabel"); // NOI18N
 
@@ -212,18 +197,16 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
                 qntCadeirasLabel.setName("QuantidadeCadeirasDisponiveisLabel"); // NOI18N
 
                 qntCadeirasTxtField.setEditable(false);
-                qntCadeirasTxtField.setEnabled(false);
+                qntCadeirasTxtField.setBackground(new java.awt.Color(200, 208, 254));
                 qntCadeirasTxtField.setName("Quantidade de Cadeiras Disponiveis"); // NOI18N
 
                 qntCadeirasReservadasLbl.setText("Quantidade de Cadeiras Reservadas: ");
                 qntCadeirasReservadasLbl.setName("QuantidadeCadeirasReservadasLabel"); // NOI18N
 
-                qntCadeirasReservadasTextField.setEnabled(false);
+                qntCadeirasReservadasTextField.setBackground(new java.awt.Color(200, 208, 254));
                 qntCadeirasReservadasTextField.setName("Quantidade de Cadeiras Reservadas"); // NOI18N
 
                 dataLabel.setText("Data: ");
-
-                dataTextField.setName("Data"); // NOI18N
 
                 horaLabel.setText("Hora: ");
                 horaLabel.setName("HoraLabel"); // NOI18N
@@ -246,6 +229,24 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
                         }
                 });
 
+                alunoTextArea.setEditable(false);
+                alunoTextArea.setBackground(new java.awt.Color(200, 208, 254));
+                alunoTextArea.setColumns(20);
+                alunoTextArea.setRows(5);
+                alunoTextArea.setName("AlunoTextArea"); // NOI18N
+                jScrollPane1.setViewportView(alunoTextArea);
+
+                salaTextArea.setEditable(false);
+                salaTextArea.setBackground(new java.awt.Color(200, 208, 254));
+                salaTextArea.setColumns(20);
+                salaTextArea.setRows(5);
+                salaTextArea.setName("salaTextArea"); // NOI18N
+                jScrollPane2.setViewportView(salaTextArea);
+
+                dataTextField.setEditable(false);
+                dataTextField.setBackground(new java.awt.Color(200, 208, 254));
+                dataTextField.setName("DiaTextField"); // NOI18N
+
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
                 getContentPane().setLayout(layout);
                 layout.setHorizontalGroup(
@@ -253,63 +254,69 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
                         .addGroup(layout.createSequentialGroup()
                                 .addContainerGap()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addGap(0, 0, Short.MAX_VALUE)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(199, 199, 199)
                                                 .addComponent(reservarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
                                                 .addComponent(cancelarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(8, 8, 8))
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addComponent(cpfLabel)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(cpfTextField))
+                                                .addContainerGap(25, Short.MAX_VALUE))
                                         .addGroup(layout.createSequentialGroup()
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(qntCadeirasReservadasLbl)
-                                                        .addComponent(qntCadeirasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(qntCadeirasTxtField)
-                                                        .addComponent(qntCadeirasReservadasTextField)))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addGap(0, 0, Short.MAX_VALUE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(cpfLabel)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(cpfTextField))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(qntCadeirasReservadasLbl)
+                                                                .addGap(41, 41, 41)
+                                                                .addComponent(qntCadeirasReservadasTextField))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(salaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                        .addComponent(finalidadeTextLabel)
+                                                                        .addComponent(alunoLabel))
+                                                                .addGap(7, 7, 7)
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(finalidadeTextField)
+                                                                        .addComponent(jScrollPane1)
+                                                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                                .addComponent(qntCadeirasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(qntCadeirasTxtField)))
+                                                .addContainerGap())
                                         .addGroup(layout.createSequentialGroup()
                                                 .addComponent(dataLabel)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                 .addComponent(dataTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                 .addComponent(horaLabel)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(horaTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE))
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(0, 0, Short.MAX_VALUE))
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(salaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(finalidadeTextLabel)
-                                                        .addComponent(alunoLabel))
-                                                .addGap(7, 7, 7)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(alunoTextField)
-                                                        .addComponent(salaTextField)
-                                                        .addComponent(finalidadeTextField))))
-                                .addContainerGap())
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(horaTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, Short.MAX_VALUE))))
                 );
                 layout.setVerticalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
                                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(cpfLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(cpfTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(51, 51, 51)
+                                                .addComponent(alunoLabel)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(alunoTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(alunoLabel))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(salaTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(salaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(salaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addGroup(layout.createSequentialGroup()
                                                 .addGap(21, 21, 21)
@@ -317,25 +324,25 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
                                         .addGroup(layout.createSequentialGroup()
                                                 .addGap(18, 18, 18)
                                                 .addComponent(finalidadeTextField)))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(qntCadeirasTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(qntCadeirasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(qntCadeirasReservadasLbl)
-                                        .addComponent(qntCadeirasReservadasTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(dataLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(dataTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(dataTextField)
                                         .addComponent(horaLabel)
                                         .addComponent(horaTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(24, 24, 24)
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(qntCadeirasReservadasLbl)
+                                        .addComponent(qntCadeirasReservadasTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(qntCadeirasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(qntCadeirasTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(reservarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(cancelarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addContainerGap())
                 );
 
                 pack();
@@ -360,71 +367,54 @@ public class ReservaPatrimonio extends javax.swing.JDialog {
         }//GEN-LAST:event_cpfTextFieldActionPerformed
 
         private void alunoRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alunoRadioButtonActionPerformed
-		this.alunoLabel.setText(this.alunoRadioButton.getText() + ": ");
-		this.qntCadeirasReservadasTextField.setEnabled(true);
-		this.qntCadeirasReservadasTextField.setEditable(true);
-		this.instanceAluno = ManterResSalaAluno.getInstance();
-		this.instanceProf = null;
+		alunoRadioButtonAction();
+		
         }//GEN-LAST:event_alunoRadioButtonActionPerformed
 
         private void professorRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_professorRadioButtonActionPerformed
-
-		this.alunoLabel.setText(this.professorRadioButton.getText() + ": ");
-		this.qntCadeirasReservadasTextField.setEnabled(false);
-		this.qntCadeirasReservadasTextField.setText(this.qntCadeirasTxtField.getText());
-		this.instanceProf = ManterResSalaProfessor.getInstance();
-		this.instanceAluno = null;
+		professorRadioButtonAction();
         }//GEN-LAST:event_professorRadioButtonActionPerformed
 
         private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
-               switch (getManterInstance()) {
-                        case ALUNO:
-                        try {
-                                reservarAluno();
-                        } catch (PatrimonioException ex) {
-                                JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
-                        } catch (SQLException ex) {
-                                JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
-                        } catch (ReservaException ex) {
-                                JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
-                        } catch (ClienteException ex) {
-                                JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
-                        }
-                        break;
-                        case PROF:
-                        reservarProfessor();
-                        break;
-                        default:
-                        JOptionPane.showMessageDialog(this, "Selecione Aluno ou Professor", "Erro", JOptionPane.ERROR_MESSAGE, null);
-                }
+		switch (getManterInstance()) {
+			case ALUNO:
+				reservarAluno();
+				break;
+			case PROF:
+				reservarProfessor();
+				break;
+			default:
+				JOptionPane.showMessageDialog(this, "Selecione Aluno ou Professor", "Erro", JOptionPane.ERROR_MESSAGE, null);
+		}
         }//GEN-LAST:event_reservarButtonActionPerformed
 
         private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
-               this.setVisible(false);
+		this.setVisible(false);
         }//GEN-LAST:event_cancelarButtonActionPerformed
-
         // Variables declaration - do not modify//GEN-BEGIN:variables
-        private javax.swing.JLabel alunoLabel;
+        protected javax.swing.JLabel alunoLabel;
         private javax.swing.ButtonGroup alunoProfbuttonGroup;
-        private javax.swing.JRadioButton alunoRadioButton;
-        private javax.swing.JTextField alunoTextField;
-        private javax.swing.JButton cancelarButton;
-        private javax.swing.JLabel cpfLabel;
-        private javax.swing.JTextField cpfTextField;
-        private javax.swing.JLabel dataLabel;
-        private javax.swing.JTextField dataTextField;
-        private javax.swing.JTextField finalidadeTextField;
-        private javax.swing.JLabel finalidadeTextLabel;
-        private javax.swing.JLabel horaLabel;
-        private javax.swing.JTextField horaTextField;
+        protected javax.swing.JRadioButton alunoRadioButton;
+        protected javax.swing.JTextArea alunoTextArea;
+        protected javax.swing.JButton cancelarButton;
+        protected javax.swing.JLabel cpfLabel;
+        protected javax.swing.JTextField cpfTextField;
+        protected javax.swing.JLabel dataLabel;
+        protected javax.swing.JTextField dataTextField;
+        protected javax.swing.JTextField finalidadeTextField;
+        protected javax.swing.JLabel finalidadeTextLabel;
+        protected javax.swing.JLabel horaLabel;
+        protected javax.swing.JTextField horaTextField;
         private javax.swing.JPanel jPanel1;
-        private javax.swing.JRadioButton professorRadioButton;
-        private javax.swing.JLabel qntCadeirasLabel;
-        private javax.swing.JLabel qntCadeirasReservadasLbl;
-        private javax.swing.JTextField qntCadeirasReservadasTextField;
-        private javax.swing.JTextField qntCadeirasTxtField;
-        private javax.swing.JButton reservarButton;
-        private javax.swing.JLabel salaLabel;
-        private javax.swing.JTextField salaTextField;
+        private javax.swing.JScrollPane jScrollPane1;
+        private javax.swing.JScrollPane jScrollPane2;
+        protected javax.swing.JRadioButton professorRadioButton;
+        protected javax.swing.JLabel qntCadeirasLabel;
+        protected javax.swing.JLabel qntCadeirasReservadasLbl;
+        protected javax.swing.JTextField qntCadeirasReservadasTextField;
+        protected javax.swing.JTextField qntCadeirasTxtField;
+        protected javax.swing.JButton reservarButton;
+        protected javax.swing.JLabel salaLabel;
+        protected javax.swing.JTextArea salaTextArea;
         // End of variables declaration//GEN-END:variables
 }
