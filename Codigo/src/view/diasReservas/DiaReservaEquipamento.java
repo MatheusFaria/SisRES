@@ -4,9 +4,12 @@
  */
 package view.diasReservas;
 
-import control.ManterResEquipametoProfessor;
+import control.ManterEquipamento;
+import exception.PatrimonioException;
 import java.awt.Frame;
+import java.sql.SQLException;
 import javax.swing.JFrame;
+import model.Equipamento;
 import view.horariosReservas.HorariosReservaEquipamento;
 import view.horariosReservas.HorariosReservaPatrimonio;
 
@@ -16,16 +19,16 @@ import view.horariosReservas.HorariosReservaPatrimonio;
  */
 public class DiaReservaEquipamento extends DiaReservaPatrimonio{
 	
-	ManterResEquipametoProfessor instance;
+	Equipamento eq;
 
-	public DiaReservaEquipamento(Frame parent, boolean modal) {
+	public DiaReservaEquipamento(Frame parent, boolean modal, int indexEquipamento) throws SQLException, PatrimonioException {
 		super(parent, modal);
-		instance = ManterResEquipametoProfessor.getInstance();
+		eq =  ManterEquipamento.getInstance().getEquipamento_vet().get(indexEquipamento);
 	}
 
 	@Override
 	protected void visualizarAction(String data) {
-		HorariosReservaPatrimonio reserva = new HorariosReservaEquipamento(new JFrame(), true, data, null);
+		HorariosReservaPatrimonio reserva = new HorariosReservaEquipamento(new JFrame(), true, data, this.eq);
 		reserva.setVisible(true);
 		reserva.setResizable(false);
 	}

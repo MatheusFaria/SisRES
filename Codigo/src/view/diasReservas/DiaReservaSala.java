@@ -14,7 +14,7 @@ import model.Sala;
 import view.horariosReservas.HorariosReservaEquipamento;
 import view.horariosReservas.HorariosReservaPatrimonio;
 import view.horariosReservas.HorariosReservaSala;
-import view.reservas.ReservaSalaView;
+import view.reservasSalas.ReservaSalaView;
 
 /**
  *

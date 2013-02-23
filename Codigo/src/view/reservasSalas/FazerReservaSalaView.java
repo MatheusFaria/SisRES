@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package view.reservas;
+package view.reservasSalas;
 
 import control.ManterResSalaAluno;
 import control.ManterResSalaProfessor;

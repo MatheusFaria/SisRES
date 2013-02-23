@@ -111,9 +111,14 @@ public class EquipamentoView extends PatrimonioView {
 
 	@Override
 	protected void visualizarAction(int index) {
-		DiaReservaEquipamento reserva = new DiaReservaEquipamento(new javax.swing.JFrame(), true);
-		reserva.setResizable(false);
-		reserva.setVisible(true);
-
+		try {
+			DiaReservaEquipamento reserva = new DiaReservaEquipamento(new javax.swing.JFrame(), true, index);
+			reserva.setResizable(false);
+			reserva.setVisible(true);
+		} catch (PatrimonioException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		} catch (SQLException ex) {
+			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+		}
 	}
 }
