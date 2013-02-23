@@ -14,12 +14,10 @@ public class Reserva {
 		private final String HORA_NULA = "A hora esta nula.";
 		private final String HORA_INVALIDA = "A hora eh invalida.";
 		private final String HORA_BRANCA = "A hora esta em branco.";
-		private final String HORA_JA_PASSOU = "A hora escolhida ja passou.";
 		private final String HORA_PATTERN = "^[012]?[\\d]:[0-5][\\d]$";
 		private final String DATA_NULA = "A data esta nula.";
 		private final String DATA_INVALIDA = "A data eh invalida.";
 		private final String DATA_BRANCA = "A data esta em branco.";
-		private final String DATA_JA_PASSOU = "A data escolhida ja passou.";
 		private final String DATA_PATTERN = "^[0123]?[\\d]([./-])[01]?[\\d]\\1[\\d]{2,4}$";
 	
 	public Reserva(String data, String hora) throws ReservaException {
@@ -43,8 +41,8 @@ public class Reserva {
 		if(hora.equals(""))
 			throw new ReservaException(HORA_BRANCA);
 		else if(hora.matches(HORA_PATTERN)){
-			if(this.horaPassou(hora) && this.dataIgual(this.getData()))
-				throw new ReservaException(HORA_JA_PASSOU);
+			if(hora.length() == 4)
+				this.hora = "0" + hora;
 			else
 				this.hora = hora;
 		}
@@ -60,14 +58,11 @@ public class Reserva {
 		if(data.equals(""))
 			throw new ReservaException(DATA_BRANCA);
 		else if(data.matches(DATA_PATTERN)){
-			if(this.dataPassou(data))
-				throw new ReservaException(DATA_JA_PASSOU);
-			else
-				this.data = data;
+			this.data = padronizarData(data);
 		}
 		else
 			throw new ReservaException(DATA_INVALIDA);
-		this.data = data;
+		
 	}
 
 	public boolean equals(Reserva obj) {
@@ -81,69 +76,22 @@ public class Reserva {
 			+ "\nData=" + this.data;
 	}
 	
-	private String dataAtual(){
+	private static String padronizarData(String data){
+		String agora[] = dataAtual().split("[./-]");
+		String partes[] = data.split("[./-]");
+		String dataNoPadrao = "";
+		
+		for(int i = 0; i < 3; i++){
+			dataNoPadrao += agora[i].substring(0, 
+				agora[i].length() - partes[i].length()) + partes[i];
+		}
+		
+		return dataNoPadrao;
+	}
+	
+	private static String dataAtual(){
 		Date date = new Date(System.currentTimeMillis());
 		SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
 		return formatador.format(date);
 	}
-	
-	private String horaAtual(){
-		Date date = new Date(System.currentTimeMillis());
-		return date.toString().substring(11, 16);
-	}
-	
-	private boolean dataPassou(String d){
-		String agora[] = this.dataAtual().split("[./-]");
-		String data[] = d.split("[./-]");
-		
-		int dif = agora[2].length() - data[2].length();
-		data[2] = agora[2].substring(0, dif) + data[2];
-		
-		if(Integer.parseInt(agora[2]) > Integer.parseInt(data[2]))
-			return true;
-		
-		dif = agora[1].length() - data[1].length();
-		data[1] = agora[1].substring(0, dif) + data[1];
-		
-		if(Integer.parseInt(agora[1]) > Integer.parseInt(data[1]))
-			return true;
-		else if(Integer.parseInt(agora[1]) == Integer.parseInt(data[1])){
-			dif = agora[0].length() - data[0].length();
-			data[0] = agora[0].substring(0, dif) + data[0];
-			
-			if(Integer.parseInt(agora[0]) > Integer.parseInt(data[0]))
-				return true;
-		}
-		return false;
-	}
-	
-	private boolean dataIgual(String d){
-		if(d == null)
-			return false;
-		
-		String agora[] = this.dataAtual().split("[./-]");
-		String data[] = d.split("[./-]");
-		
-		if(agora[0].equals(data[0]) && agora[1].equals(data[1]) && agora[2].equals(data[2]))
-			return true;
-		return false;
-	}
-	
-	private boolean horaPassou(String hora){
-		String agora = this.horaAtual();
-		if(hora.length() == 4)
-			hora = "0" + hora;
-		if(Integer.parseInt(agora.substring(0, 2)) > Integer.parseInt(hora.substring(0, 2)))
-			return true;
-		else if(Integer.parseInt(agora.substring(0, 2)) == Integer.parseInt(hora.substring(0, 2))){
-			if(Integer.parseInt(agora.substring(3, 5)) > Integer.parseInt(hora.substring(3, 5)))
-				return true;
-			else
-				return false;
-		}
-		else
-			return false;
-	}
-	
-	
 }

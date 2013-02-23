@@ -2,6 +2,8 @@ package persistence;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Vector;
 
@@ -25,6 +27,8 @@ public class ResSalaAlunoDAO extends DAO{
 		private final String RESERVA_INEXISTENTE = "Reserva inexistente";
 		private final String RESERVA_EXISTENTE = "A reserva ja existe.";
 		private final String CADEIRAS_INDISPONIVEIS = "O numero de cadeiras reservadas esta indisponivel para esta sala.";
+		private final String DATA_JA_PASSOU = "A data escolhida ja passou.";
+		private final String HORA_JA_PASSOU = "A hora escolhida ja passou.";
 
 	
 	//Singleton
@@ -106,8 +110,12 @@ public class ResSalaAlunoDAO extends DAO{
 			throw new ReservaException(SALA_INDISPONIVEL);
 		else if(this.alunoinReservaDB(r.getAluno(), r.getData(), r.getHora()))
 			throw new ReservaException(ALUNO_INDISPONIVEL);
-		else if(!this.haCadeiras(r.getCadeiras_reservadas(), r.getSala()))
+		else if(!this.haCadeiras(r.getCadeiras_reservadas(), r.getSala(), r.getData(), r.getHora()))
 			throw new ReservaException(CADEIRAS_INDISPONIVEIS);
+		if(this.dataPassou(r.getData()))
+			throw new ReservaException(DATA_JA_PASSOU);
+		if(this.horaPassou(r.getHora()) && this.dataIgual(r.getData()))
+			throw new ReservaException(HORA_JA_PASSOU);
 		else
 			super.executeQuery(this.insert_into(r));
 	}
@@ -133,9 +141,13 @@ public class ResSalaAlunoDAO extends DAO{
 				throw new ReservaException(SALA_INDISPONIVEL);
 		}
 		if(!this.haCadeiras(""+(Integer.parseInt(r_new.getCadeiras_reservadas()) - 
-				Integer.parseInt(r.getCadeiras_reservadas()))
-				, r_new.getSala()))
+				Integer.parseInt(r.getCadeiras_reservadas())), r_new.getSala(), 
+				r_new.getData(), r_new.getHora()))
 			throw new ReservaException(CADEIRAS_INDISPONIVEIS);
+		if(this.dataPassou(r.getData()))
+			throw new ReservaException(DATA_JA_PASSOU);
+		if(this.horaPassou(r.getHora()) && this.dataIgual(r.getData()))
+			throw new ReservaException(HORA_JA_PASSOU);
 		else
 			super.updateQuery(this.update(r, r_new));
 			
@@ -155,47 +167,42 @@ public class ResSalaAlunoDAO extends DAO{
 				"INNER JOIN sala ON sala.id_sala = reserva_sala_aluno.id_sala " +
 				"INNER JOIN aluno ON aluno.id_aluno = reserva_sala_aluno.id_aluno;");
 	}
-	public Vector<ReservaSalaAluno> buscarPorMes(int mes) throws SQLException, ClienteException, PatrimonioException, ReservaException{
-		Vector<ReservaSalaAluno> vet = super.buscar("SELECT * FROM reserva_sala_aluno " +
-				"INNER JOIN sala ON sala.id_sala = reserva_sala_aluno.id_sala " +
-				"INNER JOIN aluno ON aluno.id_aluno = reserva_sala_aluno.id_aluno;");
-		Iterator<ReservaSalaAluno> it = vet.iterator();
-		while(it.hasNext()){
-			ReservaSalaAluno obj = it.next();
-			if(Integer.parseInt(obj.getData().split("[./-]")[1]) != mes){
-				vet.remove(obj);
-			}
-		}
-		return vet;
-	}
-	public Vector<ReservaSalaAluno> buscarPorHora(String hora) throws SQLException, ClienteException, PatrimonioException, ReservaException{
-		String hora_a = "", hora_b = "";
-		if(hora.length() == 4)
-			hora_a = "0" + hora;
-		if(hora.charAt(0) == '0')
-			hora_b = hora.substring(1);
+	public Vector<ReservaSalaAluno> buscarPorDia(String data) throws SQLException, ClienteException, PatrimonioException, ReservaException{
+		data = this.padronizarData(data);
 		return super.buscar("SELECT * FROM reserva_sala_aluno " +
 				"INNER JOIN sala ON sala.id_sala = reserva_sala_aluno.id_sala " +
 				"INNER JOIN aluno ON aluno.id_aluno = reserva_sala_aluno.id_aluno " +
-				" WHERE hora = \"" + hora +"\" or hora = \"" + hora_a +"\" or hora = \"" + hora_b +"\";");
+				"WHERE data = \" "+ data + "\";");
+	}
+	public Vector<ReservaSalaAluno> buscarPorHora(String hora) 
+			throws SQLException, ClienteException, PatrimonioException, ReservaException{
+		hora = this.padronizarHora(hora);
+		return super.buscar("SELECT * FROM reserva_sala_aluno " +
+				"INNER JOIN sala ON sala.id_sala = reserva_sala_aluno.id_sala " +
+				"INNER JOIN aluno ON aluno.id_aluno = reserva_sala_aluno.id_aluno " +
+				" WHERE hora = \"" + hora +"\";");
 	}
 
 	
-	public int cadeirasDisponiveis(Sala sala) throws SQLException, PatrimonioException, ClienteException, ReservaException{
+	public int cadeirasDisponiveis(Sala sala, String data, String hora) 
+			throws SQLException, PatrimonioException, ClienteException, ReservaException{
+		data = this.padronizarData(data);
+		hora = this.padronizarHora(hora);
 		Vector<ReservaSalaAluno> vet = this.buscarTodos();
 		Iterator<ReservaSalaAluno> it = vet.iterator();
 		int total = Integer.parseInt(sala.getCapacidade());
 		while(it.hasNext()){
 			ReservaSalaAluno r = it.next();
-			if(r.getSala().equals(sala))
+			if(r.getSala().equals(sala) && r.getData().equals(data) && r.getHora().equals(hora))
 				total -= Integer.parseInt(r.getCadeiras_reservadas());
 		}
 		return total;
 	}
 	
 	
-	private boolean haCadeiras(String cadeiras_reservadas, Sala sala) throws SQLException, ClienteException, PatrimonioException, ReservaException {
-		if(this.cadeirasDisponiveis(sala) >= Integer.parseInt(cadeiras_reservadas))
+	private boolean haCadeiras(String cadeiras_reservadas, Sala sala, String data, String hora) 
+			throws SQLException, ClienteException, PatrimonioException, ReservaException {
+		if(this.cadeirasDisponiveis(sala, data, hora) >= Integer.parseInt(cadeiras_reservadas))
 			return true;
 		return false;
 	}
@@ -269,4 +276,87 @@ public class ResSalaAlunoDAO extends DAO{
 					"cadeiras_reservadas = " + r.getCadeiras_reservadas() + ";");
 	}
 
+	private String dataAtual(){
+		Date date = new Date(System.currentTimeMillis());
+		SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
+		return formatador.format(date);
+	}
+	
+	private String horaAtual(){
+		Date date = new Date(System.currentTimeMillis());
+		return date.toString().substring(11, 16);
+	}
+	
+	private boolean dataPassou(String d){
+		String agora[] = this.dataAtual().split("[./-]");
+		String data[] = d.split("[./-]");
+		
+		int dif = agora[2].length() - data[2].length();
+		data[2] = agora[2].substring(0, dif) + data[2];
+		
+		if(Integer.parseInt(agora[2]) > Integer.parseInt(data[2]))
+			return true;
+		
+		dif = agora[1].length() - data[1].length();
+		data[1] = agora[1].substring(0, dif) + data[1];
+		
+		if(Integer.parseInt(agora[1]) > Integer.parseInt(data[1]))
+			return true;
+		else if(Integer.parseInt(agora[1]) == Integer.parseInt(data[1])){
+			dif = agora[0].length() - data[0].length();
+			data[0] = agora[0].substring(0, dif) + data[0];
+			
+			if(Integer.parseInt(agora[0]) > Integer.parseInt(data[0]))
+				return true;
+		}
+		return false;
+	}
+	
+	private boolean dataIgual(String d){
+		if(d == null)
+			return false;
+		
+		String agora[] = this.dataAtual().split("[./-]");
+		String data[] = d.split("[./-]");
+		
+		if(agora[0].equals(data[0]) && agora[1].equals(data[1]) && agora[2].equals(data[2]))
+			return true;
+		return false;
+	}
+	
+	private boolean horaPassou(String hora){
+		String agora = this.horaAtual();
+		if(hora.length() == 4)
+			hora = "0" + hora;
+		if(Integer.parseInt(agora.substring(0, 2)) > Integer.parseInt(hora.substring(0, 2)))
+			return true;
+		else if(Integer.parseInt(agora.substring(0, 2)) == Integer.parseInt(hora.substring(0, 2))){
+			if(Integer.parseInt(agora.substring(3, 5)) > Integer.parseInt(hora.substring(3, 5)))
+				return true;
+			else
+				return false;
+		}
+		else
+			return false;
+	}
+	
+	private String padronizarData(String data){
+		String agora[] = this.dataAtual().split("[./-]");
+		String partes[] = data.split("[./-]");
+		String dataNoPadrao = "";
+		
+		for(int i = 0; i < 3; i++){
+			dataNoPadrao += agora[i].substring(0, 
+				agora[i].length() - partes[i].length()) + partes[i];
+		}
+		
+		return dataNoPadrao;
+	}
+	
+	private String padronizarHora(String hora){
+		if(hora.length() == 4)
+			return "0" + hora;
+		return hora;
+	}
+	
 }

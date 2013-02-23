@@ -33,8 +33,8 @@ public class ManterResSalaAluno {
 		
 	}
 	
-	public Vector<ReservaSalaAluno> getReservasMes(int mes) throws SQLException, PatrimonioException, ClienteException, ReservaException{
-		return ResSalaAlunoDAO.getInstance().buscarPorMes(mes);
+	public Vector<ReservaSalaAluno> getReservasMes(String data) throws SQLException, PatrimonioException, ClienteException, ReservaException{
+		return ResSalaAlunoDAO.getInstance().buscarPorDia(data);
 	}
 	
 	public Vector<ReservaSalaAluno> getResAlunoSala_vet() throws SQLException, PatrimonioException, ClienteException, ReservaException {
@@ -42,8 +42,8 @@ public class ManterResSalaAluno {
 		return this.rev_sala_aluno_vet;
 	}
 
-	public int cadeirasDisponveis(Sala sala) throws SQLException, PatrimonioException, ClienteException, ReservaException {
-		return ResSalaAlunoDAO.getInstance().cadeirasDisponiveis(sala);
+	public int cadeirasDisponveis(Sala sala, String data, String hora) throws SQLException, PatrimonioException, ClienteException, ReservaException {
+		return ResSalaAlunoDAO.getInstance().cadeirasDisponiveis(sala, data, hora);
 	}
 
 	public void inserir(Sala sala, Aluno aluno,
