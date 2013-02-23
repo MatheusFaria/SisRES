@@ -27,6 +27,7 @@ public class DiaReservaSala extends DiaReservaPatrimonio{
 	public DiaReservaSala(Frame parent, boolean modal, int indexSala) throws SQLException, PatrimonioException {
 		super(parent, modal);
 		sala = ManterSala.getInstance().getSalas_vet().get(indexSala);
+		this.setName("DiaReservaSala");
 	}
 
 	@Override

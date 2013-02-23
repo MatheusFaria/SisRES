@@ -93,17 +93,19 @@ public class HorariosReservaSala extends HorariosReservaPatrimonio {
 			this.mes = Integer.parseInt(this.data.substring(3, 5));
 
 			Vector v = instanceProf.getReservasMes(mes);
-			for (int i = 0; i < v.size(); i++) {
-				table.addRow(fillDataVector(v.get(i), i));
-
-			}
+			if(v!=null)
+    			for (int i = 0; i < v.size(); i++) {
+    				table.addRow(fillDataVector(v.get(i), i));
+    
+    			}
 			v.clear();
 
-			v = instanceAluno.getReservasMes(mes);
-			for (int i = 0; i < v.size(); i++) {
-				table.addRow(fillDataVector(v.get(i), i));
-
-			}
+			v = instanceAluno.getReservasMes(this.data);
+			if(v!=null)
+    			for (int i = 0; i < v.size(); i++) {
+    				table.addRow(fillDataVector(v.get(i), i));
+    
+    			}
 
 
 
@@ -124,10 +126,10 @@ public class HorariosReservaSala extends HorariosReservaPatrimonio {
 	protected void cancelarReservaAction(int index) {
 		try {
 			int confirm = JOptionPane.showConfirmDialog(this, "Deseja mesmo excluir Reserva?\n"
-				+ instanceAluno.getReservasMes(mes).get(index).toString(), "Excluir", JOptionPane.YES_NO_OPTION);
+				+ instanceAluno.getReservasMes(data).get(index).toString(), "Excluir", JOptionPane.YES_NO_OPTION);
 
 			if (confirm == JOptionPane.YES_OPTION) {
-				this.instanceAluno.excluir(instanceAluno.getReservasMes(mes).get(index));
+				this.instanceAluno.excluir(instanceAluno.getReservasMes(data).get(index));
 				JOptionPane.showMessageDialog(this, "Reserva excluida com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE, null);
 			}
 
@@ -163,7 +165,7 @@ public class HorariosReservaSala extends HorariosReservaPatrimonio {
 		try {
 
 			index = Integer.parseInt((String) this.reservasTable.getModel().getValueAt(index, 0));
-			ReservaSalaView reserva = new AlterarReservaSalaView(new JFrame(), true, index, this.mes);
+			ReservaSalaView reserva = new AlterarReservaSalaView(new JFrame(), true, index, this.data);
 			reserva.setVisible(true);
 		} catch (SQLException ex) {
 			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);

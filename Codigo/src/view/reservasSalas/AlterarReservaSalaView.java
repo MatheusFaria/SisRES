@@ -33,10 +33,10 @@ public class AlterarReservaSalaView extends ReservaSalaView{
 		alunoRadioButtonAction();
 	}
 	
-	public AlterarReservaSalaView(Frame parent, boolean modal, int index, int mes) throws SQLException, PatrimonioException, PatrimonioException, ClienteException, ReservaException {
+	public AlterarReservaSalaView(Frame parent, boolean modal, int index, String data) throws SQLException, PatrimonioException, PatrimonioException, ClienteException, ReservaException {
 		super(parent, modal);
 		this.setName("AlterarReservaSalaView");
-		this.reservaAluno = instanceAluno.getReservasMes(mes).get(index);
+		this.reservaAluno = instanceAluno.getReservasMes(data).get(index);
 		resetComponents();
 		
 	}
