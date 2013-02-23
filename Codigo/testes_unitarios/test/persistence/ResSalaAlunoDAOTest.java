@@ -397,7 +397,7 @@ public class ResSalaAlunoDAOTest {
 		
 		this.insert_into(reserva);
 		this.insert_into(reserva2);
-		Vector<ReservaSalaAluno> vet = ResSalaAlunoDAO.getInstance().buscarPorMes(12);
+		Vector<ReservaSalaAluno> vet = ResSalaAlunoDAO.getInstance().buscarPorDia("20/12/34");
 		this.delete_from(reserva);
 		this.delete_from(reserva2);
 		
@@ -455,7 +455,7 @@ public class ResSalaAlunoDAOTest {
 		
 		this.insert_into(reserva);
 		this.insert_into(reserva2);
-		int c = ResSalaAlunoDAO.getInstance().cadeirasDisponiveis(sala1);
+		int c = ResSalaAlunoDAO.getInstance().cadeirasDisponiveis(sala1, "20/12/34", "8:00");
 		this.delete_from(reserva);
 		this.delete_from(reserva2);
 		assertEquals("Teste de disponibilidade de Cadeiras", c, 30);
