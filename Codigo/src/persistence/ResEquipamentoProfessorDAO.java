@@ -139,5 +139,106 @@ public void excluir(ReservaEquipamentoProfessor r) throws ReservaException, SQLE
 		super.executeQuery(this.delete_from_professor(r));
 }
 
+@SuppressWarnings("unchecked")
+public Vector<Object> buscarTodos() throws SQLException, ClienteException, PatrimonioException, ReservaException{
+	return super.buscar("SELECT * FROM reserva_sala_professor " +
+			"INNER JOIN sala ON sala.id_sala = reserva_sala_professor.id_sala " +
+			"INNER JOIN professor ON professor.id_professor = reserva_sala_professor.id_professor;");
+}
+
+@SuppressWarnings("unchecked")
+public Vector<ReservaEquipamentoProfessor> buscarPorMes(int mes) throws SQLException, ClienteException, PatrimonioException, ReservaException{
+	Vector<ReservaEquipamentoProfessor> reservas_prof_mes = super.buscar("SELECT * FROM reserva_equipamento_professor " +
+			"INNER JOIN equipamento ON equipamento.id_equipamento = reserva_equipamento_professor.id_equipamento " +
+			"INNER JOIN professor ON professor.id_professor = reserva_equipamento_professor.id_professor;");
+	Iterator<ReservaEquipamentoProfessor> it = reservas_prof_mes.iterator();
+	while(it.hasNext()){
+		ReservaEquipamentoProfessor obj = it.next();
+		if(Integer.parseInt(obj.getData().split("[./-]")[1]) != mes){
+			reservas_prof_mes.remove(obj);
+		}
+	}
+	return reservas_prof_mes;
+}
+
+@SuppressWarnings("unchecked")
+public Vector<ReservaEquipamentoProfessor> buscarPorHora(String hora) throws SQLException, ClienteException, PatrimonioException, ReservaException{
+	String hora_a = "", hora_b = "";
+	if(hora.length() == 4)
+		hora_a = "0" + hora;
+	if(hora.charAt(0) == '0')
+		hora_b = hora.substring(1);
+	return super.buscar("SELECT * FROM reserva_equipamento_professor " +
+			"INNER JOIN equipamento ON equipamento.id_equipamento = reserva_equipamento_professor.id_equipamento " +
+			"INNER JOIN professor ON professor.id_professor = reserva_equipamento_professor.id_professor " +
+			" WHERE hora = \"" + hora +"\" or hora = \"" + hora_a +"\" or hora = \"" + hora_b +"\";");
+}
+
+
+
+@Override
+protected Object fetch(ResultSet rs) throws SQLException, ClienteException, PatrimonioException, ReservaException {
+	Professor p = new Professor(rs.getString("nome"), rs.getString("cpf"), rs.getString("matricula"),
+			rs.getString("telefone"), rs.getString("email"));
+
+	Equipamento s = new Equipamento(rs.getString("codigo"), rs.getString("descricao"));
+
+	ReservaEquipamentoProfessor r = new ReservaEquipamentoProfessor(rs.getString("data"),rs.getString("hora"),
+			s , p);
+
+	return r;
+}
+
+private boolean professorinDB(Professor professor) throws SQLException{
+	return super.inDBGeneric("SELECT * FROM professor WHERE " +
+			"professor.nome = \"" + professor.getNome() + "\" and " +
+			"professor.cpf = \"" + professor.getCpf() + "\" and " +
+			"professor.telefone = \"" + professor.getTelefone() + "\" and " +
+			"professor.email = \"" + professor.getEmail() + "\" and " +
+			"professor.matricula = \"" + professor.getMatricula() + "\";");
+}
+
+private boolean equipamentoinDB(Equipamento equipamento) throws SQLException{
+	return super.inDBGeneric("SELECT * FROM equipamento WHERE " +
+			"equipamento.codigo = \"" + equipamento.getCodigo() + "\" and " +
+			"equipamento.descricao = \"" + equipamento.getDescricao() + "\" and " +
+			";");
+}
+
+private boolean professorinReservaDB(Professor professor, String data, String hora) throws SQLException {
+	return super.inDBGeneric("SELECT * FROM reserva_sala_professor WHERE " +
+			"data = \"" + data + "\" and " +
+			"hora = \"" + hora + "\" and " +
+			"id_professor = (SELECT id_professor FROM professor WHERE " +
+			"professor.nome = \"" + professor.getNome() + "\" and " +
+			"professor.cpf = \"" + professor.getCpf() + "\" and " +
+			"professor.telefone = \"" + professor.getTelefone() + "\" and " +
+			"professor.email = \"" + professor.getEmail() + "\" and " +
+			"professor.matricula = \"" + professor.getMatricula() + "\");");
+}
+private boolean equipamentoinReservaDB(Equipamento equipamento, String data, String hora) throws SQLException {
+	return super.inDBGeneric("SELECT * FROM reserva_equipamento_professor WHERE " +
+			"data = \"" + data + "\" and " +
+			"hora = \"" + hora + "\" and " +
+			"id_equipamento = (SELECT id_equipamento FROM equipamento WHERE " +
+			"equipamento.codigo = \"" + equipamento.getCodigo() + "\" and " +
+			"equipamento.descricao = \"" + equipamento.getDescricao() +  "\" and " +");");
+}
+
+private boolean reservainDB(ReservaEquipamentoProfessor r) throws SQLException {
+	return super.inDBGeneric("SELECT * FROM reserva_equipamento_professor WHERE " +
+				"id_professor = (SELECT id_professor FROM professor WHERE " +
+						"professor.nome = \"" + r.getProfessor().getNome() + "\" and " +
+						"professor.cpf = \"" + r.getProfessor().getCpf() + "\" and " +
+						"professor.telefone = \"" + r.getProfessor().getTelefone() + "\" and " +
+						"professor.email = \"" + r.getProfessor().getEmail() + "\" and " +
+						"professor.matricula = \"" + r.getProfessor().getMatricula() + "\") and " +
+				"id_equipamento = (SELECT id_equipamento FROM equipamento WHERE " +
+								"equipamento.codigo = \"" + r.getEquipamento().getCodigo() + "\" and " +
+								"equipamento.descricao = \"" + r.getEquipamento().getDescricao() +  "\" and " +
+				"hora = \"" + r.getHora() + "\" and " +
+				"data = \"" + r.getData() + ";");
+}
+
 
 }
