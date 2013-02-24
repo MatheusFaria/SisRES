@@ -88,7 +88,56 @@ public class ResEquipamentoProfessorDAO  extends DAO{
 					"data = \"" + r.getData() +  " ;";
 		}
 
+public void incluir(ReservaEquipamentoProfessor r) throws ReservaException, SQLException {
+	if(r == null)
+		throw new ReservaException(NULA);
+	else if(!this.professorinDB(r.getProfessor()))
+		throw new ReservaException(PROFESSOR_INEXISTENTE);
+	else if(!this.equipamentoinDB(r.getEquipamento()))
+		throw new ReservaException(EQUIPAMENTO_INEXISTENTE);
+	else if(this.equipamentoinReservaDB(r.getEquipamento(), r.getData(), r.getHora()))
+		throw new ReservaException(EQUIPAMENTO_INDISPONIVEL);
+	else if(this.professorinReservaDB(r.getProfessor(), r.getData(), r.getHora()))
+		throw new ReservaException(RESERVA_EXISTENTE);
+	else {
+		super.executeQuery(this.delete_from_aluno(r));
+		super.executeQuery(this.insert_into(r));
+	}
+	
+}
 
+public void alterar(ReservaEquipamentoProfessor r, ReservaEquipamentoProfessor r_new) throws ReservaException, SQLException {
+	if(r == null)
+		throw new ReservaException(NULA);
+	else if(r_new == null)
+		throw new ReservaException(NULA);
+
+	else if(!this.reservainDB(r))
+		throw new ReservaException(RESERVA_INEXISTENTE);
+	else if(this.reservainDB(r_new))
+		throw new ReservaException(RESERVA_EXISTENTE);
+	else if(!r.getData().equals(r_new.getData()) || !r.getHora().equals(r_new.getHora())) {
+		if(this.professorinReservaDB(r_new.getProfessor(), r_new.getData(), r_new.getHora()))
+			throw new ReservaException(RESERVA_EXISTENTE);//Perguntar pro Matheus
+		else if(this.equipamentoinReservaDB(r_new.getEquipamento(), r_new.getData(), r_new.getHora()))
+			throw new ReservaException(EQUIPAMENTO_INDISPONIVEL);
+	}
+	else if(!this.professorinDB(r_new.getProfessor()))
+		throw new ReservaException(PROFESSOR_INEXISTENTE);
+	else if(!this.equipamentoinDB(r_new.getEquipamento()))
+		throw new ReservaException(EQUIPAMENTO_INEXISTENTE);
+	else
+		super.updateQuery(this.update(r, r_new));
+}
+
+public void excluir(ReservaEquipamentoProfessor r) throws ReservaException, SQLException {
+	if(r == null)
+		throw new ReservaException(NULA);
+	else if(!this.reservainDB(r))
+		throw new ReservaException(RESERVA_INEXISTENTE);
+	else
+		super.executeQuery(this.delete_from_professor(r));
+}
 
 
 }
