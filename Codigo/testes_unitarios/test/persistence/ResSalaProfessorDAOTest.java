@@ -151,7 +151,7 @@ public class ResSalaProfessorDAOTest {
 		this.executeQuery("INSERT INTO reserva_sala_aluno (id_aluno,id_sala,finalidade,hora,data, cadeiras_reservadas) "+
 		"VALUES ((SELECT id_aluno FROM aluno WHERE cpf = \"257.312.954-33\")," +
 				"(SELECT id_sala FROM sala WHERE codigo = \"S2\")," +
-				"\"Estudo de Fisica\", \"8:00\", \"20/12/13\", \"20\");");
+				"\"Estudo de Fisica\", \"08:00\", \"20/12/2013\", 20);");
 		
 		ReservaSalaProfessor reserva = new ReservaSalaProfessor("20/12/13", "8:00", sala_a,
 				"Aula de EA",  professor1);
@@ -166,8 +166,8 @@ public class ResSalaProfessorDAOTest {
 		
 				
 		this.executeQuery("DELETE FROM aluno WHERE cpf = \"257.312.954-33\";");
-		this.executeQuery("DELETE FROM reserva_sala_aluno WHERE data = \"20/12/13\";");
-		this.executeQuery("DELETE FROM reserva_sala_professor WHERE data = \"20/12/13\";");
+		this.executeQuery("DELETE FROM reserva_sala_aluno WHERE data = \"20/12/2013\";");
+		this.executeQuery("DELETE FROM reserva_sala_professor WHERE data = \"20/12/2013\";");
 		
 		
 		assertTrue("Sala reservada por aluno", (resultadoProf && !resultadoAluno));
@@ -361,7 +361,7 @@ public class ResSalaProfessorDAOTest {
 		this.executeQuery("INSERT INTO reserva_sala_professor (id_professor,id_sala,finalidade,hora,data) "+
 				"VALUES ((SELECT id_professor FROM professor WHERE cpf = \"" + reserva.getProfessor().getCpf() + "\")," + 
 						"(SELECT id_sala FROM sala WHERE codigo = \"" + sala_a.getCodigo() + "\")," +
-						"\"Grupo de Pesquisa\", \"8:00\", \"20/12/34\");");
+						"\"Grupo de Pesquisa\", \"08:00\", \"20/12/2034\");");
 		
 		ResSalaProfessorDAO.getInstance().excluir(reserva);
 		
@@ -409,7 +409,7 @@ public class ResSalaProfessorDAOTest {
 						"\"" + reserva2.getFinalidade() + "\", \"" +
 						reserva2.getHora() + "\", \"" + reserva2.getData() +"\");");
 		
-		Vector<ReservaSalaProfessor> vet = ResSalaProfessorDAO.getInstance().buscarPorData("20/12/34");
+		Vector<ReservaSalaProfessor> vet = ResSalaProfessorDAO.getInstance().buscarPorData("20/12/2034");
 		
 		
 		boolean resultado = false;
@@ -424,7 +424,7 @@ public class ResSalaProfessorDAOTest {
 				resultado2 = true;
 		}
 		
-		this.executeQuery("DELETE FROM reserva_sala_professor WHERE data = \"20/12/34\"");
+		this.executeQuery("DELETE FROM reserva_sala_professor WHERE data = \"20/12/2034\"");
 		
 		assertTrue("Teste de busca por data", resultado && resultado2);
 	}
