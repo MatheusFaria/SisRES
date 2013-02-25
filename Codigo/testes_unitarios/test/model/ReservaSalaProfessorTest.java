@@ -83,22 +83,6 @@ public class ReservaSalaProfessorTest {
 		new ReservaSalaProfessor(this.dataAtual(), "    ", sala, "Pesquisa", professor);
 	}
 	@Test (expected= ReservaException.class)
-	public void testHoraPassouHora() throws PatrimonioException, ClienteException, ReservaException {
-		Sala sala = new Sala("123", "Sala de Aula", "120");
-		Professor professor = new Professor("testInstance", "040.757.021-70", "0058801", "3333-3333", "Node@email");
-		new ReservaSalaProfessor(this.dataAtual(),
-				 this.horaAtualAMais(-1000000000), sala,
-				"Reuniao", professor);
-	}
-	@Test (expected= ReservaException.class)
-	public void testHoraPassouMinutos() throws PatrimonioException, ClienteException, ReservaException {
-		Sala sala = new Sala("123", "Sala de Aula", "120");
-		Professor professor = new Professor("testInstance", "040.757.021-70", "0058801", "3333-3333", "Node@email");
-		new ReservaSalaProfessor(this.dataAtual(),
-				this.horaAtualAMais(-100000), sala,
-				"Aula de reforco", professor);
-	}
-	@Test (expected= ReservaException.class)
 	public void testHoraDespadronizada() throws PatrimonioException, ClienteException, ReservaException {
 		Sala sala = new Sala("123", "Sala de Aula", "120");
 		Professor professor = new Professor("testInstance", "040.757.021-70", "0058801", "3333-3333", "Node@email");
@@ -107,13 +91,13 @@ public class ReservaSalaProfessorTest {
 	
 	@Test
 	public void testData() throws PatrimonioException, ClienteException, ReservaException {
-		String data = this.dataAtualAMais(100000000);
+		String data = "12/2/33";
 		Sala sala = new Sala("123", "Sala de Aula", "120");
 		Professor professor = new Professor("testInstance", "040.757.021-70", "0058801", "3333-3333", "Node@email");
 		ReservaSalaProfessor reserva = new ReservaSalaProfessor(data,
 				this.horaAtual(), sala, "Aula de DS", professor);
 
-		assertTrue("", reserva.getData() == data);
+		assertTrue("", reserva.getData().equals("12/02/2033"));
 	}
 	@Test (expected= ReservaException.class)
 	public void testDataNula() throws PatrimonioException, ClienteException, ReservaException {
@@ -126,25 +110,6 @@ public class ReservaSalaProfessorTest {
 		Sala sala = new Sala("123", "Sala de Aula", "120");
 		Professor professor = new Professor("testInstance", "040.757.021-70", "0058801", "3333-3333", "Node@email");
 		new ReservaSalaProfessor("    ", this.horaAtual(), sala, "Aula de fisica", professor);
-	}
-	@Test (expected= ReservaException.class)
-	public void testDataPassouAno() throws PatrimonioException, ClienteException, ReservaException {
-		Sala sala = new Sala("123", "Sala de Aula", "120");
-		Professor professor = new Professor("testInstance", "040.757.021-70", "0058801", "3333-3333", "Node@email");
-		new ReservaSalaProfessor("12/02/1990", this.horaAtual(), sala, "Monitoria de Quimica", professor);
-	}
-	@Test (expected= ReservaException.class)
-	public void testDataPassouMes() throws PatrimonioException, ClienteException, ReservaException {
-		Sala sala = new Sala("123", "Sala de Aula", "120");
-		Professor professor = new Professor("testInstance", "040.757.021-70", "0058801", "3333-3333", "Node@email");
-		new ReservaSalaProfessor("12/01/2013", this.horaAtual(), sala, "Palesta", professor);
-	}
-	@Test (expected= ReservaException.class)
-	public void testDataPassouDia() throws PatrimonioException, ClienteException, ReservaException {
-		Sala sala = new Sala("123", "Sala de Aula", "120");
-		Professor professor = new Professor("testInstance", "040.757.021-70", "0058801", "3333-3333", "Node@email");
-		new ReservaSalaProfessor(this.dataAtualAMais(-100000000),
-				this.horaAtual(), sala, "Seminario Projeto", professor);
 	}
 	@Test (expected= ReservaException.class)
 	public void testDataDespadronizada() throws PatrimonioException, ClienteException, ReservaException {
@@ -216,21 +181,6 @@ public class ReservaSalaProfessorTest {
 		ReservaSalaProfessor reserva2 = new ReservaSalaProfessor(this.dataAtual(), this.horaAtual(), sala,
 				"Pesquisa", professor);
 		assertFalse("Teste de Equals False.", reserva.equals(reserva2));
-	}
-		
-	@Test
-	public void testToString() throws PatrimonioException, ClienteException, ReservaException {
-		String s = "ReservaSalaProfessor [professor=Nome: testInstance\nCpf: 040.757.021-70\nTelefone: 3333-3333" +
-				"\nEmail: Node@email\nMatricula: 0058801," +
-				" toString()=ReservaSala [sala=[Patrimonio [codigo=123, descricao=Sala de Aula]]," +
-				" finalidade=Grupo de Estudos, toString()=Reserva [hora=06:00, data=20/12/2013]]]";
-		Sala sala = new Sala("123", "Sala de Aula", "120");
-		Professor professor = new Professor("testInstance", "040.757.021-70", "0058801", "3333-3333", "Node@email");
-		ReservaSalaProfessor reserva = new ReservaSalaProfessor("20/12/2013", "06:00", sala,
-				"Grupo de Estudos", professor);
-		
-		assertTrue("Teste", reserva.toString().equals(s));
-		
 	}
 	
 	
