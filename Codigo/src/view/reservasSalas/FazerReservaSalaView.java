@@ -27,7 +27,7 @@ public class FazerReservaSalaView extends ReservaSalaView{
 		this.dataTextField.setText(data);
 		this.salaTextArea.setText(sala.toString());
 		this.qntCadeirasTxtField.setText(sala.getCapacidade());
-
+		this.setName("FazerReservaSalaView");
 	}
 	
 	
@@ -35,7 +35,7 @@ public class FazerReservaSalaView extends ReservaSalaView{
 	@Override
 	protected void reservarAluno() {
 		try {
-			
+			instanceAluno = ManterResSalaAluno.getInstance();
 			instanceAluno.inserir(sala, aluno,
 				this.dataTextField.getText(),
 				this.horaTextField.getText(),

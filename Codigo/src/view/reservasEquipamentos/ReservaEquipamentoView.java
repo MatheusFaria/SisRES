@@ -73,6 +73,7 @@ public abstract class ReservaEquipamentoView extends javax.swing.JDialog {
                 jScrollPane2 = new javax.swing.JScrollPane();
                 equipamentoTextArea = new javax.swing.JTextArea();
                 dataTextField = new javax.swing.JTextField();
+                buscarCpfButton = new javax.swing.JButton();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
                 setTitle("ReservaPatrimonio");
@@ -136,6 +137,14 @@ public abstract class ReservaEquipamentoView extends javax.swing.JDialog {
                 dataTextField.setBackground(new java.awt.Color(200, 208, 254));
                 dataTextField.setName("DiaTextField"); // NOI18N
 
+                buscarCpfButton.setText("Buscar CPF");
+                buscarCpfButton.setName("BuscarCpfButton"); // NOI18N
+                buscarCpfButton.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                buscarCpfButtonActionPerformed(evt);
+                        }
+                });
+
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
                 getContentPane().setLayout(layout);
                 layout.setHorizontalGroup(
@@ -154,7 +163,10 @@ public abstract class ReservaEquipamentoView extends javax.swing.JDialog {
                                                         .addGroup(layout.createSequentialGroup()
                                                                 .addComponent(cpfLabel)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(cpfTextField))
+                                                                .addComponent(cpfTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(buscarCpfButton)
+                                                                .addGap(0, 0, Short.MAX_VALUE))
                                                         .addGroup(layout.createSequentialGroup()
                                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                         .addComponent(professorLabel)
@@ -180,7 +192,8 @@ public abstract class ReservaEquipamentoView extends javax.swing.JDialog {
                                 .addContainerGap()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(cpfLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(cpfTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(cpfTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(buscarCpfButton))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createSequentialGroup()
                                                 .addGap(51, 51, 51)
@@ -224,8 +237,14 @@ public abstract class ReservaEquipamentoView extends javax.swing.JDialog {
         private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
 		this.setVisible(false);
         }//GEN-LAST:event_cancelarButtonActionPerformed
+
+        private void buscarCpfButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarCpfButtonActionPerformed
+               cpfTextFieldActionPerformed(evt);
+        }//GEN-LAST:event_buscarCpfButtonActionPerformed
+
         // Variables declaration - do not modify//GEN-BEGIN:variables
         private javax.swing.ButtonGroup alunoProfbuttonGroup;
+        private javax.swing.JButton buscarCpfButton;
         protected javax.swing.JButton cancelarButton;
         protected javax.swing.JLabel cpfLabel;
         protected javax.swing.JTextField cpfTextField;

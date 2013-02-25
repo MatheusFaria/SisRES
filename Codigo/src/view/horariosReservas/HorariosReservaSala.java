@@ -39,6 +39,7 @@ public class HorariosReservaSala extends HorariosReservaPatrimonio {
 	public HorariosReservaSala(java.awt.Frame parent, boolean modal, String data, Sala sala) {
 	    super(parent, modal, data, sala);
 	    this.sala = sala;
+	    this.setName("HorarioReservaSala");
 	}
 	
 	

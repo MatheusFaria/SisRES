@@ -2,8 +2,13 @@ package user_stories;
 
 import java.awt.Dimension;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import model.Aluno;
+import model.Professor;
+import model.ReservaSalaAluno;
+import model.ReservaSalaProfessor;
 import model.Sala;
 
 import org.fest.swing.core.BasicRobot;
@@ -15,11 +20,15 @@ import org.junit.Before;
 import org.junit.Test;
 
 import persistence.AlunoDAO;
+import persistence.ProfessorDAO;
+import persistence.ResSalaAlunoDAO;
+import persistence.ResSalaProfessorDAO;
 import persistence.SalaDAO;
 import view.Main2;
 import view.mainViews.AlunoView;
 import exception.ClienteException;
 import exception.PatrimonioException;
+import exception.ReservaException;
 
 /**
  * US1 Título: Reservar sala. Como cliente (aluno/professor), Eu quero reservar
@@ -56,11 +65,23 @@ public class US01_ReservarSala {
     private FrameFixture window;
     private Robot robot;
     private Sala sala;
+    private ReservaSalaProfessor reservaProf;
+    private ReservaSalaAluno reservaAluno;
     private Aluno aluno;
+    private Professor prof;
     private DialogFixture dialog;
     private int index;
+    private int indexReserva;
+    private String data;
+    //private int index;
 
-    @Before public void setUp() throws PatrimonioException, SQLException, ClienteException {
+    private void dataAtual(){
+        Date date = new Date(System.currentTimeMillis());
+        SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
+        this.data = formatador.format(date);
+    }
+    
+    @Before public void setUp() throws PatrimonioException, SQLException, ClienteException, ReservaException {
         robot = BasicRobot.robotWithNewAwtHierarchy();
         robot.settings().delayBetweenEvents(5);
 
@@ -70,20 +91,32 @@ public class US01_ReservarSala {
         sala = new Sala("code", "Sala para testes de aceitacao", "123");
         SalaDAO.getInstance().incluir(sala);
 
-        aluno = new Aluno("Teste", "034.355.431-32", "110038096", "9211-2144", "teste incluir repetido");
+        prof = new Professor("Professor Teste", "658.535.144-40", "110038096", "9211-2144", "teste incluir repetido");
+        ProfessorDAO.getInstance().incluir(prof);
+        
+        aluno = new Aluno("Aluno Teste", "658.535.144-40", "110038096", "9211-2144", "teste incluir repetido");
         AlunoDAO.getInstance().incluir(aluno);
-
+        
+        dataAtual();
+        
         index = SalaDAO.getInstance().buscarTodos().size() - 1;
-
+        indexReserva = ResSalaProfessorDAO.getInstance().buscarPorData(data).size() - 1;
+        
         window.button("Sala").click();
         dialog = window.dialog("SalaView");
     }
 
-    @After public void tearDown() throws SQLException, PatrimonioException, ClienteException {
+    @After public void tearDown() throws SQLException, PatrimonioException, ClienteException, ReservaException {
+        if(reservaProf != null)
+            ResSalaProfessorDAO.getInstance().excluir(reservaProf);
+        if(reservaAluno != null)
+            ResSalaAlunoDAO.getInstance().excluir(reservaAluno);
         if (sala != null)
             SalaDAO.getInstance().excluir(sala);
         if (aluno != null)
             AlunoDAO.getInstance().excluir(aluno);
+        if (prof != null)
+            ProfessorDAO.getInstance().excluir(prof);
         window.cleanUp();
     }
 
@@ -96,13 +129,121 @@ public class US01_ReservarSala {
 
     }
 
-    @Test public void testCenario2() throws SQLException, ClienteException {
+    @Test public void testCenario1() throws SQLException, ClienteException, PatrimonioException, ReservaException {
+
+        
+        dialog.table("tabelaPatrimonio").selectRows(index);
+        dialog.button("Visualizar Horarios").click();
+
+        DialogFixture diaReservaSala = dialog.dialog("DiaReservaSala");
+        diaReservaSala.button("VisualizarButton").click();
+        
+        DialogFixture horarioReservaSala = dialog.dialog("HorarioReservaSala");
+        horarioReservaSala.button("ReservarButton").click();
+        
+        DialogFixture fazerReservaSalaView = dialog.dialog("FazerReservaSalaView");
+        fazerReservaSalaView.radioButton("professorRadioButton").click();
+        fazerReservaSalaView.textBox("CPF").enterText("658.535.144-40");
+        fazerReservaSalaView.button("BuscarCpfButton").click();
+        fazerReservaSalaView.textBox("Finalidade").enterText("aula");
+        fazerReservaSalaView.textBox("Hora").enterText("23:59");
+        fazerReservaSalaView.button("Reservar").click();
+        
+        fazerReservaSalaView.optionPane().requireMessage("Reserva feita com sucesso");
+        fazerReservaSalaView.optionPane().okButton().click();
+        
+        indexReserva = ResSalaProfessorDAO.getInstance().buscarPorData(data).size() - 1;
+        reservaProf = ResSalaProfessorDAO.getInstance().buscarPorData(data).get(indexReserva);
+    }
+    
+    /**
+    @Test public void testCenario2() throws SQLException, ClienteException, PatrimonioException, ReservaException {
 
         dialog.table("tabelaPatrimonio").selectRows(index);
         dialog.button("Visualizar Horarios").click();
 
         DialogFixture diaReservaSala = dialog.dialog("DiaReservaSala");
         diaReservaSala.button("VisualizarButton").click();
+        
+        DialogFixture horarioReservaSala = dialog.dialog("HorarioReservaSala");
+        horarioReservaSala.button("ReservarButton").click();
+        
+        DialogFixture fazerReservaSalaView = dialog.dialog("FazerReservaSalaView");
+        fazerReservaSalaView.radioButton("alunoRadioButton").click();
+        fazerReservaSalaView.textBox("CPF").enterText("658.535.144-40");
+        fazerReservaSalaView.button("BuscarCpfButton").click();
+        fazerReservaSalaView.textBox("Finalidade").enterText("aula");
+        fazerReservaSalaView.textBox("Hora").enterText("23:59");
+        fazerReservaSalaView.textBox("Quantidade de Cadeiras Reservadas").enterText("123");
+        fazerReservaSalaView.button("Reservar").click();
+        
+        fazerReservaSalaView.optionPane().requireMessage("Reserva feita com sucesso");
+        fazerReservaSalaView.optionPane().okButton().click();
+        
+        //indexReserva = ResSalaAlunoDAO.getInstance().buscarPorDia(data).size() - 1;
+        reservaAluno = ResSalaAlunoDAO.getInstance().buscarTodos().lastElement();
+    }
+    */
+    
+    @Test public void testCenario3() throws SQLException, ClienteException, PatrimonioException, ReservaException {
+
+        reservaAluno = new ReservaSalaAluno(data, "23:59", sala, "abc", sala.getCapacidade(), aluno);
+        ResSalaAlunoDAO.getInstance().incluir(reservaAluno);
+        
+        dialog.table("tabelaPatrimonio").selectRows(index);
+        dialog.button("Visualizar Horarios").click();
+
+        DialogFixture diaReservaSala = dialog.dialog("DiaReservaSala");
+        diaReservaSala.button("VisualizarButton").click();
+        
+        DialogFixture horarioReservaSala = dialog.dialog("HorarioReservaSala");
+        horarioReservaSala.button("ReservarButton").click();
+        
+        DialogFixture fazerReservaSalaView = dialog.dialog("FazerReservaSalaView");
+        fazerReservaSalaView.radioButton("professorRadioButton").click();
+        fazerReservaSalaView.textBox("CPF").enterText("658.535.144-40");
+        fazerReservaSalaView.button("BuscarCpfButton").click();
+        fazerReservaSalaView.textBox("Finalidade").enterText("aula");
+        fazerReservaSalaView.textBox("Hora").enterText("23:59");
+        fazerReservaSalaView.button("Reservar").click();
+        
+        fazerReservaSalaView.optionPane().requireMessage("Reserva feita com sucesso");
+        fazerReservaSalaView.optionPane().okButton().click();
+        
+        indexReserva = ResSalaProfessorDAO.getInstance().buscarPorData(data).size() - 1;
+        reservaProf = ResSalaProfessorDAO.getInstance().buscarPorData(data).get(indexReserva);
+        reservaAluno = null;
+    }
+    
+  
+    @Test public void testCenario4() throws SQLException, ClienteException, ReservaException, PatrimonioException {
+
+        reservaProf = new ReservaSalaProfessor(data, "23:59", sala, "abc", prof);
+        ResSalaProfessorDAO.getInstance().incluir(reservaProf);
+        
+        dialog.table("tabelaPatrimonio").selectRows(index);
+        dialog.button("Visualizar Horarios").click();
+
+        DialogFixture diaReservaSala = dialog.dialog("DiaReservaSala");
+        diaReservaSala.button("VisualizarButton").click();
+        
+        DialogFixture horarioReservaSala = dialog.dialog("HorarioReservaSala");
+        horarioReservaSala.button("ReservarButton").click();
+        
+        DialogFixture fazerReservaSalaView = dialog.dialog("FazerReservaSalaView");
+        fazerReservaSalaView.radioButton("professorRadioButton").click();
+        fazerReservaSalaView.textBox("CPF").enterText("658.535.144-40");
+        fazerReservaSalaView.button("BuscarCpfButton").click();
+        fazerReservaSalaView.textBox("Finalidade").enterText("aula");
+        fazerReservaSalaView.textBox("Hora").enterText("23:59");
+        fazerReservaSalaView.button("Reservar").click();
+        
+        indexReserva = ResSalaProfessorDAO.getInstance().buscarPorData(data).size() - 1;
+        reservaProf = ResSalaProfessorDAO.getInstance().buscarPorData(data).get(indexReserva);
+        reservaAluno = null;
+        
+        fazerReservaSalaView.optionPane().requireMessage("A Sala esta reservada no mesmo dia e horario.");
+        fazerReservaSalaView.optionPane().okButton().click();
 
     }
 

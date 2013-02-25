@@ -88,7 +88,7 @@ public class US03_CadastrarAluno {
 
 		cadastro.textBox("Nome").enterText("Teste");
 		cadastro.textBox("Telefone").enterText("9211-2144");
-		cadastro.textBox("CPF").enterText("034.355.431-32");
+		cadastro.textBox("CPF").enterText("658.535.144-40");
 		cadastro.textBox("Matricula").enterText("110038096");
 		cadastro.textBox("E-mail").enterText("Teste automatizado");
 
@@ -104,7 +104,7 @@ public class US03_CadastrarAluno {
 	@Test
 	public void testCenario2() throws SQLException, ClienteException {
 
-		aluno = new Aluno("Teste", "034.355.431-32", "110038096","9211-2144", "teste incluir repetido");
+		aluno = new Aluno("Teste", "658.535.144-40", "110038096","9211-2144", "teste incluir repetido");
 		AlunoDAO.getInstance().incluir(aluno);
 		
 		dialog.button("Cadastrar").click();
@@ -112,7 +112,7 @@ public class US03_CadastrarAluno {
 
 		cadastro.textBox("Nome").enterText("Teste");
 		cadastro.textBox("Telefone").enterText("9211-2144");
-		cadastro.textBox("CPF").enterText("034.355.431-32");
+		cadastro.textBox("CPF").enterText("658.535.144-40");
 		cadastro.textBox("Matricula").enterText("110038096");
 		cadastro.textBox("E-mail").enterText("Teste automatizado");
 
@@ -131,7 +131,7 @@ public class US03_CadastrarAluno {
 
 		cadastro.textBox("Nome").enterText("123");
 		cadastro.textBox("Telefone").enterText("9211-2144");
-		cadastro.textBox("CPF").enterText("034.355.431-32");
+		cadastro.textBox("CPF").enterText("658.535.144-40");
 		cadastro.textBox("Matricula").enterText("110038096");
 		cadastro.textBox("E-mail").enterText("Teste automatizado");
 
@@ -151,7 +151,7 @@ public class US03_CadastrarAluno {
 
 		cadastro.textBox("Nome").enterText("");
 		cadastro.textBox("Telefone").enterText("9211-2144");
-		cadastro.textBox("CPF").enterText("034.355.431-32");
+		cadastro.textBox("CPF").enterText("658.535.144-40");
 		cadastro.textBox("Matricula").enterText("110038096");
 		cadastro.textBox("E-mail").enterText("Teste automatizado");
 
@@ -208,7 +208,7 @@ public class US03_CadastrarAluno {
 
 		cadastro.textBox("Nome").enterText("Teste");
 		cadastro.textBox("Telefone").enterText("123");
-		cadastro.textBox("CPF").enterText("034.355.431-32");
+		cadastro.textBox("CPF").enterText("658.535.144-40");
 		cadastro.textBox("Matricula").enterText("110038096");
 		cadastro.textBox("E-mail").enterText("Teste automatizado");
 

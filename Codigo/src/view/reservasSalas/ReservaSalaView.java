@@ -38,8 +38,8 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
 		super(parent, modal);
 		this.instanceProf = ManterResSalaProfessor.getInstance();
 		this.instanceAluno = ManterResSalaAluno.getInstance();
-		
 		initComponents();
+        this.bucarCpfButton.setName("BuscarCpfButton");
 		
 	}
 
@@ -133,6 +133,7 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
                 jScrollPane2 = new javax.swing.JScrollPane();
                 salaTextArea = new javax.swing.JTextArea();
                 dataTextField = new javax.swing.JTextField();
+                bucarCpfButton = new javax.swing.JButton();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
                 setTitle("ReservaPatrimonio");
@@ -253,6 +254,13 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
                 dataTextField.setBackground(new java.awt.Color(200, 208, 254));
                 dataTextField.setName("DiaTextField"); // NOI18N
 
+                bucarCpfButton.setText("Buscar CPF");
+                bucarCpfButton.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                bucarCpfButtonActionPerformed(evt);
+                        }
+                });
+
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
                 getContentPane().setLayout(layout);
                 layout.setHorizontalGroup(
@@ -268,13 +276,6 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
                                                 .addContainerGap(25, Short.MAX_VALUE))
                                         .addGroup(layout.createSequentialGroup()
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(0, 0, Short.MAX_VALUE))
-                                                        .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(cpfLabel)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(cpfTextField))
                                                         .addGroup(layout.createSequentialGroup()
                                                                 .addComponent(qntCadeirasReservadasLbl)
                                                                 .addGap(41, 41, 41)
@@ -292,7 +293,17 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
                                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                                                 .addComponent(qntCadeirasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(qntCadeirasTxtField)))
+                                                                .addComponent(qntCadeirasTxtField))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                        .addGroup(layout.createSequentialGroup()
+                                                                                .addComponent(cpfLabel)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                                .addComponent(cpfTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                                                .addComponent(bucarCpfButton)))
+                                                                .addGap(0, 0, Short.MAX_VALUE)))
                                                 .addContainerGap())
                                         .addGroup(layout.createSequentialGroup()
                                                 .addComponent(dataLabel)
@@ -310,7 +321,8 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
                                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(cpfLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(cpfTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(cpfTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(bucarCpfButton))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createSequentialGroup()
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -398,11 +410,17 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
         private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
 		this.setVisible(false);
         }//GEN-LAST:event_cancelarButtonActionPerformed
+
+        private void bucarCpfButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bucarCpfButtonActionPerformed
+                cpfTextFieldActionPerformed(evt);
+        }//GEN-LAST:event_bucarCpfButtonActionPerformed
+
         // Variables declaration - do not modify//GEN-BEGIN:variables
         protected javax.swing.JLabel alunoLabel;
         private javax.swing.ButtonGroup alunoProfbuttonGroup;
         protected javax.swing.JRadioButton alunoRadioButton;
         protected javax.swing.JTextArea alunoTextArea;
+        protected javax.swing.JButton bucarCpfButton;
         protected javax.swing.JButton cancelarButton;
         protected javax.swing.JLabel cpfLabel;
         protected javax.swing.JTextField cpfTextField;

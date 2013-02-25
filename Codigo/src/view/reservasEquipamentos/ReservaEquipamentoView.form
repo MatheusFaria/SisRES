@@ -44,7 +44,10 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="cpfLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="cpfTextField" max="32767" attributes="0"/>
+                              <Component id="cpfTextField" min="-2" pref="164" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="buscarCpfButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -81,6 +84,7 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="cpfLabel" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                   <Component id="cpfTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buscarCpfButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
@@ -259,6 +263,15 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
       </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="buscarCpfButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Buscar CPF"/>
+        <Property name="name" type="java.lang.String" value="BuscarCpfButton" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buscarCpfButtonActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

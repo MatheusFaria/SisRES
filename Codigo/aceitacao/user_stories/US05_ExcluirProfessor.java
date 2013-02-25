@@ -45,7 +45,7 @@ public class US05_ExcluirProfessor {
 		window = new FrameFixture(robot, new Main2());
 		window.show(new Dimension(900, 500)); // shows the frame to test
 
-		professor = new Professor("Teste", "034.355.431-32", "110038096","9211-2144", "teste incluir repetido");
+		professor = new Professor("Teste", "658.535.144-40", "110038096","9211-2144", "teste incluir repetido");
 		ProfessorDAO.getInstance().incluir(professor);
 
 		index = ProfessorDAO.getInstance().buscarTodos().size() - 1;

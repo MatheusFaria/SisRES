@@ -131,6 +131,7 @@ public class HorariosReservaEquipamento extends HorariosReservaPatrimonio{
 
 	@Override
 	protected void alterarAction(int index) {
+	    /**
 		try {
 			index = Integer.parseInt((String) this.reservasTable.getModel().getValueAt(index, 0));
 			ReservaEquipamentoView reserva = new AlterarReservaEquipamentoView(new JFrame(), true, index, this.mes);
@@ -145,5 +146,6 @@ public class HorariosReservaEquipamento extends HorariosReservaPatrimonio{
 		} catch (ReservaException ex) {
 			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
 		}
+		*/
 	}
 }

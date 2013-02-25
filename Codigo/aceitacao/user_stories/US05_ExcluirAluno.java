@@ -45,7 +45,7 @@ public class US05_ExcluirAluno {
 		window = new FrameFixture(robot, new Main2());
 		window.show(new Dimension(900, 500)); // shows the frame to test
 
-		aluno = new Aluno("Teste", "034.355.431-32", "110038096","9211-2144", "teste incluir repetido");
+		aluno = new Aluno("Teste", "658.535.144-40", "110038096","9211-2144", "teste incluir repetido");
 		AlunoDAO.getInstance().incluir(aluno);
 
 		index = AlunoDAO.getInstance().buscarTodos().size() - 1;
