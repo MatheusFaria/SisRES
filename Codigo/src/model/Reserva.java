@@ -82,8 +82,13 @@ public class Reserva {
 		String dataNoPadrao = "";
 		
 		for(int i = 0; i < 3; i++){
-			dataNoPadrao += agora[i].substring(0, 
-				agora[i].length() - partes[i].length()) + partes[i];
+			if(i == 0)
+				dataNoPadrao += agora[i].substring(0, 
+						agora[i].length() - partes[i].length()) + partes[i];
+			else
+				dataNoPadrao +=  "/" + agora[i].substring(0, 
+						agora[i].length() - partes[i].length()) + partes[i];
+				
 		}
 		
 		return dataNoPadrao;

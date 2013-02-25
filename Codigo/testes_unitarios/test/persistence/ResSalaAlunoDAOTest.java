@@ -6,6 +6,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Vector;
 
@@ -118,7 +120,7 @@ public class ResSalaAlunoDAOTest {
 		this.executeQuery("INSERT INTO reserva_sala_professor (id_professor,id_sala,finalidade,hora,data) "+
 		"VALUES ((SELECT id_professor FROM professor WHERE cpf = \"257.312.954-33\")," +
 				"(SELECT id_sala FROM sala WHERE codigo = \"123\")," +
-				"\"Aula de Calculo\", \"8:00\", \"20/12/34\");");
+				"\"Aula de Calculo\", \"08:00\", \"20/12/2034\");");
 		
 		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/34", "8:00", sala1,
 				"Grupo de Estudos", "60", aluno1);
@@ -126,13 +128,11 @@ public class ResSalaAlunoDAOTest {
 		try{
 			ResSalaAlunoDAO.getInstance().incluir(reserva);
 		} finally {
-		boolean resultado = this.inDB(reserva);
-
-		if(resultado)
+		if(this.inDB(reserva))
 			this.delete_from(reserva);
 		
 		this.executeQuery("DELETE FROM professor WHERE cpf = \"257.312.954-33\";");
-		this.executeQuery("DELETE FROM reserva_sala_professor WHERE data = \"20/12/34\";");
+		this.executeQuery("DELETE FROM reserva_sala_professor WHERE data = \"20/12/2034\";");
 		
 		}
 		
@@ -169,7 +169,63 @@ public class ResSalaAlunoDAOTest {
 				this.delete_from(reserva2);
 		}
 	}
-	
+	@Test (expected= ReservaException.class)
+	public void testIncluirDataPassouAno() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/1990", "8:00", sala1,
+				"Grupo de Estudos", "60", aluno1);
+		try{
+			ResSalaAlunoDAO.getInstance().incluir(reserva);
+		} finally {
+			if(this.inDB(reserva))
+				this.delete_from(reserva);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testIncluirDataPassouMes() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno("20/01/2013", "8:00", sala1,
+				"Grupo de Estudos", "60", aluno1);
+		try{
+			ResSalaAlunoDAO.getInstance().incluir(reserva);
+		} finally {
+			if(this.inDB(reserva))
+				this.delete_from(reserva);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testIncluirDataPassouDia() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno(this.dataAtualAMais(-100000000), this.horaAtual(), sala1,
+				"Grupo de Estudos", "60", aluno1);
+		try{
+			ResSalaAlunoDAO.getInstance().incluir(reserva);
+		} finally {
+			if(this.inDB(reserva))
+				this.delete_from(reserva);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testIncluirHoraPassouHora() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno(this.dataAtual(),
+				 this.horaAtualAMais(-10000000), sala1,
+				"Grupo de Estudos", "60", aluno1);
+		try{
+			ResSalaAlunoDAO.getInstance().incluir(reserva);
+		} finally {
+			if(this.inDB(reserva))
+				this.delete_from(reserva);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testIncluirHoraPassouMinutos() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno(this.dataAtual(),
+				this.horaAtualAMais(-100000), sala1,
+				"Grupo de Estudos", "60", aluno1);
+		try{
+			ResSalaAlunoDAO.getInstance().incluir(reserva);
+		} finally {
+			if(this.inDB(reserva))
+				this.delete_from(reserva);
+		}
+	}
 	
 	
 	@Test
@@ -268,7 +324,7 @@ public class ResSalaAlunoDAOTest {
 		this.executeQuery("INSERT INTO reserva_sala_professor (id_professor,id_sala,finalidade,hora,data) "+
 				"VALUES ((SELECT id_professor FROM professor WHERE cpf = \"257.312.954-33\")," +
 						"(SELECT id_sala FROM sala WHERE codigo = \"123\")," +
-						"\"Aula de Calculo\", \"8:00\", \"20/12/34\");");
+						"\"Aula de Calculo\", \"08:00\", \"20/12/2034\");");
 				
 		
 		ReservaSalaAluno reserva = new ReservaSalaAluno("21/12/34", "8:00", sala1,
@@ -288,7 +344,7 @@ public class ResSalaAlunoDAOTest {
 			this.delete_from(reserva2);
 		
 		this.executeQuery("DELETE FROM professor WHERE cpf = \"257.312.954-33\";");
-		this.executeQuery("DELETE FROM reserva_sala_professor WHERE data = \"20/12/34\";");
+		this.executeQuery("DELETE FROM reserva_sala_professor WHERE data = \"20/12/2034\";");
 		}
 	}
 	@Test (expected= ReservaException.class)
@@ -352,7 +408,99 @@ public class ResSalaAlunoDAOTest {
 			this.delete_from(reserva3);
 		}
 	}
-
+	@Test (expected= ReservaException.class)
+	public void testAlterarDataPassouAno() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/34", "8:00", sala1,
+				"Grupo de Estudos", "30", aluno1);
+		ReservaSalaAluno reserva2 = new ReservaSalaAluno("20/12/1990", "8:00", sala1,
+				"Grupo de Estudos", "20", aluno2);
+		this.insert_into(reserva);
+		
+		try{
+			ResSalaAlunoDAO.getInstance().alterar(reserva, reserva2);
+		} finally {
+		
+		if(this.inDB(reserva))
+			this.delete_from(reserva);
+		if(this.inDB(reserva2))
+			this.delete_from(reserva2);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testAlterarDataPassouMes() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/34", "8:00", sala1,
+				"Grupo de Estudos", "30", aluno1);
+		ReservaSalaAluno reserva2 = new ReservaSalaAluno("20/01/2013", "8:00", sala1,
+				"Grupo de Estudos", "20", aluno2);
+		this.insert_into(reserva);
+		
+		try{
+			ResSalaAlunoDAO.getInstance().alterar(reserva, reserva2);
+		} finally {
+		
+		if(this.inDB(reserva))
+			this.delete_from(reserva);
+		if(this.inDB(reserva2))
+			this.delete_from(reserva2);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testAlterarDataPassouDia() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/34", "8:00", sala1,
+				"Grupo de Estudos", "30", aluno1);
+		ReservaSalaAluno reserva2 = new ReservaSalaAluno(this.dataAtualAMais(-100000000), this.horaAtual(), sala1,
+				"Grupo de Estudos", "60", aluno1);
+		this.insert_into(reserva);
+		
+		try{
+			ResSalaAlunoDAO.getInstance().alterar(reserva, reserva2);
+		} finally {
+		
+		if(this.inDB(reserva))
+			this.delete_from(reserva);
+		if(this.inDB(reserva2))
+			this.delete_from(reserva2);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testAlterarHoraPassouHora() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/34", "8:00", sala1,
+				"Grupo de Estudos", "30", aluno1);
+		ReservaSalaAluno reserva2 = new ReservaSalaAluno(this.dataAtual(),
+				 this.horaAtualAMais(-10000000), sala1,
+				"Grupo de Estudos", "60", aluno1);
+		this.insert_into(reserva);
+		
+		try{
+			ResSalaAlunoDAO.getInstance().alterar(reserva, reserva2);
+		} finally {
+		
+		if(this.inDB(reserva))
+			this.delete_from(reserva);
+		if(this.inDB(reserva2))
+			this.delete_from(reserva2);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testAlterarHoraPassouMinutos() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/34", "8:00", sala1,
+				"Grupo de Estudos", "30", aluno1);
+		ReservaSalaAluno reserva2 = new ReservaSalaAluno(this.dataAtual(),
+				this.horaAtualAMais(-100000), sala1,
+				"Grupo de Estudos", "60", aluno1);
+		this.insert_into(reserva);
+		
+		try{
+			ResSalaAlunoDAO.getInstance().alterar(reserva, reserva2);
+		} finally {
+		
+		if(this.inDB(reserva))
+			this.delete_from(reserva);
+		if(this.inDB(reserva2))
+			this.delete_from(reserva2);
+		}
+	}
+	
 	
 	
 	@Test
@@ -388,8 +536,8 @@ public class ResSalaAlunoDAOTest {
 	
 	
 	@Test
-	public void testBuscarPorMes() throws SQLException, PatrimonioException, ClienteException, ReservaException {
-		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/34", "8:00", sala1,
+	public void testBuscarPorDia() throws SQLException, PatrimonioException, ClienteException, ReservaException {
+		ReservaSalaAluno reserva = new ReservaSalaAluno("21/12/34", "8:00", sala1,
 				"Grupo de Estudos", "40", aluno1);
 		
 		ReservaSalaAluno reserva2 = new ReservaSalaAluno("21/12/34", "19:00", sala1,
@@ -397,7 +545,7 @@ public class ResSalaAlunoDAOTest {
 		
 		this.insert_into(reserva);
 		this.insert_into(reserva2);
-		Vector<ReservaSalaAluno> vet = ResSalaAlunoDAO.getInstance().buscarPorDia("20/12/34");
+		Vector<ReservaSalaAluno> vet = ResSalaAlunoDAO.getInstance().buscarPorDia("21/12/34");
 		this.delete_from(reserva);
 		this.delete_from(reserva2);
 		
@@ -447,7 +595,7 @@ public class ResSalaAlunoDAOTest {
 	
 	@Test
 	public void testCadeirasDisponiveis() throws SQLException, PatrimonioException, ClienteException, ReservaException {
-		ReservaSalaAluno reserva = new ReservaSalaAluno("20/12/34", "8:00", sala1,
+		ReservaSalaAluno reserva = new ReservaSalaAluno("21/12/34", "19:00", sala1,
 				"Grupo de Estudos", "40", aluno1);
 		
 		ReservaSalaAluno reserva2 = new ReservaSalaAluno("21/12/34", "19:00", sala1,
@@ -455,12 +603,34 @@ public class ResSalaAlunoDAOTest {
 		
 		this.insert_into(reserva);
 		this.insert_into(reserva2);
-		int c = ResSalaAlunoDAO.getInstance().cadeirasDisponiveis(sala1, "20/12/34", "8:00");
+		int c = ResSalaAlunoDAO.getInstance().cadeirasDisponiveis(sala1, "21/12/34", "19:00");
 		this.delete_from(reserva);
 		this.delete_from(reserva2);
 		assertEquals("Teste de disponibilidade de Cadeiras", c, 30);
 	}
 
+	
+	private String dataAtual(){
+		Date date = new Date(System.currentTimeMillis());
+		SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
+		return formatador.format(date);
+	}
+	
+	private String horaAtual(){
+		Date date = new Date(System.currentTimeMillis());
+		return date.toString().substring(11, 16);
+	}
+	
+	private String horaAtualAMais(int fator){
+		Date date = new Date(System.currentTimeMillis()+fator);
+		return date.toString().substring(11, 16);
+	}
+	
+	private String dataAtualAMais(int fator){
+		Date date = new Date(System.currentTimeMillis()+fator);
+		SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
+		return formatador.format(date);
+	}
 	
 	
 	private String select_id_aluno(Aluno a){

@@ -114,8 +114,11 @@ public class ResSalaAlunoDAO extends DAO{
 			throw new ReservaException(CADEIRAS_INDISPONIVEIS);
 		if(this.dataPassou(r.getData()))
 			throw new ReservaException(DATA_JA_PASSOU);
-		if(this.horaPassou(r.getHora()) && this.dataIgual(r.getData()))
-			throw new ReservaException(HORA_JA_PASSOU);
+		if(this.dataIgual(r.getData()))
+		{
+			if(this.horaPassou(r.getHora()))
+				throw new ReservaException(HORA_JA_PASSOU);
+		}
 		else
 			super.executeQuery(this.insert_into(r));
 	}
@@ -144,9 +147,9 @@ public class ResSalaAlunoDAO extends DAO{
 				Integer.parseInt(r.getCadeiras_reservadas())), r_new.getSala(), 
 				r_new.getData(), r_new.getHora()))
 			throw new ReservaException(CADEIRAS_INDISPONIVEIS);
-		if(this.dataPassou(r.getData()))
+		if(this.dataPassou(r_new.getData()))
 			throw new ReservaException(DATA_JA_PASSOU);
-		if(this.horaPassou(r.getHora()) && this.dataIgual(r.getData()))
+		if(this.horaPassou(r_new.getHora()) && this.dataIgual(r_new.getData()))
 			throw new ReservaException(HORA_JA_PASSOU);
 		else
 			super.updateQuery(this.update(r, r_new));
@@ -172,7 +175,7 @@ public class ResSalaAlunoDAO extends DAO{
 		return super.buscar("SELECT * FROM reserva_sala_aluno " +
 				"INNER JOIN sala ON sala.id_sala = reserva_sala_aluno.id_sala " +
 				"INNER JOIN aluno ON aluno.id_aluno = reserva_sala_aluno.id_aluno " +
-				"WHERE data = \" "+ data + "\";");
+				"WHERE data = \""+ data + "\";");
 	}
 	public Vector<ReservaSalaAluno> buscarPorHora(String hora) 
 			throws SQLException, ClienteException, PatrimonioException, ReservaException{
@@ -250,8 +253,8 @@ public class ResSalaAlunoDAO extends DAO{
 	}
 	private boolean salainReservaProfessorDB(Sala sala, String data, String hora) throws SQLException {
 		return super.inDBGeneric("SELECT * FROM reserva_sala_professor WHERE " +
-				"data = \"" + data + "\" and " +
-				"hora = \"" + hora + "\" and " +
+				"data = \"" + this.padronizarData(data) + "\" and " +
+				"hora = \"" + this.padronizarHora(hora) + "\" and " +
 				"id_sala = (SELECT id_sala FROM sala WHERE " +
 				"sala.codigo = \"" + sala.getCodigo() + "\" and " +
 				"sala.descricao = \"" + sala.getDescricao() +  "\" and " +
@@ -315,7 +318,7 @@ public class ResSalaAlunoDAO extends DAO{
 	private boolean dataIgual(String d){
 		if(d == null)
 			return false;
-		
+		d = this.padronizarData(d);
 		String agora[] = this.dataAtual().split("[./-]");
 		String data[] = d.split("[./-]");
 		
@@ -341,13 +344,18 @@ public class ResSalaAlunoDAO extends DAO{
 	}
 	
 	private String padronizarData(String data){
-		String agora[] = this.dataAtual().split("[./-]");
+		String agora[] = dataAtual().split("[./-]");
 		String partes[] = data.split("[./-]");
 		String dataNoPadrao = "";
 		
 		for(int i = 0; i < 3; i++){
-			dataNoPadrao += agora[i].substring(0, 
-				agora[i].length() - partes[i].length()) + partes[i];
+			if(i == 0)
+				dataNoPadrao += agora[i].substring(0, 
+						agora[i].length() - partes[i].length()) + partes[i];
+			else
+				dataNoPadrao +=  "/" + agora[i].substring(0, 
+						agora[i].length() - partes[i].length()) + partes[i];
+				
 		}
 		
 		return dataNoPadrao;
