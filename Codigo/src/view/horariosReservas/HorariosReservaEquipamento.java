@@ -18,6 +18,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.Equipamento;
+import model.Patrimonio;
 import model.ReservaEquipamentoProfessor;
 import model.ReservaSalaAluno;
 import model.ReservaEquipamentoProfessor;
@@ -33,7 +34,7 @@ public class HorariosReservaEquipamento extends HorariosReservaPatrimonio{
 	ManterResEquipamentoProfessor instance;
 	
 	public HorariosReservaEquipamento(java.awt.Frame parent, boolean modal, String data, Equipamento eq) {
-		super(parent, modal, data);
+		super(parent, modal, data, eq);
 		this.eq = eq;
 	}
 	
@@ -41,7 +42,7 @@ public class HorariosReservaEquipamento extends HorariosReservaPatrimonio{
 		Vector <String> nomesTabela = new Vector<String>();
 		if(o instanceof ReservaEquipamentoProfessor){
 			ReservaEquipamentoProfessor r = (ReservaEquipamentoProfessor) o;
-			if (!data.isEmpty() && r.getData().startsWith(data.substring(0, 2))) {
+			if (this.eq != null && (r.getEquipamento().equals(this.eq))) {
 				
 				nomesTabela.add(String.valueOf(index));
 				nomesTabela.add(r.getHora());
@@ -56,7 +57,8 @@ public class HorariosReservaEquipamento extends HorariosReservaPatrimonio{
 
 	}
 	@Override
-	protected DefaultTableModel fillTable() {
+	protected DefaultTableModel fillTable(Patrimonio equip) {
+	    this.eq = (Equipamento) equip;
 		DefaultTableModel table = new DefaultTableModel();
 		instance = ManterResEquipamentoProfessor.getInstance();
 		try {

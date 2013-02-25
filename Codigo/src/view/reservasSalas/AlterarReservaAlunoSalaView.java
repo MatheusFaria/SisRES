@@ -19,7 +19,7 @@ import model.Sala;
  *
  * @author Parley
  */
-public class AlterarReservaSalaView extends ReservaSalaView{
+public class AlterarReservaAlunoSalaView extends ReservaSalaView{
 
 	int index;
 	ReservaSalaAluno reservaAluno;
@@ -33,7 +33,7 @@ public class AlterarReservaSalaView extends ReservaSalaView{
 		alunoRadioButtonAction();
 	}
 	
-	public AlterarReservaSalaView(Frame parent, boolean modal, int index, String data) throws SQLException, PatrimonioException, PatrimonioException, ClienteException, ReservaException {
+	public AlterarReservaAlunoSalaView(Frame parent, boolean modal, int index, String data) throws SQLException, PatrimonioException, PatrimonioException, ClienteException, ReservaException {
 		super(parent, modal);
 		this.setName("AlterarReservaSalaView");
 		this.reservaAluno = instanceAluno.getReservasMes(data).get(index);
@@ -64,19 +64,7 @@ public class AlterarReservaSalaView extends ReservaSalaView{
 
 	@Override
 	protected void reservarProfessor() {
-		try {
-			instanceProf.alterar(this.qntCadeirasReservadasTextField.getText(), reservaProfessor);
-			
-			JOptionPane.showMessageDialog(this, "Reserva alterada com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE, null);
-
-			this.setVisible(false);
-		} catch (ReservaException ex) {
-			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
-		} catch (SQLException ex) {
-			JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
-		} catch (NullPointerException ex) {
-			JOptionPane.showMessageDialog(this, ex.getLocalizedMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
-		}
+		
 	}
 
 	@Override
@@ -85,6 +73,7 @@ public class AlterarReservaSalaView extends ReservaSalaView{
 
 	@Override
 	protected void alunoRadioButtonAction() {
+	    this.instanceProf = null;
 		this.professorRadioButton.setEnabled(false);
 		this.cpfTextField.setBackground(new Color(200,208,254));
 		this.cpfTextField.setEditable(false);

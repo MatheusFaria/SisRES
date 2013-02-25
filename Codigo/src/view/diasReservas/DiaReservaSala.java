@@ -32,7 +32,7 @@ public class DiaReservaSala extends DiaReservaPatrimonio{
 
 	@Override
 	protected void visualizarAction(String data) {
-		HorariosReservaPatrimonio reserva = new HorariosReservaSala(new JFrame(), true, data, sala);
+		HorariosReservaSala reserva = new HorariosReservaSala(new JFrame(), true, data, sala);
 		reserva.setVisible(true);
 		reserva.setResizable(false);
 	}

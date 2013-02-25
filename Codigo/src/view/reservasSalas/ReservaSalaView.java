@@ -55,6 +55,8 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
 			if (alunos.isEmpty()) {
 				JOptionPane.showMessageDialog(this, "Aluno nao Cadastrado."
 					+ " Digite o CPF correto ou cadastre o aluno desejado", "Erro", JOptionPane.ERROR_MESSAGE, null);
+				this.alunoTextArea.setText("");
+				this.aluno = null;
 				return;
 			}
 			this.aluno = alunos.firstElement();
@@ -74,6 +76,8 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
 			if (professor.isEmpty()) {
 				JOptionPane.showMessageDialog(this, "Professor nao Cadastrado."
 					+ " Digite o CPF correto ou cadastre o professor desejado", "Erro", JOptionPane.ERROR_MESSAGE, null);
+				this.alunoTextArea.setText("");
+				this.prof = null;
 				return;
 			}
 			this.prof = professor.firstElement();
@@ -354,6 +358,7 @@ public abstract class ReservaSalaView extends javax.swing.JDialog {
 		String nome = this.cpfTextField.getText();
 		if (nome.isEmpty()) {
 			JOptionPane.showMessageDialog(this, "Nenhum CPF digitado", "Erro", JOptionPane.ERROR_MESSAGE, null);
+			this.alunoTextArea.setText("");
 		} else {
 			switch (getManterInstance()) {
 				case ALUNO:
