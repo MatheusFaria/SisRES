@@ -111,13 +111,13 @@ public class ReservaSalaProfessorTest {
 		Professor professor = new Professor("testInstance", "040.757.021-70", "0058801", "3333-3333", "Node@email");
 		new ReservaSalaProfessor("    ", this.horaAtual(), sala, "Aula de fisica", professor);
 	}
-	@Test (expected= ReservaException.class)
-	public void testDataDespadronizada() throws PatrimonioException, ClienteException, ReservaException {
-		Sala sala = new Sala("123", "Sala de Aula", "120");
-		Professor professor = new Professor("testInstance", "040.757.021-70", "0058801", "3333-3333", "Node@email");
-		new ReservaSalaProfessor("12/q2/2030", this.horaAtual(), sala, "Aula de IE", professor);
-	}
 	
+	@Test (expected= ReservaException.class)
+	public void testDataComChar() throws PatrimonioException, ClienteException, ReservaException {
+		Sala sala = new Sala("123", "Sala de Aula", "120");
+		Professor professor = new Professor("testInstance", "501.341.852-69", "456678", "", "");
+		new ReservaSalaProfessor("12/q2/2030", this.horaAtual(), sala, "Grupo de Estudos", professor);
+	}
 	
 	@Test
 	public void testEqualsTrue() throws PatrimonioException, ClienteException, ReservaException {
