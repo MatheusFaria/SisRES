@@ -66,7 +66,7 @@ public class ResSalaProfessorDAO extends DAO{
 				"\"" + r.getHora() + "\", " +
 				"\"" + r.getData() + "\"";
 			}
-			private String atibutes_value_reserva_sala_aluno(ReservaSalaProfessor r){
+			private String atibutes_value_reserva_sala_professor(ReservaSalaProfessor r){
 				return "id_professor = ( " + select_id_professor(r.getProfessor()) + " ), " +
 				"id_sala = ( " + select_id_sala(r.getSala()) + " ), " +
 				"finalidade = \"" + r.getFinalidade() + "\", " +
@@ -90,10 +90,9 @@ public class ResSalaProfessorDAO extends DAO{
 						"data = \"" + r.getData() +  "\" ;";
 			}
 			
-
 			private String update(ReservaSalaProfessor r, ReservaSalaProfessor r2){
-				return "UPDATE reserva_sala_aluno SET " + 
-						this.atibutes_value_reserva_sala_aluno(r2) +
+				return "UPDATE reserva_sala_professor SET " + 
+						this.atibutes_value_reserva_sala_professor(r2) +
 						this.where_reserva_sala_professor(r) + " ;";
 			}
 			

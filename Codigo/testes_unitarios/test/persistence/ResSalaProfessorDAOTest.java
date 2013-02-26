@@ -6,10 +6,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Vector;
 
 import model.Professor;
+import model.ReservaSalaAluno;
 import model.ReservaSalaProfessor;
 
 import model.Sala;
@@ -27,6 +30,7 @@ import persistence.ProfessorDAO;
 
 import persistence.FactoryConnection;
 
+import persistence.ResSalaAlunoDAO;
 import persistence.ResSalaProfessorDAO;
 import persistence.SalaDAO;
 
@@ -157,7 +161,64 @@ public class ResSalaProfessorDAOTest {
 		assertTrue("Sala reservada por aluno", (resultadoProf && !resultadoAluno));
 		
 		}
-		
+	public void testIncluirDataPassouAno() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaProfessor reserva = new ReservaSalaProfessor("20/12/1990", "8:00", sala_a,
+				"Grupo de Estudos", professor1);
+		try{
+			ResSalaProfessorDAO.getInstance().incluir(reserva);
+		} finally {
+			if(this.inDB(reserva))
+				this.delete_from_professor(reserva);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testIncluirDataPassouMes() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaProfessor reserva = new ReservaSalaProfessor("20/01/2013", "8:00", sala_a,
+				"Grupo de Estudos", professor1);
+		try{
+			ResSalaProfessorDAO.getInstance().incluir(reserva);
+		} finally {
+			if(this.inDB(reserva))
+				this.delete_from_professor(reserva);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testIncluirDataPassouDia() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaProfessor reserva = new ReservaSalaProfessor(this.dataAtualAMais(-100000000), this.horaAtual(), sala_a,
+				"Grupo de Estudos", professor1);
+		try{
+			ResSalaProfessorDAO.getInstance().incluir(reserva);
+		} finally {
+			if(this.inDB(reserva))
+				this.delete_from_professor(reserva);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testIncluirHoraPassouHora() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaProfessor reserva = new ReservaSalaProfessor(this.dataAtual(),
+				 this.horaAtualAMais(-10000000), sala_a,
+				"Grupo de Estudos",  professor1);
+		try{
+			ResSalaProfessorDAO.getInstance().incluir(reserva);
+		} finally {
+			if(this.inDB(reserva))
+				this.delete_from_professor(reserva);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testIncluirHoraPassouMinutos() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaProfessor reserva = new ReservaSalaProfessor(this.dataAtual(),
+				this.horaAtualAMais(-100000), sala_a,
+				"Grupo de Estudos", professor1);
+		try{
+			ResSalaProfessorDAO.getInstance().incluir(reserva);
+		} finally {
+			if(this.inDB(reserva))
+				this.delete_from_professor(reserva);
+		}
+	}
+	
+	
 	@Test (expected= ReservaException.class)
 	public void testIncluirProfessorOcupado() throws ReservaException, ClienteException, PatrimonioException, SQLException {
 		ReservaSalaProfessor reserva = new ReservaSalaProfessor("20/12/13", "8:00", sala_a,
@@ -220,6 +281,98 @@ public class ResSalaProfessorDAOTest {
 		}
 		
 	}
+	public void testAlterarDataPassouAno() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaProfessor reserva = new ReservaSalaProfessor("20/12/34", "8:00", sala_a,
+				"Grupo de Estudos",  professor1);
+		ReservaSalaProfessor reserva2 = new ReservaSalaProfessor("20/12/1990", "8:00", sala_a,
+				"Grupo de Estudos", professor2);
+		this.insert_into(reserva);
+		
+		try{
+			ResSalaProfessorDAO.getInstance().alterar(reserva, reserva2);
+		} finally {
+		
+		if(this.inDB(reserva))
+			this.delete_from_professor(reserva);
+		if(this.inDB(reserva2))
+			this.delete_from_professor(reserva2);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testAlterarDataPassouMes() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaProfessor reserva = new ReservaSalaProfessor("20/12/34", "8:00", sala_a,
+				"Grupo de Estudos",  professor1);
+		ReservaSalaProfessor reserva2 = new ReservaSalaProfessor("20/01/2013", "8:00", sala_a,
+				"Grupo de Estudos", professor2);
+		this.insert_into(reserva);
+		
+		try{
+			ResSalaProfessorDAO.getInstance().alterar(reserva, reserva2);
+		} finally {
+		
+		if(this.inDB(reserva))
+			this.delete_from_professor(reserva);
+		if(this.inDB(reserva2))
+			this.delete_from_professor(reserva2);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testAlterarDataPassouDia() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaProfessor reserva = new ReservaSalaProfessor("20/12/34", "8:00", sala_a,
+				"Grupo de Estudos",  professor1);
+		ReservaSalaProfessor reserva2 = new ReservaSalaProfessor(this.dataAtualAMais(-100000000), this.horaAtual(), sala_a,
+				"Grupo de Estudos",  professor1);
+		this.insert_into(reserva);
+		
+		try{
+			ResSalaProfessorDAO.getInstance().alterar(reserva, reserva2);
+		} finally {
+		
+		if(this.inDB(reserva))
+			this.delete_from_professor(reserva);
+		if(this.inDB(reserva2))
+			this.delete_from_professor(reserva2);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testAlterarHoraPassouHora() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaProfessor reserva = new ReservaSalaProfessor("20/12/34", "8:00", sala_a,
+				"Grupo de Estudos",  professor1);
+		ReservaSalaProfessor reserva2 = new ReservaSalaProfessor(this.dataAtual(),
+				 this.horaAtualAMais(-10000000), sala_a,
+				"Grupo de Estudos",  professor1);
+		this.insert_into(reserva);
+		
+		try{
+			ResSalaProfessorDAO.getInstance().alterar(reserva, reserva2);
+		} finally {
+		
+		if(this.inDB(reserva))
+			this.delete_from_professor(reserva);
+		if(this.inDB(reserva2))
+			this.delete_from_professor(reserva2);
+		}
+	}
+	@Test (expected= ReservaException.class)
+	public void testAlterarHoraPassouMinutos() throws ReservaException, ClienteException, PatrimonioException, SQLException {
+		ReservaSalaProfessor reserva = new ReservaSalaProfessor("20/12/34", "8:00", sala_a,
+				"Grupo de Estudos",  professor1);
+		ReservaSalaProfessor reserva2 = new ReservaSalaProfessor(this.dataAtual(),
+				this.horaAtualAMais(-100000), sala_a,
+				"Grupo de Estudos",  professor1);
+		this.insert_into(reserva);
+		
+		try{
+			ResSalaProfessorDAO.getInstance().alterar(reserva, reserva2);
+		} finally {
+		
+		if(this.inDB(reserva))
+			this.delete_from_professor(reserva);
+		if(this.inDB(reserva2))
+			this.delete_from_professor(reserva2);
+		}
+	}
+	
 	
 	@Test (expected= ReservaException.class)
 	public void testAlterarJaInexistente() throws ReservaException, ClienteException, PatrimonioException, SQLException {
@@ -415,10 +568,58 @@ public class ResSalaProfessorDAOTest {
 		"\"" + r.getHora() + "\", " +
 		"\"" + r.getData() + "\"";
 	}
+	/*private String atibutes_value_reserva_sala_professor(ReservaSalaProfessor r){
+		return "id_professor = ( " + select_id_professor(r.getProfessor()) + " ), " +
+		"id_sala = ( " + select_id_sala(r.getSala()) + " ), " +
+		"finalidade = \"" + r.getFinalidade() + "\", " +
+		"hora = \"" + r.getHora() + "\", " +
+		"data = \"" + r.getData() + "\"";
+	}*/
+
 	private String insert_into(ReservaSalaProfessor r){
 		return "INSERT INTO " +
 				"reserva_sala_professor (id_professor, id_sala, finalidade, hora, data) " +
 				"VALUES ( " + values_reserva_sala_professor(r) + " );";
+	}
+	
+	private String delete_from_professor(ReservaSalaProfessor r){
+		return "DELETE FROM reserva_sala_professor " + this.where_reserva_sala_professor(r) + " ;";
+	}
+	/*
+	private String delete_from_aluno(ReservaSalaProfessor r){
+		return "DELETE FROM reserva_sala_aluno WHERE " +
+				"hora = \"" + r.getHora() + "\" and " +
+				"data = \"" + r.getData() +  "\" ;";
+	}
+	
+	private String update(ReservaSalaProfessor r, ReservaSalaProfessor r2){
+		return "UPDATE reserva_sala_professor SET " + 
+				this.atibutes_value_reserva_sala_professor(r2) +
+				this.where_reserva_sala_professor(r) + " ;";
+	}
+*/
+	
+	
+	private String dataAtual(){
+		Date date = new Date(System.currentTimeMillis());
+		SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
+		return formatador.format(date);
+	}
+	
+	private String horaAtual(){
+		Date date = new Date(System.currentTimeMillis());
+		return date.toString().substring(11, 16);
+	}
+	
+	private String horaAtualAMais(int fator){
+		Date date = new Date(System.currentTimeMillis()+fator);
+		return date.toString().substring(11, 16);
+	}
+	
+	private String dataAtualAMais(int fator){
+		Date date = new Date(System.currentTimeMillis()+fator);
+		SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
+		return formatador.format(date);
 	}
 			
 	private boolean inDB(ReservaSalaProfessor reserva) throws SQLException{

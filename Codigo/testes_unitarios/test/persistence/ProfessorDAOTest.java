@@ -598,9 +598,6 @@ public class ProfessorDAOTest {
 		assertTrue("Teste de Alteração.", vet.size() > 0);
 	}
 	
-	
-	
-
 	private void executaNoBanco(String msg) throws SQLException{
 		Connection con =  FactoryConnection.getInstance().getConnection();
 		PreparedStatement pst = con.prepareStatement(msg);
