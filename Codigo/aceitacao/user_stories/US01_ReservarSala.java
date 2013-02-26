@@ -156,6 +156,55 @@ public class US01_ReservarSala {
         reservaProf = ResSalaProfessorDAO.getInstance().buscarPorData(data).get(indexReserva);
     }
     
+@Test public void testCenario1CpfInvalido() throws SQLException, ClienteException, PatrimonioException, ReservaException {
+
+        
+        dialog.table("tabelaPatrimonio").selectRows(index);
+        dialog.button("Visualizar Horarios").click();
+
+        DialogFixture diaReservaSala = dialog.dialog("DiaReservaSala");
+        diaReservaSala.button("VisualizarButton").click();
+        
+        DialogFixture horarioReservaSala = dialog.dialog("HorarioReservaSala");
+        horarioReservaSala.button("ReservarButton").click();
+        
+        DialogFixture fazerReservaSalaView = dialog.dialog("FazerReservaSalaView");
+        fazerReservaSalaView.radioButton("professorRadioButton").click();
+        fazerReservaSalaView.textBox("CPF").enterText("65853514440");
+        fazerReservaSalaView.button("BuscarCpfButton").click();
+        fazerReservaSalaView.optionPane().requireMessage("Professor nao Cadastrado. Digite o CPF correto ou cadastre o professor desejado");
+        fazerReservaSalaView.optionPane().okButton().click();
+        reservaProf = null;
+    }
+    
+@Test public void testCenario1HoraAnterior() throws SQLException, ClienteException, PatrimonioException, ReservaException {
+    //TODO reserva nao deve ser feita com horario anterior
+    
+    dialog.table("tabelaPatrimonio").selectRows(index);
+    dialog.button("Visualizar Horarios").click();
+
+    DialogFixture diaReservaSala = dialog.dialog("DiaReservaSala");
+    diaReservaSala.button("VisualizarButton").click();
+    
+    DialogFixture horarioReservaSala = dialog.dialog("HorarioReservaSala");
+    horarioReservaSala.button("ReservarButton").click();
+    
+    DialogFixture fazerReservaSalaView = dialog.dialog("FazerReservaSalaView");
+    fazerReservaSalaView.radioButton("professorRadioButton").click();
+    fazerReservaSalaView.textBox("CPF").enterText("658.535.144-40");
+    fazerReservaSalaView.button("BuscarCpfButton").click();
+    fazerReservaSalaView.textBox("Finalidade").enterText("aula");
+    fazerReservaSalaView.textBox("Hora").enterText("00:00");
+    fazerReservaSalaView.button("Reservar").click();
+    
+    fazerReservaSalaView.optionPane().requireMessage("Reserva feita com sucesso");
+    fazerReservaSalaView.optionPane().okButton().click();
+    
+    indexReserva = ResSalaProfessorDAO.getInstance().buscarPorData(data).size() - 1;
+    reservaProf = ResSalaProfessorDAO.getInstance().buscarPorData(data).get(indexReserva);
+}
+
+
     /**
     @Test public void testCenario2() throws SQLException, ClienteException, PatrimonioException, ReservaException {
 
