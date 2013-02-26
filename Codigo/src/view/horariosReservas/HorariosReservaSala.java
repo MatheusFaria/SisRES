@@ -110,7 +110,7 @@ public class HorariosReservaSala extends HorariosReservaPatrimonio {
                 }
             v.clear();
 
-            v = instanceAluno.getResAlunoSala_vet();// .getReservasMes(this.data);
+            v = instanceAluno.getReservasMes(this.data);
             if (v != null)
                 for (int i = 0; i < v.size(); i++) {
                     Vector<String> linha = fillDataVector(v.get(i), i);

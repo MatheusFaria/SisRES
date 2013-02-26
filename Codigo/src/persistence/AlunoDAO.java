@@ -31,7 +31,6 @@ public class AlunoDAO {
         return instance;
     }
 
-    //
 
     public void incluir(Aluno aluno) throws SQLException, ClienteException {
         if (aluno == null)

@@ -87,4 +87,25 @@ public class AlterarReservaAlunoSalaView extends ReservaSalaView {
         this.qntCadeirasReservadasTextField.setText(reservaAluno.getCadeiras_reservadas());
         this.finalidadeTextField.setText(reservaAluno.getFinalidade());
     }
+
+    @Override protected void verificarAction() {
+        try {
+            this.qntCadeirasTxtField.setText(String.valueOf(instanceAluno.cadeirasDisponveis(sala, this.dataTextField.getText(),
+                    this.horaTextField.getText())));
+        } catch (ReservaException ex) {
+            
+            JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+        } catch (PatrimonioException ex) {
+            JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+        } catch (ClienteException ex) {
+            
+            JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(this, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+        } catch (NullPointerException ex) {
+            
+            JOptionPane.showMessageDialog(this, ex.getLocalizedMessage(), "Erro", JOptionPane.ERROR_MESSAGE, null);
+        }
+        
+    }
 }

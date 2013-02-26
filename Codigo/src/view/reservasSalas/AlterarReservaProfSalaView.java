@@ -76,6 +76,7 @@ public class AlterarReservaProfSalaView extends ReservaSalaView {
         this.qntCadeirasReservadasTextField.setBackground(blue);
         this.qntCadeirasReservadasTextField.setEditable(false);
         this.finalidadeTextField.setText(reservaProfessor.getFinalidade());
+        this.verificarCadeiraButton.setEnabled(false);
     }
 
     @Override protected void alunoRadioButtonAction() {
@@ -84,5 +85,9 @@ public class AlterarReservaProfSalaView extends ReservaSalaView {
 
     @Override protected void reservarAluno() {
 
+    }
+
+    @Override protected void verificarAction() {
+       
     }
 }
