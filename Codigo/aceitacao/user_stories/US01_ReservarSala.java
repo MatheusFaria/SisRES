@@ -332,6 +332,7 @@ public class US01_ReservarSala {
         reservaAluno = null;
     }
 
+    
     @Test public void testCenario3AlunoReserva() throws SQLException, ClienteException, PatrimonioException, ReservaException {
         Aluno aluno2 = new Aluno("Aluno Teste", "382.808.446-00", "110", "", "abc");
         AlunoDAO.getInstance().incluir(aluno2);

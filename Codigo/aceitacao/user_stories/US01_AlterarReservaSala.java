@@ -17,6 +17,7 @@ import org.fest.swing.fixture.DialogFixture;
 import org.fest.swing.fixture.FrameFixture;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
 import persistence.AlunoDAO;
 import persistence.ProfessorDAO;
@@ -98,6 +99,31 @@ public class US01_AlterarReservaSala {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+    }
+    @Test public void testCenario2AlunoCadeirasIndisponiveis() throws SQLException, ClienteException, PatrimonioException, ReservaException {
+        
+        dialog.table("tabelaPatrimonio").selectRows(index);
+        dialog.button("Visualizar Horarios").click();
+
+        DialogFixture diaReservaSala = dialog.dialog("DiaReservaSala");
+        diaReservaSala.button("VisualizarButton").click();
+
+        DialogFixture horarioReservaSala = dialog.dialog("HorarioReservaSala");
+        horarioReservaSala.button("ReservarButton").click();
+
+        DialogFixture fazerReservaSalaView = dialog.dialog("FazerReservaSalaView");
+        fazerReservaSalaView.radioButton("alunoRadioButton").click();
+        fazerReservaSalaView.textBox("CPF").enterText("658.535.144-40");
+        fazerReservaSalaView.button("BuscarCpfButton").click();
+        fazerReservaSalaView.textBox("Finalidade").enterText("aula");
+        fazerReservaSalaView.textBox("Hora").enterText("00:00");
+        fazerReservaSalaView.button("VerificarCadeirasButton").click();
+        fazerReservaSalaView.textBox("Quantidade de Cadeiras Reservadas").enterText("1234");
+        fazerReservaSalaView.button("Reservar").click();
+
+        fazerReservaSalaView.optionPane().requireMessage("A sala nao possui este numero de cadeiras para reservar.");
+        fazerReservaSalaView.optionPane().okButton().click();
 
     }
 
